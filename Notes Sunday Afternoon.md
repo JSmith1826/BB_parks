@@ -1,6 +1,6 @@
 Notes Sunday Afternoon
 
-- export table has some foul and fair values reversed. write a bit to select the larger of the two values to the FOP column and the smaller to Foul. 
+XXXXXXDONEXXXXX- export table has some foul and fair values reversed. write a bit to select the larger of the two values to the FOP column and the smaller to Foul. 
 
 - keep plugging on creating the polygon objects to measure. might be as simple as dropping the problem value. One of the Ironwood HS is the issue. delete it manually
     - don't forget to 
