@@ -1,0 +1,33 @@
+------------------
+SCRATCH SHEET - NOTES
+___________________
+
+12-6-22
+
+Goals
+    DONE!!!! - finish last stadiums from top 20 lists
+
+    DONE --- clean up MLB and pro team levels
+
+    find custom icons 
+        what is the ideal size?
+        DONE!!!! - MLB - Boston, Detroit, Colorado
+        College - All I can find
+            Have D1 Logos, - find a generic one for smaller schools
+    !!! Create a map of all the locations in the state of michigan
+        need to simplify the location data to render quickly on a map 
+
+            just grab a single point from each row 
+            try making map in tableau
+            use beautifulsoup to to get the coordinates of a polygon for each layer and grab the first point from that list
+                this will be home plate for distance measurements and is a single point to plot fields on map
+                
+    
+BIG PROJECTS
+
+* figure out how to measure distances, want the min and max distance for each field
+probably need to define a point to measure from - the homeplate point 
+    should be pretty easy to know which point that is programatically. it should be the first point in the line string for each polygon
+        all of the later plots were drawn in that manner. 
+
+        
