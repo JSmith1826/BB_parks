@@ -2,16 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>My Places_dec_9_22.kml</name>
-	<StyleMap id="m_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
-		</Pair>
-	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin">
 		<Pair>
 			<key>normal</key>
@@ -175,7 +165,7 @@
 	<StyleMap id="msn_ylw-pushpin20">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin20</styleUrl>
+			<styleUrl>#sn_ylw-pushpin200</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -210,6 +200,16 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#sh_ylw-pushpin2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin20</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin23</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin4">
@@ -353,16 +353,6 @@
 			<styleUrl>runtime://clone49899#poly-000000-1200-77-nodesc-highlight</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight12</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Style id="poly-000000-1200-77-nodesc-highlight">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
@@ -376,18 +366,6 @@
 		</PolyStyle>
 	</Style>
 	<Style id="poly-000000-1200-77-nodesc-highlight0">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight1">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -448,18 +426,6 @@
 		</PolyStyle>
 	</Style>
 	<Style id="poly-000000-1200-77-nodesc-highlight2">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight3">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -603,31 +569,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal10">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.2</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
 	<Style id="poly-000000-1200-77-nodesc-normal11">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.2</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal12">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -771,6 +713,16 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
+	<StyleMap id="poly-000000-1200-77-nodesc0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight12</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc00">
 		<Pair>
 			<key>normal</key>
@@ -779,16 +731,6 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight13</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc1">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal12</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight3</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc10">
@@ -809,16 +751,6 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight11</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc12">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal10</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight1</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc13">
@@ -1080,24 +1012,6 @@
 			<color>4c37ebf4</color>
 		</PolyStyle>
 	</Style>
-	<Style id="s_ylw-pushpin">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
 	<Style id="sh_ylw-pushpin">
 		<LineStyle>
 			<color>ff000000</color>
@@ -1207,6 +1121,15 @@
 		</PolyStyle>
 	</Style>
 	<Style id="sh_ylw-pushpin19">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin23">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -1431,6 +1354,15 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
+	<Style id="sn_ylw-pushpin20">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin2">
 		<LineStyle>
 			<color>ff000000</color>
@@ -1440,7 +1372,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin20">
+	<Style id="sn_ylw-pushpin200">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -1532,6 +1464,7 @@
 	</Style>
 	<Folder>
 		<name>dec_9_22</name>
+		<open>1</open>
 		<Folder>
 			<name>1. Beal City</name>
 			<open>1</open>
@@ -2240,6 +2173,7 @@
 		</Folder>
 		<Folder>
 			<name>Adrian College</name>
+			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
 				<styleUrl>#msn_ylw-pushpin9</styleUrl>
@@ -2303,6 +2237,7 @@
 		</Folder>
 		<Folder>
 			<name>Aldai Stevenson High School</name>
+			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
 				<styleUrl>#msn_ylw-pushpin3</styleUrl>
@@ -2334,6 +2269,7 @@
 		</Folder>
 		<Folder>
 			<name>Alden - Antrim County - Lakeside Field</name>
+			<open>1</open>
 			<Placemark>
 				<name>FOP</name>
 				<styleUrl>#msn_ylw-pushpin13</styleUrl>
@@ -2365,6 +2301,7 @@
 		</Folder>
 		<Folder>
 			<name>Alden - Antrim County - Lakeside Field</name>
+			<open>1</open>
 			<Placemark>
 				<name>FOP</name>
 				<styleUrl>#poly-000000-1200-77-nodesc8</styleUrl>
@@ -2396,6 +2333,7 @@
 		</Folder>
 		<Folder>
 			<name>Algonac High School</name>
+			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
 				<styleUrl>#msn_ylw-pushpin16</styleUrl>
@@ -2461,7 +2399,7 @@
 			<name>Allen Park High School</name>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -2475,7 +2413,7 @@
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -2524,7 +2462,7 @@
 			<name>Athens High School - Troy</name>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -2538,7 +2476,7 @@
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3531,7 +3469,7 @@
 			<name>Coldwater Heritage Park</name>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3545,7 +3483,7 @@
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4164,20 +4102,7 @@
 		</Folder>
 		<Folder>
 			<name>Eaton Rapids High School</name>
-			<Placemark>
-				<name>Fair Ground - 1</name>
-				<styleUrl>#poly-000000-1200-77-nodesc14</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-84.63437519999999,42.5124558,0 -84.6344369,42.5125359,0 -84.6344691,42.5125734,0 -84.6344986,42.5126071,0 -84.6345871,42.5126782,0 -84.6346381,42.5127158,0 -84.6346917,42.5127534,0 -84.63475080000001,42.512787,0 -84.6348098,42.5128206,0 -84.6348795,42.5128443,0 -84.63494660000001,42.5128641,0 -84.63501359999999,42.5128779,0 -84.6350753,42.5128838,0 -84.63524700000001,42.5128918,0 -84.63533820000001,42.5128878,0 -84.6354374,42.5128641,0 -84.63549639999999,42.5128384,0 -84.635593,42.5127949,0 -84.63562520000001,42.5127771,0 -84.6356761,42.5127455,0 -84.6357271,42.5127079,0 -84.635778,42.5126782,0 -84.63582359999999,42.5126446,0 -84.63584779999999,42.512611,0 -84.6358934,42.5125655,0 -84.6359282,42.512528,0 -84.63595239999999,42.5124864,0 -84.6359819,42.512439,0 -84.6360033,42.5123965,0 -84.63514499999999,42.5118192,0 -84.63437519999999,42.5124558,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
+			<open>1</open>
 			<Placemark>
 				<name>Foul Ground - 1</name>
 				<styleUrl>#poly-000000-1200-77-nodesc14</styleUrl>
@@ -4187,6 +4112,20 @@
 							<tessellate>1</tessellate>
 							<coordinates>
 								-84.63514499999999,42.5118192,0 -84.6360033,42.5123965,0 -84.6360248,42.5123352,0 -84.6360597,42.5122126,0 -84.6351987,42.5116481,0 -84.6350673,42.5116501,0 -84.6342908,42.5122868,0 -84.6342908,42.5123026,0 -84.6343176,42.512356,0 -84.634339,42.5123915,0 -84.63437519999999,42.5124558,0 -84.63514499999999,42.5118192,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Fair Ground - 1</name>
+				<styleUrl>#poly-000000-1200-77-nodesc14</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.63437519999999,42.5124558,0 -84.6344369,42.5125359,0 -84.6344691,42.5125734,0 -84.6344986,42.5126071,0 -84.6345871,42.5126782,0 -84.6346381,42.5127158,0 -84.6346917,42.5127534,0 -84.63475080000001,42.512787,0 -84.6348098,42.5128206,0 -84.6348795,42.5128443,0 -84.63494660000001,42.5128641,0 -84.63501359999999,42.5128779,0 -84.6350753,42.5128838,0 -84.63524700000001,42.5128918,0 -84.63533820000001,42.5128878,0 -84.6354374,42.5128641,0 -84.63549639999999,42.5128384,0 -84.635593,42.5127949,0 -84.63562520000001,42.5127771,0 -84.6356761,42.5127455,0 -84.6357271,42.5127079,0 -84.635778,42.5126782,0 -84.63582359999999,42.5126446,0 -84.63584779999999,42.512611,0 -84.6358934,42.5125655,0 -84.6359282,42.512528,0 -84.63595239999999,42.5124864,0 -84.6359819,42.512439,0 -84.6360033,42.5123965,0 -84.63514499999999,42.5118192,0 -84.63437519999999,42.5124558,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>
@@ -4994,7 +4933,7 @@
 			<name>Gross Pointe North High School</name>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5008,7 +4947,7 @@
 			</Placemark>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5351,7 +5290,7 @@
 			<name>Holland Christian Baseball Field</name>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5365,7 +5304,7 @@
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5508,7 +5447,7 @@
 			<name>Hope College - Holland</name>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5815,164 +5754,6 @@
 							<tessellate>1</tessellate>
 							<coordinates>
 								-85.0646534,42.9533573,0 -85.0634505,42.9533485,0 -85.06346120000001,42.953586,0 -85.0634773,42.9537156,0 -85.0634853,42.9537608,0 -85.06349609999999,42.9537902,0 -85.0635149,42.9538236,0 -85.06353900000001,42.9538609,0 -85.0635645,42.9539041,0 -85.0636423,42.953961,0 -85.0636986,42.9540022,0 -85.0637522,42.9540277,0 -85.0637978,42.9540415,0 -85.0638568,42.9540552,0 -85.0639453,42.9540729,0 -85.0640741,42.9540984,0 -85.0641277,42.9541082,0 -85.0643396,42.9541259,0 -85.0644764,42.9541318,0 -85.0646481,42.9541436,0 -85.0646534,42.9533573,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-		</Folder>
-		<Folder>
-			<name>Ironwood High School</name>
-			<open>1</open>
-			<Placemark>
-				<name>Foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-112.1874074,33.6001283,0 -112.1874208,33.6010421,0 -112.1874771,33.6010398,0 -112.1875013,33.6010398,0 -112.1875496,33.6010175,0 -112.1875361,33.6000825,0 -112.1874664,33.60002,0 -112.1870453,33.6000289,0 -112.1863426,33.6001228,0 -112.1863426,33.6001429,0 -112.1874074,33.6001283,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>FOP</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-112.1874074,33.6001283,0 -112.1863426,33.6001429,0 -112.1863439,33.6004263,0 -112.1863519,33.6004933,0 -112.186368,33.6005558,0 -112.1863841,33.600605,0 -112.1864002,33.6006474,0 -112.1864324,33.6006943,0 -112.1864767,33.6007636,0 -112.1865142,33.6008127,0 -112.1865437,33.6008463,0 -112.1865786,33.6008775,0 -112.1866215,33.6009088,0 -112.1867234,33.6009736,0 -112.1868495,33.6010473,0 -112.1874208,33.6010421,0 -112.1874074,33.6001283,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-		</Folder>
-		<Folder>
-			<name>Ironwood High School - Miners Memorial Park</name>
-			<open>1</open>
-			<Placemark>
-				<name>Foul</name>
-				<styleUrl>#msn_ylw-pushpin11</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-90.15145750000002,46.45715589999999,0 -90.1505777,46.4565656,0 -90.1504396,46.4566977,0 -90.1511302,46.45716520000001,0 -90.1511557,46.4571522,0 -90.15127370000002,46.4572317,0 -90.15135549999999,46.4572825,0 -90.15139310000001,46.45730929999999,0 -90.1514186,46.4573213,0 -90.15150439999999,46.4573195,0 -90.15166669999999,46.4572049,0 -90.1516948,46.457216,0 -90.1524311,46.4566644,0 -90.15233050000001,46.45653969999999,0 -90.15145750000002,46.45715589999999,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>FOP</name>
-				<styleUrl>#m_ylw-pushpin</styleUrl>
-				<Polygon>
-					<tessellate>1</tessellate>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-		</Folder>
-		<Folder>
-			<name>Ironwood HS Baseball</name>
-			<open>1</open>
-			<Placemark>
-				<name>Foul</name>
-				<styleUrl>#msn_ylw-pushpin13</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-112.1874099,33.6001297,0 -112.1874206,33.6010423,0 -112.1874957,33.60104,0 -112.1875225,33.6010289,0 -112.187552,33.6010132,0 -112.187544,33.6008636,0 -112.1875386,33.6003642,0 -112.1875306,33.6003441,0 -112.1875306,33.6002146,0 -112.1875386,33.60019,0 -112.1875332,33.6000783,0 -112.1874689,33.6000224,0 -112.187316,33.6000224,0 -112.1870505,33.6000291,0 -112.186337,33.600123,0 -112.186337,33.6001408,0 -112.1874099,33.6001297,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>Fair</name>
-				<styleUrl>#msn_ylw-pushpin13</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-112.1874099,33.6001297,0 -112.1863464,33.6001442,0 -112.1863464,33.6003184,0 -112.1863464,33.6003721,0 -112.1863464,33.600448,0 -112.1863517,33.6004815,0 -112.1863651,33.6005329,0 -112.1863786,33.6005932,0 -112.1864228,33.6006815,0 -112.186463,33.6007396,0 -112.186514,33.6008088,0 -112.1866186,33.6009071,0 -112.1868493,33.6010456,0 -112.1874206,33.6010423,0 -112.1874099,33.6001297,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-		</Folder>
-		<Folder>
-			<name>Ironwood HS Baseball</name>
-			<Placemark>
-				<name>Foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc8</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-112.1874099,33.6001297,0 -112.1874206,33.6010423,0 -112.1874957,33.60104,0 -112.1875225,33.6010289,0 -112.187552,33.6010132,0 -112.187544,33.6008636,0 -112.1875386,33.6003642,0 -112.1875306,33.6003441,0 -112.1875306,33.6002146,0 -112.1875386,33.60019,0 -112.1875332,33.6000783,0 -112.1874689,33.6000224,0 -112.187316,33.6000224,0 -112.1870505,33.6000291,0 -112.186337,33.600123,0 -112.186337,33.6001408,0 -112.1874099,33.6001297,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>Fair</name>
-				<styleUrl>#poly-000000-1200-77-nodesc8</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-112.1874099,33.6001297,0 -112.1863464,33.6001442,0 -112.1863464,33.6003184,0 -112.1863464,33.6003721,0 -112.1863464,33.600448,0 -112.1863517,33.6004815,0 -112.1863651,33.6005329,0 -112.1863786,33.6005932,0 -112.1864228,33.6006815,0 -112.186463,33.6007396,0 -112.186514,33.6008088,0 -112.1866186,33.6009071,0 -112.1868493,33.6010456,0 -112.1874206,33.6010423,0 -112.1874099,33.6001297,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-		</Folder>
-		<Folder>
-			<name>Ironwood Youth Field</name>
-			<open>1</open>
-			<Placemark>
-				<name>Foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc12</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-112.1892842,33.6000906,0 -112.1899548,33.6000906,0 -112.1899709,33.6000146,0 -112.1892601,33.6000168,0 -112.189193,33.600066,0 -112.1892091,33.6003207,0 -112.1891689,33.6003207,0 -112.1891689,33.6006089,0 -112.1892923,33.6006066,0 -112.1892842,33.6000906,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>FOP</name>
-				<styleUrl>#poly-000000-1200-77-nodesc12</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-112.1892842,33.6000906,0 -112.1892923,33.6006066,0 -112.1895229,33.600601,0 -112.1898502,33.6003955,0 -112.1899279,33.6002682,0 -112.1899548,33.6000906,0 -112.1892842,33.6000906,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>
@@ -6393,7 +6174,7 @@
 			<name>Lincoln High - Ypsi - Fields 2</name>
 			<Placemark>
 				<name>Foul_2</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6407,7 +6188,7 @@
 			</Placemark>
 			<Placemark>
 				<name>FOP_2</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6424,7 +6205,7 @@
 			<name>Lincoln High - Ypsi - Youth 1</name>
 			<Placemark>
 				<name>Y_Foul_1</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6438,7 +6219,7 @@
 			</Placemark>
 			<Placemark>
 				<name>Y_FOP_1</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6455,7 +6236,7 @@
 			<name>Lincoln High - Ypsi - Youth 2</name>
 			<Placemark>
 				<name>Y_Foul_2</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6469,7 +6250,7 @@
 			</Placemark>
 			<Placemark>
 				<name>Y_FOP_2</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6518,7 +6299,7 @@
 			<name>Lincoln High School - Ypsilanti</name>
 			<Placemark>
 				<name>Foul_1</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6532,7 +6313,7 @@
 			</Placemark>
 			<Placemark>
 				<name>FOP_1</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8305,7 +8086,7 @@
 			<name>Saginaw Heritage HS</name>
 			<Placemark>
 				<name>Foul 1</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8319,7 +8100,7 @@
 			</Placemark>
 			<Placemark>
 				<name>FOP_1</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8336,7 +8117,7 @@
 			<name>Saginaw Heritage HS - Field 2</name>
 			<Placemark>
 				<name>Foul_2</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8350,7 +8131,7 @@
 			</Placemark>
 			<Placemark>
 				<name>FOP_2</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8715,20 +8496,7 @@
 		</Folder>
 		<Folder>
 			<name>St Johns High School</name>
-			<Placemark>
-				<name>Fair Ground</name>
-				<styleUrl>#poly-000000-1200-77-nodesc14</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-84.5679294,42.9878827,0 -84.5667358,42.9879739,0 -84.5667224,42.9880465,0 -84.5667143,42.9880956,0 -84.5667117,42.9881387,0 -84.566717,42.9881858,0 -84.5667251,42.988229,0 -84.5667358,42.988282,0 -84.56675730000001,42.9883428,0 -84.5667814,42.9883918,0 -84.56679750000001,42.9884154,0 -84.5668404,42.9884801,0 -84.56686449999999,42.9885115,0 -84.56690209999999,42.9885508,0 -84.566945,42.9885881,0 -84.5670147,42.9886351,0 -84.5670738,42.9886705,0 -84.5671435,42.9887058,0 -84.56721589999999,42.9887391,0 -84.5672964,42.9887686,0 -84.5673688,42.9887862,0 -84.56743849999999,42.988798,0 -84.5675002,42.9888058,0 -84.5675646,42.9888137,0 -84.5676397,42.9888156,0 -84.5677094,42.9888137,0 -84.5677845,42.9888058,0 -84.56786769999999,42.988796,0 -84.56792129999999,42.9887843,0 -84.56798569999999,42.9887666,0 -84.56803669999999,42.988743,0 -84.5679294,42.9878827,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
+			<open>1</open>
 			<Placemark>
 				<name>Foul Ground</name>
 				<styleUrl>#poly-000000-1200-77-nodesc14</styleUrl>
@@ -8738,6 +8506,20 @@
 							<tessellate>1</tessellate>
 							<coordinates>
 								-84.5679294,42.9878827,0 -84.56803669999999,42.988743,0 -84.56810969999999,42.9887144,0 -84.56812309999999,42.9886614,0 -84.56819280000001,42.9882239,0 -84.5681445,42.9877982,0 -84.56799169999999,42.9877118,0 -84.5668477,42.9877864,0 -84.5668021,42.9878413,0 -84.5667806,42.9878786,0 -84.5667565,42.9879218,0 -84.5667358,42.9879739,0 -84.5679294,42.9878827,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Fair Ground</name>
+				<styleUrl>#poly-000000-1200-77-nodesc14</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.5679294,42.9878827,0 -84.5667358,42.9879739,0 -84.5667224,42.9880465,0 -84.5667143,42.9880956,0 -84.5667117,42.9881387,0 -84.566717,42.9881858,0 -84.5667251,42.988229,0 -84.5667358,42.988282,0 -84.56675730000001,42.9883428,0 -84.5667814,42.9883918,0 -84.56679750000001,42.9884154,0 -84.5668404,42.9884801,0 -84.56686449999999,42.9885115,0 -84.56690209999999,42.9885508,0 -84.566945,42.9885881,0 -84.5670147,42.9886351,0 -84.5670738,42.9886705,0 -84.5671435,42.9887058,0 -84.56721589999999,42.9887391,0 -84.5672964,42.9887686,0 -84.5673688,42.9887862,0 -84.56743849999999,42.988798,0 -84.5675002,42.9888058,0 -84.5675646,42.9888137,0 -84.5676397,42.9888156,0 -84.5677094,42.9888137,0 -84.5677845,42.9888058,0 -84.56786769999999,42.988796,0 -84.56792129999999,42.9887843,0 -84.56798569999999,42.9887666,0 -84.56803669999999,42.988743,0 -84.5679294,42.9878827,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>
@@ -8876,7 +8658,7 @@
 			<name>Trenton High School</name>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8890,7 +8672,7 @@
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -9350,6 +9132,7 @@
 		</Folder>
 		<Folder>
 			<name>Whiteford High School - Ottawa Lake</name>
+			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
 				<styleUrl>#msn_ylw-pushpin16</styleUrl>
@@ -9382,6 +9165,7 @@
 		</Folder>
 		<Folder>
 			<name>Whitehall High School</name>
+			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
 				<styleUrl>#msn_ylw-pushpin6</styleUrl>
