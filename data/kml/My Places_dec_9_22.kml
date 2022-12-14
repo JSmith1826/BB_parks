@@ -1129,15 +1129,6 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin23">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
 	<Style id="sh_ylw-pushpin2">
 		<LineStyle>
 			<color>ff000000</color>
@@ -1166,6 +1157,15 @@
 		</PolyStyle>
 	</Style>
 	<Style id="sh_ylw-pushpin22">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin23">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -1354,7 +1354,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin20">
+	<Style id="sn_ylw-pushpin2">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -1363,7 +1363,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin2">
+	<Style id="sn_ylw-pushpin20">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -1466,8 +1466,7 @@
 		<name>dec_9_22</name>
 		<open>1</open>
 		<Folder>
-			<name>1. Beal City</name>
-			<open>1</open>
+			<name>Beal City HS</name>
 			<Placemark>
 				<name>Foul</name>
 				<styleUrl>#poly-000000-1200-77-nodesc13</styleUrl>
@@ -1498,7 +1497,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>1. Buchanan</name>
+			<name>Buchanan HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1530,7 +1529,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>1. Grosse Pointe Woods University Liggett</name>
+			<name>Grosse Pointe Woods University Liggett</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1562,7 +1561,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>10. Jackson Lumen Christi</name>
+			<name>Jackson Lumen Christi HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1594,7 +1593,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>10. Kalamazoo Christian</name>
+			<name>Kalamazoo Christian</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1626,7 +1625,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>2. Royal Oak Shrine</name>
+			<name>Shrine HS Royal Oak</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1659,7 +1658,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>3. Hemlock</name>
+			<name>Hemlock HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1691,7 +1690,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>4. Chesaning</name>
+			<name>Chesaning Union HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1724,7 +1723,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>4. Maple City Glen Lake</name>
+			<name>Glen Lake Community School</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1756,7 +1755,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>5. Midland Bullock Creek</name>
+			<name>Bullock Creek HS - Midland</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1788,7 +1787,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>5. Rogers City</name>
+			<name>Rogers City HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1820,7 +1819,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>5. Standish-Sterling</name>
+			<name>Standish-Sterling HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1852,7 +1851,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>6. New Lothrop</name>
+			<name>New Lothrop HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1884,7 +1883,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>6. Rochester Hills Lutheran Northwest</name>
+			<name>Rochester Hills Lutheran Northwest</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1916,7 +1915,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>7. Bridgman</name>
+			<name>Bridgman HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1948,7 +1947,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>7. Indian River Inland Lakes</name>
+			<name>Indian River Inland Lakes HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1980,7 +1979,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>8. Breckenridge</name>
+			<name>Breckenridge HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -2012,7 +2011,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>8. Essexville Garber</name>
+			<name>Essexville Garber HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -2044,7 +2043,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>8. Watervliet</name>
+			<name>Watervliet HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -2076,7 +2075,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>9. Bad Axe</name>
+			<name>9. Bad Axe HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -2108,7 +2107,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>9. Cheboygan</name>
+			<name>Cheboygan HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -2140,7 +2139,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>9. Marine City Cardinal Mooney</name>
+			<name>Marine City Cardinal Mooney HS</name>
 			<open>1</open>
 			<Placemark>
 				<name>Foul_1</name>
@@ -2397,6 +2396,7 @@
 		</Folder>
 		<Folder>
 			<name>Allen Park High School</name>
+			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
 				<styleUrl>#msn_ylw-pushpin30</styleUrl>
@@ -2460,6 +2460,7 @@
 		</Folder>
 		<Folder>
 			<name>Athens High School - Troy</name>
+			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
 				<styleUrl>#msn_ylw-pushpin30</styleUrl>
@@ -5889,6 +5890,7 @@
 		</Folder>
 		<Folder>
 			<name>Kalamazoo College</name>
+			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
 				<styleUrl>#msn_ylw-pushpin19</styleUrl>
