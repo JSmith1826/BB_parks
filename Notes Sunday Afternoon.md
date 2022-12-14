@@ -1,4 +1,18 @@
-Notes Sunday Afternoon
+## Idea for how to calculate distances
+
+Need to convert my fop polygons into linestrings that only have the points from the outside wall.
+    The outfield wall line should just be the polygon with the first and last points dropped
+        The first point of each polygon is home plate, the last value is also home pate. as long as there are no point on the foul line than the string minus the first and last coordinates will be a line tracing the outfield wall
+
+
+## Notes from Tuesday night
+
+I want to work on visualizations but I need to connect the data from the manual book I did with the python output file.
+
+Happy with the output file for the most part. there is some kind of issue with the Calvin College field. I think it is just being counted twice
+
+Firgure out how to parse the enrolment from that mhsaa pdf file. enrollment number should be easy to roll into current data
+
 
 
 

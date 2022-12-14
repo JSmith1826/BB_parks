@@ -1,0 +1,460 @@
+Enrollment Enrollment
+ID School Total Classification
+1 9448 Macomb - Dakota HS 2876 2876
+2 2237 Grand Blanc HS 2812 2812
+3 5792 East Kentwood HS 2678 2678
+4 6980 Dearborn - Fordson HS 2613 2613
+5 3020 Shelby Township - Utica Eisenhower HS 2555 2555
+6 5628 Northville HS 2509 2509
+7 4183 Rockford HS 2480 2480
+8 4893 Detroit - Cass Technical HS 2452 2452
+9 2666 Sterling Heights - Utica Stevenson HS 2433 2433
+10 1874 Clinton Township - Chippewa Valley HS 2386 2386
+11 5074 Howell HS 2375 2375
+12 3953 Lake Orion HS 2309 2309
+13 7038 Oxford HS 2299 2299
+14 1742 Troy HS 2285 2285
+15 2856 Clarkston HS 2250 2250
+16 3680 Ann Arbor - Pioneer HS 2185 2185
+17 3747 Canton - Salem HS 2183 2183
+18 2839 Canton - Plymouth HS 2140 2140
+19 5116 Canton HS 2127 2127
+20 6485 Holland - West Ottawa HS 2124 2124
+21 7376 Dearborn HS 2075 2075
+22 5140 West Bloomfield HS 2052 2052
+23 1016 Brighton HS 2045 2045
+24 1833 Novi HS 2033 2033
+25 8077 Hudsonville HS 2026 2026
+26 4101 Grand Haven HS 1944 1944
+27 6832 Hartland HS 1938 1938
+28 7541 Grand Rapids - Union HS 1908 1908
+29 1147 Southfield HS for the Arts & Technology 1893 1893
+30 3086 Fair Haven - Anchor Bay HS 1882 1882
+31 4638 Novi - Detroit Catholic Central HS 933 1866
+32 1825 Ann Arbor - Huron HS 1860 1860
+33 1069 Bloomfield Hills HS 1851 1851
+34 3730 Monroe HS 1838 1838
+35 4555 Macomb - L'Anse Creuse North HS 1834 1834
+36 7450 Utica HS 1828 1828
+37 7013 Detroit - Western International HS 1807 1807
+38 3103 Davison HS 1787 1787
+Class C 189– 398
+Class D 188 and below
+2021-22 MHSAA Enrollment List
+Procedures for determining classification are outlined on pages 104 - 105 of the 2020-21 MHSAA Handbook
+Class A 835 and above
+Class B 399 – 834
+Enrollment Enrollment
+ID School Total Classification
+Class C 189– 398
+Class D 188 and below
+2021-22 MHSAA Enrollment List
+Procedures for determining classification are outlined on pages 104 - 105 of the 2020-21 MHSAA Handbook
+Class A 835 and above
+Class B 399 – 834
+39 1957 Troy - Athens HS 1775 1775
+40 6510 Sterling Heights - Utica Ford II HS 1760 1760
+41 6576 Grandville HS 1751 1751
+42 7632 Holt HS 1745 1745
+43 6584 Saline HS 1743 1743
+44 1086 Lapeer HS 1732 1732
+45 7748 Belleville HS 1730 1730
+46 6551 Kalamazoo - Loy Norrix HS 1722 1722
+47 6824 Rochester Hills - Rochester HS 1721 1721
+48 1170 Taylor HS 1720 1720
+49 3945 Kalamazoo Central HS 1687 1687
+50 6188 Livonia - Stevenson HS 1673 1673
+51 6023 Washington - Romeo HS 1658 1658
+52 6213 Grand Ledge HS 1653 1653
+53 9731 Traverse City West HS 1629 1629
+54 4662 Brownstown Township - Woodhaven HS 1626 1626
+55 2748 Commerce Township - Walled Lake Northern HS 1621 1621
+56 2815 Rochester Hills - Stoney Creek HS 1619 1619
+57 2032 Ann Arbor - Skyline HS 1588 1588
+58 4373 Dearborn - Edsel Ford HS 1563 1563
+59 4596 Westland - John Glenn HS 1555 1555
+60 6733 Rochester - Adams HS 1528 1528
+61 3607 Jenison HS 1508 1508
+62 6898 Royal Oak HS 1505 1505
+63 6948 Fraser HS 1503 1503
+64 1404 Wayne Memorial HS 1488 1488
+65 1313 White Lake - Lakeland HS 1486 1486
+66 5784 Farmington HS 1479 1479
+67 4324 Caledonia HS 1476 1476
+68 5082 Walled Lake Central HS 1473 1473
+69 3111 Warren Mott HS 1460 1460
+70 3714 Sterling Heights HS 1459 1459
+71 2146 St Clair Shores - Lakeview HS 1442 1442
+72 6007 Okemos HS 1427 1427
+73 6080 Highland - Milford HS 1425 1425
+74 4233 Traverse City Central HS 1417 1417
+75 2022 Harrison Township - L'Anse Creuse HS 1401 1401
+76 4547 Saginaw - Heritage HS 1398 1398
+Enrollment Enrollment
+ID School Total Classification
+Class C 189– 398
+Class D 188 and below
+2021-22 MHSAA Enrollment List
+Procedures for determining classification are outlined on pages 104 - 105 of the 2020-21 MHSAA Handbook
+Class A 835 and above
+Class B 399 – 834
+77 1437 Portage Central HS 1393 1393
+78 5842 Dearborn Heights - Crestwood HS 1388 1388
+79 3648 Detroit - U of D Jesuit HS 692 1384
+80 3508 Livonia - Franklin HS 1379 1379
+81 2443 Grosse Pointe Farms - Grosse Pointe South HS 1373 1373
+82 6122 Temperance - Bedford HS 1371 1371
+83 4935 Berkley HS 1370 1370
+84 6626 Birmingham - Seaholm HS 1345 1345
+85 5025 Waterford Mott HS 1343 1343
+86 3375 Farmington Hills - North Farmington HS 1339 1339
+87 2583 Battle Creek - Lakeview HS 1338 1338
+88 5850 Wyandotte - Roosevelt HS 1322 1322
+89 2336 Flushing HS 1320 1320
+90 2996 Lincoln Park HS 1308 1308
+91 7797 Farmington Hills - Mercy HS 650 1300
+92 6295 South Lyon HS 1297 1297
+93 4381 Livonia - Churchill HS 1294 1294
+94 1172 Warren - Cousino HS 1288 1288
+95 5990 Midland HS 1281 1281
+96 2113 Midland - HH Dow HS 1269 1269
+97 5256 Bay City - Central HS 1263 1263
+98 6477 Ypsilanti - Lincoln HS 1247 1247
+99 7962 Muskegon - Mona Shores HS 1240 1240
+100 2963 Beverly Hills - Wylie E Groves HS 1230 1230
+101 4794 Portage Northern HS 1227 1227
+102 3268 Port Huron Northern HS 1221 1221
+103 1040 Roseville HS 1221 1221
+104 3573 Oak Park HS 1215 1215
+105 3920 East Lansing HS 1211 1211
+106 4778 Port Huron HS 1211 1211
+107 1033 Wyoming HS 1205 1205
+108 5306 Warren - De La Salle Collegiate 602 1204
+109 6527 Waterford Kettering HS 1200 1200
+110 2633 Jackson HS 1195 1195
+111 2542 Byron Center HS 1189 1189
+112 2071 Dexter HS 1188 1188
+113 8127 Alpena HS 1180 1180
+114 1387 Lansing - Everett HS 1178 1178
+Enrollment Enrollment
+ID School Total Classification
+Class C 189– 398
+Class D 188 and below
+2021-22 MHSAA Enrollment List
+Procedures for determining classification are outlined on pages 104 - 105 of the 2020-21 MHSAA Handbook
+Class A 835 and above
+Class B 399 – 834
+115 6964 Grand Rapids - Forest Hills Northern HS 1177 1177
+116 3854 Walled Lake Western HS 1177 1177
+117 1791 Warren Woods-Tower HS 1174 1174
+118 7822 Grosse Pointe North HS 1171 1171
+119 5727 Detroit - Renaissance HS 1171 1171
+120 5355 Grand Rapids - Forest Hills Central HS 1165 1165
+121 4803 Swartz Creek HS 1164 1164
+122 7335 Grand Rapids - Ottawa Hills HS 1159 1159
+123 5438 Fenton HS 1158 1158
+124 4290 Flint - Carman-Ainsworth HS 1155 1155
+125 3524 Auburn - Bay City Western HS 1153 1153
+126 5925 Hamtramck HS 1152 1152
+127 2682 Battle Creek - Central HS 1146 1146
+128 4027 Mattawan HS 1146 1146
+129 5157 Allen Park HS 1140 1140
+130 7665 Redford - Thurston HS 1123 1123
+131 9976 South Lyon East HS 1121 1121
+132 2823 Muskegon - Reeths-Puffer HS 1118 1118
+133 6378 Lowell HS 1107 1107
+134 4142 Grand Rapids - Northview HS 1102 1102
+135 7640 Gibraltar - OA Carlson HS 1093 1093
+136 7434 Muskegon HS 1082 1082
+137 7517 Cedar Springs HS 1074 1074
+138 5834 Mt Pleasant HS 1072 1072
+139 3367 Greenville HS 1068 1068
+140 2492 Auburn Hills - Avondale HS 1055 1055
+141 2385 Orchard Lake - St Mary Preparatory HS 523 1046
+142 4266 Holly HS 1042 1042
+143 7046 St Clair Shores - Lake Shore HS 1039 1039
+144 9920 Zeeland West HS 1037 1037
+145 7987 Southgate Anderson HS 1034 1034
+146 5280 Grand Rapids - Kenowa Hills HS 1033 1033
+147 2328 Bloomfield Hills - Brother Rice HS 516 1032
+148 2708 St Joseph HS 1020 1020
+149 2055 River Rouge HS 1013 1013
+150 6114 Holland HS 1010 1010
+151 1354 DeWitt HS 1009 1009
+152 2501 Lansing - Waverly HS 999 999
+Enrollment Enrollment
+ID School Total Classification
+Class C 189– 398
+Class D 188 and below
+2021-22 MHSAA Enrollment List
+Procedures for determining classification are outlined on pages 104 - 105 of the 2020-21 MHSAA Handbook
+Class A 835 and above
+Class B 399 – 834
+153 1070 Ypsilanti Community 985 985
+154 6667 Sturgis HS 965 965
+155 1288 Coldwater HS 964 964
+156 4712 Flint - Kearsley HS 963 963
+157 2138 Mason HS 955 955
+158 7970 Melvindale HS 950 950
+159 7285 Jackson - Northwest HS 949 949
+160 3136 Petoskey HS 943 943
+161 6147 Detroit - Martin Luther King HS 941 941
+162 5388 Middleville - Thornapple Kellogg HS 939 939
+163 7847 Riverview Community HS 936 936
+164 2690 Marquette HS 934 934
+165 3813 Zeeland East HS 934 934
+166 5297 Richland - Gull Lake HS 933 933
+167 7946 East Grand Rapids HS 927 927
+168 1373 Pontiac HS 924 924
+169 3623 St Johns HS 922 922
+170 3284 Gaylord HS 901 901
+171 1494 Detroit - Mumford HS 900 900
+172 3870 Linden HS 890 890
+173 1370 Warren - Fitzgerald HS 881 881
+174 5875 Stevensville - Lakeshore HS 864 864
+175 7657 Garden City HS 859 859
+176 4200 Dearborn - Divine Child HS 850 850
+177 1032 Detroit - East English Village Preparatory Acad 849 849
+178 2781 Coopersville HS 847 847
+179 5272 Flint Southwestern Classical Academy 845 845
+180 2278 Haslett HS 845 845
+181 5198 Parma - Western HS 844 844
+182 1627 Trenton HS 841 841
+183 7343 Fowlerville HS 839 839
+184 2922 Marysville HS 837 837
+185 4357 Pinckney HS 837 837
+186 6072 Harper Woods HS 835 835
+187 2765 Lansing - Eastern HS 828 828
+188 7483 Battle Creek - Harper Creek HS 828 828
+189 1890 Eastpointe HS 827 827
+190 4068 Ionia HS 826 826
+Enrollment Enrollment
+ID School Total Classification
+Class C 189– 398
+Class D 188 and below
+2021-22 MHSAA Enrollment List
+Procedures for determining classification are outlined on pages 104 - 105 of the 2020-21 MHSAA Handbook
+Class A 835 and above
+Class B 399 – 834
+191 4687 Spring Lake HS 825 825
+192 2914 Cadillac HS 811 811
+193 3706 Clio HS 810 810
+194 8036 Wayland Union HS 810 810
+195 7211 Plainwell HS 808 808
+196 4217 Ortonville - Brandon HS 807 807
+197 1486 Niles HS 807 807
+198 4992 Detroit - Henry Ford HS 805 805
+199 1916 New Boston - Huron HS 804 804
+200 1651 Chelsea HS 803 803
+201 4175 Edwardsburg HS 803 803
+202 7203 Bloomfield Hills - Cranbrook Kingswood HS 798 798
+203 6171 Owosso HS 794 794
+204 7062 Grand Rapids Christian HS 787 787
+205 2740 St Clair HS 787 787
+206 4506 Ada - Forest Hills Eastern HS 783 783
+207 7855 Marshall HS 783 783
+208 4654 Carleton - Airport HS 779 779
+209 2410 Hastings HS 779 779
+210 1412 Hamilton HS 772 772
+211 5974 Sparta HS 771 771
+212 3160 Bloomfield Hills - Marian HS 385 770
+213 1610 Vicksburg HS 766 766
+214 6683 Fruitport HS 764 764
+215 1154 Ann Arbor - Washtenaw Technical Middle College 763 763
+216 2294 Adrian HS 759 759
+217 5248 Allendale HS 756 756
+218 1218 Harper Woods - Chandler Park Academy 755 755
+219 1247 Bay City - John Glenn HS 752 752
+220 3516 Charlotte HS 751 751
+221 8110 Wyoming - Godwin Heights HS 742 742
+222 4191 Madison Heights - Lamphere HS 730 730
+223 2550 Escanaba HS 727 727
+224 8028 Sault Ste Marie - Sault Area HS 719 719
+225 3350 Tecumseh HS 719 719
+226 8192 Goodrich HS 716 716
+227 5396 Livonia - Clarenceville HS 713 713
+228 7830 Lansing - JW Sexton HS 713 713
+Enrollment Enrollment
+ID School Total Classification
+Class C 189– 398
+Class D 188 and below
+2021-22 MHSAA Enrollment List
+Procedures for determining classification are outlined on pages 104 - 105 of the 2020-21 MHSAA Handbook
+Class A 835 and above
+Class B 399 – 834
+229 6205 Dearborn Heights - Annapolis HS 709 709
+230 4753 Saginaw - Arthur Hill HS 702 702
+231 5288 Detroit - Cesar Chavez Academy HS 702 702
+232 2047 Redford Union HS 698 698
+233 2716 Battle Creek - Pennfield HS 689 689
+234 6155 North Branch HS 686 686
+235 4340 Whitehall HS 685 685
+236 2518 Fremont HS 684 684
+237 1981 Ferndale HS 681 681
+238 2798 Ludington HS 678 678
+239 1255 Paw Paw HS 677 677
+240 3978 Eaton Rapids HS 674 674
+241 7137 Linden - Lake Fenton HS 672 672
+242 2261 Allegan HS 670 670
+243 2831 Wyoming - Kelloggsville HS 670 670
+244 2451 Milan HS 669 669
+245 4134 Three Rivers HS 669 669
+246 4984 Otsego HS 667 667
+247 1841 Croswell-Lexington HS 663 663
+248 2402 Romulus HS 663 663
+249 4092 Beverly Hills - Detroit Country Day HS 657 657
+250 6634 Holland Christian HS 643 643
+251 2303 Alma HS 640 640
+252 9213 Pontiac - Notre Dame Preparatory School 633 633
+253 1181 Romulus - Summit Academy North 632 632
+254 3895 Byron Center - South Christian HS 631 631
+255 7021 Benton Harbor HS 621 621
+256 3904 Hudsonville - Unity Christian HS 616 616
+257 7590 Freeland HS 615 615
+258 7186 Yale HS 612 612
+259 4968 Birch Run HS 609 609
+260 9478 Kentwood - Grand River Prep 608 608
+261 7277 Williamston HS 607 607
+262 4150 Cheboygan Area HS 605 605
+263 2484 Flint - Powers Catholic HS 603 603
+264 2468 Hazel Park HS 602 602
+265 1271 Bridgeport HS 599 599
+266 5594 Armada HS 598 598
+Enrollment Enrollment
+ID School Total Classification
+Class C 189– 398
+Class D 188 and below
+2021-22 MHSAA Enrollment List
+Procedures for determining classification are outlined on pages 104 - 105 of the 2020-21 MHSAA Handbook
+Class A 835 and above
+Class B 399 – 834
+267 5181 Muskegon - Orchard View HS 594 594
+268 9833 Detroit - Frontier International Academy 590 590
+269 1061 Grand Rapids - West Michigan Aviation Academy 589 589
+270 1528 Grosse Ile HS 588 588
+271 2757 Saginaw - Swan Valley HS 586 586
+272 8085 Detroit - Cody HS 579 579
+273 4282 Imlay City HS 573 573
+274 6337 Howard City - Tri County Area HS 573 573
+275 5958 Macomb - Lutheran North 572 572
+276 2971 West Branch - Ogemaw Heights HS 572 572
+277 1602 Big Rapids HS 571 571
+278 3425 Kingsford HS 570 570
+279 4902 Belding Area HS 569 569
+280 4943 Flat Rock HS 569 569
+281 7491 Newport - Jefferson HS 569 569
+282 3862 Detroit - Edwin Denby HS 568 568
+283 4415 Muskegon - Oakridge HS 568 568
+284 6238 Grand Rapids - Catholic Central HS 567 567
+285 7723 Frankenmuth HS 567 567
+286 7104 Portland HS 567 567
+287 3821 Warren - Lincoln HS 555 555
+288 1123 Corunna HS 550 550
+289 4488 Detroit - University Prep Academy 548 548
+290 7756 Grant HS 546 546
+291 4522 Warren - Regina HS 273 546
+292 6106 Essexville - Garber HS 542 542
+293 2006 Comstock Park HS 535 535
+294 8143 Midland - Bullock Creek HS 530 530
+295 1585 Marine City HS 528 528
+296 5801 Lake Odessa - Lakewood HS 525 525
+297 6782 South Haven HS 524 524
+298 6411 Center Line HS 522 522
+299 4365 Dowagiac Union HS 518 518
+300 9887 Dearborn - Henry Ford Academy 510 510
+301 1113 Detroit - Cornerstone Health & Technology HS 380 506
+302 2352 St Clair Shores - South Lake HS 505 505
+303 1191 Redford - Westfield Preparatory HS 505 505
+304 1023 Wixom - St Catherine of Siena Academy 251 502
+Enrollment Enrollment
+ID School Total Classification
+Class C 189– 398
+Class D 188 and below
+2021-22 MHSAA Enrollment List
+Procedures for determining classification are outlined on pages 104 - 105 of the 2020-21 MHSAA Handbook
+Class A 835 and above
+Class B 399 – 834
+305 5487 Wyoming - Lee HS 501 501
+306 9714 Detroit - University Prep Art & Design 497 497
+307 6502 Carrollton HS 495 495
+308 1060 Detroit - University Prep Science & Math HS 494 494
+309 3887 Remus - Chippewa Hills HS 492 492
+310 2253 Gladwin HS 492 492
+311 1346 Berrien Springs HS 491 491
+312 1057 Shepherd HS 489 489
+313 9145 Detroit - Communication Media Arts HS 488 488
+314 5339 Detroit - Old Redford Preparatory HS 488 488
+315 4844 Hopkins HS 487 487
+316 4241 Saginaw HS 487 487
+317 1305 Kingsley Area HS 486 486
+318 6436 Olivet HS 485 485
+319 6535 Parchment HS 485 485
+320 4563 Dundee HS 480 480
+321 1621 Ferndale - University HS 478 478
+322 3235 Flint - Hamady HS 476 476
+323 3788 Clare HS 469 469
+324 1148 Richmond HS 469 469
+325 5867 Newaygo HS 467 467
+326 5826 Grand Rapids - West Catholic HS 466 466
+327 8184 Ann Arbor - Father Gabriel Richard HS 462 462
+328 4885 Onsted HS 458 458
+329 3012 Standish-Sterling HS 455 455
+330 4010 Montague HS 453 453
+331 3383 Ovid-Elsie HS 452 452
+332 5603 Mt Morris (EAJ) HS 451 451
+333 1726 Stanton - Central Montcalm HS 450 450
+334 2947 Manistee HS 450 450
+335 5636 Houghton HS 449 449
+336 5165 Durand Area HS 447 447
+337 5685 Detroit - Pershing HS 447 447
+338 6254 Detroit - Osborn HS 446 446
+339 1296 Detroit - Southeastern HS 445 445
+340 1109 Detroit School of Arts 440 440
+341 2435 Lansing Catholic HS 439 439
+342 4836 Ida HS 438 438
+Enrollment Enrollment
+ID School Total Classification
+Class C 189– 398
+Class D 188 and below
+2021-22 MHSAA Enrollment List
+Procedures for determining classification are outlined on pages 104 - 105 of the 2020-21 MHSAA Handbook
+Class A 835 and above
+Class B 399 – 834
+343 4786 Almont HS 437 437
+344 3053 Boyne City HS 436 436
+345 4348 Dearborn - Advanced Technology Academy 435 435
+346 1668 Algonac HS 433 433
+347 5041 Hillsdale HS 429 429
+348 1028 Detroit - Jalen Rose Leadership Academy 425 425
+349 6907 Kalkaska HS 425 425
+350 7608 Stockbridge HS 424 424
+351 9057 Detroit Collegiate Prep @ Northwestern 422 422
+352 1767 Chesaning HS 421 421
+353 9060 Detroit Edison PSA Early College of Excellence 420 420
+354 7806 Clawson HS 418 418
+355 5379 Warren - Michigan Collegiate HS 417 417
+356 5710 Negaunee HS 416 416
+357 5033 Reed City HS 416 416
+358 6931 Constantine HS 411 411
+359 6460 Otisville - LakeVille Memorial HS 410 410
+360 4126 Coloma HS 409 409
+361 2864 Kalamazoo - Comstock HS 408 408
+362 3474 Jonesville HS 406 406
+363 1684 Dearborn Heights - Robichaud HS 406 406
+364 5883 Benzonia - Benzie Central HS 403 403
+365 1085 Taylor Preparatory HS 403 403
+366 1932 Ecorse HS 402 402
+367 6130 Gladstone HS 402 402
+368 7871 Michigan Center HS 401 401
+369 5421 Fennville HS 400 400
+370 3598 Caro HS 399 399
+371 1817 Shelby HS 399 399
+372 5578 Watervliet HS 399 399
+373 1635 Clinton HS 397 397
+374 1783 Elk Rapids HS 396 396
+375 3805 Hart HS 396 396
+376 3639 Dearborn Heights - Star International Academy 395 395
+377 1111 Canton Preparatory HS 392 392
+378 1453 Brooklyn - Columbia Central HS 391 391
+379 5314 Grayling HS 390 390
+380 5966 Sanford - Meridian Early College HS 390 390
