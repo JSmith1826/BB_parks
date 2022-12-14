@@ -1,3 +1,14 @@
+### Idea to start with
+
+convert all of the negative values in the coordinates to positive
+    should be able to do it with a lambda function
+    this may be whats causing the issue with the max distance calculation
+    the min distance function if working though I need to check the projection and ration again because the distances seem a little shorter than expected
+
+
+## End of the night Tuesday 12-13
+
+
 ## Idea for how to calculate distances
 
 Need to convert my fop polygons into linestrings that only have the points from the outside wall.
