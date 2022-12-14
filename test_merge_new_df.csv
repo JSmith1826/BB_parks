@@ -1,773 +1,160 @@
 ,school_id,school_name,enrollment_total,enrollment_classification,division,level,Unnamed: 0,field,home_plate,foul_ft,fop_ft,foul_pct
-0,9448,Macomb - Dakota HS,2876,2876,A,high_school,,,,,,
 1,2237,Grand Blanc HS,2812,2812,A,high_school,102.0,Grand Blanc,"-83.6283145,42.9187188,0",26521.945922898336,93196.203562455,22.15365509483014
-2,5792,East Kentwood HS,2678,2678,A,high_school,,,,,,
-3,6980,Dearborn - Fordson HS,2613,2613,A,high_school,,,,,,
-4,3020,Shelby Township - Utica Eisenhower HS,2555,2555,A,high_school,,,,,,
 5,5628,Northville HS,2509,2509,A,high_school,174.0,Northville HS,"-83.49344499999999,42.4123981,0",28783.62472174631,95926.11183605649,23.08049516920047
 6,4183,Rockford HS,2480,2480,A,high_school,205.0,Rockford,"-85.56869709999999,43.0900641,0",33509.41989004341,99484.05650413068,25.196288418483157
-7,4893,Detroit - Cass Technical HS,2452,2452,A,high_school,,,,,,
-8,2666,Sterling Heights - Utica Stevenson HS,2433,2433,A,high_school,,,,,,
-9,1874,Clinton Township - Chippewa Valley HS,2386,2386,A,high_school,,,,,,
 10,5074,Howell HS,2375,2375,A,high_school,127.0,Howell,"-83.9426426,42.6179456,0",21113.74457311512,92971.30237110773,18.50702185663105
 11,3953,Lake Orion HS,2309,2309,A,high_school,146.0,Lake Orion,"-83.2369353,42.7539465,0",32957.70367126159,90213.89902884109,26.75755040023857
-12,7038,Oxford HS,2299,2299,A,high_school,,,,,,
-13,1742,Troy HS,2285,2285,A,high_school,,,,,,
-14,2856,Clarkston HS,2250,2250,A,high_school,,,,,,
-15,3680,Ann Arbor - Pioneer HS,2185,2185,A,high_school,,,,,,
 16,3747,Canton - Salem HS,2183,2183,A,high_school,195.0,Plymouth-Canton-Salem,"-83.49864049999999,42.3483182,0",30570.45528938288,92980.9777129216,24.7431005424378
-17,2839,Canton - Plymouth HS,2140,2140,A,high_school,,,,,,
 18,5116,Canton HS,2127,2127,A,high_school,50.0,Canton High School,"-83.49151519999999,42.3441818,0",34332.1924131382,96250.28948638034,26.291575955461127
-19,6485,Holland - West Ottawa HS,2124,2124,A,high_school,,,,,,
-20,7376,Dearborn HS,2075,2075,A,high_school,,,,,,
 21,5140,West Bloomfield HS,2052,2052,A,high_school,236.0,West Bloomfield HS,"-83.3594581,42.5673665,0",23398.92394806096,95260.59986142132,19.719381299414177
-22,1016,Brighton HS,2045,2045,A,high_school,,,,,,
 23,1833,Novi HS,2033,2033,A,high_school,176.0,Novi HS,"-83.4924439,42.4615268,0",23776.27840342033,89712.79508616617,20.950279769093356
 24,8077,Hudsonville HS,2026,2026,A,high_school,130.0,Hudsonville High School,"-85.87544920000001,42.9134789,0",30486.64898665078,96953.2158959621,23.92238018671204
 25,8077,Hudsonville HS,2026,2026,A,high_school,131.0,Hudsonville HS - Field ,"-85.8768694,42.9142415,0",31074.669080793297,93415.48668502668,24.96154727225842
-26,4101,Grand Haven HS,1944,1944,A,high_school,,,,,,
-27,6832,Hartland HS,1938,1938,A,high_school,,,,,,
-28,7541,Grand Rapids - Union HS,1908,1908,A,high_school,,,,,,
-29,1147,Southfield HS for the Arts & Technology,1893,1893,A,high_school,,,,,,
-30,3086,Fair Haven - Anchor Bay HS,1882,1882,A,high_school,,,,,,
 31,4638,Novi - Detroit Catholic Central HS,933,1866,A,high_school,75.0,Detroit Catholic Central - Field ,"-83.5440067,42.4880269,0",33484.08651521486,90187.56369357584,27.074989667142628
 32,4638,Novi - Detroit Catholic Central HS,933,1866,A,high_school,76.0,Detroit Catholic Central HS - Novi,"-83.54344949999999,42.488053,0",18311.14016986226,96536.82368316704,15.943809150412966
-33,1825,Ann Arbor - Huron HS,1860,1860,A,high_school,,,,,,
-34,1069,Bloomfield Hills HS,1851,1851,A,high_school,,,,,,
-35,3730,Monroe HS,1838,1838,A,high_school,,,,,,
-36,4555,Macomb - L'Anse Creuse North HS,1834,1834,A,high_school,,,,,,
-37,7450,Utica HS,1828,1828,A,high_school,,,,,,
-38,7013,Detroit - Western International HS,1807,1807,A,high_school,,,,,,
-39,3103,Davison HS,1787,1787,A,high_school,,,,,,
-40,1957,Troy - Athens HS,1775,1775,A,high_school,,,,,,
-41,6510,Sterling Heights - Utica Ford II HS,1760,1760,A,high_school,,,,,,
-42,6576,Grandville HS,1751,1751,A,high_school,,,,,,
 43,7632,Holt HS,1745,1745,A,high_school,121.0,Holt High School,"-84.57995029999999,42.6367415,0",38310.321637456,95405.74017133722,28.65050100880005
 44,7632,Holt HS,1745,1745,A,high_school,122.0,Holt HS - Field ,"-84.5796448,42.6372277,0",39740.353989837626,98054.46889728654,28.840237359564146
-45,6584,Saline HS,1743,1743,A,high_school,,,,,,
-46,1086,Lapeer HS,1732,1732,A,high_school,,,,,,
-47,7748,Belleville HS,1730,1730,A,high_school,,,,,,
-48,6551,Kalamazoo - Loy Norrix HS,1722,1722,A,high_school,,,,,,
-49,6824,Rochester Hills - Rochester HS,1721,1721,A,high_school,,,,,,
-50,1170,Taylor HS,1720,1720,A,high_school,,,,,,
 51,3945,Kalamazoo Central HS,1687,1687,A,high_school,138.0,Kalamazoo (Growlers),"-85.5621405,42.2904771,0",28703.903797887047,99711.97972311232,22.35230020684568
 52,3945,Kalamazoo Central HS,1687,1687,A,high_school,139.0,Kalamazoo College,"-85.6092979,42.2877622,0",30733.438083660298,109771.80756361186,21.873516495472547
-53,6188,Livonia - Stevenson HS,1673,1673,A,high_school,,,,,,
-54,6023,Washington - Romeo HS,1658,1658,A,high_school,,,,,,
 55,6213,Grand Ledge HS,1653,1653,A,high_school,103.0,Grand Ledge,"-84.75398939999999,42.7472938,0",28836.4431519731,79360.8768110812,26.651716661576984
 56,6213,Grand Ledge HS,1653,1653,A,high_school,104.0,Grand Ledge Bridge St (u),"-84.74489749999999,42.7543876,0",11531.24657854607,37085.62343325263,23.718611617217604
 57,6213,Grand Ledge HS,1653,1653,A,high_school,105.0,Grand Ledge Hayes (u),"-84.7006386,42.7518189,0",8451.511666590863,43892.76376488105,16.146009466986342
 58,6213,Grand Ledge HS,1653,1653,A,high_school,106.0,Grand Ledge JV,"-84.7588678,42.7462458,0",23246.968137460888,70056.74482407526,24.91537303241544
-59,9731,Traverse City West HS,1629,1629,A,high_school,,,,,,
 60,4662,Brownstown Township - Woodhaven HS,1626,1626,A,high_school,46.0,Brownstone Woodhaven HS,"-83.26982889999999,42.121292,0",35410.33246977381,85450.42450669137,29.298453323992625
-61,2748,Commerce Township - Walled Lake Northern HS,1621,1621,A,high_school,,,,,,
-62,2815,Rochester Hills - Stoney Creek HS,1619,1619,A,high_school,,,,,,
-63,2032,Ann Arbor - Skyline HS,1588,1588,A,high_school,,,,,,
-64,4373,Dearborn - Edsel Ford HS,1563,1563,A,high_school,,,,,,
-65,4596,Westland - John Glenn HS,1555,1555,A,high_school,,,,,,
 66,6733,Rochester - Adams HS,1528,1528,A,high_school,202.0,Rochester Adams,"-83.19984239999999,42.6972168,0",29388.40555957585,93346.11326287108,23.944694484923502
 67,3607,Jenison HS,1508,1508,A,high_school,135.0,Jenison High School,"-85.837665,42.917629,0",31315.79972221289,98281.33664564944,24.163959636671898
-68,6898,Royal Oak HS,1505,1505,A,high_school,,,,,,
-69,6948,Fraser HS,1503,1503,A,high_school,,,,,,
-70,1404,Wayne Memorial HS,1488,1488,A,high_school,,,,,,
-71,1313,White Lake - Lakeland HS,1486,1486,A,high_school,,,,,,
-72,5784,Farmington HS,1479,1479,A,high_school,,,,,,
-73,4324,Caledonia HS,1476,1476,A,high_school,,,,,,
-74,5082,Walled Lake Central HS,1473,1473,A,high_school,,,,,,
-75,3111,Warren Mott HS,1460,1460,A,high_school,,,,,,
-76,3714,Sterling Heights HS,1459,1459,A,high_school,,,,,,
-77,2146,St Clair Shores - Lakeview HS,1442,1442,A,high_school,,,,,,
 78,6007,Okemos HS,1427,1427,A,high_school,182.0,Okemos HS,"-84.4559105,42.6876301,0",27678.98938817087,88218.98883944983,23.88220209830584
-79,6080,Highland - Milford HS,1425,1425,A,high_school,,,,,,
-80,4233,Traverse City Central HS,1417,1417,A,high_school,,,,,,
-81,2022,Harrison Township - L'Anse Creuse HS,1401,1401,A,high_school,,,,,,
 82,4547,Saginaw - Heritage HS,1398,1398,A,high_school,207.0,Saginaw Heritage HS,"-84.0129481,43.4554596,0",36530.40682695454,103302.1499513998,26.124393108865284
 83,4547,Saginaw - Heritage HS,1398,1398,A,high_school,209.0,Saginaw Heritage HS - Field ,"-84.0135834,43.4547419,0",20533.80242231441,98696.82566479118,17.221919192871443
 84,4547,Saginaw - Heritage HS,1398,1398,A,high_school,210.0,Saginaw Heritage HS Field ,"-84.0135834,43.4547419,0",20533.80242231441,98696.82566479118,17.221919192871443
-85,1437,Portage Central HS,1393,1393,A,high_school,,,,,,
-86,5842,Dearborn Heights - Crestwood HS,1388,1388,A,high_school,,,,,,
-87,3648,Detroit - U of D Jesuit HS,692,1384,B,high_school,,,,,,
 88,3508,Livonia - Franklin HS,1379,1379,A,high_school,156.0,Livonia Franklin HS,"-83.3473911,42.356909,0",19946.90059310669,88016.32906177112,18.47564273213225
-89,2443,Grosse Pointe Farms - Grosse Pointe South HS,1373,1373,A,high_school,,,,,,
-90,6122,Temperance - Bedford HS,1371,1371,A,high_school,,,,,,
-91,4935,Berkley HS,1370,1370,A,high_school,,,,,,
-92,6626,Birmingham - Seaholm HS,1345,1345,A,high_school,,,,,,
-93,5025,Waterford Mott HS,1343,1343,A,high_school,,,,,,
-94,3375,Farmington Hills - North Farmington HS,1339,1339,A,high_school,,,,,,
 95,2583,Battle Creek - Lakeview HS,1338,1338,A,high_school,34.0,Battle Creek (Bailey),"-85.1503842,42.3416038,0",32229.586476090477,103628.38468002064,23.72299998434117
 96,2583,Battle Creek - Lakeview HS,1338,1338,A,high_school,35.0,Battle Creek lakeview,"-85.2302768,42.2937644,0",39069.38689107569,95422.21580809489,29.049684966923685
-97,5850,Wyandotte - Roosevelt HS,1322,1322,A,high_school,,,,,,
-98,2336,Flushing HS,1320,1320,A,high_school,,,,,,
-99,2996,Lincoln Park HS,1308,1308,A,high_school,,,,,,
-100,7797,Farmington Hills - Mercy HS,650,1300,B,high_school,,,,,,
-101,6295,South Lyon HS,1297,1297,A,high_school,,,,,,
-102,4381,Livonia - Churchill HS,1294,1294,A,high_school,,,,,,
-103,1172,Warren - Cousino HS,1288,1288,A,high_school,,,,,,
-104,5990,Midland HS,1281,1281,A,high_school,,,,,,
-105,2113,Midland - HH Dow HS,1269,1269,A,high_school,,,,,,
-106,5256,Bay City - Central HS,1263,1263,A,high_school,,,,,,
-107,6477,Ypsilanti - Lincoln HS,1247,1247,A,high_school,,,,,,
 108,7962,Muskegon - Mona Shores HS,1240,1240,A,high_school,172.0,Muskegon Mona Shores,"-86.271558,43.1845307,0",32818.44376171392,90825.495286823,26.542703196176003
-109,2963,Beverly Hills - Wylie E Groves HS,1230,1230,A,high_school,,,,,,
 110,4794,Portage Northern HS,1227,1227,A,high_school,196.0,Portage Northern High School,"-85.59873090000001,42.2356888,0",24002.983479207447,89004.59756166955,21.2401533225679
-111,3268,Port Huron Northern HS,1221,1221,A,high_school,,,,,,
-112,1040,Roseville HS,1221,1221,A,high_school,,,,,,
 113,3573,Oak Park HS,1215,1215,A,high_school,184.0,Olds Park,"-84.54483380000001,42.7352399,0",22689.715362206924,104238.88716317108,17.875967205792218
 114,3920,East Lansing HS,1211,1211,A,high_school,81.0,East Lansing High School,"-84.4568141,42.7419931,0",28064.48434984461,89645.335974471,23.84209259050857
-115,4778,Port Huron HS,1211,1211,A,high_school,,,,,,
-116,1033,Wyoming HS,1205,1205,A,high_school,,,,,,
-117,5306,Warren - De La Salle Collegiate,602,1204,B,high_school,,,,,,
-118,6527,Waterford Kettering HS,1200,1200,A,high_school,,,,,,
-119,2633,Jackson HS,1195,1195,A,high_school,,,,,,
-120,2542,Byron Center HS,1189,1189,A,high_school,,,,,,
-121,2071,Dexter HS,1188,1188,A,high_school,,,,,,
-122,8127,Alpena HS,1180,1180,A,high_school,,,,,,
-123,1387,Lansing - Everett HS,1178,1178,A,high_school,,,,,,
-124,6964,Grand Rapids - Forest Hills Northern HS,1177,1177,A,high_school,,,,,,
-125,3854,Walled Lake Western HS,1177,1177,A,high_school,,,,,,
-126,1791,Warren Woods-Tower HS,1174,1174,A,high_school,,,,,,
 127,7822,Grosse Pointe North HS,1171,1171,A,high_school,108.0,Gross Pointe North High School,"-82.8911176,42.4379668,0",19074.693294236225,80421.3129844877,19.171315520746816
 128,7822,Grosse Pointe North HS,1171,1171,A,high_school,110.0,Gross Pointe South,"-82.9025228,42.3918844,0",21526.507732963764,83785.35245818367,20.440724998961983
-129,5727,Detroit - Renaissance HS,1171,1171,A,high_school,,,,,,
-130,5355,Grand Rapids - Forest Hills Central HS,1165,1165,A,high_school,,,,,,
-131,4803,Swartz Creek HS,1164,1164,A,high_school,,,,,,
-132,7335,Grand Rapids - Ottawa Hills HS,1159,1159,A,high_school,,,,,,
-133,5438,Fenton HS,1158,1158,A,high_school,,,,,,
-134,4290,Flint - Carman-Ainsworth HS,1155,1155,A,high_school,,,,,,
-135,3524,Auburn - Bay City Western HS,1153,1153,A,high_school,,,,,,
 136,5925,Hamtramck HS,1152,1152,A,high_school,113.0,Hamtramck Historical,"-83.0505764,42.390044,0",46502.84440086308,123991.02353122948,27.275376507608524
-137,2682,Battle Creek - Central HS,1146,1146,A,high_school,,,,,,
-138,4027,Mattawan HS,1146,1146,A,high_school,,,,,,
 139,5157,Allen Park HS,1140,1140,A,high_school,28.0,Allen Park High School,"-83.2273711,42.2455509,0",21933.08595753368,94654.97399036612,18.81246327225533
-140,7665,Redford - Thurston HS,1123,1123,A,high_school,,,,,,
-141,9976,South Lyon East HS,1121,1121,A,high_school,,,,,,
-142,2823,Muskegon - Reeths-Puffer HS,1118,1118,A,high_school,,,,,,
-143,6378,Lowell HS,1107,1107,A,high_school,,,,,,
-144,4142,Grand Rapids - Northview HS,1102,1102,A,high_school,,,,,,
-145,7640,Gibraltar - OA Carlson HS,1093,1093,A,high_school,,,,,,
-146,7434,Muskegon HS,1082,1082,A,high_school,,,,,,
-147,7517,Cedar Springs HS,1074,1074,A,high_school,,,,,,
 148,5834,Mt Pleasant HS,1072,1072,A,high_school,169.0,Mt Pleasant HS,"-84.75913269999999,43.5913032,0",28077.42628253428,94255.09172581288,22.951727586134098
-149,3367,Greenville HS,1068,1068,A,high_school,,,,,,
-150,2492,Auburn Hills - Avondale HS,1055,1055,A,high_school,,,,,,
 151,2385,Orchard Lake - St Mary Preparatory HS,523,1046,B,high_school,186.0,Orchard Lake St Marys,"-83.35411000000001,42.5916394,0",27390.759279190213,87970.71047211412,23.74342086507659
-152,4266,Holly HS,1042,1042,A,high_school,,,,,,
-153,7046,St Clair Shores - Lake Shore HS,1039,1039,A,high_school,,,,,,
-154,9920,Zeeland West HS,1037,1037,A,high_school,,,,,,
-155,7987,Southgate Anderson HS,1034,1034,A,high_school,,,,,,
 156,5280,Grand Rapids - Kenowa Hills HS,1033,1033,A,high_school,107.0,Grand Rapids Kenowa Hills,"-85.7475037,43.0343372,0",37757.91941080423,93309.5224618724,28.80800820655641
-157,2328,Bloomfield Hills - Brother Rice HS,516,1032,B,high_school,,,,,,
-158,2708,St Joseph HS,1020,1020,A,high_school,,,,,,
-159,2055,River Rouge HS,1013,1013,A,high_school,,,,,,
-160,6114,Holland HS,1010,1010,A,high_school,,,,,,
-161,1354,DeWitt HS,1009,1009,A,high_school,,,,,,
-162,2501,Lansing - Waverly HS,999,999,A,high_school,,,,,,
-163,1070,Ypsilanti Community,985,985,A,high_school,,,,,,
-164,6667,Sturgis HS,965,965,A,high_school,,,,,,
 165,1288,Coldwater HS,964,964,A,high_school,62.0,Coldwater Heritage Park,"-85.02037970000001,41.9515984,0",44480.753133981045,89491.64919183984,33.20142981821275
-166,4712,Flint - Kearsley HS,963,963,A,high_school,,,,,,
 167,2138,Mason HS,955,955,A,high_school,162.0,Mason High School,"-84.4345611,42.570571,0",24873.84907599369,96592.16214295548,20.47803235355873
-168,7970,Melvindale HS,950,950,A,high_school,,,,,,
-169,7285,Jackson - Northwest HS,949,949,A,high_school,,,,,,
 170,3136,Petoskey HS,943,943,A,high_school,193.0,Petoskey High School,"-84.93868740000001,45.36723030000001,0",30314.74365884388,91933.29179124236,24.79773482431246
-171,6147,Detroit - Martin Luther King HS,941,941,A,high_school,,,,,,
-172,5388,Middleville - Thornapple Kellogg HS,939,939,A,high_school,,,,,,
-173,7847,Riverview Community HS,936,936,A,high_school,,,,,,
-174,2690,Marquette HS,934,934,A,high_school,,,,,,
-175,3813,Zeeland East HS,934,934,A,high_school,,,,,,
-176,5297,Richland - Gull Lake HS,933,933,A,high_school,,,,,,
-177,7946,East Grand Rapids HS,927,927,A,high_school,,,,,,
-178,1373,Pontiac HS,924,924,A,high_school,,,,,,
 179,3623,St Johns HS,922,922,A,high_school,221.0,St Johns High School,"-84.5679294,42.9878827,0",37093.807588580414,96143.76930942108,27.84034988641167
-180,3284,Gaylord HS,901,901,A,high_school,,,,,,
-181,1494,Detroit - Mumford HS,900,900,A,high_school,,,,,,
-182,3870,Linden HS,890,890,A,high_school,,,,,,
-183,1370,Warren - Fitzgerald HS,881,881,A,high_school,,,,,,
 184,5875,Stevensville - Lakeshore HS,864,864,A,high_school,222.0,Stevenson Lakeshore HS,"-86.4944752,42.0092821,0",22071.681526577908,89254.4174887199,19.826151928259826
-185,7657,Garden City HS,859,859,A,high_school,,,,,,
-186,4200,Dearborn - Divine Child HS,850,850,A,high_school,,,,,,
-187,1032,Detroit - East English Village Preparatory Acad,849,849,A,high_school,,,,,,
-188,2781,Coopersville HS,847,847,A,high_school,,,,,,
-189,5272,Flint Southwestern Classical,845,845,A,high_school,,,,,,
 190,2278,Haslett HS,845,845,A,high_school,118.0,Haslett High School,"-84.4071076,42.7419614,0",30038.893070413505,86400.49907233364,25.797878636799965
-191,5198,Parma - Western HS,844,844,A,high_school,,,,,,
 192,1627,Trenton HS,841,841,A,high_school,225.0,Trenton High School,"-83.20306840000001,42.1421346,0",23233.94685524476,91703.36302254794,20.214451582300207
 193,7343,Fowlerville HS,839,839,A,high_school,91.0,Fowlerville HS,"-84.0655802,42.6688057,0",19823.269989720982,94791.45491374428,17.295570011983383
-194,2922,Marysville HS,837,837,A,high_school,,,,,,
-195,4357,Pinckney HS,837,837,A,high_school,,,,,,
-196,6072,Harper Woods HS,835,835,A,high_school,,,,,,
-197,2765,Lansing - Eastern HS,828,828,B,high_school,,,,,,
-198,7483,Battle Creek - Harper Creek HS,828,828,B,high_school,,,,,,
-199,1890,Eastpointe HS,827,827,B,high_school,,,,,,
 200,4068,Ionia HS,826,826,B,high_school,133.0,Ionia High School,"-85.0645777,42.9523427,0",30676.04206341846,88463.37391450717,25.74802118310045
-201,4687,Spring Lake HS,825,825,B,high_school,,,,,,
-202,2914,Cadillac HS,811,811,B,high_school,,,,,,
-203,3706,Clio HS,810,810,B,high_school,,,,,,
-204,8036,Wayland Union HS,810,810,B,high_school,,,,,,
-205,7211,Plainwell HS,808,808,B,high_school,,,,,,
-206,4217,Ortonville - Brandon HS,807,807,B,high_school,,,,,,
-207,1486,Niles HS,807,807,B,high_school,,,,,,
-208,4992,Detroit - Henry Ford HS,805,805,B,high_school,,,,,,
-209,1916,New Boston - Huron HS,804,804,B,high_school,,,,,,
-210,1651,Chelsea HS,803,803,B,high_school,,,,,,
 211,4175,Edwardsburg HS,803,803,B,high_school,85.0,Edwardsburg HS,"-86.091742,41.7896252,0",30166.427017300903,85216.1049591399,26.14470882252817
-212,7203,Bloomfield Hills - Cranbrook Kingswood HS,798,798,B,high_school,,,,,,
 213,6171,Owosso HS,794,794,B,high_school,188.0,Owosso HS,"-84.1622172,43.0168905,0",20192.804706417708,79371.66582433488,20.28113502615447
-214,7062,Grand Rapids Christian HS,787,787,B,high_school,,,,,,
 215,2740,St Clair HS,787,787,B,high_school,218.0,St Clair HS,"-82.5113899,42.824698,0",31500.852625298307,87273.27036661131,26.521646156414057
 216,4506,Ada - Forest Hills Eastern HS,783,783,B,high_school,90.0,Forrest Hills Eastern,"-85.5286469,43.0058274,0",34527.562953791654,98243.77763101638,26.00528306915534
-217,7855,Marshall HS,783,783,B,high_school,,,,,,
 218,4654,Carleton - Airport HS,779,779,B,high_school,51.0,Carleton Airport High School,"-83.37652180000001,42.0373919,0",21261.72607914661,88074.04986926616,19.44626623327611
-219,2410,Hastings HS,779,779,B,high_school,,,,,,
-220,1412,Hamilton HS,772,772,B,high_school,,,,,,
-221,5974,Sparta HS,771,771,B,high_school,,,,,,
-222,3160,Bloomfield Hills - Marian HS,385,770,C,high_school,,,,,,
-223,1610,Vicksburg HS,766,766,B,high_school,,,,,,
-224,6683,Fruitport HS,764,764,B,high_school,,,,,,
-225,1154,Ann Arbor - Washtenaw Technical Middle College,763,763,B,high_school,,,,,,
 226,2294,Adrian HS,759,759,B,high_school,22.0,Adrian College,"-84.0697145,41.901861,0",14280.35930219632,106000.2871108622,11.872532887091252
-227,5248,Allendale HS,756,756,B,high_school,,,,,,
-228,1218,Harper Woods - Chandler Park Academy,755,755,B,high_school,,,,,,
 229,1247,Bay City - John Glenn HS,752,752,B,high_school,38.0,Bay City john Glen,"-83.9280232,43.6193164,0",25783.119159698155,102941.3100908914,20.02970167341416
 230,3516,Charlotte HS,751,751,B,high_school,54.0,Charlotte High School,"-84.85511649999999,42.5604691,0",35678.82349914065,83501.23625230377,29.936906873138422
-231,8110,Wyoming - Godwin Heights HS,742,742,B,high_school,,,,,,
-232,4191,Madison Heights - Lamphere HS,730,730,B,high_school,,,,,,
-233,2550,Escanaba HS,727,727,B,high_school,,,,,,
-234,8028,Sault Ste Marie - Sault Area HS,719,719,B,high_school,,,,,,
-235,3350,Tecumseh HS,719,719,B,high_school,,,,,,
 236,8192,Goodrich HS,716,716,B,high_school,99.0,Goodrich HS,"-83.52947949999999,42.9168576,0",33688.103537484385,91639.68415324896,26.879995377094858
-237,5396,Livonia - Clarenceville HS,713,713,B,high_school,,,,,,
-238,7830,Lansing - JW Sexton HS,713,713,B,high_school,,,,,,
-239,6205,Dearborn Heights - Annapolis HS,709,709,B,high_school,,,,,,
-240,4753,Saginaw - Arthur Hill HS,702,702,B,high_school,,,,,,
-241,5288,Detroit - Cesar Chavez Academy HS,702,702,B,high_school,,,,,,
-242,2047,Redford Union HS,698,698,B,high_school,,,,,,
-243,2716,Battle Creek - Pennfield HS,689,689,B,high_school,,,,,,
-244,6155,North Branch HS,686,686,B,high_school,,,,,,
 245,4340,Whitehall HS,685,685,B,high_school,242.0,Whitehall High School,"-86.33278559999999,43.4045055,0",28215.49064787245,91519.09847435648,23.56502899848695
-246,2518,Fremont HS,684,684,B,high_school,,,,,,
-247,1981,Ferndale HS,681,681,B,high_school,,,,,,
-248,2798,Ludington HS,678,678,B,high_school,,,,,,
-249,1255,Paw Paw HS,677,677,B,high_school,,,,,,
 250,3978,Eaton Rapids HS,674,674,B,high_school,55.0,Eaton Rapid HS Field ,"-84.6350135,42.5110331,0",34106.7985222942,85396.33339927752,28.540505988310024
 251,3978,Eaton Rapids HS,674,674,B,high_school,83.0,Eaton Rapids High School,"-84.63514499999999,42.5118192,0",37223.00879161922,101498.29621420524,26.832943065274904
-252,7137,Linden - Lake Fenton HS,672,672,B,high_school,,,,,,
-253,2261,Allegan HS,670,670,B,high_school,,,,,,
-254,2831,Wyoming - Kelloggsville HS,670,670,B,high_school,,,,,,
-255,2451,Milan HS,669,669,B,high_school,,,,,,
-256,4134,Three Rivers HS,669,669,B,high_school,,,,,,
-257,4984,Otsego HS,667,667,B,high_school,,,,,,
-258,1841,Croswell-Lexington HS,663,663,B,high_school,,,,,,
-259,2402,Romulus HS,663,663,B,high_school,,,,,,
-260,4092,Beverly Hills - Detroit Country Day HS,657,657,B,high_school,,,,,,
 261,6634,Holland Christian HS,643,643,B,high_school,119.0,Holland Christian Baseball Field,"-86.1328152,42.7619603,0",32778.548515511866,95289.03131450692,25.59472784526584
-262,2303,Alma HS,640,640,B,high_school,,,,,,
-263,9213,Pontiac - Notre Dame Preparatory School,633,633,B,high_school,,,,,,
-264,1181,Romulus - Summit Academy North,632,632,B,high_school,,,,,,
-265,3895,Byron Center - South Christian HS,631,631,B,high_school,,,,,,
-266,7021,Benton Harbor HS,621,621,B,high_school,,,,,,
 267,3904,Hudsonville - Unity Christian HS,616,616,B,high_school,129.0,Hudsonville Christian HS,"-85.84562560000001,42.8840691,0",33791.305595847145,97983.24180507938,25.64327198410818
-268,7590,Freeland HS,615,615,B,high_school,,,,,,
-269,7186,Yale HS,612,612,B,high_school,,,,,,
-270,4968,Birch Run HS,609,609,B,high_school,,,,,,
-271,9478,Kentwood - Grand River Prep,608,608,B,high_school,,,,,,
 272,7277,Williamston HS,607,607,B,high_school,245.0,Williamston High School,"-84.28086999999999,42.6987035,0",31596.11321386098,90368.65273867156,25.9059351830822
 273,4150,Cheboygan Area HS,605,605,B,high_school,20.0,Cheboygan HS,"-84.49712839999999,45.6300425,0",28930.11925453668,94238.97678168614,23.48813150827105
-274,2484,Flint - Powers Catholic HS,603,603,B,high_school,,,,,,
-275,2468,Hazel Park HS,602,602,B,high_school,,,,,,
-276,1271,Bridgeport HS,599,599,B,high_school,,,,,,
-277,5594,Armada HS,598,598,B,high_school,,,,,,
-278,5181,Muskegon - Orchard View HS,594,594,B,high_school,,,,,,
-279,9833,Detroit - Frontier International Academy,590,590,B,high_school,,,,,,
-280,1061,Grand Rapids - West Michigan Aviation Academy,589,589,B,high_school,,,,,,
 281,1528,Grosse Ile HS,588,588,B,high_school,111.0,Grosse Ile High School,"-83.1458188,42.1340427,0",36064.37742136181,93916.64642600188,27.7458788628347
 282,2757,Saginaw - Swan Valley HS,586,586,B,high_school,211.0,Saginaw Swan Valley - Youth Field,"-84.08623729999999,43.4096575,0",14395.76681506989,56176.70076266475,20.39855953628537
 283,2757,Saginaw - Swan Valley HS,586,586,B,high_school,212.0,Saginaw Swan Valley High School,"-84.0822261,43.4116302,0",21585.14324105116,87095.00070496001,19.8611654873902
-284,8085,Detroit - Cody HS,579,579,B,high_school,,,,,,
-285,4282,Imlay City HS,573,573,B,high_school,,,,,,
-286,6337,Howard City - Tri County Area HS,573,573,B,high_school,,,,,,
-287,5958,Macomb - Lutheran North,572,572,B,high_school,,,,,,
-288,2971,West Branch - Ogemaw Heights HS,572,572,B,high_school,,,,,,
-289,1602,Big Rapids HS,571,571,B,high_school,,,,,,
-290,3425,Kingsford HS,570,570,B,high_school,,,,,,
-291,4902,Belding Area HS,569,569,B,high_school,,,,,,
-292,4943,Flat Rock HS,569,569,B,high_school,,,,,,
-293,7491,Newport - Jefferson HS,569,569,B,high_school,,,,,,
-294,3862,Detroit - Edwin Denby HS,568,568,B,high_school,,,,,,
-295,4415,Muskegon - Oakridge HS,568,568,B,high_school,,,,,,
-296,6238,Grand Rapids - Catholic Central HS,567,567,B,high_school,,,,,,
-297,7723,Frankenmuth HS,567,567,B,high_school,,,,,,
 298,7104,Portland HS,567,567,B,high_school,198.0,Portland High School,"-84.91802490000001,42.882565,0",39688.117941251214,88555.37103197309,30.947472077539636
-299,3821,Warren - Lincoln HS,555,555,B,high_school,,,,,,
-300,1123,Corunna HS,550,550,B,high_school,,,,,,
-301,4488,Detroit - University Prep Academy,548,548,B,high_school,,,,,,
-302,7756,Grant HS,546,546,B,high_school,,,,,,
-303,4522,Warren - Regina HS,273,546,C,high_school,,,,,,
 304,6106,Essexville - Garber HS,542,542,B,high_school,17.0,Essexville Garber HS,"-83.8341762,43.6056341,0",25204.308495758098,91284.19933622328,21.636733927532006
 305,2006,Comstock Park HS,535,535,B,high_school,64.0,Comerica Park,"-83.0489808,42.3394579,0",28154.590364332496,113641.24196682032,19.85572488377494
 306,8143,Midland - Bullock Creek HS,530,530,B,high_school,9.0,Bullock Creek HS - Midland,"-84.29441850000001,43.5717901,0",29072.807794037537,99260.194611535,22.654194360822597
-307,1585,Marine City HS,528,528,B,high_school,,,,,,
-308,5801,Lake Odessa - Lakewood HS,525,525,B,high_school,,,,,,
-309,6782,South Haven HS,524,524,B,high_school,,,,,,
-310,6411,Center Line HS,522,522,B,high_school,,,,,,
-311,4365,Dowagiac Union HS,518,518,B,high_school,,,,,,
-312,9887,Dearborn - Henry Ford Academy,510,510,B,high_school,,,,,,
-313,1113,Detroit - Cornerstone Health & Technology HS,380,506,C,high_school,,,,,,
-314,2352,St Clair Shores - South Lake HS,505,505,B,high_school,,,,,,
-315,1191,Redford - Westfield Preparatory HS,505,505,B,high_school,,,,,,
-316,1023,Wixom - St Catherine of Siena Academy,251,502,C,high_school,,,,,,
-317,5487,Wyoming - Lee HS,501,501,B,high_school,,,,,,
-318,9714,Detroit - University Prep Art & Design,497,497,B,high_school,,,,,,
-319,6502,Carrollton HS,495,495,B,high_school,,,,,,
-320,1060,Detroit - University Prep Science & Math HS,494,494,B,high_school,,,,,,
-321,3887,Remus - Chippewa Hills HS,492,492,B,high_school,,,,,,
 322,2253,Gladwin HS,492,492,B,high_school,98.0,Gladwin High School,"-84.4919148,43.9902464,0",26731.1271124326,93476.74989433846,22.23741719598533
-323,1346,Berrien Springs HS,491,491,B,high_school,,,,,,
-324,1057,Shepherd HS,489,489,B,high_school,,,,,,
-325,9145,Detroit - Communication Media Arts HS,488,488,B,high_school,,,,,,
-326,5339,Detroit - Old Redford Preparatory HS,488,488,B,high_school,,,,,,
-327,4844,Hopkins HS,487,487,B,high_school,,,,,,
-328,4241,Saginaw HS,487,487,B,high_school,,,,,,
-329,1305,Kingsley Area HS,486,486,B,high_school,,,,,,
-330,6436,Olivet HS,485,485,B,high_school,,,,,,
-331,6535,Parchment HS,485,485,B,high_school,,,,,,
-332,4563,Dundee HS,480,480,B,high_school,,,,,,
 333,1621,Ferndale - University HS,478,478,B,high_school,181.0,Oakland University,"-83.2113566,42.6733173,0",40414.31295895344,98649.59864624352,29.0616828567931
-334,3235,Flint - Hamady HS,476,476,B,high_school,,,,,,
 335,3788,Clare HS,469,469,B,high_school,58.0,Clare High School,"-84.7809457,43.8248348,0",19720.51683294228,93773.66822752485,17.375794911814765
 336,1148,Richmond HS,469,469,B,high_school,200.0,Richmond High School,"-82.7574992,42.8073051,0",32747.533802047703,88224.29391996656,27.070380284986268
-337,5867,Newaygo HS,467,467,B,high_school,,,,,,
 338,5826,Grand Rapids - West Catholic HS,466,466,B,high_school,100.0,GR West Catholic,"-85.712159,42.9943182,0",23865.53543635196,94829.16202346057,20.1066567817255
-339,8184,Ann Arbor - Father Gabriel Richard HS,462,462,B,high_school,,,,,,
 340,4885,Onsted HS,458,458,B,high_school,185.0,Onsted,"-84.19140640000001,41.99781,0",25174.166621196957,88631.03674766776,22.12040036482568
 341,3012,Standish-Sterling HS,455,455,B,high_school,11.0,Standish-Sterling HS,"-83.9548964,44.0156178,0",27613.119759138837,95494.59827167216,22.43004760451161
-342,4010,Montague HS,453,453,B,high_school,,,,,,
 343,3383,Ovid-Elsie HS,452,452,B,high_school,187.0,Ovid-Elsie,"-84.3932693,43.0477476,0",24768.03934011793,83750.42763476056,22.823801358944387
-344,5603,Mt Morris (EAJ) HS,451,451,B,high_school,,,,,,
-345,1726,Stanton - Central Montcalm HS,450,450,B,high_school,,,,,,
-346,2947,Manistee HS,450,450,B,high_school,,,,,,
 347,5636,Houghton HS,449,449,B,high_school,126.0,Houghton High School,"-88.56393780000001,47.10877110000001,0",32578.153350564637,92793.9452197411,25.98517032264206
-348,5165,Durand Area HS,447,447,B,high_school,,,,,,
-349,5685,Detroit - Pershing HS,447,447,B,high_school,,,,,,
-350,6254,Detroit - Osborn HS,446,446,B,high_school,,,,,,
 351,1296,Detroit - Southeastern HS,445,445,B,high_school,78.0,Detroit Western,"-83.0689599,42.3320337,0",28788.73856020944,108026.1609372498,21.04210774261766
-352,1109,Detroit School of Arts,440,440,B,high_school,,,,,,
 353,2435,Lansing Catholic HS,439,439,B,high_school,147.0,Lansing Catholic,"-84.5276463,42.7374459,0",18457.87596265828,88368.82360095721,17.27833588237609
-354,4836,Ida HS,438,438,B,high_school,,,,,,
-355,4786,Almont HS,437,437,B,high_school,,,,,,
 356,3053,Boyne City HS,436,436,B,high_school,0.0,Beal City HS,"-84.9127615,43.6741539,0",25698.31188574179,89488.15585159321,22.31018312354437
 357,3053,Boyne City HS,436,436,B,high_school,44.0,Boyne City County Park,"-84.9975093,45.2058653,0",21397.37510032968,92586.58269893956,18.77226893455604
-358,4348,Dearborn - Advanced Technology Academy,435,435,B,high_school,,,,,,
 359,1668,Algonac HS,433,433,B,high_school,27.0,Algonac High School,"-82.58239759999999,42.6286202,0",30426.88542675893,83361.73317020683,26.73983198137734
-360,5041,Hillsdale HS,429,429,B,high_school,,,,,,
-361,1028,Detroit - Jalen Rose Leadership Academy,425,425,B,high_school,,,,,,
-362,6907,Kalkaska HS,425,425,B,high_school,,,,,,
-363,7608,Stockbridge HS,424,424,B,high_school,,,,,,
-364,9057,Detroit Collegiate Prep @ Northwestern,422,422,B,high_school,,,,,,
 365,1767,Chesaning HS,421,421,B,high_school,7.0,Chesaning Union HS,"-84.1253816,43.1946837,0",42709.40335811998,93437.23628365758,31.370148738518186
 366,1767,Chesaning HS,421,421,B,high_school,56.0,Chesaning Union High School,"-84.12538549999999,43.1946838,0",42979.912493022566,94199.2011000167,31.331236488761977
 367,1767,Chesaning HS,421,421,B,high_school,57.0,Chesaning Union HS - Field ,"-84.1254496,43.1935652,0",34692.3341118101,83266.45368079984,29.41055495823225
-368,9060,Detroit Edison PSA Early College of Excellence,420,420,B,high_school,,,,,,
-369,7806,Clawson HS,418,418,B,high_school,,,,,,
-370,5379,Warren - Michigan Collegiate HS,417,417,B,high_school,,,,,,
-371,5710,Negaunee HS,416,416,B,high_school,,,,,,
-372,5033,Reed City HS,416,416,B,high_school,,,,,,
-373,6931,Constantine HS,411,411,B,high_school,,,,,,
-374,6460,Otisville - LakeVille Memorial HS,410,410,B,high_school,,,,,,
-375,4126,Coloma HS,409,409,B,high_school,,,,,,
-376,2864,Kalamazoo - Comstock HS,408,408,B,high_school,,,,,,
-377,3474,Jonesville HS,406,406,B,high_school,,,,,,
-378,1684,Dearborn Heights - Robichaud HS,406,406,B,high_school,,,,,,
-379,5883,Benzonia - Benzie Central HS,403,403,B,high_school,,,,,,
-380,1085,Taylor Preparatory HS,403,403,B,high_school,,,,,,
 381,1932,Ecorse HS,402,402,B,high_school,84.0,Ecorse High School,"-83.149694,42.2528271,0",29410.767721147306,78787.63831758185,27.182256003494032
 382,6130,Gladstone HS,402,402,B,high_school,96.0,Gladstone High School,"-87.03889359999999,45.85971000000001,0",22977.76982340443,84311.83807144007,21.4165847692585
 383,6130,Gladstone HS,402,402,B,high_school,97.0,Gladstone_youth,"-87.0393735,45.8605932,0",10047.92257065137,36433.68040463718,21.616988071588757
-384,7871,Michigan Center HS,401,401,B,high_school,,,,,,
-385,5421,Fennville HS,400,400,B,high_school,,,,,,
-386,3598,Caro HS,399,399,B,high_school,,,,,,
-387,1817,Shelby HS,399,399,B,high_school,,,,,,
 388,5578,Watervliet HS,399,399,B,high_school,18.0,Watervliet HS,"-86.24979620000001,42.1861372,0",29976.727597505032,90757.15620915356,24.82876111689516
 389,1635,Clinton HS,397,397,C,high_school,60.0,Clinton High School,"-83.9647212,42.0745982,0",23741.90416128249,91577.1360389714,20.588017486144683
-390,1783,Elk Rapids HS,396,396,C,high_school,,,,,,
-391,3805,Hart HS,396,396,C,high_school,,,,,,
-392,3639,Dearborn Heights - Star International Academy,395,395,C,high_school,,,,,,
-393,1111,Canton Preparatory HS,392,392,C,high_school,,,,,,
-394,1453,Brooklyn - Columbia Central HS,391,391,C,high_school,,,,,,
-395,5314,Grayling HS,390,390,C,high_school,,,,,,
-396,5966,Sanford - Meridian Early College HS,390,390,C,high_school,,,,,,
-397,4258,Quincy HS,390,390,C,high_school,,,,,,
-398,2170,Clinton Township - Clintondale HS,389,389,C,high_school,,,,,,
-399,1692,Adrian - Madison HS,388,388,C,high_school,,,,,,
-400,4439,Detroit - Voyageur College Prep,388,388,C,high_school,,,,,,
-401,2674,Grand Rapids - Covenant Christian HS,387,387,C,high_school,,,,,,
-402,7673,Erie-Mason HS,382,382,C,high_school,,,,,,
-403,5009,Lake City Area HS,382,382,C,high_school,,,,,,
-404,7120,Menominee HS,382,382,C,high_school,,,,,,
 405,7252,Blissfield HS,380,380,C,high_school,39.0,Blissfield,"-83.8684514,41.8222438,0",20396.018014204463,92349.49510549087,18.090314594205804
-406,4464,Millington HS,380,380,C,high_school,,,,,,
-407,5405,Pinconning Area HS,378,378,C,high_school,,,,,,
 408,6650,Buchanan HS,376,376,C,high_school,1.0,Buchanan HS,"-86.37097850000001,41.8239409,0",22659.935252631734,88476.13650535869,20.389361342531476
-409,7293,Calumet HS,376,376,C,high_school,,,,,,
-410,3318,Kent City HS,372,372,C,high_school,,,,,,
-411,6691,Morley Stanwood HS,372,372,C,high_school,,,,,,
-412,3796,Napoleon HS,372,372,C,high_school,,,,,,
 413,1338,Laingsburg HS,371,371,C,high_school,145.0,Laingsburg HS,"-84.34275100000001,42.878632,0",28675.73581711367,98635.21565702604,22.5241705329164
-414,1701,Tawas City - Tawas Area HS,370,370,C,high_school,,,,,,
-415,6056,Niles - Brandywine HS,369,369,C,high_school,,,,,,
-416,2377,Montrose Hill-McCloy HS,365,365,C,high_school,,,,,,
-417,1341,Southfield - Bradford Academy HS,364,364,C,high_school,,,,,,
 418,1503,Scottville - Mason County Central HS,360,360,C,high_school,161.0,Mason County Central High School,"-86.2891178,43.9590923,0",33783.13604577152,87955.89541400301,27.75045574182531
-419,1022,Grand Rapids - Wellspring Preparatory HS,356,356,C,high_school,,,,,,
-420,2195,Houghton Lake HS,353,353,C,high_school,,,,,,
-421,5058,Leslie HS,351,351,C,high_school,,,,,,
-422,4431,Grass Lake HS,348,348,C,high_school,,,,,,
-423,1206,Madison Heights - Madison HS,348,348,C,high_school,,,,,,
-424,6956,LeRoy - Pine River Area HS,343,343,C,high_school,,,,,,
-425,3433,Monroe - St Mary Catholic Central HS,341,341,C,high_school,,,,,,
-426,1536,Delton Kellogg HS,339,339,C,high_school,,,,,,
-427,4497,Bloomingdale HS,337,337,C,high_school,,,,,,
 428,6568,Hemlock HS,337,337,C,high_school,6.0,Hemlock HS,"-84.2333581,43.4238904,0",24829.66620198148,87160.37509010498,22.17131623089777
-429,3152,Ishpeming - Westwood HS,337,337,C,high_school,,,,,,
-430,2220,Harrison Community HS,335,335,C,high_school,,,,,,
-431,4398,Ithaca HS,335,335,C,high_school,,,,,,
-432,6221,North Muskegon HS,335,335,C,high_school,,,,,,
-433,8003,Ravenna HS,333,333,C,high_school,,,,,,
-434,2848,New Haven HS,330,330,C,high_school,,,,,,
-435,8052,St Louis HS,330,330,C,high_school,,,,,,
-436,4811,Detroit Central HS,329,329,C,high_school,,,,,,
-437,7112,Perry HS,329,329,C,high_school,,,,,,
 438,1107,Traverse City - St Francis HS,329,329,C,high_school,224.0,Traverse City St Frances,"-85.55975530000001,44.7118419,0",14023.55425237186,94784.62863781543,12.8883268517818
-439,2476,Burton - Bendle HS,325,325,C,high_school,,,,,,
 440,7368,Bronson HS,325,325,C,high_school,45.0,Bronson high School,"-85.1894145,41.865696,0",25821.501025339625,90957.15231802316,22.111490658671144
 441,5090,Bangor HS,324,324,C,high_school,32.0,Bangor High School,"-86.12594559999999,42.3056833,0",39831.5696113573,103637.2279799388,27.763228158380954
-442,5586,Hartford HS,324,324,C,high_school,,,,,,
-443,1560,Oscoda HS,320,320,C,high_school,,,,,,
-444,5215,St Charles HS,320,320,C,high_school,,,,,,
-445,1019,Ypsilanti - Arbor Preparatory HS,319,319,C,high_school,,,,,,
-446,6543,Ann Arbor - Greenhills HS,319,319,C,high_school,,,,,,
 447,6717,Manchester HS,318,318,C,high_school,203.0,Rochester HS,"-83.15624510000001,42.6774369,0",29531.01691058576,88582.21744428486,25.00229298764265
-448,2617,Hanover-Horton HS,316,316,C,high_school,,,,,,
-449,1168,Hamtramck - Oakland International Academy,312,312,C,high_school,,,,,,
-450,5504,Beaverton HS,311,311,C,high_school,,,,,,
-451,1152,Detroit Leadership Academy,311,311,C,high_school,,,,,,
 452,1362,Bad Axe HS,310,310,C,high_school,19.0,. Bad Axe HS,"-83.0174535,43.8055552,0",38845.408513958886,86274.33514541006,31.04658575685161
 453,5743,Bath HS,310,310,C,high_school,33.0,Bath High School,"-84.43990410000001,42.8139458,0",17232.898137743716,102353.14469836115,14.410459388945378
-454,9960,Detroit Cristo Rey HS,310,310,C,high_school,,,,,,
 455,3482,Jackson - Lumen Christi HS,310,310,C,high_school,3.0,Jackson Lumen Christi HS,"-84.4602665,42.2219816,0",20497.61883570762,92031.701896671,18.215358186028524
 456,7525,Sandusky HS,310,310,C,high_school,216.0,Sandusky High School,"-82.82497170000001,43.4102931,0",33613.77849560391,84661.168620427,28.42003257260212
 457,1321,Homer HS,308,308,C,high_school,124.0,Homer,"-84.8138072,42.1386292,0",20835.43300643108,71859.97834370394,22.47730788715113
-458,2427,Galesburg-Augusta HS,305,305,C,high_school,,,,,,
-459,5330,Union City HS,305,305,C,high_school,,,,,,
-460,4332,Lakeview HS,304,304,C,high_school,,,,,,
-461,8218,Mancelona HS,304,304,C,high_school,,,,,,
-462,3838,Schoolcraft HS,303,303,C,high_school,,,,,,
 463,1222,Grosse Pointe Woods - University Liggett HS,303,303,C,high_school,2.0,Grosse Pointe Woods University Liggett,"-82.90074989999999,42.4260393,0",22388.47394072804,83118.81883091317,21.21983547543524
-464,2322,Dearborn Riverside Academy-West,300,300,C,high_school,,,,,,
-465,1054,Brighton - Charyl Stockwell Prep Academy,299,299,C,high_school,,,,,,
-466,9134,Detroit - Loyola HS,149,298,D,high_school,,,,,,
-467,6345,Saginaw - Valley Lutheran HS,298,298,C,high_school,,,,,,
-468,7624,McBain - Mc Bain HS,297,297,C,high_school,,,,,,
 469,6312,Pewamo-Westphalia HS,296,296,C,high_school,194.0,Pewamo-Westphalia,"-84.8358807,42.9403371,0",27955.46155777481,84958.40033168886,24.758219309814805
 470,9876,Detroit Community HS,295,295,C,high_school,77.0,Detroit Country Day,"-83.2646187,42.513942,0",17028.759385363974,91589.48191547624,15.677623925247856
-471,1511,Madison Heights - Bishop Foley Catholic HS,293,293,C,high_school,,,,,,
-472,7228,Springport HS,293,293,C,high_school,,,,,,
-473,1058,Detroit - Dr Benjamin Carson HS for Science & Medicine,292,292,C,high_school,,,,,,
 474,3664,New Lothrop HS,292,292,C,high_school,12.0,New Lothrop HS,"-83.9746703,43.122242,0",37413.5597848138,89468.33618443857,29.48691734073735
-475,4076,Grand Rapids - NorthPointe Christian HS,291,291,C,high_school,,,,,,
-476,7351,Lawton HS,290,290,C,high_school,,,,,,
-477,7161,Roscommon HS,289,289,C,high_school,,,,,,
-478,7574,Hesperia Community HS,286,286,C,high_school,,,,,,
-479,7764,Charlevoix HS,283,283,C,high_school,,,,,,
-480,4514,Memphis HS,281,281,C,high_school,,,,,,
-481,6444,Elkton-Pigeon-Bay Port Laker HS,280,280,C,high_school,,,,,,
-482,1115,East Jordan HS,279,279,C,high_school,,,,,,
-483,5223,Saranac HS,279,279,C,high_school,,,,,,
-484,2575,Grandville - Calvin Christian HS,278,278,C,high_school,,,,,,
-485,1192,Detroit - Cornerstone Lincoln King Academy HS,278,278,C,high_school,,,,,,
-486,7087,Manton HS,275,275,C,high_school,,,,,,
-487,8093,Burton - Bentley HS,274,274,C,high_school,,,,,,
-488,4002,Evart HS,274,274,C,high_school,,,,,,
-489,1153,Hope of Detroit Academy HS,274,274,C,high_school,,,,,,
-490,1263,Holland - Black River HS,273,273,C,high_school,,,,,,
-491,1156,Vermontville - Maple Valley HS,272,272,C,high_school,,,,,,
-492,4828,Reese HS,271,271,C,high_school,,,,,,
-493,6403,Byron Area HS,270,270,C,high_school,,,,,,
-494,7384,Hudson Area HS,269,269,C,high_school,,,,,,
-495,3292,Vassar HS,269,269,C,high_school,,,,,,
-496,1073,Cass City HS,268,268,C,high_school,,,,,,
-497,2212,Iron Mountain HS,268,268,C,high_school,,,,,,
-498,1924,Sand Creek HS,265,265,C,high_school,,,,,,
-499,2880,Saugatuck HS,263,263,C,high_school,,,,,,
-500,5108,Potterville HS,262,262,C,high_school,,,,,,
-501,2955,Farwell Area HS,261,261,C,high_school,,,,,,
 502,1676,Centreville HS,260,260,C,high_school,52.0,Centerville High School,"-85.5231062,41.9149684,0",30616.65799449997,92985.2717956672,24.77037215072317
-503,1196,Detroit - The School at Marygrove,258,258,C,high_school,,,,,,
-504,3755,Ottawa Lake - Whiteford HS,257,257,C,high_school,,,,,,
 505,5520,Harbor Springs HS,256,256,C,high_school,115.0,Harbor Springs High School,"-84.9734496,45.434179,0",21382.12284263252,79731.13343215003,21.14670581325663
 506,5520,Harbor Springs HS,256,256,C,high_school,116.0,Harbor Springs Youth ,"-84.97434610000001,45.434841,0",6824.079779465193,28912.954626212915,19.0952604012966
 507,5520,Harbor Springs HS,256,256,C,high_school,117.0,Harbor Springs Youth ,"-84.9733378,45.43516,0",9684.848295995213,37083.82606073365,20.707981205804263
-508,5017,Burton - Atherton HS,254,254,C,high_school,,,,,,
-509,2600,Gwinn HS,254,254,C,high_school,,,,,,
 510,3243,Bridgman HS,250,250,C,high_school,14.0,Bridgman HS,"-86.5447454,41.9367931,0",29299.12396411093,94095.28709961646,23.744287696287408
-511,6675,Brown City HS,248,248,C,high_school,,,,,,
-512,3037,Addison HS,247,247,C,high_school,,,,,,
-513,2014,Maple City - Glen Lake HS,247,247,C,high_school,,,,,,
-514,6246,White Cloud HS,245,245,C,high_school,,,,,,
-515,2245,Manistique HS,244,244,C,high_school,,,,,,
-516,5776,Cassopolis - Ross Beatty HS,244,244,C,high_school,,,,,,
 517,5132,Dansville HS,243,243,C,high_school,70.0,Dansville Baseball Field HS,"-84.30747119999999,42.5514233,0",38155.475593937976,101273.41173982163,27.365545493168025
 518,3490,Muskegon - Western Michigan Christian HS,243,243,C,high_school,173.0,Muskegon Western Michigan Christian,"-86.23679300000001,43.1609012,0",28987.91853979666,90506.75134834346,24.258754442296443
 519,4316,Riverview - Gabriel Richard HS,241,241,C,high_school,92.0,Gabriel Richard HS - Baseball,"-83.2089242,42.1817944,0",22711.757738857024,92645.04414926608,19.68826923693988
-520,4613,Royal Oak - Shrine Catholic HS,241,241,C,high_school,,,,,,
-521,2526,Jackson - Vandercook Lake HS,241,241,C,high_school,,,,,,
 522,4407,Holton HS,240,240,C,high_school,123.0,Holton High School,"-86.0881718,43.4149801,0",28877.412296009607,95912.47410687411,23.14082745678522
 523,2591,Kalamazoo Christian HS,239,239,C,high_school,4.0,Kalamazoo Christian,"-85.6134503,42.273406,0",23934.31071069777,92206.40662628204,20.608027278885217
-524,3846,Carson City-Crystal HS,236,236,C,high_school,,,,,,
 525,4720,Kalamazoo - Hackett Catholic Prep,235,235,C,high_school,140.0,Kalamazoo Hackett Prep High School,"-85.5965558,42.2474483,0",21936.925120750344,87094.98613412629,20.11972904837911
-526,6997,East Jackson HS,234,234,C,high_school,,,,,,
 527,4225,Unionville Sebewaing HS,234,234,C,high_school,231.0,USA - Unionville Seabawing - Youth ,"-83.47093599999999,43.650734,0",8032.990374888568,40293.722099406994,16.62225705744256
 528,4225,Unionville Sebewaing HS,234,234,C,high_school,232.0,USA - Unionville Seabawing High School,"-83.46441950000001,43.6938966,0",27687.447202189836,84001.53422015178,24.78977500698328
-529,1120,Arts & Technology Acad of Pontiac,232,232,C,high_school,,,,,,
-530,2079,Wyoming - The Potter's House Christian HS,232,232,C,high_school,,,,,,
-531,7145,Iron River - West Iron County HS,232,232,C,high_school,,,,,,
-532,4695,Mt Morris - Beecher HS,231,231,C,high_school,,,,,,
 533,1478,Whittemore-Prescott HS,230,230,C,high_school,244.0,Whittemore-Prescott High School,"-83.8844484,44.2293306,0",16954.53692559044,82035.26662090275,17.127558918355962
 534,7054,Marlette HS,229,229,C,high_school,159.0,Marlette High School,"-83.07092799999999,43.3238064,0",22629.029730975515,86985.63353841778,20.64416297604411
-535,6304,Lincoln - Alcona HS,228,228,C,high_school,,,,,,
-536,5124,Mt Pleasant - Beal City HS,227,227,C,high_school,,,,,,
 537,3458,Rochester Hills - Lutheran Northwest HS,227,227,C,high_school,13.0,Rochester Hills Lutheran Northwest,"-83.1544493,42.6409811,0",19787.40549652018,71052.62656065029,21.782693211806567
-538,7715,Reading HS,225,225,C,high_school,,,,,,
 539,6353,Concord HS,224,224,C,high_school,65.0,Concord High School,"-84.6411052,42.1722524,0",18587.870418381044,82374.38349346197,18.41071261603507
 540,3185,Whitmore Lake HS,224,224,C,high_school,243.0,Whitmore Lake High School,"-83.7708313,42.3876304,0",34917.13504647463,93541.66532271785,27.181582691199257
-541,1083,St Helen - Charlton Heston Academy,222,222,C,high_school,,,,,,
-542,2009,Detroit - Universal Academy,222,222,C,high_school,,,,,,
-543,5652,Bark River-Harris HS,221,221,C,high_school,,,,,,
-544,2393,Mt Clemens HS,220,220,C,high_school,,,,,,
-545,9721,Kimball - Landmark Academy,218,218,C,high_school,,,,,,
-546,4588,Blanchard - Montabella HS,218,218,C,high_school,,,,,,
-547,1161,Detroit - Academy of the Americas,216,216,C,high_school,,,,,,
-548,3631,Johannesburg-Lewiston HS,216,216,C,high_school,,,,,,
-549,6361,Ishpeming HS,213,213,C,high_school,,,,,,
-550,2930,Capac HS,211,211,C,high_school,,,,,,
-551,2360,St Ignace HS,210,210,C,high_school,,,,,,
-552,5900,White Pigeon HS,210,210,C,high_school,,,,,,
-553,5677,Genesee HS,208,208,C,high_school,,,,,,
-554,6287,Harbor Beach HS,208,208,C,high_school,,,,,,
-555,9948,Traverse City - Grand Traverse Academy,206,206,C,high_school,,,,,,
 556,2311,Decatur HS,204,204,C,high_school,72.0,Decatur High School,"-85.9816872,42.1120337,0",18841.03790220729,93430.89021677373,16.781610699907425
 557,2204,Allen Park - Cabrini HS,203,203,C,high_school,142.0,Klenk Park - Alma Scots,"-84.6785813,43.3879303,0",35378.686933336874,109900.71667428776,24.352169719039317
 558,3045,Kingston HS,203,203,C,high_school,141.0,Kingston high School,"-83.1919884,43.4105296,0",20687.597546147837,74025.70182678587,21.842336486125777
-559,7562,Burton - Madison Academy,203,203,C,high_school,,,,,,
 560,2988,Merrill HS,203,203,C,high_school,167.0,Merrill High School,"-84.3410391,43.4071832,0",28874.138369871383,89657.73342388269,24.35980967221415
-561,3441,Hancock HS,199,199,C,high_school,,,,,,
-562,2228,International Academy of Flint,198,198,C,high_school,,,,,,
-563,6774,Painesdale - Jeffers HS,197,197,C,high_school,,,,,,
-564,7153,Mesick HS,197,197,C,high_school,,,,,,
-565,1131,Coleman HS,195,195,C,high_school,,,,,,
-566,1065,Warren - Michigan Math & Science Academy,195,195,C,high_school,,,,,,
-567,7178,Morenci Area HS,195,195,C,high_school,,,,,,
 568,7995,Breckenridge HS,194,194,C,high_school,16.0,Breckenridge HS,"-84.4724901,43.413141,0",22445.345278231176,82497.39483544062,21.388182978564164
-569,5264,L'Anse HS,193,193,C,high_school,,,,,,
-570,8481,Saginaw - Nouvel Catholic Central HS,193,193,C,high_school,,,,,,
-571,2105,Gobles HS,192,192,C,high_school,,,,,,
-572,8698,Adrian - Lenawee Christian HS,192,192,C,high_school,,,,,,
-573,8623,Lutheran HS Westland,192,192,C,high_school,,,,,,
 574,1577,Rogers City HS,192,192,C,high_school,10.0,Rogers City HS,"-83.8041977,45.41751360000001,0",18534.92547420601,71875.3968815367,20.500895242111373
-575,5446,Marcellus HS,191,191,C,high_school,,,,,,
-576,1230,Saginaw Arts & Sciences Academy,191,191,C,high_school,,,,,,
-577,1090,Westland - Universal Learning Academy,191,191,C,high_school,,,,,,
-578,2906,Lawrence HS,189,189,C,high_school,,,,,,
-579,1965,Eau Claire HS,188,188,D,high_school,,,,,,
 580,7442,Mayville HS,187,187,D,high_school,163.0,Mayville High School,"-83.3551339,43.3310365,0",17938.260448053137,81702.59523521611,18.002916900948655
-581,6873,Munising HS,183,183,D,high_school,,,,,,
-582,2286,New Buffalo HS,182,182,D,high_school,,,,,,
-583,5751,Ironwood - Luther L Wright HS,181,181,D,high_school,,,,,,
 584,2625,Norway HS,180,180,D,high_school,175.0,Norway High School,"-87.9126582,45.7729954,0",25656.291343425488,82222.65950597168,23.78248132876503
-585,6163,Bellevue HS,179,179,D,high_school,,,,,,
-586,5066,Martin HS,179,179,D,high_school,,,,,,
-587,3061,Saginaw - Michigan Lutheran Seminary,179,179,D,high_school,,,,,,
-588,2121,Petersburg - Summerfield HS,179,179,D,high_school,,,,,,
-589,6015,Fowler HS,178,178,D,high_school,,,,,,
-590,8358,Canton - Plymouth Christian Academy,178,178,D,high_school,,,,,,
-591,3557,Brethren HS,177,177,D,high_school,,,,,,
 592,5768,Camden-Frontier HS,177,177,D,high_school,49.0,Camden-Frontier High School,"-84.7066398,41.7801468,0",30123.214497454697,76954.16050660101,28.132193655581997
 593,7913,Indian River - Inland Lakes HS,177,177,D,high_school,15.0,Indian River Inland Lakes HS,"-84.6358958,45.3838713,0",14836.164343000351,85638.11734406523,14.766131286420798
-594,1659,Benton Harbor - Countryside Academy,174,174,D,high_school,,,,,,
-595,3841,Detroit International Academy,87,174,D,high_school,,,,,,
-596,3417,Deckerville Community HS,173,173,D,high_school,,,,,,
-597,1092,Detroit Public Safety Academy,173,173,D,high_school,,,,,,
-598,1056,Muskegon Heights Academy,173,173,D,high_school,,,,,,
-599,7005,Vestaburg HS,173,173,D,high_school,,,,,,
-600,1134,Jackson Prep & Early College HS,172,172,D,high_school,,,,,,
-601,6700,Newberry HS,171,171,D,high_school,,,,,,
-602,2162,Three Oaks - River Valley HS,171,171,D,high_school,,,,,,
-603,5512,Fife Lake - Forest Area HS,170,170,D,high_school,,,,,,
-604,1098,Birmingham - Roeper HS,170,170,D,high_school,,,,,,
-605,1395,Ubly HS,170,170,D,high_school,,,,,,
 606,5891,Rudyard HS,169,169,D,high_school,206.0,Rudyard HS,"-84.58780230000001,46.2351548,0",26169.112019291028,85298.52172208854,23.476870496782063
-607,3615,Stephenson HS,169,169,D,high_school,,,,,,
-608,2088,Webberville Community HS,168,168,D,high_school,,,,,,
-609,1899,Melvindale - Academy for Business & Tech,166,166,D,high_school,,,,,,
-610,2405,Taylor - Trillium Academy,166,166,D,high_school,,,,,,
-611,1858,Lansing Christian HS,165,165,D,high_school,,,,,,
-612,1017,Britton Deerfield Schools,164,164,D,high_school,,,,,,
 613,7260,Mendon HS,164,164,D,high_school,164.0,Mendon High School,"-85.4474524,42.0126305,0",36355.3444980997,86309.09286728005,29.638047733271115
 614,7260,Mendon HS,164,164,D,high_school,165.0,Mendon Youth ,"-85.4456151,42.0114783,0",7531.414278691262,23323.69312467186,24.408971196354862
 615,7260,Mendon HS,164,164,D,high_school,166.0,Mendon Youth ,"-85.4460878,42.0112333,0",8964.33386707847,32827.46741209411,21.449982036419065
-616,3094,Onaway Area HS,164,164,D,high_school,,,,,,
-617,3532,Auburn Hills - Oakland Christian HS,163,163,D,high_school,,,,,,
-618,7194,Morrice HS,161,161,D,high_school,,,,,,
-619,3193,Bloomfield Hills - Academy Of The Sacred Heart,80,160,D,high_school,,,,,,
-620,1239,Ann Arbor - Central Academy HS,158,158,D,high_school,,,,,,
-621,1973,Pickford HS,157,157,D,high_school,,,,,,
 622,3961,Marine City - Cardinal Mooney Catholic HS,156,156,D,high_school,21.0,Marine City Cardinal Mooney HS,"-82.8877279,42.5352846,0",35258.32555668489,89228.73878083477,28.322882979302644
 623,3961,Marine City - Cardinal Mooney Catholic HS,156,156,D,high_school,157.0,Marine City Cardinal Mooney Field ,"-82.8879871,42.5368865,0",16169.26463317929,93546.95167757124,14.737351666760809
 624,7558,Frankfort HS,154,154,D,high_school,88.0,Fankfort H S,"-86.22585100000001,44.634408,0",25912.509644736863,89205.26372341164,22.509564671537067
-625,1552,Colon Community HS,153,153,D,high_school,,,,,,
-626,6816,Brimley Area HS,151,151,D,high_school,,,,,,
-627,4423,Climax-Scotts HS,151,151,D,high_school,,,,,,
-628,1155,Inkster - American International Academy,149,149,D,high_school,,,,,,
-629,7401,Middleton - Fulton HS,148,148,D,high_school,,,,,,
 630,4877,Marion HS,148,148,D,high_school,158.0,Marion High School,"-85.130365,44.1000449,0",28880.617473432605,84443.57858419165,25.48495244453099
-631,2534,Dryden HS,147,147,D,high_school,,,,,,
-632,1174,Flint - The New Standard Academy,146,146,D,high_school,,,,,,
-633,4167,Mio-Au Sable HS,144,144,D,high_school,,,,,,
-634,3004,Southfield Christian HS,143,143,D,high_school,,,,,,
-635,9639,Detroit - Davis Aerospace Technical HS,141,141,D,high_school,,,,,,
-636,9281,Detroit - Frederick Douglass HS,70,140,D,high_school,,,,,,
-637,4455,West Bloomfield - Frankel Jewish Academy,138,138,D,high_school,,,,,,
-638,9927,Pontiac Academy for Excellence,138,138,D,high_school,,,,,,
-639,1319,New Haven - Merritt Academy HS,133,133,D,high_school,,,,,,
-640,3672,Suttons Bay HS,132,132,D,high_school,,,,,,
-641,8135,Buckley HS,131,131,D,high_school,,,,,,
-642,2187,Leland HS,130,130,D,high_school,,,,,,
-643,5941,Custer - Mason County Eastern HS,130,130,D,high_school,,,,,,
-644,9955,Sterling Heights - Parkway Christian School,130,130,D,high_school,,,,,,
-645,9764,Southfield - AGBU Alex & Marie Manoogian HS,129,129,D,high_school,,,,,,
-646,3912,Baldwin Community Schools,129,129,D,high_school,,,,,,
-647,7244,Bessemer - AD Johnston,128,128,D,high_school,,,,,,
-648,5982,Athens HS,128,128,D,high_school,,,,,,
-649,6270,Hillman HS,127,127,D,high_school,,,,,,
-650,1544,Pittsford HS,127,127,D,high_school,,,,,,
 651,5660,Pellston HS,126,126,D,high_school,190.0,Pelson High School,"-84.78913470000001,45.55007209999999,0",17057.566193757055,76325.80544768673,18.26617083312385
 652,5660,Pellston HS,126,126,D,high_school,191.0,Pelson HS - Youth ,"-84.78832079999999,45.5499753,0",9639.31163113829,32049.00411806071,23.122334059090644
 653,5660,Pellston HS,126,126,D,high_school,192.0,Pelson HS - Youth ,"-84.789241,45.5497813,0",11164.838471691472,60612.29330868002,15.55486851418694
-654,1214,Crystal Falls - Forest Park HS,124,124,D,high_school,,,,,,
-655,4448,Kinde - North Huron HS,123,123,D,high_school,,,,,,
-656,6915,Baraga Area HS,122,122,D,high_school,,,,,,
-657,5173,Lake Linden-Hubbell HS,122,122,D,high_school,,,,,,
-658,4951,Rapid River HS,118,118,D,high_school,,,,,,
-659,9826,Clarkston - Everest Collegiate HS,116,116,D,high_school,,,,,,
-660,1445,Muskegon Catholic Central HS,116,116,D,high_school,,,,,,
-661,9711,Kalamazoo - Phoenix HS,113,113,D,high_school,,,,,,
-662,3400,Peck Community HS,111,111,D,high_school,,,,,,
-663,4308,Au Gres - AuGres-Sims HS,109,109,D,high_school,,,,,,
-664,1329,Big Rapids - Crossroads Charter Academy,108,108,D,high_school,,,,,,
-665,1940,Powers - North Central HS,108,108,D,high_school,,,,,,
-666,6493,Dollar Bay HS,106,106,D,high_school,,,,,,
-667,9101,Burton - Genesee Christian HS,106,106,D,high_school,,,,,,
-668,1800,St Joseph - Michigan Lutheran HS,106,106,D,high_school,,,,,,
-669,5545,Wakefield-Marenisco HS,105,105,D,high_school,,,,,,
-670,7533,Litchfield HS,104,104,D,high_school,,,,,,
-671,4274,Mt Pleasant - Sacred Heart Academy HS,103,103,D,high_school,,,,,,
-672,2724,Bellaire HS,101,101,D,high_school,,,,,,
-673,1110,Grand Rapids - Hope Academy of West Michigan HS,101,101,D,high_school,,,,,,
-674,8631,Wyoming - Tri-unity Christian HS,101,101,D,high_school,,,,,,
-675,7616,Engadine HS,100,100,D,high_school,,,,,,
-676,4745,Waterford - Our Lady Of The Lakes HS,100,100,D,high_school,,,,,,
-677,7938,Onekama HS,99,99,D,high_school,,,,,,
-678,6262,Akron-Fairgrove HS,97,97,D,high_school,,,,,,
-679,2773,Covert HS,97,97,D,high_school,,,,,,
-680,8341,Allen Park - Inter-City Baptist HS,97,97,D,high_school,,,,,,
-681,5231,North Adams-Jerome HS,97,97,D,high_school,,,,,,
-682,4571,Ontonagon Area HS,97,97,D,high_school,,,,,,
-683,2699,Byron Center - Zion Christian HS,97,97,D,high_school,,,,,,
-684,7707,Bear Lake HS,96,96,D,high_school,,,,,,
-685,1718,Carney-Nadeau HS,96,96,D,high_school,,,,,,
-686,1076,Chesterfield - Austin Catholic HS,95,95,D,high_school,,,,,,
-687,7731,Fairview HS,95,95,D,high_school,,,,,,
-688,8060,Hale HS,92,92,D,high_school,,,,,,
-689,6320,Wolverine HS,91,91,D,high_school,,,,,,
-690,7426,Carsonville-Port Sanilac,90,90,D,high_school,,,,,,
-691,7698,Caseville HS,88,88,D,high_school,,,,,,
-692,1188,Bay City Academy,87,87,D,high_school,,,,,,
-693,4035,Battle Creek - St Philip Catholic Central HS,87,87,D,high_school,,,,,,
-694,5363,Eben Junction - Superior Central HS,87,87,D,high_school,,,,,,
-695,7500,Ashley HS,86,86,D,high_school,,,,,,
-696,1755,Marshall Academy HS,86,86,D,high_school,,,,,,
 697,1908,Portland - St Patrick HS,85,85,D,high_school,199.0,Portland St. Pats,"-84.91077540000001,42.8702585,0",34252.43351878411,129849.2647255623,20.872686806557265
-698,4530,Central Lake HS,84,84,D,high_school,,,,,,
-699,5413,Burr Oak HS,83,83,D,high_school,,,,,,
-700,1197,Walkerville HS,82,82,D,high_school,,,,,,
-701,1097,Midland Calvary Baptist,81,81,D,high_school,,,,,,
-702,7566,Pentwater HS,81,81,D,high_school,,,,,,
-703,9775,Ann Arbor - Rudolf Steiner School,81,81,D,high_school,,,,,,
-704,6031,Waldron HS,81,81,D,high_school,,,,,,
-705,1165,Hillsdale Academy,80,80,D,high_school,,,,,,
-706,9707,Traverse City Christian School,80,80,D,high_school,,,,,,
-707,5933,Ellsworth Community HS,79,79,D,high_school,,,,,,
-708,2897,Tekonsha HS,79,79,D,high_school,,,,,,
-709,4927,Atlanta HS,78,78,D,high_school,,,,,,
-710,9527,Coldwater - Pansophia Academy,78,78,D,high_school,,,,,,
-711,3391,Posen HS,77,77,D,high_school,,,,,,
-712,7327,Felch - North Dickinson HS,75,75,D,high_school,,,,,,
-713,7070,St Joseph - Lake Michigan Catholic HS,73,73,D,high_school,,,,,,
-714,2063,Cedarville HS,72,72,D,high_school,,,,,,
-715,8748,Fruitport - Calvary Christian HS,70,70,D,high_school,,,,,,
-716,3771,Gaylord - St Mary Cathedral HS,69,69,D,high_school,,,,,,
-717,9189,Novi Christian Academy,68,68,D,high_school,,,,,,
-718,2030,Chassell HS,67,67,D,high_school,,,,,,
-719,1024,Ewen-Trout Creek HS,67,67,D,high_school,,,,,,
-720,7954,Westland - Huron Valley Lutheran HS,66,66,D,high_school,,,,,,
-721,1279,Boyne City - Concord Academy Boyne,65,65,D,high_school,,,,,,
-722,5322,Alanson HS,63,63,D,high_school,,,,,,
-723,9584,Kalamazoo - Heritage Christian Academy,62,62,D,high_school,,,,,,
-724,4860,Lake Leelanau - St Mary HS,62,62,D,high_school,,,,,,
 725,5454,Auburn Hills Christian School,59,59,D,high_school,132.0,Huron High School,"-83.3501649,42.1258421,0",27079.06699050484,82444.92467308299,24.72432439613822
-726,7310,McBain - Northern Michigan Christian HS,59,59,D,high_school,,,,,,
-727,1734,Boyne Falls HS,58,58,D,high_school,,,,,,
 728,3301,Bay City - All Saints Central HS,57,57,D,high_school,36.0,Bay City All Saints HS,"-83.8962351,43.5560867,0",25765.97061474115,87054.9432112981,22.837938234102765
 729,3301,Bay City - All Saints Central HS,57,57,D,high_school,37.0,Bay City All Saints Youth Field,"-83.8975504,43.55632,0",12856.773151007252,31470.611551069236,29.00413195458605
-730,4579,Battle Creek - Calhoun Christian School,57,57,D,high_school,,,,,,
 731,6196,Jackson Christian School,56,56,D,high_school,128.0,Hudson high School,"-84.3444884,41.8638399,0",31946.96803145042,88332.99444914487,26.56050714731841
-732,1031,Brighton - Livingston Christian Schools,55,55,D,high_school,,,,,,
-733,1149,Hudsonville - Libertas Christian School,53,53,D,high_school,,,,,,
-734,2418,Hillsdale - Will Carleton Academy,53,53,D,high_school,,,,,,
-735,6857,Manistee Catholic Central HS,52,52,D,high_school,,,,,,
-736,5495,Cooks - Big Bay de Noc HS,51,51,D,high_school,,,,,,
-737,5917,Rock - Mid-Peninsula HS,51,51,D,high_school,,,,,,
-738,8886,Wilson - Nah Tah Wahsh PSA,49,49,D,high_school,,,,,,
-739,8102,Owendale-Gagetown HS,49,49,D,high_school,,,,,,
-740,7418,Watersmeet HS,49,49,D,high_school,,,,,,
-741,4043,DeTour Village - DeTour HS,48,48,D,high_school,,,,,,
-742,3763,Mackinaw City HS,48,48,D,high_school,,,,,,
-743,1171,Concord Academy of Petoskey,45,45,D,high_school,,,,,,
-744,1202,Shepherd - FlexTech HS,43,43,D,high_school,,,,,,
-745,4538,Byron Center Charter School,41,41,D,high_school,,,,,,
-746,1108,Lansing - Martin Luther HS,41,41,D,high_school,,,,,,
-747,5462,Northport HS,40,40,D,high_school,,,,,,
-748,9112,Marcellus - Howardsville Christian School,39,39,D,high_school,,,,,,
-749,1099,Brimley - Ojibwe Charter HS,39,39,D,high_school,,,,,,
-750,1150,Mancelona - North Central Academy,38,38,D,high_school,,,,,,
-751,1175,Whitmore Lake - Livingston Classical Academy,37,37,D,high_school,,,,,,
-752,7582,Republic-Michigamme HS,37,37,D,high_school,,,,,,
-753,1207,Highland Park - Sigma Acad for Leadership & Early Middle,35,35,D,high_school,,,,,,
-754,4761,Alba HS,34,34,D,high_school,,,,,,
-755,8730,Harbor Springs - Harbor Light Christian HS,34,34,D,high_school,,,,,,
-756,1132,Petoskey - St Michael Academy,32,32,D,high_school,,,,,,
-757,6592,Glen Arbor - The Leelanau School,32,32,D,high_school,,,,,,
-758,9371,Holland - Calvary HS,31,31,D,high_school,,,,,,
-759,1710,Burton - Faithway Christian Academy,28,28,D,high_school,,,,,,
-760,1200,Detroit - Skills & Trade Preparatory HS,28,28,D,high_school,,,,,,
-761,8201,Mackinac Island HS,26,26,D,high_school,,,,,,
-762,7681,Flint - Michigan School For The Deaf,26,26,D,high_school,,,,,,
-763,8656,Kimball - New Life Christian Academy,26,26,D,high_school,,,,,,
-764,4299,Kinross - Maplewood Baptist Academy,25,25,D,high_school,,,,,,
-765,9962,Wyoming - West Michigan Lutheran HS,24,24,D,high_school,,,,,,
-766,9415,Burt Lake - Northern Michigan Christian Academy,21,21,D,high_school,,,,,,
-767,6386,Vanderbilt HS,21,21,D,high_school,,,,,,
-768,1750,Paradise - Whitefish Township Community School,20,20,D,high_school,,,,,,
-769,8473,Watervliet - Grace Christian HS,18,18,D,high_school,,,,,,
 770,8532,Beaver Island Community School,17,17,D,high_school,8.0,Glen Lake Community School,"-85.91890239999999,44.8515684,0",23438.08516080072,92407.7167202153,20.23214029358934
-771,9819,Lansing - New Covenant Christian HS,12,12,D,high_school,,,,,,
