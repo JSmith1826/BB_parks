@@ -1,3 +1,19 @@
+### Goals for today Thursday 12-15
+    Produce charts and post on r/dataisbeautiful
+        - Chart 1 - all HS fields (+ Muni) with HS fields sized according to enrollment, color on division. add MLB stadiums for context (with team logos)
+        - Chart 2 - Pro and college fields in the state with the DI, pro, and MLB team logos
+            - currently don't have all of the college teams. 
+                compile list of all colleges in state with baseball teams
+                    break them down by level
+                        start new table for
+                    start mapping the unmapped fields
+    Write stack overflow post to ask for help with measuring geometries
+        need help understanding if my projection is correct when using the shapely.distance method
+        help understanding the hausdorff_distance and how to use it
+            migh need to double check line strings to see if their are any vertices on the foul line that is distoriting the fop outfield line I am trying to use
+
+
+
 ##### Clean Up field data
 
     went through and verified the format eof the google earth folders that outputs kml file
