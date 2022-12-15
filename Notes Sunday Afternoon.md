@@ -1,3 +1,30 @@
+##### Clean Up field data
+
+    went through and verified the format eof the google earth folders that outputs kml file
+    deleted many duplicates
+    renamed many fields/folders
+        spelled out HS or high school on the fields on HS property and classified that way
+        tagged - college, pro, youth in title of all other fields
+            this should make building the initial data frame easier
+                should be able to filter and add a new column to hold the 'level'
+        Hopefully adding the HS tag to those fields will make it easier to match them against the mhsaaa enrollment and get them school id numbers
+        
+
+#### Wednesday notes
+    * made good progress on the data matching. matched > 150 out of 222 maped fields in the high school class
+    * got somewhere in the wiki scraping - got a list of conference names with relative links to the wiki pages
+    ** next to work on there is pulling a table from a conference page and turning it into a dataframe
+
+    ** output a what I think is a pretty clean and feature packed table with field size - going to put it in tab and see what I can do
+
+    ** Geometry
+        write a stack overflow or stack exchange post about my problems measuring geometry
+            the min distance seems to be on the right track but the distance is a little wonky - may be a projection issue
+
+        need all kinds of help understanding the haudorff_distance and the different ways there are out there to use it in python
+
+
+
 ### Idea to start with
 
 convert all of the negative values in the coordinates to positive
