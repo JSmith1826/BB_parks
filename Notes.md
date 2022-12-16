@@ -1,7 +1,9 @@
 ### Goals for today Thursday 12-15
     Produce charts and post on r/dataisbeautiful
         - Chart 1 - all HS fields (+ Muni) with HS fields sized according to enrollment, color on division. add MLB stadiums for context (with team logos)
-        - Chart 2 - Pro and college fields in the state with the DI, pro, and MLB team logos
+        - Chart 2 - map of all high school and muni fields
+            base location on home plate - need to seperate those into lat and long columns
+        - Chart 3 - Pro and college fields in the state with the DI, pro, and MLB team logos
             - currently don't have all of the college teams. 
                 compile list of all colleges in state with baseball teams
                     break them down by level
