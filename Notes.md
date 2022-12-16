@@ -1,14 +1,26 @@
+### NIGHT 12-15
+    Made some good progress in Tableau, made some nice graphics, didn't post anything
+    scraped the mhsaa website to get a list of all HS that competed in the 2022 state tournment
+    total schools is 595 so my 155 plotted HS fields is over a quarter of them
+
+    - also have a table of all college teams with their divisions in the school_info folder
+        - roughly 60 college programs, some are probably outdated
+        - I have 10-15 college stadiums already plotted
+
+
 ### Goals for today Thursday 12-15
     Produce charts and post on r/dataisbeautiful
-        - Chart 1 - all HS fields (+ Muni) with HS fields sized according to enrollment, color on division. add MLB stadiums for context (with team logos)
-        - Chart 2 - map of all high school and muni fields
+        XX DONE- Chart 1 - all HS fields (+ Muni) with HS fields sized according to enrollment, color on division. add MLB stadiums for context (with team logos)
+        XX DONE - Chart 2 - map of all high school and muni fields
             base location on home plate - need to seperate those into lat and long columns
         - Chart 3 - Pro and college fields in the state with the DI, pro, and MLB team logos
             - currently don't have all of the college teams. 
-                compile list of all colleges in state with baseball teams
+                XXX DONE - SEE ABOVE - compile list of all colleges in state with baseball teams
                     break them down by level
                         start new table for
-                    start mapping the unmapped fields
+                    --------->   start mapping the unmapped fields
+    
+    
     Write stack overflow post to ask for help with measuring geometries
         need help understanding if my projection is correct when using the shapely.distance method
         help understanding the hausdorff_distance and how to use it
