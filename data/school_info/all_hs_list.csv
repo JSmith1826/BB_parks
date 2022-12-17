@@ -1,598 +1,599 @@
-,0
-0,Orchard Lake St Mary's HS
-1,Grosse Pointe North HS
-2,Battle Creek Lakeview HS
-3,Grand Rapids Forest Hills Northern HS
-4,Mattawan HS
-5,Midland HS
-6,Grandville HS
-7,Northville HS
-8,Brighton HS
-9,Monroe HS
-10,Clinton Township Chippewa Valley HS
-11,Detroit Western HS
-12,Birmingham Groves HS
-13,Hartland HS
-14,Detroit Catholic Central HS
-15,Lake Orion HS
-16,Grand Rapids Forest Hills Central HS
-17,Ann Arbor Skyline HS
-18,Traverse City Central HS
-19,Muskegon Reeths-Puffer HS
-20,Hudsonville HS
-21,Holt HS
-22,Brownstown Woodhaven HS
-23,Livonia Franklin HS
-24,Allen Park HS
-25,Detroit U-D Jesuit HS
-26,Warren De La Salle Collegiate HS
-27,New Baltimore Anchor Bay HS
-28,Bloomfield Hills Brother Rice HS
-29,White Lake Lakeland HS
-30,Rochester Adams HS
-31,Flushing HS
-32,Mount Pleasant HS
-33,Alpena HS
-34,Traverse City West HS
-35,Bay City Western HS
-36,Midland Dow HS
-37,Saginaw Heritage HS
-38,Grand Rapids Kenowa Hills HS
-39,Grand Haven HS
-40,Muskegon Mona Shores HS
-41,Greenville HS
-42,Cedar Springs HS
-43,Grand Rapids Northview HS
-44,Byron Center HS
-45,Jenison HS
-46,Wyoming HS
-47,Caledonia HS
-48,Grand Rapids Ottawa Hills HS
-49,Lowell HS
-50,Portage Northern HS
-51,Kalamazoo Central HS
-52,Portage Central HS
-53,Grand Ledge HS
-54,Lansing Waverly HS
-55,DeWitt HS
-56,East Lansing HS
-57,Howell HS
-58,Okemos HS
-59,Jackson HS
-60,Sturgis HS
-61,Coldwater HS
-62,Dexter HS
-63,Ann Arbor Pioneer HS
-64,Ann Arbor Huron HS
-65,Ypsilanti Lincoln HS
-66,Temperance Bedford HS
-67,Ypsilanti Community HS
-68,Southgate Anderson HS
-69,Taylor HS
-70,Gibraltar Carlson HS
-71,Livonia Churchill HS
-72,Plymouth HS
-73,Salem HS
-74,Dearborn Heights Crestwood HS
-75,Redford Thurston HS
-76,Wayne Memorial HS
-77,Dearborn Edsel Ford HS
-78,Melvindale HS
-79,Lincoln Park HS
-80,Dearborn Fordson HS
-81,Detroit Cass Tech HS
-82,River Rouge HS
-83,Warren Mott HS
-84,Royal Oak HS
-85,Troy Athens HS
-86,Roseville HS
-87,St Clair Shores Lakeview HS
-88,St Clair Shores Lake Shore HS
-89,Macomb Dakota HS
-90,Utica Ford HS
-91,Sterling Heights Stevenson HS
-92,Novi HS
-93,South Lyon East HS
-94,South Lyon HS
-95,Farmington HS
-96,Birmingham Seaholm HS
-97,North Farmington HS
-98,Walled Lake Western HS
-99,Walled Lake Central HS
-100,Milford HS
-101,Auburn Hills Avondale HS
-102,West Bloomfield HS
-103,Troy HS
-104,Utica Eisenhower HS
-105,Romeo HS
-106,Rochester Hills Stoney Creek HS
-107,Oxford HS
-108,Clarkston HS
-109,Waterford Mott HS
-110,Fenton HS
-111,Grand Blanc HS
-112,Swartz Creek HS
-113,Flint Kearsley HS
-114,Lapeer HS
-115,Davison HS
-116,Holland West Ottawa HS
-117,St Joseph HS
-118,Zeeland West HS
-119,Ferndale HS
-120,Fraser HS
-121,Sterling Heights HS
-122,Warren Woods Tower HS
-123,Harrison Township L'Anse Creuse HS
-124,Macomb L'Anse Creuse North HS
-125,Port Huron Northern HS
-126,Bay City Central HS
-127,Muskegon HS
-128,Rockford HS
-129,Grand Rapids Union HS
-130,East Kentwood HS
-131,Holland HS
-132,Kalamazoo Loy Norrix HS
-133,Lansing Everett HS
-134,Mason HS
-135,Battle Creek Central HS
-136,Saline HS
-137,Belleville HS
-138,Wyandotte Roosevelt HS
-139,Canton HS
-140,Westland John Glenn HS
-141,Dearborn HS
-142,Hamtramck HS
-143,Detroit Renaissance HS
-144,Southfield Arts & Technology HS
-145,Berkley HS
-146,Warren Cousino HS
-147,Port Huron HS
-148,Livonia Stevenson HS
-149,Walled Lake Northern HS
-150,Bloomfield Hills HS
-151,Rochester HS
-152,Waterford Kettering HS
-153,Holly HS
-154,Flint Carman-Ainsworth HS
-155,Grosse Pointe South HS
-156,Utica HS
-157,Ada Forest Hills Eastern HS
-158,Grand Rapids Christian HS
-159,Grosse Ile HS
-160,Goodrich HS
-161,Petoskey HS
-162,Bay City John Glenn HS
-163,Fruitport HS
-164,Hamilton HS
-165,Charlotte HS
-166,Vicksburg HS
-167,Milan HS
-168,Dearborn Divine Child HS
-169,Hazel Park HS
-170,Madison Heights Lamphere HS
-171,Flint Powers Catholic HS
-172,Richmond HS
-173,Howard City Tri County HS
-174,Allendale HS
-175,Grand Rapids Catholic Central HS
-176,Grand Rapids South Christian HS
-177,Berrien Springs HS
-178,Williamston HS
-179,Cheboygan HS
-180,Clare HS
-181,Jackson Northwest HS
-182,Carleton Airport HS
-183,Livonia Clarenceville HS
-184,Harper Woods HS
-185,Macomb Lutheran North HS
-186,Croswell-Lexington HS
-187,Saginaw Swan Valley HS
-188,Escanaba HS
-189,Marquette HS
-190,Sault Ste Marie HS
-191,Cadillac HS
-192,Ogemaw Heights HS
-193,Gaylord HS
-194,Gladwin HS
-195,Ludington HS
-196,Remus Chippewa Hills HS
-197,Essexville Garber HS
-198,Midland Bullock Creek HS
-199,Shepherd HS
-200,Muskegon Oakridge HS
-201,Spring Lake HS
-202,Whitehall HS
-203,Alma HS
-204,Grant HS
-205,Newaygo HS
-206,Comstock Park HS
-207,Grand Rapids West Catholic HS
-208,Coopersville HS
-209,Belding HS
-210,St Johns HS
-211,Portland HS
-212,Zeeland East HS
-213,Holland Christian HS
-214,South Haven HS
-215,Wyoming Kelloggsville HS
-216,Hudsonville Unity Christian HS
-217,Wyoming Godwin Heights HS
-218,Hopkins HS
-219,Wayland HS
-220,Otsego HS
-221,East Grand Rapids HS
-222,Hastings HS
-223,Middleville Thornapple Kellogg HS
-224,Stevensville Lakeshore HS
-225,Dowagiac HS
-226,Edwardsburg HS
-227,Parchment HS
-228,Paw Paw HS
-229,Three Rivers HS
-230,Marshall HS
-231,Battle Creek Pennfield HS
-232,Olivet HS
-233,Richland Gull Lake HS
-234,Lansing Sexton HS
-235,Eaton Rapids HS
-236,Lansing Eastern HS
-237,Parma Western HS
-238,Adrian HS
-239,Tecumseh HS
-240,Ann Arbor Father Gabriel Richard HS
-241,Pinckney HS
-242,Dundee HS
-243,Monroe Jefferson HS
-244,Flat Rock HS
-245,New Boston Huron HS
-246,Garden City HS
-247,Dearborn Henry Ford Academy HS
-248,Dearborn Heights Annapolis HS
-249,Redford Union HS
-250,Detroit Communication Media Arts HS
-251,Detroit Henry Ford HS
-252,Riverview HS
-253,Trenton HS
-254,Detroit Martin Luther King HS
-255,Harper Woods Chandler Park HS
-256,Detroit Country Day HS
-257,Bloomfield Hills Cranbrook Kingswood HS
-258,Pontiac Notre Dame Prep HS
-259,Marine City HS
-260,St Clair HS
-261,Marysville HS
-262,Imlay City HS
-263,Yale HS
-264,North Branch HS
-265,Carrollton HS
-266,Saginaw Arthur Hill HS
-267,Saginaw HS
-268,Frankenmuth HS
-269,Clio HS
-270,Birch Run HS
-271,Corunna HS
-272,Owosso HS
-273,Haslett HS
-274,Linden HS
-275,Ortonville Brandon HS
-276,Lake Fenton HS
-277,Detroit University Prep HS
-278,Detroit Mumford HS
-279,Warren Fitzgerald HS
-280,Detroit East English HS
-281,Center Line HS
-282,Eastpointe HS
-283,Kingsford HS
-284,Kingsley HS
-285,Big Rapids HS
-286,Freeland HS
-287,Muskegon Orchard View HS
-288,Fremont HS
-289,Sparta HS
-290,Ionia HS
-291,Allegan HS
-292,Grand Rapids West Michigan Aviation Academy HS
-293,Niles HS
-294,Plainwell HS
-295,Battle Creek Harper Creek HS
-296,Lake Odessa Lakewood HS
-297,Romulus Summit Academy North HS
-298,Armada HS
-299,Flint Hamady HS
-300,Fowlerville HS
-301,Chelsea HS
-302,Buchanan HS
-303,Detroit Edison HS
-304,Pewamo-Westphalia HS
-305,Standish-Sterling HS
-306,Houghton HS
-307,Traverse City St Francis HS
-308,Reed City HS
-309,Lansing Catholic HS
-310,Montague HS
-311,Grand Rapids Covenant Christian HS
-312,Onsted HS
-313,Clinton HS
-314,Hudson HS
-315,Algonac HS
-316,Ecorse HS
-317,Millington HS
-318,LeRoy Pine River HS
-319,Watervliet HS
-320,Laingsburg HS
-321,Climax-Scotts HS
-322,Union City HS
-323,Jackson Lumen Christi HS
-324,Brighton Charyl Stockwell Prep HS
-325,Gladstone HS
-326,Boyne City HS
-327,Beaverton HS
-328,Grand Rapids NorthPointe Christian HS
-329,Hemlock HS
-330,Ottawa Lake Whiteford HS
-331,Madison Heights Bishop Foley HS
-332,Bad Axe HS
-333,East Jordan HS
-334,Harbor Springs HS
-335,Charlevoix HS
-336,Elk Rapids HS
-337,Traverse City Christian HS
-338,Grayling HS
-339,Benzie Central HS
-340,McBain HS
-341,Lake City HS
-342,Hart HS
-343,Evart HS
-344,Mason County Central HS
-345,Farwell HS
-346,Houghton Lake HS
-347,Roscommon HS
-348,Oscoda HS
-349,Sanford Meridian HS
-350,Tawas HS
-351,Hesperia HS
-352,North Muskegon HS
-353,Ravenna HS
-354,Morley Stanwood HS
-355,Kent City HS
-356,Lakeview HS
-357,Saugatuck HS
-358,Fennville HS
-359,Grandville Calvin Christian HS
-360,Coloma HS
-361,Bloomingdale HS
-362,Hartford HS
-363,Ithaca HS
-364,Saranac HS
-365,Ovid-Elsie HS
-366,Chesaning HS
-367,Montrose HS
-368,New Lothrop HS
-369,Potterville HS
-370,Springport HS
-371,Vermontville Maple Valley HS
-372,Durand HS
-373,Perry HS
-374,Bridgman HS
-375,Lawton HS
-376,Constantine HS
-377,Centreville HS
-378,Schoolcraft HS
-379,Comstock HS
-380,Homer HS
-381,Quincy HS
-382,Bronson HS
-383,Hillsdale HS
-384,Hanover-Horton HS
-385,Jonesville HS
-386,Leslie HS
-387,Michigan Center HS
-388,Stockbridge HS
-389,Grass Lake HS
-390,Manchester HS
-391,Ann Arbor Greenhills HS
-392,Adrian Madison HS
-393,Brooklyn Columbia Central HS
-394,Sand Creek HS
-395,Blissfield HS
-396,Monroe St Mary Catholic Central HS
-397,Erie Mason HS
-398,Canton Prep HS
-399,Taylor Prep HS
-400,Dearborn Heights Robichaud HS
-401,Detroit Cristo Rey HS
-402,Detroit Central HS
-403,Detroit Loyola HS
-404,Clawson HS
-405,Madison Heights Madison HS
-406,Clinton Township Clintondale HS
-407,Detroit Osborn HS
-408,Grosse Pointe Woods University Liggett HS
-409,Mt Morris HS
-410,Burton Bentley HS
-411,Burton Bendle HS
-412,Reese HS
-413,Saginaw Valley Lutheran HS
-414,Vassar HS
-415,Sandusky HS
-416,Caro HS
-417,Cass City HS
-418,Negaunee HS
-419,Iron Mountain HS
-420,Calumet HS
-421,Eben Junction Superior Central HS
-422,Newberry HS
-423,Menominee HS
-424,New Haven HS
-425,Brown City HS
-426,Memphis HS
-427,Mancelona HS
-428,Kalkaska HS
-429,Manton HS
-430,Manistee HS
-431,Harrison HS
-432,Pinconning HS
-433,Shelby HS
-434,Central Montcalm HS
-435,Holland Black River HS
-436,Bangor HS
-437,St Louis HS
-438,St Charles HS
-439,Delton Kellogg HS
-440,Bath HS
-441,Niles Brandywine HS
-442,Galesburg-Augusta HS
-443,Napoleon HS
-444,Ida HS
-445,Hope of Detroit Academy HS
-446,Detroit Southeastern HS
-447,Burton Atherton HS
-448,Otisville LakeVille Memorial HS
-449,Elkton-Pigeon-Bay Port Laker HS
-450,Almont HS
-451,Riverview Gabriel Richard HS
-452,Beal City HS
-453,Whitmore Lake HS
-454,Rudyard HS
-455,Johannesburg-Lewiston HS
-456,Painesdale Jeffers HS
-457,Maple City Glen Lake HS
-458,Fowler HS
-459,Muskegon Catholic Central HS
-460,Dansville HS
-461,Britton Deerfield HS
-462,Gobles HS
-463,Decatur HS
-464,Bay City All Saints HS
-465,Marine City Cardinal Mooney HS
-466,Royal Oak Shrine Catholic HS
-467,White Cloud HS
-468,St Joseph Michigan Lutheran HS
-469,Colon HS
-470,Norway HS
-471,Indian River Inland Lakes HS
-472,Gaylord St Mary HS
-473,Alcona HS
-474,Bear Lake HS
-475,Portland St Patrick HS
-476,Breckenridge HS
-477,Litchfield HS
-478,Pittsford HS
-479,Plymouth Christian Academy HS
-480,Waterford Our Lady of the Lakes HS
-481,Kingston HS
-482,Harbor Beach HS
-483,Lake Leelanau St Mary HS
-484,Suttons Bay HS
-485,Buckley HS
-486,Central Lake HS
-487,Bellaire HS
-488,Ellsworth HS
-489,Rogers City HS
-490,Atlanta HS
-491,Onaway HS
-492,Au Gres-Sims HS
-493,Hale HS
-494,Mio HS
-495,Coleman HS
-496,Mount Pleasant Sacred Heart HS
-497,Marion HS
-498,Holton HS
-499,Muskegon Western Michigan Christian HS
-500,Wyoming Tri-unity Christian HS
-501,Byron Center Zion Christian HS
-502,Wyoming Potter's House Christian HS
-503,Morrice HS
-504,Lansing Christian HS
-505,Webberville HS
-506,Blanchard Montabella HS
-507,Carson City-Crystal HS
-508,Fulton HS
-509,Saginaw Nouvel HS
-510,Ashley HS
-511,Merrill HS
-512,Kalamazoo Christian HS
-513,Kalamazoo Hackett Catholic Prep HS
-514,Lawrence HS
-515,Cassopolis HS
-516,Marcellus HS
-517,Petersburg Summerfield HS
-518,Morenci HS
-519,Addison HS
-520,Allen Park Cabrini HS
-521,Allen Park Inter-City Baptist HS
-522,Taylor Trillium Academy HS
-523,Bloomfield Hills Roeper HS
-524,Detroit Davis Aerospace HS
-525,Sterling Heights Parkway Christian HS
-526,Auburn Hills Oakland Christian HS
-527,Clarkston Everest Collegiate HS
-528,Rochester Hills Lutheran Northwest HS
-529,Capac HS
-530,Peck HS
-531,Dryden HS
-532,Ironwood HS
-533,Ontonagon HS
-534,Lake Linden-Hubbell HS
-535,Bark River-Harris HS
-536,Manistique HS
-537,Powers North Central HS
-538,Pickford HS
-539,Brimley HS
-540,Pellston HS
-541,Alanson HS
-542,Harbor Springs Harbor Light Christian HS
-543,Brethren HS
-544,Mesick HS
-545,Manistee Catholic Central HS
-546,Mason County Eastern HS
-547,New Buffalo HS
-548,Three Oaks River Valley HS
-549,Eau Claire HS
-550,Mendon HS
-551,Burr Oak HS
-552,White Pigeon HS
-553,Athens HS
-554,Tekonsha HS
-555,Bellevue HS
-556,Concord HS
-557,East Jackson HS
-558,Vandercook Lake HS
-559,Waldron HS
-560,North Adams-Jerome HS
-561,Reading HS
-562,Lutheran Westland HS
-563,West Bloomfield Frankel Jewish Academy HS
-564,Westland Huron Valley Lutheran HS
-565,Genesee Christian HS
-566,Marlette HS
-567,Mayville HS
-568,Akron-Fairgrove HS
-569,Unionville-Sebewaing HS
-570,Caseville HS
-571,Kinde North Huron HS
-572,Ubly HS
-573,Carsonville-Port Sanilac HS
-574,Hancock HS
-575,Wakefield-Marenisco HS
-576,L'Anse HS
-577,Crystal Falls Forest Park HS
-578,Mackinaw City HS
-579,Boyne Falls HS
-580,Hillman HS
-581,Posen HS
-582,Whittemore-Prescott HS
-583,Frankfort HS
-584,Martin HS
-585,Vestaburg HS
-586,Saginaw Michigan Lutheran Seminary HS
-587,St Joseph Our Lady of the Lake Catholic HS
-588,Kalamazoo Heritage Christian HS
-589,Camden-Frontier HS
-590,Adrian Lenawee Christian HS
-591,Novi Christian Academy HS
-592,Southfield Christian HS
-593,New Haven Merritt Academy HS
-594,Genesee HS
-595,Deckerville HS
-596,Fife Lake Forest Area HS
+,,0,,,,
+,0,Orchard Lake St Mary's HS,,,,
+,1,Grosse Pointe North HS,,,,
+,2,Battle Creek Lakeview HS,,,,
+,3,Grand Rapids Forest Hills Northern HS,,,,
+,4,Mattawan HS,,,,
+,5,Midland HS,,,,
+,6,Grandville HS,,,,
+,7,Northville HS,,,,
+,8,Brighton HS,,,,
+,9,Monroe HS,,,,
+,10,Clinton Township Chippewa Valley HS,,,,
+,11,Detroit Western HS,,,,
+,12,Birmingham Groves HS,,,,
+,13,Hartland HS,,,,
+,14,Detroit Catholic Central HS,,,,
+,15,Lake Orion HS,,,,
+,16,Grand Rapids Forest Hills Central HS,,,,
+,17,Ann Arbor Skyline HS,,,,
+,18,Traverse City Central HS,,,,
+,19,Muskegon Reeths-Puffer HS,,,,
+,20,Hudsonville HS,,,,
+,21,Holt HS,,,,
+,22,Brownstown Woodhaven HS,,,,
+,23,Livonia Franklin HS,,,,
+,24,Allen Park HS,,,,
+,25,Detroit U-D Jesuit HS,,,,
+,26,Warren De La Salle Collegiate HS,,,,
+,27,New Baltimore Anchor Bay HS,,,,
+,28,Bloomfield Hills Brother Rice HS,,,,
+,29,White Lake Lakeland HS,,,,
+,30,Rochester Adams HS,,,,
+,31,Flushing HS,,,,
+,32,Mount Pleasant HS,,,,
+,33,Alpena HS,,,,
+,34,Traverse City West HS,,,,
+,35,Bay City Western HS,,,,
+,36,Midland Dow HS,,,,
+,37,Saginaw Heritage HS,,,,
+,38,Grand Rapids Kenowa Hills HS,,,,
+,39,Grand Haven HS,,,,
+,40,Muskegon Mona Shores HS,,,,
+,41,Greenville HS,,,,
+,42,Cedar Springs HS,,,,
+,43,Grand Rapids Northview HS,,,,
+,44,Byron Center HS,,,,
+,45,Jenison HS,,,,
+,46,Wyoming HS,,,,
+,47,Caledonia HS,,,,
+,48,Grand Rapids Ottawa Hills HS,,,,
+,49,Lowell HS,,,,
+,50,Portage Northern HS,,,,
+,51,Kalamazoo Central HS,,,,
+,52,Portage Central HS,,,,
+,53,Grand Ledge HS,,,,
+,54,Lansing Waverly HS,,,,
+,55,DeWitt HS,,,,
+,56,East Lansing HS,,,,
+,57,Howell HS,,,,
+,58,Okemos HS,,,,
+,59,Jackson HS,,,,
+,60,Sturgis HS,,,,
+,61,Coldwater HS,,,,
+,62,Dexter HS,,,,
+,63,Ann Arbor Pioneer HS,,,,
+,64,Ann Arbor Huron HS,,,,
+,65,Ypsilanti Lincoln HS,,,,
+,66,Temperance Bedford HS,,,,
+,67,Ypsilanti Community HS,,,,
+,68,Southgate Anderson HS,,,,
+,69,Taylor HS,,,,
+,70,Gibraltar Carlson HS,,,,
+,71,Livonia Churchill HS,,,,
+,72,Plymouth HS,,,,
+,73,Salem HS,,,,
+,74,Dearborn Heights Crestwood HS,,,,
+,75,Redford Thurston HS,,,,
+,76,Wayne Memorial HS,,,,
+,77,Dearborn Edsel Ford HS,,,,
+,78,Melvindale HS,,,,
+,79,Lincoln Park HS,,,,
+,80,Dearborn Fordson HS,,,,
+,81,Detroit Cass Tech HS,,,,
+,82,River Rouge HS,,,,
+,83,Warren Mott HS,,,,
+,84,Royal Oak HS,,,,
+,85,Troy Athens HS,,,,
+,86,Roseville HS,,,,
+,87,St Clair Shores Lakeview HS,,,,
+,88,St Clair Shores Lake Shore HS,,,,
+,89,Macomb Dakota HS,,,,
+,90,Utica Ford HS,,,,
+,91,Sterling Heights Stevenson HS,,,,
+,92,Novi HS,,,,
+,93,South Lyon East HS,,,,
+,94,South Lyon HS,,,,
+,95,Farmington HS,,,,
+,96,Birmingham Seaholm HS,,,,
+,97,North Farmington HS,,,,
+,98,Walled Lake Western HS,,,,
+,99,Walled Lake Central HS,,,,
+,100,Milford HS,,,,
+,101,Auburn Hills Avondale HS,,,,
+,102,West Bloomfield HS,,,,
+,103,Troy HS,,,,
+,104,Utica Eisenhower HS,,,,
+,105,Romeo HS,,,,
+,106,Rochester Hills Stoney Creek HS,,,,
+,107,Oxford HS,,,,
+,108,Clarkston HS,,,,
+,109,Waterford Mott HS,,,,
+,110,Fenton HS,,,,
+,111,Grand Blanc HS,,,,
+,112,Swartz Creek HS,,,,
+,113,Flint Kearsley HS,,,,
+,114,Lapeer HS,,,,
+,115,Davison HS,,,,
+,116,Holland West Ottawa HS,,,,
+,117,St Joseph HS,,,,
+,118,Zeeland West HS,,,,
+,119,Ferndale HS,,,,
+,120,Fraser HS,,,,
+,121,Sterling Heights HS,,,,
+,122,Warren Woods Tower HS,,,,
+,123,Harrison Township L'Anse Creuse HS,,,,
+,124,Macomb L'Anse Creuse North HS,,,,
+,125,Port Huron Northern HS,,,,
+,126,Bay City Central HS,,,,
+,127,Muskegon HS,,,,
+,128,Rockford HS,,,,
+,129,Grand Rapids Union HS,,,,
+,130,East Kentwood HS,,,,
+,131,Holland HS,,,,
+,132,Kalamazoo Loy Norrix HS,,,,
+,133,Lansing Everett HS,,,,
+,134,Mason HS,,,,
+,135,Battle Creek Central HS,,,,
+,136,Saline HS,,,,
+,137,Belleville HS,,,,
+,138,Wyandotte Roosevelt HS,,,,
+,139,Canton HS,,,,
+,140,Westland John Glenn HS,,,,
+,141,Dearborn HS,,,,
+,142,Hamtramck HS,,,,
+,143,Detroit Renaissance HS,,,,
+,144,Southfield Arts & Technology HS,,,,
+,145,Berkley HS,,,,
+,146,Warren Cousino HS,,,,
+,147,Port Huron HS,,,,
+,148,Livonia Stevenson HS,,,,
+,149,Walled Lake Northern HS,,,,
+,150,Bloomfield Hills HS,,,,
+,151,Rochester HS,,,,
+,152,Waterford Kettering HS,,,,
+,153,Holly HS,,,,
+,154,Flint Carman-Ainsworth HS,,,,
+,155,Grosse Pointe South HS,,,,
+,156,Utica HS,,,,
+,157,Ada Forest Hills Eastern HS,,,,
+,158,Grand Rapids Christian HS,,,,
+,159,Grosse Ile HS,,,,
+,160,Goodrich HS,,,,
+,161,Petoskey HS,,,,
+,162,Bay City John Glenn HS,,,,
+,163,Fruitport HS,,,,
+,164,Hamilton HS,,,,
+,165,Charlotte HS,,,,
+,166,Vicksburg HS,,,,
+,167,Milan HS,,,,
+,168,Dearborn Divine Child HS,,,,
+,169,Hazel Park HS,,,,
+,170,Madison Heights Lamphere HS,,,,
+,171,Flint Powers Catholic HS,,,,
+,172,Richmond HS,,,,
+,173,Howard City Tri County HS,,,,
+,174,Allendale HS,,,,
+,175,Grand Rapids Catholic Central HS,,,,
+,176,Grand Rapids South Christian HS,,,,
+,177,Berrien Springs HS,,,,
+,178,Williamston HS,,,,
+,179,Cheboygan HS,,,,
+,180,Clare HS,,,,
+,181,Jackson Northwest HS,,,,
+,182,Carleton Airport HS,,,,
+,183,Livonia Clarenceville HS,,,,
+,184,Harper Woods HS,,,,
+,185,Macomb Lutheran North HS,,,,
+,186,Croswell-Lexington HS,,,,
+,187,Saginaw Swan Valley HS,,,,
+,188,Escanaba HS,,,,
+,189,Marquette HS,,,,
+,190,Sault Ste Marie HS,,,,
+,191,Cadillac HS,,,,
+,192,Ogemaw Heights HS,,,,
+,193,Gaylord HS,,,,
+,194,Gladwin HS,,,,
+,195,Ludington HS,,,,
+,196,Remus Chippewa Hills HS,,,,
+,197,Essexville Garber HS,,,,
+,198,Midland Bullock Creek HS,,,,
+,199,Shepherd HS,,,,
+,200,Muskegon Oakridge HS,,,,
+,201,Spring Lake HS,,,,
+,202,Whitehall HS,,,,
+,203,Alma HS,,,,
+,204,Grant HS,,,,
+,205,Newaygo HS,,,,
+,206,Comstock Park HS,,,,
+,207,Grand Rapids West Catholic HS,,,,
+,208,Coopersville HS,,,,
+,209,Belding HS,,,,
+,210,St Johns HS,,,,
+,211,Portland HS,,,,
+,212,Zeeland East HS,,,,
+,213,Holland Christian HS,,,,
+,214,South Haven HS,,,,
+,215,Wyoming Kelloggsville HS,,,,
+,216,Hudsonville Unity Christian HS,,,,
+,217,Wyoming Godwin Heights HS,,,,
+,218,Hopkins HS,,,,
+,219,Wayland HS,,,,
+,220,Otsego HS,,,,
+,221,East Grand Rapids HS,,,,
+,222,Hastings HS,,,,
+,223,Middleville Thornapple Kellogg HS,,,,
+,224,Stevensville Lakeshore HS,,,,
+,225,Dowagiac HS,,,,
+,226,Edwardsburg HS,,,,
+,227,Parchment HS,,,,
+,228,Paw Paw HS,,,,
+,229,Three Rivers HS,,,,
+,230,Marshall HS,,,,
+,231,Battle Creek Pennfield HS,,,,
+,232,Olivet HS,,,,
+,233,Richland Gull Lake HS,,,,
+,234,Lansing Sexton HS,,,,
+,235,Eaton Rapids HS,,,,
+,236,Lansing Eastern HS,,,,
+,237,Parma Western HS,,,,
+,238,Adrian HS,,,,
+,239,Tecumseh HS,,,,
+,240,Ann Arbor Father Gabriel Richard HS,,,,
+,241,Pinckney HS,,,,
+,242,Dundee HS,,,,
+,243,Monroe Jefferson HS,,,,
+,244,Flat Rock HS,,,,
+,245,New Boston Huron HS,,,,
+,246,Garden City HS,,,,
+,247,Dearborn Henry Ford Academy HS,,,,
+,248,Dearborn Heights Annapolis HS,,,,
+,249,Redford Union HS,,,,
+,250,Detroit Communication Media Arts HS,,,,
+,251,Detroit Henry Ford HS,,,,
+,252,Riverview HS,,,,
+,253,Trenton HS,,,,
+,254,Detroit Martin Luther King HS,,,,
+,255,Harper Woods Chandler Park HS,,,,
+,256,Detroit Country Day HS,,,,
+,257,Bloomfield Hills Cranbrook Kingswood HS,,,,
+,258,Pontiac Notre Dame Prep HS,,,,
+,259,Marine City HS,,,,
+,260,St Clair HS,,,,
+,261,Marysville HS,,,,
+,262,Imlay City HS,,,,
+,263,Yale HS,,,,
+,264,North Branch HS,,,,
+,265,Carrollton HS,,,,
+,266,Saginaw Arthur Hill HS,,,,
+,267,Saginaw HS,,,,
+,268,Frankenmuth HS,,,,
+,269,Clio HS,,,,
+,270,Birch Run HS,,,,
+,271,Corunna HS,,,,
+,272,Owosso HS,,,,
+,273,Haslett HS,,,,
+,274,Linden HS,,,,
+,275,Ortonville Brandon HS,,,,
+,276,Lake Fenton HS,,,,
+,277,Detroit University Prep HS,,,,
+,278,Detroit Mumford HS,,,,
+,279,Warren Fitzgerald HS,,,,
+,280,Detroit East English HS,,,,
+,281,Center Line HS,,,,
+,282,Eastpointe HS,,,,
+,283,Kingsford HS,,,,
+,284,Kingsley HS,,,,
+,285,Big Rapids HS,,,,
+,286,Freeland HS,,,,
+,287,Muskegon Orchard View HS,,,,
+,288,Fremont HS,,,,
+,289,Sparta HS,,,,
+,290,Ionia HS,,,,
+,291,Allegan HS,,,,
+,292,Grand Rapids West Michigan Aviation Academy HS,,,,
+,293,Niles HS,,,,
+,294,Plainwell HS,,,,
+,295,Battle Creek Harper Creek HS,,,,
+,296,Lake Odessa Lakewood HS,,,,
+,297,Romulus Summit Academy North HS,,,,
+,298,Armada HS,,,,
+,299,Flint Hamady HS,,,,
+,300,Fowlerville HS,,,,
+,301,Chelsea HS,,,,
+,302,Buchanan HS,,,,
+,303,Detroit Edison HS,,,,
+,304,Pewamo-Westphalia HS,,,,
+,305,Standish-Sterling HS,,,,
+,306,Houghton HS,,,,
+,307,Traverse City St Francis HS,,,,
+,308,Reed City HS,,,,
+,309,Lansing Catholic HS,,,,
+,310,Montague HS,,,,
+,311,Grand Rapids Covenant Christian HS,,,,
+,312,Onsted HS,,,,
+,313,Clinton HS,,,,
+,314,Hudson HS,,,,
+,315,Algonac HS,,,,
+,316,Ecorse HS,,,,
+,317,Millington HS,,,,
+,318,LeRoy Pine River HS,,,,
+,319,Watervliet HS,,,,
+,320,Laingsburg HS,,,,
+,321,Climax-Scotts HS,,,,
+,322,Union City HS,,,,
+,323,Jackson Lumen Christi HS,,,,
+,324,Brighton Charyl Stockwell Prep HS,,,,
+,325,Gladstone HS,,,,
+,326,Boyne City HS,,,,
+,327,Beaverton HS,,,,
+,328,Grand Rapids NorthPointe Christian HS,,,,
+,329,Hemlock HS,,,,
+,330,Ottawa Lake Whiteford HS,,,,
+,331,Madison Heights Bishop Foley HS,,,,
+,332,Bad Axe HS,,,,
+,333,East Jordan HS,,,,
+,334,Harbor Springs HS,,,,
+,335,Charlevoix HS,,,,
+,336,Elk Rapids HS,,,,
+,337,Traverse City Christian HS,,,,
+,338,Grayling HS,,,,
+,339,Benzie Central HS,,,,
+,340,McBain HS,,,,
+,341,Lake City HS,,,,
+,342,Hart HS,,,,
+,343,Evart HS,,,,
+,344,Mason County Central HS,,,,
+,345,Farwell HS,,,,
+,346,Houghton Lake HS,,,,
+,347,Roscommon HS,,,,
+,348,Oscoda HS,,,,
+,349,Sanford Meridian HS,,,,
+,350,Tawas HS,,,,
+,351,Hesperia HS,,,,
+,352,North Muskegon HS,,,,
+,353,Ravenna HS,,,,
+,354,Morley Stanwood HS,,,,
+,355,Kent City HS,,,,
+,356,Lakeview HS,,,,
+,357,Saugatuck HS,,,,
+,358,Fennville HS,,,,
+,359,Grandville Calvin Christian HS,,,,
+,360,Coloma HS,,,,
+,361,Bloomingdale HS,,,,
+,362,Hartford HS,,,,
+,363,Ithaca HS,,,,
+,364,Saranac HS,,,,
+,365,Ovid-Elsie HS,,,,
+,366,Chesaning HS,,,,
+,367,Montrose HS,,,,
+,368,New Lothrop HS,,,,
+,369,Potterville HS,,,,
+,370,Springport HS,,,,
+,371,Vermontville Maple Valley HS,,,,
+,372,Durand HS,,,,
+,373,Perry HS,,,,
+,374,Bridgman HS,,,,
+,375,Lawton HS,,,,
+,376,Constantine HS,,,,
+,377,Centreville HS,,,,
+,378,Schoolcraft HS,,,,
+,379,Comstock HS,,,,
+,380,Homer HS,,,,
+,381,Quincy HS,,,,
+,382,Bronson HS,,,,
+,383,Hillsdale HS,,,,
+,384,Hanover-Horton HS,,,,
+,385,Jonesville HS,,,,
+,386,Leslie HS,,,,
+,387,Michigan Center HS,,,,
+,388,Stockbridge HS,,,,
+,389,Grass Lake HS,,,,
+,390,Manchester HS,,,,
+,391,Ann Arbor Greenhills HS,,,,
+,392,Adrian Madison HS,,,,
+,393,Brooklyn Columbia Central HS,,,,
+,394,Sand Creek HS,,,,
+,395,Blissfield HS,,,,
+,396,Monroe St Mary Catholic Central HS,,,,
+,397,Erie Mason HS,,,,
+,398,Canton Prep HS,,,,
+,399,Taylor Prep HS,,,,
+,400,Dearborn Heights Robichaud HS,,,,
+,401,Detroit Cristo Rey HS,,,,
+,402,Detroit Central HS,,,,
+,403,Detroit Loyola HS,,,,
+,404,Clawson HS,,,,
+,405,Madison Heights Madison HS,,,,
+,406,Clinton Township Clintondale HS,,,,
+,407,Detroit Osborn HS,,,,
+,408,Grosse Pointe Woods University Liggett HS,,,,
+,409,Mt Morris HS,,,,
+,410,Burton Bentley HS,,,,
+,411,Burton Bendle HS,,,,
+,412,Reese HS,,,,
+,413,Saginaw Valley Lutheran HS,,,,
+,414,Vassar HS,,,,
+,415,Sandusky HS,,,,
+,416,Caro HS,,,,
+,417,Cass City HS,,,,
+,418,Negaunee HS,,,,
+,419,Iron Mountain HS,,,,
+,420,Calumet HS,,,,
+,421,Eben Junction Superior Central HS,,,,
+,422,Newberry HS,,,,
+,423,Menominee HS,,,,
+,424,New Haven HS,,,,
+,425,Brown City HS,,,,
+,426,Memphis HS,,,,
+,427,Mancelona HS,,,,
+,428,Kalkaska HS,,,,
+,429,Manton HS,,,,
+,430,Manistee HS,,,,
+,431,Harrison HS,,,,
+,432,Pinconning HS,,,,
+,433,Shelby HS,,,,
+,434,Central Montcalm HS,,,,
+,435,Holland Black River HS,,,,
+,436,Bangor HS,,,,
+,437,St Louis HS,,,,
+,438,St Charles HS,,,,
+,439,Delton Kellogg HS,,,,
+,440,Bath HS,,,,
+,441,Niles Brandywine HS,,,,
+,442,Galesburg-Augusta HS,,,,
+,443,Napoleon HS,,,,
+,444,Ida HS,,,,
+,445,Hope of Detroit Academy HS,,,,
+,446,Detroit Southeastern HS,,,,
+,447,Burton Atherton HS,,,,
+,448,Otisville LakeVille Memorial HS,,,,
+,449,Elkton-Pigeon-Bay Port Laker HS,,,,
+,450,Almont HS,,,,
+,451,Riverview Gabriel Richard HS,,,,
+,452,Beal City HS,,,,
+,453,Whitmore Lake HS,,,,
+,454,Rudyard HS,,,,
+,455,Johannesburg-Lewiston HS,,,,
+,456,Painesdale Jeffers HS,,,,
+,457,Maple City Glen Lake HS,,,,
+,458,Fowler HS,,,,
+,459,Muskegon Catholic Central HS,,,,
+,460,Dansville HS,,,,
+,461,Britton Deerfield HS,,,,
+,462,Gobles HS,,,,
+,463,Decatur HS,,,,
+,464,Bay City All Saints HS,,,,
+,465,Marine City Cardinal Mooney HS,,,,
+,466,Royal Oak Shrine Catholic HS,,,,
+,467,White Cloud HS,,,,
+,468,St Joseph Michigan Lutheran HS,,,,
+,469,Colon HS,,,,
+,470,Norway HS,,,,
+,471,Indian River Inland Lakes HS,,,,
+,472,Gaylord St Mary HS,,,,
+,473,Alcona HS,,,,
+,474,Bear Lake HS,,,,
+,475,Portland St Patrick HS,,,,
+,476,Breckenridge HS,,,,
+,477,Litchfield HS,,,,
+,478,Pittsford HS,,,,
+,479,Plymouth Christian Academy HS,,,,
+,480,Waterford Our Lady of the Lakes HS,,,,
+,481,Kingston HS,,,,
+,482,Harbor Beach HS,,,,
+,483,Lake Leelanau St Mary HS,,,,
+,484,Suttons Bay HS,,,,
+,485,Buckley HS,,,,
+,486,Central Lake HS,,,,
+,487,Bellaire HS,,,,
+,488,Ellsworth HS,,,,
+,489,Rogers City HS,,,,
+,490,Atlanta HS,,,,
+,491,Onaway HS,,,,
+,492,Au Gres-Sims HS,,,,
+,493,Hale HS,,,,
+,494,Mio HS,,,,
+,495,Coleman HS,,,,
+,496,Mount Pleasant Sacred Heart HS,,,,
+,497,Marion HS,,,,
+,498,Holton HS,,,,
+,499,Muskegon Western Michigan Christian HS,,,,
+,500,Wyoming Tri-unity Christian HS,,,,
+,501,Byron Center Zion Christian HS,,,,
+,502,Wyoming Potter's House Christian HS,,,,
+,503,Morrice HS,,,,
+,504,Lansing Christian HS,,,,
+,505,Webberville HS,,,,
+,506,Blanchard Montabella HS,,,,
+,507,Carson City-Crystal HS,,,,
+,508,Fulton HS,,,,
+,509,Saginaw Nouvel HS,,,,
+,510,Ashley HS,,,,
+,511,Merrill HS,,,,
+,512,Kalamazoo Christian HS,,,,
+,513,Kalamazoo Hackett Catholic Prep HS,,,,
+,514,Lawrence HS,,,,
+,515,Cassopolis HS,,,,
+,516,Marcellus HS,,,,
+,517,Petersburg Summerfield HS,,,,
+,518,Morenci HS,,,,
+,519,Addison HS,,,,
+,520,Allen Park Cabrini HS,,,,
+,521,Allen Park Inter-City Baptist HS,,,,
+,522,Taylor Trillium Academy HS,,,,
+,523,Bloomfield Hills Roeper HS,,,,
+,524,Detroit Davis Aerospace HS,,,,
+,525,Sterling Heights Parkway Christian HS,,,,
+,526,Auburn Hills Oakland Christian HS,,,,
+,527,Clarkston Everest Collegiate HS,,,,
+,528,Rochester Hills Lutheran Northwest HS,,,,
+,529,Capac HS,,,,
+,530,Peck HS,,,,
+,531,Dryden HS,,,,
+,532,Ironwood HS,,,,
+,533,Ontonagon HS,,,,
+,534,Lake Linden-Hubbell HS,,,,
+,535,Bark River-Harris HS,,,,
+,536,Manistique HS,,,,
+,537,Powers North Central HS,,,,
+,538,Pickford HS,,,,
+,539,Brimley HS,,,,
+,540,Pellston HS,,,,
+,541,Alanson HS,,,,
+,542,Harbor Springs Harbor Light Christian HS,,,,
+,543,Brethren HS,,,,
+,544,Mesick HS,,,,
+,545,Manistee Catholic Central HS,,,,
+,546,Mason County Eastern HS,,,,
+,547,New Buffalo HS,,,,
+,548,Three Oaks River Valley HS,,,,
+,549,Eau Claire HS,,,,
+,550,Mendon HS,,,,
+,551,Burr Oak HS,,,,
+,552,White Pigeon HS,,,,
+,553,Athens HS,,,,
+,554,Tekonsha HS,,,,
+,555,Bellevue HS,,,,
+,556,Concord HS,,,,
+,557,East Jackson HS,,,,
+,558,Vandercook Lake HS,,,,
+,559,Waldron HS,,,,
+,560,North Adams-Jerome HS,,,,
+,561,Reading HS,,,,
+,562,Lutheran Westland HS,,,,
+,563,West Bloomfield Frankel Jewish Academy HS,,,,
+,564,Westland Huron Valley Lutheran HS,,,,
+,565,Genesee Christian HS,,,,
+,566,Marlette HS,\,,,
+,567,Mayville HS,\,,,
+,568,Akron-Fairgrove HS,,,,
+,569,Unionville-Sebewaing HS,,,,
+,570,Caseville HS,,,,
+,571,Kinde North Huron HS,,,,
+,572,Ubly HS,\,,,
+,573,Carsonville-Port Sanilac HS,,,,
+,,,,,,
+BB_HS_MI_12_16_1,574,Hancock HS,?,Hancock Driving Park,<umi Park,
+BB_HS_MI_12_16_1,575,Wakefield-Marenisco HS,?,No apparent home field,,
+BB_HS_MI_12_16_1,576,L'Anse HS,x,,,
+BB_HS_MI_12_16_1,577,Crystal Falls Forest Park HS,x,No apparent home field,,
+BB_HS_MI_12_16_1,578,Mackinaw City HS,x,,,
+BB_HS_MI_12_16_1,579,Boyne Falls HS,?,ptobably the boyne county park,,
+BB_HS_MI_12_16_1,580,Hillman HS,x,,,
+BB_HS_MI_12_16_1,581,Posen HS,x,,,
+BB_MI_HS_12_15_22,582,Whittemore-Prescott HS,?,,,
+BB_MI_HS_12_15_22,583,Frankfort HS,?,,,
+BB_MI_HS_12_15_22,584,Martin HS,x,,,
+BB_MI_HS_12_15_22,585,Vestaburg HS,x,,,
+BB_MI_HS_12_15_22,586,Saginaw Michigan Lutheran Seminary HS,?,No apparent home field,,
+BB_MI_HS_12_15_22,587,St Joseph Our Lady of the Lake Catholic HS,x,Eaton park ,Muni?,"3475 Lincoln Ave; St Joseph, MI"
+BB_MI_HS_12_15_22,588,Kalamazoo Heritage Christian HS,?,,,
+BB_MI_HS_12_15_22,589,Camden-Frontier HS,?,,,
+BB_MI_HS_12_15_22,590,Adrian Lenawee Christian HS,x,,,
+BB_MI_HS_12_15_22,591,Novi Christian Academy HS,x,,,
+BB_MI_HS_12_15_22,592,Southfield Christian HS,x,,,
+BB_MI_HS_12_15_22,593,New Haven Merritt Academy HS,x,,,
+BB_MI_HS_12_15_22,594,Genesee HS,x,,,
+BB_MI_HS_12_15_22,595,Deckerville HS,x,,,
+BB_MI_HS_12_15_22,596,Fife Lake Forest Area HS,x,,,
