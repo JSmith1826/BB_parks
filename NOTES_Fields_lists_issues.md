@@ -32,3 +32,13 @@ x - Whiteford High School - Ottawa Lake	377.6789289	471.2160041	426.4735047
 XX - DONE -* Robert L Nichols Field - Battle Creek in Bailey Park 
 * Mt. Pleasant HS has a second field - practice field that I didn't plot
 * Portland St. Pats field should just be retired. not even sure if it is still in use + the matching got screwed up 
+
+## Monday 12-19-22
+Problems with these fields after new ETL process
+All have a problem with min distance
+    Homer High School
+    Battle Creek Robert L Nichols Field
+    Royal Oak Memorial Park
+    Eaton Park - muni
+    Rochester Hills Lutheran Northwest HS
+

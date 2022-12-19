@@ -2,24 +2,34 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>ballparks.kml</name>
-	<StyleMap id="msn_ylw-pushpin0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin">
+	<StyleMap id="msn_ylw-pushpin1">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#sn_ylw-pushpin</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
 			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin10">
@@ -162,16 +172,6 @@
 			<styleUrl>#sh_ylw-pushpin22</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin3">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin2</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin2</styleUrl>
-		</Pair>
-	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin30">
 		<Pair>
 			<key>normal</key>
@@ -297,15 +297,6 @@
 		</Pair>
 	</StyleMap>
 	<Style id="poly-000000-1200-77-highlight">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="poly-000000-1200-77-highlight0">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -1092,15 +1083,6 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-normal00">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.2</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
 	<Style id="poly-000000-1200-77-normal1">
 		<LineStyle>
 			<color>ff000000</color>
@@ -1136,16 +1118,6 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-highlight2</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="poly-000000-1200-7700">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-normal00</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-highlight0</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-771">
@@ -1246,17 +1218,6 @@
 			<color>4c37ebf4</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin0">
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
 	<Style id="sh_ylw-pushpin">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -1265,10 +1226,26 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<PolyStyle>
 			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin00">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin0">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
 	<Style id="sh_ylw-pushpin10">
@@ -1353,15 +1330,6 @@
 		</PolyStyle>
 	</Style>
 	<Style id="sh_ylw-pushpin19">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin2">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -1460,9 +1428,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin">
-		<BalloonStyle>
-		</BalloonStyle>
+	<Style id="sn_ylw-pushpin0">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -1471,7 +1437,16 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin0">
+	<Style id="sn_ylw-pushpin">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin00">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -1479,8 +1454,6 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<PolyStyle>
 			<fill>0</fill>
 		</PolyStyle>
@@ -1567,15 +1540,6 @@
 		</PolyStyle>
 	</Style>
 	<Style id="sn_ylw-pushpin19">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.2</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin2">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -1676,12 +1640,10 @@
 	</Style>
 	<Folder>
 		<name>ballparks</name>
-		<visibility>0</visibility>
 		<open>1</open>
 		<Folder>
 			<name>Adrian College</name>
 			<visibility>0</visibility>
-			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
 				<visibility>0</visibility>
@@ -1748,7 +1710,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Airport High School - Carleton</name>
+			<name>Carleton Airport High School</name>
 			<visibility>0</visibility>
 			<Placemark>
 				<name>Foul</name>
@@ -1818,7 +1780,6 @@
 		</Folder>
 		<Folder>
 			<name>Aldai Stevenson High School</name>
-			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
 				<name>Foul</name>
@@ -1837,43 +1798,7 @@
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<visibility>0</visibility>
 				<styleUrl>#poly-000000-1200-77-nodesc20</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-83.01445630000001,42.5871203,0 -83.014231,42.5879833,0 -83.0154809,42.5878857,0 -83.01566459999999,42.5872902,0 -83.01445630000001,42.5871203,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-		</Folder>
-		<Folder>
-			<name>Aldai Stevenson High School</name>
-			<visibility>0</visibility>
-			<open>1</open>
-			<Placemark>
-				<name>Foul</name>
-				<visibility>0</visibility>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-83.01445630000001,42.5871203,0 -83.01566459999999,42.5872902,0 -83.01560689999999,42.5871578,0 -83.01556669999999,42.5871578,0 -83.0155372,42.5871539,0 -83.0148023,42.5871095,0 -83.0144227,42.5870295,0 -83.01436510000001,42.5870611,0 -83.01434089999999,42.5871519,0 -83.0143222,42.5872309,0 -83.0143396,42.5872437,0 -83.0142618,42.5872526,0 -83.0142699,42.5872734,0 -83.0142524,42.5873168,0 -83.01428730000001,42.5873326,0 -83.0142578,42.5874353,0 -83.0141156,42.5879724,0 -83.0141666,42.5879803,0 -83.0141921,42.5879942,0 -83.014231,42.5879833,0 -83.01445630000001,42.5871203,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>FOP</name>
-				<visibility>0</visibility>
-				<styleUrl>#msn_ylw-pushpin3</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -1957,8 +1882,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Ann Arbor Skyline HS
-</name>
+			<name>Ann Arbor Skyline HS</name>
 			<visibility>0</visibility>
 			<Placemark>
 				<name>foul</name>
@@ -2371,7 +2295,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Borden Field  Coldwater Muni</name>
+			<name>Coldwater Borden Field - Muni</name>
 			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
@@ -2753,43 +2677,9 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Canton High School</name>
-			<visibility>0</visibility>
-			<open>1</open>
-			<Placemark>
-				<name>Canton_FOP</name>
-				<visibility>0</visibility>
-				<styleUrl>#msn_ylw-pushpin170</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-83.49151519999999,42.3441818,0 -83.4903363,42.3442076,0 -83.4903269,42.3442403,0 -83.4903243,42.3442948,0 -83.49031890000001,42.3443414,0 -83.49031890000001,42.344388,0 -83.49031890000001,42.3444217,0 -83.49031890000001,42.3444792,0 -83.4903269,42.3445516,0 -83.490335,42.3445971,0 -83.4903484,42.3446348,0 -83.4903645,42.3446646,0 -83.490386,42.3447141,0 -83.4904128,42.3447538,0 -83.4904409,42.3448013,0 -83.4904678,42.344841,0 -83.4905053,42.3448846,0 -83.49053480000001,42.3449163,0 -83.490559,42.3449441,0 -83.49059920000001,42.3449659,0 -83.49066089999999,42.3449857,0 -83.4907118,42.3450055,0 -83.4907709,42.3450234,0 -83.4908325,42.3450432,0 -83.4908889,42.3450551,0 -83.49093449999999,42.345065,0 -83.4910096,42.3450749,0 -83.4910605,42.3450828,0 -83.4911061,42.3450848,0 -83.4911517,42.3450868,0 -83.49121340000001,42.3450828,0 -83.491259,42.3450809,0 -83.49130460000001,42.3450789,0 -83.4913797,42.3450749,0 -83.4914387,42.3450749,0 -83.49150849999999,42.345069,0 -83.4915527,42.345066,0 -83.49151519999999,42.3441818,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>Canton_Foul</name>
-				<visibility>0</visibility>
-				<styleUrl>#msn_ylw-pushpin170</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-83.49151519999999,42.3441818,0 -83.4915527,42.345066,0 -83.49175390000001,42.3450581,0 -83.4917244,42.3443959,0 -83.49168950000001,42.3444019,0 -83.4916815,42.3443533,0 -83.49170290000001,42.3443553,0 -83.49169759999999,42.3442581,0 -83.49169759999999,42.3442244,0 -83.49166270000001,42.3441451,0 -83.4915822,42.3440837,0 -83.49142670000001,42.3440341,0 -83.49142670000001,42.3440421,0 -83.49112359999999,42.344046,0 -83.49033900000001,42.3440748,0 -83.4903363,42.3442076,0 -83.49151519999999,42.3441818,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-		</Folder>
-		<Folder>
 			<name>Canton HS</name>
 			<visibility>0</visibility>
+			<open>1</open>
 			<Placemark>
 				<name>foul</name>
 				<visibility>0</visibility>
@@ -3031,7 +2921,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Clarenceville HS - Livonia</name>
+			<name>Livonia - Clarenceville HS</name>
 			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
@@ -3967,7 +3857,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Everett High School</name>
+			<name>Lansing - Everett High School</name>
 			<visibility>0</visibility>
 			<Placemark>
 				<name>Foul Ground</name>
@@ -4001,7 +3891,7 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Fankfort H S</name>
+			<name>Fankfort HS</name>
 			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
@@ -4247,6 +4137,7 @@
 		<Folder>
 			<name>Gainey Athletic Complex - Field 2 - college</name>
 			<visibility>0</visibility>
+			<open>1</open>
 			<description>Home of Aquinas College softball, the Gainey Athletic Complex has been the home facility for AQ since 2020.
  
 The Gainey Athletic Complex is a public facility that has walking and running paths, baseball diamonds, soccer fields, softball fields, and tennis courts. The facility also houses home venues for Calvin University and Cornerstone University.
@@ -4631,7 +4522,7 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Grand Ledge Bridge St (10u)</name>
+			<name>Grand Ledge Bridge St (10u) - youth</name>
 			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
@@ -4666,7 +4557,7 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Grand Ledge Hayes (12u)</name>
+			<name>Grand Ledge Hayes (12u) - youth</name>
 			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
@@ -4736,7 +4627,7 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Grand Ledge JV</name>
+			<name>Grand Ledge JV - 14u youth</name>
 			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
@@ -6159,7 +6050,7 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Kalamazoo College</name>
+			<name>Kalamazoo College - college</name>
 			<visibility>0</visibility>
 			<Placemark>
 				<name>Foul</name>
@@ -6330,7 +6221,7 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Klenk Park - Alma College</name>
+			<name>Klenk Park - Alma College - muni</name>
 			<visibility>0</visibility>
 			<Placemark>
 				<name>Foul</name>
@@ -6706,7 +6597,7 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Lincoln High School - Ypsilanti</name>
+			<name>Ypsilanti - Lincoln High School</name>
 			<visibility>0</visibility>
 			<Placemark>
 				<name>Foul_1</name>
@@ -7121,8 +7012,7 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Mattawan HS
-</name>
+			<name>Mattawan HS</name>
 			<visibility>0</visibility>
 			<Placemark>
 				<name>foul</name>
@@ -7366,7 +7256,7 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Moose Lodge Field (14u)</name>
+			<name>Moose Lodge Field (14u) - youth</name>
 			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
@@ -8178,7 +8068,7 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Parkway Christian High School - Sterling Heights</name>
+			<name>Sterling Heights - Parkway Christian High School</name>
 			<visibility>0</visibility>
 			<Placemark>
 				<name>Foul</name>
@@ -8247,11 +8137,9 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Pelson HS</name>
-			<visibility>0</visibility>
+			<name>Posen HS</name>
 			<Placemark>
 				<name>Foul</name>
-				<visibility>0</visibility>
 				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
@@ -8266,7 +8154,6 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<visibility>0</visibility>
 				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
@@ -8632,10 +8519,11 @@ May not be used as a baseball field anymore. last google earth image of baseball
 		<Folder>
 			<name>Rochester Hills Lutheran Northwest HS</name>
 			<visibility>0</visibility>
+			<open>1</open>
 			<Placemark>
 				<name>FOUL</name>
 				<visibility>0</visibility>
-				<styleUrl>#msn_ylw-pushpin</styleUrl>
+				<styleUrl>#msn_ylw-pushpin1</styleUrl>
 				<Polygon>
 					<tessellate>1</tessellate>
 					<outerBoundaryIs>
@@ -8650,48 +8538,13 @@ May not be used as a baseball field anymore. last google earth image of baseball
 			<Placemark>
 				<name>fop</name>
 				<visibility>0</visibility>
-				<styleUrl>#msn_ylw-pushpin</styleUrl>
+				<styleUrl>#msn_ylw-pushpin1</styleUrl>
 				<Polygon>
 					<tessellate>1</tessellate>
 					<outerBoundaryIs>
 						<LinearRing>
 							<coordinates>
 								-83.15444438275335,42.64098167039875,0 -83.15445633634732,42.64171952263314,0 -83.154536277414,42.64172057627558,0 -83.15461561255957,42.6417209389832,0 -83.15468903964788,42.64172101630182,0 -83.15476825447503,42.64172180841521,0 -83.15485143123118,42.6417215427171,0 -83.15488002039693,42.64171999986882,0 -83.15494006905813,42.64170987852007,0 -83.15498917741002,42.64170319654185,0 -83.15503299822586,42.64169371882171,0 -83.15509510888288,42.64168074864075,0 -83.15515716735405,42.64166629704516,0 -83.15518696139466,42.64165712356167,0 -83.15521887764424,42.64164658648168,0 -83.1552529307358,42.64163509505928,0 -83.15527782441602,42.64162389647735,0 -83.15529733136026,42.64161343898197,0 -83.15534240270178,42.64158922768986,0 -83.15537392311828,42.64156585088039,0 -83.15540366603553,42.64154000867247,0 -83.15542412039248,42.64151943201279,0 -83.15544095525668,42.64149835677113,0 -83.1554606516865,42.6414701565607,0 -83.15547242936584,42.64144604959129,0 -83.15548645275112,42.64140962295305,0 -83.15551163166531,42.64136656361612,0 -83.15552168051371,42.64133246551313,0 -83.15552892767295,42.64129902303294,0 -83.15553178676564,42.64126715070702,0 -83.15553829891759,42.6412239036889,0 -83.15554149758532,42.64118167795731,0 -83.15554792612369,42.64112607126624,0 -83.15555321297137,42.64107788829033,0 -83.15555660451419,42.64105068257992,0 -83.1555573623157,42.64101450204083,0 -83.15555968042005,42.6409988903147,0 -83.15444438275335,42.64098167039875,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-		</Folder>
-		<Folder>
-			<name>Rochester Hills Lutheran Northwest HS</name>
-			<visibility>0</visibility>
-			<open>1</open>
-			<Placemark>
-				<name>Foul</name>
-				<visibility>0</visibility>
-				<styleUrl>#poly-000000-1200-77-nodesc13</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-83.1544493,42.6409811,0 -83.1555584,42.6409988,0 -83.1555611,42.6409081,0 -83.1546223,42.6408972,0 -83.1543836,42.6409041,0 -83.1543353,42.6409436,0 -83.1543152,42.6417486,0 -83.154456,42.641721,0 -83.1544493,42.6409811,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>FOP</name>
-				<visibility>0</visibility>
-				<styleUrl>#poly-000000-1200-77-nodesc13</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-83.1544493,42.6409811,0 -83.154456,42.641721,0 -83.15485700000001,42.6417189,0 -83.1549402,42.641708,0 -83.1550823,42.6416794,0 -83.15519500000001,42.6416528,0 -83.1552969,42.6416143,0 -83.1553827,42.641562,0 -83.1554364,42.6415087,0 -83.15547530000001,42.6414525,0 -83.1555034,42.6413766,0 -83.15553559999999,42.6413095,0 -83.15554640000001,42.6411852,0 -83.1555584,42.6409988,0 -83.1544493,42.6409811,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>
@@ -8909,6 +8762,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 		<Folder>
 			<name>Saginaw Heritage HS - Field 2</name>
 			<visibility>0</visibility>
+			<open>1</open>
 			<Placemark>
 				<name>Foul_2</name>
 				<visibility>0</visibility>
@@ -8941,7 +8795,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Saginaw Swan Valley - Youth Field</name>
+			<name>Saginaw Swan Valley - Youth Field  - youth</name>
 			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
@@ -9115,7 +8969,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Sand Creek High School - Baseball</name>
+			<name>Sand Creek High School</name>
 			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
@@ -9184,7 +9038,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Sexton High School</name>
+			<name>Lansing JW Sexton High School</name>
 			<visibility>0</visibility>
 			<Placemark>
 				<name>Foul Ground</name>
@@ -9211,42 +9065,6 @@ May not be used as a baseball field anymore. last google earth image of baseball
 							<tessellate>1</tessellate>
 							<coordinates>
 								-84.57957949999999,42.7327867,0 -84.5783799,42.7326848,0 -84.57837379999999,42.7326946,0 -84.5783644,42.7327586,0 -84.5783564,42.7328217,0 -84.5783443,42.7329049,0 -84.57832550000001,42.733032,0 -84.57832550000001,42.7330714,0 -84.57832550000001,42.7331212,0 -84.5783363,42.7331921,0 -84.5783564,42.7332517,0 -84.5783832,42.7332999,0 -84.5784261,42.733364,0 -84.57847839999999,42.7334211,0 -84.5785609,42.7334901,0 -84.5787017,42.733563,0 -84.57880160000001,42.7335905,0 -84.5788915,42.7336152,0 -84.57896529999999,42.733627,0 -84.57944809999999,42.7336408,0 -84.57957949999999,42.7327867,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-		</Folder>
-		<Folder>
-			<name>Shrine HS Royal Oak</name>
-			<visibility>0</visibility>
-			<open>1</open>
-			<Placemark>
-				<name>Foul</name>
-				<visibility>0</visibility>
-				<styleUrl>#poly-000000-1200-77-nodesc13</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-83.1842663,42.5195961,0 -83.18420999999999,42.5185464,0 -83.1841402,42.5185829,0 -83.1841443,42.5189566,0 -83.1841483,42.5189852,0 -83.18417239999999,42.5191464,0 -83.1841764,42.5192057,0 -83.184163,42.5192422,0 -83.1841872,42.5192482,0 -83.18419660000001,42.5193984,0 -83.1841751,42.5194024,0 -83.1841805,42.5196277,0 -83.18423679999999,42.5196653,0 -83.1851487,42.5196544,0 -83.1851487,42.5196258,0 -83.1852507,42.5196268,0 -83.18524530000001,42.5195823,0 -83.1842663,42.5195961,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>FOP</name>
-				<visibility>0</visibility>
-				<description>drawn from image without right field fence</description>
-				<styleUrl>#poly-000000-1200-7700</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-83.1842663,42.5195961,0 -83.18524530000001,42.5195823,0 -83.185425,42.5190238,0 -83.1850508,42.5187539,0 -83.1848698,42.5186897,0 -83.18471150000001,42.5186363,0 -83.1846566,42.5186225,0 -83.18447690000001,42.5185829,0 -83.1843602,42.5185553,0 -83.1842355,42.5185256,0 -83.18420999999999,42.5185464,0 -83.1842663,42.5195961,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>
@@ -9602,9 +9420,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 		<Folder>
 			<name>Traverse City Central HS - Old Field</name>
 			<visibility>0</visibility>
-			<description>Team now plays home games at Trojan Athletic Complex on Airport road . This field appears to have been in use as late as 2018. is probably still used as a practice field
-
-</description>
+			<description>Team now plays home games at Trojan Athletic Complex on Airport road . This field appears to have been in use as late as 2018. is probably still used as a practice field</description>
 			<Placemark>
 				<name>foul</name>
 				<visibility>0</visibility>
@@ -9950,7 +9766,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>USA - unionville - Youth 1</name>
+			<name>USA - unionville - Youth 1 - youth</name>
 			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
@@ -9985,7 +9801,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>USA - Unionville Seabawing - Youth 2</name>
+			<name>USA - Unionville Seabawing - Youth 2 - youth</name>
 			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
