@@ -1,3 +1,10 @@
+### NEXT TO DO
+take list of all high schools that competed in 2022 playoffs
+
+use fuzzy match to get a list of high schools I haven't plotted (not in hs_df)
+
+
+
 # Fields in need of Attention
 
 ### Outliers from the first distance measurements done on 12/18/22
