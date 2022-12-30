@@ -1,49 +1,49 @@
-﻿Field,icon
-Commerica Park - Tigers ,DET
-Coors Field - Colorado ,COL
-Fenway Park - Boston ,BOS
-Battle Creek - Robert L Nichols Field - muni,muni
-Boyne City County Park Muni,muni
-Coldwater Borden Field - Muni,muni
-Coldwater Heritage Park - muni,muni
-Eaton Park - muni,muni
-Glen Lake Community School,muni
-Hancock Driving Park - Houghton Muni - muni,muni
-Historic Hamtramck Stadium - muni,muni
-Historic Marsh Field Muskegon - Muni,muni
-Kircher Municipal Field - muni,muni
-Onsted Community HS,muni
-Royal Oak Memorial Park - muni,muni
-Sanborn Park - Port Huron - muni,muni
-The Corner Ballpark - Detroit - muni,CORNER
-Westside Park (Lansing) - muni,muni
-Whaley Park - Flint - muni,muni
-Dow Diamond (Midland) ,LOONS
-Homer Stryker Field - Kalamazoo (Growlers) ,pro
-Jimmy Johns Stadium (Utica) ,pro
-Lansing Lugnuts ,NUTS
-MCCU Field - Battle Creek ,pro
-Turtle Creek Stadium (Traverse City) ,pro
-West Michigan Whitecaps ,CAPS
-Adrian College,adrian
-Albion College ,albion
-Calvin University ,calvin
-CMU ,cmu
-Cornerstone Baseball Field ,college
-Davenport University ,davenport
-EMU ,emu
-Gainey Athletic Complex - Field 1 ,college
-Gainey Athletic Complex - Field 2 ,college
-GVSU ,gvsu
-Hillsdale College ,hillsdale
-Hope College,hope
-Kalamazoo College ,kzoo
-Klenk Park - Alma College - muni,alma
-MSU - Old College Field ,msu
-Northwood University ,college
-Oakland University ,oakland
-Olivet College ,olivet
-Sagniaw Valley State ,svsu
-U of M ,uofm
-Wayne State Univ ,wayne
-WMU ,wmu
+﻿Field,icon_full,league,,icon_pair,undergrad
+Commerica Park - Tigers ,DET,MLB,Detroit Tigers,DET,
+Coors Field - Largest Park in the MLB,COL,MLB,Colorado Rockies,COL,
+Fenway Park - Smallest Park in the MLB,BOS,MLB,Boston Red Sox,BOS,
+Battle Creek - Robert L Nichols Field - muni,muni,,,,
+Boyne City County Park Muni,muni,,,,
+Coldwater Borden Field - Muni,muni,,,,
+Coldwater Heritage Park - muni,muni,,,,
+Eaton Park - muni,muni,,,,
+Glen Lake Community School,muni,,,,
+Hancock Driving Park - Houghton Muni - muni,muni,,,,
+Historic Hamtramck Stadium - muni,muni,,,,
+Historic Marsh Field Muskegon - Muni,muni,,,,
+Kircher Municipal Field - muni,muni,,,,
+Onsted Community HS,muni,,,,
+Royal Oak Memorial Park - muni,muni,,,,
+Sanborn Park - Port Huron - muni,muni,,,,
+The Corner Ballpark - Detroit - muni,CORNER,,,,
+Westside Park (Lansing) - muni,muni,,,,
+Whaley Park - Flint - muni,muni,,,,
+Dow Diamond (Midland) ,LOONS,Single-A,Great Lakes Loons,LOONS,
+Homer Stryker Field (Kalamazoo),pro,Northwoods,Kalamazoo Growlers,pro,
+Jimmy Johns Stadium (Utica) ,pro,USPBL,Multiple,pro,
+Jackson Field (Lansing),NUTS,Single-A,Lansing Lugnuts,NUTS,
+MCCU Field (Battle Creek),pro,Northwoods,Battle Creek Battle Jacks,pro,
+Turtle Creek Stadium (Traverse City) ,pro,Northwoods,Traverse City Pit Spitters,pro,
+LMCU Ballpark (Grand Rapids),CAPS,Single-A,West Michigan Whitecaps ,CAPS,
+Adrian College,adrian,NCAA-3,Adrian Bulldogs,small_coll,1805
+Albion College ,albion,NCAA-3,Albion Britons,small_coll,1523
+Calvin College,calvin,NCAA-3,Calvin Knights,small_coll,3068
+CMU ,cmu,NCAA-1,Central Michigan Chippawa,cmu,11417
+Cornerstone Baseball Field ,college,NAIA,Cornerstone Golden Eagles,small_coll,1507
+Davenport University ,davenport,NCAA-2,Davenport Panthers,small_coll,4352
+EMU ,emu,NCAA-1,Easter Michigan Eagles,emu,12730
+Gainey Athletic Complex - Field 1 ,college,NCAA-3,Hope College Flying Dutchman,small_coll,
+Gainey Athletic Complex - Field 2 ,college,NCAA-3,,small_coll,
+GVSU ,gvsu,NCAA-2,Grand Valley State Lakers,small_coll,19379
+Hillsdale College ,hillsdale,NCAA-2,Hillsdale Chargers,small_coll,1515
+Hope College,hope,NCAA-3,,small_coll,3132
+Kalamazoo College ,kzoo,NCAA-3,Kalamazoo College Hornets,small_coll,1241
+Klenk Park (Alma College),alma,NCAA-3,Alma College Scots,small_coll,1340
+Old College Field (MSU),msu,NCAA-1,Michigan State Spartans,msu,38574
+Northwood University ,college,,,small_coll,2116
+Oakland University ,oakland,NCAA-1,Oakland Golden Grizzlies,oakland,13771
+Olivet College ,olivet,NCAA-3,Olivet Comets,small_coll,851
+Sagniaw Valley State ,svsu,NCAA-2,Saginaw Valley State Cardinals,small_coll,6789
+U of M ,uofm,NCAA-1,Michigan Wolverines,uofm,32282
+Wayne State Univ ,wayne,NCAA-2,Wayne State Warriors,small_coll,16839
+WMU ,wmu,NCAA-1,Western Michigan Broncos,wmu,14587

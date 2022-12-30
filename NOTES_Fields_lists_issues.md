@@ -1,3 +1,48 @@
+12-29-22 
+Dis a ton of plotting tonightinght. 80 fields I think.
+
+Everything seems to be measuring as expected in. fixed the horrible outliers I think
+
+Fields to fix - all the fields with funky values from current load and distance calc
+I think these were all field I did straight in google earth
+
+Harper Woods HS-practice - Check I may have just done youth fields by mistake. THere are 2 youth fields on high school grounds
+Harper Woods HS
+x - Traverse City West HS - Field 2
+XXX Potterville HS
+xx Grand Rapids South Christian HS - Field 2
+XX Sand Creek HS
+XX Battle Creek - Robert L Nichols Field - muni
+xx Traverse City Central HS - field 2
+XX Rochester Hills Lutheran Northwest HS
+X Battle Creek Pennfield HS
+X Ithaca HS
+Pittsford HS - google maps images doesnt have fence set up
+XX Suttons Bay HS
+XX Marshall HS
+XX Marcellus HS
+
+
+### IDEA.
+
+Try this:
+
+for colleges use enrollment as a size factor and
+might be able to use field capasity for a size factor for especially for the pro and college stadiums
+
+
+#### 12-27-22
+
+### Next TO DO
+
+Clean up The college and pro park names so that I can integrate the parameters sheets I made with style options.
+
+I have altered and saved the parameter file for the upper level fields, during the course I changed some of the names. I will need to go into the google earth layers to change the names to match there so I can easily incorporate the style (parm) sheet
+
+---- DID AN INITIAL PASS
+
+
+
 #### Mismatched between mhsaa enrollment and field name. need to name better in source file
 ## Threashold 90
 Gross Pointe South High School	
