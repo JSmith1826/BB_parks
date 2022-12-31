@@ -1,5 +1,23 @@
-12-29-22 
-Dis a ton of plotting tonightinght. 80 fields I think.
+## 12/30/22
+
+
+
+Found info about the Great Lakes Summer Collegiate League:
+Michigan Teams
+
+Royal Oak Leprechauns - HOME Royal Oak Memorial Park - muni
+Jet Box - HOME Oakland University Field
+Muskegon Clippers - HOME Marsh Field
+Michigan Monarchs - HOME Cleary U BB Fld
+3607 Cleary Dr
+Howell, MI 48843
+United States
+### All fields are mapped
+
+
+
+## 12-29-22 
+Did a ton of plotting tonightinght. 80 fields I think.
 
 Everything seems to be measuring as expected in. fixed the horrible outliers I think
 

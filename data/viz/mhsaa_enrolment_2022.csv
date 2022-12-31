@@ -1,0 +1,747 @@
+school_id,school_name,students,enrollment,division
+9448,Macomb - Dakota HS,2876,2876,A
+2237,Grand Blanc HS,2812,2812,A
+5792,East Kentwood HS,2678,2678,A
+6980,Dearborn - Fordson HS,2613,2613,A
+3020,Shelby Township - Utica Eisenhower HS,2555,2555,A
+5628,Northville HS,2509,2509,A
+4183,Rockford HS,2480,2480,A
+4893,Detroit - Cass Technical HS,2452,2452,A
+2666,Sterling Heights - Utica Stevenson HS,2433,2433,A
+1874,Clinton Township - Chippewa Valley HS,2386,2386,A
+5074,Howell HS,2375,2375,A
+3953,Lake Orion HS,2309,2309,A
+7038,Oxford HS,2299,2299,A
+1742,Troy HS,2285,2285,A
+2856,Clarkston HS,2250,2250,A
+3680,Ann Arbor - Pioneer HS,2185,2185,A
+3747,Canton - Salem HS,2183,2183,A
+2839,Canton - Plymouth HS,2140,2140,A
+5116,Canton HS,2127,2127,A
+6485,Holland - West Ottawa HS,2124,2124,A
+7376,Dearborn HS,2075,2075,A
+5140,West Bloomfield HS,2052,2052,A
+1016,Brighton HS,2045,2045,A
+1833,Novi HS,2033,2033,A
+8077,Hudsonville HS,2026,2026,A
+4101,Grand Haven HS,1944,1944,A
+6832,Hartland HS,1938,1938,A
+7541,Grand Rapids - Union HS,1908,1908,A
+1147,Southfield HS for the Arts & Technology,1893,1893,A
+3086,Fair Haven - Anchor Bay HS,1882,1882,A
+4638,Novi - Detroit Catholic Central HS,933,1866,A
+1825,Ann Arbor - Huron HS,1860,1860,A
+1069,Bloomfield Hills HS,1851,1851,A
+3730,Monroe HS,1838,1838,A
+4555,Macomb - L'Anse Creuse North HS,1834,1834,A
+7450,Utica HS,1828,1828,A
+7013,Detroit - Western International HS,1807,1807,A
+3103,Davison HS,1787,1787,A
+1957,Troy - Athens HS,1775,1775,A
+6510,Sterling Heights - Utica Ford II HS,1760,1760,A
+6576,Grandville HS,1751,1751,A
+7632,Holt HS,1745,1745,A
+6584,Saline HS,1743,1743,A
+1086,Lapeer HS,1732,1732,A
+7748,Belleville HS,1730,1730,A
+6551,Kalamazoo - Loy Norrix HS,1722,1722,A
+6824,Rochester Hills - Rochester HS,1721,1721,A
+1170,Taylor HS,1720,1720,A
+3945,Kalamazoo Central HS,1687,1687,A
+6188,Livonia - Stevenson HS,1673,1673,A
+6023,Washington - Romeo HS,1658,1658,A
+6213,Grand Ledge HS,1653,1653,A
+9731,Traverse City West HS,1629,1629,A
+4662,Brownstown Township - Woodhaven HS,1626,1626,A
+2748,Commerce Township - Walled Lake Northern HS,1621,1621,A
+2815,Rochester Hills - Stoney Creek HS,1619,1619,A
+2032,Ann Arbor - Skyline HS,1588,1588,A
+4373,Dearborn - Edsel Ford HS,1563,1563,A
+4596,Westland - John Glenn HS,1555,1555,A
+6733,Rochester - Adams HS,1528,1528,A
+3607,Jenison HS,1508,1508,A
+6898,Royal Oak HS,1505,1505,A
+6948,Fraser HS,1503,1503,A
+1404,Wayne Memorial HS,1488,1488,A
+1313,White Lake - Lakeland HS,1486,1486,A
+5784,Farmington HS,1479,1479,A
+4324,Caledonia HS,1476,1476,A
+5082,Walled Lake Central HS,1473,1473,A
+3111,Warren Mott HS,1460,1460,A
+3714,Sterling Heights HS,1459,1459,A
+2146,St Clair Shores - Lakeview HS,1442,1442,A
+6007,Okemos HS,1427,1427,A
+6080,Highland - Milford HS,1425,1425,A
+4233,Traverse City Central HS,1417,1417,A
+2022,Harrison Township - L'Anse Creuse HS,1401,1401,A
+4547,Saginaw - Heritage HS,1398,1398,A
+1437,Portage Central HS,1393,1393,A
+5842,Dearborn Heights - Crestwood HS,1388,1388,A
+3648,Detroit - U of D Jesuit HS,692,1384,B
+3508,Livonia - Franklin HS,1379,1379,A
+2443,Grosse Pointe Farms - Grosse Pointe South HS,1373,1373,A
+6122,Temperance - Bedford HS,1371,1371,A
+4935,Berkley HS,1370,1370,A
+6626,Birmingham - Seaholm HS,1345,1345,A
+5025,Waterford Mott HS,1343,1343,A
+3375,Farmington Hills - North Farmington HS,1339,1339,A
+2583,Battle Creek - Lakeview HS,1338,1338,A
+5850,Wyandotte - Roosevelt HS,1322,1322,A
+2336,Flushing HS,1320,1320,A
+2996,Lincoln Park HS,1308,1308,A
+7797,Farmington Hills - Mercy HS,650,1300,B
+6295,South Lyon HS,1297,1297,A
+4381,Livonia - Churchill HS,1294,1294,A
+1172,Warren - Cousino HS,1288,1288,A
+5990,Midland HS,1281,1281,A
+2113,Midland - HH Dow HS,1269,1269,A
+5256,Bay City - Central HS,1263,1263,A
+6477,Ypsilanti - Lincoln HS,1247,1247,A
+7962,Muskegon - Mona Shores HS,1240,1240,A
+2963,Beverly Hills - Wylie E Groves HS,1230,1230,A
+4794,Portage Northern HS,1227,1227,A
+3268,Port Huron Northern HS,1221,1221,A
+1040,Roseville HS,1221,1221,A
+3573,Oak Park HS,1215,1215,A
+3920,East Lansing HS,1211,1211,A
+4778,Port Huron HS,1211,1211,A
+1033,Wyoming HS,1205,1205,A
+5306,Warren - De La Salle Collegiate,602,1204,B
+6527,Waterford Kettering HS,1200,1200,A
+2633,Jackson HS,1195,1195,A
+2542,Byron Center HS,1189,1189,A
+2071,Dexter HS,1188,1188,A
+8127,Alpena HS,1180,1180,A
+1387,Lansing - Everett HS,1178,1178,A
+6964,Grand Rapids - Forest Hills Northern HS,1177,1177,A
+3854,Walled Lake Western HS,1177,1177,A
+1791,Warren Woods-Tower HS,1174,1174,A
+7822,Grosse Pointe North HS,1171,1171,A
+5727,Detroit - Renaissance HS,1171,1171,A
+5355,Grand Rapids - Forest Hills Central HS,1165,1165,A
+4803,Swartz Creek HS,1164,1164,A
+7335,Grand Rapids - Ottawa Hills HS,1159,1159,A
+5438,Fenton HS,1158,1158,A
+4290,Flint - Carman-Ainsworth HS,1155,1155,A
+3524,Auburn - Bay City Western HS,1153,1153,A
+5925,Hamtramck HS,1152,1152,A
+2682,Battle Creek - Central HS,1146,1146,A
+4027,Mattawan HS,1146,1146,A
+5157,Allen Park HS,1140,1140,A
+7665,Redford - Thurston HS,1123,1123,A
+9976,South Lyon East HS,1121,1121,A
+2823,Muskegon - Reeths-Puffer HS,1118,1118,A
+6378,Lowell HS,1107,1107,A
+4142,Grand Rapids - Northview HS,1102,1102,A
+7640,Gibraltar - OA Carlson HS,1093,1093,A
+7434,Muskegon HS,1082,1082,A
+7517,Cedar Springs HS,1074,1074,A
+5834,Mt Pleasant HS,1072,1072,A
+3367,Greenville HS,1068,1068,A
+2492,Auburn Hills - Avondale HS,1055,1055,A
+2385,Orchard Lake - St Mary Preparatory HS,523,1046,B
+4266,Holly HS,1042,1042,A
+7046,St Clair Shores - Lake Shore HS,1039,1039,A
+9920,Zeeland West HS,1037,1037,A
+7987,Southgate Anderson HS,1034,1034,A
+5280,Grand Rapids - Kenowa Hills HS,1033,1033,A
+2328,Bloomfield Hills - Brother Rice HS,516,1032,B
+2708,St Joseph HS,1020,1020,A
+2055,River Rouge HS,1013,1013,A
+6114,Holland HS,1010,1010,A
+1354,DeWitt HS,1009,1009,A
+2501,Lansing - Waverly HS,999,999,A
+1070,Ypsilanti Community,985,985,A
+6667,Sturgis HS,965,965,A
+1288,Coldwater HS,964,964,A
+4712,Flint - Kearsley HS,963,963,A
+2138,Mason HS,955,955,A
+7970,Melvindale HS,950,950,A
+7285,Jackson - Northwest HS,949,949,A
+3136,Petoskey HS,943,943,A
+6147,Detroit - Martin Luther King HS,941,941,A
+5388,Middleville - Thornapple Kellogg HS,939,939,A
+7847,Riverview Community HS,936,936,A
+2690,Marquette HS,934,934,A
+3813,Zeeland East HS,934,934,A
+5297,Richland - Gull Lake HS,933,933,A
+7946,East Grand Rapids HS,927,927,A
+1373,Pontiac HS,924,924,A
+3623,St Johns HS,922,922,A
+3284,Gaylord HS,901,901,A
+1494,Detroit - Mumford HS,900,900,A
+3870,Linden HS,890,890,A
+1370,Warren - Fitzgerald HS,881,881,A
+5875,Stevensville - Lakeshore HS,864,864,A
+7657,Garden City HS,859,859,A
+4200,Dearborn - Divine Child HS,850,850,A
+1032,Detroit - East English Village Preparatory Acad,849,849,A
+2781,Coopersville HS,847,847,A
+5272,Flint Southwestern Classical,845,845,A
+2278,Haslett HS,845,845,A
+5198,Parma - Western HS,844,844,A
+1627,Trenton HS,841,841,A
+7343,Fowlerville HS,839,839,A
+2922,Marysville HS,837,837,A
+4357,Pinckney HS,837,837,A
+6072,Harper Woods HS,835,835,A
+2765,Lansing - Eastern HS,828,828,B
+7483,Battle Creek - Harper Creek HS,828,828,B
+1890,Eastpointe HS,827,827,B
+4068,Ionia HS,826,826,B
+4687,Spring Lake HS,825,825,B
+2914,Cadillac HS,811,811,B
+3706,Clio HS,810,810,B
+8036,Wayland Union HS,810,810,B
+7211,Plainwell HS,808,808,B
+4217,Ortonville - Brandon HS,807,807,B
+1486,Niles HS,807,807,B
+4992,Detroit - Henry Ford HS,805,805,B
+1916,New Boston - Huron HS,804,804,B
+1651,Chelsea HS,803,803,B
+4175,Edwardsburg HS,803,803,B
+7203,Bloomfield Hills - Cranbrook Kingswood HS,798,798,B
+6171,Owosso HS,794,794,B
+7062,Grand Rapids Christian HS,787,787,B
+2740,St Clair HS,787,787,B
+4506,Ada - Forest Hills Eastern HS,783,783,B
+7855,Marshall HS,783,783,B
+4654,Carleton - Airport HS,779,779,B
+2410,Hastings HS,779,779,B
+1412,Hamilton HS,772,772,B
+5974,Sparta HS,771,771,B
+3160,Bloomfield Hills - Marian HS,385,770,C
+1610,Vicksburg HS,766,766,B
+6683,Fruitport HS,764,764,B
+1154,Ann Arbor - Washtenaw Technical Middle College,763,763,B
+2294,Adrian HS,759,759,B
+5248,Allendale HS,756,756,B
+1218,Harper Woods - Chandler Park Academy,755,755,B
+1247,Bay City - John Glenn HS,752,752,B
+3516,Charlotte HS,751,751,B
+8110,Wyoming - Godwin Heights HS,742,742,B
+4191,Madison Heights - Lamphere HS,730,730,B
+2550,Escanaba HS,727,727,B
+8028,Sault Ste Marie - Sault Area HS,719,719,B
+3350,Tecumseh HS,719,719,B
+8192,Goodrich HS,716,716,B
+5396,Livonia - Clarenceville HS,713,713,B
+7830,Lansing - JW Sexton HS,713,713,B
+6205,Dearborn Heights - Annapolis HS,709,709,B
+4753,Saginaw - Arthur Hill HS,702,702,B
+5288,Detroit - Cesar Chavez Academy HS,702,702,B
+2047,Redford Union HS,698,698,B
+2716,Battle Creek - Pennfield HS,689,689,B
+6155,North Branch HS,686,686,B
+4340,Whitehall HS,685,685,B
+2518,Fremont HS,684,684,B
+1981,Ferndale HS,681,681,B
+2798,Ludington HS,678,678,B
+1255,Paw Paw HS,677,677,B
+3978,Eaton Rapids HS,674,674,B
+7137,Linden - Lake Fenton HS,672,672,B
+2261,Allegan HS,670,670,B
+2831,Wyoming - Kelloggsville HS,670,670,B
+2451,Milan HS,669,669,B
+4134,Three Rivers HS,669,669,B
+4984,Otsego HS,667,667,B
+1841,Croswell-Lexington HS,663,663,B
+2402,Romulus HS,663,663,B
+4092,Beverly Hills - Detroit Country Day HS,657,657,B
+6634,Holland Christian HS,643,643,B
+2303,Alma HS,640,640,B
+9213,Pontiac - Notre Dame Preparatory School,633,633,B
+1181,Romulus - Summit Academy North,632,632,B
+3895,Byron Center - South Christian HS,631,631,B
+7021,Benton Harbor HS,621,621,B
+3904,Hudsonville - Unity Christian HS,616,616,B
+7590,Freeland HS,615,615,B
+7186,Yale HS,612,612,B
+4968,Birch Run HS,609,609,B
+9478,Kentwood - Grand River Prep,608,608,B
+7277,Williamston HS,607,607,B
+4150,Cheboygan Area HS,605,605,B
+2484,Flint - Powers Catholic HS,603,603,B
+2468,Hazel Park HS,602,602,B
+1271,Bridgeport HS,599,599,B
+5594,Armada HS,598,598,B
+5181,Muskegon - Orchard View HS,594,594,B
+9833,Detroit - Frontier International Academy,590,590,B
+1061,Grand Rapids - West Michigan Aviation Academy,589,589,B
+1528,Grosse Ile HS,588,588,B
+2757,Saginaw - Swan Valley HS,586,586,B
+8085,Detroit - Cody HS,579,579,B
+4282,Imlay City HS,573,573,B
+6337,Howard City - Tri County Area HS,573,573,B
+5958,Macomb - Lutheran North,572,572,B
+2971,West Branch - Ogemaw Heights HS,572,572,B
+1602,Big Rapids HS,571,571,B
+3425,Kingsford HS,570,570,B
+4902,Belding Area HS,569,569,B
+4943,Flat Rock HS,569,569,B
+7491,Newport - Jefferson HS,569,569,B
+3862,Detroit - Edwin Denby HS,568,568,B
+4415,Muskegon - Oakridge HS,568,568,B
+6238,Grand Rapids - Catholic Central HS,567,567,B
+7723,Frankenmuth HS,567,567,B
+7104,Portland HS,567,567,B
+3821,Warren - Lincoln HS,555,555,B
+1123,Corunna HS,550,550,B
+4488,Detroit - University Prep Academy,548,548,B
+7756,Grant HS,546,546,B
+4522,Warren - Regina HS,273,546,C
+6106,Essexville - Garber HS,542,542,B
+2006,Comstock Park HS,535,535,B
+8143,Midland - Bullock Creek HS,530,530,B
+1585,Marine City HS,528,528,B
+5801,Lake Odessa - Lakewood HS,525,525,B
+6782,South Haven HS,524,524,B
+6411,Center Line HS,522,522,B
+4365,Dowagiac Union HS,518,518,B
+9887,Dearborn - Henry Ford Academy,510,510,B
+1113,Detroit - Cornerstone Health & Technology HS,380,506,C
+2352,St Clair Shores - South Lake HS,505,505,B
+1191,Redford - Westfield Preparatory HS,505,505,B
+1023,Wixom - St Catherine of Siena Academy,251,502,C
+5487,Wyoming - Lee HS,501,501,B
+9714,Detroit - University Prep Art & Design,497,497,B
+6502,Carrollton HS,495,495,B
+1060,Detroit - University Prep Science & Math HS,494,494,B
+3887,Remus - Chippewa Hills HS,492,492,B
+2253,Gladwin HS,492,492,B
+1346,Berrien Springs HS,491,491,B
+1057,Shepherd HS,489,489,B
+9145,Detroit - Communication Media Arts HS,488,488,B
+5339,Detroit - Old Redford Preparatory HS,488,488,B
+4844,Hopkins HS,487,487,B
+4241,Saginaw HS,487,487,B
+1305,Kingsley Area HS,486,486,B
+6436,Olivet HS,485,485,B
+6535,Parchment HS,485,485,B
+4563,Dundee HS,480,480,B
+1621,Ferndale - University HS,478,478,B
+3235,Flint - Hamady HS,476,476,B
+3788,Clare HS,469,469,B
+1148,Richmond HS,469,469,B
+5867,Newaygo HS,467,467,B
+5826,Grand Rapids - West Catholic HS,466,466,B
+8184,Ann Arbor - Father Gabriel Richard HS,462,462,B
+4885,Onsted HS,458,458,B
+3012,Standish-Sterling HS,455,455,B
+4010,Montague HS,453,453,B
+3383,Ovid-Elsie HS,452,452,B
+5603,Mt Morris (EAJ) HS,451,451,B
+1726,Stanton - Central Montcalm HS,450,450,B
+2947,Manistee HS,450,450,B
+5636,Houghton HS,449,449,B
+5165,Durand Area HS,447,447,B
+5685,Detroit - Pershing HS,447,447,B
+6254,Detroit - Osborn HS,446,446,B
+1296,Detroit - Southeastern HS,445,445,B
+1109,Detroit School of Arts,440,440,B
+2435,Lansing Catholic HS,439,439,B
+4836,Ida HS,438,438,B
+4786,Almont HS,437,437,B
+3053,Boyne City HS,436,436,B
+4348,Dearborn - Advanced Technology Academy,435,435,B
+1668,Algonac HS,433,433,B
+5041,Hillsdale HS,429,429,B
+1028,Detroit - Jalen Rose Leadership Academy,425,425,B
+6907,Kalkaska HS,425,425,B
+7608,Stockbridge HS,424,424,B
+9057,Detroit Collegiate Prep @ Northwestern,422,422,B
+1767,Chesaning HS,421,421,B
+9060,Detroit Edison PSA Early College of Excellence,420,420,B
+7806,Clawson HS,418,418,B
+5379,Warren - Michigan Collegiate HS,417,417,B
+5710,Negaunee HS,416,416,B
+5033,Reed City HS,416,416,B
+6931,Constantine HS,411,411,B
+6460,Otisville - LakeVille Memorial HS,410,410,B
+4126,Coloma HS,409,409,B
+2864,Kalamazoo - Comstock HS,408,408,B
+3474,Jonesville HS,406,406,B
+1684,Dearborn Heights - Robichaud HS,406,406,B
+5883,Benzonia - Benzie Central HS,403,403,B
+1085,Taylor Preparatory HS,403,403,B
+1932,Ecorse HS,402,402,B
+6130,Gladstone HS,402,402,B
+7871,Michigan Center HS,401,401,B
+5421,Fennville HS,400,400,B
+3598,Caro HS,399,399,B
+1817,Shelby HS,399,399,B
+5578,Watervliet HS,399,399,B
+1635,Clinton HS,397,397,C
+1783,Elk Rapids HS,396,396,C
+3805,Hart HS,396,396,C
+3639,Dearborn Heights - Star International Academy,395,395,C
+1111,Canton Preparatory HS,392,392,C
+1453,Brooklyn - Columbia Central HS,391,391,C
+5314,Grayling HS,390,390,C
+5966,Sanford - Meridian Early College HS,390,390,C
+4258,Quincy HS,390,390,C
+2170,Clinton Township - Clintondale HS,389,389,C
+1692,Adrian - Madison HS,388,388,C
+4439,Detroit - Voyageur College Prep,388,388,C
+2674,Grand Rapids - Covenant Christian HS,387,387,C
+7673,Erie-Mason HS,382,382,C
+5009,Lake City Area HS,382,382,C
+7120,Menominee HS,382,382,C
+7252,Blissfield HS,380,380,C
+4464,Millington HS,380,380,C
+5405,Pinconning Area HS,378,378,C
+6650,Buchanan HS,376,376,C
+7293,Calumet HS,376,376,C
+3318,Kent City HS,372,372,C
+6691,Morley Stanwood HS,372,372,C
+3796,Napoleon HS,372,372,C
+1338,Laingsburg HS,371,371,C
+1701,Tawas City - Tawas Area HS,370,370,C
+6056,Niles - Brandywine HS,369,369,C
+2377,Montrose Hill-McCloy HS,365,365,C
+1341,Southfield - Bradford Academy HS,364,364,C
+1503,Scottville - Mason County Central HS,360,360,C
+1022,Grand Rapids - Wellspring Preparatory HS,356,356,C
+2195,Houghton Lake HS,353,353,C
+5058,Leslie HS,351,351,C
+4431,Grass Lake HS,348,348,C
+1206,Madison Heights - Madison HS,348,348,C
+6956,LeRoy - Pine River Area HS,343,343,C
+3433,Monroe - St Mary Catholic Central HS,341,341,C
+1536,Delton Kellogg HS,339,339,C
+4497,Bloomingdale HS,337,337,C
+6568,Hemlock HS,337,337,C
+3152,Ishpeming - Westwood HS,337,337,C
+2220,Harrison Community HS,335,335,C
+4398,Ithaca HS,335,335,C
+6221,North Muskegon HS,335,335,C
+8003,Ravenna HS,333,333,C
+2848,New Haven HS,330,330,C
+8052,St Louis HS,330,330,C
+4811,Detroit Central HS,329,329,C
+7112,Perry HS,329,329,C
+1107,Traverse City - St Francis HS,329,329,C
+2476,Burton - Bendle HS,325,325,C
+7368,Bronson HS,325,325,C
+5090,Bangor HS,324,324,C
+5586,Hartford HS,324,324,C
+1560,Oscoda HS,320,320,C
+5215,St Charles HS,320,320,C
+1019,Ypsilanti - Arbor Preparatory HS,319,319,C
+6543,Ann Arbor - Greenhills HS,319,319,C
+6717,Manchester HS,318,318,C
+2617,Hanover-Horton HS,316,316,C
+1168,Hamtramck - Oakland International Academy,312,312,C
+5504,Beaverton HS,311,311,C
+1152,Detroit Leadership Academy,311,311,C
+1362,Bad Axe HS,310,310,C
+5743,Bath HS,310,310,C
+9960,Detroit Cristo Rey HS,310,310,C
+3482,Jackson - Lumen Christi HS,310,310,C
+7525,Sandusky HS,310,310,C
+1321,Homer HS,308,308,C
+2427,Galesburg-Augusta HS,305,305,C
+5330,Union City HS,305,305,C
+4332,Lakeview HS,304,304,C
+8218,Mancelona HS,304,304,C
+3838,Schoolcraft HS,303,303,C
+1222,Grosse Pointe Woods - University Liggett HS,303,303,C
+2322,Dearborn Riverside Academy-West,300,300,C
+1054,Brighton - Charyl Stockwell Prep Academy,299,299,C
+9134,Detroit - Loyola HS,149,298,D
+6345,Saginaw - Valley Lutheran HS,298,298,C
+7624,McBain - Mc Bain HS,297,297,C
+6312,Pewamo-Westphalia HS,296,296,C
+9876,Detroit Community HS,295,295,C
+1511,Madison Heights - Bishop Foley Catholic HS,293,293,C
+7228,Springport HS,293,293,C
+1058,Detroit - Dr Benjamin Carson HS for Science & Medicine,292,292,C
+3664,New Lothrop HS,292,292,C
+4076,Grand Rapids - NorthPointe Christian HS,291,291,C
+7351,Lawton HS,290,290,C
+7161,Roscommon HS,289,289,C
+7574,Hesperia Community HS,286,286,C
+7764,Charlevoix HS,283,283,C
+4514,Memphis HS,281,281,C
+6444,Elkton-Pigeon-Bay Port Laker HS,280,280,C
+1115,East Jordan HS,279,279,C
+5223,Saranac HS,279,279,C
+2575,Grandville - Calvin Christian HS,278,278,C
+1192,Detroit - Cornerstone Lincoln King Academy HS,278,278,C
+7087,Manton HS,275,275,C
+8093,Burton - Bentley HS,274,274,C
+4002,Evart HS,274,274,C
+1153,Hope of Detroit Academy HS,274,274,C
+1263,Holland - Black River HS,273,273,C
+1156,Vermontville - Maple Valley HS,272,272,C
+4828,Reese HS,271,271,C
+6403,Byron Area HS,270,270,C
+7384,Hudson Area HS,269,269,C
+3292,Vassar HS,269,269,C
+1073,Cass City HS,268,268,C
+2212,Iron Mountain HS,268,268,C
+1924,Sand Creek HS,265,265,C
+2880,Saugatuck HS,263,263,C
+5108,Potterville HS,262,262,C
+2955,Farwell Area HS,261,261,C
+1676,Centreville HS,260,260,C
+1196,Detroit - The School at Marygrove,258,258,C
+3755,Ottawa Lake - Whiteford HS,257,257,C
+5520,Harbor Springs HS,256,256,C
+5017,Burton - Atherton HS,254,254,C
+2600,Gwinn HS,254,254,C
+3243,Bridgman HS,250,250,C
+6675,Brown City HS,248,248,C
+3037,Addison HS,247,247,C
+2014,Maple City - Glen Lake HS,247,247,C
+6246,White Cloud HS,245,245,C
+2245,Manistique HS,244,244,C
+5776,Cassopolis - Ross Beatty HS,244,244,C
+5132,Dansville HS,243,243,C
+3490,Muskegon - Western Michigan Christian HS,243,243,C
+4316,Riverview - Gabriel Richard HS,241,241,C
+4613,Royal Oak - Shrine Catholic HS,241,241,C
+2526,Jackson - Vandercook Lake HS,241,241,C
+4407,Holton HS,240,240,C
+2591,Kalamazoo Christian HS,239,239,C
+3846,Carson City-Crystal HS,236,236,C
+4720,Kalamazoo - Hackett Catholic Prep,235,235,C
+6997,East Jackson HS,234,234,C
+4225,Unionville Sebewaing HS,234,234,C
+1120,Arts & Technology Acad of Pontiac,232,232,C
+2079,Wyoming - The Potter's House Christian HS,232,232,C
+7145,Iron River - West Iron County HS,232,232,C
+4695,Mt Morris - Beecher HS,231,231,C
+1478,Whittemore-Prescott HS,230,230,C
+7054,Marlette HS,229,229,C
+6304,Lincoln - Alcona HS,228,228,C
+5124,Mt Pleasant - Beal City HS,227,227,C
+3458,Rochester Hills - Lutheran Northwest HS,227,227,C
+7715,Reading HS,225,225,C
+6353,Concord HS,224,224,C
+3185,Whitmore Lake HS,224,224,C
+1083,St Helen - Charlton Heston Academy,222,222,C
+2009,Detroit - Universal Academy,222,222,C
+5652,Bark River-Harris HS,221,221,C
+2393,Mt Clemens HS,220,220,C
+9721,Kimball - Landmark Academy,218,218,C
+4588,Blanchard - Montabella HS,218,218,C
+1161,Detroit - Academy of the Americas,216,216,C
+3631,Johannesburg-Lewiston HS,216,216,C
+6361,Ishpeming HS,213,213,C
+2930,Capac HS,211,211,C
+2360,St Ignace HS,210,210,C
+5900,White Pigeon HS,210,210,C
+5677,Genesee HS,208,208,C
+6287,Harbor Beach HS,208,208,C
+9948,Traverse City - Grand Traverse Academy,206,206,C
+2311,Decatur HS,204,204,C
+2204,Allen Park - Cabrini HS,203,203,C
+3045,Kingston HS,203,203,C
+7562,Burton - Madison Academy,203,203,C
+2988,Merrill HS,203,203,C
+3441,Hancock HS,199,199,C
+2228,International Academy of Flint,198,198,C
+6774,Painesdale - Jeffers HS,197,197,C
+7153,Mesick HS,197,197,C
+1131,Coleman HS,195,195,C
+1065,Warren - Michigan Math & Science Academy,195,195,C
+7178,Morenci Area HS,195,195,C
+7995,Breckenridge HS,194,194,C
+5264,L'Anse HS,193,193,C
+8481,Saginaw - Nouvel Catholic Central HS,193,193,C
+2105,Gobles HS,192,192,C
+8698,Adrian - Lenawee Christian HS,192,192,C
+8623,Lutheran HS Westland,192,192,C
+1577,Rogers City HS,192,192,C
+5446,Marcellus HS,191,191,C
+1230,Saginaw Arts & Sciences Academy,191,191,C
+1090,Westland - Universal Learning Academy,191,191,C
+2906,Lawrence HS,189,189,C
+1965,Eau Claire HS,188,188,D
+7442,Mayville HS,187,187,D
+6873,Munising HS,183,183,D
+2286,New Buffalo HS,182,182,D
+5751,Ironwood - Luther L Wright HS,181,181,D
+2625,Norway HS,180,180,D
+6163,Bellevue HS,179,179,D
+5066,Martin HS,179,179,D
+3061,Saginaw - Michigan Lutheran Seminary,179,179,D
+2121,Petersburg - Summerfield HS,179,179,D
+6015,Fowler HS,178,178,D
+8358,Canton - Plymouth Christian Academy,178,178,D
+3557,Brethren HS,177,177,D
+5768,Camden-Frontier HS,177,177,D
+7913,Indian River - Inland Lakes HS,177,177,D
+1659,Benton Harbor - Countryside Academy,174,174,D
+3841,Detroit International Academy,87,174,D
+3417,Deckerville Community HS,173,173,D
+1092,Detroit Public Safety Academy,173,173,D
+1056,Muskegon Heights Academy,173,173,D
+7005,Vestaburg HS,173,173,D
+1134,Jackson Prep & Early College HS,172,172,D
+6700,Newberry HS,171,171,D
+2162,Three Oaks - River Valley HS,171,171,D
+5512,Fife Lake - Forest Area HS,170,170,D
+1098,Birmingham - Roeper HS,170,170,D
+1395,Ubly HS,170,170,D
+5891,Rudyard HS,169,169,D
+3615,Stephenson HS,169,169,D
+2088,Webberville Community HS,168,168,D
+1899,Melvindale - Academy for Business & Tech,166,166,D
+2405,Taylor - Trillium Academy,166,166,D
+1858,Lansing Christian HS,165,165,D
+1017,Britton Deerfield Schools,164,164,D
+7260,Mendon HS,164,164,D
+3094,Onaway Area HS,164,164,D
+3532,Auburn Hills - Oakland Christian HS,163,163,D
+7194,Morrice HS,161,161,D
+3193,Bloomfield Hills - Academy Of The Sacred Heart,80,160,D
+1239,Ann Arbor - Central Academy HS,158,158,D
+1973,Pickford HS,157,157,D
+3961,Marine City - Cardinal Mooney Catholic HS,156,156,D
+7558,Frankfort HS,154,154,D
+1552,Colon Community HS,153,153,D
+6816,Brimley Area HS,151,151,D
+4423,Climax-Scotts HS,151,151,D
+1155,Inkster - American International Academy,149,149,D
+7401,Middleton - Fulton HS,148,148,D
+4877,Marion HS,148,148,D
+2534,Dryden HS,147,147,D
+1174,Flint - The New Standard Academy,146,146,D
+4167,Mio-Au Sable HS,144,144,D
+3004,Southfield Christian HS,143,143,D
+9639,Detroit - Davis Aerospace Technical HS,141,141,D
+9281,Detroit - Frederick Douglass HS,70,140,D
+4455,West Bloomfield - Frankel Jewish Academy,138,138,D
+9927,Pontiac Academy for Excellence,138,138,D
+1319,New Haven - Merritt Academy HS,133,133,D
+3672,Suttons Bay HS,132,132,D
+8135,Buckley HS,131,131,D
+2187,Leland HS,130,130,D
+5941,Custer - Mason County Eastern HS,130,130,D
+9955,Sterling Heights - Parkway Christian School,130,130,D
+9764,Southfield - AGBU Alex & Marie Manoogian HS,129,129,D
+3912,Baldwin Community Schools,129,129,D
+7244,Bessemer - AD Johnston,128,128,D
+5982,Athens HS,128,128,D
+6270,Hillman HS,127,127,D
+1544,Pittsford HS,127,127,D
+5660,Pellston HS,126,126,D
+1214,Crystal Falls - Forest Park HS,124,124,D
+4448,Kinde - North Huron HS,123,123,D
+6915,Baraga Area HS,122,122,D
+5173,Lake Linden-Hubbell HS,122,122,D
+4951,Rapid River HS,118,118,D
+9826,Clarkston - Everest Collegiate HS,116,116,D
+1445,Muskegon Catholic Central HS,116,116,D
+9711,Kalamazoo - Phoenix HS,113,113,D
+3400,Peck Community HS,111,111,D
+4308,Au Gres - AuGres-Sims HS,109,109,D
+1329,Big Rapids - Crossroads Charter Academy,108,108,D
+1940,Powers - North Central HS,108,108,D
+6493,Dollar Bay HS,106,106,D
+9101,Burton - Genesee Christian HS,106,106,D
+1800,St Joseph - Michigan Lutheran HS,106,106,D
+5545,Wakefield-Marenisco HS,105,105,D
+7533,Litchfield HS,104,104,D
+4274,Mt Pleasant - Sacred Heart Academy HS,103,103,D
+2724,Bellaire HS,101,101,D
+1110,Grand Rapids - Hope Academy of West Michigan HS,101,101,D
+8631,Wyoming - Tri-unity Christian HS,101,101,D
+7616,Engadine HS,100,100,D
+4745,Waterford - Our Lady Of The Lakes HS,100,100,D
+7938,Onekama HS,99,99,D
+6262,Akron-Fairgrove HS,97,97,D
+2773,Covert HS,97,97,D
+8341,Allen Park - Inter-City Baptist HS,97,97,D
+5231,North Adams-Jerome HS,97,97,D
+4571,Ontonagon Area HS,97,97,D
+2699,Byron Center - Zion Christian HS,97,97,D
+7707,Bear Lake HS,96,96,D
+1718,Carney-Nadeau HS,96,96,D
+1076,Chesterfield - Austin Catholic HS,95,95,D
+7731,Fairview HS,95,95,D
+8060,Hale HS,92,92,D
+6320,Wolverine HS,91,91,D
+7426,Carsonville-Port Sanilac,90,90,D
+7698,Caseville HS,88,88,D
+1188,Bay City Academy,87,87,D
+4035,Battle Creek - St Philip Catholic Central HS,87,87,D
+5363,Eben Junction - Superior Central HS,87,87,D
+7500,Ashley HS,86,86,D
+1755,Marshall Academy HS,86,86,D
+1908,Portland - St Patrick HS,85,85,D
+4530,Central Lake HS,84,84,D
+5413,Burr Oak HS,83,83,D
+1197,Walkerville HS,82,82,D
+1097,Midland Calvary Baptist,81,81,D
+7566,Pentwater HS,81,81,D
+9775,Ann Arbor - Rudolf Steiner School,81,81,D
+6031,Waldron HS,81,81,D
+1165,Hillsdale Academy,80,80,D
+9707,Traverse City Christian School,80,80,D
+5933,Ellsworth Community HS,79,79,D
+2897,Tekonsha HS,79,79,D
+4927,Atlanta HS,78,78,D
+9527,Coldwater - Pansophia Academy,78,78,D
+3391,Posen HS,77,77,D
+7327,Felch - North Dickinson HS,75,75,D
+7070,St Joseph - Lake Michigan Catholic HS,73,73,D
+2063,Cedarville HS,72,72,D
+8748,Fruitport - Calvary Christian HS,70,70,D
+3771,Gaylord - St Mary Cathedral HS,69,69,D
+9189,Novi Christian Academy,68,68,D
+2030,Chassell HS,67,67,D
+1024,Ewen-Trout Creek HS,67,67,D
+7954,Westland - Huron Valley Lutheran HS,66,66,D
+1279,Boyne City - Concord Academy Boyne,65,65,D
+5322,Alanson HS,63,63,D
+9584,Kalamazoo - Heritage Christian Academy,62,62,D
+4860,Lake Leelanau - St Mary HS,62,62,D
+5454,Auburn Hills Christian School,59,59,D
+7310,McBain - Northern Michigan Christian HS,59,59,D
+1734,Boyne Falls HS,58,58,D
+3301,Bay City - All Saints Central HS,57,57,D
+4579,Battle Creek - Calhoun Christian School,57,57,D
+6196,Jackson Christian School,56,56,D
+1031,Brighton - Livingston Christian Schools,55,55,D
+1149,Hudsonville - Libertas Christian School,53,53,D
+2418,Hillsdale - Will Carleton Academy,53,53,D
+6857,Manistee Catholic Central HS,52,52,D
+5495,Cooks - Big Bay de Noc HS,51,51,D
+5917,Rock - Mid-Peninsula HS,51,51,D
+8886,Wilson - Nah Tah Wahsh PSA,49,49,D
+8102,Owendale-Gagetown HS,49,49,D
+7418,Watersmeet HS,49,49,D
+4043,DeTour Village - DeTour HS,48,48,D
+3763,Mackinaw City HS,48,48,D
+1171,Concord Academy of Petoskey,45,45,D
+1202,Shepherd - FlexTech HS,43,43,D
+4538,Byron Center Charter School,41,41,D
+1108,Lansing - Martin Luther HS,41,41,D
+5462,Northport HS,40,40,D
+9112,Marcellus - Howardsville Christian School,39,39,D
+1099,Brimley - Ojibwe Charter HS,39,39,D
+1150,Mancelona - North Central Academy,38,38,D
+1175,Whitmore Lake - Livingston Classical Academy,37,37,D
+7582,Republic-Michigamme HS,37,37,D
+1207,Highland Park - Sigma Acad for Leadership & Early Middle,35,35,D
+4761,Alba HS,34,34,D
+8730,Harbor Springs - Harbor Light Christian HS,34,34,D
+1132,Petoskey - St Michael Academy,32,32,D
+6592,Glen Arbor - The Leelanau School,32,32,D
+9371,Holland - Calvary HS,31,31,D
+1710,Burton - Faithway Christian Academy,28,28,D
+1200,Detroit - Skills & Trade Preparatory HS,28,28,D
+8201,Mackinac Island HS,26,26,D
+7681,Flint - Michigan School For The Deaf,26,26,D
+8656,Kimball - New Life Christian Academy,26,26,D
+4299,Kinross - Maplewood Baptist Academy,25,25,D
+9962,Wyoming - West Michigan Lutheran HS,24,24,D
+9415,Burt Lake - Northern Michigan Christian Academy,21,21,D
+6386,Vanderbilt HS,21,21,D
+1750,Paradise - Whitefish Township Community School,20,20,D
+8473,Watervliet - Grace Christian HS,18,18,D
+8532,Beaver Island Community School,17,17,D
+9819,Lansing - New Covenant Christian HS,12,12,D
