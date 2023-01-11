@@ -1,0 +1,47 @@
+,field,field2,icon_full,league,team_name,icon_pair,capacity,undergrad_pop,notes,match,id
+0,Commerica Park - Tigers ,,DET,MLB,Detroit Tigers,DET,"41,083",,,Commerica Park - Tigers ,Co171
+1,Coors Field - Largest Park in the MLB,,COL,MLB,Colorado Rockies,COL,"50,398",,,Coors Field - Largest Park in the  - mlb,Co145
+2,Fenway Park - Smallest Park in the MLB,,BOS,MLB,Boston Red Sox,BOS,"37,731",,,Fenway Park - Smallest Park in the  - mlb,Fe113
+3,Battle Creek - Robert L Nichols Field - muni,2nd field at Bailey Park with MCCU Field,muni,,,,6000,,,Robert L Nichols Field (Battle Creek) - muni,Ro101
+4,Boyne City County Park Muni,,muni,,,,175,,,Boyne City County Park Muni,Bo134
+5,Coldwater Heritage Park - muni,,muni,,,,125,,,Coldwater Heritage Park - muni,Co125
+6,Eaton Park - muni,,muni,,,,110,,,Eaton Park - muni,Ea171
+7,Hancock Driving Park - Houghton Muni - muni,,muni,,,,465,,,Hancock Driving Park - Houghton Muni - muni,Ha135
+8,Historic Hamtramck Stadium - muni,,muni,,,,1500,,,Historic Hamtramck Stadium - muni,Hi117
+9,Historic Marsh Field Muskegon - Muni,,muni,GLSCL,Muskegon Clippers,,1000,,Great Lakes Summer Collegiate League,Historic Marsh Field Muskegon - Muni,Hi171
+10,Kircher Municipal Field - muni,,muni,,,,500,,,Kircher Municipal Field - muni,Ki197
+11,Royal Oak Memorial Park - muni,,muni,GLSCL,Royal Oak Leprechauns,,1500,,Great Lakes Summer Collegiate League,Royal Oak Memorial Park - muni,Ro166
+12,Sanborn Park - Port Huron - muni,,muni,,,,250,,,Sanborn Park - Port Huron - muni,Sa193
+13,The Corner Ballpark - Detroit - muni,,CORNER,,,,2500,,,The Corner Ballpark - Detroit - muni,Th146
+14,Westside Park (Lansing) - muni,,muni,,,,200,,,Westside Park (Lansing) - muni,We196
+15,Whaley Park - Flint - muni,,muni,,,,500,,,Whaley Park - Flint - muni,Wh158
+16,Dow Diamond (Midland) ,,LOONS,Single-A,Great Lakes Loons,LOONS,5200,,,Dow Diamond (Midland) ,Do170
+17,Homer Stryker Field (Kalamazoo),,pro,Northwoods,Kalamazoo Growlers,pro,3500,,,Homer Stryker Field - (Kalamazoo) ,Ho189
+18,Jimmy Johns Stadium (Utica) ,,pro,USPBL,Multiple,pro,4500,,,Jimmy Johns Stadium (Utica) ,Ji189
+19,Jackson Field (Lansing),,NUTS,Single-A,Lansing Lugnuts,NUTS,9527,,,Jackson Field (Lansing) ,Ja193
+20,MCCU Field (Battle Creek),,pro,Northwoods,Battle Creek Battle Jacks,pro,2193,,,MCCU Field - (Battle Creek) ,MC102
+21,Turtle Creek Stadium (Traverse City) ,,pro,Northwoods,Traverse City Pit Spitters,pro,4660,,,Turtle Creek Stadium (Traverse City) ,Tu193
+22,LMCU Ballpark (Grand Rapids),,CAPS,Single-A,West Michigan Whitecaps ,CAPS,8942,,,LMCU Ballpark (Grand Rapids) ,LM174
+23,Adrian College,Nicolay Field,adrian,NCAA-3,Adrian Bulldogs,small_coll,300,1805,,Adrian College,Ad152
+24,Albion College ,Champions Stadium,albion,NCAA-3,Albion Britons,small_coll,350,1523,,Albion College ,Al122
+25,Calvin University,Gainey Athletic Complex - Field 1 ,calvin,NCAA-3,Calvin Knights,small_coll,250,3068,,Calvin University ,Ca185
+26,CMU ,Bill Theunissen Stadium,cmu,NCAA-1,Central Michigan Chippawa,cmu,2046,11417,,CMU ,CM143
+27,Cornerstone University,De Witt Field,college,NAIA,Cornerstone Golden Eagles,small_coll,500,1507,,Northwestern University  ,No146
+28,Davenport University ,Farmers Insurance Athletic Complex,davenport,NCAA-2,Davenport Panthers,small_coll,300,4352,,Davenport University ,Da132
+29,EMU ,Oestrike Stadium,emu,NCAA-1,Easter Michigan Eagles,emu,"2,500",12730,,EMU ,EM155
+30,Gainey Athletic Complex - Field 1 ,Calvin University,college,NCAA-3,Calvin Knights,small_coll,250,,,Gainey Athletic Complex - Field 1 ,Ga147
+31,Gainey Athletic Complex - Field 2 ,Aquinas College,college,NCAA-3,Aquinas College Saints,small_coll,130,,,Gainey Athletic Complex - Field 2 ,Ga179
+32,GVSU ,GVSU Baseball Field,gvsu,NCAA-2,Grand Valley State Lakers,small_coll,465,19379,,GVSU ,GV170
+33,Hillsdale College ,,hillsdale,NCAA-2,Hillsdale Chargers,small_coll,,1515,## Building new field . Broke ground Oct 2022,Hillsdale College ,Hi112
+34,Hope College,BOEVE BASEBALL STADIUM,hope,NCAA-3,Hope College Flying Dutchman,small_coll,400,3132,,Hope College,Ho100
+35,Kalamazoo College ,Woodworth Field,kzoo,NCAA-3,Kalamazoo College Hornets,small_coll,312,1241,,Kalamazoo College ,Ka176
+36,Alma College,Klenk Park,alma,NCAA-3,Alma College Scots,small_coll,150,1340,,Klenk Park - (Alma College) ,Kl199
+37,McLane Stdium at Old College Field (MSU),McLane Stdium at Old College Field (MSU),msu,NCAA-1,Michigan State Spartans,msu,2500,38574,,Old College Field (MSU) ,Ol171
+38,Northwood University ,Gerace Stadium,college,NCAA-2,Northwood Timberwolves,small_coll,200,2116,"guess, 1 small grandstand behind home plate",Northwood University ,No180
+39,Oakland University ,Oakland Baseball Field,oakland,NCAA-1,Oakland Golden Grizzlies,oakland,500,13771,,Oakland University ,Oa157
+40,Olivet College ,Cutler Athletic Complex,olivet,NCAA-3,Olivet Comets,small_coll,100,851,,Olivet College ,Ol145
+41,Saginaw Valley State ,SVSU Baseball Complex,svsu,NCAA-2,Saginaw Valley State Cardinals,small_coll,346,6789,,Sagniaw Valley State ,Sa140
+42,U of M ,Ray Fisher Stadium,uofm,NCAA-1,Michigan Wolverines,uofm,4000,32282,,U of M ,U 135
+43,Wayne State Univ ,Harwell Baseball Field,wayne,NCAA-2,Wayne State Warriors,small_coll,500,16839,,Wayne State Univ ,Wa154
+44,WMU ,Hyames Field,wmu,NCAA-1,Western Michigan Broncos,wmu,1500,14587,,WMU ,WM105
+45,Cleary University,Lake Trust Stadium,small_college,NAIA,Cleary University Cougars,small_coll,300,586,,Calvin University ,Ca185
