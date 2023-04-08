@@ -22,9 +22,11 @@
 				center: {lat: 40.7128, lng: -74.0060},
 				zoom: 12
 			});
+            function loadGeoJson() {
+            var url = "https://github.com/JSmith1826/BB_parks/blob/main/data/kml/export_2.geojson";
+            map.data.loadGeoJson(url);
+            }
 
-			var geojsonLayer = new google.maps.Data();
-			geojsonLayer.loadGeoJson('ballparks_export.geojson');
 
 			geojsonLayer.setStyle({
 				fillOpacity: 0.0,
