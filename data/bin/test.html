@@ -14,7 +14,7 @@
 			padding: 0;
 		}
 	</style>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAveVxp9dUa3LSBPRdtf4C8CfI2IGuV2ww&callback=initMap"
+	<script src="https://maps.googleapis.com/maps/api/js?key=" + KEY + "&callback=initMap"
     async defer></script>
 	<script>
 		function initMap() {
@@ -23,7 +23,7 @@
 				zoom: 12
 			});
             function loadGeoJson() {
-            var url = "https://github.com/JSmith1826/BB_parks/blob/main/data/kml/export_2.geojson";
+            var url = "https://github.com/JSmith1826/BB_parks/blob/main/data/kml/merged_test_1.geojson";
             map.data.loadGeoJson(url);
             }
 
