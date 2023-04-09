@@ -1,11 +1,6 @@
-TEMP
+# Ignore .env files
+**/.env
 
-data\images
-
-data/images
-
-/data/images
-
-\data\images
-
-\TEMP\
+# Ignore the data and images directories
+data/
+images/
