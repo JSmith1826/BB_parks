@@ -1,49 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="initial-scale=1.0">
-	<meta charset="utf-8">
-	<title>Map</title>
-	<style>
-		#map {
-			height: 100%;
-		}
-		html, body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-		}
-	</style>
+  <head>
+    <title>Display GeoJSON on Google Maps</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=${{ secrets.API_KEY }}"></script>
+    <script>
+      function initMap() {
+        // Create a map object and specify the center and zoom level
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 37.7749, lng: -122.4194},
+          zoom: 10
+        });
 
-
-
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=" + API_KEY + "&callback=initMap"
-    async defer></script>
-    <script>const apiKey = process.env.API_KEY || secrets.API_KEY;</script>
-	<script>
-		function initMap() {
-			var map = new google.maps.Map(document.getElementById('map'), {
-				center: {lat: 40.7128, lng: -74.0060},
-				zoom: 12
-			});
-            function loadGeoJson() {
-            var url = "https://github.com/JSmith1826/BB_parks/blob/main/data/kml/merged_test_1.geojson";
-            map.data.loadGeoJson(url);
-            }
-
-
-			geojsonLayer.setStyle({
-				fillOpacity: 0.0,
-				strokeWeight: 2,
-				strokeColor: 'red'
-			});
-
-			geojsonLayer.setMap(map);
-		}
-	</script>
-</head>
-<body>
-	<div id="map"></div>
-</body>
+        // Load GeoJSON data from a file
+        map.data.loadGeoJson('https://raw.githubusercontent.com/JSmith1826/MyRepo/main/data/kml/merged_test_1.geojson');
+      }
+    </script>
+  </head>
+  <body onload="initMap()">
+    <div id="map" style="height: 100%;"></div>
+  </body>
 </html>
