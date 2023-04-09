@@ -14,15 +14,13 @@
 			padding: 0;
 		}
 	</style>
-	<script src="config.js">
-        const API_KEY = config.API_KEY;
-    </script>
+
 
 
     
     <script src="https://maps.googleapis.com/maps/api/js?key=" + API_KEY + "&callback=initMap"
     async defer></script>
-
+    <script>const apiKey = process.env.API_KEY || secrets.API_KEY;</script>
 	<script>
 		function initMap() {
 			var map = new google.maps.Map(document.getElementById('map'), {
