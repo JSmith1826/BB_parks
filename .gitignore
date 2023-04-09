@@ -2,5 +2,5 @@
 **/.env
 
 # Ignore the data and images directories
-data/
-images/
+
+**/images/
