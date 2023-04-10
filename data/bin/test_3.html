@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Display GeoJSON on Google Maps</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=${API_KEY}"></script>
     <script>
       function initMap() {
         // Create a map object and specify the center and zoom level
@@ -12,11 +11,12 @@
         });
 
         // Load GeoJSON data from a file
-        map.data.loadGeoJson('https://raw.githubusercontent.com/JSmith1826/BB_parks/4c548f5b9056db3232aa35c646cf47381c592be1/data/bin/ballparks_export.geojson');
+        map.data.loadGeoJson('https://api.mapbox.com/styles/v1/jsmith1826/clg8qp1al003601oxy5fc3zpd/wmts?access_token=pk.eyJ1IjoianNtaXRoMTgyNiIsImEiOiJjbDRrbDEzd2QwZmZlM2JuMDA4ZGRrMzdlIn0.HVJjFywC-TMABqut4pgdkw');
       }
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA&callback=initMap" async defer></script>
   </head>
-  <body onload="initMap()">
+  <body>
     <div id="map" style="height: 100%;"></div>
   </body>
 </html>

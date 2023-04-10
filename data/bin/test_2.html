@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Display GeoJSON on Google Maps</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=${API_KEY}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ secrets.API_KEY }}"></script>
     <script>
       function initMap() {
         // Create a map object and specify the center and zoom level
@@ -12,7 +12,7 @@
         });
 
         // Load GeoJSON data from a file
-        map.data.loadGeoJson('https://raw.githubusercontent.com/JSmith1826/BB_parks/4c548f5b9056db3232aa35c646cf47381c592be1/data/bin/ballparks_export.geojson');
+        map.data.loadGeoJson('https://raw.githubusercontent.com/JSmith1826/MyRepo/main/data/kml/merged_test_1.geojson');
       }
     </script>
   </head>
