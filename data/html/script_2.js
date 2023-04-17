@@ -1,29 +1,26 @@
 let map;
 let polyline;
 let distanceDisplay;
+let distanceToFenceDisplay;
 
-function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 41.9898236, lng: -84.3395166 },
-        zoom: 10,
-        mapTypeId: 'satellite'
-    });
-
-    distanceDisplay = document.getElementById('distance-display');
-
-    loadJSONData();
-
-    map.addListener('click', async (event) => {
-        const url = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/360_test/output.json';
-        const response = await fetch(url);
-        const baseballFieldData = await response.json();
-
-        const clickedPoint = event.latLng;
-        const closestHomePlate = findClosestHomePlate(clickedPoint, baseballFieldData);
-        measureDistance(closestHomePlate, clickedPoint);
-    });
-}
-
+// Initiate Map
+//function initMap() {
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 41.9898236, lng: -84.3395166 },
+            zoom: 16,
+            mapTypeId: 'satellite'
+        });
+    
+        distanceDisplay = document.getElementById('distance-display');
+        distanceToFenceDisplay = document.getElementById('distance-to-fence-display');
+    
+        loadJSONData();
+    
+        google.maps.event.addListener(map, 'click', function(event) {
+            const clickedPoint = event
+    
+/// Load Data Layer 
 async function loadJSONData() {
     const url = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/360_test/output.json';
 
@@ -39,9 +36,10 @@ async function loadJSONData() {
     }
 }
 
+/// Create all the overlay polygons and apply style
 function createPolygon(field) {
     const coordinates = field.polygon.map(coord => {
-        return new google.maps.LatLng(coord[1], coord[0]);
+        return { lat: coord[1], lng: coord[0] };
     });
 
     const fillColor = field.fair_foul === 'fair' ? '#90EE90' : '#FFB6C1';
@@ -56,12 +54,34 @@ function createPolygon(field) {
     });
 
     polygon.setMap(map);
+    createLabel(field, polygon);
 
     polygon.addListener('click', (event) => {
         measureDistance(field.home_plate, event.latLng, polygon);
     });
 }
 
+/// Create the label for each polygon
+// very ugly, going to want to update of eliminate
+function createLabel(field, polygon) {
+    const label = new google.maps.Marker({
+        position: polygon.getPath().getAt(0),
+        label: {
+            text: `${field.field_name} (${field.fair_foul})`,
+            fontSize: '12px',
+            fontWeight: 'bold'
+        },
+        map: map
+    });
+
+    map.addListener('zoom_changed', () => {
+        const zoom = map.getZoom();
+        label.setVisible(zoom >= 18);
+    });
+}
+
+
+////function measureDistance////
 function measureDistance(homePlate, clickedPoint, polygon) {
     let isInsidePolygon = false;
     let closestPoint = clickedPoint;
@@ -96,23 +116,3 @@ function measureDistance(homePlate, clickedPoint, polygon) {
     updateDistanceDisplay(distanceInFeet);
 }
 
-function updateDistanceDisplay(distanceInFeet) {
-    distanceDisplay.textContent = `Distance from home plate: ${Math.round(distanceInFeet)} feet`;
-}
-
-function findClosestHomePlate(clickedPoint, baseballFieldData) {
-    let closestHomePlate;
-    let minDistance = Infinity;
-
-    baseballFieldData.forEach(field => {
-        const homePlateLatLng = new google.maps.LatLng(field.home_plate[1], field.home_plate[0]);
-        const distance = google.maps.geometry.spherical.computeDistanceBetween(clickedPoint, homePlateLatLng);
-
-        if (distance < minDistance) {
-            minDistance = distance;
-            closestHomePlate = field.home_plate;
-        }
-    });
-
-    return closestHomePlate;
-}
