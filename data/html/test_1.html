@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Baseball Fields</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA&libraries=geometry"></script>
+    <script src="script_1.js"></script>
+    <style>
+      #map {
+        height: 80%;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #distanceInfo {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+      }
+      #distanceToClick, #distanceToEdge {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body onload="initMap()">
+    <div id="map"></div>
+    <div id="distanceInfo">
+      <span id="distanceToClick">Distance from home plate to clicked point: -- feet</span>
+      <span id="distanceToEdge">Distance from home plate to polygon edge: -- feet</span>
+    </div>
+  </body>
+</html>
