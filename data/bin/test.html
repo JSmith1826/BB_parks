@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Display GeoJSON on Google Maps</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=${API_KEY}"></script>
-    <script>
-      function initMap() {
-        // Create a map object and specify the center and zoom level
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 37.7749, lng: -122.4194},
-          zoom: 10
-        });
-
-        // Load GeoJSON data from a file
-        map.data.loadGeoJson('https://raw.githubusercontent.com/JSmith1826/BB_parks/4c548f5b9056db3232aa35c646cf47381c592be1/data/bin/ballparks_export.geojson');
-      }
-    </script>
-  </head>
-  <body onload="initMap()">
-    <div id="map" style="height: 100%;"></div>
-  </body>
+<head>
+    <title>Baseball Field Map</title>
+    <style>
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA&libraries=geometry"></script>
+    <script src="script.js"></script>
+</head>
+<body onload="initMap()">
+    <div id="map"></div>
+</body>
 </html>
