@@ -2,10 +2,9 @@
 <html>
 <head>
     <title>Baseball Field Map</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <style>
         #map {
-            height: 80%;
+            height: 100%;
             width: 100%;
         }
         html, body {
@@ -13,19 +12,11 @@
             margin: 0;
             padding: 0;
         }
-        #distance-display {
-            text-align: center;
-            font-family: 'Roboto Slab', serif;
-            font-size: 2em;
-            font-weight: bold;
-            margin-top: 10px;
-        }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA&libraries=geometry"></script>
     <script src="script.js"></script>
 </head>
 <body onload="initMap()">
     <div id="map"></div>
-    <div id="distance-display"></div>
 </body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baseball Field Map</title>
+    <style>
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA"></script>
+    <script>
+        let map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 41.9898236, lng: -84.3395166 },
+                zoom: 16,
+                mapTypeId: 'satellite'
+            });
+
+            loadJSONData();
+        }
+
+        async function loadJSONData() {
+    const url = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/360_test/output.json';
+
+    try {
+        const response = await fetch(url);
+        const baseballFieldData = await response.json();
+
+        baseballFieldData.forEach(field => {
+            createPolygon(field.polygon);
+        });
+    } catch (error) {
+        console.error('Error fetching JSON data:', error);
+    }
+}
+
+
+
+function createPolygon(field) {
+    // ...
+    polygon.setMap(map);
+    createLabel(field, polygon);
+
+    polygon.addListener('click', (event) => {
+        measureDistance(field.home_plate, event.latLng);
+    });
+}
+
+function measureDistance(homePlate, clickedPoint) {
+    const polyline = new google.maps.Polyline({
+        path: [new google.maps.LatLng(homePlate[1], homePlate[0]), clickedPoint],
+        geodesic: true,
+        strokeColor: '#0000FF',
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+    });
+
+    polyline.setMap(map);
+
+    const distanceInMeters = google.maps.geometry.spherical.computeDistanceBetween(
+        new google.maps.LatLng(homePlate[1], homePlate[0]),
+        clickedPoint
+    );
+
+    alert(`Distance from home plate: ${distanceInMeters.toFixed(2)} meters`);
+}
+
+    </script>
+</head>
+<body onload="initMap()">
+    <div id="map"></div>
+</body>
+</html>
