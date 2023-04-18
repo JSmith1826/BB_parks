@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Baseball Field Map</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
-    <style>
-        #map {
-            height: 80%;
-            width: 100%;
-        }
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        #distance-display {
-            text-align: center;
-            font-family: 'Roboto Slab', serif;
-            font-size: 2em;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA&libraries=geometry"></script>
-    <script src="script.js"></script>
+    <title>Baseball Field Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script_test.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA&libraries=geometry&callback=initMap" async></script>
+
 </head>
-<body onload="initMap()">
+<body>
+    <div id="distance-display-container">
+        <p id="field-name-display"></p> <!-- Add a new paragraph for the field name -->
+        <p id="distance-display">Click on the map to measure distances.</p>
+        <p id="fence-distance-display"></p>
+    </div>
     <div id="map"></div>
-    <div id="distance-display"></div>
 </body>
 </html>
