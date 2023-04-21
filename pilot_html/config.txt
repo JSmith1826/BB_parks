@@ -1,0 +1,12 @@
+// config file
+
+MAPS_API_KEY = 'AIzaSyD-9tSrke72PouQMnMX-AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA';
+MAPS_API_URL = 'https://maps.googleapis.com/maps/api/js?key=' + MAPS_API_KEY + '&callback=initMap';
+
+// global variables
+
+JSON_URL = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/360_test/output.json'
+
+
+////////////// JSON MAPS WITH SAMPLE DATA ////////////////////
+
