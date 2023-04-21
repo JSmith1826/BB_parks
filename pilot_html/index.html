@@ -29,6 +29,16 @@
             return await response.json();
         }
         
+        // Add this function to load the data and initialize the map
+        async function initialize() {
+            const url = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/output_data.json";
+            const fields = await loadData(url);
+            initMap(fields);
+        }
+        
+        // Call the initialize function
+        initialize();
+        
         // Initialize the Google Map
         function initMap(fields) {
             const map = new google.maps.Map(document.getElementById("map"), {
