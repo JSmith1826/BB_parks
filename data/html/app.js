@@ -29,30 +29,47 @@ document.addEventListener("DOMContentLoaded", async () => {
     init(data);
   });
   
-
-
-
-
-
-function renderPolygons(data, map) {
-    console.log("Rendering polygons...");
-    polygons = []; // Empty the polygons array before rendering new polygons
-    data.forEach(field => {
-      createPolygon(field.fop, "#00FF00", map);
-      createPolygon(field.foul, "#FF0000", map);
-      createMarker(field.home_plate, field.field, map);
+  
+  function addMapClickHandler(map) {
+    map.addListener("click", async (event) => {
+      await handleMapClick(event, map);
     });
   }
   
-  function createPolygon(coordinates, fillColor, map) {
-    const polygon = new google.maps.Polygon({
-      paths: coordinates.map(coord => new google.maps.LatLng(coord[0], coord[1])),
+
+
+  function renderPolygons(data, map) {
+    console.log("Rendering polygons...");
+    polygons = []; // Empty the polygons array before rendering new polygons
+    data.forEach(field => {
+        console.log("Rendering field:", field);
+
+        const fopCoords = field.fop;
+        console.log("Coordinates before creating FOP polygon:", fopCoords);
+        createPolygon(fopCoords, "#00FF00", map);
+
+        const foulCoords = field.foul;
+        console.log("Coordinates before creating FOUL polygon:", foulCoords);
+        createPolygon(foulCoords, "#FF0000", map);
+
+        createMarker(field.home_plate, field.field, map);
+    });
+}
+
+
+  
+function createPolygon(coordinates, fillColor, map) {
+  const polygon = new google.maps.Polygon({
+      paths: coordinates.map(coord => {
+          return { lat: coord[1], lng: coord[0] }; // Reverse the coordinates
+      }),
       fillColor: fillColor,
       strokeColor: fillColor,
       strokeWeight: 1,
       fillOpacity: 0.35,
       map: map
-    });
+  });
+
   
     polygons.push(polygon);
   
@@ -60,6 +77,8 @@ function renderPolygons(data, map) {
     polygon.addListener("click", event => {
       handleMapClick(event, map);
     });
+
+    console.log("Created polygon:", polygon);
   
     return polygon; // Add this line to return the created polygon
   }
@@ -73,12 +92,14 @@ function createMarker(homePlate, fieldName, map) {
     });
 }
 
-function addMapClickHandler(map) {
-    console.log("Adding map click handler...");
-    map.addListener("click", event => {
-        handleMapClick(event, map);
-    });
+function createMarker(homePlate, fieldName, map) {
+  const marker = new google.maps.Marker({
+      position: new google.maps.LatLng(homePlate[1], homePlate[0]), // Reverse the coordinates
+      title: fieldName,
+      map: map
+  });
 }
+
 
 async function handleMapClick(event, map) {
   console.log("Handling map click...");
@@ -94,13 +115,13 @@ async function handleMapClick(event, map) {
 
     if (insideField) {
       console.log("Clicked inside a field");
-      drawLineAndDisplayDistance(event.latLng, closestField.home_plate, map, closestField.name);
+      drawLineAndDisplayDistance(event.latLng, closestField.home_plate, map, closestField.field);
     } else {
       console.log("Clicked outside of any fields");
       const fieldPolygon = createPolygon(closestField.fop, "#00FF00", null); // Pass null for the map to avoid adding the polygon to the map
       const fenceDistance = calculateFenceDistance(event.latLng, closestField.home_plate, fieldPolygon);
       // Draw the line even when the click is outside of any fields
-      drawLineAndDisplayDistance(event.latLng, closestField.home_plate, map, closestField.name, fenceDistance);
+      drawLineAndDisplayDistance(event.latLng, closestField.home_plate, map, closestField.field, fenceDistance);
     }
   } else {
     console.log("No closest field found");
@@ -109,32 +130,35 @@ async function handleMapClick(event, map) {
 
 
 
+
   
   
 
 function findClosestField(latLng, data) {
-    console.log("Finding closest field...");
-    let minDistance = Infinity;
-    let closestField = null;
+  console.log("Finding closest field...");
+  let minDistance = Infinity;
+  let closestField = null;
 
-    data.forEach(field => {
-        const fieldLatLng = new google.maps.LatLng(field.home_plate[0], field.home_plate[1]);
-        const distance = google.maps.geometry.spherical.computeDistanceBetween(latLng, fieldLatLng);
+  data.forEach(field => {
+      const fieldLatLng = new google.maps.LatLng(field.home_plate[1], field.home_plate[0]); // Reverse the coordinates
+      const distance = google.maps.geometry.spherical.computeDistanceBetween(latLng, fieldLatLng);
 
-        if (distance < minDistance) {
-            minDistance = distance;
-            closestField = field;
-        }
-    });
+      if (distance < minDistance) {
+          minDistance = distance;
+          closestField = field;
+      }
+  });
+  console.log("Closest field:", closestField, "Min distance:", minDistance);
 
-    return closestField;
+  return closestField;
 }
+
 
 function drawLineAndDisplayDistance(start, end, map, fieldName, fenceDistance = null) {
   console.log("Drawing line and displaying distance...");
   const lineCoordinates = [
     new google.maps.LatLng(start.lat(), start.lng()),
-    new google.maps.LatLng(end[0], end[1])
+    new google.maps.LatLng(end[1], end[0]) // Reverse the coordinates
   ];
 
   // Remove the previous line if it exists
@@ -154,37 +178,36 @@ function drawLineAndDisplayDistance(start, end, map, fieldName, fenceDistance = 
   currentLine = line;
 
   const distance = google.maps.geometry.spherical.computeDistanceBetween(start, lineCoordinates[1]);
-  displayDistance(distance, fieldName, fenceDistance);
+  displayDistance(distance, fieldName);
+  if (fenceDistance !== null) {
+    displayFenceDistance(fenceDistance);
+  }
 }
 
-  
-
 ///////////// START DISTANCE DISPLAYS //////////////
-function displayDistance(distance, fieldName, fenceDistance = null) {
+
+
+function displayFenceDistance(fenceDistance) {
+  console.log("Fence distance:", fenceDistance);
+
+  const fenceDistanceElement = document.getElementById("fence-distance");
+  fenceDistanceElement.innerText = `Fence distance: ${fenceDistance.toFixed(0)} feet`;
+}
+
+function displayDistance(distance, fieldName) {
   console.log("Displaying distance...");
   const distanceInFeet = distance * 3.28084;
 
   const fieldNameElement = document.getElementById("field-name");
   const totalDistanceElement = document.getElementById("total-distance");
-  const fenceDistanceElement = document.getElementById("fence-distance");
 
-  fieldNameElement.textContent = `Field name: ${fieldName}`;
-  totalDistanceElement.textContent = `Total distance: ${distanceInFeet.toFixed(0)} feet`;
-
-  if (fenceDistance !== null) {
-    const fenceDistanceInFeet = fenceDistance * 3.28084;
-    fenceDistanceElement.textContent = `Fence distance: ${fenceDistanceInFeet.toFixed(0)} feet`;
-  } else {
-    fenceDistanceElement.textContent = "";
-  }
+  fieldNameElement.innerText = `Field name: ${fieldName}`;
+  totalDistanceElement.innerText = `Total distance: ${distanceInFeet.toFixed(0)} feet`;
 }
 
 
 
-function displayFenceDistance(fenceDistance) {
-  console.log("Fence distance:", fenceDistance);
-  // Add your code to display the fence distance on the map or UI here
-}
+
 
 ///////////// END DISTANCE DISPLAYS //////////////
 
@@ -202,7 +225,8 @@ async function main() {
 function calculateFenceDistance(clickLatLng, homePlateLatLng, fieldPolygon) {
   console.log("calculateFenceDistance:", clickLatLng, homePlateLatLng, fieldPolygon);
   const clickPoint = new google.maps.LatLng(clickLatLng.lat(), clickLatLng.lng());
-  const homePlatePoint = new google.maps.LatLng(homePlateLatLng[0], homePlateLatLng[1]);
+  const homePlatePoint = new google.maps.LatLng(homePlateLatLng[1], homePlateLatLng[0]); // Reverse the coordinates
+
 
   const polygonCoords = fieldPolygon.getPath().getArray();
   const intersectionPoints = [];
@@ -228,6 +252,7 @@ function calculateFenceDistance(clickLatLng, homePlateLatLng, fieldPolygon) {
     const fenceDistance_meters = google.maps.geometry.spherical.computeDistanceBetween(homePlatePoint, validIntersectionPoints[0]);
     const fenceDistance = fenceDistance_meters * 3.28084;
     displayFenceDistance(fenceDistance);
+    
   }
 }
 
@@ -235,7 +260,7 @@ function calculateFenceDistance(clickLatLng, homePlateLatLng, fieldPolygon) {
 const epsilon = 1e-9;
 
 function findLineIntersection(p1, p2, p3, p4) {
-  console.log("findLineIntersection:", p1, p2, p3, p4);
+  // console.log("findLineIntersection:", p1, p2, p3, p4);
   const s1_x = p2.lng() - p1.lng();
   const s1_y = p2.lat() - p1.lat();
   const s2_x = p4.lng() - p3.lng();
