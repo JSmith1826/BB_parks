@@ -92,7 +92,8 @@ function createPolygon(coordinates, fillColor, map) {
   
     return polygon; // Add this line to return the created polygon
   }
-  
+  /////////////////////////////////////////////////
+  //////// WORK AREA //////////////////////////////
 
 function createMarker(homePlate, fieldName, map) {
     const marker = new google.maps.Marker({
@@ -100,15 +101,17 @@ function createMarker(homePlate, fieldName, map) {
         title: fieldName,
         map: map
     });
-}
+}/////////// NOT WORKING BLOCK/////////////////////////
+/////////////////// COORDINATES WRONG WAY AROUND ///////////////////////
+// function createMarker(homePlate, fieldName, map) {
+//   const marker = new google.maps.Marker({
+//       position: new google.maps.LatLng(homePlate[1], homePlate[0]), // Reverse the coordinates
+//       title: fieldName,
+//       map: map
+//   });
+// }
 
-function createMarker(homePlate, fieldName, map) {
-  const marker = new google.maps.Marker({
-      position: new google.maps.LatLng(homePlate[1], homePlate[0]), // Reverse the coordinates
-      title: fieldName,
-      map: map
-  });
-}
+///////////////////////////// WORK AREA END /////////////////////////////
 
 
 async function handleMapClick(event, map) {

@@ -1,4 +1,4 @@
-const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/output_data.json";
+const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/default_output_data.json";
 let fetchedData;
 let polygons = [];
 let currentLine = null;
