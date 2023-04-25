@@ -24,7 +24,6 @@ function init(data) {
     center: new google.maps.LatLng(42.73048536830354, -84.50655614253925),
     heading: true,
     mapTypeId: 'hybrid',
-    // rotateControl: true, // Add this line to enable the rotation control
     
   };
   const map = new google.maps.Map(document.getElementById("map"), mapOptions);
@@ -266,7 +265,7 @@ function displayDistance(distance, fieldName) {
   const fieldNameElement = document.getElementById("field-name");
   const totalDistanceElement = document.getElementById("total-distance");
 
-  fieldNameElement.innerText = `Field name: ${fieldName}`;
+  fieldNameElement.innerText = `${fieldName}`;
   totalDistanceElement.innerText = `Total distance: ${distanceInFeet.toFixed(0)} feet`;
 }
 

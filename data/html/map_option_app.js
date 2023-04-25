@@ -60,21 +60,36 @@ document.addEventListener("DOMContentLoaded", async () => {
         const foulCoords = field.foul;
 
         ////////////////// Get other info for the home plate marker & Display purposes
+        const fieldName = field.field;
         const home_of = field.school_name;
         const bearing = field.field_orientation;
         const fence_min = field.min_distance;
         const fence_max = field.max_distance;
-        const fence_avg = field.avg_distance;
-        const level = field.level;
+        const fence_avg = Math.round(field.avg_distance);
+        const play_level = field.level;
         const division = field.division;
         const area_fair = field.fop_area_sqft;
         const area_foul = field.foul_area_sqft;
+        const area_ratio = (field.fop_area_sqft / field.foul_area_sqft).toFixed(2);
+        const area_fair_acres = (field.fop_area_sqft / 43560).toFixed(2);
         
         console.log("Coordinates before creating FOUL polygon:", foulCoords);
         console.log('bearing: ', bearing); 
+        console.log('division: ', division);
+        console.log('level: ', play_level);
+        console.log('home of: ', home_of);
+        console.log('min fence distance: ', fence_min);
+        console.log('max fence distance: ', fence_max);
+        console.log('avg fence distance: ', fence_avg);
+        console.log('area fair: ', area_fair_acres, ' acres'    );
+        console.log('area foul: ', area_foul);
+        console.log('area ratio: ', area_ratio, ' : 1');
+
         createPolygon(foulCoords, "#FF0000", map);
 
         createMarker(field.home_plate, field.field, field.level, bearing, map);
+
+        // displayDistance(fence_min, fence_max, fence_avg, map);
     });
 }
 
@@ -99,8 +114,7 @@ function createPolygon(coordinates, fillColor, map) {
 
 
   
-    /////////////////////////UNCLEAR HOW THIS IS USED
-    // Add a click event listener to the polygon
+    ///// CLICK EVENT JUST FOR CLICKS IN A POLYGON
     polygon.addListener("click", event => {
       handleMapClick(event, map);
     });
@@ -123,45 +137,54 @@ const levelColor = {
   'muni': "#00FFFF",
 };
 
-function createMarker(homePlate, fieldName, fieldLevel, bearing, map) {
-  // Calculate simplified bearing
-  const simplifiedBearing = Math.round(bearing / 90) * 90;
+function createMarker(homePlate, fieldName, play_level, bearing, map) {
+    /// console log for debugging
+    console.log("fieldName:", fieldName);
+console.log("play_level:", play_level);
 
-  const marker = new google.maps.Marker({
-    position: new google.maps.LatLng(homePlate[1], homePlate[0]),
-    map: map,
-    icon: {
-      url: "https://github.com/JSmith1826/BB_parks/blob/main/data/images/icons/baseball/diamond_2.png?raw=true",
-      scaledSize: new google.maps.Size(40, 40),
-    },
-    title: fieldName,
-  });
-
-  const infowindow = new google.maps.InfoWindow({
-    content: fieldName,
-  });
-  marker.addListener("mouseover", () => {
-    infowindow.open(map, marker);
-  });
-  marker.addListener("mouseout", () => {
-    infowindow.close();
-  });
-  marker.addListener('dblclick', () => {
-    const newCenter = marker.getPosition();
-    const newZoom = 18;
-    const duration = 500;
-
-    map.setHeading(simplifiedBearing);
-    map.panTo(newCenter);
-    map.setZoom(newZoom);
-
-    console.log("Current heading:", map.getHeading());
-    console.log('registered double click');
-    console.log('bearing: ', bearing);
-    console.log("Simplified heading:", simplifiedBearing);
-    console.log("Current heading:", map.getHeading());
-  });
-}
+    
+    // // Calculate simplified bearing
+    // const simplifiedBearing = Math.round(bearing / 90) * 90;
+  
+    const marker = new google.maps.Marker({
+      position: new google.maps.LatLng(homePlate[1], homePlate[0]),
+      map: map,
+      icon: {
+        url: "https://github.com/JSmith1826/BB_parks/blob/main/data/images/icons/baseball/diamond_2.png?raw=true",
+        scaledSize: new google.maps.Size(40, 40),
+      },
+      title: fieldName,
+    });
+  
+    const infowindow = new google.maps.InfoWindow({
+        content: `${fieldName} - ${play_level}`, // Use backticks for template literals
+      });
+      
+   
+    marker.addListener("mouseover", () => {
+        console.log('mouse over triggered');
+      infowindow.open(map, marker);
+    });
+    marker.addListener("mouseout", () => {
+      infowindow.close();
+    });
+    marker.addListener('dblclick', () => {
+      const newCenter = marker.getPosition();
+      const newZoom = 18;
+      const duration = 500;
+  
+      map.setHeading(simplifiedBearing);
+      map.panTo(newCenter);
+      map.setZoom(newZoom);
+  
+    //   console.log("Current heading:", map.getHeading());
+    //   console.log('registered double click');
+    //   console.log('bearing: ', bearing);
+    //   console.log("Simplified heading:", simplifiedBearing);
+    //   console.log("Current heading:", map.getHeading());
+    });
+  }
+  
 /////////////////////////////
 
 async function handleMapClick(event, map) {
@@ -265,7 +288,7 @@ function displayDistance(distance, fieldName) {
   const fieldNameElement = document.getElementById("field-name");
   const totalDistanceElement = document.getElementById("total-distance");
 
-  fieldNameElement.innerText = `Field name: ${fieldName}`;
+  fieldNameElement.innerText = `${fieldName}`;
   totalDistanceElement.innerText = `Total distance: ${distanceInFeet.toFixed(0)} feet`;
 }
 
