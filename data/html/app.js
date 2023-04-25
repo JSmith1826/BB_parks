@@ -1,4 +1,10 @@
-const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/default_output_data.json";
+///////////////// THIS VERSION WORKS WITH THE "DEFAULT_UPDATED_OUTPUT.JSON" FILE //////////////////////
+// This version of the app.js file is for the "default_updated_output.json" file. 
+// The coordinates are in the format [lng, lat]. This version of the
+// app.js file will not work with the "output_data.json" file or reversed_output_data 
+// The coordinates in that file are have been updated to be in the format [lat, lng]. That would break this version of the app.js file
+
+const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/default_updated_output.json";
 let fetchedData;
 let polygons = [];
 let currentLine = null;
@@ -16,7 +22,10 @@ function init(data) {
   const mapOptions = {
     zoom: 19,
     center: new google.maps.LatLng(42.73048536830354, -84.50655614253925),
+    heading: true,
     mapTypeId: 'hybrid',
+    // rotateControl: true, // Add this line to enable the rotation control
+    
   };
   const map = new google.maps.Map(document.getElementById("map"), mapOptions);
   renderPolygons(data, map);
@@ -42,17 +51,31 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.log("Rendering polygons...");
     polygons = []; // Empty the polygons array before rendering new polygons
     data.forEach(field => {
-        console.log("Rendering field:", field);
-
+      // console.log("Rendering field:", field);
+      // console.log("Field orientation:", field.field_orientation); // Add this line to output the field orientation value
+///////////////////// Get all the coordinates for the FOP and FOUL polygons
         const fopCoords = field.fop;
-        console.log("Coordinates before creating FOP polygon:", fopCoords);
+        // console.log("Coordinates before creating FOP polygon:", fopCoords);
         createPolygon(fopCoords, "#00FF00", map);
 
         const foulCoords = field.foul;
+
+        ////////////////// Get other info for the home plate marker & Display purposes
+        const home_of = field.school_name;
+        const bearing = field.field_orientation;
+        const fence_min = field.min_distance;
+        const fence_max = field.max_distance;
+        const fence_avg = field.avg_distance;
+        const level = field.level;
+        const division = field.division;
+        const area_fair = field.fop_area_sqft;
+        const area_foul = field.foul_area_sqft;
+        
         console.log("Coordinates before creating FOUL polygon:", foulCoords);
+        console.log('bearing: ', bearing); 
         createPolygon(foulCoords, "#FF0000", map);
 
-        createMarker(field.home_plate, field.field, map);
+        createMarker(field.home_plate, field.field, field.level, bearing, map);
     });
 }
 
@@ -70,9 +93,14 @@ function createPolygon(coordinates, fillColor, map) {
       map: map
   });
 
-  
+  /////////////////////////////////////////////
+  /////////////// EVENT LISTENERS
     polygons.push(polygon);
+
+
+
   
+    /////////////////////////UNCLEAR HOW THIS IS USED
     // Add a click event listener to the polygon
     polygon.addListener("click", event => {
       handleMapClick(event, map);
@@ -84,22 +112,58 @@ function createPolygon(coordinates, fillColor, map) {
   }
   
 
-function createMarker(homePlate, fieldName, map) {
-    const marker = new google.maps.Marker({
-        position: new google.maps.LatLng(homePlate[0], homePlate[1]),
-        title: fieldName,
-        map: map
-    });
-}
+/////////////////////// HOME PLATE MARKER //////////////////////////
 
-function createMarker(homePlate, fieldName, map) {
+//////////// Assign colors to different levels
+const levelColor = {
+  'high_school': "#FF0000",
+  'college': "#FFFF00",
+  'pro': "#00FF00",
+  'mlb': "#0000FF",
+  'youth': "#FF00FF",
+  'muni': "#00FFFF",
+};
+
+function createMarker(homePlate, fieldName, fieldLevel, bearing, map) {
+  // Calculate simplified bearing
+  const simplifiedBearing = Math.round(bearing / 90) * 90;
+
   const marker = new google.maps.Marker({
-      position: new google.maps.LatLng(homePlate[1], homePlate[0]), // Reverse the coordinates
-      title: fieldName,
-      map: map
+    position: new google.maps.LatLng(homePlate[1], homePlate[0]),
+    map: map,
+    icon: {
+      url: "https://github.com/JSmith1826/BB_parks/blob/main/data/images/icons/baseball/diamond_2.png?raw=true",
+      scaledSize: new google.maps.Size(40, 40),
+    },
+    title: fieldName,
+  });
+
+  const infowindow = new google.maps.InfoWindow({
+    content: fieldName,
+  });
+  marker.addListener("mouseover", () => {
+    infowindow.open(map, marker);
+  });
+  marker.addListener("mouseout", () => {
+    infowindow.close();
+  });
+  marker.addListener('dblclick', () => {
+    const newCenter = marker.getPosition();
+    const newZoom = 18;
+    const duration = 500;
+
+    map.setHeading(simplifiedBearing);
+    map.panTo(newCenter);
+    map.setZoom(newZoom);
+
+    console.log("Current heading:", map.getHeading());
+    console.log('registered double click');
+    console.log('bearing: ', bearing);
+    console.log("Simplified heading:", simplifiedBearing);
+    console.log("Current heading:", map.getHeading());
   });
 }
-
+/////////////////////////////
 
 async function handleMapClick(event, map) {
   console.log("Handling map click...");
@@ -115,6 +179,7 @@ async function handleMapClick(event, map) {
 
     if (insideField) {
       console.log("Clicked inside a field");
+      
       drawLineAndDisplayDistance(event.latLng, closestField.home_plate, map, closestField.field);
     } else {
       console.log("Clicked outside of any fields");

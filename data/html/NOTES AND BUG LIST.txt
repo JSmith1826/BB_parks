@@ -1,0 +1,75 @@
+### BUG list and notes for the field finder app ###
+4/24/2023 9:30 PM
+
+- Fence distance continues to be displayed when the user clicks inside the field after clicking outside to start. In future refactor I want the Fence Distance to be returned (and updated in the html) to "--"
+
+- Can't figure out what is wrong with adjusting the heading on the double click. I want doubleclicking on a field marker to zoom in to the field and set the camera behind home plate looking towards center. I have the angle already calculated and stored in the json as field_orientation
+    - It seems the issue is the various ways you can comand the camera to move in google maps. There are a few different methods panTo, centerView, ect. The order that you hand the parameters might also have an effect.
+- Need to impliment the search box 
+- Want to set up ability to filter by field level and eventually division
+
+
+BUILDING THE INFO DISPLAY
+- The displayDistance, displayFenceDistance, and drawLineandMeasureDistance (or somthing like that) all need to be rewritten to bring in all the information about the field once the closestField is found by that function. Once the closest field is determined I want to pull in most of the data from the json to display on the html Page. 
+- here is a a brainstorm of the format and function of the info display
+
+###### FROM CHATGPT ############
+You can refactor the two functions into one and add the new elements to display the additional information you want. Here's the combined and refactored function:
+
+javascript
+Copy code
+function displayFieldInfo(field) {
+  const distanceInFeet = field.distance * 3.28084;
+  const fenceDistanceInFeet = field.fenceDistance * 3.28084;
+
+  const fieldNameElement = document.getElementById("field-name");
+  const totalDistanceElement = document.getElementById("total-distance");
+  const fenceDistanceElement = document.getElementById("fence-distance");
+
+  const homeOfElement = document.getElementById("home-of");
+  const bearingElement = document.getElementById("bearing");
+  const fenceMinElement = document.getElementById("fence-min");
+  const fenceMaxElement = document.getElementById("fence-max");
+  const fenceAvgElement = document.getElementById("fence-avg");
+  const levelElement = document.getElementById("level");
+  const divisionElement = document.getElementById("division");
+  const areaFairElement = document.getElementById("area-fair");
+  const areaFoulElement = document.getElementById("area-foul");
+
+  fieldNameElement.innerText = `Field name: ${field.fieldName}`;
+  totalDistanceElement.innerText = `Total distance: ${distanceInFeet.toFixed(0)} feet`;
+  fenceDistanceElement.innerText = `Fence distance: ${fenceDistanceInFeet.toFixed(0)} feet`;
+
+  homeOfElement.innerText = `Home of: ${field.school_name}`;
+  bearingElement.innerText = `Bearing: ${field.field_orientation}`;
+  fenceMinElement.innerText = `Fence minimum distance: ${field.min_distance}`;
+  fenceMaxElement.innerText = `Fence maximum distance: ${field.max_distance}`;
+  fenceAvgElement.innerText = `Fence average distance: ${field.avg_distance}`;
+  levelElement.innerText = `Level: ${field.level}`;
+  divisionElement.innerText = `Division: ${field.division}`;
+  areaFairElement.innerText = `Fair area: ${field.fop_area_sqft} sqft`;
+  areaFoulElement.innerText = `Foul area: ${field.foul_area_sqft} sqft`;
+}
+Make sure to add the appropriate HTML elements with the corresponding IDs in your HTML file to display the information.
+
+For example:
+
+html
+Copy code
+<p id="field-name"></p>
+<p id="total-distance"></p>
+<p id="fence-distance"></p>
+<p id="home-of"></p>
+<p id="bearing"></p>
+<p id="fence-min"></p>
+<p id="fence-max"></p>
+<p id="fence-avg"></p>
+<p id="level"></p>
+<p id="division"></p>
+<p id="area-fair"></p>
+<p id="area-foul"></p>
+
+
+
+
+
