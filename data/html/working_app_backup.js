@@ -123,47 +123,45 @@ const levelColor = {
   'muni': "#00FFFF",
 };
 
-  function createMarker(homePlate, fieldName, fieldLevel, bearing, map) {
-    const marker = new google.maps.Marker({
-      position: new google.maps.LatLng(homePlate[1], homePlate[0]),
-      map: map,
-      /// ICON FOR HOME PLATE MARKER
-      icon: {
-        fillColor: levelColor[level], // Use the levelColor object to get the color for the marker
-        url: "https://github.com/JSmith1826/BB_parks/blob/main/data/images/icons/baseball/diamond_2.png?raw=true",
-        scaledSize: new google.maps.Size(40, 40), // Set the size of the icon
-      },
-      title: fieldName, // Add a title to the marker
-    });
-    
-    // Add an event listener to show a tooltip when the marker is hovered over
-    const infowindow = new google.maps.InfoWindow({
-      content: fieldName,
-    });
-    marker.addListener("mouseover", () => {
-      infowindow.open(map, marker);
-    });
-    marker.addListener("mouseout", () => {
-      infowindow.close();
-    });
-    marker.addListener('dblclick', () => {
-     const newCenter = marker.getPosition();
-  const newZoom = 18;
-  const newHeading = bearing;
-  const duration = 500;
+function createMarker(homePlate, fieldName, fieldLevel, bearing, map) {
+  // Calculate simplified bearing
+  const simplifiedBearing = Math.round(bearing / 90) * 90;
 
-  map.setZoom(newZoom);
-  map.panTo(newCenter);
-  map.setHeading(newHeading);
+  const marker = new google.maps.Marker({
+    position: new google.maps.LatLng(homePlate[1], homePlate[0]),
+    map: map,
+    icon: {
+      url: "https://github.com/JSmith1826/BB_parks/blob/main/data/images/icons/baseball/diamond_2.png?raw=true",
+      scaledSize: new google.maps.Size(40, 40),
+    },
+    title: fieldName,
+  });
 
-  console.log("Current heading:", map.getHeading());
-      console.log('registered double click')
-      console.log('bearing: ', bearing);
-      console.log("Current heading:", map.getHeading());
-    });
-    
+  const infowindow = new google.maps.InfoWindow({
+    content: fieldName,
+  });
+  marker.addListener("mouseover", () => {
+    infowindow.open(map, marker);
+  });
+  marker.addListener("mouseout", () => {
+    infowindow.close();
+  });
+  marker.addListener('dblclick', () => {
+    const newCenter = marker.getPosition();
+    const newZoom = 18;
+    const duration = 500;
 
-  }
+    map.setHeading(simplifiedBearing);
+    map.panTo(newCenter);
+    map.setZoom(newZoom);
+
+    console.log("Current heading:", map.getHeading());
+    console.log('registered double click');
+    console.log('bearing: ', bearing);
+    console.log("Simplified heading:", simplifiedBearing);
+    console.log("Current heading:", map.getHeading());
+  });
+}
 /////////////////////////////
 
 async function handleMapClick(event, map) {
@@ -267,7 +265,7 @@ function displayDistance(distance, fieldName) {
   const fieldNameElement = document.getElementById("field-name");
   const totalDistanceElement = document.getElementById("total-distance");
 
-  fieldNameElement.innerText = `Field name: ${fieldName}`;
+  fieldNameElement.innerText = `${fieldName}`;
   totalDistanceElement.innerText = `Total distance: ${distanceInFeet.toFixed(0)} feet`;
 }
 

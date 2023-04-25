@@ -29,7 +29,16 @@ function init(data) {
   const map = new google.maps.Map(document.getElementById("map"), mapOptions);
   renderPolygons(data, map);
   addMapClickHandler(map);
+
+  // // Display field info for the closest field on page load
+  // const closestField = findClosestField(map.getCenter(), data);
+  // if (closestField) {
+  //   const fieldInfoContainer = document.getElementById("field-info");
+  //   const fieldInfo = displayFieldInfo(closestField);
+  //   fieldInfoContainer.appendChild(fieldInfo);
+  // }
 }
+
 
 document.addEventListener("DOMContentLoaded", async () => {
     const data = await fetchData();
@@ -163,7 +172,6 @@ function createMarker(homePlate, fieldName, fieldLevel, bearing, map) {
   });
 }
 /////////////////////////////
-
 async function handleMapClick(event, map) {
   console.log("Handling map click...");
   console.log("Click event:", event);
@@ -187,6 +195,17 @@ async function handleMapClick(event, map) {
       // Draw the line even when the click is outside of any fields
       drawLineAndDisplayDistance(event.latLng, closestField.home_plate, map, closestField.field, fenceDistance);
     }
+
+    // Display field info
+    const fieldInfoContainer = document.getElementById("field-info");
+    fieldInfoContainer.innerHTML = "";
+    const fieldInfo = displayFieldInfo(closestField);
+    fieldInfoContainer.appendChild(fieldInfo);
+    
+    // Display total click distance
+    const clickDistanceContainer = document.getElementById("click-distance");
+    const clickDistance = calculateTotalClickDistance(event.latLng, closestField.home_plate);
+    clickDistanceContainer.innerHTML = `Total Distance: ${clickDistance.toFixed(0)} ft`;
   } else {
     console.log("No closest field found");
   }
@@ -346,5 +365,72 @@ function findLineIntersection(p1, p2, p3, p4) {
 
 
 
-////// END NEW FUNCTIONS /////////////
+
+/////////////// USE The closestfield to get the data for the field object and display it 
+/////////////// in the html divs
+function displayFieldInfo(closestField) {
+  const fieldContainer = document.createElement("div");
+  fieldContainer.classList.add("field-container");
+
+  // Field Name
+const fieldName = document.createElement("h2");
+fieldName.classList.add("field-name");
+fieldName.textContent = closestField.park_name;
+fieldContainer.append(fieldName);
+
+// Field Level of Play
+  const fieldLevel = document.createElement("p");
+  fieldLevel.classList.add("field-level");
+  fieldLevel.textContent = `Level of Play: ${closestField.level}`;
+  fieldContainer.append(fieldLevel);
+
+//   // School Name
+//   const schoolName = document.createElement("p");
+//   schoolName.classList.add("school-name");
+//   schoolName.textContent = `Home of ${closestField.school_name}`;
+//   fieldContainer.append(schoolName);
+
+// Field Facts
+const fieldFacts = document.createElement("div");
+fieldFacts.classList.add("field-facts");
+
+// Fence Distance
+const fenceDistance = document.createElement("p");
+fenceDistance.textContent = `Fence Distance: MIN ${closestField.min_distance} | MAX ${closestField.max_distance} | AVG ${closestField.avg_distance.toFixed(0)}`;
+fieldFacts.append(fenceDistance);
+
+// Fair Territory
+const fairTerritory = document.createElement("p");
+fairTerritory.textContent = `Field Size (Fair): ${(closestField.fop_area_sqft / 43560).toFixed(2) } acres | Fair / Foul Ratio ${(closestField.fop_area_sqft/closestField.foul_area_sqft).toFixed(2)} / 1`;
+fieldFacts.append(fairTerritory);
+
+fieldContainer.append(fieldFacts);
+
+// Click around message
+const clickMessage = document.createElement("p");
+clickMessage.classList.add("click-message");
+clickMessage.textContent = "Click around the field to measure distances";
+fieldContainer.append(clickMessage);
+
+return fieldContainer;
+
+
+  // //// CONSOLE LOGS TO CHECK DATA
+  // console.log('Name: ', park_name);
+  // console.log('Level: ', parkLevel);
+  // console.log('Home Team: ', homeTeam);
+  // console.log('Cardinal Direction: ', northSouthEastWest);
+  // console.log('Field Bearing: ', fieldBearing);
+  // // console.log('Home Plate: ', homePlate);
+  // // console.log('Fair Territory: ', fopCoordinates);
+  // // console.log('Foul Territory: ', foulCoordinates);
+  // console.log('Distance List: ', distanceList);
+  // console.log('Minimum Distance: ', fenceMin);
+  // console.log('Maximum Distance: ', fenceMax);
+  // console.log('Average Distance: ', fenceAvg);
+  // console.log('Fair Area: ', fairAreaAcres);
+  // // console.log('Foul Area: ', foulAreaAcres);
+  // console.log('Fair to Foul Ratio: ', fairFoulRatio);
+
+}
 
