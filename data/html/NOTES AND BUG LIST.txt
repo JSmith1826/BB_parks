@@ -5,6 +5,9 @@
 
 - Can't figure out what is wrong with adjusting the heading on the double click. I want doubleclicking on a field marker to zoom in to the field and set the camera behind home plate looking towards center. I have the angle already calculated and stored in the json as field_orientation
     - It seems the issue is the various ways you can comand the camera to move in google maps. There are a few different methods panTo, centerView, ect. The order that you hand the parameters might also have an effect.
+    -- AFTER MORE RESEARCH IT IS NOT POSSIBLE TO ROTATE THE MAP PRECISILY WITH THIS VERSION OF GOOGLE MAPS API.
+    --- apparently you can set the map rotation to 0, 90, 180 and 270 degrees but that is it. 
+    ---- might be some work arounds with other libraries but I BACK BURNER this
 - Need to impliment the search box 
 - Want to set up ability to filter by field level and eventually division
 
