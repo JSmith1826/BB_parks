@@ -3,4 +3,4 @@
 
 # Ignore the data and images directories
 
-**/images/
+# **/images/
