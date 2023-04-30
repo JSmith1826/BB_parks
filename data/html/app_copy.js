@@ -3,6 +3,11 @@
 // The coordinates are in the format [lng, lat]. This version of the
 // app.js file will not work with the "output_data.json" file or reversed_output_data 
 // The coordinates in that file are have been updated to be in the format [lat, lng]. That would break this version of the app.js file
+///////////////// THIS VERSION WORKS WITH THE "DEFAULT_UPDATED_OUTPUT.JSON" FILE //////////////////////
+// This version of the app.js file is for the "default_updated_output.json" file. 
+// The coordinates are in the format [lng, lat]. This version of the
+// app.js file will not work with the "output_data.json" file or reversed_output_data 
+// The coordinates in that file are have been updated to be in the format [lat, lng]. That would break this version of the app.js file
 
 const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/default_updated_output.json";
 let fetchedData;
@@ -16,19 +21,26 @@ async function fetchData() {
   const data = await response.json();
   return data;
 }
+function addMapClickHandler(map, fetchedData, polygons) {
+    map.addListener("click", async (event) => {
+      const closestField = await handleMapClick(event, map, fetchedData, polygons);
+      displayFieldInfo(closestField);
+    });
+  }
 
 function init(data) {
   console.log("Initializing map...");
   const mapOptions = {
     zoom: 19,
     center: new google.maps.LatLng(42.73048536830354, -84.50655614253925),
-    heading: true,
+    
     mapTypeId: 'hybrid',
     
   };
   const map = new google.maps.Map(document.getElementById("map"), mapOptions);
   renderPolygons(data, map);
-  addMapClickHandler(map);
+  addMapClickHandler(map, fetchedData, polygons);
+
 
   // // Display field info for the closest field on page load
   // const closestField = findClosestField(map.getCenter(), data);
@@ -43,15 +55,27 @@ function init(data) {
 document.addEventListener("DOMContentLoaded", async () => {
     const data = await fetchData();
     fetchedData = data; // Set the fetchedData global variable
-    init(data);
+      
+    // Initialize the map
+    const mapOptions = {
+      zoom: 19,
+      center: new google.maps.LatLng(42.73048536830354, -84.50655614253925),
+      mapTypeId: 'hybrid',
+    };
+    const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    
+    initMap(data, map); // Update this line
   });
   
   
-  function addMapClickHandler(map) {
-    map.addListener("click", async (event) => {
-      await handleMapClick(event, map);
-    });
+  function initMap(data, map) {
+    console.log("Initializing map...");
+  
+    renderPolygons(data, map);
+    addMapClickHandler(map, fetchedData, polygons);
+
   }
+  
   
 
 
@@ -79,11 +103,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         const area_fair = field.fop_area_sqft;
         const area_foul = field.foul_area_sqft;
         
-        console.log("Coordinates before creating FOUL polygon:", foulCoords);
-        console.log('bearing: ', bearing); 
+        // console.log("Coordinates before creating FOUL polygon:", foulCoords);
+
         createPolygon(foulCoords, "#FF0000", map);
 
-        createMarker(field.home_plate, field.field, field.level, bearing, map);
+        createMarker(field.home_plate, field.field, field.level, map);
     });
 }
 
@@ -114,7 +138,7 @@ function createPolygon(coordinates, fillColor, map) {
       handleMapClick(event, map);
     });
 
-    console.log("Created polygon:", polygon);
+    // console.log("Created polygon:", polygon);
   
     return polygon; // Add this line to return the created polygon
   }
@@ -132,9 +156,8 @@ const levelColor = {
   'muni': "#00FFFF",
 };
 
-function createMarker(homePlate, fieldName, fieldLevel, bearing, map) {
-  // Calculate simplified bearing
-  const simplifiedBearing = Math.round(bearing / 90) * 90;
+function createMarker(homePlate, fieldName, fieldLevel, map) {
+
 
   const marker = new google.maps.Marker({
     position: new google.maps.LatLng(homePlate[1], homePlate[0]),
@@ -160,14 +183,13 @@ function createMarker(homePlate, fieldName, fieldLevel, bearing, map) {
     const newZoom = 18;
     const duration = 500;
 
-    map.setHeading(simplifiedBearing);
     map.panTo(newCenter);
     map.setZoom(newZoom);
 
     console.log("Current heading:", map.getHeading());
     console.log('registered double click');
-    console.log('bearing: ', bearing);
-    console.log("Simplified heading:", simplifiedBearing);
+
+
     console.log("Current heading:", map.getHeading());
   });
 }
@@ -196,17 +218,17 @@ async function handleMapClick(event, map) {
       drawLineAndDisplayDistance(event.latLng, closestField.home_plate, map, closestField.field, fenceDistance);
     }
 
-    // Display field info
-    const fieldInfoContainer = document.getElementById("field-info");
-    fieldInfoContainer.innerHTML = "";
-    const fieldInfo = displayFieldInfo(closestField);
-    fieldInfoContainer.appendChild(fieldInfo);
-    
-    // Display total click distance
-    const clickDistanceContainer = document.getElementById("click-distance");
-    const clickDistance = calculateTotalClickDistance(event.latLng, closestField.home_plate);
-    clickDistanceContainer.innerHTML = `Total Distance: ${clickDistance.toFixed(0)} ft`;
-  } else {
+     // Display field info
+  const fieldInfoContainer = document.getElementById("field-info");
+  fieldInfoContainer.innerHTML = "";
+  const fieldInfo = displayFieldInfo(closestField, distance);
+  fieldInfoContainer.appendChild(fieldInfo);
+  
+  // Display total click distance
+  const clickDistanceContainer = document.getElementById("click-distance");
+  const clickDistance = calculateTotalClickDistance(event.latLng, closestField.home_plate);
+  clickDistanceContainer.innerHTML = `Total Distance: ${clickDistance.toFixed(0)} ft`;
+} else {
     console.log("No closest field found");
   }
 }
@@ -277,16 +299,24 @@ function displayFenceDistance(fenceDistance) {
   fenceDistanceElement.innerText = `Fence distance: ${fenceDistance.toFixed(0)} feet`;
 }
 
-function displayFieldInfo(distance){
-
-  console.log("Displaying distance...");
+function displayFieldInfo(closestField, distance) {
+    const fieldContainer = document.createElement("div");
+    fieldContainer.classList.add("field-container");
 
   
   
   const distanceInFeet = distance * 3.28084;
   const totalDistanceElement = document.getElementById("total-distance");
   totalDistanceElement.innerText = `Total distance: ${distanceInFeet.toFixed(0)} feet`;
-}
+
+    // Click Distance
+    const clickDistance = document.createElement("p");
+    clickDistance.innerHTML = `Click Distance: <span class="num">${distance >= 0 ? distance : '---'}</span>`;
+    fieldContainer.append(clickDistance);
+    
+    return fieldContainer;
+  }
+
 
 
 
@@ -298,10 +328,16 @@ async function main() {
     const data = await fetchData(jsonUrl);
     initMap(data);
     const map = new google.maps.Map(document.getElementById("map"));
-    addMapClickHandler(map);
+    addMapClickHandler(map, fetchedData, polygons);
+
 }
 
-
+function addMapClickHandler(map, fetchedData, polygons) {
+    map.addListener("click", async (event) => {
+      const closestField = await handleMapClick(event, map, fetchedData, polygons);
+      displayFieldInfo(closestField);
+    });
+  }
 
 //////// NEW FUNCTIONS FOR FENCE DISTANCE ////////
 

@@ -1,10 +1,4 @@
-///////////////// THIS VERSION WORKS WITH THE "DEFAULT_UPDATED_OUTPUT.JSON" FILE //////////////////////
-// This version of the app.js file is for the "default_updated_output.json" file. 
-// The coordinates are in the format [lng, lat]. This version of the
-// app.js file will not work with the "output_data.json" file or reversed_output_data 
-// The coordinates in that file are have been updated to be in the format [lat, lng]. That would break this version of the app.js file
-
-const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/default_updated_output.json";
+const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/output_data.json";
 let fetchedData;
 let polygons = [];
 let currentLine = null;
@@ -22,9 +16,7 @@ function init(data) {
   const mapOptions = {
     zoom: 19,
     center: new google.maps.LatLng(42.73048536830354, -84.50655614253925),
-    heading: true,
     mapTypeId: 'hybrid',
-    
   };
   const map = new google.maps.Map(document.getElementById("map"), mapOptions);
   renderPolygons(data, map);
@@ -50,46 +42,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.log("Rendering polygons...");
     polygons = []; // Empty the polygons array before rendering new polygons
     data.forEach(field => {
-      // console.log("Rendering field:", field);
-      // console.log("Field orientation:", field.field_orientation); // Add this line to output the field orientation value
-///////////////////// Get all the coordinates for the FOP and FOUL polygons
+        console.log("Rendering field:", field);
+
         const fopCoords = field.fop;
-        // console.log("Coordinates before creating FOP polygon:", fopCoords);
+        console.log("Coordinates before creating FOP polygon:", fopCoords);
         createPolygon(fopCoords, "#00FF00", map);
 
         const foulCoords = field.foul;
-
-        ////////////////// Get other info for the home plate marker & Display purposes
-        const fieldName = field.park_name;
-        const home_of = field.school_name;
-        const bearing = field.field_orientation;
-        const fence_min = field.min_distance;
-        const fence_max = field.max_distance;
-        const fence_avg = Math.round(field.avg_distance);
-        const play_level = field.level;
-        const division = field.division;
-        const area_fair = field.fop_area_sqft;
-        const area_foul = field.foul_area_sqft;
-        const area_ratio = (field.fop_area_sqft / field.foul_area_sqft).toFixed(2);
-        const area_fair_acres = (field.fop_area_sqft / 43560).toFixed(2);
-        
         console.log("Coordinates before creating FOUL polygon:", foulCoords);
-        console.log('bearing: ', bearing); 
-        console.log('division: ', division);
-        console.log('level: ', play_level);
-        console.log('home of: ', home_of);
-        console.log('min fence distance: ', fence_min);
-        console.log('max fence distance: ', fence_max);
-        console.log('avg fence distance: ', fence_avg);
-        console.log('area fair: ', area_fair_acres, ' acres'    );
-        console.log('area foul: ', area_foul);
-        console.log('area ratio: ', area_ratio, ' : 1');
-
         createPolygon(foulCoords, "#FF0000", map);
 
-        createMarker(field.home_plate, field.park_name, field.level, field.field_orientation, map);
-
-        // displayDistance(fence_min, fence_max, fence_avg, map);
+        createMarker(field.home_plate, field.field, map);
     });
 }
 
@@ -107,14 +70,10 @@ function createPolygon(coordinates, fillColor, map) {
       map: map
   });
 
-  /////////////////////////////////////////////
-  /////////////// EVENT LISTENERS
-    polygons.push(polygon);
-
-
-
   
-    ///// CLICK EVENT JUST FOR CLICKS IN A POLYGON
+    polygons.push(polygon);
+  
+    // Add a click event listener to the polygon
     polygon.addListener("click", event => {
       handleMapClick(event, map);
     });
@@ -125,70 +84,22 @@ function createPolygon(coordinates, fillColor, map) {
   }
   
 
-/////////////////////// HOME PLATE MARKER //////////////////////////
-
-//////////// Assign colors to different levels
-const levelColor = {
-  'high_school': "#FF0000",
-  'college': "#FFFF00",
-  'pro': "#00FF00",
-  'mlb': "#0000FF",
-  'youth': "#FF00FF",
-  'muni': "#00FFFF",
-};
-
-function createMarker(homePlate, fieldName, play_level, bearing, map) {
-    /// console log for debugging
-    console.log("fieldName:", fieldName);
-console.log("play_level:", play_level);
-
-    
-    // // Calculate simplified bearing
-    const simplifiedBearing = Math.round(bearing / 90) * 90;
-  
+function createMarker(homePlate, fieldName, map) {
     const marker = new google.maps.Marker({
-      position: new google.maps.LatLng(homePlate[1], homePlate[0]),
-      map: map,
-      icon: {
-        url: "https://github.com/JSmith1826/BB_parks/blob/main/data/images/icons/baseball/diamond_2.png?raw=true",
-        scaledSize: new google.maps.Size(40, 40),
-      },
-      title: fieldName,
+        position: new google.maps.LatLng(homePlate[0], homePlate[1]),
+        title: fieldName,
+        map: map
     });
+}
 
-    ////////// Create String for Info Window
-    const windowString = `${fieldName} - ${play_level}`;
-  
-    const infowindow = new google.maps.InfoWindow({
-        content: windowString,
-      });
-      
-   
-    marker.addListener("mouseover", () => {
-        console.log('mouse over triggered');
-      infowindow.open(map, marker);
-    });
-    marker.addListener("mouseout", () => {
-      infowindow.close();
-    });
-    marker.addListener('dblclick', () => {
-      const newCenter = marker.getPosition();
-      const newZoom = 18;
-      const duration = 500;
-  
-      map.setHeading(simplifiedBearing);
-      map.panTo(newCenter);
-      map.setZoom(newZoom);
-  
-    //   console.log("Current heading:", map.getHeading());
-    //   console.log('registered double click');
-    //   console.log('bearing: ', bearing);
-    //   console.log("Simplified heading:", simplifiedBearing);
-    //   console.log("Current heading:", map.getHeading());
-    });
-  }
-  
-/////////////////////////////
+function createMarker(homePlate, fieldName, map) {
+  const marker = new google.maps.Marker({
+      position: new google.maps.LatLng(homePlate[1], homePlate[0]), // Reverse the coordinates
+      title: fieldName,
+      map: map
+  });
+}
+
 
 async function handleMapClick(event, map) {
   console.log("Handling map click...");
@@ -204,7 +115,6 @@ async function handleMapClick(event, map) {
 
     if (insideField) {
       console.log("Clicked inside a field");
-      
       drawLineAndDisplayDistance(event.latLng, closestField.home_plate, map, closestField.field);
     } else {
       console.log("Clicked outside of any fields");
@@ -274,8 +184,33 @@ function drawLineAndDisplayDistance(start, end, map, fieldName, fenceDistance = 
   }
 }
 
+///////////// START DISTANCE DISPLAYS //////////////
 
-/////////// MAIN LOADING FUNCTION ///////////
+
+function displayFenceDistance(fenceDistance) {
+  console.log("Fence distance:", fenceDistance);
+
+  const fenceDistanceElement = document.getElementById("fence-distance");
+  fenceDistanceElement.innerText = `Fence distance: ${fenceDistance.toFixed(0)} feet`;
+}
+
+function displayDistance(distance, fieldName) {
+  console.log("Displaying distance...");
+  const distanceInFeet = distance * 3.28084;
+
+  const fieldNameElement = document.getElementById("field-name");
+  const totalDistanceElement = document.getElementById("total-distance");
+
+  fieldNameElement.innerText = `Field name: ${fieldName}`;
+  totalDistanceElement.innerText = `Total distance: ${distanceInFeet.toFixed(0)} feet`;
+}
+
+
+
+
+
+///////////// END DISTANCE DISPLAYS //////////////
+
 async function main() {
     const data = await fetchData(jsonUrl);
     initMap(data);
@@ -285,26 +220,8 @@ async function main() {
 
 
 
-////////  FUNCTIONS FOR FENCE DISTANCE ////////
-function displayFenceDistance(fenceDistance) {
-    console.log("Fence distance:", fenceDistance);
-  
-    const fenceDistanceElement = document.getElementById("fence-distance");
-    fenceDistanceElement.innerText = `Fence distance: ${fenceDistance.toFixed(0)} feet`;
-  }
-  
-  function displayDistance(distance, fieldName) {
-    console.log("Displaying distance...");
-    const distanceInFeet = distance * 3.28084;
-  
-    const fieldNameElement = document.getElementById("field-name");
-    const totalDistanceElement = document.getElementById("total-distance");
-  
-    fieldNameElement.innerText = `${fieldName}`;
-    totalDistanceElement.innerText = `Total distance: ${distanceInFeet.toFixed(0)} feet`;
-  }
+//////// NEW FUNCTIONS FOR FENCE DISTANCE ////////
 
-//////// CALCULATE FENCE DISTANCE ////////  
 function calculateFenceDistance(clickLatLng, homePlateLatLng, fieldPolygon) {
   console.log("calculateFenceDistance:", clickLatLng, homePlateLatLng, fieldPolygon);
   const clickPoint = new google.maps.LatLng(clickLatLng.lat(), clickLatLng.lng());

@@ -306,16 +306,73 @@
 			<color>4c000000</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="poly-000000-1200-77">
+	<StyleMap id="poly-000000-1200-775">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-normal1</styleUrl>
+			<styleUrl>#poly-000000-1200-77-normal0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-highlight2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-770">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-normal11</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-highlight0</styleUrl>
 		</Pair>
 	</StyleMap>
+	<StyleMap id="poly-000000-1200-774">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-normal1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-highlight7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-highlight6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-000000-1200-77-highlight2">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-highlight7">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-highlight6">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-highlight">
 		<LineStyle>
 			<color>ff000000</color>
@@ -397,7 +454,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-highlight2">
+	<Style id="poly-000000-1200-77-highlight21">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -451,7 +508,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-highlight6">
+	<Style id="poly-000000-1200-77-highlight60">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -460,7 +517,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-highlight7">
+	<Style id="poly-000000-1200-77-highlight70">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -472,14 +529,102 @@
 	<StyleMap id="poly-000000-1200-77-nodesc">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal4</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight</styleUrl>
 		</Pair>
 	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight33</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-000000-1200-77-nodesc-highlight33">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight2">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight9">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight1">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -563,7 +708,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight1">
+	<Style id="poly-000000-1200-77-nodesc-highlight16">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -755,7 +900,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight16">
+	<Style id="poly-000000-1200-77-nodesc-highlight160">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -815,7 +960,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight2">
+	<Style id="poly-000000-1200-77-nodesc-highlight20">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -827,7 +972,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight20">
+	<Style id="poly-000000-1200-77-nodesc-highlight202">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1211,7 +1356,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight9">
+	<Style id="poly-000000-1200-77-nodesc-highlight90">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1223,7 +1368,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight90">
+	<Style id="poly-000000-1200-77-nodesc-highlight902">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1259,7 +1404,55 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal1">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal6">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal4">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal5">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1367,7 +1560,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal1">
+	<Style id="poly-000000-1200-77-nodesc-normal10">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1379,7 +1572,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal10">
+	<Style id="poly-000000-1200-77-nodesc-normal102">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1727,7 +1920,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal4">
+	<Style id="poly-000000-1200-77-nodesc-normal40">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1739,7 +1932,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal40">
+	<Style id="poly-000000-1200-77-nodesc-normal400">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1775,7 +1968,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal5">
+	<Style id="poly-000000-1200-77-nodesc-normal50">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1787,7 +1980,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal50">
+	<Style id="poly-000000-1200-77-nodesc-normal500">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1823,7 +2016,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal6">
+	<Style id="poly-000000-1200-77-nodesc-normal62">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -2039,17 +2232,17 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="poly-000000-1200-77-nodesc0">
+	<StyleMap id="poly-000000-1200-77-nodesc00">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal5</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal50</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight2</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight20</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc00">
+	<StyleMap id="poly-000000-1200-77-nodesc001">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-normal2</styleUrl>
@@ -2069,7 +2262,7 @@
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight13</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc001">
+	<StyleMap id="poly-000000-1200-77-nodesc0010">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-normal001</styleUrl>
@@ -2092,7 +2285,7 @@
 	<StyleMap id="poly-000000-1200-77-nodesc01">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal10</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal102</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -2122,11 +2315,11 @@
 	<StyleMap id="poly-000000-1200-77-nodesc1">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal1</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal10</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight20</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight202</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc10">
@@ -2262,7 +2455,7 @@
 	<StyleMap id="poly-000000-1200-77-nodesc130">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal50</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal500</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -2292,7 +2485,7 @@
 	<StyleMap id="poly-000000-1200-77-nodesc141">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal6</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal62</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -2349,14 +2542,14 @@
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight170</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc2">
+	<StyleMap id="poly-000000-1200-77-nodesc22">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-normal41</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight9</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight90</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc20">
@@ -2406,7 +2599,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight1</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight16</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc210">
@@ -2429,7 +2622,7 @@
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight01</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc22">
+	<StyleMap id="poly-000000-1200-77-nodesc220">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-normal25</styleUrl>
@@ -2506,7 +2699,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight90</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight902</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc3">
@@ -2539,7 +2732,7 @@
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight000</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc5">
+	<StyleMap id="poly-000000-1200-77-nodesc52">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-normal410</styleUrl>
@@ -2552,7 +2745,7 @@
 	<StyleMap id="poly-000000-1200-77-nodesc50">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal40</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal400</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -2566,20 +2759,20 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight16</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight160</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc6">
+	<StyleMap id="poly-000000-1200-77-nodesc60">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal4</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal40</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight3</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc60">
+	<StyleMap id="poly-000000-1200-77-nodesc600">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-normal100</styleUrl>
@@ -2689,6 +2882,24 @@
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight80</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="poly-000000-1200-77-normal2">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-normal1">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-normal">
 		<LineStyle>
 			<color>ff000000</color>
@@ -2716,6 +2927,15 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
+	<Style id="poly-000000-1200-77-normal002">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-normal000">
 		<LineStyle>
 			<color>ff000000</color>
@@ -2734,7 +2954,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-normal1">
+	<Style id="poly-000000-1200-77-normal11">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -2752,7 +2972,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-normal2">
+	<Style id="poly-000000-1200-77-normal22">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -2842,7 +3062,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="poly-000000-1200-770">
+	<StyleMap id="poly-000000-1200-7700">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-normal7</styleUrl>
@@ -2852,7 +3072,7 @@
 			<styleUrl>#poly-000000-1200-77-highlight5</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-7700">
+	<StyleMap id="poly-000000-1200-77000">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-normal20</styleUrl>
@@ -2865,7 +3085,7 @@
 	<StyleMap id="poly-000000-1200-7701">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-normal00</styleUrl>
+			<styleUrl>#poly-000000-1200-77-normal002</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -2885,7 +3105,7 @@
 	<StyleMap id="poly-000000-1200-771">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-normal0</styleUrl>
+			<styleUrl>#poly-000000-1200-77-normal00</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -2952,7 +3172,7 @@
 			<styleUrl>#poly-000000-1200-77-highlight</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-774">
+	<StyleMap id="poly-000000-1200-7740">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-normal4</styleUrl>
@@ -2962,34 +3182,34 @@
 			<styleUrl>#poly-000000-1200-77-highlight4</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-775">
+	<StyleMap id="poly-000000-1200-7750">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-normal8</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-highlight2</styleUrl>
+			<styleUrl>#poly-000000-1200-77-highlight21</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-776">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-normal</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-highlight7</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="poly-000000-1200-7760">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-normal2</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-highlight6</styleUrl>
+			<styleUrl>#poly-000000-1200-77-highlight70</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-7760">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-normal22</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-highlight60</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-777">
@@ -3548,11 +3768,1296 @@
 		<name>ballparks</name>
 		<open>1</open>
 		<Folder>
+			<name>Day Air Ballpark - Dayton Dragons - pro</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.18557,39.7642091,0 -84.18494440000001,39.7649498,0 -84.18497859999999,39.7649436,0 -84.18510329999999,39.7647859,0 -84.1851925,39.7647416,0 -84.1855606,39.7644498,0 -84.18555859999999,39.7644406,0 -84.18570680000001,39.7643241,0 -84.1857155,39.7643282,0 -84.185737,39.7643102,0 -84.185751,39.7642947,0 -84.1857651,39.764272,0 -84.18577449999999,39.7642468,0 -84.18578119999999,39.7642246,0 -84.18578189999999,39.7642009,0 -84.1857792,39.7641767,0 -84.1857698,39.7641529,0 -84.1857497,39.7641261,0 -84.1857282,39.7641066,0 -84.18571009999999,39.7640916,0 -84.185688,39.7640808,0 -84.1856605,39.7640633,0 -84.1856411,39.7640566,0 -84.185627,39.7640607,0 -84.185405,39.7639916,0 -84.18540969999999,39.7639844,0 -84.1852629,39.7639432,0 -84.18499869999999,39.7638628,0 -84.1849491,39.7638468,0 -84.1848478,39.7638334,0 -84.18465,39.7637334,0 -84.18460640000001,39.763738,0 -84.18557,39.7642091,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.18557,39.7642091,0 -84.18460640000001,39.763738,0 -84.1845642,39.7637483,0 -84.1845139,39.7637597,0 -84.1844924,39.7637808,0 -84.1844327,39.7638375,0 -84.1843583,39.7639117,0 -84.1842832,39.7639813,0 -84.18423559999999,39.7641117,0 -84.1841893,39.764237,0 -84.1841471,39.7643452,0 -84.1841806,39.764454,0 -84.1842041,39.7645586,0 -84.18424899999999,39.7645844,0 -84.1843255,39.7646406,0 -84.18446900000001,39.7647457,0 -84.18456949999999,39.7648189,0 -84.1846446,39.7648081,0 -84.1847171,39.764856,0 -84.1848632,39.7649596,0 -84.18494440000001,39.7649498,0 -84.18557,39.7642091,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Parkview Field - Fort Wayne TinCaps - pro</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.14299819999999,41.0741133,0 -85.14322079999999,41.0750167,0 -85.1432409,41.0750187,0 -85.14316650000001,41.0747316,0 -85.1432181,41.07468,0 -85.1432013,41.0743585,0 -85.1431953,41.0741604,0 -85.1431698,41.0741598,0 -85.1431712,41.0741416,0 -85.1431712,41.0741164,0 -85.1431685,41.0740956,0 -85.1431631,41.0740785,0 -85.1431504,41.0740562,0 -85.1431343,41.074033,0 -85.14311619999999,41.0740188,0 -85.1430907,41.0740052,0 -85.14306860000001,41.0739945,0 -85.1430431,41.073987,0 -85.14301690000001,41.0739865,0 -85.14299149999999,41.0739834,0 -85.14296059999999,41.073988,0 -85.1429231,41.0739961,0 -85.1428848,41.0740057,0 -85.1428768,41.0739895,0 -85.1424892,41.0740987,0 -85.1421781,41.0741821,0 -85.142166,41.074222,0 -85.14188969999999,41.0742685,0 -85.14187769999999,41.0742807,0 -85.14299819999999,41.0741133,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.14299819999999,41.0741133,0 -85.14187769999999,41.0742807,0 -85.14186890000001,41.0742877,0 -85.1418595,41.0742942,0 -85.1418468,41.0743033,0 -85.141834,41.0743104,0 -85.1418273,41.0743119,0 -85.1418287,41.0743948,0 -85.14183199999999,41.0744696,0 -85.141834,41.0745338,0 -85.141834,41.0745692,0 -85.1418367,41.0746006,0 -85.1418441,41.074639,0 -85.1418548,41.0746789,0 -85.1418669,41.0747118,0 -85.141881,41.0747411,0 -85.14190309999999,41.07478,0 -85.1419212,41.0748088,0 -85.141948,41.0748457,0 -85.1419688,41.07487,0 -85.142005,41.0749023,0 -85.1420285,41.0749246,0 -85.142062,41.0749529,0 -85.1420962,41.0749761,0 -85.1421344,41.0749999,0 -85.142172,41.0750232,0 -85.14222030000001,41.0750454,0 -85.1422766,41.0750681,0 -85.14232490000001,41.0750843,0 -85.1423798,41.0751,0 -85.14243620000001,41.0751106,0 -85.14249049999999,41.0751202,0 -85.14252,41.0751237,0 -85.14260779999999,41.0751126,0 -85.1426742,41.075103,0 -85.1427077,41.0750975,0 -85.1427668,41.0750914,0 -85.14278349999999,41.0750853,0 -85.1428117,41.0750732,0 -85.1428378,41.0750656,0 -85.1428633,41.0750565,0 -85.1428848,41.0750489,0 -85.14291160000001,41.0750414,0 -85.1429431,41.0750343,0 -85.142976,41.0750292,0 -85.1430088,41.0750232,0 -85.143039,41.0750196,0 -85.1430812,41.0750156,0 -85.14311480000001,41.0750135,0 -85.143153,41.0750105,0 -85.1431731,41.0750135,0 -85.14320189999999,41.0750115,0 -85.14322079999999,41.0750167,0 -85.14299819999999,41.0741133,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Classic Park	- Lake County Captains - pro</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-81.43620009999999,41.6407581,0 -81.43620079999999,41.6416521,0 -81.43629869999999,41.6416546,0 -81.4362967,41.6412853,0 -81.4363939,41.6412262,0 -81.4363932,41.6408268,0 -81.4363919,41.6407491,0 -81.4363791,41.64069,0 -81.43629730000001,41.6406243,0 -81.4362216,41.6406143,0 -81.4361364,41.6406143,0 -81.4358601,41.6406143,0 -81.4355778,41.6406133,0 -81.4354987,41.640686,0 -81.4352244,41.6406905,0 -81.4350347,41.6406915,0 -81.4350347,41.6407561,0 -81.43620009999999,41.6407581,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-81.43620009999999,41.6407581,0 -81.4350347,41.6407561,0 -81.4350307,41.640763,0 -81.43503010000001,41.6407891,0 -81.43503010000001,41.6408973,0 -81.43503010000001,41.6410301,0 -81.4350294,41.6411649,0 -81.4350294,41.6412661,0 -81.43504350000001,41.6413478,0 -81.43505759999999,41.641421,0 -81.43511119999999,41.6414666,0 -81.4351695,41.6415172,0 -81.43528689999999,41.6416194,0 -81.4353902,41.641635,0 -81.4355383,41.6416535,0 -81.4357261,41.641653,0 -81.43600240000001,41.6416525,0 -81.43620079999999,41.6416521,0 -81.43620009999999,41.6407581,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>ABC Supply Stadium - Beloit Sky Carp - pro</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-89.0406651,42.4971349,0 -89.0408006,42.4980792,0 -89.04082200000001,42.4980772,0 -89.040763,42.4976491,0 -89.0408247,42.4975947,0 -89.04092129999999,42.4975799,0 -89.0408797,42.4973841,0 -89.0408556,42.4973841,0 -89.0408207,42.4971636,0 -89.0408583,42.4971616,0 -89.04085019999999,42.4970963,0 -89.04082339999999,42.4970439,0 -89.040755,42.4970004,0 -89.04068530000001,42.4969905,0 -89.04058740000001,42.4970054,0 -89.04058999999999,42.4970242,0 -89.0403057,42.4970459,0 -89.04030040000001,42.4970281,0 -89.04002680000001,42.4970459,0 -89.0397572,42.4971922,0 -89.0394742,42.4972259,0 -89.03947290000001,42.4972358,0 -89.0406651,42.4971349,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-89.0406651,42.4971349,0 -89.03947290000001,42.4972358,0 -89.0394742,42.4973584,0 -89.0394689,42.4974711,0 -89.0394689,42.4975621,0 -89.0394675,42.4976283,0 -89.0394648,42.4976738,0 -89.0394716,42.4977143,0 -89.0394809,42.4977539,0 -89.039497,42.4977915,0 -89.0395185,42.4978241,0 -89.03954400000001,42.4978567,0 -89.0395855,42.4978943,0 -89.03961769999999,42.497922,0 -89.0396942,42.4979714,0 -89.0397921,42.4980308,0 -89.0398457,42.4980575,0 -89.0399329,42.4981079,0 -89.0399932,42.4981464,0 -89.0401944,42.4981296,0 -89.04043179999999,42.4981079,0 -89.0406638,42.4980921,0 -89.0408006,42.4980792,0 -89.0406651,42.4971349,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Veterans Memorial Stadium - Cedar Rapids Kernels - pro</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-91.6867962,41.9677456,0 -91.68678009999999,41.9686166,0 -91.6868056,41.9686166,0 -91.68680959999999,41.9684541,0 -91.6869276,41.9683374,0 -91.68698190000001,41.9680513,0 -91.68693500000001,41.9680468,0 -91.68694099999999,41.9680144,0 -91.68698929999999,41.9678,0 -91.68699740000001,41.9677661,0 -91.6869947,41.9677466,0 -91.6869913,41.9677202,0 -91.6869806,41.9676973,0 -91.68696650000001,41.9676798,0 -91.6869531,41.9676654,0 -91.6869337,41.9676429,0 -91.68691560000001,41.9676335,0 -91.68688400000002,41.9676195,0 -91.6868478,41.967607,0 -91.68681359999998,41.9676016,0 -91.6867788,41.9675976,0 -91.68639989999998,41.9676345,0 -91.6863872,41.9676026,0 -91.68602239999998,41.9677093,0 -91.6859412,41.9677078,0 -91.6856107,41.9677058,0 -91.6856006,41.9677352,0 -91.6867962,41.9677456,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-91.6867962,41.9677456,0 -91.6856006,41.9677352,0 -91.6855939,41.9677676,0 -91.68556769999999,41.9678568,0 -91.6855362,41.967976,0 -91.68551069999999,41.9680792,0 -91.68548389999999,41.9681754,0 -91.68550810000001,41.9682213,0 -91.68556769999999,41.9683265,0 -91.68561400000002,41.9684187,0 -91.6856737,41.9684646,0 -91.6857729,41.9685424,0 -91.68584469999999,41.9685952,0 -91.68593919999999,41.968668,0 -91.6860137,41.9686685,0 -91.68613569999999,41.9686695,0 -91.6862517,41.968672,0 -91.6863838,41.968673,0 -91.6864985,41.9686745,0 -91.6865327,41.9686431,0 -91.6865602,41.9686161,0 -91.6866869,41.9686166,0 -91.68678009999999,41.9686166,0 -91.6867962,41.9677456,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Dozer Park - Peoria Chiefs - pro</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-89.5982058,40.687291,0 -89.59810659999999,40.6881381,0 -89.598173,40.6880969,0 -89.5981797,40.6880252,0 -89.5982092,40.6879621,0 -89.59826820000001,40.6878366,0 -89.59832110000001,40.6876667,0 -89.5984311,40.6873489,0 -89.5984385,40.6873276,0 -89.5984445,40.6873078,0 -89.5984479,40.6872859,0 -89.5984452,40.6872722,0 -89.5984392,40.6872513,0 -89.5984318,40.6872279,0 -89.5984217,40.6872081,0 -89.598411,40.6871933,0 -89.5983956,40.6871761,0 -89.5983741,40.6871583,0 -89.5983506,40.6871466,0 -89.59832780000001,40.6871364,0 -89.59830169999999,40.6871252,0 -89.5982789,40.6871166,0 -89.59824810000001,40.687111,0 -89.5982078,40.6871084,0 -89.5981515,40.687111,0 -89.5977324,40.6871339,0 -89.5974709,40.6871511,0 -89.5972771,40.6871745,0 -89.5971638,40.6871684,0 -89.59709340000001,40.6872112,0 -89.5982058,40.687291,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-89.5982058,40.687291,0 -89.59709340000001,40.6872112,0 -89.5970094,40.6872685,0 -89.5969927,40.6873132,0 -89.5969558,40.6874154,0 -89.5969075,40.6875364,0 -89.5969223,40.6875903,0 -89.5969437,40.687687,0 -89.5969766,40.6878278,0 -89.59700340000001,40.6879091,0 -89.5970557,40.6879575,0 -89.59714959999999,40.6880434,0 -89.5972314,40.6881105,0 -89.5973333,40.6881197,0 -89.59746680000001,40.6881339,0 -89.597629,40.6881507,0 -89.5977819,40.6881654,0 -89.5979134,40.6881786,0 -89.5980247,40.6881888,0 -89.59806759999999,40.6881629,0 -89.59810659999999,40.6881381,0 -89.5982058,40.687291,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Modern Woodmen Park - Quad Cities River Bandits - pro</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-90.5822843,41.5187795,0 -90.5810317,41.5188136,0 -90.5810276,41.5188528,0 -90.5810116,41.5188738,0 -90.5811095,41.518919,0 -90.58111880000001,41.518913,0 -90.5819892,41.518914,0 -90.5822628,41.518921,0 -90.58230570000001,41.5189231,0 -90.5823486,41.518913,0 -90.5823862,41.5188969,0 -90.58241169999999,41.5188819,0 -90.58243710000001,41.5188508,0 -90.5824532,41.5188176,0 -90.58246660000002,41.5187835,0 -90.58246660000002,41.5187393,0 -90.58242370000001,41.5184451,0 -90.58236200000002,41.5180796,0 -90.58236070000001,41.5180253,0 -90.58234459999998,41.5179892,0 -90.5823285,41.5179611,0 -90.58230709999998,41.517938,0 -90.58228159999999,41.5179199,0 -90.5822574,41.5179099,0 -90.58223599999999,41.5179038,0 -90.5822843,41.5187795,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-90.5822843,41.5187795,0 -90.58223599999999,41.5179038,0 -90.5821837,41.5178978,0 -90.58212330000001,41.5178848,0 -90.5820616,41.5178797,0 -90.58198520000001,41.5178677,0 -90.58190470000001,41.5178637,0 -90.58182290000001,41.5178677,0 -90.58172500000001,41.5178747,0 -90.58164050000001,41.5178888,0 -90.5815735,41.5179008,0 -90.58150240000001,41.5179209,0 -90.58143269999999,41.517942,0 -90.581371,41.5179601,0 -90.5813026,41.5179912,0 -90.5812462,41.5180213,0 -90.5811939,41.5180474,0 -90.58115500000001,41.5180786,0 -90.58111479999999,41.5181238,0 -90.58108799999999,41.5181629,0 -90.58107059999999,41.5182081,0 -90.58104779999999,41.5182643,0 -90.58103839999998,41.5183246,0 -90.5810357,41.5184009,0 -90.5810357,41.5184983,0 -90.58103300000001,41.5185977,0 -90.58102900000002,41.5187062,0 -90.5810317,41.5188136,0 -90.5822843,41.5187795,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Four Winds Field - South Bend Cubs - pro</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-86.25578400000001,41.6701882,0 -86.2558001,41.6711088,0 -86.25581889999999,41.6711088,0 -86.2558203,41.6708253,0 -86.25585510000001,41.6708083,0 -86.2559007,41.6707932,0 -86.2559705,41.6707692,0 -86.2559839,41.6705809,0 -86.2559919,41.6704356,0 -86.25596640000001,41.6704216,0 -86.25597310000001,41.6701912,0 -86.2560026,41.6701922,0 -86.2560026,41.6701731,0 -86.256,41.6701521,0 -86.25599459999999,41.670129,0 -86.2559785,41.670108,0 -86.2559651,41.670088,0 -86.25594359999999,41.670074,0 -86.2559182,41.6700549,0 -86.25588999999999,41.6700469,0 -86.2558538,41.6700369,0 -86.2558229,41.6700329,0 -86.2557894,41.6700269,0 -86.2557747,41.6700289,0 -86.2557747,41.6700379,0 -86.2554689,41.6700549,0 -86.25546079999999,41.6700399,0 -86.25500890000001,41.6700659,0 -86.25495119999999,41.6701611,0 -86.25494449999999,41.6701721,0 -86.2549284,41.6701811,0 -86.2548882,41.6701791,0 -86.2545449,41.6701831,0 -86.2545408,41.6702002,0 -86.25578400000001,41.6701882,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-86.25578400000001,41.6701882,0 -86.2545408,41.6702002,0 -86.2545543,41.6703174,0 -86.2545543,41.6704466,0 -86.2545516,41.6705488,0 -86.2545489,41.6706189,0 -86.2545502,41.670669,0 -86.254561,41.6707111,0 -86.25458380000001,41.6707712,0 -86.2546213,41.6708363,0 -86.2546522,41.6708994,0 -86.2546669,41.6709305,0 -86.2547232,41.6709806,0 -86.2547943,41.6710317,0 -86.2548359,41.6710417,0 -86.25488420000001,41.6710567,0 -86.2549472,41.6710757,0 -86.2549915,41.6710888,0 -86.25504909999999,41.6711008,0 -86.25512689999999,41.6711128,0 -86.25517790000001,41.6711118,0 -86.2552422,41.6711128,0 -86.2553415,41.6711118,0 -86.2554367,41.6711118,0 -86.2555359,41.6711098,0 -86.2556271,41.6711108,0 -86.2557157,41.6711098,0 -86.2558001,41.6711088,0 -86.25578400000001,41.6701882,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Neuroscience Group Field - Wisconsin Timber Rattlers - pro</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-88.4690216,44.2831851,0 -88.4689948,44.284078,0 -88.46902969999999,44.284077,0 -88.4692,44.2833858,0 -88.4691933,44.2833752,0 -88.4692362,44.2831995,0 -88.4692483,44.2831995,0 -88.4692443,44.2831697,0 -88.4692416,44.2831515,0 -88.46923219999999,44.2831284,0 -88.46922410000001,44.2831102,0 -88.4692107,44.283092,0 -88.46918789999999,44.2830718,0 -88.46916779999999,44.2830555,0 -88.46914099999999,44.283044,0 -88.4691115,44.2830324,0 -88.469078,44.2830248,0 -88.4690525,44.283019,0 -88.4690176,44.2830171,0 -88.4689841,44.2830142,0 -88.4687145,44.2830488,0 -88.468284,44.283092,0 -88.467816,44.2831438,0 -88.4677824,44.2831697,0 -88.4690216,44.2831851,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-88.4690216,44.2831851,0 -88.4677824,44.2831697,0 -88.4677422,44.2832062,0 -88.4677073,44.283236,0 -88.4676564,44.2832734,0 -88.46765910000001,44.2833195,0 -88.4676631,44.2834088,0 -88.4676631,44.2835326,0 -88.4676671,44.2836315,0 -88.4676698,44.2837256,0 -88.4677516,44.2837765,0 -88.467871,44.2838524,0 -88.46799969999999,44.2839263,0 -88.468115,44.284005,0 -88.4682143,44.2840693,0 -88.46834440000001,44.2840665,0 -88.4685013,44.2840693,0 -88.4686475,44.2840722,0 -88.4687615,44.2840722,0 -88.4688567,44.2840751,0 -88.4689948,44.284078,0 -88.4690216,44.2831851,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Harvard university - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-71.12884459999999,42.3665934,0 -71.1294125,42.3673951,0 -71.12949829999999,42.367349,0 -71.12941120000001,42.367189,0 -71.1292704,42.3669338,0 -71.12922880000001,42.3668555,0 -71.12916439999999,42.3667431,0 -71.1291497,42.3667228,0 -71.12913090000001,42.3667242,0 -71.12903300000001,42.3665771,0 -71.1290779,42.3665568,0 -71.1290135,42.3664626,0 -71.1288057,42.3664141,0 -71.12867559999999,42.3664651,0 -71.1287011,42.3665013,0 -71.1285026,42.3665776,0 -71.1284878,42.3665647,0 -71.1284241,42.3665979,0 -71.12805059999999,42.3668075,0 -71.12773749999999,42.3669774,0 -71.1277583,42.3670116,0 -71.12884459999999,42.3665934,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-71.12884459999999,42.3665934,0 -71.1277583,42.3670116,0 -71.12781529999999,42.3671013,0 -71.1278696,42.367183,0 -71.1279172,42.3672593,0 -71.1279749,42.3673599,0 -71.12801779999999,42.3673941,0 -71.12810159999999,42.3674609,0 -71.1281941,42.3675377,0 -71.12827660000001,42.367614,0 -71.1283718,42.3676368,0 -71.1285019,42.3676631,0 -71.12862459999999,42.3676522,0 -71.1287064,42.3676418,0 -71.1288191,42.3676299,0 -71.1289673,42.3675833,0 -71.1290813,42.3675476,0 -71.12918860000001,42.3675145,0 -71.12923549999999,42.3674892,0 -71.1293106,42.3674486,0 -71.1294125,42.3673951,0 -71.12884459999999,42.3665934,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Indiana State - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-87.4163927,39.4786288,0 -87.41640339999999,39.479546,0 -87.4164624,39.4795439,0 -87.4165388,39.4794818,0 -87.4165697,39.479045,0 -87.416567,39.478722,0 -87.4165536,39.478722,0 -87.41655489999999,39.4786733,0 -87.41656829999999,39.4786723,0 -87.4165697,39.4785874,0 -87.416445,39.4784901,0 -87.4163377,39.4784922,0 -87.41633899999999,39.4785088,0 -87.4162492,39.4785098,0 -87.4162492,39.4784953,0 -87.41574490000001,39.4785067,0 -87.4152125,39.4785284,0 -87.4152138,39.4786371,0 -87.4163927,39.4786288,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-87.4163927,39.4786288,0 -87.4152138,39.4786371,0 -87.41521520000001,39.4789011,0 -87.41521520000001,39.4790905,0 -87.4152594,39.4792758,0 -87.415423,39.4793979,0 -87.4155719,39.4795128,0 -87.41568719999999,39.4795315,0 -87.4158066,39.4795501,0 -87.4159756,39.4795501,0 -87.4161687,39.479548,0 -87.41640339999999,39.479546,0 -87.4163927,39.4786288,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Wake Forrest - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-80.25241219999999,36.129499,0 -80.2524411,36.130359,0 -80.2526261,36.1302621,0 -80.2526167,36.1300899,0 -80.25261070000001,36.1298245,0 -80.25261,36.1298082,0 -80.25258119999999,36.1298066,0 -80.25257379999999,36.1295423,0 -80.25258789999999,36.1295418,0 -80.2525886,36.1294925,0 -80.2525732,36.129454,0 -80.2524585,36.1293663,0 -80.2524196,36.1293538,0 -80.2522245,36.1293571,0 -80.25222580000001,36.1293701,0 -80.25201389999999,36.1293766,0 -80.2520112,36.1293554,0 -80.2515586,36.1293647,0 -80.2514714,36.1294513,0 -80.2513896,36.1295266,0 -80.25241219999999,36.129499,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-80.25241219999999,36.129499,0 -80.2513896,36.1295266,0 -80.2513501,36.1295975,0 -80.2513782,36.1299079,0 -80.2513427,36.1299122,0 -80.2514077,36.1302106,0 -80.25138560000001,36.130228,0 -80.25158279999999,36.1303785,0 -80.2516002,36.1303596,0 -80.2519697,36.1304137,0 -80.251975,36.1303834,0 -80.2523633,36.130398,0 -80.2524411,36.130359,0 -80.25241219999999,36.129499,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>U of South Carolina - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-81.0428983,33.9859967,0 -81.0433355,33.9868179,0 -81.04335020000001,33.9868129,0 -81.0432362,33.9866028,0 -81.0432517,33.9863754,0 -81.0430733,33.9859823,0 -81.0430539,33.9859406,0 -81.0430398,33.9859178,0 -81.0430284,33.9859061,0 -81.0430156,33.9858922,0 -81.0429975,33.9858805,0 -81.04297939999999,33.9858727,0 -81.0429573,33.9858666,0 -81.04293180000001,33.9858577,0 -81.04290829999999,33.9858588,0 -81.04288149999999,33.9858583,0 -81.042844,33.9858661,0 -81.04281039999999,33.9858788,0 -81.0427736,33.9858894,0 -81.04273000000001,33.9859072,0 -81.04266629999999,33.9859283,0 -81.04249799999999,33.9859989,0 -81.04250330000001,33.9860045,0 -81.04233429999999,33.986079,0 -81.0422499,33.9861702,0 -81.0421499,33.9862091,0 -81.0420608,33.9863014,0 -81.0419059,33.9863615,0 -81.0419112,33.986372,0 -81.0428983,33.9859967,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-81.0428983,33.9859967,0 -81.0419112,33.986372,0 -81.04198100000001,33.986496,0 -81.0420467,33.9866161,0 -81.0421111,33.9867334,0 -81.0421748,33.986848,0 -81.042225,33.986938,0 -81.04234510000001,33.9869742,0 -81.0424738,33.9870164,0 -81.0425523,33.9870403,0 -81.04265890000001,33.9870754,0 -81.04270320000001,33.9870576,0 -81.04279769999999,33.9870214,0 -81.04292909999999,33.9869703,0 -81.0430404,33.9869291,0 -81.0432007,33.9868708,0 -81.0433355,33.9868179,0 -81.0428983,33.9859967,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Monongalia County Ballpark - WV Black Bears - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-79.99643279999999,39.6443268,0 -79.9952821,39.6442298,0 -79.99529819999999,39.6442442,0 -79.995321,39.6442628,0 -79.9953773,39.6442938,0 -79.9954149,39.6443145,0 -79.99544299999999,39.6443207,0 -79.99547250000001,39.6443248,0 -79.9955087,39.6443227,0 -79.9955449,39.6443237,0 -79.99559189999999,39.6443258,0 -79.9959956,39.644394,0 -79.9960076,39.6443878,0 -79.9963228,39.6444446,0 -79.9964368,39.6444704,0 -79.9965253,39.6444549,0 -79.99658030000001,39.6444136,0 -79.9966151,39.6443527,0 -79.9966098,39.6442814,0 -79.9966084,39.6439479,0 -79.9965387,39.6437899,0 -79.99660040000001,39.6434749,0 -79.9965883,39.6434418,0 -79.99657089999999,39.6434367,0 -79.99643279999999,39.6443268,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-79.99643279999999,39.6443268,0 -79.99657089999999,39.6434367,0 -79.996363,39.6434036,0 -79.9961753,39.6433665,0 -79.99600359999999,39.6433437,0 -79.9959339,39.6433334,0 -79.995734,39.6433819,0 -79.9956509,39.6433995,0 -79.9955557,39.6434594,0 -79.9954283,39.6435399,0 -79.9953706,39.6436246,0 -79.9953237,39.6437155,0 -79.99527,39.643795,0 -79.9952593,39.6438208,0 -79.9952727,39.6439644,0 -79.99527809999999,39.6440811,0 -79.99527809999999,39.6441379,0 -79.99527139999999,39.6442009,0 -79.99527,39.6442277,0 -79.99643279999999,39.6443268,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>U of Virginia - college</name>
+			<Placemark>
+				<name>foul</name>
+				<description>bad behind plate - large roof</description>
+				<styleUrl>#poly-000000-1200-77</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-78.5141847,38.0457835,0 -78.51339609999999,38.046451,0 -78.51341360000001,38.0464647,0 -78.513942,38.0461395,0 -78.5139527,38.0461162,0 -78.5141029,38.0460264,0 -78.5140881,38.0460085,0 -78.51425709999999,38.0459008,0 -78.51427990000001,38.0459103,0 -78.5142987,38.0458913,0 -78.5143188,38.0458638,0 -78.51432819999999,38.0458458,0 -78.5143443,38.0458163,0 -78.5143429,38.0457878,0 -78.5143389,38.0457603,0 -78.5143322,38.0457286,0 -78.5143175,38.0457001,0 -78.5142719,38.0456557,0 -78.5142343,38.0456314,0 -78.5141807,38.0456029,0 -78.5139782,38.0455195,0 -78.51368309999999,38.0453579,0 -78.5135705,38.0452713,0 -78.5133371,38.0451551,0 -78.5141847,38.0457835,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-78.5141847,38.0457835,0 -78.5133371,38.0451551,0 -78.5132945,38.0451845,0 -78.51324889999999,38.0452152,0 -78.5131725,38.0452806,0 -78.5130652,38.0453609,0 -78.51300620000001,38.0454137,0 -78.5129472,38.0454612,0 -78.5129043,38.045495,0 -78.51287480000001,38.0455415,0 -78.51285059999999,38.0455933,0 -78.51283050000001,38.0456397,0 -78.5128144,38.0456799,0 -78.5127943,38.0457242,0 -78.5127822,38.0457601,0 -78.5127742,38.0458098,0 -78.5127701,38.0458531,0 -78.51277690000001,38.0458932,0 -78.5127997,38.0459323,0 -78.5128265,38.0459788,0 -78.5128627,38.0460347,0 -78.5129029,38.0460844,0 -78.5129592,38.0461403,0 -78.5130585,38.0462143,0 -78.51316850000001,38.0462935,0 -78.5132838,38.046378,0 -78.51339609999999,38.046451,0 -78.5141847,38.0457835,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Boston C. - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-71.1603978,42.3443347,0 -71.1591854,42.3443971,0 -71.1591895,42.3444497,0 -71.1596012,42.3444774,0 -71.1598841,42.3444923,0 -71.16047690000001,42.3444596,0 -71.1605735,42.3443783,0 -71.1605359,42.3440115,0 -71.1605319,42.343954,0 -71.1604796,42.3437419,0 -71.1603964,42.3434376,0 -71.16031460000001,42.3434346,0 -71.1603978,42.3443347,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-71.1603978,42.3443347,0 -71.16031460000001,42.3434346,0 -71.1601752,42.3434297,0 -71.16004909999999,42.3434277,0 -71.15988950000001,42.3434198,0 -71.15980500000001,42.3434178,0 -71.1597178,42.3434148,0 -71.1596588,42.3434227,0 -71.15958910000001,42.3434336,0 -71.1595355,42.3434554,0 -71.1594791,42.3434743,0 -71.1594228,42.343502,0 -71.1593812,42.3435328,0 -71.15932890000001,42.3435784,0 -71.1592847,42.3436111,0 -71.15923239999999,42.3436587,0 -71.1591935,42.3436943,0 -71.15914789999999,42.343738,0 -71.1591318,42.3437598,0 -71.1591076,42.3437974,0 -71.1590956,42.3438381,0 -71.1590781,42.3438737,0 -71.1590741,42.3439114,0 -71.1590741,42.3439471,0 -71.1590795,42.3439967,0 -71.1590983,42.344072,0 -71.1591372,42.3442355,0 -71.1591854,42.3443971,0 -71.1603978,42.3443347,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Oregon University - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-123.0659956,44.0593731,0 -123.0647276,44.0594559,0 -123.0647356,44.059482,0 -123.0651004,44.0594574,0 -123.0652775,44.0595191,0 -123.065421,44.0595277,0 -123.0654216,44.059507,0 -123.0655189,44.0595104,0 -123.0658836,44.0595003,0 -123.0659105,44.0595186,0 -123.0660144,44.0595167,0 -123.0660432,44.0595114,0 -123.06607,44.0595037,0 -123.0660928,44.0594926,0 -123.0661197,44.0594791,0 -123.0661391,44.0594651,0 -123.0661572,44.0594463,0 -123.0661713,44.0594299,0 -123.066184,44.0594121,0 -123.0661901,44.059388,0 -123.0661914,44.0593687,0 -123.0661881,44.0593523,0 -123.066178,44.0593095,0 -123.0661693,44.0592858,0 -123.0661465,44.0592724,0 -123.066115,44.0591196,0 -123.0660808,44.058949,0 -123.0661063,44.0589442,0 -123.0660814,44.0588078,0 -123.0659312,44.0586078,0 -123.0659165,44.0584941,0 -123.0658863,44.0584874,0 -123.0659956,44.0593731,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-123.0659956,44.0593731,0 -123.0658863,44.0584874,0 -123.0657951,44.0584797,0 -123.065663,44.0584652,0 -123.0653975,44.0584445,0 -123.0652855,44.0584801,0 -123.0651648,44.0585226,0 -123.064904,44.0586112,0 -123.0648376,44.0586705,0 -123.0647531,44.0587375,0 -123.0647021,44.0588796,0 -123.0646585,44.0590039,0 -123.0646149,44.0591259,0 -123.0646257,44.0592218,0 -123.0646344,44.059296,0 -123.0646921,44.0593523,0 -123.0647276,44.0594559,0 -123.0659956,44.0593731,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Costal Carolina - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-79.01540489999999,33.7935777,0 -79.014391,33.7937632,0 -79.0143964,33.793776,0 -79.0146022,33.7937348,0 -79.01487179999999,33.7938229,0 -79.01503270000001,33.7937933,0 -79.01505419999999,33.7937733,0 -79.0153157,33.793722,0 -79.0153399,33.7937348,0 -79.0154787,33.7937114,0 -79.0155209,33.7936919,0 -79.0155745,33.7936228,0 -79.01557990000001,33.7935849,0 -79.01554640000001,33.7934612,0 -79.01552220000001,33.7934489,0 -79.0154673,33.7932349,0 -79.0154921,33.7932294,0 -79.0154498,33.7930655,0 -79.0152406,33.7929017,0 -79.0151984,33.7927429,0 -79.015185,33.7927423,0 -79.01540489999999,33.7935777,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-79.01540489999999,33.7935777,0 -79.015185,33.7927423,0 -79.01509710000001,33.7927451,0 -79.0149938,33.792754,0 -79.01490130000001,33.7927635,0 -79.0147766,33.7927819,0 -79.0147115,33.7927964,0 -79.01462909999999,33.7928215,0 -79.0145251,33.7928594,0 -79.0144715,33.79289,0 -79.01441250000001,33.7929279,0 -79.01433470000001,33.7930249,0 -79.0142663,33.7931151,0 -79.0142482,33.7932104,0 -79.0142462,33.7932494,0 -79.01424419999999,33.7933224,0 -79.0142589,33.7934071,0 -79.0142582,33.7934355,0 -79.014275,33.7934807,0 -79.01430449999999,33.7935531,0 -79.0143367,33.7936323,0 -79.014391,33.7937632,0 -79.01540489999999,33.7935777,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Duke - Jack Coombs Field - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-78.9439974,35.9975897,0 -78.9449925,35.9979705,0 -78.94450500000001,35.9976445,0 -78.944385,35.9975826,0 -78.94437019999999,35.9976032,0 -78.94421130000001,35.9975414,0 -78.94423070000001,35.9975056,0 -78.9440591,35.9974486,0 -78.94382040000001,35.9975181,0 -78.9437439,35.9976466,0 -78.94378210000001,35.9976678,0 -78.9437124,35.9977931,0 -78.9436903,35.9978175,0 -78.94367889999999,35.9978181,0 -78.94363730000001,35.9978707,0 -78.9435079,35.9984132,0 -78.9435166,35.9984246,0 -78.9439974,35.9975897,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-78.9439974,35.9975897,0 -78.9435166,35.9984246,0 -78.943547,35.9984499,0 -78.9435812,35.9984775,0 -78.9436161,35.9985036,0 -78.94364830000001,35.9985247,0 -78.9436872,35.9985475,0 -78.94372869999999,35.9985719,0 -78.94376699999999,35.9985931,0 -78.9438085,35.9986132,0 -78.94385080000001,35.9986332,0 -78.9438937,35.9986495,0 -78.94393530000001,35.9986647,0 -78.9439608,35.9986696,0 -78.9439929,35.9986755,0 -78.9440352,35.9986831,0 -78.9440781,35.9986869,0 -78.944121,35.9986875,0 -78.9441633,35.9986875,0 -78.9442001,35.9986842,0 -78.9442323,35.9986815,0 -78.9442672,35.9986772,0 -78.94430610000001,35.9986696,0 -78.9443483,35.9986614,0 -78.94439389999999,35.998649,0 -78.94444489999999,35.9986327,0 -78.94447769999999,35.9986213,0 -78.94451599999999,35.9986056,0 -78.9445515,35.9985909,0 -78.9445824,35.9985757,0 -78.94461389999999,35.9985611,0 -78.94464000000001,35.9985453,0 -78.9446729,35.9985247,0 -78.94470440000001,35.9985014,0 -78.94473050000001,35.9984802,0 -78.94475799999999,35.9984591,0 -78.9447875,35.9984298,0 -78.9448144,35.9984032,0 -78.9448345,35.9983804,0 -78.9448519,35.998356,0 -78.94486670000001,35.9983354,0 -78.9448814,35.9983099,0 -78.9448948,35.9982811,0 -78.9449123,35.9982432,0 -78.944925,35.9982139,0 -78.9449391,35.9981775,0 -78.94495120000001,35.9981461,0 -78.9449599,35.9981124,0 -78.94497130000001,35.9980761,0 -78.94498,35.9980414,0 -78.9449874,35.9980142,0 -78.9449925,35.9979705,0 -78.9439974,35.9975897,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Stanford - Klein Field - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-122.1587602,37.4321552,0 -122.157989,37.431472,0 -122.1579381,37.4315077,0 -122.1582915,37.4318229,0 -122.1582459,37.4319102,0 -122.1582767,37.4320417,0 -122.1583075,37.43207,0 -122.1583317,37.4320524,0 -122.1585087,37.4322105,0 -122.1584913,37.4322196,0 -122.1585496,37.432268,0 -122.1585858,37.4322973,0 -122.1586133,37.432317,0 -122.1586361,37.4323282,0 -122.1586676,37.4323415,0 -122.1587018,37.4323485,0 -122.1587253,37.4323516,0 -122.1587555,37.4323538,0 -122.1587863,37.4323522,0 -122.1588178,37.4323511,0 -122.1588494,37.432341,0 -122.1588822,37.4323266,0 -122.1589043,37.432317,0 -122.1589392,37.4322979,0 -122.1589667,37.432276,0 -122.1589928,37.4322574,0 -122.159019,37.4322404,0 -122.1590022,37.432227,0 -122.1591987,37.4320875,0 -122.1592222,37.4321088,0 -122.1592644,37.432079,0 -122.159304,37.4320348,0 -122.1593248,37.4319613,0 -122.1592698,37.4318634,0 -122.1596567,37.4315854,0 -122.1596171,37.4315423,0 -122.1587602,37.4321552,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-122.1587602,37.4321552,0 -122.1596171,37.4315423,0 -122.1595668,37.4314986,0 -122.1595273,37.431463,0 -122.1594381,37.4313841,0 -122.1593697,37.4313203,0 -122.1592879,37.431243,0 -122.1592128,37.4311802,0 -122.1591605,37.4311467,0 -122.1591216,37.4311264,0 -122.1590693,37.4311062,0 -122.1590284,37.4310897,0 -122.1589814,37.4310796,0 -122.1589446,37.4310689,0 -122.1588862,37.4310609,0 -122.1588286,37.4310556,0 -122.1587655,37.4310535,0 -122.1587059,37.4310593,0 -122.1586616,37.4310636,0 -122.158618,37.4310742,0 -122.1585697,37.431086,0 -122.1585375,37.4310977,0 -122.1585,37.4311131,0 -122.158441,37.4311531,0 -122.1583404,37.4312154,0 -122.158221,37.4313053,0 -122.1581265,37.431374,0 -122.157989,37.431472,0 -122.1587602,37.4321552,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Mártires de Barbados Stadium - Bayamo, Cuba - international</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-76.630087,20.368027,0 -76.6294084,20.3673946,0 -76.6293709,20.3674525,0 -76.6295506,20.3677027,0 -76.6297732,20.3680094,0 -76.6297893,20.3680044,0 -76.6298295,20.368066,0 -76.62989930000001,20.3681339,0 -76.62988989999999,20.3681452,0 -76.6299435,20.3681842,0 -76.6302426,20.3681892,0 -76.63035120000001,20.3680497,0 -76.6308219,20.3674625,0 -76.630771,20.3673921,0 -76.630087,20.368027,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>Mártires de Barbados Stadium is a multi-use stadium in Bayamo, Cuba. It is currently used mostly for baseball games and is the home stadium of Granma Alazanes. The stadium holds 10,000 people.</description>
+				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-76.630087,20.368027,0 -76.630771,20.3673921,0 -76.63066499999999,20.3672413,0 -76.6306194,20.3671746,0 -76.6304947,20.367118,0 -76.630374,20.3670476,0 -76.6302238,20.3669848,0 -76.6301876,20.3669659,0 -76.63005889999999,20.3669722,0 -76.6299516,20.3669785,0 -76.6298456,20.3670338,0 -76.62970749999999,20.367108,0 -76.6295667,20.3671859,0 -76.62954120000001,20.3671972,0 -76.6294621,20.3673142,0 -76.6294084,20.3673946,0 -76.630087,20.368027,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio Capitán San Luis - Pinar dei Rio, Cuba - International</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<description>tough shadow</description>
+				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.6929832,22.4233712,0 -83.6934874,22.4241311,0 -83.6935143,22.4241118,0 -83.69318440000001,22.4232353,0 -83.69287319999999,22.4231684,0 -83.6921356,22.4237746,0 -83.6921504,22.4238361,0 -83.6929832,22.4233712,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description><![CDATA[Estadio Capitán San Luis is a multi-use stadium in Pinar del Río, Cuba.<br><br>History<br>Inaugurated the 19 of January 1969, the stadium has a capacity of 8,000 spectators. The stadium is mostly used for baseball games and is the home of the Pinar del Rio Baseball team. Previously, it was the home of Vegueros and Forestales baseball teams and Pinar del Rio, a football team. The football team's home field is now "La Bombonera" in San Cristóbal.]]></description>
+				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.6929832,22.4233712,0 -83.6921504,22.4238361,0 -83.6922577,22.4239898,0 -83.6923877,22.4241745,0 -83.6925272,22.4243853,0 -83.6927364,22.4244287,0 -83.6929255,22.4244671,0 -83.6930637,22.4243828,0 -83.6932474,22.4242737,0 -83.6934874,22.4241311,0 -83.6929832,22.4233712,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio Nelson Fernández - San Jose de Lajas, Cuba - international</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-82.14402,22.9635184,0 -82.1447965,22.9640543,0 -82.1448094,22.9640315,0 -82.1443843,22.9635623,0 -82.1442435,22.9634697,0 -82.1441214,22.9633783,0 -82.1440745,22.9633561,0 -82.1440329,22.9633413,0 -82.1439913,22.9633413,0 -82.1439484,22.9633585,0 -82.14390419999999,22.9633968,0 -82.1438532,22.9634351,0 -82.1437821,22.9635314,0 -82.14359709999999,22.963871,0 -82.14341330000001,22.9642217,0 -82.1434326,22.9642395,0 -82.14402,22.9635184,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>Estadio Nelson Fernández is a multi-use stadium in San José de las Lajas, Mayabeque Province, Cuba. It is currently used mostly for baseball games and up to 2011 was the home stadium of the Havana Vaqueros team. Starting from the 2011–2012 series this stadium is the home of the new Mayabeque provincial team &quot;Huracanes&quot; (hurricanes). The stadium holds 8,000 people.</description>
+				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-82.14402,22.9635184,0 -82.1434326,22.9642395,0 -82.14353989999999,22.9643087,0 -82.1436753,22.9643964,0 -82.1438591,22.964526,0 -82.1440254,22.9646359,0 -82.1442078,22.9646075,0 -82.14437,22.9645841,0 -82.1444304,22.9645087,0 -82.1445725,22.9643346,0 -82.1447965,22.9640543,0 -82.14402,22.9635184,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio Cristóbal Labra - Nueva Gerona, Cuba - international</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-82.80996020000001,21.8823376,0 -82.8090067,21.8825305,0 -82.80914079999999,21.8825143,0 -82.8093755,21.8825417,0 -82.8100501,21.8824172,0 -82.8100675,21.8823936,0 -82.8099589,21.8817365,0 -82.8098395,21.8816008,0 -82.8097886,21.8814689,0 -82.80996020000001,21.8823376,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>Estadio Cristóbal Labra opened in 1957 as Municipal Stadium, in Nueva Gerona on the Isla de la Juventud. With 5,000 seats, it is the smallest in the Cuban National Series and was the only stadium without lights.</description>
+				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-82.80996020000001,21.8823376,0 -82.8097886,21.8814689,0 -82.8096249,21.8815,0 -82.809468,21.8815174,0 -82.80934999999999,21.8815411,0 -82.8092722,21.8815598,0 -82.8092347,21.8815772,0 -82.8091381,21.8816456,0 -82.8090778,21.8816867,0 -82.8090241,21.8817315,0 -82.8089866,21.881785,0 -82.8089423,21.8818821,0 -82.80889000000001,21.8819829,0 -82.80883230000001,21.8820924,0 -82.8088659,21.8821745,0 -82.80893020000001,21.8823351,0 -82.8090067,21.8825305,0 -82.80996020000001,21.8823376,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio Hiram Bithorn - San Juan, PR - mlb</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-66.07306939999999,18.4168994,0 -66.0721293,18.4168937,0 -66.072146,18.4169357,0 -66.0721614,18.4169676,0 -66.0722111,18.4169943,0 -66.0722225,18.4169949,0 -66.07224119999999,18.4169943,0 -66.0722634,18.4169917,0 -66.0722808,18.4169886,0 -66.0723344,18.4170006,0 -66.0723411,18.4170006,0 -66.0724893,18.417035,0 -66.07274820000001,18.4170954,0 -66.07280249999999,18.4171139,0 -66.0728427,18.4171202,0 -66.07283940000001,18.4171489,0 -66.07287150000001,18.4171489,0 -66.07292649999999,18.417147,0 -66.07297079999999,18.4171381,0 -66.0729869,18.4171355,0 -66.07301440000001,18.4171292,0 -66.0730499,18.417119,0 -66.07308949999999,18.4171005,0 -66.0731176,18.4170833,0 -66.0731498,18.4170636,0 -66.0731706,18.4170484,0 -66.0731948,18.417021,0 -66.0732222,18.416993,0 -66.07324439999999,18.4169612,0 -66.07326519999999,18.4169357,0 -66.07327720000001,18.4169078,0 -66.073296,18.4168677,0 -66.0733161,18.4168161,0 -66.0733275,18.4167691,0 -66.07332820000001,18.4167309,0 -66.07332890000001,18.4166946,0 -66.07329729999999,18.4166959,0 -66.073294,18.4166565,0 -66.0732739,18.416603,0 -66.0731773,18.416185,0 -66.0731512,18.4160979,0 -66.07313980000001,18.416061,0 -66.07312640000001,18.4160393,0 -66.0731096,18.4160222,0 -66.0730922,18.4160126,0 -66.0730741,18.4160036,0 -66.07306939999999,18.4168994,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description><![CDATA[Hosted Expos in 2003-2004. Hosted other MLB games & WBC<br><br>Hiram Bithorn Stadium (Spanish: Estadio Hiram Bithorn) is a baseball park in San Juan, Puerto Rico, built in 1962 and designed by Puerto Rican architect Pedro Miranda.[1] It is operated by the municipal government of the city of San Juan. Its name honors the first Puerto Rican to play in the major leagues, Hiram Bithorn, who first played with the Chicago Cubs in 1942. Built in 1962, under the mayoral administration of Felisa Rincón de Gautier, replacing Estadio Sixto Escobar, the stadium is home to the Santurce Crabbers, of the Puerto Rico Baseball League. It was added to the National Register of Historic Places in 2014.[2]]]></description>
+				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-66.07306939999999,18.4168994,0 -66.0730741,18.4160036,0 -66.07303520000001,18.4159915,0 -66.0730003,18.4159782,0 -66.0729635,18.4159674,0 -66.0729353,18.4159591,0 -66.0729024,18.4159521,0 -66.0728709,18.4159483,0 -66.0728354,18.4159419,0 -66.07279579999999,18.4159406,0 -66.07276229999999,18.4159375,0 -66.07273480000001,18.4159356,0 -66.0727019,18.4159381,0 -66.0726631,18.4159426,0 -66.0726222,18.4159489,0 -66.0725752,18.4159578,0 -66.072535,18.4159667,0 -66.07249539999999,18.4159775,0 -66.0724572,18.4159928,0 -66.072425,18.4160043,0 -66.07239010000001,18.4160227,0 -66.07235059999999,18.4160431,0 -66.072311,18.4160673,0 -66.0722808,18.416087,0 -66.0722493,18.4161118,0 -66.0722145,18.4161551,0 -66.0721856,18.4161926,0 -66.07216889999999,18.416218,0 -66.07214740000001,18.4162581,0 -66.072132,18.4162925,0 -66.07211390000001,18.4163364,0 -66.0720924,18.4163955,0 -66.072081,18.4164426,0 -66.0720743,18.4164827,0 -66.0720689,18.4165196,0 -66.07206360000001,18.4165584,0 -66.07206290000001,18.4166017,0 -66.07206429999999,18.4166367,0 -66.0720669,18.4166742,0 -66.072073,18.4167156,0 -66.072081,18.4167474,0 -66.07208970000001,18.4167843,0 -66.07209640000001,18.4168161,0 -66.0721065,18.4168447,0 -66.0721219,18.4168829,0 -66.0721293,18.4168937,0 -66.07306939999999,18.4168994,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio de Béisbol - Monterrey, Mexico - mlb</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-100.3157325,25.7183602,0 -100.3147642,25.718266,0 -100.3147749,25.7182926,0 -100.314791,25.7183046,0 -100.3148822,25.7183264,0 -100.3153798,25.7184303,0 -100.3156641,25.7184919,0 -100.3157191,25.7185016,0 -100.3157486,25.718504,0 -100.3157901,25.7184871,0 -100.3158344,25.7184617,0 -100.3158585,25.7184448,0 -100.3158746,25.7184182,0 -100.3158894,25.7183771,0 -100.3158907,25.7182986,0 -100.3158961,25.7181693,0 -100.3159028,25.7179869,0 -100.3158974,25.7175591,0 -100.3158988,25.7175096,0 -100.3158907,25.7174915,0 -100.3158585,25.7174782,0 -100.3157325,25.7183602,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description><![CDATA[Hosted MLB series in 1996, 1999, 2018, 2019<br><br>The Estadio de Béisbol Monterrey, officially known as Estadio Mobil Super and popularly known as Palacio Sultán, is a baseball stadium in Monterrey, Mexico. It is the home venue of the Sultanes Monterrey Mexican League baseball team.[1] It holds 21,803 people, making it the largest baseball stadium in Mexico and the third-largest in Latin America.[4]<br><br>The stadium was inaugurated in games starting on 13 July 1990 when Monterrey played host to the World Youth Baseball Championship (for players 16 years old and under).[2][6] The first LMB game was held on 20 July 1990 when the Sultanes defeated the Tecolotes de Nuevo Laredo in 12 innings.[2]]]></description>
+				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-100.3157325,25.7183602,0 -100.3158585,25.7174782,0 -100.315821,25.7174709,0 -100.31577,25.7174577,0 -100.3156936,25.7174371,0 -100.3156225,25.717425,0 -100.3155206,25.7174009,0 -100.3154334,25.7173852,0 -100.3153516,25.7173791,0 -100.3152805,25.7173803,0 -100.3152108,25.71739,0 -100.3151397,25.7174117,0 -100.3150673,25.7174407,0 -100.3149922,25.717477,0 -100.3149385,25.7175181,0 -100.3148849,25.71757119999999,0 -100.3148433,25.7176341,0 -100.3148098,25.7176896,0 -100.3147883,25.7177585,0 -100.3147669,25.7178346,0 -100.3147588,25.7178926,0 -100.3147615,25.7179603,0 -100.3147642,25.718098,0 -100.3147642,25.718266,0 -100.3157325,25.7183602,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio Nadin J Hazouri - Dominican Republic - international</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-71.0988543,18.2134403,0 -71.0979088,18.2134187,0 -71.09790479999999,18.2134582,0 -71.0979906,18.2134824,0 -71.09843859999999,18.2135766,0 -71.0986116,18.2135817,0 -71.0987725,18.2135779,0 -71.0988436,18.2135792,0 -71.0988784,18.2135728,0 -71.098916,18.2135588,0 -71.09894009999999,18.2135422,0 -71.09895090000001,18.2135257,0 -71.0989696,18.2134926,0 -71.0989831,18.213462,0 -71.0989898,18.2134148,0 -71.0989871,18.2133346,0 -71.0990018,18.2133333,0 -71.0990099,18.2132301,0 -71.0990166,18.213132,0 -71.09901120000001,18.2130505,0 -71.09892139999999,18.2126288,0 -71.09890660000001,18.2125282,0 -71.0988543,18.2134403,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-71.0988543,18.2134403,0 -71.09890660000001,18.2125282,0 -71.0988583,18.2125295,0 -71.09875510000001,18.2125295,0 -71.09865720000001,18.212532,0 -71.09847480000001,18.2125307,0 -71.0984225,18.2125473,0 -71.0983487,18.2125728,0 -71.0982736,18.2126135,0 -71.0982133,18.2126492,0 -71.0981596,18.2126938,0 -71.0980926,18.212755,0 -71.0980349,18.2128148,0 -71.09798120000001,18.2129027,0 -71.09793569999999,18.2129843,0 -71.09791420000001,18.2130467,0 -71.0979115,18.2131002,0 -71.0979155,18.2132378,0 -71.0979088,18.2134187,0 -71.0988543,18.2134403,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio Quisqueya Juan Marichal - Dominican Republic - international</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-69.9265418,18.4880431,0 -69.9266196,18.4889537,0 -69.92663159999999,18.4889381,0 -69.926641,18.4888122,0 -69.9266772,18.4885489,0 -69.92671350000001,18.4882462,0 -69.9267242,18.4881088,0 -69.92672020000001,18.4880681,0 -69.92670939999999,18.48803,0 -69.92669739999999,18.4879982,0 -69.9266799,18.4879689,0 -69.9266611,18.487946,0 -69.92662900000001,18.4879193,0 -69.92659279999999,18.4879015,0 -69.9265565,18.4878862,0 -69.9265123,18.4878773,0 -69.9264747,18.4878722,0 -69.92641570000001,18.4878786,0 -69.92619980000001,18.4879562,0 -69.92597720000001,18.4880096,0 -69.9256795,18.488091,0 -69.9255896,18.4881143,0 -69.9265418,18.4880431,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description><![CDATA[Quisqueya Stadium Juan Marichal is a baseball stadium in Santo Domingo, Dominican Republic. It is often used as a multi-use stadium. Football club Atlético Pantoja used the venue for their inaugural Caribbean football championship match. The Quisqueya holds about 14,469 people after its renovation. The Dominican League of Baseball Authority is in charge of its management.<br><br>It is the only stadium in the Caribbean region to host two different baseball teams, Tigres del Licey (Licey Tigers) and Leones del Escogido (Chosen One Lions). Its field dimensions are 335 feet at the foul poles, 383 feet at the power alleys, and 411 feet at center field. It was built in 1955 as Estadio Trujillo, during the Rafael Leonidas Trujillo Molina dictatorship, taking the Bobby Maduro Miami Stadium as the design base.<br><br>The stadium was renamed Estadio Quisqueya Juan Marichal, after the former Major League Baseball player and Hall of Famer Juan Marichal.]]></description>
+				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-69.9265418,18.4880431,0 -69.9255896,18.4881143,0 -69.9255816,18.4881397,0 -69.9255641,18.4881753,0 -69.92555470000001,18.4882249,0 -69.9255574,18.488258,0 -69.92556140000001,18.4883025,0 -69.92556810000001,18.4883445,0 -69.9255708,18.4884005,0 -69.9255749,18.4884691,0 -69.9255789,18.4885302,0 -69.9255842,18.4885938,0 -69.9255936,18.4886396,0 -69.92560570000001,18.4886815,0 -69.9256218,18.4887197,0 -69.9256446,18.4887642,0 -69.9256781,18.4888062,0 -69.9257076,18.4888456,0 -69.92573179999999,18.4888685,0 -69.92575720000001,18.4888914,0 -69.92580150000001,18.4889232,0 -69.9258444,18.488955,0 -69.9258954,18.4889804,0 -69.92593960000001,18.4890021,0 -69.9259745,18.4890135,0 -69.9260161,18.4890224,0 -69.9260644,18.4890313,0 -69.9261032,18.4890351,0 -69.9261542,18.4890402,0 -69.9261958,18.4890351,0 -69.9262535,18.48903,0 -69.92631249999999,18.4890237,0 -69.9263862,18.4890135,0 -69.92644249999999,18.4890059,0 -69.9265096,18.4889957,0 -69.92657130000001,18.4889766,0 -69.9266196,18.4889537,0 -69.9265418,18.4880431,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Francisco Micheli Stadium - Dominican Republic - international</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-68.9888227,18.4341858,0 -68.98950000000001,18.4348219,0 -68.9895037,18.4347026,0 -68.989501,18.4346721,0 -68.9892476,18.4343247,0 -68.98918449999999,18.4342904,0 -68.98911080000001,18.434195,0 -68.9890544,18.4341085,0 -68.9890142,18.4340601,0 -68.9889807,18.4340296,0 -68.9889324,18.4340003,0 -68.9888881,18.4339889,0 -68.9888251,18.4339812,0 -68.9887674,18.433994,0 -68.9887138,18.4340079,0 -68.9886602,18.4340372,0 -68.98862389999999,18.4340741,0 -68.9885783,18.4341288,0 -68.9884644,18.4343006,0 -68.98840130000001,18.4343298,0 -68.98815860000001,18.4346772,0 -68.9881572,18.4347726,0 -68.9881615,18.4348321,0 -68.9888227,18.4341858,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>Estadio Francisco A. Micheli (formerly known as Romana, in reference to the city where it is located) is a private multipurpose stadium dedicated mainly to the sport of baseball. Located in the city of La Romana, with a capacity for about 10,000 people, is the home of the Dominican professional team Toros del Este.[1] The stadium was inaugurated in 1979 by President Antonio Guzmán Fernández and is owned by the Central Romana Corporation. In 1998 the stadium suffered damage as a result of Hurricane Georges, which went through much of the Dominican Republic during that year.</description>
+				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-68.9888227,18.4341858,0 -68.9881615,18.4348321,0 -68.9881723,18.4348639,0 -68.9881991,18.4349161,0 -68.9882353,18.434967,0 -68.9882621,18.4350013,0 -68.98829430000001,18.4350382,0 -68.9883359,18.4350751,0 -68.98837880000001,18.4351107,0 -68.98841899999999,18.43514,0 -68.9884673,18.4351693,0 -68.9885116,18.4351934,0 -68.9885773,18.4352201,0 -68.988643,18.4352354,0 -68.9886953,18.4352494,0 -68.9887597,18.4352596,0 -68.9888468,18.435266,0 -68.988934,18.4352596,0 -68.98899299999999,18.4352481,0 -68.9890494,18.4352354,0 -68.9891097,18.4352125,0 -68.9891647,18.4351871,0 -68.9892103,18.4351629,0 -68.9892626,18.4351311,0 -68.9892961,18.4351031,0 -68.9893337,18.4350675,0 -68.9893659,18.4350318,0 -68.989394,18.4349962,0 -68.98942750000001,18.4349555,0 -68.98945569999999,18.4349135,0 -68.98948249999999,18.4348601,0 -68.98950000000001,18.4348219,0 -68.9888227,18.4341858,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>McCoy Stadium - Pawtucket, RI - pro</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<description>tough roof, estimated behind plate</description>
+				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-71.3699447,41.8729241,0 -71.37097060000001,41.8733665,0 -71.3709853,41.8733423,0 -71.3709705,41.8733153,0 -71.370831,41.8732604,0 -71.3707345,41.8732244,0 -71.3706956,41.8731895,0 -71.3706165,41.8730916,0 -71.3705293,41.8729858,0 -71.3704783,41.8729328,0 -71.37043540000001,41.8728929,0 -71.37039919999999,41.8728659,0 -71.3703549,41.872836,0 -71.3702785,41.872807,0 -71.3702074,41.8727791,0 -71.37015510000001,41.8727701,0 -71.3700679,41.8727711,0 -71.3699821,41.8727771,0 -71.36991639999999,41.872783,0 -71.3698239,41.872803,0 -71.3697796,41.872813,0 -71.369726,41.872837,0 -71.3696723,41.8728659,0 -71.369624,41.8729059,0 -71.36957169999999,41.8729488,0 -71.3695288,41.8729908,0 -71.36948719999999,41.8730437,0 -71.3694685,41.8731396,0 -71.3694819,41.8731945,0 -71.36947120000001,41.8734801,0 -71.36931420000001,41.8736828,0 -71.3693492,41.873697,0 -71.3699447,41.8729241,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>McCoy Stadium is a former baseball stadium in Pawtucket, Rhode Island. From 1970 through 2020, it served as home field of the Pawtucket Red Sox (PawSox), a Minor League Baseball affiliate of the Boston Red Sox. Completed in 1942, the stadium first hosted an affiliated minor league team in 1946, the Pawtucket Slaters, a Boston Braves farm team. In 1981, the stadium hosted the longest professional baseball game in history, as the PawSox defeated the Rochester Red Wings in 33 innings by a score of 3–2.</description>
+				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-71.3699447,41.8729241,0 -71.3693492,41.873697,0 -71.3693774,41.873712,0 -71.3695008,41.8737819,0 -71.3696376,41.8738658,0 -71.3697703,41.8739437,0 -71.3699769,41.8739706,0 -71.3702236,41.8740086,0 -71.37043420000001,41.8739656,0 -71.37051599999999,41.8739157,0 -71.3705951,41.8738658,0 -71.37068360000001,41.8738139,0 -71.3707936,41.8737509,0 -71.3708084,41.873712,0 -71.37084590000001,41.8736231,0 -71.37090360000001,41.8735063,0 -71.37097060000001,41.8733665,0 -71.3699447,41.8729241,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio Alfredo Harp Helú - Mexico City - mlb</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-99.08543520000001,19.4038126,0 -99.08450309999999,19.4035672,0 -99.0845125,19.4036013,0 -99.0846748,19.4036444,0 -99.0847405,19.403762,0 -99.08541499999998,19.4039378,0 -99.0854767,19.403929,0 -99.0855237,19.4038948,0 -99.08572080000002,19.4031928,0 -99.08566449999999,19.4031017,0 -99.0857061,19.4029499,0 -99.08568330000001,19.4029322,0 -99.08543520000001,19.4038126,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>Host of 2023 MLB Padres v Giants series</description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-99.08543520000001,19.4038126,0 -99.08568330000001,19.4029322,0 -99.0856658,19.4029107,0 -99.0856189,19.4028778,0 -99.0855639,19.4028424,0 -99.0855143,19.4028158,0 -99.08545800000002,19.4027905,0 -99.08539089999999,19.4027665,0 -99.08533319999999,19.40275,0 -99.0852756,19.4027463,0 -99.085234,19.4027463,0 -99.0851723,19.4027437,0 -99.0851093,19.4027513,0 -99.0850597,19.4027589,0 -99.08501139999998,19.4027665,0 -99.0849618,19.4027817,0 -99.08491619999998,19.4027956,0 -99.08487590000001,19.402812,0 -99.08483029999999,19.4028386,0 -99.0847928,19.4028576,0 -99.0847646,19.4028816,0 -99.08472039999999,19.402917,0 -99.0846841,19.4029448,0 -99.08465060000002,19.402979,0 -99.08462249999998,19.4030144,0 -99.0845983,19.4030422,0 -99.0845755,19.4030789,0 -99.08455410000001,19.4031245,0 -99.08453389999998,19.4031662,0 -99.0845219,19.4032004,0 -99.0845071,19.403232,0 -99.0844991,19.4032737,0 -99.08448830000002,19.4033167,0 -99.0844857,19.4033496,0 -99.0844816,19.4033812,0 -99.0844843,19.4034167,0 -99.0844816,19.4034496,0 -99.0844843,19.4034799,0 -99.08448700000001,19.4035128,0 -99.0844937,19.4035368,0 -99.08450309999999,19.4035672,0 -99.08543520000001,19.4038126,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio Latinoamericano - Havana, Cuba - international</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<description>Difficult roof and shadow, especially for foul territory</description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-82.37623840000001,23.1180363,0 -82.376575,23.118859,0 -82.3765914,23.1188495,0 -82.37645329999999,23.1179985,0 -82.3760805,23.1178653,0 -82.3753308,23.1183056,0 -82.3753438,23.1183373,0 -82.37623840000001,23.1180363,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description><![CDATA[The Estadio Latinoamericano (Spanish for Latin American Stadium) is a stadium in Havana, Cuba. It is primarily used for baseball, and is the second largest baseball stadium in the world by capacity. Gran Estadio, a spacious pitchers' park with prevailing winds blowing in and boasting a playing surface and lighting system of major-league quality, was built in 1946 as the top baseball park in Latin America. Located in the Cerro neighborhood, it opened with the name Gran Estadio de La Habana and currently holds about 55,000 people. In 1999, it also hosted an exhibition series between the Cuban National Team and the Baltimore Orioles.<br><br>The Estadio Latinoamericano is popularly known in Cuba as "The Colossus of Cerro". It was initially named Gran Estadio de La Habana (Great Stadium of Havana), but it was then named Estadio del Cerro (Stadium of Cerro) until 1961, when it was renamed as Estadio Latinoamericano (Latin American Stadium) when Cuban professional baseball was stopped. It opened on October 26, 1946, surpassing La Tropical Stadium as the largest stadium in Havana.]]></description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-82.37623840000001,23.1180363,0 -82.3753438,23.1183373,0 -82.37535320000001,23.1183557,0 -82.37538410000001,23.1184347,0 -82.3754055,23.1184877,0 -82.37542569999999,23.1185371,0 -82.3754605,23.1186209,0 -82.3754914,23.1186962,0 -82.3755182,23.1187652,0 -82.3755383,23.1188072,0 -82.37555709999999,23.1188516,0 -82.37557320000001,23.1188725,0 -82.37560000000001,23.1188997,0 -82.37563350000001,23.1189256,0 -82.3756684,23.1189466,0 -82.37571269999999,23.1189749,0 -82.3757569,23.1189947,0 -82.3758012,23.1190119,0 -82.37584270000001,23.1190255,0 -82.3758883,23.1190354,0 -82.37592720000001,23.119044,0 -82.37597150000001,23.1190489,0 -82.3760077,23.1190489,0 -82.3760412,23.119044,0 -82.376115,23.1190218,0 -82.3762638,23.1189675,0 -82.37643679999999,23.1189083,0 -82.376575,23.118859,0 -82.37623840000001,23.1180363,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio 5 de Septiembre - Cienfuegos, Cuba - international</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-80.444168,22.1303555,0 -80.4447286,22.131091,0 -80.44474599999999,22.1310739,0 -80.44474200000001,22.1310528,0 -80.44469909999999,22.1309646,0 -80.4443692,22.1302105,0 -80.44404059999999,22.1301633,0 -80.44337539999999,22.1308441,0 -80.443366,22.130859,0 -80.4433741,22.1308674,0 -80.444168,22.1303555,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>Estadio 5 de Septiembre (Spanish: Fifth of September) is a multi-use stadium in Cienfuegos, Cuba. It is used mostly for baseball games and is the home stadium of Cienfuegos Camaroneros. The stadium holds 15,600 people.[1] It opened on 9 January 1977.</description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-80.444168,22.1303555,0 -80.4433741,22.1308674,0 -80.4434505,22.1309655,0 -80.4435417,22.1310897,0 -80.44364899999999,22.1312239,0 -80.44372009999999,22.1313171,0 -80.4437442,22.1313618,0 -80.4437952,22.1313804,0 -80.4438931,22.131414,0 -80.4439668,22.1314376,0 -80.4440862,22.1314388,0 -80.44421629999999,22.1314314,0 -80.4442713,22.1313978,0 -80.44437050000001,22.1313307,0 -80.44446840000001,22.1312649,0 -80.4445824,22.1311904,0 -80.4447286,22.131091,0 -80.444168,22.1303555,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio Guillermon Moncada - Dantiago de, Cuba - International</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<description>difficult shadows</description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-75.8121799,20.0340728,0 -75.8127056,20.0347242,0 -75.81271169999999,20.0347124,0 -75.8123349,20.0339325,0 -75.81207740000001,20.0339047,0 -75.81143230000001,20.0345889,0 -75.81144500000001,20.0346095,0 -75.8121799,20.0340728,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description><![CDATA[Estadio Guillermón Moncada is a multi-use stadium in Santiago de Cuba, Cuba.[citation needed] It is the second largest baseball stadium in Cuba and comfortably seats 25,000 spectators. The stadium was inaugurated on February 24, 1964. It is a project of the Architect Emilio Castro.<br><br>The stadium is named after the Cuban patriot Guillermón Moncada, the "Ebony Giant", who was one of the 29 Generals of the Wars of Independence. Born in Santiago de Cuba, he participated in the three wars against Spain. He died in 1896 of tuberculosis in this city.<br><br>In its environs there is also a softball stadium, an athletics track, soccer field and a gym for weights and judo.<br><br>This stadium is the home of the Avispas de Santiago de Cuba.]]></description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-75.8121799,20.0340728,0 -75.81144500000001,20.0346095,0 -75.8115617,20.0347544,0 -75.81170520000001,20.0349447,0 -75.8118259,20.0350996,0 -75.8119452,20.0351198,0 -75.8121249,20.0351412,0 -75.8121987,20.0351526,0 -75.8126278,20.0348275,0 -75.8126922,20.0347758,0 -75.8127083,20.0347456,0 -75.8127056,20.0347242,0 -75.8121799,20.0340728,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Palmar de Junco - Matanzas, Cuba - International</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-81.58061429999999,23.0347288,0 -81.57966879999999,23.0346819,0 -81.5796769,23.0347103,0 -81.5801275,23.0348646,0 -81.5806948,23.0349016,0 -81.5807954,23.0348041,0 -81.58081679999999,23.0343993,0 -81.5807015,23.0338513,0 -81.5806438,23.0338476,0 -81.58061429999999,23.0347288,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>Palmar de Junco is where in 1874 the first official game of Cuban baseball was played. It was once owned by the del Junco family. It is located at Calzada Esteban between Monserrate and San Ignacio streets in the neighborhood of Pueblo Nuevo, Matanzas, Cuba.</description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-81.58061429999999,23.0347288,0 -81.5806438,23.0338476,0 -81.58040370000001,23.0338106,0 -81.5800323,23.0339513,0 -81.5797104,23.0340747,0 -81.5796326,23.0341944,0 -81.5796568,23.0344684,0 -81.57966879999999,23.0346819,0 -81.58061429999999,23.0347288,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Victoria de Girón Stadium - Matanzas, Cuba - international</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-81.5883929,23.0376434,0 -81.5887657,23.0384345,0 -81.58879659999999,23.0384229,0 -81.58881,23.0384093,0 -81.58878850000001,23.0383291,0 -81.5886222,23.037564,0 -81.58835000000001,23.0374776,0 -81.5883098,23.0374665,0 -81.58829230000001,23.0374751,0 -81.5875185,23.0380021,0 -81.5875346,23.0380297,0 -81.5883929,23.0376434,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>The Estadio Victoria de Girón is a multi-use stadium in Matanzas, Cuba. It is currently used mostly for baseball games and is the home stadium of Matanzas Cocodrilos. The stadium holds 22,000[1] and was built in 1977.[2]</description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-81.5883929,23.0376434,0 -81.5875346,23.0380297,0 -81.5875547,23.0380729,0 -81.5876875,23.0383283,0 -81.5877948,23.03854430000001,0 -81.5878659,23.0385628,0 -81.5880107,23.038606,0 -81.5881931,23.0386603,0 -81.5883084,23.0386171,0 -81.58851900000001,23.0385283,0 -81.5887657,23.0384345,0 -81.5883929,23.0376434,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio Augusto César Sandino - Santa Ciara, Cuba - International</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-79.95494480000001,22.4040023,0 -79.9554947,22.4047574,0 -79.9555117,22.4047433,0 -79.9555076,22.4047098,0 -79.9554527,22.404597,0 -79.9552394,22.4041196,0 -79.95513080000001,22.4038729,0 -79.9547834,22.403827,0 -79.95459169999999,22.4040291,0 -79.9541437,22.4044792,0 -79.95412899999999,22.4044978,0 -79.954125,22.4045176,0 -79.9541317,22.4045275,0 -79.95494480000001,22.4040023,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>Estadio Augusto César Sandino es un estadio multiusos en Santa Clara, Cuba. Es usado actualmente y desde el año 1966 por el equipo de béisbol de esa provincia Villa Clara como su estadio de local anteriormente este equipo se llamaba Azucareros (un equipo formado por las provincias de Cienfuegos, Sancti Spiritus y Villa Clara). El estadio posee una capacidad de 20 000 personas. El nombre de este estadio es en honor al revolucionario nicaragüense Augusto César Sandino.</description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-79.95494480000001,22.4040023,0 -79.9541522,22.4045094,0 -79.9541777,22.4045404,0 -79.95425280000001,22.4046495,0 -79.9543266,22.4047475,0 -79.95440840000001,22.4048591,0 -79.9544781,22.404952,0 -79.95453449999999,22.4050227,0 -79.95459750000001,22.4050426,0 -79.9546632,22.4050686,0 -79.95474230000001,22.4050897,0 -79.9548054,22.4050934,0 -79.95488450000001,22.4050946,0 -79.9549502,22.4050959,0 -79.9550079,22.4050686,0 -79.9550722,22.4050277,0 -79.95514729999999,22.4049744,0 -79.95526,22.4049086,0 -79.9553499,22.4048479,0 -79.95542759999999,22.4047946,0 -79.9554947,22.4047574,0 -79.95494480000001,22.4040023,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Estadio Cándido González - Camaguey, Cuba - international</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-77.91145969999999,21.3783539,0 -77.9118218,21.3791556,0 -77.9118419,21.3791433,0 -77.91164879999999,21.3782542,0 -77.91136849999999,21.378158,0 -77.9105303,21.3786313,0 -77.9105477,21.3786536,0 -77.91145969999999,21.3783539,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>Estadio Cándido González is a multi-use stadium in Camagüey, Cuba. It is currently used mostly for baseball games and is the home stadium of Camagüey. The stadium holds 14,000 people.</description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-77.91145969999999,21.3783539,0 -77.9105477,21.3786536,0 -77.91059869999999,21.3787523,0 -77.9106671,21.3789071,0 -77.91076630000001,21.3791182,0 -77.91083070000001,21.3792655,0 -77.9109018,21.379293,0 -77.91101980000001,21.379338,0 -77.91119279999999,21.3794041,0 -77.9112813,21.3793742,0 -77.91145830000001,21.3793005,0 -77.9116461,21.3792281,0 -77.9118218,21.3791556,0 -77.91145969999999,21.3783539,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>José Antonio Huelga Stadium - Sancti Spiritus, Cuba - International</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<description>tough shadow</description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-79.42761059999999,21.9358782,0 -79.42820209999999,21.9365636,0 -79.42822750000001,21.9365468,0 -79.4277635,21.9357245,0 -79.42775279999999,21.9357058,0 -79.42773939999999,21.9356946,0 -79.4274041,21.9356648,0 -79.4273853,21.9356648,0 -79.4273652,21.9356747,0 -79.42685419999999,21.9364149,0 -79.42687170000001,21.9364429,0 -79.42761059999999,21.9358782,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>José Antonio Huelga Stadium is a multi-use stadium in Sancti Spíritus, Cuba. It is currently used mostly for baseball games and is the home stadium of Sancti Spíritus Gallos. The stadium holds 13,000 people. Architects: Rogelio Arrieta and Eduardo Garcia.</description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-79.42761059999999,21.9358782,0 -79.42687170000001,21.9364429,0 -79.4269723,21.9365512,0 -79.4270447,21.9366295,0 -79.42713860000001,21.9367365,0 -79.4272284,21.9368385,0 -79.4272941,21.9369107,0 -79.4273585,21.9369256,0 -79.42744159999999,21.9369555,0 -79.42751269999999,21.9369741,0 -79.4275516,21.9369741,0 -79.4276334,21.9369642,0 -79.42773800000001,21.9369418,0 -79.42778629999999,21.9369057,0 -79.42785600000001,21.936851,0 -79.4279459,21.9367751,0 -79.42803979999999,21.9366942,0 -79.42811620000001,21.9366333,0 -79.42820209999999,21.9365636,0 -79.42761059999999,21.9358782,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Nguyen Van Troi Stadium</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-75.1975953,20.13713,0 -75.1970065,20.1365898,0 -75.1969904,20.1366024,0 -75.19727880000001,20.1370569,0 -75.197445,20.1373125,0 -75.19778030000001,20.1373088,0 -75.1982953,20.1365885,0 -75.1982752,20.1365671,0 -75.1975953,20.13713,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description><![CDATA[Nguyen Van Troi Stadium is a multi-use stadium in Guantánamo, Cuba. It is currently used mostly for baseball games and is the home stadium of Guantánamo Indios. The stadium holds 14,000 people.<br><br>The stadium is named after the Vietnamese communist guerrilla fighter, Nguyen Van Troi, who was executed after trying to assassinate US Secretary of State Robert S. McNamara during a visit to South Vietnam.]]></description>
+				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-75.1975953,20.13713,0 -75.1982752,20.1365671,0 -75.19811559999999,20.1364299,0 -75.19797079999999,20.1362901,0 -75.1978179,20.1361466,0 -75.1977012,20.1361453,0 -75.19748130000001,20.1361466,0 -75.1973364,20.1362801,0 -75.1971741,20.1364362,0 -75.19703060000001,20.1365671,0 -75.1970065,20.1365898,0 -75.1975953,20.13713,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
 			<name>Spring Hill College - Stan Galle Field</name>
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3585,7 +5090,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3599,7 +5104,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3617,7 +5122,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3631,7 +5136,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3649,7 +5154,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3663,7 +5168,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3681,7 +5186,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3695,7 +5200,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3713,7 +5218,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3746,7 +5251,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3758,27 +5263,27 @@
 					</outerBoundaryIs>
 				</Polygon>
 			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-75.1941557,39.944132,0 -75.1945667,39.9432847,0 -75.1945211,39.9432714,0 -75.19447289999999,39.9432554,0 -75.19439370000001,39.9432328,0 -75.1943361,39.9432184,0 -75.1942818,39.9432071,0 -75.19421199999999,39.9431979,0 -75.1941557,39.9431907,0 -75.1940967,39.943184,0 -75.19403629999999,39.9431814,0 -75.19398339999999,39.9431778,0 -75.1939378,39.9431794,0 -75.1938761,39.9431804,0 -75.1938305,39.9431835,0 -75.1937614,39.9431876,0 -75.1937071,39.9431917,0 -75.1936374,39.9431932,0 -75.1935824,39.9431958,0 -75.19352739999999,39.9432071,0 -75.19347980000001,39.9432236,0 -75.1934127,39.9432493,0 -75.1933631,39.9432729,0 -75.1933255,39.943294,0 -75.1932913,39.9433223,0 -75.1932431,39.9433536,0 -75.1932102,39.9433835,0 -75.193168,39.9434225,0 -75.1931371,39.9434601,0 -75.19311829999999,39.9434883,0 -75.1930996,39.9435233,0 -75.1930895,39.9435593,0 -75.193066,39.9436076,0 -75.1930627,39.943642,0 -75.1930593,39.9436837,0 -75.19305730000001,39.9437449,0 -75.1930627,39.9437916,0 -75.1932269,39.9438842,0 -75.1941557,39.944132,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
 		</Folder>
-		<Placemark>
-			<name>fop</name>
-			<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<tessellate>1</tessellate>
-						<coordinates>
-							-75.1941557,39.944132,0 -75.1945667,39.9432847,0 -75.1945211,39.9432714,0 -75.19447289999999,39.9432554,0 -75.19439370000001,39.9432328,0 -75.1943361,39.9432184,0 -75.1942818,39.9432071,0 -75.19421199999999,39.9431979,0 -75.1941557,39.9431907,0 -75.1940967,39.943184,0 -75.19403629999999,39.9431814,0 -75.19398339999999,39.9431778,0 -75.1939378,39.9431794,0 -75.1938761,39.9431804,0 -75.1938305,39.9431835,0 -75.1937614,39.9431876,0 -75.1937071,39.9431917,0 -75.1936374,39.9431932,0 -75.1935824,39.9431958,0 -75.19352739999999,39.9432071,0 -75.19347980000001,39.9432236,0 -75.1934127,39.9432493,0 -75.1933631,39.9432729,0 -75.1933255,39.943294,0 -75.1932913,39.9433223,0 -75.1932431,39.9433536,0 -75.1932102,39.9433835,0 -75.193168,39.9434225,0 -75.1931371,39.9434601,0 -75.19311829999999,39.9434883,0 -75.1930996,39.9435233,0 -75.1930895,39.9435593,0 -75.193066,39.9436076,0 -75.1930627,39.943642,0 -75.1930593,39.9436837,0 -75.19305730000001,39.9437449,0 -75.1930627,39.9437916,0 -75.1932269,39.9438842,0 -75.1941557,39.944132,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
 		<Folder>
 			<name>Vanderbilt - Hawkins Field - college</name>
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3792,7 +5297,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3810,7 +5315,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3824,7 +5329,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3842,7 +5347,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3856,7 +5361,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3874,7 +5379,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3889,7 +5394,7 @@
 			<Placemark>
 				<name>fop</name>
 				<description>traced from image with football setup. estimated based on google earth view from 2-2018</description>
-				<styleUrl>#poly-000000-1200-77</styleUrl>
+				<styleUrl>#poly-000000-1200-770</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3907,7 +5412,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3922,7 +5427,7 @@
 			<Placemark>
 				<name>fop</name>
 				<description>Bourne Braves</description>
-				<styleUrl>#poly-000000-1200-77</styleUrl>
+				<styleUrl>#poly-000000-1200-770</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3940,7 +5445,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3954,7 +5459,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3972,7 +5477,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3986,7 +5491,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4004,7 +5509,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4018,7 +5523,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4036,7 +5541,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4050,7 +5555,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4068,7 +5573,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4082,7 +5587,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4100,7 +5605,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4114,7 +5619,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4132,7 +5637,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4147,7 +5652,7 @@
 			<Placemark>
 				<name>fop</name>
 				<description>out of season with soccer field in outfield. check historical for temp fence</description>
-				<styleUrl>#poly-000000-1200-77</styleUrl>
+				<styleUrl>#poly-000000-1200-770</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4165,7 +5670,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4179,7 +5684,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4259,6 +5764,7 @@
 		</Folder>
 		<Folder>
 			<name>Ironwood HS</name>
+			<open>1</open>
 			<Placemark>
 				<name>foul</name>
 				<styleUrl>#poly-000000-1200-77-nodesc20</styleUrl>
@@ -4290,6 +5796,7 @@
 		</Folder>
 		<Folder>
 			<name>Oakland A&apos;s - mlb</name>
+			<open>1</open>
 			<Placemark>
 				<name>foul</name>
 				<styleUrl>#poly-000000-1200-77-nodesc20</styleUrl>
@@ -4556,7 +6063,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4573,7 +6080,7 @@
 			<name>Oriole Park at Camden Yards - mlb</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4587,7 +6094,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4604,7 +6111,7 @@
 			<name>Chicago White Sox - mlb</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4618,7 +6125,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4635,7 +6142,7 @@
 			<name>Kauffman Stadium - KC Royals - MLB</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4649,7 +6156,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4666,7 +6173,7 @@
 			<name>Dodger Stadium 2021 - mlb</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4680,7 +6187,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4698,7 +6205,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4712,7 +6219,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4730,7 +6237,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4744,7 +6251,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4796,7 +6303,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4810,7 +6317,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5853,7 +7360,7 @@
 			<Placemark>
 				<name>foul</name>
 				<description>no fence in foul outfield</description>
-				<styleUrl>#poly-000000-1200-770</styleUrl>
+				<styleUrl>#poly-000000-1200-7700</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6437,7 +7944,7 @@
 			<Placemark>
 				<name>fop</name>
 				<description>plot done from picture without grass. pic looks like field was freshly graded and ready to seed</description>
-				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<styleUrl>#poly-000000-1200-7750</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6517,7 +8024,7 @@
 			<Placemark>
 				<name>foul</name>
 				<description>field under constrtuction at the time of the plot</description>
-				<styleUrl>#poly-000000-1200-775</styleUrl>
+				<styleUrl>#poly-000000-1200-7750</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7013,7 +8520,7 @@
 			<name>Auburn Hills Avondale HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7027,7 +8534,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7044,7 +8551,7 @@
 			<name>Auburn Hills Avondale JV/16u - youth</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7058,7 +8565,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7075,7 +8582,7 @@
 			<name>Clarkston HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7089,7 +8596,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7106,7 +8613,7 @@
 			<name>Clarkston HS - practice</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7138,7 +8645,7 @@
 			<name>Flint Kearsley HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7152,7 +8659,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7169,7 +8676,7 @@
 			<name>Flint Kearsley HS - Field 2</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7183,7 +8690,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7200,7 +8707,7 @@
 			<name>Davison HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7214,7 +8721,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7231,7 +8738,7 @@
 			<name>Davison HS - JV Field</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7245,7 +8752,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7262,7 +8769,7 @@
 			<name>Grand Rapids Union HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7294,7 +8801,7 @@
 			<name>East Kentwood HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7308,7 +8815,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc52</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8567,7 +10074,7 @@
 			<name>Manton HS</name>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8581,7 +10088,7 @@
 			</Placemark>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8598,7 +10105,7 @@
 			<name>Manistee HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8612,7 +10119,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8630,7 +10137,7 @@
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8644,7 +10151,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8661,7 +10168,7 @@
 			<name>Galesburg-Augusta HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8675,7 +10182,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8692,7 +10199,7 @@
 			<name>Napoleon HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8706,7 +10213,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8723,7 +10230,7 @@
 			<name>Ida HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8737,7 +10244,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8754,7 +10261,7 @@
 			<name>Otisville LakeVille Memorial HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8768,7 +10275,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8785,7 +10292,7 @@
 			<name>St Joseph Michigan Lutheran HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8799,7 +10306,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8816,7 +10323,7 @@
 			<name>Manistique Little League - youth</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8830,7 +10337,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8847,7 +10354,7 @@
 			<name>Pickford HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -8861,7 +10368,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc22</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc220</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -9513,7 +11020,7 @@
 			<Placemark>
 				<name>fop</name>
 				<description>no fence - natural boundry</description>
-				<styleUrl>#poly-000000-1200-774</styleUrl>
+				<styleUrl>#poly-000000-1200-7740</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -16532,7 +18039,7 @@
 			<Placemark>
 				<name>FOP</name>
 				<description>Muni Fielod but also the home field of St Joseph Our Lady of the Lake Catholic HS</description>
-				<styleUrl>#poly-000000-1200-7700</styleUrl>
+				<styleUrl>#poly-000000-1200-77000</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -18073,7 +19580,7 @@ Grand Rapids, MI 49546</description>
 			<name>Hancock -1 youth</name>
 			<Placemark>
 				<name>Foul - y</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -18087,7 +19594,7 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 			<Placemark>
 				<name>FOP - y</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -18104,7 +19611,7 @@ Grand Rapids, MI 49546</description>
 			<name>Hancock -2 - youth</name>
 			<Placemark>
 				<name>Foul - y2</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -18118,7 +19625,7 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 			<Placemark>
 				<name>FOP - y2</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -18167,7 +19674,7 @@ Grand Rapids, MI 49546</description>
 			<name>Hancock HS</name>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -18181,7 +19688,7 @@ Grand Rapids, MI 49546</description>
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -18462,7 +19969,7 @@ Little League 2 - youth</name>
 			<name>Hillman HS</name>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -18476,7 +19983,7 @@ Little League 2 - youth</name>
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -19748,7 +21255,7 @@ Little League 2 - youth</name>
 			<name>L&apos;Anse HS</name>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -19762,7 +21269,7 @@ Little League 2 - youth</name>
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -20436,7 +21943,7 @@ Little League 2 - youth</name>
 			<name>Mackinaw City - youth</name>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -20450,7 +21957,7 @@ Little League 2 - youth</name>
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -20468,7 +21975,7 @@ Little League 2 - youth</name>
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -20482,7 +21989,7 @@ Little League 2 - youth</name>
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -20499,7 +22006,7 @@ Little League 2 - youth</name>
 			<name>Mackinaw City HS - 2?</name>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -20513,7 +22020,7 @@ Little League 2 - youth</name>
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -21886,7 +23393,7 @@ Little League 2 - youth</name>
 			<name>Okemos HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc001</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc0010</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -21900,7 +23407,7 @@ Little League 2 - youth</name>
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc001</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc0010</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -22552,7 +24059,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 			<name>Posen HS</name>
 			<Placemark>
 				<name>Foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -22566,7 +24073,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 			</Placemark>
 			<Placemark>
 				<name>FOP</name>
-				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc600</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -23823,7 +25330,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc001</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -25082,7 +26589,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc00</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc001</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>

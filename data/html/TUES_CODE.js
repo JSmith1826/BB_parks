@@ -182,7 +182,7 @@ function displayFieldInfo(closestField) {
 
   // Fence Distance
   const fenceDistance = document.createElement("p");
-  fenceDistance.textContent = `Fence Distance: MIN ${closestField.min_distance} | MAX ${closestField.max_distance} | AVG ${closestField.avg_distance.toFixed(0)}`;
+  fenceDistance.textContent = `Fence Distance: MIN ${closestField.min_distance} | MAX ${closestField.max_distance} | AVG ${closestField.avg_distance}`;
   fieldFacts.append(fenceDistance);
 
   // Fair Territory
@@ -219,18 +219,7 @@ function displayFieldInfo(closestField) {
     // console.log('Fair to Foul Ratio: ', fairFoulRatio);
 
 }
-
-
-
-
-
-
-
-
-
-
-
-///////// FUNCTION TO MEASURE DISTANCE AFTER MOUSE CLICK /////////
+//////// FUNCTION TO MEASURE DISTANCE AFTER MOUSE CLICK /////////
 //// GOAL HANDLE all click events (inside and outside of the polygons and measure distance 
 //// all in one function block)
 //// Don't know if draw line should be in this function or not
@@ -410,3 +399,24 @@ function drawLineAndCalculateDistance(start, end, map, fieldData, fenceDistance 
     return null;
   }
   
+
+//   ////// TEMP LAYOUT
+// <p>'Click on the map and explore the fields'</p> // default empty message on load
+// <p>'Double Click to Zoom'</p>// default empty message on load
+
+
+// // AFTER CLICK RETURNS CLOSEST FIELD
+// // POPULATE DIV WITH FIELD INFO
+
+//   <h1>{park_name} - {field_level}</h1>
+//   <h2>'Home of' {school_name}</h2> // Only if school_name exists, otherwise blank
+
+//   <h3>'Field Dimensions'</h3> //
+//   <h4>'Total Area:'</h4>
+//   <h3>{total_area(need to calc) ' acres  |  '{fairFoulRatio}' : 1 | Fair : Foul '</h3>
+//   <h4>'Home Run Distance'</h4>
+//   <h3> AVG | MIN | MAX
+//   {home_run_distance_avg} | {home_run_distance_min} | {home_run_distance_max}
+//   </h3>
+
+
