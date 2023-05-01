@@ -58,15 +58,15 @@ function displayInfo(field) {
     container.appendChild(clickDistance);
 }
 
-// Replace this example JSON data with your actual data
-const field = {
-    park_name: "Example Park",
-    school_name: "Example School",
-    min_distance: 300,
-    max_distance: 400,
-    avg_distance: 350,
-    fop_area_sqft: 50000,
-    foul_area_sqft: 10000
-};
+// // Replace this example JSON data with your actual data
+// const field = {
+//     park_name: "Example Park",
+//     school_name: "Example School",
+//     min_distance: 300,
+//     max_distance: 400,
+//     avg_distance: 350,
+//     fop_area_sqft: 50000,
+//     foul_area_sqft: 10000
+// };
 
 displayInfo(field);
