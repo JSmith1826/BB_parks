@@ -212,20 +212,21 @@ function checkFence(closestField, clickLocation, map, polygons) {
     let fenceDist = null;
   
     for (let i = 0; i < polygons.length; i++) {
-      const polygon = polygons[i];
-      if (!google.maps.geometry.poly.containsLocation(clickLocation, polygon)) { // IF THE CLICK LOCATION IS OUTSIDE THE POLYGON
-        const homePlateLatLng = closestField.home_plate;
-        const homePlatePoint = new google.maps.LatLng(homePlateLatLng[1], homePlateLatLng[0]);
-        const polygonCoords = polygon.getPath().getArray();
-        fenceDist = findFenceDistance(clickLocation, homePlatePoint, polygonCoords);
-        if (fenceDist !== null) { // IF THE FENCE DISTANCE IS NOT NULL
-          console.log("Fence distance:", fenceDist.toFixed(0) + " ft"); // PRINT THE FENCE DISTANCE TO THE CONSOLE
-          
+        const polygon = polygons[i];
+        if (!google.maps.geometry.poly.containsLocation(clickLocation, polygon)) { // IF THE CLICK LOCATION IS OUTSIDE THE POLYGON
+            const homePlateLatLng = closestField.home_plate;
+            const homePlatePoint = new google.maps.LatLng(homePlateLatLng[1], homePlateLatLng[0]);
+            const polygonCoords = polygon.getPath().getArray();
+            fenceDist = findFenceDistance(clickLocation, homePlatePoint, polygonCoords);
+            if (fenceDist !== null) { // IF THE FENCE DISTANCE IS NOT NULL
+                console.log("Fence distance:", fenceDist.toFixed(0) + " ft"); // PRINT THE FENCE DISTANCE TO THE CONSOLE
+                break; // Break the loop as we found a valid fence distance
+            }
         }
-      }
     }
     return fenceDist;
-  }
+}
+
   
   
   
@@ -459,8 +460,6 @@ function checkFence(closestField, clickLocation, map, polygons) {
     return;
 }
 
-/// Create a function that dynamically displays the distance from home plate to the click location 
-/// and the fence distance from home plate if the click is outside the fence
 function distanceDisplay(distanceFeet, fenceDist) {
     console.log("Creating distance display...");
     // check the values of the distanceFeet and fenceDist variables
@@ -473,11 +472,16 @@ function distanceDisplay(distanceFeet, fenceDist) {
     // set the text of the distanceContainer element
     // if fenceDist is null display '---' for the fence distance
     if (fenceDist === null) {
-        distanceContainer.textContent = `Distance: ${distanceFeet} ft | Fence Distance: --- ft`;}
+        distanceContainer.textContent = `Distance: ${distanceFeet} ft | Fence Distance: --- ft`;
+    } else {
+        // if fenceDist is not null, display the fence distance value
+        distanceContainer.textContent = `Distance: ${distanceFeet.toFixed(0)} ft | Fence Distance: ${fenceDist.toFixed(0)} ft`;
+    }
 
     // close the function
     return distanceContainer;
 }
+
 
     
 
