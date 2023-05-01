@@ -120,57 +120,57 @@ function createPolygon(coordinates, fillColor, map) {
   }
   
 
-/////////////////////// HOME PLATE MARKER //////////////////////////
+// /////////////////////// HOME PLATE MARKER //////////////////////////
 
-//////////// Assign colors to different levels
-const levelColor = {
-  'high_school': "#FF0000",
-  'college': "#FFFF00",
-  'pro': "#00FF00",
-  'mlb': "#0000FF",
-  'youth': "#FF00FF",
-  'muni': "#00FFFF",
+// //////////// Assign colors to different levels
+// const levelColor = {
+//   'high_school': "#FF0000",
+//   'college': "#FFFF00",
+//   'pro': "#00FF00",
+//   'mlb': "#0000FF",
+//   'youth': "#FF00FF",
+//   'muni': "#00FFFF",
 };
 
-function createMarker(homePlate, fieldName, fieldLevel, bearing, map) {
-  // Calculate simplified bearing
-  const simplifiedBearing = Math.round(bearing / 90) * 90;
+// function createMarker(homePlate, fieldName, fieldLevel, bearing, map) {
+//   // Calculate simplified bearing
+//   const simplifiedBearing = Math.round(bearing / 90) * 90;
 
-  const marker = new google.maps.Marker({
-    position: new google.maps.LatLng(homePlate[1], homePlate[0]),
-    map: map,
-    icon: {
-      url: "https://github.com/JSmith1826/BB_parks/blob/main/data/images/icons/baseball/diamond_2.png?raw=true",
-      scaledSize: new google.maps.Size(40, 40),
-    },
-    title: fieldName,
-  });
+//   const marker = new google.maps.Marker({
+//     position: new google.maps.LatLng(homePlate[1], homePlate[0]),
+//     map: map,
+//     icon: {
+//       url: "https://github.com/JSmith1826/BB_parks/blob/main/data/images/icons/baseball/diamond_2.png?raw=true",
+//       scaledSize: new google.maps.Size(40, 40),
+//     },
+//     title: fieldName,
+//   });
 
-  const infowindow = new google.maps.InfoWindow({
-    content: fieldName,
-  });
-  marker.addListener("mouseover", () => {
-    infowindow.open(map, marker);
-  });
-  marker.addListener("mouseout", () => {
-    infowindow.close();
-  });
-  marker.addListener('dblclick', () => {
-    const newCenter = marker.getPosition();
-    const newZoom = 18;
-    const duration = 500;
+//   const infowindow = new google.maps.InfoWindow({
+//     content: fieldName,
+//   });
+//   marker.addListener("mouseover", () => {
+//     infowindow.open(map, marker);
+//   });
+//   marker.addListener("mouseout", () => {
+//     infowindow.close();
+//   });
+//   marker.addListener('dblclick', () => {
+//     const newCenter = marker.getPosition();
+//     const newZoom = 18;
+//     const duration = 500;
 
-    map.setHeading(simplifiedBearing);
-    map.panTo(newCenter);
-    map.setZoom(newZoom);
+//     map.setHeading(simplifiedBearing);
+//     map.panTo(newCenter);
+//     map.setZoom(newZoom);
 
-    console.log("Current heading:", map.getHeading());
-    console.log('registered double click');
-    console.log('bearing: ', bearing);
-    console.log("Simplified heading:", simplifiedBearing);
-    console.log("Current heading:", map.getHeading());
-  });
-}
+//     console.log("Current heading:", map.getHeading());
+//     console.log('registered double click');
+//     console.log('bearing: ', bearing);
+//     console.log("Simplified heading:", simplifiedBearing);
+//     console.log("Current heading:", map.getHeading());
+//   });
+// }
 /////////////////////////////
 async function handleMapClick(event, map) {
   console.log("Handling map click...");
