@@ -382,7 +382,7 @@ function checkFence(closestField, clickLocation, map, polygons) {
           
             // create the info window
             const infowindow = new google.maps.InfoWindow({
-              content: `<h4>${park_name} - ${level}<h4><p>${field_cardinal_direction}</p>`,
+              content: `${park_name} - ${level}<p>${field_cardinal_direction}</p>`,
             });
 
             // Define the look of the marker

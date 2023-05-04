@@ -13,6 +13,7 @@
   --ebony: #4D5D42;
   --reseda-green: #627454;
   --reseda-green-2: #748667;
+  --black: #000000;
 }
 
 #infoContainer {
@@ -31,6 +32,14 @@ body {
   color: var(--white); /* Main text color */
   
 }
+/* Popups */
+.popup {
+
+  font-family: 'Oswald', sans-serif; /* Change this font to one of the other vintage fonts for the main text */
+  color: var(--reseda-green); /* Main text color */
+  
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Bevan', sans-serif; /* Change this font to one of the other vintage fonts for headings */

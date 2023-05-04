@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Foul.kml</name>
+	<Style id="poly-000000-1200-77-nodesc-highlight800">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal800">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-000000-1200-77-nodesc800">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal800</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight800</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Foul</name>
+		<styleUrl>#poly-000000-1200-77-nodesc800</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						-85.2806507,44.8649571,0 -85.2806587,44.8641891,0 -85.28046929999999,44.8644361,0 -85.28044509999999,44.864554,0 -85.2805068,44.864746,0 -85.2804907,44.8648106,0 -85.2805041,44.8648943,0 -85.28048800000001,44.8649361,0 -85.28054969999999,44.8650426,0 -85.2806034,44.8650578,0 -85.280716,44.8650635,0 -85.2807241,44.8650445,0 -85.2807911,44.8650483,0 -85.28078309999999,44.8650768,0 -85.2811787,44.8651129,0 -85.2811787,44.8650768,0 -85.28125110000001,44.8650502,0 -85.28132890000001,44.8650369,0 -85.2814389,44.8650559,0 -85.2815274,44.8650806,0 -85.2815784,44.8651034,0 -85.28162399999999,44.8651148,0 -85.281691,44.8651452,0 -85.28175,44.8651566,0 -85.28182820000001,44.865036,0 -85.2806507,44.8649571,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
