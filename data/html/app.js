@@ -258,8 +258,7 @@ function checkFence(closestField, clickLocation, map, polygons) {
     }
   
  
-  
-  
+  /// Find the intersection points to measure the fence distance  
   const epsilon = 1e-9;
   
   function findLineIntersection(p1, p2, p3, p4) {
@@ -344,27 +343,6 @@ function checkFence(closestField, clickLocation, map, polygons) {
           return;
       });
         
-
-
-          //////// OLD CODE ////////
-        //     console.log("Polygon click:", event.latLng); // log the event to the console
-
-        //     const closestField = closestFieldFunction(event.latLng, fetchedData);
-    
-        //     const distanceFeet = drawLine(closestField, event.latLng, map);
-            
-        //     // pass the click location to the drawLine function
-        //     drawLine(closestFieldFunction(event.latLng, fetchedData), event.latLng, map); // send closestField, click location, and map to drawLine function
-            
-        //     // pass the closestField to the fieldInfo function
-        //     fieldInfo(closestFieldFunction(event.latLng, fetchedData), map); // send closestField and map to fieldInfo function
-
-        //     // pass the click location to the clickMarker function
-        //     clickMarker(event.latLng, map); // send click location and map to makeMarker function
-
-        //     return;
-        // });
-      
         polygons.push(polygon); // add polygon we created to polygons array (created on top in global variables)
       
         return polygon; // return the polygon we created
