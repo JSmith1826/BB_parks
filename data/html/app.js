@@ -284,8 +284,9 @@ function createFenceMarker(fencePoint, map) {
     position: fencePoint,
     map: map,
     icon: {
-      url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png', // Customize the icon if needed
-      scaledSize: new google.maps.Size(16, 16)
+      url: 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images/icons/baseball/firework.png', // Customize the icon if needed
+      scaledSize: new google.maps.Size(26, 26),
+      fillColor: "#FFFF00",
     }
   });
 
