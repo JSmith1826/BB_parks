@@ -350,65 +350,68 @@ function checkFence(closestField, clickLocation, map, polygons) {
       }
 
         // Create the markers on the map
-      // input data - home_plate_coords, park_name, level, cardinal_direction, map from renderPolygons()
-      function createMarker(homePlate, park_name, level, field_cardinal_direction, map) {
-        const marker = new google.maps.Marker({
-          position: new google.maps.LatLng(homePlate[1], homePlate[0]),
-          map: map,
-          title: park_name,
-        });
+                // Create the markers on the map
+        // input data - home_plate_coords, park_name, level, cardinal_direction, map from renderPolygons()
+        function createMarker(homePlate, park_name, level, field_cardinal_direction, map) {
+          const marker = new google.maps.Marker({
+            position: new google.maps.LatLng(homePlate[1], homePlate[0]),
+            map: map,
+            title: park_name,
+          });
+        
+          // create the info window
+          const infowindow = new google.maps.InfoWindow({
+            content: `<h4>${park_name} - ${level}<h4><p>${field_cardinal_direction}</p>`,
+          });
 
-        // create the info window
-        const infowindow = new google.maps.InfoWindow({
-          content: `${park_name} - ${level}<p>${field_cardinal_direction}</p>`,
-        });
+          // Define the look of the marker
+          //goal: change the marker icon based on the level of the field
+          // pathes to the icons
+          const iconPath = {
+              'Youth': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images/icons/baseball/youth.png',
+              'High School': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/high_school.png',
+              'College': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/college.png',
+              'Professional': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/pro.png',
+              'Major League': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/mlb.png',
+              'State / County / Municipal': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/muni.png',
+              'International': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/muni.png',
+              'Unknown': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/other.png',
+          };
 
-        // base url for icons
-        const icon_url = 'https://github.com/JSmith1826/BB_parks/tree/main/data/images/icons/base/';
-        // create the icon path object
-        const iconPath = {
-          'youth': icon_url + 'youth.png',
-          'high school': icon_url + 'high_school.png',
-          'college': icon_url + 'college.png',
-          'pro': icon_url + 'pro.png',
-          'other': icon_url + 'other.png',
-          'muni': icon_url + 'muni.png',
-          'mlb': icon_url + 'mlb.png',
-          'international': icon_url + 'international.png',
-          'unknown': icon_url + 'other.png',
-        };
+          // set the icon based on the level of the field and scale it
+          marker.setIcon({
+              url: iconPath[level],
+              scaledSize: new google.maps.Size(30, 30),
+          });
 
-        // set the icon based on the level of the field and scale it
-        marker.setIcon({
-          url: iconPath[level],
-          scaledSize: new google.maps.Size(30, 30),
-        });
 
-        // Control mouse behavior
-        // Add a click event listener to the marker
-        marker.addListener("click", () => {
-          infowindow.open(map, marker);
-        });
+              
+        
+           // Control mouse behavior
+          // Add a click event listener to the marker
+          marker.addListener("click", () => {
+            infowindow.open(map, marker);
+          });
 
-        // add event listener for mouseover on the marker
-        marker.addListener("mouseover", () => {
-          infowindow.open(map, marker); // open the info window
-        });
+          // add event listenr for a mouseover on the marker
+          marker.addListener("mouseover", () => {
+              infowindow.open(map, marker); // open the info window
+            });
 
-        // add event listener for mouseout on the marker
-        marker.addListener("mouseout", () => {
-          infowindow.close(); // close the info window
-        });
+          // add event listener for a mouseout on the marker
+            marker.addListener("mouseout", () => {
+              infowindow.close(); // close the info window
+            });
 
-        // Add a listener for double click on the marker
-        // Goal: center map on marker and zoom
-        marker.addListener("dblclick", () => {
-          map.setCenter(marker.getPosition()); // center map on marker
-          map.setZoom(19); // zoom in to 19
-        });
+          // Add a listener for double click on the marker
+          // Goal: center map on marker and zoom
+          marker.addListener("dblclick", () => {
+              map.setCenter(marker.getPosition()); // center map on marker
+              map.setZoom(19); // zoom in to 19
+            });
 
-        return marker;
-      }
+            return marker;
+        }
 
 
   function wrapDigits(value) {
@@ -508,4 +511,35 @@ function distanceDisplay(distanceFeet, fenceDist) {
     return distanceContainer;
 }
 
-        
+  /////////// FILTER FUNCTIONS ///////////
+
+  function filterMarkers(level) {
+    // Hide all markers
+    for (var key in markers) {
+      for (var i = 0; i < markers[key].length; i++) {
+        markers[key][i].setMap(null);
+      }
+    }
+  
+    // Show only the markers with the selected level
+    if (markers[level]) {
+      for (var i = 0; i < markers[level].length; i++) {
+        markers[level][i].setMap(map);
+      }
+    }
+  }
+
+  function applyFilter(level) {
+    if (level === "") {
+      // Show all markers
+      for (var key in markers) {
+        for (var i = 0; i < markers[key].length; i++) {
+          markers[key][i].setMap(map);
+        }
+      }
+    } else {
+      // Show markers based on the selected level
+      filterMarkers(level);
+    }
+  }
+  
