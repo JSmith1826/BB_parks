@@ -680,3 +680,12 @@ DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
 DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
 DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
 INFO:root:Processed image: stadium.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 768
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 894 255
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 1161 11511
+INFO:root:Processed image: firework.png

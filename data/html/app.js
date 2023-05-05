@@ -45,17 +45,28 @@ async function initMap() {
     // Create the map object by calling the Google Maps API and passing in the map div and map options
     const map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
+
+
     // call renderPolygons function and pass in full data and map
     renderPolygons(data, map); 
     // Create a listener on the map to detect a click and run the handleMapClick function
     map.addListener("click", async (event) => {
         await MapClickHandler(event, data, map, polygons);
     });
+        // Initialize the search box
+        initSearchBox(map);
   }
   
     // Wait for the DOM to load before running the initMap function
   // DOM is the html document
   document.addEventListener("DOMContentLoaded", initMap);
+
+/////////////////////////////// TEST CODE ////////////////////////////
+
+
+  ////////////////////////////////////////////////////////
+  ///////////////////END TEST CODE //////////////////////
+  
 
 
 
@@ -107,7 +118,34 @@ async function initMap() {
 
     }
 
-        
+////////////////////////////////////// NEW FUNCTION TO ADD SEARCH FUNCTION//////////////////
+// This function should be called in your initMap() function
+function initSearchBox(map) {
+  // Create the search box and link it to the UI element.
+  const input = document.getElementById("search-input");
+  const searchBox = new google.maps.places.SearchBox(input);
+
+  // Bias the SearchBox results towards the current map's viewport.
+  map.addListener("bounds_changed", () => {
+    searchBox.setBounds(map.getBounds());
+  });
+
+  // Listen for the event fired when the user selects a prediction and retrieve
+  // more details for that place.
+  searchBox.addListener("places_changed", () => {
+    const places = searchBox.getPlaces();
+
+    if (places.length === 0) {
+      return;
+    }
+
+    // Pan the map to the selected location
+    const location = places[0].geometry.location;
+    map.panTo(location);
+  });
+}
+
+
         
 
     // Create the function to find the closest field to the click location
@@ -149,7 +187,8 @@ async function initMap() {
                 currentLine.setMap(null);
 
             }
-
+            // Call function to clear any previous fence markers
+            clearFenceMarkers();
             
             // create the line
             const line = new google.maps.Polyline({
@@ -261,11 +300,12 @@ function findFenceDistance(p1, p2, polygonCoords, map) {
     if (intersectionPoint) {
       intersectionPoints.push(intersectionPoint);
 
-      // Pass the intersection point to a function to create a marker at that point
-      createFenceMarker(intersectionPoint, map);
+
     }
 
     if (intersectionPoints.length === 2) {
+            // Pass the intersection point to a function to create a marker at that point
+            createFenceMarker(intersectionPoint, map);
       const fenceDist_meters = google.maps.geometry.spherical.computeDistanceBetween(
         intersectionPoints[0],
         intersectionPoints[1]
@@ -286,7 +326,7 @@ function createFenceMarker(fencePoint, map) {
     icon: {
       url: 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images/icons/baseball/firework.png', // Customize the icon if needed
       scaledSize: new google.maps.Size(26, 26),
-      fillColor: "#FFFF00",
+      fillColor: "#FFFF00", // Does not work with custom icons from url. need to be svg symbol
     }
   });
 
@@ -404,12 +444,19 @@ function clearFenceMarkers() {
             position: new google.maps.LatLng(homePlate[1], homePlate[0]),
             map: map,
             title: park_name,
+            level: level,
           });
         
           // create the info window
+          // and set content
           const infowindow = new google.maps.InfoWindow({
-            content: `<h4>${park_name} - ${level}<h4><p>${field_cardinal_direction}</p>`,
+            content: `<div class="custom-infoTitle">${park_name}</div> 
+                        <div class="custom-infowindow">
+                        
+                        Field Class: ${level}<br>                         
+                      </div>`,
           });
+
 
           // Define the look of the marker
           //goal: change the marker icon based on the level of the field
@@ -482,7 +529,7 @@ function clearFenceMarkers() {
 
         // Field name and level as a header
         const fieldName = document.createElement("h2");
-        fieldName.innerHTML = `${closestField.park_name} - ${closestField.level}`;
+        fieldName.innerHTML = `${closestField.park_name}`;
         
         fieldInfo.appendChild(fieldName);
 
@@ -491,9 +538,18 @@ function clearFenceMarkers() {
         // fieldCardinalDirection.innerHTML = `${closestField.field_cardinal_direction}`;
         // fieldInfo.appendChild(fieldCardinalDirection);
 
+        // Level of the field
+        const fieldLevel = document.createElement("p");
+        fieldLevel.innerHTML = `Field Class: ${closestField.level}`;
+        fieldInfo.appendChild(fieldLevel);
+
+        // Home Team Information
+        const homeTeamInfo = document.createElement("p");
+        homeTeamInfo.innerHTML = `Home Team: ${closestField.home_team}`;
+
         // Fence Information
         const fenceInfo = document.createElement("p");
-        fenceInfo.innerHTML = `Home Run Distance<br>`;
+        fenceInfo.innerHTML = `Fence Distance<br>`;
         fenceInfo.appendChild(wrapDigits(closestField.min_distance));
         fenceInfo.innerHTML += ` MIN<number> | </number> `;
         fenceInfo.appendChild(wrapDigits(closestField.max_distance));

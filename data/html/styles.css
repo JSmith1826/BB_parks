@@ -24,6 +24,19 @@
 }
 
 
+/* Add the following CSS styles to your styles.css file */
+
+#search-input {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 5; /* To make sure the search bar is above the map */
+}
 
 /* Typography */
 body {
@@ -33,12 +46,21 @@ body {
   
 }
 /* Popups */
-.popup {
-
-  font-family: 'Oswald', sans-serif; /* Change this font to one of the other vintage fonts for the main text */
-  color: var(--reseda-green); /* Main text color */
-  
+/* style.css */
+.custom-infoTitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  align: center;
+  color: #333;
+  /* Add more styling properties as needed */
 }
+.custom-infowindow {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  color: #333;
+  /* Add more styling properties as needed */
+}
+
 
 
 h1, h2, h3, h4, h5, h6 {
