@@ -183,7 +183,15 @@ async function initMap() {
         // output - a marker on the map at the location of the click
         function clickMarker(clickLocation, map) {
             console.log("Making marker...");
-            // log distance of line
+            // Add a custom image to be used as the marker
+            const customIconUrl = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images/icons/baseball/ball.png';
+
+            // Create the custom icon with scaling
+            const customIcon = {
+              url: customIconUrl,
+              scaledSize: new google.maps.Size(22, 22) // Scale the icon to 32x32 pixels
+            };
+
          
 
             
@@ -191,6 +199,7 @@ async function initMap() {
             const marker = new google.maps.Marker({
                 position: clickLocation, // set the position to the click location
                 map: map, // set the map
+                icon: customIcon // Set the custom icon
             });
             // clear the marker once an new one is created
             if (currentMarker) {
