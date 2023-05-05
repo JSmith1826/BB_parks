@@ -1,0 +1,608 @@
+INFO:root:Processed image: ball.jpg
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+INFO:root:Processed image: infield.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 41 27
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 80 3732
+INFO:root:Processed image: infield_bold.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+INFO:root:Processed image: infield_lined.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+INFO:root:Processed image: plate_empty.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+INFO:root:Processed image: plate_full.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+INFO:root:Processed image: stadium.png
+INFO:root:Processed image: ball.jpg
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+INFO:root:Processed image: infield.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+INFO:root:Processed image: infield_lined.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+INFO:root:Processed image: plate_empty.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+INFO:root:Processed image: plate_full.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+INFO:root:Processed image: stadium.png
+ERROR:root:Error processing image: ball.jpg
+name 'webcolors' is not defined
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+ERROR:root:Error processing image: infield.png
+name 'webcolors' is not defined
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+ERROR:root:Error processing image: infield_lined.png
+name 'webcolors' is not defined
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+ERROR:root:Error processing image: plate_empty.png
+name 'webcolors' is not defined
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+ERROR:root:Error processing image: plate_full.png
+name 'webcolors' is not defined
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+ERROR:root:Error processing image: stadium.png
+name 'webcolors' is not defined
+ERROR:root:Error processing image: ball.jpg
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+ERROR:root:Error processing image: infield.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+ERROR:root:Error processing image: infield_lined.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+ERROR:root:Error processing image: plate_empty.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+ERROR:root:Error processing image: plate_full.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+ERROR:root:Error processing image: stadium.png
+"light" is not defined as a named color in css3
+ERROR:root:Error processing image: ball.jpg
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+ERROR:root:Error processing image: infield.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+ERROR:root:Error processing image: infield_lined.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+ERROR:root:Error processing image: plate_empty.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+ERROR:root:Error processing image: plate_full.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+ERROR:root:Error processing image: stadium.png
+"light" is not defined as a named color in css3
+ERROR:root:Error processing image: ball.jpg
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+ERROR:root:Error processing image: infield.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+ERROR:root:Error processing image: infield_lined.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+ERROR:root:Error processing image: plate_empty.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+ERROR:root:Error processing image: plate_full.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+ERROR:root:Error processing image: stadium.png
+"light" is not defined as a named color in css3
+ERROR:root:Error processing image: ball.jpg
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+ERROR:root:Error processing image: infield.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+ERROR:root:Error processing image: infield_lined.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+ERROR:root:Error processing image: plate_empty.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+ERROR:root:Error processing image: plate_full.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+ERROR:root:Error processing image: stadium.png
+"light" is not defined as a named color in css3
+ERROR:root:Error processing image: ball.jpg
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+ERROR:root:Error processing image: infield.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+ERROR:root:Error processing image: infield_lined.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+ERROR:root:Error processing image: plate_empty.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+ERROR:root:Error processing image: plate_full.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+ERROR:root:Error processing image: stadium.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+ERROR:root:Error processing image: infield.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+ERROR:root:Error processing image: infield2.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+ERROR:root:Error processing image: plate_empty.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+ERROR:root:Error processing image: plate_full.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+ERROR:root:Error processing image: stadium.png
+"light" is not defined as a named color in css3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+INFO:root:Processed image: infield.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+INFO:root:Processed image: infield2.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+INFO:root:Processed image: plate_empty.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+INFO:root:Processed image: plate_full.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+INFO:root:Processed image: stadium.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+INFO:root:Processed image: infield.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+INFO:root:Processed image: infield2.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+INFO:root:Processed image: plate_empty.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+INFO:root:Processed image: plate_full.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+INFO:root:Processed image: stadium.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+INFO:root:Processed image: infield.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+INFO:root:Processed image: infield2.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+INFO:root:Processed image: plate_empty.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+INFO:root:Processed image: plate_full.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+INFO:root:Processed image: stadium.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+INFO:root:Processed image: infield.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+INFO:root:Processed image: infield2.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+INFO:root:Processed image: plate_empty.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+INFO:root:Processed image: plate_full.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+INFO:root:Processed image: stadium.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+INFO:root:Processed image: infield.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+INFO:root:Processed image: infield2.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+INFO:root:Processed image: plate_empty.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+INFO:root:Processed image: plate_full.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+INFO:root:Processed image: stadium.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+INFO:root:Processed image: infield.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+INFO:root:Processed image: infield2.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+INFO:root:Processed image: plate_empty.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+INFO:root:Processed image: plate_full.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+INFO:root:Processed image: stadium.png

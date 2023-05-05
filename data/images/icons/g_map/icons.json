@@ -1,0 +1,37 @@
+{
+    "infield": {
+        "red": "data/images/icons/base\\TEMP\\infield_red.png",
+        "blue": "data/images/icons/base\\TEMP\\infield_blue.png",
+        "black": "data/images/icons/base\\TEMP\\infield_black.png",
+        "light": "data/images/icons/base\\TEMP\\infield_light.png",
+        "lt_blue": "data/images/icons/base\\TEMP\\infield_lt_blue.png"
+    },
+    "infield2": {
+        "red": "data/images/icons/base\\TEMP\\infield2_red.png",
+        "blue": "data/images/icons/base\\TEMP\\infield2_blue.png",
+        "black": "data/images/icons/base\\TEMP\\infield2_black.png",
+        "light": "data/images/icons/base\\TEMP\\infield2_light.png",
+        "lt_blue": "data/images/icons/base\\TEMP\\infield2_lt_blue.png"
+    },
+    "plate_empty": {
+        "red": "data/images/icons/base\\TEMP\\plate_empty_red.png",
+        "blue": "data/images/icons/base\\TEMP\\plate_empty_blue.png",
+        "black": "data/images/icons/base\\TEMP\\plate_empty_black.png",
+        "light": "data/images/icons/base\\TEMP\\plate_empty_light.png",
+        "lt_blue": "data/images/icons/base\\TEMP\\plate_empty_lt_blue.png"
+    },
+    "plate_full": {
+        "red": "data/images/icons/base\\TEMP\\plate_full_red.png",
+        "blue": "data/images/icons/base\\TEMP\\plate_full_blue.png",
+        "black": "data/images/icons/base\\TEMP\\plate_full_black.png",
+        "light": "data/images/icons/base\\TEMP\\plate_full_light.png",
+        "lt_blue": "data/images/icons/base\\TEMP\\plate_full_lt_blue.png"
+    },
+    "stadium": {
+        "red": "data/images/icons/base\\TEMP\\stadium_red.png",
+        "blue": "data/images/icons/base\\TEMP\\stadium_blue.png",
+        "black": "data/images/icons/base\\TEMP\\stadium_black.png",
+        "light": "data/images/icons/base\\TEMP\\stadium_light.png",
+        "lt_blue": "data/images/icons/base\\TEMP\\stadium_lt_blue.png"
+    }
+}
