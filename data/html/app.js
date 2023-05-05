@@ -5,6 +5,7 @@ let fetchedData;
 let polygons = [];
 let currentLine = null;
 let currentMarker = null;
+let fenceMarkers = [];
 // const epsilon = 1e-9; // set epsilon to 1e-9 for use in the fenceDistance and intersectionPoint functions
 
 //fetch data from json file
@@ -87,10 +88,12 @@ async function initMap() {
         // Call the checkFence function and store the returned value
         const fenceDist = checkFence(closestField, event.latLng, map, polygons);
 
-        // Call the function to measure the totalDistance from home plate to the click location
-        // totalDistance(closestField, event.latLng, map); // send closestField, click location, and map to totalDistance function
+        
         // Call the function to make a marker at the click location
         clickMarker(event.latLng, map); // send click location and map to makeMarker function
+
+ 
+
         // // Call the function to check if the click location is inside the fence
         // checkFence(closestField, event.latLng, map, polygons); // send closestField, click location, map, and polygons array to checkFence function
         // Call the function to make the html element with the field info and distance
@@ -178,40 +181,41 @@ async function initMap() {
             return distanceFeet;
         }
 
-        /// Create the clickMarker function and specify the marker options
-        // input data - click location and map from MapClickHandler
-        // output - a marker on the map at the location of the click
-        function clickMarker(clickLocation, map) {
-            console.log("Making marker...");
-            // Add a custom image to be used as the marker
-            const customIconUrl = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images/icons/baseball/ball.png';
+// Create the clickMarker function and specify the marker options
+// input data - click location and map from MapClickHandler
+// output - a marker on the map at the location of the click
+function clickMarker(clickLocation, map) {
+  console.log("Making marker...");
 
-            // Create the custom icon with scaling
-            const customIcon = {
-              url: customIconUrl,
-              scaledSize: new google.maps.Size(22, 22) // Scale the icon to 32x32 pixels
-            };
+  // Specify the custom icon URL
+  const customIconUrl = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images/icons/baseball/ball.png';
 
-         
+  // Create the custom icon with scaling and adjusted positioning
+  const customIcon = {
+    url: customIconUrl,
+    scaledSize: new google.maps.Size(22, 22), // Scale the icon to 32x32 pixels
+    anchor: new google.maps.Point(11, 11) // Shift the icon down by 10 pixels
+  };
 
-            
-            // create the marker
-            const marker = new google.maps.Marker({
-                position: clickLocation, // set the position to the click location
-                map: map, // set the map
-                icon: customIcon // Set the custom icon
-            });
-            // clear the marker once an new one is created
-            if (currentMarker) {
-                currentMarker.setMap(null);
-            }
+  // Create the marker
+  const marker = new google.maps.Marker({
+    position: clickLocation, // Set the position to the click location
+    map: map, // Set the map
+    icon: customIcon // Set the custom scaled icon with adjusted positioning
+  });
 
-            // set the currentMarker to the marker we just created
-            currentMarker = marker;
-            // close the function
+  // Clear the marker once a new one is created
+  if (currentMarker) {
+    currentMarker.setMap(null);
+  }
 
-            return;
-        }
+  // Set the currentMarker to the marker we just created
+  currentMarker = marker;
+
+  // Close the function
+  return;
+}
+
 
 // Create a function to check if the click location is inside the fence
 // input data - closestField from closestFieldFunction, click location, map, and polygons array from MapClickHandler
@@ -226,7 +230,7 @@ function checkFence(closestField, clickLocation, map, polygons) {
             const homePlateLatLng = closestField.home_plate;
             const homePlatePoint = new google.maps.LatLng(homePlateLatLng[1], homePlateLatLng[0]);
             const polygonCoords = polygon.getPath().getArray();
-            fenceDist = findFenceDistance(clickLocation, homePlatePoint, polygonCoords);
+            fenceDist = findFenceDistance(clickLocation, homePlatePoint, polygonCoords, map);
             if (fenceDist !== null) { // IF THE FENCE DISTANCE IS NOT NULL
                 console.log("Fence distance:", fenceDist.toFixed(0) + " ft"); // PRINT THE FENCE DISTANCE TO THE CONSOLE
                 break; // Break the loop as we found a valid fence distance
@@ -241,32 +245,65 @@ function checkFence(closestField, clickLocation, map, polygons) {
   
 /// Create function to find 2 intersection points where the line drawn passes through the fence
 // measure the distance between the 2 intersection points and return in feet as fenceDistance
-  function findFenceDistance(p1, p2, polygonCoords) {
-    const intersectionPoints = [];
-  
-    for (let i = 0; i < polygonCoords.length; i++) {
-      const p3 = polygonCoords[i];
-      const p4 = polygonCoords[(i + 1) % polygonCoords.length];
-  
-      const intersectionPoint = findLineIntersection(p1, p2, p3, p4);
 
-        if (intersectionPoint) {
-            intersectionPoints.push(intersectionPoint);
-        }
+function findFenceDistance(p1, p2, polygonCoords, map) {
+  const intersectionPoints = [];
 
-        if (intersectionPoints.length === 2) {
-            const fenceDist_meters = google.maps.geometry.spherical.computeDistanceBetween(
-                intersectionPoints[0],
-                intersectionPoints[1]
-            );
-            const fenceDist = fenceDist_meters * 3.28084; // Convert meters to feet
-            return fenceDist;
-        }
+  // Call function to clear any previous fence markers
+  clearFenceMarkers();
+
+  for (let i = 0; i < polygonCoords.length; i++) {
+    const p3 = polygonCoords[i];
+    const p4 = polygonCoords[(i + 1) % polygonCoords.length];
+
+    const intersectionPoint = findLineIntersection(p1, p2, p3, p4);
+
+    if (intersectionPoint) {
+      intersectionPoints.push(intersectionPoint);
+
+      // Pass the intersection point to a function to create a marker at that point
+      createFenceMarker(intersectionPoint, map);
     }
-    return null;
+
+    if (intersectionPoints.length === 2) {
+      const fenceDist_meters = google.maps.geometry.spherical.computeDistanceBetween(
+        intersectionPoints[0],
+        intersectionPoints[1]
+      );
+      const fenceDist = fenceDist_meters * 3.28084; // Convert meters to feet
+      return fenceDist;
     }
-  
- 
+  }
+  return null;
+}
+
+function createFenceMarker(fencePoint, map) {
+  console.log("Making fence marker...");
+
+  const marker = new google.maps.Marker({
+    position: fencePoint,
+    map: map,
+    icon: {
+      url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png', // Customize the icon if needed
+      scaledSize: new google.maps.Size(16, 16)
+    }
+  });
+
+  // Add the created marker to the fenceMarkers array
+  fenceMarkers.push(marker);
+
+  return marker;
+}
+
+function clearFenceMarkers() {
+  for (let i = 0; i < fenceMarkers.length; i++) {
+    fenceMarkers[i].setMap(null);
+  }
+  // Empty the fenceMarkers array
+  fenceMarkers = [];
+}
+
+
   /// Find the intersection points to measure the fence distance  
   const epsilon = 1e-9;
   
