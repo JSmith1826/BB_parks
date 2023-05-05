@@ -350,67 +350,66 @@ function checkFence(closestField, clickLocation, map, polygons) {
       }
 
         // Create the markers on the map
-        // input data - home_plate_coords, park_name, level, cardinal_direction, map from renderPolygons()
-        function createMarker(homePlate, park_name, level, field_cardinal_direction, map) {
-            const marker = new google.maps.Marker({
-              position: new google.maps.LatLng(homePlate[1], homePlate[0]),
-              map: map,
-              title: park_name,
-            });
-          
-            // create the info window
-            const infowindow = new google.maps.InfoWindow({
-              content: `${park_name} - ${level}<p>${field_cardinal_direction}</p>`,
-            });
+      // input data - home_plate_coords, park_name, level, cardinal_direction, map from renderPolygons()
+      function createMarker(homePlate, park_name, level, field_cardinal_direction, map) {
+        const marker = new google.maps.Marker({
+          position: new google.maps.LatLng(homePlate[1], homePlate[0]),
+          map: map,
+          title: park_name,
+        });
 
+        // create the info window
+        const infowindow = new google.maps.InfoWindow({
+          content: `${park_name} - ${level}<p>${field_cardinal_direction}</p>`,
+        });
 
+        // base url for icons
+        const icon_url = 'https://github.com/JSmith1826/BB_parks/tree/main/data/images/icons/base/';
+        // create the icon path object
+        const iconPath = {
+          'youth': icon_url + 'youth.png',
+          'high school': icon_url + 'high_school.png',
+          'college': icon_url + 'college.png',
+          'pro': icon_url + 'pro.png',
+          'other': icon_url + 'other.png',
+          'muni': icon_url + 'muni.png',
+          'mlb': icon_url + 'mlb.png',
+          'international': icon_url + 'international.png',
+          'unknown': icon_url + 'other.png',
+        };
 
+        // set the icon based on the level of the field and scale it
+        marker.setIcon({
+          url: iconPath[level],
+          scaledSize: new google.maps.Size(30, 30),
+        });
 
-////////////// OLD CODE ////////////
-            const iconPath = {
-                'youth': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images/icons/baseball/youth.png',
-                'high_school': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/high_school.png',
-                'college': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/college.png',
-                'pro': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/pro.png',
-                'mlb': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/mlb.png',
-                'muni': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/muni.png',
-                'international': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/muni.png',
-            };
+        // Control mouse behavior
+        // Add a click event listener to the marker
+        marker.addListener("click", () => {
+          infowindow.open(map, marker);
+        });
 
-            // set the icon based on the level of the field and scale it
-            marker.setIcon({
-                url: iconPath[level],
-                scaledSize: new google.maps.Size(30, 30),
-            });
+        // add event listener for mouseover on the marker
+        marker.addListener("mouseover", () => {
+          infowindow.open(map, marker); // open the info window
+        });
 
+        // add event listener for mouseout on the marker
+        marker.addListener("mouseout", () => {
+          infowindow.close(); // close the info window
+        });
 
-                
-          
-             // Control mouse behavior
-            // Add a click event listener to the marker
-            marker.addListener("click", () => {
-              infowindow.open(map, marker);
-            });
+        // Add a listener for double click on the marker
+        // Goal: center map on marker and zoom
+        marker.addListener("dblclick", () => {
+          map.setCenter(marker.getPosition()); // center map on marker
+          map.setZoom(19); // zoom in to 19
+        });
 
-            // add event listenr for a mouseover on the marker
-            marker.addListener("mouseover", () => {
-                infowindow.open(map, marker); // open the info window
-              });
+        return marker;
+      }
 
-            // add event listener for a mouseout on the marker
-              marker.addListener("mouseout", () => {
-                infowindow.close(); // close the info window
-              });
-
-            // Add a listener for double click on the marker
-            // Goal: center map on marker and zoom
-            marker.addListener("dblclick", () => {
-                map.setCenter(marker.getPosition()); // center map on marker
-                map.setZoom(19); // zoom in to 19
-              });
-
-              return marker;
-          }
 
   function wrapDigits(value) {
     const numberElement = document.createElement("number");
