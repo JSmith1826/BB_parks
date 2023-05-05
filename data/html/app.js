@@ -363,9 +363,10 @@ function checkFence(closestField, clickLocation, map, polygons) {
               content: `${park_name} - ${level}<p>${field_cardinal_direction}</p>`,
             });
 
-            // Define the look of the marker
-            //goal: change the marker icon based on the level of the field
-            // pathes to the icons
+
+
+
+////////////// OLD CODE ////////////
             const iconPath = {
                 'youth': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images/icons/baseball/youth.png',
                 'high_school': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/high_school.png',

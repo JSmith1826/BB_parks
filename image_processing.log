@@ -606,3 +606,77 @@ DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
 DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
 DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
 INFO:root:Processed image: stadium.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+INFO:root:Processed image: infield.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+INFO:root:Processed image: infield2.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+INFO:root:Processed image: plate_empty.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+INFO:root:Processed image: plate_full.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+INFO:root:Processed image: stadium.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 4097
+INFO:root:Processed image: infield.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 78 5231
+INFO:root:Processed image: infield2.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 477
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 603 158
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 773 3091
+INFO:root:Processed image: plate_empty.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 3
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 3 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 56 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 77 25
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 114 351
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 477 116
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 605 2609
+INFO:root:Processed image: plate_full.png
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 8192
+INFO:root:Processed image: stadium.png
