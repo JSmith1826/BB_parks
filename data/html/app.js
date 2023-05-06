@@ -27,7 +27,7 @@ async function initMap() {
   
     // Set the display and other options for the map
     const mapOptions = {
-      zoom: 10, // deafualt zoom level
+      zoom: 5, // deafualt zoom level
       center: new google.maps.LatLng(42.73048536830354, -84.50655614253925), // default center location
       mapTypeId: 'hybrid', // default map type
 
