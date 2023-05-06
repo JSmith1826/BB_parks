@@ -27,7 +27,7 @@
   
   /* Replace BASE_COLOR and HIGHLIGHT_COLOR with appropriate color values */
   width: 80vw; /* Set a fixed width */
-  height: 30; /* Set a fixed height */
+  height: 30vw; /* Set a fixed height */
   border-radius: 10px;
   padding: 10px;
   position: relative;
