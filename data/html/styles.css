@@ -6,7 +6,7 @@
 
 /* Define the size of the map */
 #map {
-  height: 60vh;
+  height: 70vw;
   width: 100vw;
   margin-bottom: -50px; /* Add negative margin to reduce the space between the map and the scoreboard */
 }
@@ -15,7 +15,7 @@
 .background {
   background: linear-gradient(180deg, skyblue 0%, skyblue 65%, #90ee90 75%, #90ee90 100%);
   width: 100vw;
-  height: 50vh;
+  height: 35vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,17 +27,20 @@
   
   /* Replace BASE_COLOR and HIGHLIGHT_COLOR with appropriate color values */
   width: 80vw; /* Set a fixed width */
-  /* height: 30vw; Set a fixed height */
+  height: 30; /* Set a fixed height */
   border-radius: 10px;
   padding: 20px;
   position: relative;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  overflow: no; /* Enable scrolling if the content overflows */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  overflow: auto;
   margin-top: -50px; /* Add negative margin to move the scoreboard element closer to the map */
 }
 
 .scoreboard:before {
-  content: "";
+  /* content: "Click On the Map to Explore";
+  text-align: center;
+  font-size: 40px; */
+  
   position: absolute;
   top: 5px; /* Adjust this value to control the distance from the inner border to the outer edge */
   left: 5px; /* Adjust this value to control the distance from the inner border to the outer edge */
@@ -125,7 +128,7 @@ h3 {
 
 number {
   font-family: 'Bungee', sans-serif; /* Change this font to one of the other vintage fonts for numbers */
-  font-size: 36px; /* Change this value to adjust the size of the numbers */
+  font-size: 26px; /* Change this value to adjust the size of the numbers */
   color: var(----ash-gray-2); /* Number text color */
 }
 
@@ -145,7 +148,7 @@ a:hover {
 body {
   line-height: 1.1; /* Change this value to adjust the line spacing */
   font-size: 20px; /* Change this value to adjust the base font size */
-  background-color: var(--reseda-green-2); /* Change this value to set a different background color */
+  /* background-color: var(--reseda-green-2); Change this value to set a different background color */
   margin: 0;
   padding: 0;
 }
