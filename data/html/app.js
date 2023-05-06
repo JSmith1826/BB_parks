@@ -538,10 +538,10 @@ function clearFenceMarkers() {
         // fieldCardinalDirection.innerHTML = `${closestField.field_cardinal_direction}`;
         // fieldInfo.appendChild(fieldCardinalDirection);
 
-        // Level of the field
-        const fieldLevel = document.createElement("p");
-        fieldLevel.innerHTML = `Field Class: ${closestField.level}`;
-        fieldInfo.appendChild(fieldLevel);
+        // // Level of the field
+        // const fieldLevel = document.createElement("p");
+        // fieldLevel.innerHTML = `Field Class: ${closestField.level}`;
+        // fieldInfo.appendChild(fieldLevel);
 
 
         // // Home of the TEAM Element /////
