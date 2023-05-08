@@ -27,7 +27,7 @@ async function initMap() {
   
     // Set the display and other options for the map
     const mapOptions = {
-      zoom: 510, // deafualt zoom level
+      zoom: 10, // deafualt zoom level
       center: new google.maps.LatLng(43.6200, -84.8000), // default center location
       mapTypeId: 'hybrid', // default map type
 
@@ -538,13 +538,20 @@ function clearFenceMarkers() {
         // fieldCardinalDirection.innerHTML = `${closestField.field_cardinal_direction}`;
         // fieldInfo.appendChild(fieldCardinalDirection);
 
-        // // Level of the field
-        // const fieldLevel = document.createElement("p");
-        // fieldLevel.innerHTML = `Field Class: ${closestField.level}`;
-        // fieldInfo.appendChild(fieldLevel);
+        // Level of the field
+        const fieldLevel = document.createElement("p");
+        fieldLevel.innerHTML = `Field Class: ${closestField.level}`;
+        fieldInfo.appendChild(fieldLevel);
 
 
-        // // Home of the TEAM Element /////
+        // Home of the TEAM Element /////
+        // Display the home team of the field but only if the field has one
+        if (closestField.home_team != null) {
+            const homeOf = document.createElement("p");
+            homeOf.innerHTML = `Home of the ${closestField.home_team}`;
+            fieldInfo.appendChild(homeOf);
+        }
+
         // const homeOf = document.createElement("p");
         // homeOf.innerHTML = `Home of the ${closestField.home_team}`;
         // fieldInfo.appendChild(homeOf);
@@ -556,11 +563,11 @@ function clearFenceMarkers() {
 
         // Fence Information
         const fenceInfo = document.createElement("p");
-        fenceInfo.innerHTML = `Fence Distance<br>`;
+        fenceInfo.innerHTML = `Fence Distance | Rank<br>`;
         fenceInfo.appendChild(wrapDigits(closestField.min_distance));
-        fenceInfo.innerHTML += ` MIN<number> | </number> `;
+        fenceInfo.innerHTML += ` MIN<br>`;
         fenceInfo.appendChild(wrapDigits(closestField.max_distance));
-        fenceInfo.innerHTML += ` MAX<number> | </number> `;
+        fenceInfo.innerHTML += ` MAX<br>`;
         fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
         fenceInfo.innerHTML += ` AVG`;
         fenceInfo.appen
@@ -569,11 +576,13 @@ function clearFenceMarkers() {
         // Area information
         const areaInfo = document.createElement("p");
 
-        areaInfo.innerHTML = `Area<br>`;
-        areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft + closestField.foul_area_sqft) / 43560).toFixed(2)));
-        areaInfo.innerHTML += ` ACRES<number> | </number>`;
+        areaInfo.innerHTML = `Area (acres)<br>`;
+        areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft) / 43560).toFixed(2)));
+        areaInfo.innerHTML += ` Fair Ground<br>`;
+        areaInfo.appendChild(wrapDigits((closestField.foul_area_sqft / 43560).toFixed(2)));
+        areaInfo.innerHTML += ` Foul Ground<br>`;
         areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft/closestField.foul_area_sqft).toFixed(2)));
-        areaInfo.innerHTML += ` Fair : Foul Ratio`;
+        areaInfo.innerHTML += `<number> : 1 </number> Fair : Foul Ratio`;
 
         fieldInfo.append(areaInfo);
 
