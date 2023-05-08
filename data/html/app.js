@@ -520,84 +520,143 @@ function clearFenceMarkers() {
     // output - a html element containing field info and the dynamic distance element with the
     // distance from home plate to the click location and the fence distance from home plate if the click is outside the fence
     // This function is called in the MapClickHandler function
+
     function fieldInfo(closestField, distanceFeet, fenceDist = null, map) {
-        console.log("Creating field info...");
-        // create the html element
-        const fieldInfo = document.createElement("div");
-        // set the id of the html element
-        fieldInfo.id = "fieldInfo";
+      console.log("Creating field info...");
+    
+      // Title block
+      const titleBlock = document.getElementById("titleBlock");
+      titleBlock.innerHTML = "";
+    
+      const fieldName = document.createElement("h2");
+      fieldName.innerHTML = `${closestField.park_name}`;
+      titleBlock.appendChild(fieldName);
+    
+      const fieldLevel = document.createElement("p");
+      fieldLevel.innerHTML = `Field Class: ${closestField.level}`;
+      titleBlock.appendChild(fieldLevel);
+    
+      if (closestField.home_team != null) {
+        const homeOf = document.createElement("p");
+        homeOf.innerHTML = `Home of the ${closestField.home_team}`;
+        titleBlock.appendChild(homeOf);
+      }
+    
+      // Fence block
+      const fenceBlock = document.getElementById("fenceBlock");
+      fenceBlock.innerHTML = "";
+    
+      const fenceInfo = document.createElement("p");
+      fenceInfo.innerHTML = `Fence Distance | Rank<br>`;
+      fenceInfo.appendChild(wrapDigits(closestField.min_distance));
+      fenceInfo.innerHTML += ` MIN<br>`;
+      fenceInfo.appendChild(wrapDigits(closestField.max_distance));
+      fenceInfo.innerHTML += ` MAX<br>`;
+      fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
+      fenceInfo.innerHTML += ` AVG`;
+      fenceBlock.appendChild(fenceInfo);
+    
+      // Area block
+      const areaBlock = document.getElementById("areaBlock");
+      areaBlock.innerHTML = "";
+    
+      const areaInfo = document.createElement("p");
+      areaInfo.innerHTML = `Area (acres)<br>`;
+      areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft) / 43560).toFixed(2)));
+      areaInfo.innerHTML += ` Fair Ground<br>`;
+      areaInfo.appendChild(wrapDigits((closestField.foul_area_sqft / 43560).toFixed(2)));
+      areaInfo.innerHTML += ` Foul Ground<br>`;
+      areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
+      areaInfo.innerHTML += `<number> : 1 </number> Fair : Foul Ratio`;
+      areaBlock.appendChild(areaInfo);
+    
+      const distanceContainer = distanceDisplay(distanceFeet, fenceDist);
+    
+      const infoContainer = document.getElementById("infoContainer");
+      infoContainer.innerHTML = ""; // Clear the previous fieldInfo if any
+      infoContainer.appendChild(distanceContainer);
+    
+      return;
+    }
+    
+//     function fieldInfo(closestField, distanceFeet, fenceDist = null, map) {
+//         console.log("Creating field info...");
+//         // create the html element
+//         const fieldInfo = document.createElement("div");
+//         // set the id of the html element
+//         fieldInfo.id = "fieldInfo";
 
-        // Field name and level as a header
-        const fieldName = document.createElement("h2");
-        fieldName.innerHTML = `${closestField.park_name}`;
+//         // Field name and level as a header
+//         const fieldName = document.createElement("h2");
+//         fieldName.innerHTML = `${closestField.park_name}`;
         
-        fieldInfo.appendChild(fieldName);
+//         fieldInfo.appendChild(fieldName);
 
-        // Cardinal direction of the field
-        const fieldCardinalDirection = document.createElement("p");
-        // fieldCardinalDirection.innerHTML = `${closestField.field_cardinal_direction}`;
-        // fieldInfo.appendChild(fieldCardinalDirection);
+//         // Cardinal direction of the field
+//         const fieldCardinalDirection = document.createElement("p");
+//         // fieldCardinalDirection.innerHTML = `${closestField.field_cardinal_direction}`;
+//         // fieldInfo.appendChild(fieldCardinalDirection);
 
-        // Level of the field
-        const fieldLevel = document.createElement("p");
-        fieldLevel.innerHTML = `Field Class: ${closestField.level}`;
-        fieldInfo.appendChild(fieldLevel);
+//         // Level of the field
+//         const fieldLevel = document.createElement("p");
+//         fieldLevel.innerHTML = `Field Class: ${closestField.level}`;
+//         fieldInfo.appendChild(fieldLevel);
 
 
-        // Home of the TEAM Element /////
-        // Display the home team of the field but only if the field has one
-        if (closestField.home_team != null) {
-            const homeOf = document.createElement("p");
-            homeOf.innerHTML = `Home of the ${closestField.home_team}`;
-            fieldInfo.appendChild(homeOf);
-        }
+//         // Home of the TEAM Element /////
+//         // Display the home team of the field but only if the field has one
+//         if (closestField.home_team != null) {
+//             const homeOf = document.createElement("p");
+//             homeOf.innerHTML = `Home of the ${closestField.home_team}`;
+//             fieldInfo.appendChild(homeOf);
+//         }
 
-        // const homeOf = document.createElement("p");
-        // homeOf.innerHTML = `Home of the ${closestField.home_team}`;
-        // fieldInfo.appendChild(homeOf);
+//         // const homeOf = document.createElement("p");
+//         // homeOf.innerHTML = `Home of the ${closestField.home_team}`;
+//         // fieldInfo.appendChild(homeOf);
         
 
-        // Home Team Information
-        const homeTeamInfo = document.createElement("p");
-        homeTeamInfo.innerHTML = `Home Team: ${closestField.home_team}`;
+//         // // Home Team Information
+//         // const homeTeamInfo = document.createElement("p");
+//         // homeTeamInfo.innerHTML = `Home Team: ${closestField.home_team}`;
 
-        // Fence Information
-        const fenceInfo = document.createElement("p");
-        fenceInfo.innerHTML = `Fence Distance | Rank<br>`;
-        fenceInfo.appendChild(wrapDigits(closestField.min_distance));
-        fenceInfo.innerHTML += ` MIN<br>`;
-        fenceInfo.appendChild(wrapDigits(closestField.max_distance));
-        fenceInfo.innerHTML += ` MAX<br>`;
-        fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
-        fenceInfo.innerHTML += ` AVG`;
-        fenceInfo.appen
-        fieldInfo.append(fenceInfo);
+//         // Fence Information
+//         const fenceInfo = document.createElement("p");
+//         fenceInfo.innerHTML = `Fence Distance | Rank<br>`;
+//         fenceInfo.appendChild(wrapDigits(closestField.min_distance));
+//         fenceInfo.innerHTML += ` MIN<br>`;
+//         fenceInfo.appendChild(wrapDigits(closestField.max_distance));
+//         fenceInfo.innerHTML += ` MAX<br>`;
+//         fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
+//         fenceInfo.innerHTML += ` AVG`;
+//         fenceInfo.appen
+//         fieldInfo.append(fenceInfo);
 
-        // Area information
-        const areaInfo = document.createElement("p");
+//         // Area information
+//         const areaInfo = document.createElement("p");
 
-        areaInfo.innerHTML = `Area (acres)<br>`;
-        areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft) / 43560).toFixed(2)));
-        areaInfo.innerHTML += ` Fair Ground<br>`;
-        areaInfo.appendChild(wrapDigits((closestField.foul_area_sqft / 43560).toFixed(2)));
-        areaInfo.innerHTML += ` Foul Ground<br>`;
-        areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft/closestField.foul_area_sqft).toFixed(2)));
-        areaInfo.innerHTML += `<number> : 1 </number> Fair : Foul Ratio`;
+//         areaInfo.innerHTML = `Area (acres)<br>`;
+//         areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft) / 43560).toFixed(2)));
+//         areaInfo.innerHTML += ` Fair Ground<br>`;
+//         areaInfo.appendChild(wrapDigits((closestField.foul_area_sqft / 43560).toFixed(2)));
+//         areaInfo.innerHTML += ` Foul Ground<br>`;
+//         areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft/closestField.foul_area_sqft).toFixed(2)));
+//         areaInfo.innerHTML += `<number> : 1 </number> Fair : Foul Ratio`;
 
-        fieldInfo.append(areaInfo);
+//         fieldInfo.append(areaInfo);
 
-      // Call the distanceDisplay function and append the returned element to the fieldInfo element
-    const distanceContainer = distanceDisplay(distanceFeet, fenceDist);
-    fieldInfo.append(distanceContainer);
+//       // Call the distanceDisplay function and append the returned element to the fieldInfo element
+//     const distanceContainer = distanceDisplay(distanceFeet, fenceDist);
+//     fieldInfo.append(distanceContainer);
 
-    // Append the fieldInfo element to the infoContainer element
-    const infoContainer = document.getElementById("infoContainer");
-    infoContainer.innerHTML = ""; // Clear the previous fieldInfo if any
-    infoContainer.appendChild(fieldInfo);
+//     // Append the fieldInfo element to the infoContainer element
+//     const infoContainer = document.getElementById("infoContainer");
+//     infoContainer.innerHTML = ""; // Clear the previous fieldInfo if any
+//     infoContainer.appendChild(fieldInfo);
 
-    // close the function
-    return;
-}
+//     // close the function
+//     return;
+// }
 
 function distanceDisplay(distanceFeet, fenceDist) {
     console.log("Creating distance display...");

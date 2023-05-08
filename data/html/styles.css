@@ -1,17 +1,13 @@
-/* Import Google Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-/* Define the size of the map */
 #map {
   height: 70vw;
   width: 100vw;
-  margin-bottom: -50px; /* Add negative margin to reduce the space between the map and the scoreboard */
+  margin-bottom: -50px;
 }
 
-/* Add new styles to the existing CSS */
 .background {
   background: linear-gradient(180deg, skyblue 0%, skyblue 65%, #90ee90 75%, #90ee90 100%);
   width: 100vw;
@@ -22,38 +18,39 @@
 }
 
 .scoreboard {
-  
-  background-color: var(--reseda-green); 
-  
-  /* Replace BASE_COLOR and HIGHLIGHT_COLOR with appropriate color values */
-  width: 80vw; /* Set a fixed width */
-  height: 30vw; /* Set a fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 30vw;
+  background-color: var(--reseda-green);
   border-radius: 10px;
   padding: 10px;
   position: relative;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
   overflow: auto;
-  margin-top: -50px; /* Add negative margin to move the scoreboard element closer to the map */
+  margin-top: -50px;
 }
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 
 .scoreboard:before {
   content: "";
-  
   position: absolute;
-  top: 5px; /* Adjust this value to control the distance from the inner border to the outer edge */
-  left: 5px; /* Adjust this value to control the distance from the inner border to the outer edge */
-  right: 5px; /* Adjust this value to control the distance from the inner border to the outer edge */
-  bottom: 5px; /* Adjust this value to control the distance from the inner border to the outer edge */
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
   border: 5px solid var(--white);
-  border-radius: 12px; /* Adjust this value to control the border radius of the inner border */
+  border-radius: 12px;
   pointer-events: none;
 }
 
-
-/* The rest of the existing CSS remains unchanged */
-
-
-/* Color palette */
 :root {
   --white: #f8e2e2;
   --ash-gray: #e0e6dc;
@@ -64,15 +61,20 @@
   --black: #000000;
 }
 
-#infoContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#titleBlock {
   text-align: center;
+  margin-bottom: 10px;
 }
 
-
-/* Add the following CSS styles to your styles.css file */
+#fenceBlock,
+#areaBlock {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
 
 #search-input {
   position: absolute;
@@ -83,54 +85,46 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
-  z-index: 5; /* To make sure the search bar is above the map */
+  z-index: 5;
 }
 
-/* Typography */
 body {
-  
-  font-family: 'Oswald', sans-serif; /* Change this font to one of the other vintage fonts for the main text */
-  color: var(--white); /* Main text color */
-  
+  font-family: 'Oswald', sans-serif;
+  color: var(--white);
 }
-/* Popups */
-/* style.css */
+
 .custom-infoTitle {
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   align: center;
   color: #333;
-  /* Add more styling properties as needed */
 }
+
 .custom-infowindow {
   font-family: 'Oswald', sans-serif;
   font-size: 14px;
   color: #333;
-  /* Add more styling properties as needed */
 }
 
-
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bevan', sans-serif; /* Change this font to one of the other vintage fonts for headings */
-  color: var(--ash-gray); /* Heading text color */
-  line-height: 1; /* Change this value to adjust the line spacing */
-  padding:0%;
+  font-family: 'Bevan', sans-serif;
+  color: var(--ash-gray);
+  line-height: 1;
+  padding: 0%;
 }
 
 h3 {
-  font-family: 'Oswald', sans-serif; /* Change this font to one of the other vintage fonts for headings */
-  color: var(--ash-gray); /* Heading text color */
-  letter-spacing: 1px ;
+  font-family: 'Oswald', sans-serif;
+  color: var(--ash-gray);
+  letter-spacing: 1px;
 }
 
 number {
-  font-family: 'Bungee', sans-serif; /* Change this font to one of the other vintage fonts for numbers */
-  font-size: 26px; /* Change this value to adjust the size of the numbers */
-  color: var(----ash-gray-2); /* Number text color */
+  font-family: 'Bungee', sans-serif;
+  font-size: 26px;
+  color: var(--ash-gray-2);
 }
 
-/* Links */
 a {
   color: var(--reseda-green);
   text-decoration: none;
@@ -141,12 +135,22 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Fine-tuning options */
-/* Adjust these values to modify the look and feel of your page */
 body {
-  line-height: 1.1; /* Change this value to adjust the line spacing */
-  font-size: 20px; /* Change this value to adjust the base font size */
-  /* background-color: var(--reseda-green-2); Change this value to set a different background color */
+  line-height: 1.1;
+  font-size: 20px;
   margin: 0;
   padding: 0;
+}
+
+#infoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
