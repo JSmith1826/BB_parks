@@ -1,3 +1,19 @@
+5/9/23
+* Stand Up a MHSAA Map
+**- genrate json of just high schools from michigan
+**  - generate map of just mhsaa schools and site
+**  - change icon colors based on class (full plate probably or combo of full and empty plate)
+  - get scoreboard color change working
+**  - 2023 playoff announced. scrape and create table of district and regional site
+  - use the csv created by scraping mhsaa site to mark hosts of districts and regionals in json and figure out a way to impliment a filer in the map
+  - update hover info window with more info like district host, regional host ect
+  
+  * global goals
+  - The look of the page and field info display needs to be worked on. The font sizes need to be dynamic based on viuewport size.
+righ now they are static and look awful in a large window.
+also not looking good in moble view
+
+
 5/8/23
 ** The look of the page and field info display needs to be worked on. The font sizes need to be dynamic based on viuewport size.
 righ now they are static and look awful in a large window.

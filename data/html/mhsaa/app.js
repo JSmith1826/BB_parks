@@ -1,6 +1,8 @@
+////////////////// UPDATE THIS TO MAKE THE MHSAA MAP ///////////////////////
+//////// WORK STARTED 5-9-23 ////////
 ///set up variables
 
-const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/default_updated_output.json";
+const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/michigan_fields.json"; // Michigan fields json file
 let fetchedData;
 let polygons = [];
 let currentLine = null;
@@ -30,8 +32,8 @@ async function initMap() {
   
     // Set the display and other options for the map
     const mapOptions = {
-      zoom: 19, // deafualt zoom level
-      center: new google.maps.LatLng(42.73048536830354, -84.50655614253925), // default center location
+      zoom: 8, // deafualt zoom level
+      center: new google.maps.LatLng(44.3148, -85.6024), // geogrpahic center of Michigan - default center location
       mapTypeId: 'hybrid', // default map type
     };
   
@@ -389,7 +391,7 @@ function clearFenceMarkers() {
     
         //send to the createMarker function
         // home_plate_coords, park_name, level, cardinal direction map
-        createMarker(field.home_plate, field.park_name, field.level, field.field_cardinal_direction, map); 
+        createMarker(field.home_plate, field.park_name, field.level, field.division, field.field_cardinal_direction, map); 
       });
     
       // set the polygons to be on the bottom layer of the map
@@ -440,7 +442,7 @@ function clearFenceMarkers() {
         // Create the markers on the map
                 // Create the markers on the map
         // input data - home_plate_coords, park_name, level, cardinal_direction, map from renderPolygons()
-        function createMarker(homePlate, park_name, level, field_cardinal_direction, map) {
+        function createMarker(homePlate, park_name, level, division, field_cardinal_direction, map) {
           const marker = new google.maps.Marker({
             position: new google.maps.LatLng(homePlate[1], homePlate[0]),
             map: map,
@@ -463,21 +465,41 @@ function clearFenceMarkers() {
           //goal: change the marker icon based on the level of the field
           // pathes to the icons
           const iconPath = {
-              'Youth': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images/icons/baseball/youth.png',
+              
               'High School': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/high_school.png',
               'College': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/college.png',
               'Professional': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/pro.png',
               'Major League': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/mlb.png',
               'State / County / Municipal': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/muni.png',
-              'International': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/muni.png',
+              
               'Unknown': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/other.png',
           };
 
-          // set the icon based on the level of the field and scale it
-          marker.setIcon({
-              url: iconPath[level],
+          const div_icons = {
+            'A': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_red.png',
+            'B': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_blue.png',
+            'C': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_lt_blue.png',
+            'D': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_light.png'
+          };
+          
+          
+            // Set the icon based on the level of the field and scale it
+            let iconUrl = iconPath[level];
+
+            // Check if the 'division' attribute is present and overwrite the icon if needed
+            if (division && div_icons.hasOwnProperty(division)) {
+              iconUrl = div_icons[division];
+            }
+
+            marker.setIcon({
+              url: iconUrl,
               scaledSize: new google.maps.Size(30, 30),
-          });
+            });
+          // // set the icon based on the level of the field and scale it
+          // marker.setIcon({
+          //     url: iconPath[level],
+          //     scaledSize: new google.maps.Size(30, 30),
+          // });
 
 
               
@@ -534,12 +556,13 @@ function clearFenceMarkers() {
       titleBlock.appendChild(fieldName);
 
       const fieldLevel = document.createElement("p");
+      fieldLevel.innerHTML = `Division: ${closestField.division}`;
       fieldLevel.innerHTML = `Field Class: ${closestField.level}`;
       titleBlock.appendChild(fieldLevel);
 
       if (closestField.home_team != null) {
         const homeOf = document.createElement("p");
-        homeOf.innerHTML = `Home of the ${closestField.home_team}`;
+        homeOf.innerHTML = `Home of the ${closestField.Nickname}`;
         titleBlock.appendChild(homeOf);
       }
 ///
@@ -554,7 +577,9 @@ function clearFenceMarkers() {
       fenceInfo.appendChild(wrapDigits(closestField.max_distance));
       fenceInfo.innerHTML += ` MAX | ${closestField.max_distance_rank} of ${levelCounts[closestField.level]}<br>`;
       fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
-      fenceInfo.innerHTML += ` AVG | ${closestField.avg_distance_rank} of ${levelCounts[closestField.level]}<br>`;
+      fenceInfo.innerHTML += ` AVG | ${closestField.avg_distance_rank} of ${levelCounts[closestField.level]}<br>`
+      fenceInfo.appendChild(wrapDigits((closestField.median_distance).toFixed(0)));
+      fenceInfo.innerHTML += ` MEDIAN | ${closestField.median_distance_rank} of ${levelCounts[closestField.level]}<br>`;
       fenceBlock.appendChild(fenceInfo);
 
       // Area block
