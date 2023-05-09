@@ -561,7 +561,7 @@ function clearFenceMarkers() {
         homeOf.innerHTML = `Home of the ${closestField.home_team}`;
         titleBlock.appendChild(homeOf);
       }
-
+///
       // Fence block
       const fenceBlock = document.getElementById("fenceBlock");
       fenceBlock.innerHTML = "";
