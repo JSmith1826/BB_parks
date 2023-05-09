@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+#map {
+  height: 70vw;
+  width: 100vw;
+  margin-bottom: -50px;
+}
+
+.background {
+  background: linear-gradient(180deg, skyblue 0%, skyblue 65%, #90ee90 75%, #90ee90 100%);
+  width: 100vw;
+  height: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 30vw;
+  background-color: var(--reseda-green);
+  border-radius: 10px;
+  /* padding: 10px; */
+  position: relative;
+  overflow: auto;
+  margin-top: -50px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.scoreboard:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 5px solid var(--white);
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+:root {
+  --white: #f8e2e2;
+  --ash-gray: #e0e6dc;
+  --ash-gray-2: #BCC4B4;
+  --ebony: #4D5D42;
+  --reseda-green: #627454;
+  --reseda-green-2: #748667;
+  --black: #000000;
+}
+
+#titleBlock {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#fenceBlock,
+#areaBlock {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+#search-input {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 5;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  color: var(--white);
+}
+
+.custom-infoTitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  align: center;
+  color: #333;
+}
+
+.custom-infowindow {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bevan', sans-serif;
+  color: var(--ash-gray);
+  line-height: 1;
+  padding: 0%;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--ash-gray);
+  letter-spacing: 1px;
+}
+
+number {
+  font-family: 'Bungee', sans-serif;
+  font-size: 26px;
+  color: var(--white);
+}
+
+a {
+  color: var(--reseda-green);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--reseda-green-2);
+  text-decoration: underline;
+}
+
+body {
+  line-height: 1.1;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+#infoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
