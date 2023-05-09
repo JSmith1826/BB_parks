@@ -33,34 +33,23 @@ async function initMap() {
       zoom: 19, // deafualt zoom level
       center: new google.maps.LatLng(42.73048536830354, -84.50655614253925), // default center location
       mapTypeId: 'hybrid', // default map type
-
-    // // map controls
-    // disableDefaultUI: true, // disable all map controls
-    // zoomControl: true, // enable zoom control
-    // mapTypeControl: false, // enable map type control
-    // scaleControl: true, // enable scale control
-    // streetViewControl: true, // enable street view control
-    // rotateControl: true, // enable rotate control
-    // fullscreenControl: true, // enable fullscreen control
-
     };
   
     // Create the map object by calling the Google Maps API and passing in the map div and map options
     const map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-
-
     // call renderPolygons function and pass in full data and map
-    renderPolygons(data, map); 
-  // Create a listener on the map to detect a click and run the handleMapClick function
-  map.addListener("click", async (event) => {
-    await MapClickHandler(event, data, map, polygons, levelCounts);
-  });
-        // Initialize the search box
-        initSearchBox(map);
+    renderPolygons(data, map, levelCounts); 
+    // Create a listener on the map to detect a click and run the handleMapClick function
+// Inside the initMap function
+google.maps.event.addListener(map, "click", (event) => {
+  MapClickHandler(event, fetchedData, map, polygons, levelCounts);
+});
+    // Initialize the search box
+    initSearchBox(map);
   }
   
-    // Wait for the DOM to load before running the initMap function
+  // Wait for the DOM to load before running the initMap function
   // DOM is the html document
   document.addEventListener("DOMContentLoaded", initMap);
 
@@ -79,13 +68,6 @@ function countFieldsByLevel(data) {
 
   return levelCounts;
 }
-
-
-  ////////////////////////////////////////////////////////
-  ///////////////////END TEST CODE //////////////////////
-  
-
-
 
   // Create the map click handler - The big boy of functions
     // input data - full 'data' object from json file, 'map' object from fetchData() and initMap(), 
@@ -117,9 +99,8 @@ async function MapClickHandler(event, data, map, polygons, levelCounts) {
         // Call the checkFence function and store the returned value
         const fenceDist = checkFence(closestField, event.latLng, map, polygons);
 
-        
         // Call the function to make a marker at the click location
-        clickMarker(event.latLng, map); // send click location and map to makeMarker function
+        clickMarker(event.latLng, map); // remove levelCounts from this function call
 
  
 
@@ -395,31 +376,32 @@ function clearFenceMarkers() {
   // map out the data for polygons
   // input data - full 'data' object from json file and 'map' object from fetchData() and initMap()
     // output - polygons rendered on map
-    function renderPolygons(data, map) {
-        console.log("calling rendering polygons...");
-        polygons = [];
-      
-        data.forEach(field => { // for each field in the data object
-          const fopCoords = field.fop; // create variable fopCoords and set it the fop coordinates data
-          createPolygon(fopCoords, "#00FF00", map); // send fopCoords, color, and map to createPolygon function
-      
-          const foulCoords = field.foul; // create variable foulCoords and set it the foul coordinates data
-          createPolygon(foulCoords, "#FF0000", map); // send foulCoords, color, and map to createPolygon function
-      
-          //send to the createMarker function
-          // home_plate_coords, park_name, level, cardinal direction map
-          createMarker(field.home_plate, field.park_name, field.level, field.field_cardinal_direction, map); 
-        });
-
-        // set the polygons to be on the bottom layer of the map
-        polygons.forEach(polygon => {
-            polygon.setOptions({ zIndex: 0 });
-        });
-      }
+    function renderPolygons(data, map, levelCounts) { // Add levelCounts as an argument
+      console.log("calling rendering polygons...");
+      polygons = [];
+    
+      data.forEach(field => { // for each field in the data object
+        const fopCoords = field.fop; // create variable fopCoords and set it the fop coordinates data
+        createPolygon(fopCoords, "#00FF00", map, levelCounts); // Pass levelCounts here
+    
+        const foulCoords = field.foul; // create variable foulCoords and set it the foul coordinates data
+        createPolygon(foulCoords, "#FF0000", map, levelCounts); // Pass levelCounts here
+    
+        //send to the createMarker function
+        // home_plate_coords, park_name, level, cardinal direction map
+        createMarker(field.home_plate, field.park_name, field.level, field.field_cardinal_direction, map); 
+      });
+    
+      // set the polygons to be on the bottom layer of the map
+      polygons.forEach(polygon => {
+          polygon.setOptions({ zIndex: 0 });
+      });
+    }
+    
     
       //  Create the polygons on the map
       // input data - coordinates, color, and map from renderPolygons()
-      function createPolygon(coordinates, fillColor, map) {
+      function createPolygon(coordinates, fillColor, map, levelCounts) {
         const polygon = new google.maps.Polygon({ // call polygon function from google maps api
           paths: coordinates.map(coord => { // set paths to coordinates
             return { lat: coord[1], lng: coord[0] }; // Reverse the coordinates to (lat, lng), stored in json the other way
@@ -441,9 +423,10 @@ function clearFenceMarkers() {
           
           const distanceFeet = drawLine(closestField, event.latLng, map);
           
-          fieldInfo(closestField, distanceFeet, null, map, levelCounts);
           
-          clickMarker(event.latLng, map);
+          
+          clickMarker(event.latLng, map, levelCounts);
+          fieldInfo(closestField, distanceFeet, null, map, levelCounts);
       
           return;
       });
@@ -539,9 +522,7 @@ function clearFenceMarkers() {
     // distance from home plate to the click location and the fence distance from home plate if the click is outside the fence
     // This function is called in the MapClickHandler function
     function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCounts) {
-      // ... (rest of the code remains the same)
-  
-  
+        
       console.log("Creating field info...");
 
       // Title block
@@ -592,7 +573,7 @@ function clearFenceMarkers() {
       areaInfo.innerHTML += `Rank: ${closestField.ratio_rank} of ${levelCounts[closestField.level]}<br>`; // Rank of fair:foul ratio
       areaBlock.appendChild(areaInfo);
 
-      const distanceContainer = distanceDisplay(distanceFeet, fenceDist);
+      const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
 
       const infoContainer = document.getElementById("infoContainer");
       infoContainer.innerHTML = ""; // Clear the previous fieldInfo if any
@@ -601,7 +582,7 @@ function clearFenceMarkers() {
       return;
     }
 
-function distanceDisplay(distanceFeet, fenceDist) {
+function distanceDisplay(distanceFeet, fenceDist, levelCounts) {
     console.log("Creating distance display...");
     // check the values of the distanceFeet and fenceDist variables
     console.log("Distance feet:", distanceFeet, "Fence distance:", fenceDist);
