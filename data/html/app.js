@@ -6,7 +6,9 @@ let polygons = [];
 let currentLine = null;
 let currentMarker = null;
 let fenceMarkers = [];
-// const epsilon = 1e-9; // set epsilon to 1e-9 for use in the fenceDistance and intersectionPoint functions
+let fenceDist = null;
+
+const epsilon = 1e-9; // set epsilon to 1e-9 for use in the fenceDistance and intersectionPoint functions
 
 //fetch data from json file
 // Async function to fetch data from the JSON file
@@ -16,6 +18,9 @@ async function fetchData() {
     const data = await response.json();
     return data;
   }
+
+
+
 
 //initialize map
 // Async function to initialize the map
@@ -44,14 +49,17 @@ async function initMap() {
   
     // Create the map object by calling the Google Maps API and passing in the map div and map options
     const map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
+    // Create level count holder and call function (must be below the fetchData function I think)
+    const levelCounts = countFieldsByLevel(fetchedData);
+    
 
 
     // call renderPolygons function and pass in full data and map
     renderPolygons(data, map); 
     // Create a listener on the map to detect a click and run the handleMapClick function
     map.addListener("click", async (event) => {
-        await MapClickHandler(event, data, map, polygons);
+      await MapClickHandler(event, data, map, polygons, levelCounts);
+
     });
         // Initialize the search box
         initSearchBox(map);
@@ -63,6 +71,22 @@ async function initMap() {
 
 /////////////////////////////// TEST CODE ////////////////////////////
 
+
+        /// NEW FUNCTION TO COUNT THE AMOUNT OF FIELDS IN EACH LEVEL
+        function countFieldsByLevel(fetchedData) {
+          const levelCounts = {};
+        
+          fetchedData.forEach(field => {
+            const level = field.level;
+            if (levelCounts.hasOwnProperty(level)) {
+              levelCounts[level]++;
+            } else {
+              levelCounts[level] = 1;
+            }
+          });
+        
+          return levelCounts;
+        }
 
   ////////////////////////////////////////////////////////
   ///////////////////END TEST CODE //////////////////////
@@ -79,7 +103,7 @@ async function initMap() {
     // distance from home plate to the click location and the fence distance from home plate if the click is outside the fence
 
     // This function is called in the initMap() function
-    async function MapClickHandler(event, data, map, polygons) {
+    async function MapClickHandler(event, data, map, polygons, levelCounts) {
         console.log("Map click handler:", event.latLng); // log the event to the console
         // console.log('Data from MapClickHandler:', data); // log the data to the console
         // console.log('Check polygons array:', polygons); // log the polygons array to the console
@@ -108,7 +132,7 @@ async function initMap() {
         // // Call the function to check if the click location is inside the fence
         // checkFence(closestField, event.latLng, map, polygons); // send closestField, click location, map, and polygons array to checkFence function
         // Call the function to make the html element with the field info and distance
-        fieldInfo(closestField, distanceFeet, fenceDist, map); // send closestField, distanceFeet, fenceDist, and map to fieldInfo function
+        fieldInfo(closestField, distanceFeet, fenceDist, map, levelCounts); // send closestField, distanceFeet, fenceDist, and map to fieldInfo function
 
 
 
@@ -345,8 +369,8 @@ function clearFenceMarkers() {
 }
 
 
-  /// Find the intersection points to measure the fence distance  
-  const epsilon = 1e-9;
+  // /// Find the intersection points to measure the fence distance  
+  // const epsilon = 1e-9;
   
   function findLineIntersection(p1, p2, p3, p4) {
     
@@ -377,64 +401,58 @@ function clearFenceMarkers() {
   // map out the data for polygons
   // input data - full 'data' object from json file and 'map' object from fetchData() and initMap()
     // output - polygons rendered on map
-    function renderPolygons(data, map) {
-        console.log("calling rendering polygons...");
-        polygons = [];
-      
-        data.forEach(field => { // for each field in the data object
-          const fopCoords = field.fop; // create variable fopCoords and set it the fop coordinates data
-          createPolygon(fopCoords, "#00FF00", map); // send fopCoords, color, and map to createPolygon function
-      
-          const foulCoords = field.foul; // create variable foulCoords and set it the foul coordinates data
-          createPolygon(foulCoords, "#FF0000", map); // send foulCoords, color, and map to createPolygon function
-      
-          //send to the createMarker function
-          // home_plate_coords, park_name, level, cardinal direction map
-          createMarker(field.home_plate, field.park_name, field.level, field.field_cardinal_direction, map); 
-        });
-
-        // set the polygons to be on the bottom layer of the map
-        polygons.forEach(polygon => {
-            polygon.setOptions({ zIndex: 0 });
-        });
-      }
+    function renderPolygons(data, map, levelCounts) {
+      console.log("calling rendering polygons...");
+      polygons = [];
+    
+      data.forEach(field => {
+        const fopCoords = field.fop;
+        createPolygon(fopCoords, "#00FF00", map, field);
+    
+        const foulCoords = field.foul;
+        createPolygon(foulCoords, "#FF0000", map, field);
+    
+        createMarker(field.home_plate, field.park_name, field.level, field.field_cardinal_direction, map);
+      });
+    
+      polygons.forEach(polygon => {
+        polygon.setOptions({ zIndex: 0 });
+      });
+    }
     
       //  Create the polygons on the map
       // input data - coordinates, color, and map from renderPolygons()
-      function createPolygon(coordinates, fillColor, map) {
-        const polygon = new google.maps.Polygon({ // call polygon function from google maps api
-          paths: coordinates.map(coord => { // set paths to coordinates
-            return { lat: coord[1], lng: coord[0] }; // Reverse the coordinates to (lat, lng), stored in json the other way
-          }),
-          fillColor: fillColor, // set fill color
-          strokeColor: fillColor, // set border color
-          strokeWeight: 1, // set border weight
-          fillOpacity: 0.35, // set fill opacity by percentage (0-1)
-          map: map // set map to the map object - not sure why this is nessisary. must be needed by api
-        });
+// Create the polygons on the map
+function createPolygon(coordinates, fillColor, map, levelCounts) {
+  const polygon = new google.maps.Polygon({
+    paths: coordinates.map(coord => {
+      return { lat: coord[1], lng: coord[0] };
+    }),
+    fillColor: fillColor,
+    strokeColor: fillColor,
+    strokeWeight: 1,
+    fillOpacity: 0.35,
+    map: map
+  });
 
-        // Create a listener for clicks within the polygon
-        // Goal: open the info window for the field when the polygon is clicked
-        // and pass the location of the click to the drawLine function
-        polygon.addListener("click", (event) => {
-          console.log("Polygon click:", event.latLng);
-          
-          const closestField = closestFieldFunction(event.latLng, fetchedData);
-          
-          const distanceFeet = drawLine(closestField, event.latLng, map);
-          
-          fieldInfo(closestField, distanceFeet, null, map);
-          
-          clickMarker(event.latLng, map);
-      
-          return;
-      });
+  polygon.addListener("click", (event) => {
+    console.log("Polygon click:", event.latLng);
+  
+    const closestField = closestFieldFunction(event.latLng, fetchedData);
+    const distanceFeet = drawLine(closestField, event.latLng, map);
+  
+    const fenceDist = checkFence(closestField, event.latLng, map, polygons);
+  
+    fieldInfo(closestField, distanceFeet, fenceDist, map, levelCounts);
+  
+    clickMarker(event.latLng, map);
+  
+    return;
+  });
+  
+}  
         
-        polygons.push(polygon); // add polygon we created to polygons array (created on top in global variables)
-      
-        return polygon; // return the polygon we created
-        // will be used in the addMapClickHandler function to check the click location against
-      }
+
 
         // Create the markers on the map
                 // Create the markers on the map
@@ -513,6 +531,10 @@ function clearFenceMarkers() {
     numberElement.textContent = value;
     return numberElement;
 }
+
+
+
+
         
 
     // Create the function to make the html element with the field info and distance display
@@ -521,7 +543,7 @@ function clearFenceMarkers() {
     // distance from home plate to the click location and the fence distance from home plate if the click is outside the fence
     // This function is called in the MapClickHandler function
 
-    function fieldInfo(closestField, distanceFeet, fenceDist = null, map) {
+    function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCounts) {
       console.log("Creating field info...");
     
       // Title block
@@ -549,11 +571,11 @@ function clearFenceMarkers() {
       const fenceInfo = document.createElement("p");
       fenceInfo.innerHTML = `Fence Distance | Rank<br>`;
       fenceInfo.appendChild(wrapDigits(closestField.min_distance));
-      fenceInfo.innerHTML += ` MIN<br>`;
+      fenceInfo.innerHTML += ` MIN | ${closestField.min_distance_rank} of ${levelCounts[closestField.level]}<br>`;
       fenceInfo.appendChild(wrapDigits(closestField.max_distance));
-      fenceInfo.innerHTML += ` MAX<br>`;
+      fenceInfo.innerHTML += ` MAX | ${closestField.max_distance_rank} of ${levelCounts[closestField.level]}<br>`;
       fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
-      fenceInfo.innerHTML += ` AVG`;
+      fenceInfo.innerHTML += ` AVG | ${closestField.avg_distance_rank} of ${levelCounts[closestField.level]}<br>`;
       fenceBlock.appendChild(fenceInfo);
     
       // Area block
@@ -561,14 +583,23 @@ function clearFenceMarkers() {
       areaBlock.innerHTML = "";
     
       const areaInfo = document.createElement("p");
-      areaInfo.innerHTML = `Area (acres)<br>`;
-      areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft) / 43560).toFixed(2)));
-      areaInfo.innerHTML += ` Fair Ground<br>`;
-      areaInfo.appendChild(wrapDigits((closestField.foul_area_sqft / 43560).toFixed(2)));
-      areaInfo.innerHTML += ` Foul Ground<br>`;
+      
+      areaInfo.innerHTML += ` Field Area<br> `;
+      areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft + closestField.foul_area_sqft) / 43560).toFixed(2)));
+      areaInfo.innerHTML += ` acres<br>`;
+      
+      areaInfo.innerHTML += `${closestField.field_area_rank} of ${levelCounts[closestField.level]} in class<br><br>`;
+
+
+      // areaInfo.appendChild(wrapDigits((closestField.foul_area_sqft / 43560).toFixed(2)));
+      // areaInfo.innerHTML += ` Foul Ground<br>`;
+      areaInfo.innerHTML += `Fair : Foul Ratio<br>`;
       areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
-      areaInfo.innerHTML += `<number> : 1 </number> Fair : Foul Ratio`;
+      areaInfo.innerHTML += `<number> : 1 </number><br>`;
+      
+      areaInfo.innerHTML += `${closestField.ratio_rank} of ${levelCounts[closestField.level]} in class<br>`;
       areaBlock.appendChild(areaInfo);
+      
     
       const distanceContainer = distanceDisplay(distanceFeet, fenceDist);
     
@@ -579,84 +610,6 @@ function clearFenceMarkers() {
       return;
     }
     
-//     function fieldInfo(closestField, distanceFeet, fenceDist = null, map) {
-//         console.log("Creating field info...");
-//         // create the html element
-//         const fieldInfo = document.createElement("div");
-//         // set the id of the html element
-//         fieldInfo.id = "fieldInfo";
-
-//         // Field name and level as a header
-//         const fieldName = document.createElement("h2");
-//         fieldName.innerHTML = `${closestField.park_name}`;
-        
-//         fieldInfo.appendChild(fieldName);
-
-//         // Cardinal direction of the field
-//         const fieldCardinalDirection = document.createElement("p");
-//         // fieldCardinalDirection.innerHTML = `${closestField.field_cardinal_direction}`;
-//         // fieldInfo.appendChild(fieldCardinalDirection);
-
-//         // Level of the field
-//         const fieldLevel = document.createElement("p");
-//         fieldLevel.innerHTML = `Field Class: ${closestField.level}`;
-//         fieldInfo.appendChild(fieldLevel);
-
-
-//         // Home of the TEAM Element /////
-//         // Display the home team of the field but only if the field has one
-//         if (closestField.home_team != null) {
-//             const homeOf = document.createElement("p");
-//             homeOf.innerHTML = `Home of the ${closestField.home_team}`;
-//             fieldInfo.appendChild(homeOf);
-//         }
-
-//         // const homeOf = document.createElement("p");
-//         // homeOf.innerHTML = `Home of the ${closestField.home_team}`;
-//         // fieldInfo.appendChild(homeOf);
-        
-
-//         // // Home Team Information
-//         // const homeTeamInfo = document.createElement("p");
-//         // homeTeamInfo.innerHTML = `Home Team: ${closestField.home_team}`;
-
-//         // Fence Information
-//         const fenceInfo = document.createElement("p");
-//         fenceInfo.innerHTML = `Fence Distance | Rank<br>`;
-//         fenceInfo.appendChild(wrapDigits(closestField.min_distance));
-//         fenceInfo.innerHTML += ` MIN<br>`;
-//         fenceInfo.appendChild(wrapDigits(closestField.max_distance));
-//         fenceInfo.innerHTML += ` MAX<br>`;
-//         fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
-//         fenceInfo.innerHTML += ` AVG`;
-//         fenceInfo.appen
-//         fieldInfo.append(fenceInfo);
-
-//         // Area information
-//         const areaInfo = document.createElement("p");
-
-//         areaInfo.innerHTML = `Area (acres)<br>`;
-//         areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft) / 43560).toFixed(2)));
-//         areaInfo.innerHTML += ` Fair Ground<br>`;
-//         areaInfo.appendChild(wrapDigits((closestField.foul_area_sqft / 43560).toFixed(2)));
-//         areaInfo.innerHTML += ` Foul Ground<br>`;
-//         areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft/closestField.foul_area_sqft).toFixed(2)));
-//         areaInfo.innerHTML += `<number> : 1 </number> Fair : Foul Ratio`;
-
-//         fieldInfo.append(areaInfo);
-
-//       // Call the distanceDisplay function and append the returned element to the fieldInfo element
-//     const distanceContainer = distanceDisplay(distanceFeet, fenceDist);
-//     fieldInfo.append(distanceContainer);
-
-//     // Append the fieldInfo element to the infoContainer element
-//     const infoContainer = document.getElementById("infoContainer");
-//     infoContainer.innerHTML = ""; // Clear the previous fieldInfo if any
-//     infoContainer.appendChild(fieldInfo);
-
-//     // close the function
-//     return;
-// }
 
 function distanceDisplay(distanceFeet, fenceDist) {
     console.log("Creating distance display...");
