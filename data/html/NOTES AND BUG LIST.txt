@@ -1,3 +1,8 @@
+5/8/23
+** The look of the page and field info display needs to be worked on. The font sizes need to be dynamic based on viuewport size.
+righ now they are static and look awful in a large window.
+also not looking good in moble view
+
 ### BUG list and notes for the field finder app ###
 4/24/2023 9:30 PM
 
