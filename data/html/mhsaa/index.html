@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baseball Fields v2.0</title>
+    <title>MHSAA 2023 Tourny Sites (beta)</title>
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA&libraries=geometry,places"></script>
@@ -21,16 +21,19 @@
 
 
   <div id="map"></div>
-  <div class="background">
-    <div class="scoreboard">
-      <div id="titleBlock"></div>
-      <div class="content">
-        <div id="fenceBlock"></div>
-        <div id="areaBlock"></div>
+    <div id="distanceAndInfo">
+      <div id="distanceBlock"></div>
+      <div class="background">
+          <div class="scoreboard">
+            <div id="titleBlock"></div>
+            <div class="content">
+              <div id="fenceBlock"></div>
+              <div id="areaBlock"></div>
+            </div>
+            <div id="infoContainer"></div>
+          </div>
       </div>
-      <div id="infoContainer"></div>
     </div>
-  </div>
   
 
   <!-- Add the search bar element -->

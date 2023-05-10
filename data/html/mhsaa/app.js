@@ -547,6 +547,12 @@ function clearFenceMarkers() {
         
       console.log("Creating field info...");
 
+      // if (closestField.home_team != null) {
+      //   const homeOf = document.createElement("p");
+      //   homeOf.innerHTML = `Home of the ${closestField.Nickname}`;
+      //   titleBlock.appendChild(homeOf);
+      // }
+
       // Title block
       const titleBlock = document.getElementById("titleBlock");
       titleBlock.innerHTML = "";
@@ -554,32 +560,46 @@ function clearFenceMarkers() {
       const fieldName = document.createElement("h2");
       fieldName.innerHTML = `${closestField.park_name}`;
       titleBlock.appendChild(fieldName);
-
-      const fieldLevel = document.createElement("p");
-      fieldLevel.innerHTML = `Division: ${closestField.division}`;
-      fieldLevel.innerHTML = `Field Class: ${closestField.level}`;
-      titleBlock.appendChild(fieldLevel);
-
-      if (closestField.home_team != null) {
+      if (closestField.level !== 'High School') {
+        fieldLevel.innerHTML += `<br>Field Class: ${closestField.level}`;
+      }
+      if (closestField.Nickname != null) {
         const homeOf = document.createElement("p");
         homeOf.innerHTML = `Home of the ${closestField.Nickname}`;
         titleBlock.appendChild(homeOf);
       }
+
+      const fieldLevel = document.createElement("p");
+      fieldLevel.innerHTML = `Division: ${closestField.division}`;
+
+
+
+      titleBlock.appendChild(fieldLevel);
+
+
+
+
+
+      if (closestField.Color1 != null && closestField.Color2 != null) {
+        document.documentElement.style.setProperty('--dynamic-bg-color', closestField.Color1);
+        document.documentElement.style.setProperty('--dynamic-text-color', closestField.Color2);
+      } 
+      
 ///
       // Fence block
       const fenceBlock = document.getElementById("fenceBlock");
       fenceBlock.innerHTML = "";
 
       const fenceInfo = document.createElement("p");
-      fenceInfo.innerHTML = `Fence Distance | Rank in Class<br>`;
+      fenceInfo.innerHTML = `Fence Distance | Rank ( / ${levelCounts[closestField.level]})<br>`;
       fenceInfo.appendChild(wrapDigits(closestField.min_distance));
-      fenceInfo.innerHTML += ` MIN | ${closestField.min_distance_rank} of ${levelCounts[closestField.level]}<br>`;
+      fenceInfo.innerHTML += ` MIN | (${closestField.min_distance_rank})<br>`;
       fenceInfo.appendChild(wrapDigits(closestField.max_distance));
-      fenceInfo.innerHTML += ` MAX | ${closestField.max_distance_rank} of ${levelCounts[closestField.level]}<br>`;
+      fenceInfo.innerHTML += ` MAX | (${closestField.max_distance_rank})<br><br>`;
       fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
-      fenceInfo.innerHTML += ` AVG | ${closestField.avg_distance_rank} of ${levelCounts[closestField.level]}<br>`
+      fenceInfo.innerHTML += ` AVG | (${closestField.avg_distance_rank})<br>`
       fenceInfo.appendChild(wrapDigits((closestField.median_distance).toFixed(0)));
-      fenceInfo.innerHTML += ` MEDIAN | ${closestField.median_distance_rank} of ${levelCounts[closestField.level]}<br>`;
+      fenceInfo.innerHTML += ` MED | (${closestField.median_distance_rank})<br>`;
       fenceBlock.appendChild(fenceInfo);
 
       // Area block
@@ -592,51 +612,50 @@ function clearFenceMarkers() {
       areaInfo.innerHTML += ` Acres<br>`;
       // areaInfo.appendChild(wrapDigits((closestField.foul_area_sqft / 43560).toFixed(2)));
       // areaInfo.innerHTML += ` Foul Ground<br>`;
-      areaInfo.innerHTML += `Rank: ${closestField.field_area_rank} of ${levelCounts[closestField.level]}<br>`; // Rank of field area
+      areaInfo.innerHTML += `Rank: ${closestField.field_area_rank}<br>`; // Rank of field area
       areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
       areaInfo.innerHTML += `<number> : 1 </number> Fair : Foul Ratio<br>`;
-      areaInfo.innerHTML += `Rank: ${closestField.ratio_rank} of ${levelCounts[closestField.level]}<br>`; // Rank of fair:foul ratio
+      areaInfo.innerHTML += `Rank: ${closestField.ratio_rank}<br>`; // Rank of fair:foul ratio
       areaBlock.appendChild(areaInfo);
 
       const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
 
-      const infoContainer = document.getElementById("infoContainer");
-      infoContainer.innerHTML = ""; // Clear the previous fieldInfo if any
-      infoContainer.appendChild(distanceContainer);
+      // const infoContainer = document.getElementById("infoContainer");
+      // Add these lines instead:
+      const distanceBlock = document.getElementById("distanceBlock");
+      distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
+      distanceBlock.appendChild(distanceContainer);
 
-      return;
-    }
+  return;
+}
+      
 
 function distanceDisplay(distanceFeet, fenceDist, levelCounts) {
-    console.log("Creating distance display...");
-    // check the values of the distanceFeet and fenceDist variables
-    console.log("Distance feet:", distanceFeet, "Fence distance:", fenceDist);
+  console.log("Creating distance display...");
+  console.log("Distance feet:", distanceFeet, "Fence distance:", fenceDist);
+
+  const distanceContainer = document.createElement("div");
+  distanceContainer.id = "distanceContainer";
+
+  if (distanceFeet === null && fenceDist === null) {
+    distanceContainer.innerHTML = "Select a Field and Click to Measure Distance";
+  } else if (distanceFeet !== null && fenceDist === null) {
     
-    // create the distanceContainer element
-    const distanceContainer = document.createElement("div");
-    // set the id of the distanceContainer element
-    distanceContainer.id = "distanceContainer";
+    distanceContainer.innerHTML += `Landing Spot: `;
+    distanceContainer.appendChild(wrapDigits(distanceFeet.toFixed(0)));
+    distanceContainer.innerHTML += ` ft <number> | </number> Home Run Distance <number> --- </number> ft`;
+  } else {
+    distanceContainer.innerHTML += `Landing Spot: `;
+    distanceContainer.appendChild(wrapDigits(distanceFeet.toFixed(0)));
+    distanceContainer.innerHTML += ` ft <number>| </number>`;
+    distanceContainer.innerHTML += ` Home Run Distance: `;
+    distanceContainer.appendChild(wrapDigits(fenceDist.toFixed(0)));
+    distanceContainer.innerHTML += ` ft`;
+  }
 
-    // set the text of the distanceContainer element
-    // if fenceDist is null display '---' for the fence distance
-    if (fenceDist === null) {
-      distanceContainer.innerHTML = `Click on the field to measure distance<br>`;
-      distanceContainer.appendChild(wrapDigits(distanceFeet.toFixed(0)));
-      distanceContainer.innerHTML += ` FT to Marker<number> | ---</number> FT to Fence`;
-      
-    } else {
-        // if fenceDist is not null, display the fence distance value
-        distanceContainer.innerHTML = `Click on the field to measure distance<br>`;        
-        distanceContainer.appendChild(wrapDigits(distanceFeet.toFixed(0)));
-        distanceContainer.innerHTML += ` FT to Marker <number>| </number>`;
-        distanceContainer.appendChild(wrapDigits(fenceDist.toFixed(0)));
-        distanceContainer.innerHTML += ` FT to Fence`;
-
-    }
-
-    // close the function
-    return distanceContainer;
+  return distanceContainer;
 }
+
 
   /////////// FILTER FUNCTIONS ///////////
 

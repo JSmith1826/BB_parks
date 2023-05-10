@@ -24,8 +24,9 @@
   align-items: center;
   width: 50vw;
   height: 30vw;
-  background-color: var(--reseda-green);
-  border-radius: 10px;
+  background-color: var(--dynamic-text-color);
+  background-color: var(--dynamic-bg-color);
+  border-radius: 12px;
   position: relative;
   overflow: auto;
   margin-top: -50px;
@@ -50,6 +51,8 @@
 }
 
 :root {
+  --dynamic-bg-color: #627454;
+  --dynamic-text-color: #f8e2e2;
   --white: #f8e2e2;
   --ash-gray: #e0e6dc;
   --ash-gray-2: #BCC4B4;
@@ -63,6 +66,24 @@
   text-align: center;
   margin-bottom: 0px;
   }
+
+  
+  #distanceBlock {
+    background-color: var(--dynamic-bg-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    /* max-width: 500px; Add a max-width to avoid the block getting too wide on larger screens */
+    padding: 10px; /* Add padding around the content */
+    color: var(--dynamic-text-color);
+    border: 2px solid var(--dynamic-text-color); /* Set the border color and width */
+    position: relative;
+    margin: 0 auto; /* Add margin to center the block horizontally */
+  }
+  
+
   
   #fenceBlock,
   #areaBlock {
@@ -88,7 +109,7 @@
   
   body {
   font-family: 'Oswald', sans-serif;
-  color: var(--white);
+  color: var(--dynamic-text-color);
   font-size: 2rem;
   line-height: 1.1;
   margin: 0;
@@ -97,7 +118,7 @@
   
   .custom-infoTitle {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.525rem;
   align: center;
   color: #333;
   }
@@ -123,7 +144,7 @@
   
   number {
   font-family: 'Bungee', sans-serif;
-  font-size: 1.625rem;
+  font-size: 2.2rem;
   color: var(--white);
   }
   
