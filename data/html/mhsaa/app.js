@@ -2,7 +2,7 @@
 //////// WORK STARTED 5-9-23 ////////
 ///set up variables
 
-const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/mhsaa_step1.json"; // Michigan fields json file
+const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/map.json"; // Michigan fields json file
 let fetchedData;
 let polygons = [];
 let currentLine = null;
@@ -26,6 +26,9 @@ async function initMap() {
     fetchedData = data;
 
     const levelCounts = countFieldsByLevel(fetchedData);
+    
+    let initialCenter = {lat: 44.3148, lng: -85.6024}; // Set to your desired initial center
+    let initialZoom = 8; // Set to your desired initial zoom
 
   
     console.log("Initializing map...");
@@ -49,6 +52,39 @@ google.maps.event.addListener(map, "click", (event) => {
 });
     // Initialize the search box
     initSearchBox(map);
+
+
+//////////////////////////////////////////////////////////
+  //// Add Reset Button To The Map for quick zoom out
+  //////////////////////////////////////////////////////
+    let resetButton = document.createElement('button');
+resetButton.innerHTML = 'Reset Map';
+resetButton.style.background = 'blue'; // Set to your desired background color
+resetButton.style.border = '2px solid #4CAF50'; // Set to your desired border color/style
+resetButton.style.color = 'white'; // Set to your desired text color
+resetButton.style.padding = '15px 32px'; // Set to your desired padding
+resetButton.style.textAlign = 'center'; // Set to your desired text alignment
+resetButton.style.textDecoration = 'bold'; // Set to your desired text decoration
+resetButton.style.display = 'inline-block'; // Set to your desired display
+resetButton.style.fontSize = '2.0rem'; // Set to your desired font size
+resetButton.style.margin = '4px 2px'; // Set to your desired margin
+resetButton.style.cursor = 'pointer'; // Set to your desired cursor style
+resetButton.style.borderRadius = '12px'; // Set to your desired border radius
+
+resetButton.addEventListener('click', function() {
+  map.setZoom(initialZoom);
+  map.setCenter(initialCenter);
+});
+
+// Append the button to a desired parent element
+document.body.appendChild(resetButton);
+map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(resetButton);
+
+// In the example above, TOP_RIGHT can be replaced with any of the following positions:
+// BOTTOM_CENTER, BOTTOM_LEFT, BOTTOM_RIGHT, LEFT_BOTTOM, LEFT_CENTER, LEFT_TOP, 
+// RIGHT_BOTTOM, RIGHT_CENTER, RIGHT_TOP, TOP_CENTER, TOP_LEFT.
+
+
   }
   
   // Wait for the DOM to load before running the initMap function
@@ -378,27 +414,26 @@ function clearFenceMarkers() {
   // map out the data for polygons
   // input data - full 'data' object from json file and 'map' object from fetchData() and initMap()
     // output - polygons rendered on map
-    function renderPolygons(data, map, levelCounts) { // Add levelCounts as an argument
-      console.log("calling rendering polygons...");
-      polygons = [];
-    
-      data.forEach(field => { // for each field in the data object
-        const fopCoords = field.fop; // create variable fopCoords and set it the fop coordinates data
-        createPolygon(fopCoords, "#00FF00", map, levelCounts); // Pass levelCounts here
-    
-        const foulCoords = field.foul; // create variable foulCoords and set it the foul coordinates data
-        createPolygon(foulCoords, "#FF0000", map, levelCounts); // Pass levelCounts here
-    
-        //send to the createMarker function
-        // home_plate_coords, park_name, level, cardinal direction map
-        createMarker(field.home_plate, field.park_name, field.level, field.division, field.field_cardinal_direction, map); 
-      });
-    
-      // set the polygons to be on the bottom layer of the map
-      polygons.forEach(polygon => {
-          polygon.setOptions({ zIndex: 0 });
-      });
-    }
+// Modify renderPolygons to pass the new data to createMarker
+function renderPolygons(data, map, levelCounts) {
+  console.log("calling rendering polygons...");
+  polygons = [];
+
+  data.forEach(field => {
+      const fopCoords = field.fop;
+      createPolygon(fopCoords, "#00FF00", map, levelCounts);
+
+      const foulCoords = field.foul;
+      createPolygon(foulCoords, "#FF0000", map, levelCounts);
+
+      // Pass new data to createMarker
+      createMarker(field.home_plate, field.park_name, field.level, field.division, field.field_cardinal_direction, field.host, field.nickname, field.district_y, map); 
+  });
+
+  polygons.forEach(polygon => {
+      polygon.setOptions({ zIndex: 0 });
+  });
+}
     
     
       //  Create the polygons on the map
@@ -442,23 +477,23 @@ function clearFenceMarkers() {
         // Create the markers on the map
                 // Create the markers on the map
         // input data - home_plate_coords, park_name, level, cardinal_direction, map from renderPolygons()
-        function createMarker(homePlate, park_name, level, division, field_cardinal_direction, map) {
+        function createMarker(homePlate, park_name, level, division, field_cardinal_direction, host, nickname, district_y, map) {
           const marker = new google.maps.Marker({
-            position: new google.maps.LatLng(homePlate[1], homePlate[0]),
-            map: map,
-            title: park_name,
-            level: level,
+              position: new google.maps.LatLng(homePlate[1], homePlate[0]),
+              map: map,
+              title: park_name,
+              level: level,
           });
-        
-          // create the info window
-          // and set content
+      
+          // Modify the content of the infowindow to include new data
           const infowindow = new google.maps.InfoWindow({
-            content: `<div class="custom-infoTitle">${park_name}</div> 
-                        <div class="custom-infowindow">
-                        
-                        Field Class: ${level}<br>                         
-                      </div>`,
+              content: `<div class="custom-infoTitle">${park_name}</div> 
+                          <div class="custom-infowindow">
+                          Division: ${division} | District: ${district_y}<br>
+                          Host Team: ${host} ${nickname}<br>                       
+                        </div>`,
           });
+      
 
 
           // Define the look of the marker
@@ -466,20 +501,20 @@ function clearFenceMarkers() {
           // pathes to the icons
           const iconPath = {
               
-              'High School': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/high_school.png',
-              'College': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/college.png',
-              'Professional': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/pro.png',
-              'Major League': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/mlb.png',
+              '11': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/high_school.png',
+              '21': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/college.png',
+              '31': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/pro.png',
+              '41': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/mlb.png',
               'State / County / Municipal': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/muni.png',
               
               'Unknown': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/other.png',
           };
 
           const div_icons = {
-            'A': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_red.png',
-            'B': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_blue.png',
-            'C': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_lt_blue.png',
-            'D': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_light.png'
+            '1': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_red.png',
+            '2': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_blue.png',
+            '3': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_lt_blue.png',
+            '4': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_light.png'
           };
           
           
@@ -544,52 +579,44 @@ function clearFenceMarkers() {
     // distance from home plate to the click location and the fence distance from home plate if the click is outside the fence
     // This function is called in the MapClickHandler function
     function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCounts) {
-        
+  
       console.log("Creating field info...");
-
-      // if (closestField.home_team != null) {
-      //   const homeOf = document.createElement("p");
-      //   homeOf.innerHTML = `Home of the ${closestField.Nickname}`;
-      //   titleBlock.appendChild(homeOf);
-      // }
-
-      // Title block
+    
       const titleBlock = document.getElementById("titleBlock");
       titleBlock.innerHTML = "";
-
+    
       const fieldName = document.createElement("h2");
       fieldName.innerHTML = `${closestField.park_name}`;
       titleBlock.appendChild(fieldName);
-      // if (closestField.level !== 'High School') {
-      //   fieldLevel.innerHTML += `<br>Field Class: ${closestField.level}`;
-      // }
-      // if (closestField.Nickname != null) {
-      //   const homeOf = document.createElement("p");
-      //   homeOf.innerHTML = `Home of the ${closestField.Nickname}`;
-      //   titleBlock.appendChild(homeOf);
-      // }
-
+    
+      if (closestField.nickname != null) {
+        const homeOf = document.createElement("p");
+        homeOf.innerHTML = `Home of the ${closestField.nickname}`;
+        titleBlock.appendChild(homeOf);
+      }
+    
       const fieldLevel = document.createElement("p");
-      fieldLevel.innerHTML = `Division: ${closestField.division}`;
-
-
-
+      fieldLevel.innerHTML = `Division: ${closestField.division} | District: ${closestField.district_x}`;
+          
       titleBlock.appendChild(fieldLevel);
+    
+  // Define default colors
+  let dynamicBgColor = '#627454'; // replace with your default color
+  let dynamicTextColor = '#f8e2e2'; // replace with your default color
+  
+  if (closestField.color1 != null && closestField.color2 != null) {
+    dynamicBgColor = closestField.color1;
+    dynamicTextColor = closestField.color2;
+  }
+  
+  // Apply colors
+  document.documentElement.style.setProperty('--dynamic-bg-color', dynamicBgColor);
+  document.documentElement.style.setProperty('--dynamic-text-color', dynamicTextColor);
 
-
-
-
-
-      if (closestField.Color1 != null && closestField.Color2 != null) {
-        document.documentElement.style.setProperty('--dynamic-bg-color', closestField.Color1);
-        document.documentElement.style.setProperty('--dynamic-text-color', closestField.Color2);
-      } 
-      
-///
-      // Fence block
+    
       const fenceBlock = document.getElementById("fenceBlock");
       fenceBlock.innerHTML = "";
-
+    
       const fenceInfo = document.createElement("p");
       fenceInfo.innerHTML = `Fence Distance | Rank ( / ${levelCounts[closestField.level]})<br>`;
       fenceInfo.appendChild(wrapDigits(closestField.min_distance));
@@ -597,37 +624,32 @@ function clearFenceMarkers() {
       fenceInfo.appendChild(wrapDigits(closestField.max_distance));
       fenceInfo.innerHTML += ` MAX | (${closestField.max_distance_rank})<br><br>`;
       fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
-      fenceInfo.innerHTML += ` AVG | (${closestField.avg_distance_rank})<br>`
+      fenceInfo.innerHTML += ` AVG | (${closestField.avg_distance_rank})<br>`;
       fenceInfo.appendChild(wrapDigits((closestField.median_distance).toFixed(0)));
       fenceInfo.innerHTML += ` MED | (${closestField.median_distance_rank})<br>`;
       fenceBlock.appendChild(fenceInfo);
-
-      // Area block
+    
       const areaBlock = document.getElementById("areaBlock");
       areaBlock.innerHTML = "";
-
+    
       const areaInfo = document.createElement("p");
       areaInfo.innerHTML = `Total Area<br>`;
       areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft + closestField.foul_area_sqft) / 43560).toFixed(2)));
       areaInfo.innerHTML += ` Acres<br>`;
-      // areaInfo.appendChild(wrapDigits((closestField.foul_area_sqft / 43560).toFixed(2)));
-      // areaInfo.innerHTML += ` Foul Ground<br>`;
       areaInfo.innerHTML += `Rank: ${closestField.field_area_rank}<br>`; // Rank of field area
       areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
       areaInfo.innerHTML += `<number> : 1 </number> Fair : Foul Ratio<br>`;
       areaInfo.innerHTML += `Rank: ${closestField.ratio_rank}<br>`; // Rank of fair:foul ratio
       areaBlock.appendChild(areaInfo);
-
+    
       const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
-
-      // const infoContainer = document.getElementById("infoContainer");
-      // Add these lines instead:
+    
       const distanceBlock = document.getElementById("distanceBlock");
       distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
       distanceBlock.appendChild(distanceContainer);
-
-  return;
-}
+    
+      return;
+    }
       
 
 function distanceDisplay(distanceFeet, fenceDist, levelCounts) {
