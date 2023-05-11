@@ -1,0 +1,612 @@
+team,division,district,nickname,color1,color2,color3,color4,score
+Alpena,1,1,Wildcats,Green , White,,,100
+Marquette,1,1,Redmen/Redettes,Red , White,,,100
+Mount Pleasant,1,1,Oilers,Blue , Gold,,,100
+Traverse City Central,1,1,Trojans,Black , Gold,,,100
+Warren Fitzgerald,2,57,Trojans,Black , Gold,,,53
+Traverse City West,1,1,Titans,Forest Green , Vegas Gold,,,100
+Bay City Central,1,2,Wolves,Purple , Gold,,,100
+Bay City Western,1,2,Warriors,Brown , Gold,,,100
+Midland,1,2,Chemics,Blue , Gold,,,100
+Midland Dow,1,2,Chargers,Green , Gold,,,100
+Saginaw Heritage,1,2,Hawks,Navy Blue , Kelly Green,,,100
+Grand Haven,1,3,Buccaneers,Blue , Gold,,,100
+Grand Rapids Kenowa Hills,1,3,Knights,Black , Gold,,,100
+Muskegon,1,3,Big Reds,Cardinal , White,,,100
+Muskegon Mona Shores,1,3,Sailors,Navy Blue,Columbia,White,,100
+Muskegon Reeths-Puffer,1,3,Rockets,Green , White,,,100
+Cedar Springs,1,4,Red Hawks,Red , White,,,100
+Grand Rapids Forest Hills Northern,1,4,Huskies,Columbia Blue,Black,White,,100
+Grand Rapids Northview,1,4,Wildcats,Red , White,,,100
+Greenville,1,4,Yellow Jackets,Purple , Gold,,,100
+Rockford,1,4,Rams,Black , Orange,,,100
+Byron Center,1,5,Bulldogs,Orange , Black,,,100
+Grand Rapids Union,1,5,Red Hawks,Red , White,,,100
+Grandville,1,5,Bulldogs,Maroon , White,,,100
+Jenison,1,5,Wildcats,"Green, White, ", Grey,,,100
+Wyoming,1,5,Wolves,Black , Purple,,,100
+Caledonia,1,6,Fighting Scots,Purple , Gold,,,100
+East Kentwood,1,6,Falcons,Red , Black,,,100
+Grand Rapids Forest Hills Central,1,6,Rangers,Forest Green , White,,,100
+Lowell,1,6,Red Arrows,Red , White,,,100
+Holland West Ottawa,1,7,Panthers,Black , White,,,100
+Hudsonville,1,7,Eagles,Maize , Blue,,,100
+St Joseph,1,7,Bears,Maize , Blue,,,100
+Zeeland East,1,7,Chix,Brown , Gold,,,100
+Zeeland West,1,7,Dux,Forest Green , Vegas Gold,,,100
+Kalamazoo Central,1,8,Maroon Giants,Maroon , White,,,100
+Kalamazoo Loy Norrix,1,8,Knights,Navy , White,,,100
+Mattawan,1,8,Wildcats,Blue , Gold,,,100
+Portage Central,1,8,Mustangs,Blue , Gold,,,100
+Portage Northern,1,8,Huskies,Brown , White,,,100
+Walled Lake Northern,1,30,Huskies,Brown , White,,,61
+DeWitt,1,9,Panthers,Blue , Gold,,,100
+East Lansing,1,9,Trojans,Blue , White,,,100
+Grand Ledge,1,9,Comets,Blue , Gold,,,100
+Lansing Everett,1,9,Vikings,Red , Blue,,,100
+Lansing Waverly,1,9,Warriors,Black , Gold,,,100
+Okemos,1,9,Chiefs,Maroon , White,,,100
+Battle Creek Central,1,10,Bearcats,Navy Blue , Gold,,,100
+Walled Lake Central,1,30,Bearcats,Navy Blue , Gold,,,67
+Battle Creek Lakeview,1,10,Spartans,Purple , White,,,100
+Holt,1,10,Rams,Brown , Gold,,,100
+Jackson,1,10,Vikings,Orange,Black,White,,100
+Jackson Northwest,1,10,Mounties,Red , Black,,,100
+Brighton,1,11,Bulldogs,Orange , Black,,,100
+Hartland,1,11,Eagles,Blue , Gold,,,100
+Wayland,2,44,Eagles,Blue , Gold,,,67
+Howell,1,11,Highlanders,Green , Vegas Gold,,,100
+South Lyon,1,11,Lions,Blue , Gold,,,100
+South Lyon East,1,11,Cougars,Black , Silver,,,100
+Ann Arbor Huron,1,12,River Rats,Green , Gold,,,100
+Ann Arbor Pioneer,1,12,Pioneers,Purple , White,,,100
+Ann Arbor Skyline,1,12,Eagles,Columbia Blue , White,,,100
+Dexter,1,12,Dreadnaughts,Maroon , Gold,,,100
+Saline,1,12,Hornets,Blue , Gold,,,100
+Belleville,1,13,Tigers,Orange , Black,,,100
+Monroe,1,13,Trojans,Red , White,,,100
+Temperance Bedford,1,13,Kicking Mules,Scarlet , Gray,,,100
+Ypsilanti Community,1,13,Grizzlies,Black , Vegas Gold,,,100
+Ypsilanti Lincoln,1,13,Railsplitters,Blue , Grey,,,100
+Warren Lincoln,3,91,Railsplitters,Blue , Grey,,,65
+Dearborn Heights Crestwood,1,14,Chargers,Navy Blue , Gold,,,100
+Livonia Franklin,1,14,Patriots,Red , Blue,,,100
+Redford Thurston,1,14,Eagles,Navy Blue , White,,,100
+Wayne Memorial,1,14,Mustangs,Carolina Blue , White,,,53
+Waterford Kettering,1,29,Mustangs,Carolina Blue , White,,,57
+Sanford Meridian,3,71,Mustangs,Carolina Blue , White,,,100
+Westland John Glenn,1,14,Bobcats,Blue , White,,,63
+Bay City John Glenn,2,36,Bobcats,Blue , White,,,100
+Canton,1,15,Chiefs,Scarlet , White,,,100
+Livonia Churchill,1,15,Trojans,Red , Gray,,,74
+Livonia Clarenceville,2,54,Trojans,Red , Gray,,,100
+Northville,1,15,Mustangs,Orange , Black,,,100
+Plymouth,1,15,Wildcats,Black , Silver,,,100
+Salem,1,15,Rocks,Royal Blue , White,,,100
+Detroit Catholic Central,1,16,Shamrocks,Royal Blue , White,,,100
+Farmington,1,16,Falcons,Blue , White,,,100
+Livonia Stevenson,1,16,Spartans,Blue , White,,,100
+North Farmington,1,16,Raiders,Brown , Gold,,,100
+Novi,1,16,Wildcats,Green , White,,,100
+Brownstown Woodhaven,1,17,Warriors,Purple , White,,,100
+Gibraltar Carlson,1,17,Marauders,Royal Blue , White,,,100
+Southgate Anderson,1,17,Titans,Burgundy , Silver,,,100
+Taylor,1,17,Griffins,Black , Gold,,,100
+Wyandotte Roosevelt,1,17,Bears,Blue , Gold,,,100
+Allen Park,1,18,Jaguars,Forest Green,White,,,100
+Dearborn,1,18,Pioneers,Orange , Black,,,100
+Dearborn Edsel Ford,1,18,Thunderbirds,Black , White,,,100
+Lincoln Park,1,18,Railsplitters,Royal Blue , Orange,,,100
+River Rouge,1,18,Panthers,Maroon , White,,,100
+Dearborn Fordson,1,19,Tractors,Maize,Blue,,,100
+Detroit Cass Tech,1,19,Technicians,Forest Green , White,,,100
+Detroit Martin Luther King,1,19,Crusaders,Black , Gold,,,100
+Detroit Western,1,19,Cowboys/Cowgirls,Red , White,,,100
+Hamtramck,1,19,Cosmos,Maroon , White,,,100
+Grosse Pointe North,1,20,Norsemen,Green , Gold,,,100
+Grosse Pointe South,1,20,Blue Devils,Blue , Gold,,,100
+Harper Woods,1,20,Pioneers,Maroon , White,,,100
+Warren Woods Tower,1,21,Pioneers,Maroon , White,,,60
+St Clair Shores Lakeview,1,20,Huskies,Blue , Silver,,,100
+Fraser,1,21,Ramblers,Navy Blue , Gold,,,100
+Roseville,1,21,Panthers,Red,White,Black,,100
+St Clair Shores Lake Shore,1,21,Shorians,Red , White,,,100
+Warren De La Salle Collegiate,1,21,Mountaineers,Black , Gold,,,60
+Clarkston Everest Collegiate,4,126,Mountaineers,Black , Gold,,,100
+Berkley,1,22,Bears,Maroon , Blue,,,100
+Ubly,4,121,Bears,Maroon , Blue,,,55
+Royal Oak,1,22,Ravens,Black,Royal,Silver,,100
+Sterling Heights,1,22,Stallions,Black , Gold,,,100
+Warren Cousino,1,22,Cougars,Royal , Orange,,,56
+Garden City,2,53,Cougars,Royal , Orange,,,100
+Warren Mott,1,22,Packers,Red , White,,,56
+Fremont,2,37,Packers,Red , White,,,100
+Detroit Mumford,1,23,Mustangs,Blue , Burgundy,,,100
+Detroit Renaissance,1,23,Phoenix,Burgundy , White,,,100
+Detroit U of D Jesuit,1,23,Cubs,Maroon , White,,,92
+Oak Park,1,23,Knights,Red,White,Black,,100
+Birmingham Groves,1,24,Falcons,Green , White,,,100
+Birmingham Seaholm,1,24,Maples,Maroon , White,,,100
+Bloomfield Hills Brother Rice,1,24,Warriors,Orange , Black,,,100
+Southfield Arts & Technology,1,24,Warriors,Navy,Red,White,,100
+Clinton Township Chippewa Valley,1,25,Big Reds,Red , White,,,100
+Harrison Township L'Anse Creuse,1,25,Lancers,Blue , White,,,100
+Sterling Heights Stevenson,1,25,Titans,Navy Blue , White,,,100
+Utica Ford,1,25,Panthers,Purple , White,,,67
+Pickford,4,99,Panthers,Purple , White,,,100
+Macomb Dakota,1,26,Cougars,Green,Navy,Gray,,100
+Macomb L'Anse Creuse North,1,26,Crusaders,Black , Vegas Gold,,,100
+New Baltimore Anchor Bay,1,26,Tars,Red , White,,,100
+Port Huron,1,26,Big Reds,Red , White,,,100
+Port Huron Northern,1,26,Huskies,Blue , Gold,,,100
+Rochester,1,27,Falcons,Royal Blue , White,,,100
+Rochester Adams,1,27,Highlanders,Brown , Gold,,,100
+Rochester Hills Stoney Creek,1,27,Cougars,Navy,Vegas Gold,White,,100
+Romeo,1,27,Bulldogs,Red , White,,,100
+Utica Eisenhower,1,27,Cardinals,Red , Grey,,,52
+Michigan Center,3,84,Cardinals,Red , Grey,,,100
+Auburn Hills Avondale,1,28,Yellow Jackets,Purple , Gold,,,100
+Bloomfield Hills,1,28,Black Hawks,Black,Purple,Silver,,100
+West Bloomfield,1,29,Black Hawks,Black,Purple,Silver,,65
+Troy,1,28,Colts,Black , Silver,,,100
+Troy Athens,1,28,Indians,Purple , White,,,71
+Athens,4,117,Indians,Purple , White,,,100
+Utica,1,28,Yellowjackets,Blue , Gold,,,55
+Ithaca,3,77,Yellowjackets,Blue , Gold,,,100
+Lake Orion,1,29,Dragons,Green , White,,,100
+Orchard Lake St Mary's,1,29,Eaglets,Red , White,,,100
+Waterford Mott,1,29,Indians,Green , White,,,55
+Hartford,3,73,Indians,Green , White,,,100
+Milford,1,30,Mavericks,Cardinal , White,,,100
+Walled Lake Western,1,30,Panthers,Maroon,White,Gold,,62
+Parma Western,2,47,Panthers,Maroon,White,Gold,,100
+White Lake Lakeland,1,30,Trojans,Red , White,,,62
+Whitmore Lake,4,128,Trojans,Red , White,,,100
+Clarkston,1,31,Wolves,Blue , Gold,,,100
+Fenton,1,31,Tigers,Orange , Black,,,100
+Grand Blanc,1,31,Bobcats,Red , Black,,,100
+Holly,1,31,Bronchos,Red , White,,,100
+Oxford,1,31,Wildcats,Navy Blue , Gold,,,100
+Davison,1,32,Cardinals,Maroon , Gold,,,100
+Flint Carman-Ainsworth,1,32,Cavaliers,Royal Blue , Gray,,,100
+Flushing,1,32,Raiders,Orange , Black,,,100
+Lapeer,1,32,Lightning,Blue , Green,,,100
+Swartz Creek,1,32,Dragons,Red , White,,,100
+Escanaba,2,33,Eskymos,Orange , Black,,,100
+Houghton,2,33,Gremlins,Orange , Black,,,100
+Kingsford,2,33,Flivvers,Maize , Blue,,,100
+Sault Ste Marie,2,33,Blue Devils,Navy Blue , White,,,100
+Cheboygan,2,34,Chiefs,Orange , Black,,,100
+Gaylord,2,34,Blue Devils,Blue , Gold,,,100
+Ogemaw Heights,2,34,Falcons,Brown , Gold,,,100
+Petoskey,2,34,Northmen,Blue , White,,,100
+Big Rapids,2,35,Cardinals,Red , Blue,,,100
+Cadillac,2,35,Vikings,Blue , Gold,,,100
+Gladwin,2,35,Flying G's,Royal Blue , White,,,100
+Kingsley,2,35,Stags,Orange , Black,,,100
+Ludington,2,35,Orioles,Orange , Black,,,100
+Essexville Garber,2,36,Dukes,Carolina Blue , White,,,100
+Freeland,2,36,Falcons,Green , White,,,100
+Midland Bullock Creek,2,36,Lancers,Black , Gold,,,100
+Shepherd,2,36,Bluejays,Blue , Gold,,,100
+Alma,2,37,Panthers,Orange , Black,,,100
+Grant,2,37,Tigers,Orange , Black,,,100
+Howard City Tri County,2,37,Vikings,Black , Gold,,,100
+Newaygo,2,37,Lions,Black , White,,,100
+Fruitport,2,38,Trojans,Navy , White,,,100
+Muskegon Oakridge,2,38,Eagles,Blue , White,,,100
+Muskegon Orchard View,2,38,Cardinals,Red , Gray,,,100
+Spring Lake,2,38,Lakers,Red , Gray,,,100
+Whitehall,2,38,Vikings,Red,White,Black,,100
+Allendale,2,39,Falcons,Scarlet Red , White,,,100
+Comstock Park,2,39,Panthers,Green , Gold,,,100
+Coopersville,2,39,Broncos,Green , White,,,100
+Sparta,2,39,Spartans,Royal Blue , White,,,100
+Ada Forest Hills Eastern,2,40,Hawks,Crimson , Black,,,100
+Belding,2,40,Black Knights,Orange , Black,,,100
+Ionia,2,40,Bulldogs,Royal Blue , White,,,100
+Portland,2,40,Raiders,Cardinal Red , White,,,100
+St Johns,2,40,Redwings,Red , White,,,100
+East Grand Rapids,2,41,Pioneers,Blue , Gold,,,100
+Grand Rapids Christian,2,41,Eagles,Columbia Blue , Black,,,100
+Grand Rapids Sacred Heart,4,115,Eagles,Columbia Blue , Black,,,72
+Grand Rapids South Christian,2,41,Sailors,Navy , White,,,100
+Grand Rapids West Michigan Aviation Academy,2,41,Aviators,Orange , Royal Blue,,,100
+Middleville Thornapple Kellogg,2,41,Trojans,Orange , Black,,,100
+Grand Rapids Catholic Central,2,42,Cougars,Royal Blue , White,,,100
+Hudsonville Unity Christian,2,42,Crusaders,Navy , White,,,100
+Wyoming Godwin Heights,2,42,Wolverines,Navy , Gold,,,100
+Wyoming Kelloggsville,2,42,Rockets,Navy , Orange,,,100
+Wyoming Lee,2,42,Legends,Navy Blue , Vegas Gold,,,100
+Allegan,2,43,Tigers,Orange , Black,,,100
+Hamilton,2,43,Hawkeyes,Black , Gold,,,100
+Holland,2,43,Dutch,Red , White,,,100
+Holland Christian,2,43,Maroons,Maroon , White,,,100
+South Haven,2,43,Rams,Purple , Gold,,,100
+Hopkins,2,44,Vikings,Royal Blue , White,,,100
+Otsego,2,44,Bulldogs,Navy Blue , Vegas Gold,,,100
+Plainwell,2,44,Trojans,Royal Blue , White,,,100
+Richland Gull Lake,2,44,Blue Devils,Navy , White,,,100
+Benton Harbor,2,45,Tigers,Orange , Black,,,100
+Berrien Springs,2,45,Shamrocks,Green , White,,,100
+Edwardsburg,2,45,Eddies,Orange , Royal Blue,,,100
+Niles,2,45,Vikings,Navy Blue , Vegas Gold,,,100
+Stevensville Lakeshore,2,45,Lancers,Red , White,,,100
+Dowagiac,2,46,Chieftains,Orange , Black,,,100
+Paw Paw,2,46,Redskins,Red , White,,,100
+Sturgis,2,46,Trojans,Orange , Black,,,100
+Vestaburg,4,109,Trojans,Orange , Black,,,62
+Three Rivers,2,46,Wildcats,Purple , White,,,100
+Vicksburg,2,46,Wolfpack,Red , White,,,63
+Laingsburg,3,78,Wolfpack,Red , White,,,100
+Battle Creek Harper Creek,2,47,Beavers,Royal Blue , White,,,100
+Battle Creek Pennfield,2,47,Panthers,Green , White,,,100
+Coldwater,2,47,Cardinals,Red , White,,,100
+Marshall,2,47,Redhawks,Red , Black,,,100
+Charlotte,2,48,Orioles,Orange , Black,,,100
+Eaton Rapids,2,48,Greyhounds,Maroon , White,,,100
+Hastings,2,48,Saxons,Navy Blue , Gold,,,100
+Lake Odessa Lakewood,2,48,Vikings,Navy Blue , White,,,100
+Olivet,2,48,Eagles,Green , White,,,100
+Ann Arbor Father Gabriel Richard,2,49,Irish,Green , White,,,100
+Chelsea,2,49,Bulldogs,Blue , Gold,,,100
+Mason,2,49,Bulldogs,Blue , Red,,,100
+Pinckney,2,49,Pirates,Red,Black,White,,100
+Adrian,2,50,Maples,Royal Blue , White,,,100
+Waldron,4,119,Maples,Royal Blue , White,,,62
+Dundee,2,50,Vikings,Royal Blue , White,,,100
+Milan,2,50,Big Reds,Red , Black,,,100
+Tecumseh,2,50,Indians,Orange , Black,,,100
+Carleton Airport,2,51,Jets,Navy Blue , Gold,,,100
+Flat Rock,2,51,Rams,Green , Gold,,,100
+Monroe Jefferson,2,51,Bears,Royal Blue , Gold,,,100
+New Boston Huron,2,51,Chiefs,Red , White,,,100
+Grosse Ile,2,52,Red Devils,Scarlet , Gray,,,100
+Riverview,2,52,Pirates,Maroon , Gold,,,100
+Romulus,2,52,Eagles,Maroon , White,,,100
+Romulus Summit Academy North,2,52,Dragons,Teal , Black,,,100
+Trenton,2,52,Trojans,Blue , Gold,,,100
+Dearborn Divine Child,2,53,Falcons,Red , Gray,,,100
+Dearborn Heights Annapolis,2,53,Cougars,Blue , Gold,,,100
+Dearborn Henry Ford Academy,2,53,Navigators,Royal Blue , Silver,,,100
+Melvindale,2,53,Cardinals,Red , White,,,100
+Detroit Cody,2,54,Comets,Green , Gray,,,100
+Detroit Henry Ford,2,54,Trojans,Brown , Gold,,,100
+Redford Union,2,54,Panthers,Blue , Gold,,,100
+Detroit University Prep,2,55,Panthers,Black,Red,White,,100
+Detroit Denby,2,56,Tars,Blue , Gold,,,100
+Detroit East English,2,56,Bulldogs,Maize , Blue,,,100
+Grosse Pointe Woods University Liggett,2,56,Knights,Red , Navy,,,100
+Harper Woods Chandler Park,2,56,Eagles,Navy Blue , White,,,100
+St Clair Shores South Lake,2,56,Cavaliers,Royal Blue , Gold,,,100
+Center Line,2,57,Panthers,Orange , Black,,,100
+Watervliet,3,73,Panthers,Orange , Black,,,57
+Eastpointe,2,57,Shamrocks,Green , White,,,100
+Hazel Park,2,57,Vikings,Maroon , Grey,,,100
+Madison Heights Lamphere,2,57,Rams,Blue , White,,,100
+Macomb Lutheran North,2,58,Mustangs,Black , Gold,,,100
+Marine City,2,58,Mariners,Orange , Black,,,100
+Marysville,2,58,Vikings,Navy , White,,,100
+Richmond,2,58,Blue Devils,Navy,White,Columbia Blue,,100
+St Clair,2,58,Saints,Scarlet Red , Royal Blue,,,100
+Armada,2,59,Tigers,Orange , Black,,,100
+Croswell-Lexington,2,59,Pioneers,Royal Blue , White,,,100
+Imlay City,2,59,Spartans,Royal Blue , Athletic Gold,,,100
+North Branch,2,59,Broncos,Blue , White,,,100
+Yale,2,59,Bulldogs,Navy , White,,,100
+Bloomfield Hills Cranbrook Kingswood,2,60,Cranes,Blue , Green,,,100
+Detroit Country Day,2,60,Yellowjackets,Blue , Gold,,,100
+Goodrich,2,60,Martians,Blue , Gold,,,100
+Ortonville Brandon,2,60,Blackhawks,Royal Blue , White,,,100
+Unionville-Sebewaing,4,122,Blackhawks,Royal Blue , White,,,58
+Pontiac Notre Dame Prep,2,60,Fighting Irish,Forest Green,Vegas Gold,White,,100
+Fowlerville,2,61,Gladiators,Purple , Gold,,,100
+Haslett,2,61,Vikings,Blue , Gold,,,100
+Lansing Eastern,2,61,Quakers,Blue , Gold,,,100
+Lansing Sexton,2,61,Big Reds,Red , White,,,100
+Williamston,2,61,Hornets,Green , White,,,100
+Corunna,2,62,Cavaliers,Black , Gold,,,100
+Flint Powers Catholic,2,62,Chargers,Blue , Orange,,,100
+Lake Fenton,2,62,Blue Devils,Royal Blue , White,,,100
+Linden,2,62,Eagles,Red,Black,White,,100
+Owosso,2,62,Trojans,Blue , Gold,,,100
+Birch Run,2,63,Panthers,Blue , Gold,,,100
+Clio,2,63,Mustangs,Orange , Black,,,100
+Flint Hamady,2,63,Hawks,Columbia Blue , White,,,100
+Flint Kearsley,2,63,Hornets,Royal Blue , Gold,,,100
+Frankenmuth,2,63,Eagles,Red , Gray,,,100
+Bridgeport,2,64,Bearcats,Red,Gold,White,,100
+Carrollton,2,64,Cavaliers,Red,Black,White,,100
+Saginaw Arthur Hill,2,64,Lumberjacks,Navy , Gold,,,100
+Saginaw Swan Valley,2,64,Vikings,Purple , White,,,100
+Calumet,3,65,Copper Kings,Blue , Grey,,,100
+Hancock,3,65,Bulldogs,Crimson , Gold,,,100
+Iron Mountain,3,65,Mountaineers,Black , Gold,,,100
+Ishpeming Westwood,3,65,Patriots,Red,White,Blue,,100
+Negaunee,3,65,Miners,Maize , Blue,,,100
+Eben Junction Superior Central,3,66,Cougars,Blue , Silver,,,100
+Gladstone,3,66,Braves,Purple , White,,,100
+Manistique,3,66,Emeralds,Green , White,,,100
+Menominee,3,66,Maroons,Maroon , White,,,100
+Newberry,3,66,Indians,Orange , Black,,,100
+Boyne City,3,67,Ramblers,Scarlet , Navy,,,100
+Union City,3,82,Ramblers,Scarlet , Navy,,,70
+Charlevoix,3,67,Rayders,Maroon , White,,,100
+Elk Rapids,3,67,Elks,Orange , Black,,,100
+Kalkaska,3,67,Blazers,Blue , White,,,100
+Mancelona,3,67,Ironmen,Orange , Black,,,100
+Grayling,3,68,Vikings,Green , White,,,100
+Houghton Lake,3,68,Bobcats,Green , White,,,100
+Lake City,3,68,Trojans,Red , Black,,,100
+McBain,3,68,Ramblers,Green , Gold,,,100
+Roscommon,3,68,Bucks,Blue , Gold,,,100
+Hart,3,69,Pirates,Red , White,,,100
+Hesperia,3,69,Panthers,Green , White,,,100
+Mason County Central,3,69,Spartans,Royal Blue , Gold,,,100
+Morley Stanwood,3,69,Mohawks,Blue , Gold,,,100
+Shelby,3,69,Tigers,Purple , White,,,100
+White Cloud,3,69,Chiefs,Red , Black,,,61
+White Pigeon,4,116,Chiefs,Red , Black,,,100
+Benzie Central,3,70,Huskies,Red , White,,,100
+Manistee,3,70,Chippewas,Navy , Gold,,,100
+Manton,3,70,Rangers,Orange , Black,,,100
+Traverse City Christian,3,70,Sabres,Maroon,White,Black,,100
+Traverse City St Francis,3,70,Gladiators,Navy , Vegas Gold,,,100
+Beaverton,3,71,Beavers,Red , White,,,100
+Oscoda,3,71,Owls,Royal Blue , White,,,100
+Pinconning,3,71,Spartans,Green , White,,,100
+Standish-Sterling,3,71,Panthers,Blue,White,Gold,,100
+Tawas,3,71,Braves,Red , White,,,100
+Clare,3,72,Pioneers,Green , White,,,100
+Evart,3,72,Wildcats,Royal Blue , Gold,,,100
+Vassar,3,95,Wildcats,Royal Blue , Gold,,,55
+Harrison,3,72,Hornets,Blue , Gold,,,100
+LeRoy Pine River,3,72,Bucks,Green , White,,,100
+Reed City,3,72,Coyotes,Red , Black,,,100
+Remus Chippewa Hills,3,72,Warriors,Royal,Red,White,,100
+Bangor,3,73,Vikings,Scarlet , White,,,100
+Bloomingdale,3,73,Cardinals,Red , White,,,100
+Coloma,3,73,Comets,Forest Green , Gold,,,100
+Climax-Scotts,3,74,Panthers,Blue , Gold,,,100
+Comstock,3,74,Colts,Carolina Blue , White,,,100
+Galesburg-Augusta,3,74,Rams,Cardinal , Gold,,,100
+Kalamazoo Christian,3,74,Comets,Purple , Gold,,,100
+Parchment,3,74,Panthers,Maroon , White,,,100
+Fennville,3,75,Blackhawks,Black , Orange,,,100
+Grand Rapids Covenant Christian,3,75,Chargers,Black , Gold,,,100
+Grandville Calvin Christian,3,75,Squires,Green , Gold,,,100
+Holland Black River,3,75,Rats,Black , Hunter Green,,,100
+Saugatuck,3,75,Indians,Royal Blue , Orange,,,100
+Kent City,3,76,Eagles,Scarlet , White,,,100
+Montague,3,76,Wildcats,Royal , White,,,100
+North Muskegon,3,76,Norsemen,Blue , Gold,,,100
+Ravenna,3,76,Bulldogs,Royal Blue , White,,,100
+Chesaning,3,77,Indians,Orange , Black,,,100
+Hemlock,3,77,Huskies,Navy , White,,,100
+Ovid-Elsie,3,77,Marauders,Blue , Gold,,,100
+St Louis,3,77,Sharks,Red , Black,,,100
+Bath,3,78,Fighting Bees,Royal Blue,White,Gray,,100
+Byron,3,78,Eagles,Purple , Gold,,,100
+Durand,3,78,Railroaders,Blue , White,,,100
+Perry,3,78,Ramblers,Red , White,,,100
+Delton Kellogg,3,79,Panthers,Maroon , White,,,100
+Lansing Catholic,3,79,Cougars,Columbia Blue , Silver,,,100
+Pewamo-Westphalia,3,79,Pirates,Blue , Gold,,,100
+Springport,3,79,Spartans,Royal Blue , White,,,100
+Vermontville Maple Valley,3,79,Tigers,Blue , Gold,,,53
+Central Montcalm,3,80,Hornets,Green , White,,,100
+Grand Rapids NorthPointe Christian,3,80,Mustangs,Royal,White,Gold,,100
+Grand Rapids West Catholic,3,80,Falcons,Green , White,,,100
+Lakeview,3,80,Wildcats,Navy , Vegas Gold,,,100
+Saranac,3,80,Redskins,Red , White,,,100
+Bridgman,3,81,Bees,Orange , Navy,,,100
+Buchanan,3,81,Bucks,Maroon , White,,,100
+Cassopolis,3,81,Rangers,Blue , White,,,100
+Lawton,3,81,Blue Devils,Royal Blue , Gold,,,100
+Niles Brandywine,3,81,Bobcats,Maroon , Gold,,,100
+Bronson,3,82,Vikings,Purple , Gold,,,100
+Centreville,3,82,Bulldogs,Blue , Gold,,,100
+Constantine,3,82,Falcons,Red,White,,,100
+Schoolcraft,3,82,Eagles,Purple , Gold,,,100
+Hanover-Horton,3,83,Comets,Red , White,,,100
+Hillsdale,3,83,Hornets,Maize , Blue,,,100
+Homer,3,83,Trojans,Orange , Black,,,100
+Jonesville,3,83,Comets,Orange , Black,,,100
+Quincy,3,83,Orioles,Black , Orange,,,100
+Brooklyn Columbia Central,3,84,Golden Eagles,Blue , Gold,,,100
+Jackson Lumen Christi,3,84,Titans,Forest Green , Gold,,,100
+Napoleon,3,84,Pirates,Green , White,,,100
+Dansville,3,85,Aggies,Black,White,Gold,,100
+Grass Lake,3,85,Warriors,Navy , White,,,100
+Leslie,3,85,Blackhawks,Orange , Black,,,100
+Stockbridge,3,85,Panthers,Orange , Black,,,100
+Adrian Madison,3,86,Trojans,Blue , Gold,,,100
+Clinton,3,86,Redskins,Red , Black,,,100
+Hudson,3,86,Tigers,Orange , Black,,,100
+Manchester,3,86,Flying Dutchmen,Maroon , Gold,,,100
+Onsted,3,86,Wildcats,Purple , Gold,,,100
+Blissfield,3,87,Royals,Purple , Gold,,,100
+Erie Mason,3,87,Eagles,Blue , Gold,,,100
+Wakefield-Marenisco,4,97,Eagles,Blue , Gold,,,55
+Ida,3,87,Bluestreaks,Royal Blue , Gold,,,100
+Monroe St Mary Catholic Central,3,87,Falcons/Kestrels,Green , Gold,,,100
+Ottawa Lake Whiteford,3,87,Bobcats,Blue , Gold,,,100
+Ann Arbor Greenhills,3,88,Gryphons,Navy , Forest,,,100
+Brighton Charyl Stockwell Prep,3,88,Sentinels,Burgundy , White,,,100
+Canton Prep,3,88,Chargers,Gold,Silver,Black,,100
+Dearborn Heights Robichaud,3,88,Bulldogs,Red,Black,White,,100
+Taylor Prep,3,88,Tigers,Orange , Black,,,100
+Detroit Communication Media Arts,3,89,Pharaohs,Purple,Black,White,,100
+Detroit Jalen Rose Leadership Academy,3,89,Jaguars,Navy Blue , Gold,,,100
+Detroit Loyola,3,89,Bulldogs,Blue , White,,,100
+Detroit Cristo Rey,3,90,Wolves,Green , Vegas Gold,,,100
+Ecorse,3,90,Red Raiders,Red , White,,,100
+Hope of Detroit Academy,3,90,Warriors,Blue , Gold,,,100
+Detroit Central,3,91,Trail Blazers,Navy Blue , White,,,100
+Detroit Edison,3,91,Pioneers,Red,Black,White,,100
+Detroit Osborn,3,91,Knights,Red,White,,,100
+Detroit Pershing,3,91,Doughboys,Royal Blue , Gold,,,100
+Clawson,3,92,Trojans,Blue , Gold,,,100
+Clinton Township Clintondale,3,92,Dragons,Blue , Gold,,,100
+Madison Heights Bishop Foley,3,92,Ventures,Black,Gold,White,,100
+Madison Heights Madison,3,92,Eagles,Purple , Gold,,,100
+Algonac,3,93,Muskrats,Blue , Gold,,,100
+Almont,3,93,Raiders,Orange , Black,,,100
+Memphis,3,93,Yellowjackets,Blue , Gold,,,100
+New Haven,3,93,Rockets,Green , White,,,100
+Burton Atherton,3,94,Wolverines,Black,White,Silver,,100
+Burton Bendle,3,94,Tigers,Blue , Gold,,,100
+Burton Bentley,3,94,Bulldogs,Red , White,,,100
+Montrose,3,94,Rams,Red , Black,,,100
+Mt Morris,3,94,Panthers,Navy , White,,,100
+New Lothrop,3,94,Hornets,Black , White,,,100
+Millington,3,95,Cardinals,Red , White,,,100
+Otisville LakeVille Memorial,3,95,Falcons,Black , Gold,,,100
+Reese,3,95,Rockets,Maroon , Gold,,,100
+Saginaw Valley Lutheran,3,95,Chargers,Blue , Gold,,,100
+Westland Huron Valley Lutheran,4,128,Chargers,Blue , Gold,,,72
+Bad Axe,3,96,Hatchets,Blue , Gold,,,100
+Caro,3,96,Tigers,Purple , White,,,100
+Cass City,3,96,Red Hawks,Maroon , White,,,100
+Elkton-Pigeon-Bay Port Laker,3,96,Lakers,Green , White,,,100
+Sandusky,3,96,Redskins,Red , Black,,,100
+Ironwood,4,97,Red Devils,Red , White,,,100
+Lake Linden-Hubbell,4,97,Lakes,Navy , Gold,,,100
+L'Anse,4,97,Purple Hornets,Purple , White,,,100
+Ontonagon,4,97,Gladiators,Maroon , White,,,100
+Painesdale Jeffers,4,97,Jets,Green , White,,,100
+Bark River-Harris,4,98,Broncos,Navy , Gold,,,100
+Crystal Falls Forest Park,4,98,Trojans,Red , Black,,,100
+Felch North Dickinson,4,98,Nordics,Maroon , White,,,100
+Norway,4,98,Knights,Navy , White,,,100
+Powers North Central,4,98,Jets,Red,Black,White,,100
+Stephenson,4,98,Eagles,Royal Blue , Gold,,,100
+Brimley,4,99,Bays,Royal Blue , White,,,100
+Mackinaw City,4,99,Comets,Blue , White,,,100
+Pellston,4,99,Hornets,Brown , Gold,,,100
+Rudyard,4,99,Bulldogs,Orange , Black,,,100
+Alanson ,4,100,Vikings,Blue , Gold,,,100
+Burt Lake Northern Michigan Christian,4,100,Eagles,Blue , White,,,100
+Harbor Springs,4,100,Rams,Orange , Black,,,100
+Harbor Springs Harbor Light Christian,4,100,Swordsmen,Maroon , Gray,,,100
+Indian River Inland Lakes,4,100,Bulldogs,Blue , White,,,100
+Bellaire,4,101,Eagles,Red , Black,,,100
+Central Lake,4,101,Trojans,Royal Blue , Orange,,,100
+East Jordan,4,101,Red Devils,Red , Black,,,100
+Ellsworth,4,101,Lancer,Black , White,,,100
+Boyne Falls,4,102,Loggers,Green , White,,,100
+Gaylord St Mary,4,102,Snowbirds,Blue , White,,,100
+Johannesburg-Lewiston,4,102,Cardinals,Red , White,,,100
+Mio,4,102,Thunderbolts,Blue , Gold,,,100
+Wolverine,4,102,Wildcats,Navy Blue , Gold,,,100
+Atlanta,4,103,Huskies,Green , White,,,100
+Hillman,4,103,Tigers,Orange , Black,,,100
+Onaway,4,103,Cardinals,Red , White,,,100
+Posen,4,103,Vikings,Red , White,,,100
+Rogers City,4,103,Hurons,Orange , Black,,,100
+Alcona,4,104,Tigers,Blue , Gold,,,100
+Au Gres-Sims,4,104,Wolverines,Maroon , Gold,,,100
+Hale,4,104,Eagles,Navy , White,,,100
+St Helen Charlton Heston Academy,4,104,Patriots,Red,White,Blue,,100
+Whittemore-Prescott,4,104,Cardinals,Red , White,,,100
+Frankfort,4,105,Panthers,Purple , Gold,,,100
+Lake Leelanau St Mary,4,105,Eagles,Royal Blue , White,,,100
+Maple City Glen Lake,4,105,Lakers,Black,White,Gold,,100
+Suttons Bay,4,105,Norsemen,Red , White,,,100
+Buckley,4,106,Bears,Royal Blue , Gold,,,100
+Fife Lake Forest Area,4,106,Warriors,Forest Green , Gold,,,100
+Marion,4,106,Eagles,Maroon , White,,,100
+Mesick,4,106,Bulldogs,Orange , Black,,,100
+Bear Lake,4,107,Lakers,Red , White,,,100
+Vandercook Lake,4,118,Lakers,Red , White,,,58
+Brethren,4,107,Bobcats,Columbia Blue,Navy,White,,100
+Manistee Catholic Central,4,107,Sabers,Red,White,Blue,,100
+Mason County Eastern,4,107,Cardinals,Scarlet , Gold,,,100
+Pentwater,4,107,Falcons,Purple , Gold,,,100
+Baldwin,4,108,Panthers,Blue , Gold,,,100
+Blanchard Montabella,4,108,Mustangs,Navy Blue , White,,,100
+Holton,4,108,Red Devils,Red , White,,,100
+Muskegon Catholic Central,4,108,Crusaders,Green , Gold,,,100
+Muskegon Western Michigan Christian,4,108,Warriors,Forest Green , White,,,100
+Beal City,4,109,Aggies,Blue , White,,,100
+Coleman,4,109,Comets,Blue , White,,,100
+Farwell,4,109,Eagles,Purple , Gold,,,100
+Mount Pleasant Sacred Heart,4,109,Irish,Red,White,Green,,100
+Breckenridge,4,110,Huskies,Blue , Gold,,,100
+Merrill,4,110,Vandals,Orange , Black,,,100
+Saginaw Michigan Lutheran Seminary,4,110,Cardinals,Red , White,,,100
+Saginaw Nouvel,4,110,Panthers,Royal Blue , Silver,,,100
+St Charles,4,110,Bulldogs,Red , Black,,,100
+Ashley,4,111,Bears,Royal Blue , Gold,,,100
+Carson City-Crystal,4,111,Eagles,Royal Blue , Gold,,,100
+Fowler,4,111,Eagles,Blue , White,,,100
+Fulton,4,111,Pirates,Blue , Gold,,,100
+Portland St Patrick,4,111,Shamrocks,Green , White,,,100
+Lansing Christian,4,112,Pilgrims,Black , Gold,,,100
+Morrice,4,112,Orioles,Orange , Black,,,100
+Potterville,4,112,Vikings,Maroon , Gold,,,100
+Webberville,4,112,Eagles,Maroon , Gold,,,73
+Deckerville,4,121,Eagles,Maroon , Gold,,,100
+Eau Claire,4,113,Fighting Beavers,Maroon , White,,,100
+New Buffalo,4,113,Bison,Royal Blue , Gold,,,100
+St Joseph Michigan Lutheran,4,113,Titans,Purple , White,,,100
+St Joseph Our Lady of the Lake Catholic,4,113,Lakers,Royal Blue,Gold,White,,68
+Three Oaks River Valley,4,113,Mustangs,Navy , White,,,100
+Decatur,4,114,Raiders,Brown , Gold,,,100
+Gobles,4,114,Tigers,Blue , Orange,,,100
+Lawrence,4,114,Tigers,Purple , White,,,100
+Marcellus,4,114,Wildcats,Orange , Black,,,100
+Byron Center Zion Christian,4,115,Mountaineers,Blue , Gray,,,100
+Martin,4,115,Clippers,Maroon , White,,,100
+Wyoming Potter's House Christian,4,115,Pumas,Navy , White,,,100
+Wyoming Tri-unity Christian,4,115,Defenders,Royal Blue , White,,,100
+Kalamazoo Hackett Catholic Prep,4,116,Irish,Green,White,,,100
+Kalamazoo Heritage Christian,4,116,Eagles,Navy Blue , White,,,100
+Mendon,4,116,Hornets,Green , White,,,100
+Bellevue,4,117,Broncos,Red , White,,,100
+Colon,4,117,Magi,Red , White,,,100
+Tekonsha,4,117,Indians,Red , White,,,100
+Addison,4,118,Panthers,Black , Red,,,100
+Concord,4,118,Yellow Jackets,Purple , Gold,,,100
+East Jackson,4,118,Trojans,Navy Blue , White,,,100
+Litchfield,4,118,Terriers,Red , White,,,100
+Camden-Frontier,4,119,Redskins,Red , White,,,100
+North Adams-Jerome,4,119,Rams,Green , White,,,100
+Pittsford,4,119,Wildcats,Blue , White,,,100
+Reading,4,119,Rangers,Red , Gold,,,100
+Adrian Lenawee Christian,4,120,Cougars,Royal Blue,White,Scarlet,,100
+Britton Deerfield,4,120,Patriots,Red,White,Navy Blue,,100
+Morenci,4,120,Bulldogs,Maroon , White,,,100
+Petersburg Summerfield,4,120,Bulldogs,Black , Orange,,,100
+Sand Creek,4,120,Aggies,Green , White,,,100
+Harbor Beach,4,121,Pirates,Orange , Black,,,100
+Kinde North Huron,4,121,Warriors,Blue , Gold,,,100
+Akron-Fairgrove,4,122,Vikings,Kelly Green , White,,,100
+Bay City All Saints,4,122,Cougars,Columbia Blue , White,,,100
+Caseville,4,122,Eagles,Red , White,,,100
+Kingston,4,122,Cardinals,Red , Black,,,100
+Mayville,4,122,Wildcats,Maroon , White,,,100
+Brown City,4,123,Green Devils,Green , White,,,100
+Capac,4,123,Chiefs,Gold , Blue,,,100
+Marlette,4,123,Red Raiders,Red , White,,,100
+Peck,4,123,Pirates,Red , White,,,100
+Dryden,4,124,Cardinals,Red , Black,,,100
+Genesee,4,124,Wolves,Green , White,,,100
+Genesee Christian,4,124,Soldiers,Royal Blue , White,,,100
+Auburn Hills Oakland Christian,4,125,Lancers,Forest Green , Vegas Gold,,,100
+Marine City Cardinal Mooney,4,125,Cardinals,Red,White,Black,,100
+New Haven Merritt Academy,4,125,Mustangs,Royal Blue,White,,,100
+Rochester Hills Lutheran Northwest,4,125,Crusaders,Red,White,Black,,100
+Sterling Heights Parkway Christian,4,125,Eagles,Royal Blue,Red,White,,100
+Bloomfield Hills Roeper,4,126,Roughriders,Red,White,Black,,100
+Royal Oak Shrine Catholic,4,126,Knights,Blue , Gold,,,100
+Southfield Christian,4,126,Eagles,Blue , Gold,,,100
+Waterford Our Lady of the Lakes,4,126,Tigers,Columbia Blue,White,Navy,,58
+Detroit Academy of the Americas,4,127,Tigers,Columbia Blue,White,Navy,,100
+Allen Park Cabrini,4,127,Monarchs,Navy , Gold,,,100
+Allen Park Inter-City Baptist,4,127,Chargers,Purple , Gold,,,100
+Riverview Gabriel Richard,4,127,Pioneers,Burgundy , White,,,100
+Taylor Trillium Academy,4,127,Wildcats,Royal Blue,White,Silver,,100
+Lutheran Westland,4,128,Warriors,Black , White,,,100
+Novi Christian Academy,4,128,Warriors,Maroon , White,,,100
+Plymouth Christian Academy,4,128,Eagles,Purple,Gold,,,100
