@@ -2,7 +2,7 @@
 //////// WORK STARTED 5-9-23 ////////
 ///set up variables
 
-const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/michigan_fields.json"; // Michigan fields json file
+const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/mhsaa_step1.json"; // Michigan fields json file
 let fetchedData;
 let polygons = [];
 let currentLine = null;
@@ -560,14 +560,14 @@ function clearFenceMarkers() {
       const fieldName = document.createElement("h2");
       fieldName.innerHTML = `${closestField.park_name}`;
       titleBlock.appendChild(fieldName);
-      if (closestField.level !== 'High School') {
-        fieldLevel.innerHTML += `<br>Field Class: ${closestField.level}`;
-      }
-      if (closestField.Nickname != null) {
-        const homeOf = document.createElement("p");
-        homeOf.innerHTML = `Home of the ${closestField.Nickname}`;
-        titleBlock.appendChild(homeOf);
-      }
+      // if (closestField.level !== 'High School') {
+      //   fieldLevel.innerHTML += `<br>Field Class: ${closestField.level}`;
+      // }
+      // if (closestField.Nickname != null) {
+      //   const homeOf = document.createElement("p");
+      //   homeOf.innerHTML = `Home of the ${closestField.Nickname}`;
+      //   titleBlock.appendChild(homeOf);
+      // }
 
       const fieldLevel = document.createElement("p");
       fieldLevel.innerHTML = `Division: ${closestField.division}`;
@@ -607,7 +607,7 @@ function clearFenceMarkers() {
       areaBlock.innerHTML = "";
 
       const areaInfo = document.createElement("p");
-      areaInfo.innerHTML = `Area<br>`;
+      areaInfo.innerHTML = `Total Area<br>`;
       areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft + closestField.foul_area_sqft) / 43560).toFixed(2)));
       areaInfo.innerHTML += ` Acres<br>`;
       // areaInfo.appendChild(wrapDigits((closestField.foul_area_sqft / 43560).toFixed(2)));
