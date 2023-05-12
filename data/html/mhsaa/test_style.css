@@ -1,0 +1,34 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1.1fr 0.9fr;
+  grid-template-rows: 0.3fr 1.8fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Title-Graphic---MHSAA-2023 Title-Graphic---MHSAA-2023 Title-Graphic---MHSAA-2023"
+    "Map Map District-\/-Game-Info"
+    "Map Map Field-Info";
+}
+
+.Map { grid-area: Map; }
+
+.Title-Graphic---MHSAA-2023 { grid-area: Title-Graphic---MHSAA-2023; }
+
+.District-\/-Game-Info { grid-area: District-\/-Game-Info; }
+
+.Field-Info {  display: grid;
+  grid-template-columns: 1.8fr 1.1fr 0.4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Title-Block Title-Block Title-Block"
+    "Distance Area-Stats Area-Stats"
+    "Distance Area-Stats Area-Stats";
+  grid-area: Field-Info;
+}
+
+.Distance { grid-area: Distance; }
+
+.Title-Block { grid-area: Title-Block; }
+
+.Area-Stats { grid-area: Area-Stats; }

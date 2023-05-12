@@ -487,10 +487,12 @@ function renderPolygons(data, map, levelCounts) {
       
           // Modify the content of the infowindow to include new data
           const infowindow = new google.maps.InfoWindow({
-              content: `<div class="custom-infoTitle">${park_name}</div> 
+              content: `<div class="custom-infoTitle">District # ${district_y}</div> 
                           <div class="custom-infowindow">
-                          Division: ${division} | District: ${district_y}<br>
-                          Host Team: ${host} ${nickname}<br>                       
+                          Division: ${division}<br><br>
+                          ${park_name}<br>
+
+                          Host:<br>${host} ${nickname}                   
                         </div>`,
           });
       
