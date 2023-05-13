@@ -1,34 +1,64 @@
-.container {  display: grid;
-  grid-template-columns: 1fr 1.1fr 0.9fr;
-  grid-template-rows: 0.3fr 1.8fr 1fr;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.7fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "Title-Graphic---MHSAA-2023 Title-Graphic---MHSAA-2023 Title-Graphic---MHSAA-2023"
-    "Map Map District-\/-Game-Info"
-    "Map Map Field-Info";
+    "title_bar title_bar title_bar"
+    "map_element map_element field_info"
+    "map_element map_element game_info";
 }
 
-.Map { grid-area: Map; }
+.map_element {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr 0.6fr;
+  grid-template-rows: 0.2fr 2.1fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "search_element . ."
+    ". . ."
+    "map_bottom_container map_bottom_container map_bottom_container";
+  grid-area: map_element;
+  background-color: lightblue; /* Add background color */
+}
 
-.Title-Graphic---MHSAA-2023 { grid-area: Title-Graphic---MHSAA-2023; }
+.search_element {
+  grid-area: search_element;
+  background-color: lightgreen; /* Add background color */
+}
 
-.District-\/-Game-Info { grid-area: District-\/-Game-Info; }
-
-.Field-Info {  display: grid;
-  grid-template-columns: 1.8fr 1.1fr 0.4fr;
+.map_bottom_container {
+  display: grid;
+  grid-template-columns: 0.6fr 1.8fr 0.6fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "Title-Block Title-Block Title-Block"
-    "Distance Area-Stats Area-Stats"
-    "Distance Area-Stats Area-Stats";
-  grid-area: Field-Info;
+    ". distance_click_element ."
+    ". distance_click_element ."
+    ". . .";
+  grid-area: map_bottom_container;
+  background-color: lightgray; /* Add background color */
 }
 
-.Distance { grid-area: Distance; }
+.distance_click_element {
+  grid-area: distance_click_element;
+  background-color: lightyellow; /* Add background color */
+}
 
-.Title-Block { grid-area: Title-Block; }
+.title_bar {
+  grid-area: title_bar;
+  background-color: lightcoral; /* Add background color */
+}
 
-.Area-Stats { grid-area: Area-Stats; }
+.field_info {
+  grid-area: field_info;
+  background-color: lightpink; /* Add background color */
+}
+
+.game_info {
+  grid-area: game_info;
+  background-color: lightsalmon; /* Add background color */
+}
