@@ -8,6 +8,7 @@ let polygons = [];
 let currentLine = null;
 let currentMarker = null;
 let fenceMarkers = [];
+let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/main/data/images/icons/base/plate_empty.png";  
 // const epsilon = 1e-9; // set epsilon to 1e-9 for use in the fenceDistance and intersectionPoint functions
 
 //fetch data from json file
@@ -142,7 +143,7 @@ async function MapClickHandler(event, data, map, polygons, levelCounts) {
 
  
 
-        // // Call the function to check if the click location is inside the fence
+        // // // Call the function to check if the click location is inside the fence
         // checkFence(closestField, event.latLng, map, polygons); // send closestField, click location, map, and polygons array to checkFence function
         
         // Call the function to make the html element with the field info and distance
@@ -303,6 +304,8 @@ function checkFence(closestField, clickLocation, map, polygons) {
     for (let i = 0; i < polygons.length; i++) {
         const polygon = polygons[i];
         if (!google.maps.geometry.poly.containsLocation(clickLocation, polygon)) { // IF THE CLICK LOCATION IS OUTSIDE THE POLYGON
+            console.log("Click location is outside the fence");
+            console.log("${closestField.name} ${closestField.home_plate}");
             const homePlateLatLng = closestField.home_plate;
             const homePlatePoint = new google.maps.LatLng(homePlateLatLng[1], homePlateLatLng[0]);
             const polygonCoords = polygon.getPath().getArray();
@@ -433,7 +436,8 @@ function renderPolygons(data, map, levelCounts) {
       }
 
       // Pass new data to createMarker
-      createMarker(field.home_plate, field.park_name, field.level, field.division, field.field_cardinal_direction, field.host, field.nickname, field.district, map); 
+      createMarker(field, map);
+
   });
 
   polygons.forEach(polygon => {
@@ -480,119 +484,86 @@ function renderPolygons(data, map, levelCounts) {
         return polygon; // return the polygon we created
         // will be used in the addMapClickHandler function to check the click location against
       }
-
-        // Create the markers on the map
-                // Create the markers on the map
-        // input data - home_plate_coords, park_name, level, cardinal_direction, map from renderPolygons()
-        function createMarker(homePlate, park_name, level, division, field_cardinal_direction, host, nickname, district_y, map) {
-          const marker = new google.maps.Marker({
-              position: new google.maps.LatLng(homePlate[1], homePlate[0]),
-              map: map,
-              title: park_name,
-              level: level,
-          });
-      
-          // Modify the content of the infowindow to include new data
-          const infowindow = new google.maps.InfoWindow({
-              content: `<div class="custom-infoTitle">District # ${district_y}</div> 
-                          <div class="custom-infowindow">
-                          Division: ${division}<br><br>
-                          ${park_name}<br>
-
-                          Host:<br>${host} ${nickname}                   
-                        </div>`,
-          });
-      
+// Define the paths to the icons outside of the function, as they don't change
+const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/mhsaa/';
+const iconDist = {
+    '1': `${iconPathBase}1_red.png`,
+    '2': `${iconPathBase}2_blue.png`,
+    '3': `${iconPathBase}3_lt_blue.png`,
+    '4': `${iconPathBase}4_white.png`,
+};
+const iconRSF = {
+    '1': `${iconPathBase}2_red.png`,
+    '2': `${iconPathBase}2_blue.png`,
+    '3': `${iconPathBase}2_lt_blue.png`,
+    '4': `${iconPathBase}2_white.png`,
+};
+const iconRF = {
+    '1': `${iconPathBase}3_red.png`,
+    '2': `${iconPathBase}3_blue.png`,
+    '3': `${iconPathBase}3_lt_blue.png`,
+    '4': `${iconPathBase}3_white.png`,
+};
+const iconChamp = `${iconPathBase}champ.png`;
 
 
-          // Define the look of the marker
-          //goal: change the marker icon based on the level of the field
-          // pathes to the icons
+function createMarker(field, map) {
+    // Set the icon based on the level round and divsion
+    let iconUrl;
+    if (field.finals !== null) {
+        iconUrl = iconChamp;
+    } else if (field.region_final_quarter !== null) {
+        iconUrl = iconRF[field.regional_div];
+    } else if (field.region_semi_number !== null) {
+        iconUrl = iconRSF[field.regional_div];
+    } else if (field.district !== null) {
+        iconUrl = iconDist[field.division];
+    } else {
+        // Default icon URL if none of the conditions are met
+        iconUrl = defaultIconUrl;
+    }
 
-          // Colors for the markers by Division
-          // 1: red
-          // 2: blue
-          // 3: lt_blue
-          //4 : white
+    const marker = new google.maps.Marker({
+        position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
+        map: map,
+        title: field.park_name,
+        icon: {
+            url: iconUrl,
+            scaledSize: new google.maps.Size(40, 40)  // Sets the icon size to 30x30 pixels
+        },
+        level: field.level,
+    });
 
-          const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/mhsaa/';
-          const iconDist = {
-              '1': `${iconPathBase}1_red.png`,
-              '2': `${iconPathBase}2_blue.png`,
-              '3': `${iconPathBase}3_lt_blue.png`,
-              '4': `${iconPathBase}4_white.png`,
-          }
-          const iconRSF = {
-              '1': `${iconPathBase}2_red.png`,
-              '2': `${iconPathBase}2_blue.png`,
-              '3': `${iconPathBase}2_lt_blue.png`,
-              '4': `${iconPathBase}2_white.png`,
-          }
-          const iconRF = {
-              '1': `${iconPathBase}3_red.png`,
-              '2': `${iconPathBase}3_blue.png`,
-              '3': `${iconPathBase}3_lt_blue.png`,
-              '4': `${iconPathBase}3_white.png`,
-          }
-          const iconChamp = `${iconPathBase}champ.png`
-          
-          
-        // Set the icon based on the level round and divsion
-        // If field.finals isnot null then set icon to champ
-        let iconUrl;
-        if (field.finals !== null) {
-            iconUrl = iconChamp;
-        } else if (field.region_final_quarter !== null) {
-            iconUrl = iconRF[field.regional_div];
-        } else if (field.region_semi_number !== null) {
-            iconUrl = iconRSF[field.regional_div];
-        } else if (field.district !== null) {
-            iconUrl = iconDist[field.division];
-        } else {
-            // Default icon URL if none of the conditions are met
-            iconUrl = defaultIconUrl;
-        }
-        
-        // Then you can use iconUrl when creating the marker
-        let marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            icon: iconUrl
-        });
-        // et the icon based on the level of the field and scale it
-          // marker.setIcon({
-          //     url: iconPath[level],
-          //     scaledSize: new google.maps.Size(30, 30),
-          // });
+    const infowindow = new google.maps.InfoWindow({
+        content: `<div class="custom-infoTitle">District # ${field.district}</div> 
+                    <div class="custom-infowindow">
+                    Division: ${field.division}<br><br>
+                    ${field.park_name}<br>
+                    Host:<br>${field.host} ${field.nickname}                   
+                  </div>`,
+    });
 
+    // Control mouse behavior
+    marker.addListener("click", () => {
+        infowindow.open(map, marker);
+    });
 
-              
-        
-           // Control mouse behavior
-          // Add a click event listener to the marker
-          marker.addListener("click", () => {
-            infowindow.open(map, marker);
-          });
+    marker.addListener("mouseover", () => {
+        infowindow.open(map, marker);
+    });
 
-          // add event listenr for a mouseover on the marker
-          marker.addListener("mouseover", () => {
-              infowindow.open(map, marker); // open the info window
-            });
+    marker.addListener("mouseout", () => {
+        infowindow.close();
+    });
 
-          // add event listener for a mouseout on the marker
-            marker.addListener("mouseout", () => {
-              infowindow.close(); // close the info window
-            });
+    marker.addListener("dblclick", () => {
+        map.setCenter(marker.getPosition());
+        map.setZoom(19);
+    });
 
-          // Add a listener for double click on the marker
-          // Goal: center map on marker and zoom
-          marker.addListener("dblclick", () => {
-              map.setCenter(marker.getPosition()); // center map on marker
-              map.setZoom(19); // zoom in to 19
-            });
+    return marker;
+}
 
-            return marker;
-        }
 
 
   function wrapDigits(value) {
