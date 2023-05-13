@@ -508,38 +508,58 @@ function renderPolygons(data, map, levelCounts) {
           // Define the look of the marker
           //goal: change the marker icon based on the level of the field
           // pathes to the icons
-          const iconPath = {
-              
-              '11': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/high_school.png',
-              '21': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/college.png',
-              '31': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/pro.png',
-              '41': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/mlb.png',
-              'State / County / Municipal': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/muni.png',
-              
-              'Unknown': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/baseball/other.png',
-          };
 
-          const div_icons = {
-            '1': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_red.png',
-            '2': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_blue.png',
-            '3': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_lt_blue.png',
-            '4': 'https://raw.githubusercontent.com/JSmith1826/BB_parks/ecb2cd9906ec94af15c295d023afef9a6c5b5fd7/data/images/icons/base/TEMP/plate_full_light.png'
-          };
+          // Colors for the markers by Division
+          // 1: red
+          // 2: blue
+          // 3: lt_blue
+          //4 : white
+
+          const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/mhsaa/';
+          const iconDist = {
+              '1': `${iconPathBase}1_red.png`,
+              '2': `${iconPathBase}2_blue.png`,
+              '3': `${iconPathBase}3_lt_blue.png`,
+              '4': `${iconPathBase}4_white.png`,
+          }
+          const iconRSF = {
+              '1': `${iconPathBase}2_red.png`,
+              '2': `${iconPathBase}2_blue.png`,
+              '3': `${iconPathBase}2_lt_blue.png`,
+              '4': `${iconPathBase}2_white.png`,
+          }
+          const iconRF = {
+              '1': `${iconPathBase}3_red.png`,
+              '2': `${iconPathBase}3_blue.png`,
+              '3': `${iconPathBase}3_lt_blue.png`,
+              '4': `${iconPathBase}3_white.png`,
+          }
+          const iconChamp = `${iconPathBase}champ.png`
           
           
-            // Set the icon based on the level of the field and scale it
-            let iconUrl = iconPath[level];
-
-            // Check if the 'division' attribute is present and overwrite the icon if needed
-            if (division && div_icons.hasOwnProperty(division)) {
-              iconUrl = div_icons[division];
-            }
-
-            marker.setIcon({
-              url: iconUrl,
-              scaledSize: new google.maps.Size(30, 30),
-            });
-          // // set the icon based on the level of the field and scale it
+        // Set the icon based on the level round and divsion
+        // If field.finals isnot null then set icon to champ
+        let iconUrl;
+        if (field.finals !== null) {
+            iconUrl = iconChamp;
+        } else if (field.region_final_quarter !== null) {
+            iconUrl = iconRF[field.regional_div];
+        } else if (field.region_semi_number !== null) {
+            iconUrl = iconRSF[field.regional_div];
+        } else if (field.district !== null) {
+            iconUrl = iconDist[field.division];
+        } else {
+            // Default icon URL if none of the conditions are met
+            iconUrl = defaultIconUrl;
+        }
+        
+        // Then you can use iconUrl when creating the marker
+        let marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            icon: iconUrl
+        });
+        // et the icon based on the level of the field and scale it
           // marker.setIcon({
           //     url: iconPath[level],
           //     scaledSize: new google.maps.Size(30, 30),
