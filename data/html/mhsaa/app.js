@@ -421,19 +421,26 @@ function renderPolygons(data, map, levelCounts) {
 
   data.forEach(field => {
       const fopCoords = field.fop;
-      createPolygon(fopCoords, "#00FF00", map, levelCounts);
-
       const foulCoords = field.foul;
-      createPolygon(foulCoords, "#FF0000", map, levelCounts);
+      
+      // Check if fopCoords and foulCoords are not empty before calling createPolygon
+      if (fopCoords && fopCoords.length > 0) {
+          createPolygon(fopCoords, "#00FF00", map, levelCounts);
+      }
+
+      if (foulCoords && foulCoords.length > 0) {
+          createPolygon(foulCoords, "#FF0000", map, levelCounts);
+      }
 
       // Pass new data to createMarker
-      createMarker(field.home_plate, field.park_name, field.level, field.division, field.field_cardinal_direction, field.host, field.nickname, field.district_y, map); 
+      createMarker(field.home_plate, field.park_name, field.level, field.division, field.field_cardinal_direction, field.host, field.nickname, field.district, map); 
   });
 
   polygons.forEach(polygon => {
       polygon.setOptions({ zIndex: 0 });
   });
 }
+
     
     
       //  Create the polygons on the map
