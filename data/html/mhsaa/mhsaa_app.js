@@ -8,7 +8,7 @@ let polygons = [];
 let currentLine = null;
 let currentMarker = null;
 let fenceMarkers = [];
-let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/main/data/images/icons/base/plate_empty.png";  
+let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/3508a593be080a4fb7cf102cda697ce8f893c840/data/images/icons/base/TEMP/infield2_black.png";  
 // const epsilon = 1e-9; // set epsilon to 1e-9 for use in the fenceDistance and intersectionPoint functions
 
 //fetch data from json file
@@ -208,6 +208,10 @@ function initSearchBox(map) {
                 closestField = field; // set the closestField to this field
             }
         });
+        // If the distance to the closest field is over 1 mile return null
+        if (minDistance > 1609) {
+            return null;
+        }
         console.log("Closest field:", closestField, "Min distance:", minDistance); //
       
         return closestField;
@@ -305,7 +309,9 @@ function checkFence(closestField, clickLocation, map, polygons) {
         const polygon = polygons[i];
         if (!google.maps.geometry.poly.containsLocation(clickLocation, polygon)) { // IF THE CLICK LOCATION IS OUTSIDE THE POLYGON
             console.log("Click location is outside the fence");
-            console.log("${closestField.name} ${closestField.home_plate}");
+            // show closest field
+            console.log("Closest field:", closestField);
+            
             const homePlateLatLng = closestField.home_plate;
             const homePlatePoint = new google.maps.LatLng(homePlateLatLng[1], homePlateLatLng[0]);
             const polygonCoords = polygon.getPath().getArray();
@@ -508,7 +514,10 @@ const iconChamp = `${iconPathBase}champ.png`;
 
 
 function createMarker(field, map) {
-    // Set the icon based on the level round and divsion
+    
+
+    
+    // Set the icon based on the level round and division
     let iconUrl;
     if (field.finals !== null) {
         iconUrl = iconChamp;
@@ -534,14 +543,87 @@ function createMarker(field, map) {
         level: field.level,
     });
 
-    const infowindow = new google.maps.InfoWindow({
-        content: `<div class="custom-infoTitle">District # ${field.district}</div> 
-                    <div class="custom-infowindow">
-                    Division: ${field.division}<br><br>
-                    ${field.park_name}<br>
-                    Host:<br>${field.host} ${field.nickname}                   
-                  </div>`,
-    });
+    // Create the marker popup content
+    let markerPopupContent = `<div class="custom-infoTitle">${field.park_name}</div>`;
+    
+    function createMarker(field, map) {
+        // Set the icon based on the level round and division
+        let iconUrl;
+        if (field.finals !== null) {
+            iconUrl = iconChamp;
+        } else if (field.region_final_quarter !== null) {
+            iconUrl = iconRF[field.regional_div];
+        } else if (field.region_semi_number !== null) {
+            iconUrl = iconRSF[field.regional_div];
+        } else if (field.district !== null) {
+            iconUrl = iconDist[field.division];
+        } else {
+            // Default icon URL if none of the conditions are met
+            iconUrl = defaultIconUrl;
+        }
+    
+        const marker = new google.maps.Marker({
+            position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
+            map: map,
+            title: field.park_name,
+            icon: {
+                url: iconUrl,
+                scaledSize: new google.maps.Size(40, 40)  // Sets the icon size to 30x30 pixels
+            },
+            level: field.level,
+        });
+    
+
+
+    
+        const infowindow = new google.maps.InfoWindow({
+            content: markerPopupContent
+        });
+    
+        // Control mouse behavior
+        marker.addListener("click", () => {
+            infowindow.open(map, marker);
+        });
+    
+        marker.addListener("mouseover", () => {
+            infowindow.open(map, marker);
+        });
+    
+        marker.addListener("mouseout", () => {
+            infowindow.close();
+        });
+    
+        marker.addListener("dblclick", () => {
+            map.setCenter(marker.getPosition());
+            map.setZoom(19);
+            
+        });
+    
+        return marker;
+    }
+    markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Hosted by the ${field.host_team} ${field.nickname}</div>`;
+if (field.district !== null) {
+    markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.division}</span> District ${field.district}</div>`;
+} 
+
+if (field.finals !== null) {
+    markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">TROPHY WEEKEND<br>June DATE</div>`;
+} 
+
+if (field.region_final_quarter !== null) {
+    markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.regional_div}</span> Final and Quarter Final ${field.region_final_quarter}</div>`;
+} 
+
+if (field.region_semi_number !== null) {
+    markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.regional_div}</span> Regional Semi ${field.region_semi_number}</div>`;
+} 
+
+markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center custom-markerPopup-light"><br>Double Click to Zoom</div>`;
+
+const infowindow = new google.maps.InfoWindow({
+    content: markerPopupContent
+});
+
 
     // Control mouse behavior
     marker.addListener("click", () => {
@@ -566,6 +648,7 @@ function createMarker(field, map) {
 
 
 
+
   function wrapDigits(value) {
     const numberElement = document.createElement("number");
     numberElement.textContent = value;
@@ -579,43 +662,63 @@ function createMarker(field, map) {
     // distance from home plate to the click location and the fence distance from home plate if the click is outside the fence
     // This function is called in the MapClickHandler function
     function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCounts) {
-  
-      console.log("Creating field info...");
-    
-      const titleBlock = document.getElementById("titleBlock");
-      titleBlock.innerHTML = "";
-    
-      const fieldName = document.createElement("h2");
-      fieldName.innerHTML = `${closestField.park_name}`;
-      titleBlock.appendChild(fieldName);
-    
-      if (closestField.nickname != null) {
-        const homeOf = document.createElement("p");
-        homeOf.innerHTML = `Home of the ${closestField.nickname}`;
-        titleBlock.appendChild(homeOf);
-      }
-    
-      const fieldLevel = document.createElement("p");
-      fieldLevel.innerHTML = `Division: ${closestField.division} | District: ${closestField.district_x}`;
-          
-      titleBlock.appendChild(fieldLevel);
-    
-  // Define default colors
-  let dynamicBgColor = '#627454'; // replace with your default color
-  let dynamicTextColor = '#f8e2e2'; // replace with your default color
-  
-  if (closestField.color1 != null && closestField.color2 != null) {
-    dynamicBgColor = closestField.color1;
-    dynamicTextColor = closestField.color2;
-  }
-  
-  // Apply colors
-  document.documentElement.style.setProperty('--dynamic-bg-color', dynamicBgColor);
-  document.documentElement.style.setProperty('--dynamic-text-color', dynamicTextColor);
-
-    
-      const fenceBlock = document.getElementById("fenceBlock");
-      fenceBlock.innerHTML = "";
+        console.log("Creating field info...");
+      
+        const fieldTitle = document.getElementById("fieldTitle");
+        fieldTitle.innerHTML = "";
+      
+        const fieldName = document.createElement("h2");
+        fieldName.innerHTML = `${closestField.park_name}`;
+        
+        fieldTitle.appendChild(fieldName);
+      
+        if (closestField.nickname) {
+          const homeOf = document.createElement("h2");
+          homeOf.innerHTML = `Home of the ${closestField.host_team} ${closestField.nickname}`;
+          fieldTitle.appendChild(homeOf);
+        }
+      
+        if (closestField.district) {
+          const districtLevel = document.createElement("h3");
+          districtLevel.innerHTML = `Hosting Division: ${closestField.division}<br>District: ${closestField.district}`;
+          fieldTitle.appendChild(districtLevel);
+        }
+      
+        if (closestField.region_semi_number) {
+          const regionSemiLevel = document.createElement("h3");
+          regionSemiLevel.innerHTML = `Hosting Division: ${closestField.regional_div}<br>Region: ${closestField.region} Semi-Final # ${closestField.region_semi_number}`;
+          fieldTitle.appendChild(regionSemiLevel);
+        }
+      
+        if (closestField.region_final_quarter) {
+          const regionFinalLevel = document.createElement("h3");
+          regionFinalLevel.innerHTML = `Hosting Division: ${closestField.regional_div}<br>Region: ${closestField.region} Final and Quarter Final ${closestField.region_final_quarter}`;
+          fieldTitle.appendChild(regionFinalLevel);
+        }
+      
+        if (closestField.finals) {
+          const finalsLevel = document.createElement("h3");
+          finalsLevel.innerHTML = `Host of the Semi-Finals and Finals`;
+          fieldTitle.appendChild(finalsLevel);
+        }
+      
+        // Define default colors
+        let dynamicBgColor = '#627454'; // Background default color
+        let dynamicTextColor = '#f8e2e2'; //  default color
+      
+        if (closestField.color1 && closestField.color2) {
+          dynamicBgColor = closestField.color1;
+          dynamicTextColor = closestField.color2;
+        }
+        console.log(dynamicBgColor);
+        console.log(dynamicTextColor);
+      
+        // Apply colors
+        document.documentElement.style.setProperty('--dynamic-bg-color', dynamicBgColor);
+        document.documentElement.style.setProperty('--dynamic-text-color', dynamicTextColor);
+      
+        const fenceBlock = document.getElementById("fenceBlock");
+        fenceBlock.innerHTML = "";
     
       const fenceInfo = document.createElement("p");
       fenceInfo.innerHTML = `Fence Distance | Rank ( / ${levelCounts[closestField.level]})<br>`;
@@ -650,6 +753,7 @@ function createMarker(field, map) {
     
       return;
     }
+
       
 
 function distanceDisplay(distanceFeet, fenceDist, levelCounts) {

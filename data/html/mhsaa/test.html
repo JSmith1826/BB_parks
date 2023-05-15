@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>District Teams</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REWORK</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="mhsaa_app.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA&libraries=geometry,places"></script>
 </head>
 <body>
-  <h1>Select District:</h1>
-  <select id="districtSelect" onchange="displayTeams()">
-    <option value="">-- Select District --</option>
-  </select>
-
-  <div id="districtContainer"></div>
-
-  <script src="test.js"></script>
+    <div class="banner">
+        <!-- Your banner image here -->
+        <!-- <img src="data\images\MHSAA_logo_outlined.png" alt="Banner Image"> -->
+    </div>
+    <div class="container">
+        <div id="map"></div>
+        <div id="fieldInfo">
+            <div id="fieldTitle"></div>
+            <div id="fenceBlock"></div>
+            <div id="areaBlock"></div>
+            <div id="distanceBlock"></div>
+        </div>
+    </div>
 </body>
 </html>

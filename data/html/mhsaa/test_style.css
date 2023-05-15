@@ -1,7 +1,7 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 1.7fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.7fr 1fr; */
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -24,12 +24,12 @@
   background-color: lightblue; /* Add background color */
 }
 
-.search_element {
+/* .search_element {
   grid-area: search_element;
   background-color: lightgreen; /* Add background color */
-}
+} */
 
-.map_bottom_container {
+/* .map_bottom_container {
   display: grid;
   grid-template-columns: 0.6fr 1.8fr 0.6fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -41,7 +41,7 @@
     ". . .";
   grid-area: map_bottom_container;
   background-color: lightgray; /* Add background color */
-}
+} */
 
 .distance_click_element {
   grid-area: distance_click_element;
