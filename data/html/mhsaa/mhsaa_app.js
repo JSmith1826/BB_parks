@@ -680,19 +680,19 @@ const infowindow = new google.maps.InfoWindow({
       
         if (closestField.district) {
           const districtLevel = document.createElement("h3");
-          districtLevel.innerHTML = `Hosting Division: ${closestField.division}<br>District: ${closestField.district}`;
+          districtLevel.innerHTML = `<b>Host Site</b><br><br> Division ${closestField.division} | District ${closestField.district}`;
           fieldTitle.appendChild(districtLevel);
         }
       
         if (closestField.region_semi_number) {
           const regionSemiLevel = document.createElement("h3");
-          regionSemiLevel.innerHTML = `Hosting Division: ${closestField.regional_div}<br>Region: ${closestField.region} Semi-Final # ${closestField.region_semi_number}`;
+          regionSemiLevel.innerHTML = `Division ${closestField.regional_div} Regional Semi-Final<br>(Game ${closestField.region_semi_number})`;
           fieldTitle.appendChild(regionSemiLevel);
         }
       
         if (closestField.region_final_quarter) {
           const regionFinalLevel = document.createElement("h3");
-          regionFinalLevel.innerHTML = `Hosting Division: ${closestField.regional_div}<br>Region: ${closestField.region} Final and Quarter Final ${closestField.region_final_quarter}`;
+          regionFinalLevel.innerHTML = `Division ${closestField.regional_div} Regional Final and Quarter Final ${closestField.region_final_quarter}`;
           fieldTitle.appendChild(regionFinalLevel);
         }
       
@@ -716,42 +716,58 @@ const infowindow = new google.maps.InfoWindow({
         // Apply colors
         document.documentElement.style.setProperty('--dynamic-bg-color', dynamicBgColor);
         document.documentElement.style.setProperty('--dynamic-text-color', dynamicTextColor);
-      
-        const fenceBlock = document.getElementById("fenceBlock");
-        fenceBlock.innerHTML = "";
-    
-      const fenceInfo = document.createElement("p");
-      fenceInfo.innerHTML = `Fence Distance | Rank ( / ${levelCounts[closestField.level]})<br>`;
-      fenceInfo.appendChild(wrapDigits(closestField.min_distance));
-      fenceInfo.innerHTML += ` MIN | (${closestField.min_distance_rank})<br>`;
-      fenceInfo.appendChild(wrapDigits(closestField.max_distance));
-      fenceInfo.innerHTML += ` MAX | (${closestField.max_distance_rank})<br><br>`;
-      fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
-      fenceInfo.innerHTML += ` AVG | (${closestField.avg_distance_rank})<br>`;
-      fenceInfo.appendChild(wrapDigits((closestField.median_distance).toFixed(0)));
-      fenceInfo.innerHTML += ` MED | (${closestField.median_distance_rank})<br>`;
-      fenceBlock.appendChild(fenceInfo);
-    
-      const areaBlock = document.getElementById("areaBlock");
-      areaBlock.innerHTML = "";
-    
-      const areaInfo = document.createElement("p");
-      areaInfo.innerHTML = `Total Area<br>`;
-      areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft + closestField.foul_area_sqft) / 43560).toFixed(2)));
-      areaInfo.innerHTML += ` Acres<br>`;
-      areaInfo.innerHTML += `Rank: ${closestField.field_area_rank}<br>`; // Rank of field area
-      areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
-      areaInfo.innerHTML += `<number> : 1 </number> Fair : Foul Ratio<br>`;
-      areaInfo.innerHTML += `Rank: ${closestField.ratio_rank}<br>`; // Rank of fair:foul ratio
-      areaBlock.appendChild(areaInfo);
-    
-      const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
-    
-      const distanceBlock = document.getElementById("distanceBlock");
-      distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
-      distanceBlock.appendChild(distanceContainer);
-    
-      return;
+        // Create the flex container
+const flexContainer = document.createElement('div');
+flexContainer.style.display = 'flex';
+flexContainer.style.justifyContent = 'space-between'; // Add some space between the columns
+
+// Create the fenceBlock
+const fenceBlock = document.getElementById("fenceBlock");
+fenceBlock.innerHTML = "";
+
+const fenceInfo = document.createElement("p");
+fenceInfo.innerHTML = `Fence<br>MINIMUM `;
+fenceInfo.appendChild(wrapDigits(closestField.min_distance));
+fenceInfo.innerHTML += `<br>MAXIMUM `;
+fenceInfo.appendChild(wrapDigits(closestField.max_distance));
+fenceInfo.innerHTML += `<br>AVERAGE `;
+fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
+fenceInfo.innerHTML += `<br>`;
+fenceInfo.appendChild(wrapDigits((closestField.median_distance).toFixed(0)));
+fenceInfo.innerHTML += ` MED | (${closestField.median_distance_rank})<br>`;
+fenceBlock.appendChild(fenceInfo);
+
+// Add the fenceBlock to the flex container
+flexContainer.appendChild(fenceBlock);
+
+// Create the areaBlock
+const areaBlock = document.getElementById("areaBlock");
+areaBlock.innerHTML = "";
+
+const areaInfo = document.createElement("p");
+areaInfo.innerHTML = `Total Area<br>`;
+areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft + closestField.foul_area_sqft) / 43560).toFixed(2)));
+areaInfo.innerHTML += ` Acres<br>`;
+areaInfo.innerHTML += `Rank: ${closestField.field_area_rank}<br>`; // Rank of field area
+areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
+areaInfo.innerHTML += `<number> : 1 </number> Fair : Foul Ratio<br>`;
+areaInfo.innerHTML += `Rank: ${closestField.ratio_rank}<br>`; // Rank of fair:foul ratio
+areaBlock.appendChild(areaInfo);
+
+// Add the areaBlock to the flex container
+flexContainer.appendChild(areaBlock);
+
+// Append the flexContainer to the parent element of fenceBlock and areaBlock
+document.getElementById('fieldInfo').appendChild(flexContainer);
+
+// Continue with the rest of the code
+const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
+const distanceBlock = document.getElementById("distanceBlock");
+distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
+distanceBlock.appendChild(distanceContainer);
+
+return;
+
     }
 
       
