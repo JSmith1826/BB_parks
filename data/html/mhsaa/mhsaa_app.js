@@ -2,7 +2,9 @@
 //////// WORK STARTED 5-9-23 ////////
 ///set up variables
 
+// Map Data JSON
 const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/map.json"; // Michigan fields json file
+const distUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/district_dict.json"; // Teams by district json file  
 let fetchedData;
 let polygons = [];
 let currentLine = null;
@@ -27,6 +29,14 @@ async function fetchData() {
     const response = await fetch(jsonUrl);
     const data = await response.json();
     return data;
+  }
+
+// Fetch the data from the district json file
+async function fetchDistrictData() {
+    console.log("Fetching district data...");
+    const response = await fetch(distUrl);
+    const distData = await response.json();
+    return distData;
   }
 
 //initialize map
@@ -58,7 +68,7 @@ async function initMap() {
     // Create a listener on the map to detect a click and run the handleMapClick function
 // Inside the initMap function
 google.maps.event.addListener(map, "click", (event) => {
-  MapClickHandler(event, fetchedData, map, polygons, levelCounts);
+  MapClickHandler(event, fetchedData, map, polygons, levelCounts, distData);
 });
     // Initialize the search box
     initSearchBox(map);
@@ -155,6 +165,9 @@ async function MapClickHandler(event, data, map, polygons, levelCounts) {
         // Call the function to make a marker at the click location
         clickMarker(event.latLng, map); // remove levelCounts from this function call
 
+        // call function to create the gameInfo
+        distInfo(closestField, distData);
+
  
 
         // // // Call the function to check if the click location is inside the fence
@@ -171,6 +184,40 @@ async function MapClickHandler(event, data, map, polygons, levelCounts) {
     }
 
 ////////////////////////////////////// NEW FUNCTION TO ADD SEARCH FUNCTION//////////////////
+// Function to create and fill the gameInfo element
+function distInfo(closestField, distData) {
+  // console.log('Game Info:', closestField);
+  // WaNT TO create the a block that displays all the infor about district being held at the field
+  // Info to include clostestField.park_name, homeOf, district number, division, 
+
+  const distInfo = document.getElementById("distInfo");
+        distInfo.innerHTML = "";
+      
+        const distTitle = document.createElement("p");
+        distTitle.innerHTML = `Division ${closestField.division} - District ${closestField.district}<br>`;
+        distTitle.innerHTML += `Hosted by the ${closestField.homeOf} ${closestField.nickname}<br>`;
+        // List the rest of the teams in the district from the distData object, Lookup by district number
+        distTitle.innerHTML += `Teams in the District:<br>`;
+        distTitle.innerHTML += `${distData[closestField.district].teams[0]}<br>`;
+        distTitle.innerHTML += `${distData[closestField.district].teams[1]}<br>`;
+        distTitle.innerHTML += `${distData[closestField.district].teams[2]}<br>`;
+        distTitle.innerHTML += `${distData[closestField.district].teams[3]}<br>`;
+        distTitle.innerHTML += `${distData[closestField.district].teams[4]}<br>`;
+        distTitle.innerHTML += `${distData[closestField.district].teams[5]}<br>`;
+        
+        
+        distTitle.appendChild(fieldName);
+        distInfo.appendChild(distTitle);
+        // distInfo.appendChild(fieldName);
+
+        // console.log('District Info:', distInfo);
+}
+
+
+
+
+
+
 // This function should be called in your initMap() function
 function initSearchBox(map) {
   // Create the search box and link it to the UI element.
