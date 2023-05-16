@@ -15,39 +15,109 @@
   --black: #000000;
   }
 
+
+  /* BANNER IMAGE */
 .banner {
   width: 100%;
   height: 20vh; /* adjust as needed */
-  background-color: var(--reseda-green); /* adjust as needed */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .banner img {
-  max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  
 }
 
-
+/* OVERALLSTRUCTURE */
 .container {
   display: flex;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-  #map {
-  flex: 3; 
+
+#map {
+  flex: 8;
   height: 80vh;
-  width: 75vw;
-  margin-bottom: 0;
-  }
+  width: 80%; /* Adjust as needed */
+  margin-right: 5%; 
+}
+  
+  /* SCOREBOARD */
+/* SCOREBOARD */
+.scoreboard {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dynamic-bg-color);
+  border: 10px solid var(--dynamic-text-color);
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  bottom: 10px; 
+  right: 5%; /* positions the scoreboard to the right */
+  z-index: 999;
+  box-sizing: border-box;
+  position: relative; /* to position scoreboardContent */
+  margin-right: 5%;
+}
+
+#scoreboardContent {
+  position: absolute;
+  bottom: 0; /* position it to the bottom of the scoreboard */
+  left: 0; /* align it to the left */
+  width: 80%; /* take the full width of the scoreboard */
+  display: flex;
+  justify-content: space-between; /* space between fieldInfo and distanceBlock */
+}
+
+
+.scoreboard:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid var(--dynamic-text-color); /* same color as the text */
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.container {
+  position: relative; /* make the scoreboard positioned relative to the container */
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 80vh; /* set a height so the scoreboard can be positioned towards the bottom */
+}
+
+
+  
 
   #fieldInfo {
-    flex: 1;
+    flex: 2;
     background-color: var(--dynamic-bg-color);
     color: var(--dynamic-text-color);
     text-align: center;
-    margin-bottom: 0px;
+    justify-content: space-between; /* space between the blocks */
   }
+
+
+    
   
+/* MAKES RANKING INFO HOVERABLE */
+.ranking-info {
+  visibility: hidden;
+}
+
+/* Show ranking info on hover */
+.number:hover .ranking-info, p:hover .ranking-info {
+  visibility: visible;
+}
 
   
   
@@ -67,13 +137,19 @@
   }
   
   body {
-  font-family: 'Oswald', sans-serif;
-  align: center;
-  color: var(--dynamic-text-color);
-  font-size: 1rem;
-  line-height: 1;
-  margin: 0;
-  padding: 0;
+    background-image: url('data/images/night_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Oswald', sans-serif;
+    align: center;
+    color: var(--dynamic-text-color);
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
   }
 
   .custom-infoTitle {

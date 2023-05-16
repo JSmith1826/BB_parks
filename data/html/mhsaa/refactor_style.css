@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root {
+  --dynamic-bg-color: #627454;
+  --dynamic-text-color: #f8e2e2;
+  --white: #f8e2e2;
+  --ash-gray: #e0e6dc;
+  --ebony: #4D5D42;
+  --reseda-green: #627454;
+  --reseda-green-2: #748667;
+  --black: #000000;
+}
+
+body {
+  background-image: url('data/images/night_background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Oswald', sans-serif;
+  color: var(--dynamic-text-color);
+  font-size: 1rem;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+#map {
+  flex: 8;
+  height: 80vh;
+  margin-right: 5%; 
+}
+
+.banner {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreboard {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dynamic-bg-color);
+  border: 10px solid var(--dynamic-text-color);
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  bottom: 10px; 
+  right: 5%;
+  z-index: 999;
+  box-sizing: border-box;
+}
+
+.scoreboard:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid var(--dynamic-text-color);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+#scoreboardContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#fieldInfo {
+  flex: 2;
+  background-color: var(--dynamic-bg-color);
+  color: var(--dynamic-text-color);
+  text-align: center;
+  justify-content: space-between;
+}
+
+.ranking-info {
+  visibility: hidden;
+}
+
+.number:hover .ranking-info, p:hover .ranking-info {
+  visibility: visible;
+}
+
+#search-input {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius
+
+    /* ... continuation of the CSS code ... */
+
+    border-radius: 5px;
+    font-size: 1rem;
+    z-index: 5;
+  }
+  
+  .custom-infoTitle, .custom-markerPopup {
+    font-family: 'Oswald', sans-serif;
+    align: center;
+    color: #333;
+  }
+  
+  .custom-markerPopup {
+    font-size: 1rem;
+  }
+  
+  .custom-markerPopup-center {
+    text-align: center;
+  }
+  
+  .custom-markerPopup-light {
+    color: #999;
+    font-weight: normal;
+  }
+  
+  h1, h3, h4, h5, h6 {
+    font-family: 'Bevan', sans-serif;
+    color: var(--ash-gray);
+    line-height: 1;
+    padding: 0;
+  }
+  
+  h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--ash-gray);
+    letter-spacing: 1px;
+  }
+  
+  .number {
+    font-family: 'Bungee', sans-serif;
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+  
+  a {
+    color: var(--reseda-green);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--reseda-green-2);
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 1024px) {
+    #map, .scoreboard {
+      height: 70vh;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 1rem;
+    }
+  
+    .scoreboard {
+      width: 80vw;
+      height: 50vw;
+    }
+  
+    #map {
+      height: 50vh;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  }
+  

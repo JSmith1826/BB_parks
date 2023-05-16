@@ -29,7 +29,7 @@ async function initMap() {
     const levelCounts = countFieldsByLevel(fetchedData);
     
     let initialCenter = {lat: 44.3148, lng: -85.6024}; // Set to your desired initial center
-    let initialZoom = 8; // Set to your desired initial zoom
+    let initialZoom = 4; // Set to your desired initial zoom
 
   
     console.log("Initializing map...");
@@ -494,9 +494,9 @@ function renderPolygons(data, map, levelCounts) {
 const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/mhsaa/';
 const iconDist = {
     '1': `${iconPathBase}1_red.png`,
-    '2': `${iconPathBase}2_blue.png`,
-    '3': `${iconPathBase}3_lt_blue.png`,
-    '4': `${iconPathBase}4_white.png`,
+    '2': `${iconPathBase}1_blue.png`,
+    '3': `${iconPathBase}1_lt_blue.png`,
+    '4': `${iconPathBase}1_white.png`,
 };
 const iconRSF = {
     '1': `${iconPathBase}2_red.png`,
@@ -515,10 +515,10 @@ const iconChamp = `${iconPathBase}champ.png`;
 
 function createMarker(field, map) {
     
-
-    
     // Set the icon based on the level round and division
     let iconUrl;
+    let iconSize = new google.maps.Size(35, 35); // Sets the default icon size to 40x40 pixels
+
     if (field.finals !== null) {
         iconUrl = iconChamp;
     } else if (field.region_final_quarter !== null) {
@@ -527,21 +527,23 @@ function createMarker(field, map) {
         iconUrl = iconRSF[field.regional_div];
     } else if (field.district !== null) {
         iconUrl = iconDist[field.division];
+        iconSize = new google.maps.Size(15, 15); // Sets the icon size to 20x20 pixels if the district condition is met
     } else {
         // Default icon URL if none of the conditions are met
         iconUrl = defaultIconUrl;
     }
 
-    const marker = new google.maps.Marker({
-        position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
-        map: map,
-        title: field.park_name,
-        icon: {
-            url: iconUrl,
-            scaledSize: new google.maps.Size(40, 40)  // Sets the icon size to 30x30 pixels
-        },
-        level: field.level,
-    });
+const marker = new google.maps.Marker({
+    position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
+    map: map,
+    title: field.park_name,
+    icon: {
+        url: iconUrl,
+        scaledSize: iconSize // Use the iconSize variable here
+    },
+    level: field.level,
+});
+
 
     // Create the marker popup content
     let markerPopupContent = `<div class="custom-infoTitle">${field.park_name}</div>`;
@@ -601,7 +603,8 @@ function createMarker(field, map) {
     
         return marker;
     }
-    markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Hosted by the ${field.host_team} ${field.nickname}</div>`;
+
+    
 if (field.district !== null) {
     markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.division}</span> District ${field.district}</div>`;
 } 
@@ -617,6 +620,7 @@ if (field.region_final_quarter !== null) {
 if (field.region_semi_number !== null) {
     markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.regional_div}</span> Regional Semi ${field.region_semi_number}</div>`;
 } 
+markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Hosted by the ${field.host_team} ${field.nickname}</div>`;
 
 markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center custom-markerPopup-light"><br>Double Click to Zoom</div>`;
 
@@ -638,11 +642,65 @@ const infowindow = new google.maps.InfoWindow({
         infowindow.close();
     });
 
-    marker.addListener("dblclick", () => {
-        map.setCenter(marker.getPosition());
-        map.setZoom(19);
-    });
 
+// Set the adjustment value
+const adjustment = 0.0005;
+// Seem to have found the right one
+
+marker.addListener("dblclick", () => {
+    // Get the home plate coordinates
+    const homePlate = field.home_plate;
+
+    // Get the field's cardinal direction
+    const direction = field.field_cardinal_direction;
+
+    // Initialize adjustments for latitude and longitude
+    let latAdjustment = 0;
+    let lngAdjustment = 0;
+
+    // Adjust the adjustments based on the field's cardinal direction
+    switch (direction) {
+        case 'NE':
+            latAdjustment = adjustment;
+            lngAdjustment = adjustment;
+            break;
+        case 'SE':
+            latAdjustment = -adjustment;
+            lngAdjustment = adjustment;
+            break;
+        case 'SW':
+            latAdjustment = -adjustment;
+            lngAdjustment = -adjustment;
+            break;
+        case 'NW':
+            latAdjustment = adjustment;
+            lngAdjustment = -adjustment;
+            break;
+        case 'N':
+            latAdjustment = adjustment;
+            break;
+        case 'S':
+            latAdjustment = -adjustment;
+            break;
+        case 'E':
+            lngAdjustment = adjustment;
+            break;
+        case 'W':
+            lngAdjustment = -adjustment;
+            break;
+        default:
+            break;
+    }
+
+    // Create a LatLng object with the adjusted coordinates
+    const centerPosition = new google.maps.LatLng(homePlate[1] + latAdjustment, homePlate[0] + lngAdjustment);
+
+    // Set the center of the map
+    map.setCenter(centerPosition);
+    map.setZoom(19);
+    closestFieldFunction(centerPosition, fetchedData)
+});
+        
     return marker;
 }
 
@@ -673,34 +731,34 @@ const infowindow = new google.maps.InfoWindow({
         fieldTitle.appendChild(fieldName);
       
         if (closestField.nickname) {
-          const homeOf = document.createElement("h2");
+          const homeOf = document.createElement("h3");
           homeOf.innerHTML = `Home of the ${closestField.host_team} ${closestField.nickname}`;
           fieldTitle.appendChild(homeOf);
         }
       
-        if (closestField.district) {
-          const districtLevel = document.createElement("h3");
-          districtLevel.innerHTML = `<b>Host Site</b><br><br> Division ${closestField.division} | District ${closestField.district}`;
-          fieldTitle.appendChild(districtLevel);
-        }
+        // if (closestField.district) {
+        //   const districtLevel = document.createElement("h3");
+        //   districtLevel.innerHTML = `<b>Host Site</b><br><br> Division ${closestField.division} | District ${closestField.district}`;
+        //   fieldTitle.appendChild(districtLevel);
+        // }
       
-        if (closestField.region_semi_number) {
-          const regionSemiLevel = document.createElement("h3");
-          regionSemiLevel.innerHTML = `Division ${closestField.regional_div} Regional Semi-Final<br>(Game ${closestField.region_semi_number})`;
-          fieldTitle.appendChild(regionSemiLevel);
-        }
+        // if (closestField.region_semi_number) {
+        //   const regionSemiLevel = document.createElement("h3");
+        //   regionSemiLevel.innerHTML = `Division ${closestField.regional_div} Regional Semi-Final<br>(Game ${closestField.region_semi_number})`;
+        //   fieldTitle.appendChild(regionSemiLevel);
+        // }
       
-        if (closestField.region_final_quarter) {
-          const regionFinalLevel = document.createElement("h3");
-          regionFinalLevel.innerHTML = `Division ${closestField.regional_div} Regional Final and Quarter Final ${closestField.region_final_quarter}`;
-          fieldTitle.appendChild(regionFinalLevel);
-        }
+        // if (closestField.region_final_quarter) {
+        //   const regionFinalLevel = document.createElement("h3");
+        //   regionFinalLevel.innerHTML = `Division ${closestField.regional_div} Regional Final and Quarter Final ${closestField.region_final_quarter}`;
+        //   fieldTitle.appendChild(regionFinalLevel);
+        // }
       
-        if (closestField.finals) {
-          const finalsLevel = document.createElement("h3");
-          finalsLevel.innerHTML = `Host of the Semi-Finals and Finals`;
-          fieldTitle.appendChild(finalsLevel);
-        }
+        // if (closestField.finals) {
+        //   const finalsLevel = document.createElement("h3");
+        //   finalsLevel.innerHTML = `Host of the Semi-Finals and Finals`;
+        //   fieldTitle.appendChild(finalsLevel);
+        // }
       
         // Define default colors
         let dynamicBgColor = '#627454'; // Background default color
@@ -716,57 +774,60 @@ const infowindow = new google.maps.InfoWindow({
         // Apply colors
         document.documentElement.style.setProperty('--dynamic-bg-color', dynamicBgColor);
         document.documentElement.style.setProperty('--dynamic-text-color', dynamicTextColor);
+
         // Create the flex container
-const flexContainer = document.createElement('div');
-flexContainer.style.display = 'flex';
-flexContainer.style.justifyContent = 'space-between'; // Add some space between the columns
+        const flexContainer = document.createElement('div');
+        flexContainer.style.display = 'flex';
+        flexContainer.style.justifyContent = 'space-between'; // Add some space between the columns
 
-// Create the fenceBlock
-const fenceBlock = document.getElementById("fenceBlock");
-fenceBlock.innerHTML = "";
+            // Create the fenceBlock
+            const fenceBlock = document.getElementById("fenceBlock");
+            fenceBlock.innerHTML = "";
 
-const fenceInfo = document.createElement("p");
-fenceInfo.innerHTML = `Fence<br>MINIMUM `;
-fenceInfo.appendChild(wrapDigits(closestField.min_distance));
-fenceInfo.innerHTML += `<br>MAXIMUM `;
-fenceInfo.appendChild(wrapDigits(closestField.max_distance));
-fenceInfo.innerHTML += `<br>AVERAGE `;
-fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
-fenceInfo.innerHTML += `<br>`;
-fenceInfo.appendChild(wrapDigits((closestField.median_distance).toFixed(0)));
-fenceInfo.innerHTML += ` MED | (${closestField.median_distance_rank})<br>`;
-fenceBlock.appendChild(fenceInfo);
+            const fenceInfo = document.createElement("p");
+            fenceInfo.innerHTML = `Fence Distance<br><br>`;
+            
+            fenceInfo.appendChild(wrapDigits(closestField.min_distance));
+            fenceInfo.innerHTML += ` | `;
+            fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
+            
+            fenceInfo.innerHTML += ` | `;
+            fenceInfo.appendChild(wrapDigits(closestField.max_distance));
+            
+            fenceInfo.innerHTML += `<br>MIN | AVG | MAX<br>`;
+           
+            fenceBlock.appendChild(fenceInfo);
 
-// Add the fenceBlock to the flex container
-flexContainer.appendChild(fenceBlock);
+        // Add the fenceBlock to the flex container
+        // flexContainer.appendChild(fenceBlock);
 
-// Create the areaBlock
-const areaBlock = document.getElementById("areaBlock");
-areaBlock.innerHTML = "";
+        // Create the areaBlock
+        const areaBlock = document.getElementById("areaBlock");
+        areaBlock.innerHTML = "";
 
-const areaInfo = document.createElement("p");
-areaInfo.innerHTML = `Total Area<br>`;
-areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft + closestField.foul_area_sqft) / 43560).toFixed(2)));
-areaInfo.innerHTML += ` Acres<br>`;
-areaInfo.innerHTML += `Rank: ${closestField.field_area_rank}<br>`; // Rank of field area
-areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
-areaInfo.innerHTML += `<number> : 1 </number> Fair : Foul Ratio<br>`;
-areaInfo.innerHTML += `Rank: ${closestField.ratio_rank}<br>`; // Rank of fair:foul ratio
-areaBlock.appendChild(areaInfo);
+        const areaInfo = document.createElement("p");
+        areaInfo.innerHTML = `Field Size<br> `;
+        areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft + closestField.foul_area_sqft) / 43560).toFixed(2)));
+        areaInfo.innerHTML += ` Acres `;
+        // areaInfo.innerHTML += `Rank: ${closestField.field_area_rank}<br>`; // Rank of field area
+        areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
+        areaInfo.innerHTML += `<number>x </number> Fair Ground<br>`;
+        // areaInfo.innerHTML += `Rank: ${closestField.ratio_rank}<br>`; // Rank of fair:foul ratio
+        areaBlock.appendChild(areaInfo);
 
-// Add the areaBlock to the flex container
-flexContainer.appendChild(areaBlock);
+        // Add the areaBlock to the flex container
+        // flexContainer.appendChild(areaBlock);
 
-// Append the flexContainer to the parent element of fenceBlock and areaBlock
-document.getElementById('fieldInfo').appendChild(flexContainer);
+        // Append the flexContainer to the parent element of fenceBlock and areaBlock
+        document.getElementById('fieldInfo').appendChild(flexContainer);
 
-// Continue with the rest of the code
-const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
-const distanceBlock = document.getElementById("distanceBlock");
-distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
-distanceBlock.appendChild(distanceContainer);
+        // Continue with the rest of the code
+        const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
+        const distanceBlock = document.getElementById("distanceBlock");
+        distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
+        distanceBlock.appendChild(distanceContainer);
 
-return;
+        return;
 
     }
 

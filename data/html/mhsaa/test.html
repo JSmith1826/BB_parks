@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REWORK</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mhsaa_style.css">
     <script src="mhsaa_app.js" defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA&libraries=geometry,places"></script>
 </head>
 <body>
     <div class="banner">
-        <!-- Your banner image here -->
-        <!-- <img src="data\images\MHSAA_logo_outlined.png" alt="Banner Image"> -->
+      <!-- Your banner image here -->
+      <img src="data\images\MHSAA_logo_outlined.png" alt="Banner Image">
     </div>
     <div class="container">
-        <div id="map">
-            <select id="divisionFilter">
-                <option value="">All</option>
-                <option value="Division1">Division 1</option>
-                <option value="Division2">Division 2</option>
-                <!-- Add more options based on your divisions -->
-            </select>
-        </div>
-        <div id="fieldInfo">
-            <div id="fieldTitle"></div>
-            <div id="fenceBlock"></div>
-            <div id="areaBlock"></div>
+      <div id="map"></div>
+        <div id="scoreboard">
+            <div id="fieldInfo">
+                <div id="fieldTitle"></div>
+                <div id="fenceBlock"></div>
+                <div id="areaBlock"></div>
+                
+            </div>  
             <div id="distanceBlock"></div>
-        </div>
+            
+      </div>
+      
     </div>
-</body>
+  </body>
+  
+  
 </html>
