@@ -7,8 +7,17 @@ let fetchedData;
 let polygons = [];
 let currentLine = null;
 let currentMarker = null;
+
 let fenceMarkers = [];
 let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/3508a593be080a4fb7cf102cda697ce8f893c840/data/images/icons/base/TEMP/infield2_black.png";  
+let divisionMarkers = {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "null": []
+  };
+  
 // const epsilon = 1e-9; // set epsilon to 1e-9 for use in the fenceDistance and intersectionPoint functions
 
 //fetch data from json file
@@ -76,6 +85,11 @@ resetButton.addEventListener('click', function() {
   map.setZoom(initialZoom);
   map.setCenter(initialCenter);
 });
+
+///////////////////////////////////////////////////////
+//////////// ADD THE FILTER BUTTONS TO THE MAP
+//////////////////////////////////////////////////////
+
 
 // Append the button to a desired parent element
 document.body.appendChild(resetButton);
@@ -736,29 +750,6 @@ marker.addListener("dblclick", () => {
           fieldTitle.appendChild(homeOf);
         }
       
-        // if (closestField.district) {
-        //   const districtLevel = document.createElement("h3");
-        //   districtLevel.innerHTML = `<b>Host Site</b><br><br> Division ${closestField.division} | District ${closestField.district}`;
-        //   fieldTitle.appendChild(districtLevel);
-        // }
-      
-        // if (closestField.region_semi_number) {
-        //   const regionSemiLevel = document.createElement("h3");
-        //   regionSemiLevel.innerHTML = `Division ${closestField.regional_div} Regional Semi-Final<br>(Game ${closestField.region_semi_number})`;
-        //   fieldTitle.appendChild(regionSemiLevel);
-        // }
-      
-        // if (closestField.region_final_quarter) {
-        //   const regionFinalLevel = document.createElement("h3");
-        //   regionFinalLevel.innerHTML = `Division ${closestField.regional_div} Regional Final and Quarter Final ${closestField.region_final_quarter}`;
-        //   fieldTitle.appendChild(regionFinalLevel);
-        // }
-      
-        // if (closestField.finals) {
-        //   const finalsLevel = document.createElement("h3");
-        //   finalsLevel.innerHTML = `Host of the Semi-Finals and Finals`;
-        //   fieldTitle.appendChild(finalsLevel);
-        // }
       
         // Define default colors
         let dynamicBgColor = '#627454'; // Background default color
@@ -776,16 +767,16 @@ marker.addListener("dblclick", () => {
         document.documentElement.style.setProperty('--dynamic-text-color', dynamicTextColor);
 
         // Create the flex container
-        const flexContainer = document.createElement('div');
-        flexContainer.style.display = 'flex';
-        flexContainer.style.justifyContent = 'space-between'; // Add some space between the columns
+        // const flexContainer = document.createElement('div');
+        // flexContainer.style.display = 'flex';
+        // flexContainer.style.justifyContent = 'space-between'; // Add some space between the columns
 
             // Create the fenceBlock
             const fenceBlock = document.getElementById("fenceBlock");
             fenceBlock.innerHTML = "";
 
             const fenceInfo = document.createElement("p");
-            fenceInfo.innerHTML = `Fence Distance<br><br>`;
+            fenceInfo.innerHTML = `Dimentions<br>`;
             
             fenceInfo.appendChild(wrapDigits(closestField.min_distance));
             fenceInfo.innerHTML += ` | `;
@@ -811,13 +802,64 @@ marker.addListener("dblclick", () => {
         areaInfo.innerHTML += ` Acres `;
         // areaInfo.innerHTML += `Rank: ${closestField.field_area_rank}<br>`; // Rank of field area
         areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
-        areaInfo.innerHTML += `<number>x </number> Fair Ground<br>`;
+        areaInfo.innerHTML += `<b> X </b> Fair Ground<br>`;
         // areaInfo.innerHTML += `Rank: ${closestField.ratio_rank}<br>`; // Rank of fair:foul ratio
         areaBlock.appendChild(areaInfo);
 
-        // Add the areaBlock to the flex container
-        // flexContainer.appendChild(areaBlock);
 
+        function createGradientBar(closestField) {
+            // Check for existing gradient bar and remove it if it exists
+            const oldGradientBar = document.getElementById('gradientBar');
+            if (oldGradientBar) {
+                oldGradientBar.remove();
+            }
+            // Create a new canvas element
+            const canvas = document.createElement('canvas');
+            canvas.id = 'gradientBar';  // Assign an id to the gradient bar
+            canvas.width = 200;
+            canvas.height = 30;  // Increased height to accommodate labels
+            const ctx = canvas.getContext('2d');
+        
+            // Create a linear gradient
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+        
+            // Create gradient in steps instead of a smooth transition
+            gradient.addColorStop(0, 'red');
+            gradient.addColorStop(0.5, 'yellow');
+            gradient.addColorStop(1, 'green');
+        
+            // Draw thicker white outline
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = 'white';
+            ctx.strokeRect(0, 0, canvas.width, canvas.height);
+        
+            // Fill the canvas with the gradient
+            ctx.fillStyle = gradient;
+            ctx.fillRect(1, 1, canvas.width - 2, canvas.height - 2);  // -2 to accommodate the outline
+        
+            // Draw the tick mark
+            const normalizedScore = ((closestField.score + 15) / 23) * canvas.width;
+            ctx.fillStyle = 'black';
+            ctx.fillRect(normalizedScore, 0, 2, canvas.height);
+        
+            // Add labels
+            ctx.font = '12px Arial';
+            ctx.fillStyle = 'black';
+            ctx.fillText('Pitcher Friendly', 2, 12);  // Adjust these numbers as needed
+            ctx.textAlign = 'end';  // Align text to the right for the second label
+            ctx.fillText('Hitter Friendly', canvas.width - 2, 12);  // Adjust these numbers as needed
+        
+            return canvas;
+        }
+        
+        
+                // Create the gradient bar
+        let gradientBar = createGradientBar(closestField);
+
+        // Append the gradient bar to a container in your HTML
+        document.getElementById('fieldInfo').appendChild(gradientBar);
+
+        
         // Append the flexContainer to the parent element of fenceBlock and areaBlock
         document.getElementById('fieldInfo').appendChild(flexContainer);
 
@@ -826,6 +868,9 @@ marker.addListener("dblclick", () => {
         const distanceBlock = document.getElementById("distanceBlock");
         distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
         distanceBlock.appendChild(distanceContainer);
+
+
+        
 
         return;
 

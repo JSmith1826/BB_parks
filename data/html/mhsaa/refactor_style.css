@@ -59,7 +59,7 @@ body {
   background-color: var(--dynamic-bg-color);
   border: 10px solid var(--dynamic-text-color);
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   position: absolute;
   bottom: 10px; 
   right: 5%;
@@ -70,11 +70,11 @@ body {
 .scoreboard:before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border: 2px solid var(--dynamic-text-color);
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 5px solid var(--dynamic-text-color);
   border-radius: 8px;
   pointer-events: none;
 }
@@ -93,7 +93,7 @@ body {
   background-color: var(--dynamic-bg-color);
   color: var(--dynamic-text-color);
   text-align: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .ranking-info {

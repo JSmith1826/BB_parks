@@ -40,3 +40,46 @@ html, body {
     color: HIGHLIGHT_COLOR;
     text-align: center;
 }
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 30vw;
+    background-color: var(--reseda-green);
+    border-radius: 10px;
+    /* padding: 10px; */
+    position: relative;
+    overflow: auto;
+    margin-top: -50px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  
+  .scoreboard:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 5px solid var(--white);
+    border-radius: 12px;
+    pointer-events: none;
+  }
+  
+  :root {
+    --white: #f8e2e2;
+    --ash-gray: #e0e6dc;
+    --ash-gray-2: #BCC4B4;
+    --ebony: #4D5D42;
+    --reseda-green: #627454;
+    --reseda-green-2: #748667;
+    --black: #000000;
+  }

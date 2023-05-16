@@ -1,3 +1,8 @@
+
+
+
+
+
 var districtTeams; // Declare the variable outside the event listener
 
 // Load district teams JSON from remote URL

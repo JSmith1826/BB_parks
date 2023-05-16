@@ -47,33 +47,25 @@
   /* SCOREBOARD */
 /* SCOREBOARD */
 .scoreboard {
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50vw;
+  height: 30vw;
   background-color: var(--dynamic-bg-color);
-  border: 10px solid var(--dynamic-text-color);
   border-radius: 10px;
-  padding: 10px;
-  position: absolute;
-  bottom: 10px; 
-  right: 5%; /* positions the scoreboard to the right */
-  z-index: 999;
-  box-sizing: border-box;
-  position: relative; /* to position scoreboardContent */
-  margin-right: 5%;
+  /* padding: 10px; */
+  position: relative;
+  overflow: auto;
+  margin-top: -50px;
 }
 
-#scoreboardContent {
-  position: absolute;
-  bottom: 0; /* position it to the bottom of the scoreboard */
-  left: 0; /* align it to the left */
-  width: 80%; /* take the full width of the scoreboard */
+.content {
   display: flex;
-  justify-content: space-between; /* space between fieldInfo and distanceBlock */
+  justify-content: space-between;
+  width: 100%;
 }
-
 
 .scoreboard:before {
   content: "";
@@ -82,10 +74,11 @@
   left: 5px;
   right: 5px;
   bottom: 5px;
-  border: 2px solid var(--dynamic-text-color); /* same color as the text */
-  border-radius: 8px;
+  border: 5px solid var(--dynamic-text-color);
+  border-radius: 12px;
   pointer-events: none;
 }
+
 
 .container {
   position: relative; /* make the scoreboard positioned relative to the container */
