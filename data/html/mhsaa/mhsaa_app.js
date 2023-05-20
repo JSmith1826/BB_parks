@@ -84,8 +84,8 @@ resetButton.style.cursor = 'pointer'; // Set to your desired cursor style
 resetButton.style.borderRadius = '12px'; // Set to your desired border radius
 
 resetButton.addEventListener('click', function() {
-  map.setZoom(initialZoom);
-  map.setCenter(initialCenter);
+  map.setZoom(7);
+  map.setCenter(44.3148, -85.6024);
 });
 
 ///////////////////////////////////////////////////////
@@ -737,6 +737,9 @@ marker.addListener("dblclick", () => {
     // This function is called in the MapClickHandler function
     function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCounts) {
         console.log("Creating field info...");
+
+        // Call the gameInfo
+        gameInfo(closestField);
       
         const fieldTitle = document.getElementById("fieldTitle");
         fieldTitle.innerHTML = "";
@@ -778,16 +781,16 @@ marker.addListener("dblclick", () => {
             fenceBlock.innerHTML = "";
 
             const fenceInfo = document.createElement("p");
-            fenceInfo.innerHTML = `Dimentions<br>`;
+            fenceInfo.innerHTML = `Fence Dimensions<br>`;
             
             fenceInfo.appendChild(wrapDigits(closestField.min_distance));
-            fenceInfo.innerHTML += ` | `;
+            fenceInfo.innerHTML += `<number> | </number>`;
             fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
             
-            fenceInfo.innerHTML += ` | `;
+            fenceInfo.innerHTML += `<number> | </number>`;
             fenceInfo.appendChild(wrapDigits(closestField.max_distance));
             
-            fenceInfo.innerHTML += `<br>MIN | AVG | MAX<br>`;
+            fenceInfo.innerHTML += `<br>MINIMUM   |   AVERAGE    |   MAXIMUM<br>`;
            
             fenceBlock.appendChild(fenceInfo);
 
@@ -801,7 +804,7 @@ marker.addListener("dblclick", () => {
         const areaInfo = document.createElement("p");
         areaInfo.innerHTML = `Field Size<br> `;
         areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft + closestField.foul_area_sqft) / 43560).toFixed(2)));
-        areaInfo.innerHTML += ` Acres `;
+        areaInfo.innerHTML += ` Acres  `;
         // areaInfo.innerHTML += `Rank: ${closestField.field_area_rank}<br>`; // Rank of field area
         areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
         areaInfo.innerHTML += `<b> X </b> Fair Ground<br>`;
@@ -845,11 +848,11 @@ marker.addListener("dblclick", () => {
             ctx.fillRect(normalizedScore, 0, 2, canvas.height);
         
             // Add labels
-            ctx.font = '12px Arial';
+            ctx.font = '14px Arial';
             ctx.fillStyle = 'black';
-            ctx.fillText('Pitcher Friendly', 2, 12);  // Adjust these numbers as needed
+            ctx.fillText('Favors Pitcher', 2, 12);  // Adjust these numbers as needed
             ctx.textAlign = 'end';  // Align text to the right for the second label
-            ctx.fillText('Hitter Friendly', canvas.width - 2, 12);  // Adjust these numbers as needed
+            ctx.fillText('Favors Hitter', canvas.width - 2, 12);  // Adjust these numbers as needed
         
             return canvas;
         }
@@ -863,7 +866,7 @@ marker.addListener("dblclick", () => {
 
         
         // Append the flexContainer to the parent element of fenceBlock and areaBlock
-        document.getElementById('fieldInfo').appendChild(flexContainer);
+        // document.getElementById('fieldInfo').appendChild(flexContainer);
 
         // Continue with the rest of the code
         const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
@@ -877,6 +880,39 @@ marker.addListener("dblclick", () => {
         return;
 
     }
+
+////////// FUNCTION TO CREATE THE BOX WITH GAME INFO //////////
+// input data - closestField from closestFieldFunction
+// output - a html element containing info about the games that will be hosted for the tourney
+
+function gameInfo(closestField) {
+  console.log("Creating game info...");
+
+  const hostInfo = document.getElementById("hostInfo");
+  hostInfo.innerHTML = "Hosting:";
+  const divisionInfo = document.createElement("p");
+  
+  if (closestField.district !== null) {
+    divisionInfo.innerHTML = `Division ${closestField.division} District ${closestField.district}<br>`;
+    
+  } 
+  
+  if (closestField.region_semi_number !== null) {
+    divisionInfo.innerHTML += `Division ${closestField.regional_div} Regional Semi ${closestField.region_semi_number}`;
+  }
+  
+  if (closestField.region_final_quarter !== null) {
+    divisionInfo.innerHTML += `Division ${closestField.regional_div}<br>Regional Final and Quarter Final ${closestField.region_final_quarter}`;
+  }
+  
+  if (closestField.finals !== null) {
+    divisionInfo.innerHTML += `Host of State Semi-Finals and Finals for All Divisions`;
+  }
+
+  hostInfo.appendChild(divisionInfo);
+}
+
+
 
       
 

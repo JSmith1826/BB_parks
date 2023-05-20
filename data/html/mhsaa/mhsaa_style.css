@@ -29,42 +29,112 @@
   
 }
 
-/* OVERALLSTRUCTURE */
+
 .container {
   display: flex;
+  justify-content: space-between;
   max-width: 100%;
+  height: 80vh;
   margin: 0 auto;
+  align-items: center;
 }
-
 
 #map {
-  flex: 8;
-  height: 80vh;
-  width: 80%; /* Adjust as needed */
-  margin-right: 5%; 
-}
-  
-  /* SCOREBOARD */
-/* SCOREBOARD */
-.scoreboard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50vw;
-  height: 30vw;
-  background-color: var(--dynamic-bg-color);
-  border-radius: 10px;
-  /* padding: 10px; */
-  position: relative;
-  overflow: auto;
-  margin-top: -50px;
+  position: relative; /* new */
+  flex: 4;
+  height: 100%;
+  z-index: 0; /* new */
 }
 
-.content {
+#distanceBlock {
+  position: absolute;
+  bottom: 350px; /* adjust this value to move the block up or down */
+  left: 50%; /* centers the block */
+  transform: translateX(-50%); /* ensures the block is truly centered */
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dynamic-bg-color);
+  border-radius: 10px;
+  padding: 10px;
+  width: 350px; /* specify a width for your distanceBlock */
+  height: 50px; /* specify a height for your distanceBlock */
+  z-index: 1; /* new */
+}
+
+
+#distanceBlock:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 5px solid var(--dynamic-text-color);
+  background-color: var(--dynamic-bg-color);
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: -1; /* new */
+
+}
+
+#hostInfo {
+  position: absolute;
+  top: 50px;
+  left: 50%; /* centers the block */
+  transform: translateX(-50%); /* ensures the block is truly centered */
+  width: 300px; /* specify a width for your hostInfo */
+  height: 200px; /* specify a height for your hostInfo */
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ash-gray);
+  color: var(--black);
+  border-radius: 10px;
+  padding: 10px;
+
+}
+#hostInfo:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 5px solid var(--black);
+  background-color: var(--ash-gray);
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: -1; /* new */
+
+}
+
+
+
+
+
+
+#mapInfo {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%; 
+  height: 40%;
+  background-color: var(--dynamic-bg-color);
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute; 
+  bottom: 25px; 
+  z-index: 0; /* new */
 }
 
 .scoreboard:before {
@@ -75,48 +145,36 @@
   right: 5px;
   bottom: 5px;
   border: 5px solid var(--dynamic-text-color);
+  background-color: var(--dynamic-bg-color);
   border-radius: 12px;
-  pointer-events: none;
+  z-index: 0; /* new */
 }
 
+#fieldInfo {
+  position: relative;
+  z-index: 3; /* new */
+  flex: 3;
+  background-color: var(--dynamic-bg-color);
+  color: var(--dynamic-text-color);
+  text-align: center;
+  justify-content: space-between; /* space between the blocks */
+}
 
-.container {
-  position: relative; /* make the scoreboard positioned relative to the container */
+#default-text {
+  position: absolute;
+  z-index: 3; /* new */
+  text-align: center;
+  width: 100%;
+  height: 100%;
   display: flex;
-  max-width: 100%;
-  margin: 0 auto;
-  height: 80vh; /* set a height so the scoreboard can be positioned towards the bottom */
+  justify-content: center;
+  align-items: center;
 }
 
 
-  
-
-  #fieldInfo {
-    flex: 2;
-    background-color: var(--dynamic-bg-color);
-    color: var(--dynamic-text-color);
-    text-align: center;
-    justify-content: space-between; /* space between the blocks */
-  }
 
 
-    
-  
-/* MAKES RANKING INFO HOVERABLE */
-.ranking-info {
-  visibility: hidden;
-}
-
-/* Show ranking info on hover */
-.number:hover .ranking-info, p:hover .ranking-info {
-  visibility: visible;
-}
-
-  
-  
-
-  
-  
+  /* SEARCH BAR */ 
   #search-input {
   position: absolute;
   top: 60px;
@@ -126,7 +184,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1.0rem;
-  z-index: 5;
+  z-index: 1;
   }
   
   body {
