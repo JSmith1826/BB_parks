@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair Display&display=swap');
+
 
 
 :root {
@@ -188,7 +191,7 @@
   }
   
   body {
-    background-image: url('data/images/night_background.jpg');
+    background-image: url('data/images/ai2.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -204,9 +207,10 @@
   }
 
   .custom-infoTitle {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 1.5rem;
-  align: center;
+  text-align: center;
+  
   color: #333;
   }
   
@@ -229,14 +233,14 @@
 
   
   h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bevan', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   color: var(--ash-gray);
   line-height: 1;
   padding: 0%;
   }
   
   h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lobster', sans-serif;
   color: var(--ash-gray);
   letter-spacing: 1px;
   }

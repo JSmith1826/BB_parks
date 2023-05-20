@@ -9,7 +9,9 @@ let fetchedData;
 let polygons = [];
 let currentLine = null;
 let currentMarker = null;
-
+let currentDivision = null;
+let currentLevel = null;
+let markers = [];  // This array should be populated with your actual markers
 let fenceMarkers = [];
 let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/3508a593be080a4fb7cf102cda697ce8f893c840/data/images/icons/base/TEMP/infield2_black.png";  
 let divisionMarkers = {
@@ -34,95 +36,72 @@ async function fetchData() {
 //initialize map
 // Async function to initialize the map
 async function initMap() {
-    const data = await fetchData();
-    fetchedData = data;
+  const data = await fetchData();
+  fetchedData = data;
+  const levelCounts = countFieldsByLevel(fetchedData);
+  let initialCenter = {lat: 44.3148, lng: -85.6024};
+  let initialZoom = 7;
 
-    const levelCounts = countFieldsByLevel(fetchedData);
-    
-    let initialCenter = {lat: 44.3148, lng: -85.6024}; // Set to your desired initial center
-    let initialZoom = 4; // Set to your desired initial zoom
+  console.log("Initializing map...");
+  const mapOptions = {
+      zoom: initialZoom,
+      center: new google.maps.LatLng(initialCenter),
+      mapTypeId: 'hybrid',
+  };
+  const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  renderPolygons(data, map, levelCounts);
+  google.maps.event.addListener(map, "click", (event) => {
+      MapClickHandler(event, fetchedData, map, polygons, levelCounts);
+  });
+  initSearchBox(map);
 
-  
-    console.log("Initializing map...");
-  
-    // Set the display and other options for the map
-    const mapOptions = {
-      zoom: 8, // deafualt zoom level
-      center: new google.maps.LatLng(44.3148, -85.6024), // geogrpahic center of Michigan - default center location
-      mapTypeId: 'hybrid', // default map type
-    };
-  
-    // Create the map object by calling the Google Maps API and passing in the map div and map options
-    const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  // Add reset button to the map
+  let resetButton = document.createElement('button');
+  resetButton.innerHTML = 'Reset Map';
+  resetButton.addEventListener('click', function() {
+      map.setZoom(7);
+      map.setCenter(initialCenter);
+  });
+  document.body.appendChild(resetButton);
+  map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(resetButton);
 
-    // call renderPolygons function and pass in full data and map
-    renderPolygons(data, map, levelCounts); 
-    // Create a listener on the map to detect a click and run the handleMapClick function
-// Inside the initMap function
-google.maps.event.addListener(map, "click", (event) => {
-  MapClickHandler(event, fetchedData, map, polygons, levelCounts);
-});
-    // Initialize the search box
-    initSearchBox(map);
+  // Add division filter to the map
+  let divisionDropdown = document.createElement('select');
+  divisionDropdown.innerHTML = '<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>';
+  divisionDropdown.addEventListener('change', function() {
+      filterByDivision(this.value);
+  });
+  document.body.appendChild(divisionDropdown);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(divisionDropdown);
 
+  // Add level filter to the map
+  let levelSlider = document.createElement('input');
+  levelSlider.type = 'range';
+  levelSlider.min = '0';
+  levelSlider.max = '100';
+  levelSlider.step = '1';
+  levelSlider.addEventListener('input', function() {
+      filterByLevel(district.value);
+  });
+  document.body.appendChild(levelSlider);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(levelSlider);
+}
 
-//////////////////////////////////////////////////////////
-  //// Add Reset Button To The Map for quick zoom out
-  //////////////////////////////////////////////////////
-    let resetButton = document.createElement('button');
-resetButton.innerHTML = 'Reset Map';
-resetButton.style.background = 'blue'; // Set to your desired background color
-resetButton.style.border = '2px solid #4CAF50'; // Set to your desired border color/style
-resetButton.style.color = 'white'; // Set to your desired text color
-resetButton.style.padding = '15px 32px'; // Set to your desired padding
-resetButton.style.textAlign = 'center'; // Set to your desired text alignment
-resetButton.style.textDecoration = 'bold'; // Set to your desired text decoration
-resetButton.style.display = 'inline-block'; // Set to your desired display
-resetButton.style.fontSize = '2.0rem'; // Set to your desired font size
-resetButton.style.margin = '4px 2px'; // Set to your desired margin
-resetButton.style.cursor = 'pointer'; // Set to your desired cursor style
-resetButton.style.borderRadius = '12px'; // Set to your desired border radius
+document.addEventListener("DOMContentLoaded", initMap);
 
-resetButton.addEventListener('click', function() {
-  map.setZoom(7);
-  map.setCenter(44.3148, -85.6024);
-});
-
-///////////////////////////////////////////////////////
-//////////// ADD THE FILTER BUTTONS TO THE MAP
-//////////////////////////////////////////////////////
-
-
-// Append the button to a desired parent element
-document.body.appendChild(resetButton);
-map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(resetButton);
-
-// In the example above, TOP_RIGHT can be replaced with any of the following positions:
-// BOTTOM_CENTER, BOTTOM_LEFT, BOTTOM_RIGHT, LEFT_BOTTOM, LEFT_CENTER, LEFT_TOP, 
-// RIGHT_BOTTOM, RIGHT_CENTER, RIGHT_TOP, TOP_CENTER, TOP_LEFT.
-
-
-  }
-  
-  // Wait for the DOM to load before running the initMap function
-  // DOM is the html document
-  document.addEventListener("DOMContentLoaded", initMap);
-
-/////////////////////////////// TEST CODE ////////////////////////////
 function countFieldsByLevel(data) {
   const levelCounts = {};
-
   data.forEach(field => {
-    const level = field.level;
-    if (levelCounts.hasOwnProperty(level)) {
-      levelCounts[level]++;
-    } else {
-      levelCounts[level] = 1;
-    }
+      const level = field.level;
+      if (levelCounts.hasOwnProperty(level)) {
+          levelCounts[level]++;
+      } else {
+          levelCounts[level] = 1;
+      }
   });
-
   return levelCounts;
 }
+
 
   // Create the map click handler - The big boy of functions
     // input data - full 'data' object from json file, 'map' object from fetchData() and initMap(), 
@@ -552,7 +531,7 @@ function createMarker(field, map) {
 const marker = new google.maps.Marker({
     position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
     map: map,
-    title: field.park_name,
+    title: field.display_name,
     icon: {
         url: iconUrl,
         scaledSize: iconSize // Use the iconSize variable here
@@ -562,7 +541,7 @@ const marker = new google.maps.Marker({
 
 
     // Create the marker popup content
-    let markerPopupContent = `<div class="custom-infoTitle">${field.park_name}</div>`;
+    let markerPopupContent = `<div class="custom-infoTitle">${field.display_name}</div>`;
     
     function createMarker(field, map) {
         // Set the icon based on the level round and division
@@ -579,17 +558,24 @@ const marker = new google.maps.Marker({
             // Default icon URL if none of the conditions are met
             iconUrl = defaultIconUrl;
         }
+
+        // Create a filter based on the level
+        
+
     
         const marker = new google.maps.Marker({
             position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
             map: map,
-            title: field.park_name,
+            title: field.display_name,
             icon: {
                 url: iconUrl,
                 scaledSize: new google.maps.Size(40, 40)  // Sets the icon size to 30x30 pixels
             },
             level: field.level,
+            division: field.division_final,
         });
+
+        markers.push(marker);
     
 
 
@@ -636,7 +622,7 @@ if (field.region_final_quarter !== null) {
 if (field.region_semi_number !== null) {
     markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.regional_div}</span> Regional Semi ${field.region_semi_number}</div>`;
 } 
-markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Hosted by the ${field.host_team} ${field.nickname}</div>`;
+markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><br>Hosted by the ${field.host_team} ${field.nickname}</div>`;
 
 markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center custom-markerPopup-light"><br>Double Click to Zoom</div>`;
 
@@ -728,7 +714,35 @@ marker.addListener("dblclick", () => {
     numberElement.textContent = value;
     return numberElement;
 }
-        
+
+/////////////////////////////// TEST CODE ////////////////////////////
+function filterByDivision(division) {
+  currentDivision = division;
+  markers.forEach(marker => {
+      if (marker.division_final === currentDivision && 
+          (currentLevel === null || marker.level === currentLevel)) {
+          marker.setMap(map);  // Show the marker
+      } else {
+          marker.setMap(null);  // Hide the marker
+      }
+  });
+}
+
+function filterByLevel(level) {
+  currentLevel = level;
+  markers.forEach(marker => {
+      if (marker.level === currentLevel && 
+          (currentDivision === null || marker.division_final === currentDivision)) {
+          marker.setMap(map);  // Show the marker
+      } else {
+          marker.setMap(null);  // Hide the marker
+      }
+  });
+}
+
+
+
+/////////////////////////////// TEST CODE ////////////////////////////
 
     // Create the function to make the html element with the field info and distance display
     // input data - closestField from closestFieldFunction, totalDistance, fenceDistance, map from MapClickHandler
@@ -745,7 +759,7 @@ marker.addListener("dblclick", () => {
         fieldTitle.innerHTML = "";
       
         const fieldName = document.createElement("h2");
-        fieldName.innerHTML = `${closestField.park_name}`;
+        fieldName.innerHTML = `${closestField.display_name}`;
         
         fieldTitle.appendChild(fieldName);
       
