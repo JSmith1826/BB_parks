@@ -20,7 +20,7 @@
 
 
   /* BANNER IMAGE */
-.banner {
+// .banner {
   width: 100%;
   height: 20vh; /* adjust as needed */
   display: flex;
@@ -37,7 +37,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  height: 80vh;
+  height: 100vh;
   margin: 0 auto;
   align-items: center;
 }
@@ -48,23 +48,21 @@
   height: 100%;
   z-index: 0; /* new */
 }
-
 #distanceBlock {
   position: absolute;
-  bottom: 350px; /* adjust this value to move the block up or down */
-  left: 50%; /* centers the block */
-  transform: translateX(-50%); /* ensures the block is truly centered */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--dynamic-bg-color);
   border-radius: 10px;
   padding: 10px;
-  width: 350px; /* specify a width for your distanceBlock */
-  height: 50px; /* specify a height for your distanceBlock */
-  z-index: 1; /* new */
+  width: 350px;
+  height: 50px;
+  z-index: 1;
 }
-
 
 #distanceBlock:before {
   content: "";
@@ -77,25 +75,25 @@
   background-color: var(--dynamic-bg-color);
   border-radius: 12px;
   pointer-events: none;
-  z-index: -1; /* new */
-
+  z-index: -1;
 }
 
 #hostInfo {
   position: absolute;
-  top: 50px;
-  left: 50%; /* centers the block */
-  transform: translateX(-50%); /* ensures the block is truly centered */
-  width: 300px; /* specify a width for your hostInfo */
-  height: 200px; /* specify a height for your hostInfo */
+  top: 10%; /* Adjust this value to suit your design */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: 300px;
+  height: 200px;
   background-color: var(--ash-gray);
   color: var(--black);
   border-radius: 10px;
   padding: 10px;
-
 }
+
 #hostInfo:before {
   content: "";
   position: absolute;
@@ -107,8 +105,7 @@
   background-color: var(--ash-gray);
   border-radius: 12px;
   pointer-events: none;
-  z-index: -1; /* new */
-
+  z-index: -1;
 }
 
 
@@ -206,6 +203,18 @@
     padding: 0;
   }
 
+
+  /* BUTTONS ON MAP*/
+.reset-button {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
   .custom-infoTitle {
   font-family: 'Playfair Display', sans-serif;
   font-size: 1.5rem;
@@ -240,7 +249,7 @@
   }
   
   h3 {
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: var(--ash-gray);
   letter-spacing: 1px;
   }

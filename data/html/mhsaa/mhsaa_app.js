@@ -11,10 +11,17 @@ let currentLine = null;
 let currentMarker = null;
 let currentDivision = null;
 let currentLevel = null;
-let markers = [];  // This array should be populated with your actual markers
+let markers = [];  
 let fenceMarkers = [];
 let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/3508a593be080a4fb7cf102cda697ce8f893c840/data/images/icons/base/TEMP/infield2_black.png";  
 let divisionMarkers = {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "null": []
+  };
+  let levelMarkers = {
     "1": [],
     "2": [],
     "3": [],
@@ -58,35 +65,124 @@ async function initMap() {
   // Add reset button to the map
   let resetButton = document.createElement('button');
   resetButton.innerHTML = 'Reset Map';
+  resetButton.style.fontSize = '20px'; // make the text bigger
+  resetButton.style.fontFamily = 'Arial, sans-serif'; // use Arial font
+  resetButton.style.padding = '10px'; // add some padding around the text
+  resetButton.style.backgroundColor = '#007BFF'; // set background color to blue
+  resetButton.style.color = 'white'; // set text color to white
+  resetButton.style.border = 'none'; // remove border
+  resetButton.style.borderRadius = '5px'; // round the corners
   resetButton.addEventListener('click', function() {
-      map.setZoom(7);
+      map.setZoom(initialZoom);
       map.setCenter(initialCenter);
   });
+
   document.body.appendChild(resetButton);
   map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(resetButton);
 
-  // Add division filter to the map
-  let divisionDropdown = document.createElement('select');
-  divisionDropdown.innerHTML = '<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>';
-  divisionDropdown.addEventListener('change', function() {
-      filterByDivision(this.value);
-  });
-  document.body.appendChild(divisionDropdown);
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(divisionDropdown);
+  
+// Add division filter to the map
+let divisionDropdown = document.createElement('select');
+divisionDropdown.innerHTML = '<option value="all">Show All</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>';
+divisionDropdown.addEventListener('change', function() {
+    filterByDivision(this.value);
+});
 
-  // Add level filter to the map
-  let levelSlider = document.createElement('input');
-  levelSlider.type = 'range';
-  levelSlider.min = '0';
-  levelSlider.max = '100';
-  levelSlider.step = '1';
-  levelSlider.addEventListener('input', function() {
-      filterByLevel(district.value);
-  });
-  document.body.appendChild(levelSlider);
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(levelSlider);
+divisionDropdown.style.fontSize = '20px'; // make the text bigger
+divisionDropdown.style.fontFamily = 'Arial, sans-serif'; // use Arial font
+divisionDropdown.style.padding = '10px'; // add some padding around the text
+divisionDropdown.style.backgroundColor = '#007BFF'; // set background color to blue
+divisionDropdown.style.color = 'white'; // set text color to white
+divisionDropdown.style.border = 'none'; // remove border
+divisionDropdown.style.borderRadius = '5px'; // round the corners
+divisionDropdown.style.margin = '10px'; // add some margin around the text
+divisionDropdown.style.width = '120px'; // make the dropdown wider
+divisionDropdown.style.height = '50px'; // make the dropdown taller
+divisionDropdown.style.position = 'absolute'; // position the dropdown
+
+document.body.appendChild(divisionDropdown);
+map.controls[google.maps.ControlPosition.TOP_LEFT].push(divisionDropdown);
+
+function filterByDivision(division) {
+    // If the division is 'all', show all markers
+    if (division === 'all') {
+        for (let level in markers) {
+            for (let marker of markers[level]) {
+                marker.setMap(map);
+            }
+        }
+    } else {
+        // Convert the division to a number
+        division = Number(division);
+
+        // Iterate over each marker
+        for (let level in markers) {
+            for (let marker of markers[level]) {
+                // If the marker's division is equal to the selected division,
+                // show the marker, otherwise hide it
+                if (marker.division === division) {
+                    marker.setMap(map);
+                } else {
+                    marker.setMap(null);
+                }
+            }
+        }
+    }
 }
 
+// Create label for the level filter
+let levelLabel = document.createElement('label');
+levelLabel.innerHTML = 'Filter by Round: ';
+levelLabel.style.fontSize = '20px'; // make the text bigger
+levelLabel.style.fontFamily = 'Arial, sans-serif'; // use Arial font
+levelLabel.style.color = 'white'; // set text color to white
+document.body.appendChild(levelLabel);
+
+// Add level filter to the map
+let levelSlider = document.createElement('input');
+levelSlider.type = 'range';
+levelSlider.min = '0';
+levelSlider.max = '4';
+levelSlider.step = '1';
+levelSlider.value = '0';
+levelSlider.style.width = '200px';
+levelSlider.style.height = '200px'; // make the slider taller
+
+levelSlider.style.background = '#007BFF'; // set the background color to blue
+levelSlider.addEventListener('input', function() {
+    filterByLevel(this.value);
+});
+document.body.appendChild(levelSlider);
+map.controls[google.maps.ControlPosition.TOP_LEFT].push(levelSlider);
+
+function filterByLevel(level) {
+    console.log("Filtering by level:", level);
+    level = Number(level);
+
+    // Iterate over each marker
+    for (let i = 0; i <= 4; i++) {
+        // Skip if the marker is undefined
+        if (!markers[i]) continue;
+
+        for (let j = 0; j < markers[i].length; j++) {
+            // Skip if the marker is undefined
+            if (!markers[i][j]) continue;
+
+            // Check if the marker has a setMap function
+            if (typeof markers[i][j].setMap !== 'function') {
+                console.log('Not a Marker object:', markers[i][j]);
+                continue;
+            }
+
+            if (i > level) {
+                markers[i][j].setMap(map);
+            } else {
+                markers[i][j].setMap(null);
+            }
+        }
+    }
+}
+}
 document.addEventListener("DOMContentLoaded", initMap);
 
 function countFieldsByLevel(data) {
@@ -213,49 +309,90 @@ function initSearchBox(map) {
       }
 
 
-      /// Create the draw line function and specify the line options
-        // input data - closestField from closestFieldFunction, click location, and map from MapClickHandler
-        // output - a line drawn on the map from the home plate of the closest field to the click location
-        // and a numberical distance from home plate to the click location
-        function drawLine(closestField, clickLocation, map) {
-            console.log("Drawing line...");
-            // clear the current line and distance in feet if there is one
-            if (currentLine) {
-                currentLine.setMap(null);
+/// Create the draw line function and specify the line options
+// input data - closestField from closestFieldFunction, click location, and map from MapClickHandler
+// output - a line drawn on the map from the home plate of the closest field to the click location
+// and a numberical distance from home plate to the click location
+function drawLine(closestField, clickLocation, map) {
+  // remove the old line if it exists
+  if (currentLine) {
+    currentLine.setMap(null);
+  }
+  // create an empty line
+  const line = new google.maps.Polyline({
+      path: [],
+      strokeColor: "#0000FF",
+      strokeOpacity: 1.0,
+      strokeWeight: 2,
+      zIndex: 1,
+      map: map,
+  });
 
-            }
-            // Call function to clear any previous fence markers
-            clearFenceMarkers();
-            
-            // create the line
-            const line = new google.maps.Polyline({
-                path: [
-                    new google.maps.LatLng(closestField.home_plate[1], closestField.home_plate[0]), // Reverse the coordinates  
-                    clickLocation,
-                ],
-                strokeColor: "#0000FF", // set the line color
-                strokeOpacity: 1.0, // set the line opacity
-                strokeWeight: 2, // set the line weight
-                zIndex: 1, // set the line to be on top of the polygons
-                map: map, // set the map
-            });
-            // set the currentLine to the line we just created
-            currentLine = line;
-            // create the distance variable and set it to the distance between the click location and the home plate of the closest field
-            const distance = google.maps.geometry.spherical.computeDistanceBetween(clickLocation, new google.maps.LatLng(closestField.home_plate[1], closestField.home_plate[0]));
-            // convert the distance to feet
-            const distanceFeet = distance * 3.28084;
+  // store currentLine to be able to remove it later
+  currentLine = line;
 
-            // display in console for testing
-            console.log("Total distance:", distanceFeet.toFixed(0) + " ft");
+  const start = new google.maps.LatLng(closestField.home_plate[1], closestField.home_plate[0]);
+  const end = clickLocation;
 
+  const stepCount = 100; // number of steps to take from start to end
+  const latStep = (end.lat() - start.lat()) / stepCount;
+  const lngStep = (end.lng() - start.lng()) / stepCount;
 
-            // set the distance element to the distance in feet
-            // document.getElementById("clickDistance").innerHTML = distanceFeet.toFixed(0) + " ft";
-            
-            // close the function
-            return distanceFeet;
-        }
+  const minSize = 22; // minimum size of the icon
+  const maxSize = 32; // maximum size of the icon
+
+  let i = 0;
+  const intervalId = setInterval(() => {
+      // calculate the next point along the line
+      const nextPoint = new google.maps.LatLng(start.lat() + i * latStep, start.lng() + i * lngStep);
+
+      // get the current path and append the next point
+      const path = line.getPath();
+      path.push(nextPoint);
+
+      // update the line's path
+      line.setPath(path);
+
+      // update the marker's position
+      currentMarker.setPosition(nextPoint);
+
+      // change the size of the icon
+      const customIcon = currentMarker.getIcon();
+      let newSize;
+      if (i <= stepCount / 2) {
+          // we're before the midpoint, so grow the icon
+          newSize = minSize + ((maxSize - minSize) * (i / (stepCount / 2)));
+      } else {
+          // we're after the midpoint, so shrink the icon
+          newSize = maxSize - ((maxSize - minSize) * ((i - stepCount / 2) / (stepCount / 2)));
+      }
+      customIcon.scaledSize = new google.maps.Size(newSize, newSize);
+      currentMarker.setIcon(customIcon);
+
+      // increment step count
+      i++;
+
+      // if we've reached the end, stop the interval
+      if (i > stepCount) {
+          clearInterval(intervalId);
+      }
+      
+  }, 5); // delay between steps in milliseconds
+
+  // create the distance variable and set it to the distance between the click location and the home plate of the closest field
+  const distance = google.maps.geometry.spherical.computeDistanceBetween(end, start);
+  // convert the distance to feet
+  const distanceFeet = distance * 3.28084;
+
+  // display in console for testing
+  console.log("Total distance:", distanceFeet.toFixed(0) + " ft");
+
+  // set the distance element to the distance in feet
+  // document.getElementById("clickDistance").innerHTML = distanceFeet.toFixed(0) + " ft";
+
+  // close the function and return distanceFeet
+  return distanceFeet;
+}
 
 // Create the clickMarker function and specify the marker options
 // input data - click location and map from MapClickHandler
@@ -509,203 +646,117 @@ const iconChamp = `${iconPathBase}champ.png`;
 
 
 function createMarker(field, map) {
-    
-    // Set the icon based on the level round and division
-    let iconUrl;
-    let iconSize = new google.maps.Size(35, 35); // Sets the default icon size to 40x40 pixels
+  let iconUrl;
+  let iconSize = new google.maps.Size(35, 35);
 
-    if (field.finals !== null) {
-        iconUrl = iconChamp;
-    } else if (field.region_final_quarter !== null) {
-        iconUrl = iconRF[field.regional_div];
-    } else if (field.region_semi_number !== null) {
-        iconUrl = iconRSF[field.regional_div];
-    } else if (field.district !== null) {
-        iconUrl = iconDist[field.division];
-        iconSize = new google.maps.Size(15, 15); // Sets the icon size to 20x20 pixels if the district condition is met
-    } else {
-        // Default icon URL if none of the conditions are met
-        iconUrl = defaultIconUrl;
-    }
+  if (field.finals !== null) {
+      iconUrl = iconChamp;
+  } else if (field.region_final_quarter !== null) {
+      iconUrl = iconRF[field.regional_div];
+  } else if (field.region_semi_number !== null) {
+      iconUrl = iconRSF[field.regional_div];
+  } else if (field.district !== null) {
+      iconUrl = iconDist[field.division];
+      iconSize = new google.maps.Size(15, 15);
+  } else {
+      iconUrl = defaultIconUrl;
+  }
 
-const marker = new google.maps.Marker({
-    position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
-    map: map,
-    title: field.display_name,
-    icon: {
-        url: iconUrl,
-        scaledSize: iconSize // Use the iconSize variable here
-    },
-    level: field.level,
-});
+  const marker = new google.maps.Marker({
+      position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
+      map: map,
+      title: field.display_name,
+      icon: {
+          url: iconUrl,
+          scaledSize: iconSize,
+      },
+      level: field.level,
+      division: field.division_final,
+  });
 
-
-    // Create the marker popup content
-    let markerPopupContent = `<div class="custom-infoTitle">${field.display_name}</div>`;
-    
-    function createMarker(field, map) {
-        // Set the icon based on the level round and division
-        let iconUrl;
-        if (field.finals !== null) {
-            iconUrl = iconChamp;
-        } else if (field.region_final_quarter !== null) {
-            iconUrl = iconRF[field.regional_div];
-        } else if (field.region_semi_number !== null) {
-            iconUrl = iconRSF[field.regional_div];
-        } else if (field.district !== null) {
-            iconUrl = iconDist[field.division];
-        } else {
-            // Default icon URL if none of the conditions are met
-            iconUrl = defaultIconUrl;
-        }
-
-        // Create a filter based on the level
-        
-
-    
-        const marker = new google.maps.Marker({
-            position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
-            map: map,
-            title: field.display_name,
-            icon: {
-                url: iconUrl,
-                scaledSize: new google.maps.Size(40, 40)  // Sets the icon size to 30x30 pixels
-            },
-            level: field.level,
-            division: field.division_final,
-        });
-
-        markers.push(marker);
-    
-
-
-    
-        const infowindow = new google.maps.InfoWindow({
-            content: markerPopupContent
-        });
-    
-        // Control mouse behavior
-        marker.addListener("click", () => {
-            infowindow.open(map, marker);
-        });
-    
-        marker.addListener("mouseover", () => {
-            infowindow.open(map, marker);
-        });
-    
-        marker.addListener("mouseout", () => {
-            infowindow.close();
-        });
-    
-        marker.addListener("dblclick", () => {
-            map.setCenter(marker.getPosition());
-            map.setZoom(19);
-            
-        });
-    
-        return marker;
-    }
-
-    
-if (field.district !== null) {
-    markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.division}</span> District ${field.district}</div>`;
-} 
-
-if (field.finals !== null) {
-    markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">TROPHY WEEKEND<br>June DATE</div>`;
-} 
-
-if (field.region_final_quarter !== null) {
-    markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.regional_div}</span> Final and Quarter Final ${field.region_final_quarter}</div>`;
-} 
-
-if (field.region_semi_number !== null) {
-    markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.regional_div}</span> Regional Semi ${field.region_semi_number}</div>`;
-} 
-markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><br>Hosted by the ${field.host_team} ${field.nickname}</div>`;
-
-markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center custom-markerPopup-light"><br>Double Click to Zoom</div>`;
-
-const infowindow = new google.maps.InfoWindow({
-    content: markerPopupContent
-});
-
-
-    // Control mouse behavior
-    marker.addListener("click", () => {
-        infowindow.open(map, marker);
-    });
-
-    marker.addListener("mouseover", () => {
-        infowindow.open(map, marker);
-    });
-
-    marker.addListener("mouseout", () => {
-        infowindow.close();
-    });
-
-
-// Set the adjustment value
-const adjustment = 0.0005;
-// Seem to have found the right one
-
-marker.addListener("dblclick", () => {
-    // Get the home plate coordinates
-    const homePlate = field.home_plate;
-
-    // Get the field's cardinal direction
-    const direction = field.field_cardinal_direction;
-
-    // Initialize adjustments for latitude and longitude
-    let latAdjustment = 0;
-    let lngAdjustment = 0;
-
-    // Adjust the adjustments based on the field's cardinal direction
-    switch (direction) {
-        case 'NE':
-            latAdjustment = adjustment;
-            lngAdjustment = adjustment;
-            break;
-        case 'SE':
-            latAdjustment = -adjustment;
-            lngAdjustment = adjustment;
-            break;
-        case 'SW':
-            latAdjustment = -adjustment;
-            lngAdjustment = -adjustment;
-            break;
-        case 'NW':
-            latAdjustment = adjustment;
-            lngAdjustment = -adjustment;
-            break;
-        case 'N':
-            latAdjustment = adjustment;
-            break;
-        case 'S':
-            latAdjustment = -adjustment;
-            break;
-        case 'E':
-            lngAdjustment = adjustment;
-            break;
-        case 'W':
-            lngAdjustment = -adjustment;
-            break;
-        default:
-            break;
-    }
-
-    // Create a LatLng object with the adjusted coordinates
-    const centerPosition = new google.maps.LatLng(homePlate[1] + latAdjustment, homePlate[0] + lngAdjustment);
-
-    // Set the center of the map
-    map.setCenter(centerPosition);
-    map.setZoom(19);
-    closestFieldFunction(centerPosition, fetchedData)
-});
-        
-    return marker;
+  if (!markers[field.level]) {
+    markers[field.level] = [];
 }
+markers[field.level].push(marker);
 
+
+  let markerPopupContent = `<div class="custom-infoTitle">${field.display_name}</div>`;
+  if (field.district !== null) {
+      markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.division}</span> District ${field.district}</div>`;
+  }
+  if (field.finals !== null) {
+      markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">TROPHY WEEKEND<br>June DATE</div>`;
+  }
+  if (field.region_final_quarter !== null) {
+      markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.regional_div}</span> Final and Quarter Final ${field.region_final_quarter}</div>`;
+  }
+  if (field.region_semi_number !== null) {
+      markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.regional_div}</span> Regional Semi ${field.region_semi_number}</div>`;
+  }
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><br>Hosted by the ${field.host_team} ${field.nickname}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center custom-markerPopup-light"><br>Double Click to Zoom</div>`;
+
+  const infowindow = new google.maps.InfoWindow({
+      content: markerPopupContent
+  });
+
+  marker.addListener("click", () => {
+      infowindow.open(map, marker);
+  });
+  marker.addListener("mouseover", () => {
+      infowindow.open(map, marker);
+  });
+  marker.addListener("mouseout", () => {
+      infowindow.close();
+  });
+
+  const adjustment = 0.0005;
+  marker.addListener("dblclick", () => {
+      let latAdjustment = 0;
+      let lngAdjustment = 0;
+
+      switch (field.field_cardinal_direction) {
+          case 'NE':
+              latAdjustment = adjustment;
+              lngAdjustment = adjustment;
+              break;
+          case 'SE':
+              latAdjustment = -adjustment;
+              lngAdjustment = adjustment;
+              break;
+          case 'SW':
+              latAdjustment = -adjustment;
+              lngAdjustment = -adjustment;
+              break;
+          case 'NW':
+              latAdjustment = adjustment;
+              lngAdjustment = -adjustment;
+              break;
+          case 'N':
+              latAdjustment = adjustment;
+              break;
+          case 'S':
+              latAdjustment = -adjustment;
+              break;
+          case 'E':
+              lngAdjustment = adjustment;
+              break;
+          case 'W':
+              lngAdjustment = -adjustment;
+              break;
+          default:
+              break;
+      }
+  
+      const centerPosition = new google.maps.LatLng(field.home_plate[1] + latAdjustment, field.home_plate[0] + lngAdjustment);
+  
+      map.setCenter(centerPosition);
+      map.setZoom(19);
+      closestFieldFunction(centerPosition, fetchedData)
+  });
+  
+  return marker;
+}  
 
 
 
@@ -715,30 +766,37 @@ marker.addListener("dblclick", () => {
     return numberElement;
 }
 
-/////////////////////////////// TEST CODE ////////////////////////////
-function filterByDivision(division) {
-  currentDivision = division;
-  markers.forEach(marker => {
-      if (marker.division_final === currentDivision && 
-          (currentLevel === null || marker.level === currentLevel)) {
-          marker.setMap(map);  // Show the marker
-      } else {
-          marker.setMap(null);  // Hide the marker
-      }
-  });
-}
+
+
 
 function filterByLevel(level) {
-  currentLevel = level;
-  markers.forEach(marker => {
-      if (marker.level === currentLevel && 
-          (currentDivision === null || marker.division_final === currentDivision)) {
-          marker.setMap(map);  // Show the marker
-      } else {
-          marker.setMap(null);  // Hide the marker
+  console.log("Filtering by level:", level);
+  level = Number(level);
+
+  for (let i = 0; i < markers.length; i++) {
+    // Skip if the marker is undefined
+    if (!markers[i]) continue;
+
+    for (let j = 0; j < markers[i].length; j++) {
+      // Skip if the marker is undefined
+      if (!markers[i][j]) continue;
+
+      // Check if the marker has a setMap function
+      if (typeof markers[i][j].setMap !== 'function') {
+        console.log('Not a Marker object:', markers[i][j]);
+        continue;
       }
-  });
+
+      if (i <= level) {
+        markers[i][j].setMap(map);
+      } else {
+        markers[i][j].setMap(null);
+      }
+    }
+  }
 }
+
+
 
 
 
@@ -928,7 +986,13 @@ function gameInfo(closestField) {
 
 
 
-      
+    // Call this function when the page loads or before field selection
+function initializeDistanceDisplay() {
+  const distanceContainer = distanceDisplay(null, null);
+  // Now add distanceContainer to your page where you want it to appear
+  document.body.appendChild(distanceContainer); // Change this line as needed
+}
+  
 
 function distanceDisplay(distanceFeet, fenceDist, levelCounts) {
   console.log("Creating distance display...");
@@ -957,35 +1021,27 @@ function distanceDisplay(distanceFeet, fenceDist, levelCounts) {
 }
 
 
-  /////////// FILTER FUNCTIONS ///////////
+function filterMarkers(level) {
+  console.log("Filtering by level: ", level); // Log the level parameter
+  console.log("Markers before filtering: ", markers); // Log the state of markers before filtering
 
-  function filterMarkers(level) {
-    // Hide all markers
-    for (var key in markers) {
-      for (var i = 0; i < markers[key].length; i++) {
-        markers[key][i].setMap(null);
+  // Hide all markers
+  for (var key in markers) {
+      if (markers[key]) {
+          for (var i = 0; i < markers[key].length; i++) {
+              markers[key][i].setMap(null);
+          }
       }
-    }
-  
-    // Show only the markers with the selected level
-    if (markers[level]) {
+  }
+
+  // Show only the markers with the selected level
+  if (markers[level]) {
       for (var i = 0; i < markers[level].length; i++) {
-        markers[level][i].setMap(map);
+          markers[level][i].setMap(map);
       }
-    }
+  } else {
+      console.log("No markers for level: ", level); // Log if there are no markers for this level
   }
+}
 
-  function applyFilter(level) {
-    if (level === "") {
-      // Show all markers
-      for (var key in markers) {
-        for (var i = 0; i < markers[key].length; i++) {
-          markers[key][i].setMap(map);
-        }
-      }
-    } else {
-      // Show markers based on the selected level
-      filterMarkers(level);
-    }
-  }
-  
+
