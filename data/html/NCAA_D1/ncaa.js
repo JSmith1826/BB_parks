@@ -37,13 +37,20 @@ async function initMap() {
   const mapOptions = {
       zoom: initialZoom,
       center: new google.maps.LatLng(initialCenter),
-      mapTypeId: 'hybrid',
+      mapTypeId: 'roadmap',
   };
   const map = new google.maps.Map(document.getElementById("map"), mapOptions);
   renderPolygons(data, map, levelCounts);
   google.maps.event.addListener(map, "click", (event) => {
       MapClickHandler(event, fetchedData, map, polygons, levelCounts);
   });
+
+  // Here we add the 'zoom_changed' event listener
+  google.maps.event.addListener(map, 'zoom_changed', function() {
+    let zoom = map.getZoom();
+    map.setMapTypeId((zoom > 10) ? 'hybrid' : 'roadmap');
+  });
+  
   initSearchBox(map);
 
   // Add reset button to the map
@@ -533,7 +540,8 @@ function renderPolygons(data, map, levelCounts) {
         // will be used in the addMapClickHandler function to check the click location against
       }
 // Define the paths to the icons outside of the function, as they don't change
-const iconPathBase = 'https://github.com/JSmith1826/BB_parks/blob/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/NCAA_D1/conf_logos/';
+const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/NCAA_D1/conf_logos/';
+
 
 // Create the icon filepaths from the base url and the field.Filename
 function createIconUrl(filename) {
@@ -543,7 +551,8 @@ function createIconUrl(filename) {
 
 async function createMarker(field, map) {
   let iconUrl;
-  let iconSize = new google.maps.Size(35, 35);
+  let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/images/icons/baseball/stadium_lt_blue.png";  
+  let iconSize = new google.maps.Size(80, 80);
 
   console.log("field: ", field); // prints the field object
 
@@ -554,6 +563,7 @@ async function createMarker(field, map) {
     console.log("iconUrl: ", iconUrl); // prints the iconUrl after verification
   } else {
     iconUrl = defaultIconUrl;
+    console.log("default called: ", iconUrl); // prints the iconUrl after verification
   }
 
   const marker = new google.maps.Marker({
@@ -561,7 +571,7 @@ async function createMarker(field, map) {
       map: map,
       title: field.park_name,
       icon: {
-          url: iconPathBase + field.filename,
+          url: iconUrl,
           scaledSize: iconSize,
       },
       level: field.level,
