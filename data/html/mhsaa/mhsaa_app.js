@@ -81,29 +81,29 @@ async function initMap() {
   map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(resetButton);
 
   
-// Add division filter to the map
-let divisionDropdown = document.createElement('select');
-divisionDropdown.innerHTML = '<option value="all">Show All</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>';
-divisionDropdown.addEventListener('change', function() {
-    filterByDivision(this.value);
-});
+  // Add division filter to the map
+  let divisionDropdown = document.createElement('select');
+  divisionDropdown.innerHTML = '<option value="all">Show All</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>';
+  divisionDropdown.addEventListener('change', function() {
+      filterByDivision(this.value);
+  });
 
-divisionDropdown.style.fontSize = '20px'; // make the text bigger
-divisionDropdown.style.fontFamily = 'Arial, sans-serif'; // use Arial font
-divisionDropdown.style.padding = '10px'; // add some padding around the text
-divisionDropdown.style.backgroundColor = '#007BFF'; // set background color to blue
-divisionDropdown.style.color = 'white'; // set text color to white
-divisionDropdown.style.border = 'none'; // remove border
-divisionDropdown.style.borderRadius = '5px'; // round the corners
-divisionDropdown.style.margin = '10px'; // add some margin around the text
-divisionDropdown.style.width = '120px'; // make the dropdown wider
-divisionDropdown.style.height = '50px'; // make the dropdown taller
-divisionDropdown.style.position = 'absolute'; // position the dropdown
+  divisionDropdown.style.fontSize = '20px'; // make the text bigger
+  divisionDropdown.style.fontFamily = 'Arial, sans-serif'; // use Arial font
+  divisionDropdown.style.padding = '10px'; // add some padding around the text
+  divisionDropdown.style.backgroundColor = '#007BFF'; // set background color to blue
+  divisionDropdown.style.color = 'white'; // set text color to white
+  divisionDropdown.style.border = 'none'; // remove border
+  divisionDropdown.style.borderRadius = '5px'; // round the corners
+  divisionDropdown.style.margin = '10px'; // add some margin around the text
+  divisionDropdown.style.width = '120px'; // make the dropdown wider
+  divisionDropdown.style.height = '50px'; // make the dropdown taller
+  divisionDropdown.style.position = 'absolute'; // position the dropdown
 
-document.body.appendChild(divisionDropdown);
-map.controls[google.maps.ControlPosition.TOP_LEFT].push(divisionDropdown);
+  document.body.appendChild(divisionDropdown);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(divisionDropdown);
 
-function filterByDivision(division) {
+  function filterByDivision(division) {
     // If the division is 'all', show all markers
     if (division === 'all') {
         for (let level in markers) {
