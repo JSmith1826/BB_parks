@@ -555,7 +555,7 @@ function clearFenceMarkers() {
   // map out the data for polygons
   // input data - full 'data' object from json file and 'map' object from fetchData() and initMap()
     // output - polygons rendered on map
-// Modify renderPolygons to pass the new data to createMarker
+//  RenderPolygons to pass the new data to createMarker
 function renderPolygons(data, map, levelCounts) {
   console.log("calling rendering polygons...");
   polygons = [];
