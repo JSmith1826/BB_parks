@@ -573,20 +573,26 @@ conferenceNames.forEach(conference => {
 });
 
 
+// Marker creator with error handling for bad image links
+function verifyImageUrl(url) {
+  return new Promise((resolve) => {
+    var img = new Image();
+    img.onload = () => resolve(url);
+    img.onerror = () => resolve(defaultIconUrl); // returns default URL if the provided URL doesn't load
+    img.src = url;
+  });
+}
 
-function createMarker(field, map) {
-
+async function createMarker(field, map) {
   let iconUrl;
   let iconSize = new google.maps.Size(35, 35);
-  let defaultIconUrl = 'https://github.com/JSmith1826/BB_parks/blob/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/images/icons/baseball/stadium_lt_blue.png'
 
   // Attempt to find a match for the conference name in the icon dictionary
   if (field.conference in iconDict) {
-      iconUrl = iconDict[field.conference];
+      iconUrl = await verifyImageUrl(iconDict[field.conference]);
   } else {
       iconUrl = defaultIconUrl; // Some default icon if there is no match
   }
-
 
   const marker = new google.maps.Marker({
       position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
@@ -602,8 +608,10 @@ function createMarker(field, map) {
 
   if (!markers[field.level]) {
     markers[field.level] = [];
-}
-markers[field.level].push(marker);
+  }
+  markers[field.level].push(marker);
+
+
 
 
   let markerPopupContent = `<div class="custom-infoTitle">${field.display_name}</div>`;
