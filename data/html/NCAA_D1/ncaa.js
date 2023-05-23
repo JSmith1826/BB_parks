@@ -569,13 +569,15 @@ async function createMarker(field, map) {
   const marker = new google.maps.Marker({
       position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
       map: map,
-      title: field.park_name,
+      title: field.conference,
       icon: {
           url: iconUrl,
           scaledSize: iconSize,
       },
-      level: field.level,
-      division: field.division_final,
+      city: field.city,
+      state: field.state,
+      park_name: field.park_name,
+      
   });
 
   console.log("marker: ", marker); // prints the created marker object
@@ -587,13 +589,13 @@ async function createMarker(field, map) {
   console.log("markers: ", markers); // prints the markers object
 
   let markerPopupContent = `<div class="custom-infoTitle">${field.park_name}</div>`;
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Score: ${field.score}</div>`;
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Notes: ${field.notes}</div>`;
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Conference: ${field.conference_2}</div>`;
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Date Range: ${field.date_range}</div>`;
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Host: ${field.host_raw}</div>`;
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Final Game Info: ${field.final_game_info}</div>`;
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center custom-markerPopup-light"><br>Double Click to Zoom</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.city}, ${field.state}</div>`;
+  // markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Notes: ${field.notes}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.conference}</div><br>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.date_range}</div>`;
+  // markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Host: ${field.host_raw}</div>`;
+  // markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Final Game Info: ${field.final_game_info}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center custom-markerPopup-light">Double Click to Zoom</div>`;
 
   const infowindow = new google.maps.InfoWindow({
       content: markerPopupContent
@@ -716,13 +718,24 @@ function filterByLevel(level) {
         fieldTitle.innerHTML = "";
       
         const fieldName = document.createElement("h2");
-        fieldName.innerHTML = `${closestField.display_name}`;
+        fieldName.innerHTML = `${closestField.park_name}`;
+
         
         fieldTitle.appendChild(fieldName);
+
+        // Add the city and state under the park name if there is one
+        if (closestField.city && closestField.state) {
+          const cityState = document.createElement("h3");
+          cityState.innerHTML = `${closestField.city}, ${closestField.state}`;
+          fieldTitle.appendChild(cityState);
+        }
+
+        
+
       
-        if (closestField.nickname) {
+        if (closestField.conference_2) {
           const homeOf = document.createElement("h3");
-          homeOf.innerHTML = `Home of the ${closestField.host_team} ${closestField.nickname}`;
+          homeOf.innerHTML = `Home of the ${closestField.conference_2} Tournament`;
           fieldTitle.appendChild(homeOf);
         }
       
@@ -860,28 +873,29 @@ function gameInfo(closestField) {
   console.log("Creating game info...");
 
   const hostInfo = document.getElementById("hostInfo");
-  hostInfo.innerHTML = "Hosting:";
-  const divisionInfo = document.createElement("p");
-  
-  if (closestField.district !== null) {
-    divisionInfo.innerHTML = `Division ${closestField.division} District ${closestField.district}<br>`;
-    
-  } 
-  
-  if (closestField.region_semi_number !== null) {
-    divisionInfo.innerHTML += `Division ${closestField.regional_div} Regional Semi ${closestField.region_semi_number}`;
-  }
-  
-  if (closestField.region_final_quarter !== null) {
-    divisionInfo.innerHTML += `Division ${closestField.regional_div}<br>Regional Final and Quarter Final ${closestField.region_final_quarter}`;
-  }
-  
-  if (closestField.finals !== null) {
-    divisionInfo.innerHTML += `Host of State Semi-Finals and Finals for All Divisions`;
-  }
+  hostInfo.innerHTML = "";
 
+  const parkNameInfo = document.createElement("h3");
+  parkNameInfo.innerHTML = `${closestField.park_name}`;
+  hostInfo.appendChild(parkNameInfo);
+
+  const divisionInfo = document.createElement("p");
+  divisionInfo.innerHTML = `College Division: ${closestField['college division']}<br>`;
+  divisionInfo.innerHTML += `Conference: ${closestField.conference}<br>`;
   hostInfo.appendChild(divisionInfo);
+
+  const fieldInfo = document.createElement("p");
+  fieldInfo.innerHTML = `Field Orientation: ${closestField.field_orientation}<br>`;
+  fieldInfo.innerHTML += `Field Cardinal Direction: ${closestField.field_cardinal_direction}<br>`;
+  hostInfo.appendChild(fieldInfo);
+
+  const locationInfo = document.createElement("p");
+  locationInfo.innerHTML = `City: ${closestField.city}<br>`;
+  locationInfo.innerHTML += `State: ${closestField.state}<br>`;
+  locationInfo.innerHTML += `Altitude: ${closestField.altitude} meters<br>`;
+  hostInfo.appendChild(locationInfo);
 }
+
 
 
 
