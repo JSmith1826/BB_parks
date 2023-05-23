@@ -1,6 +1,6 @@
 
 // Map Data JSON
-const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/NCAA_D1/data/conf_tourn_map2.json"; // Michigan fields json file
+const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/NCAA_D1/conf_tourn_map.json"; // fields json file
 const distUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/district_dict.json"; // Teams by district json file  
 let fetchedData;
 let polygons = [];
@@ -10,7 +10,7 @@ let currentDivision = null;
 let currentLevel = null;
 let markers = [];  
 let fenceMarkers = [];
-let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/3508a593be080a4fb7cf102cda697ce8f893c840/data/images/icons/base/TEMP/infield2_black.png";  
+let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/images/icons/baseball/stadium_lt_blue.png";  
 let divisionMarkers = {
     "1": [],
     "2": [],
@@ -43,8 +43,8 @@ async function initMap() {
   const data = await fetchData();
   fetchedData = data;
   const levelCounts = countFieldsByLevel(fetchedData);
-  let initialCenter = {lat: 44.3148, lng: -85.6024};
-  let initialZoom = 7;
+  let initialCenter = {lat: 39.50, lng: -98.35};
+  let initialZoom = 5;
 
   console.log("Initializing map...");
   const mapOptions = {
@@ -78,80 +78,6 @@ async function initMap() {
   map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(resetButton);
 
   
-  // Add division filter to the map
-  let divisionDropdown = document.createElement('select');
-  divisionDropdown.innerHTML = '<option value="all">Show All</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>';
-  divisionDropdown.addEventListener('change', function() {
-      filterByDivision(this.value);
-  });
-
-  divisionDropdown.style.fontSize = '20px'; // make the text bigger
-  divisionDropdown.style.fontFamily = 'Arial, sans-serif'; // use Arial font
-  divisionDropdown.style.padding = '10px'; // add some padding around the text
-  divisionDropdown.style.backgroundColor = '#007BFF'; // set background color to blue
-  divisionDropdown.style.color = 'white'; // set text color to white
-  divisionDropdown.style.border = 'none'; // remove border
-  divisionDropdown.style.borderRadius = '5px'; // round the corners
-  divisionDropdown.style.margin = '10px'; // add some margin around the text
-  divisionDropdown.style.width = '120px'; // make the dropdown wider
-  divisionDropdown.style.height = '50px'; // make the dropdown taller
-  divisionDropdown.style.position = 'absolute'; // position the dropdown
-
-  document.body.appendChild(divisionDropdown);
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(divisionDropdown);
-
-  function filterByDivision(division) {
-    // If the division is 'all', show all markers
-    if (division === 'all') {
-        for (let level in markers) {
-            for (let marker of markers[level]) {
-                marker.setMap(map);
-            }
-        }
-    } else {
-        // Convert the division to a number
-        division = Number(division);
-
-        // Iterate over each marker
-        for (let level in markers) {
-            for (let marker of markers[level]) {
-                // If the marker's division is equal to the selected division,
-                // show the marker, otherwise hide it
-                if (marker.division === division) {
-                    marker.setMap(map);
-                } else {
-                    marker.setMap(null);
-                }
-            }
-        }
-    }
-}
-
-// Create label for the level filter
-let levelLabel = document.createElement('label');
-levelLabel.innerHTML = 'Filter by Round: ';
-levelLabel.style.fontSize = '20px'; // make the text bigger
-levelLabel.style.fontFamily = 'Arial, sans-serif'; // use Arial font
-levelLabel.style.color = 'white'; // set text color to white
-document.body.appendChild(levelLabel);
-
-// Add level filter to the map
-let levelSlider = document.createElement('input');
-levelSlider.type = 'range';
-levelSlider.min = '0';
-levelSlider.max = '4';
-levelSlider.step = '1';
-levelSlider.value = '0';
-levelSlider.style.width = '200px';
-levelSlider.style.height = '200px'; // make the slider taller
-
-levelSlider.style.background = '#007BFF'; // set the background color to blue
-levelSlider.addEventListener('input', function() {
-    filterByLevel(this.value);
-});
-document.body.appendChild(levelSlider);
-map.controls[google.maps.ControlPosition.TOP_LEFT].push(levelSlider);
-
 function filterByLevel(level) {
     console.log("Filtering by level:", level);
     level = Number(level);
@@ -620,44 +546,47 @@ function renderPolygons(data, map, levelCounts) {
         // will be used in the addMapClickHandler function to check the click location against
       }
 // Define the paths to the icons outside of the function, as they don't change
-const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/mhsaa/';
-const iconDist = {
-    '1': `${iconPathBase}1_red.png`,
-    '2': `${iconPathBase}1_blue.png`,
-    '3': `${iconPathBase}1_lt_blue.png`,
-    '4': `${iconPathBase}1_white.png`,
-};
-const iconRSF = {
-    '1': `${iconPathBase}2_red.png`,
-    '2': `${iconPathBase}2_blue.png`,
-    '3': `${iconPathBase}2_lt_blue.png`,
-    '4': `${iconPathBase}2_white.png`,
-};
-const iconRF = {
-    '1': `${iconPathBase}3_red.png`,
-    '2': `${iconPathBase}3_blue.png`,
-    '3': `${iconPathBase}3_lt_blue.png`,
-    '4': `${iconPathBase}3_white.png`,
-};
-const iconChamp = `${iconPathBase}champ.png`;
+const iconPathBase = 'https://github.com/JSmith1826/BB_parks/blob/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/NCAA_D1/conf_logos/';
+
+
+const conferenceNames = ['Southwest Athletic Conference', 'America East Conference',
+   'Atlantic Coast Conference', 'Mountain West Conference',
+   'Atlantic 10 Conference', 'Southland Conference',
+   'American Athletic Conference', 'Missouri Valley Conference',
+   'Southern Conference', 'Mid-American Conference',
+   'Big East Conference', 'Patriot League', 'Big South Conference',
+   'Conference USA', 'Sun Belt Conference',
+   'Metro Atlantic Athletic Conference', 'Atlantic Sun Conference',
+   'West Coast Conference', 'Northeast Conference',
+   'Big Ten Conference', 'Ohio Valley Conference',
+   'Southeastern Conference', 'Horizon League',
+   'Western Athletic Conference', 'Colonial Athletic Association',
+   'Pacific-12 Conference'];
+
+const iconDict = {};
+
+// Iterating over the conference names
+conferenceNames.forEach(conference => {
+    // Convert the conference name to the file name format
+    const fileName = conference.toLowerCase().split(' ').join('-') + '.png';
+    iconDict[conference] = iconPathBase + fileName;
+});
+
 
 
 function createMarker(field, map) {
+
   let iconUrl;
   let iconSize = new google.maps.Size(35, 35);
+  let defaultIconUrl = 'https://github.com/JSmith1826/BB_parks/blob/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/images/icons/baseball/stadium_lt_blue.png'
 
-  if (field.finals !== null) {
-      iconUrl = iconChamp;
-  } else if (field.region_final_quarter !== null) {
-      iconUrl = iconRF[field.regional_div];
-  } else if (field.region_semi_number !== null) {
-      iconUrl = iconRSF[field.regional_div];
-  } else if (field.district !== null) {
-      iconUrl = iconDist[field.division];
-      iconSize = new google.maps.Size(15, 15);
+  // Attempt to find a match for the conference name in the icon dictionary
+  if (field.conference in iconDict) {
+      iconUrl = iconDict[field.conference];
   } else {
-      iconUrl = defaultIconUrl;
+      iconUrl = defaultIconUrl; // Some default icon if there is no match
   }
+
 
   const marker = new google.maps.Marker({
       position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),

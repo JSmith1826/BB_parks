@@ -100,10 +100,10 @@ async function initMap() {
   divisionDropdown.style.height = '50px'; // make the dropdown taller
   divisionDropdown.style.position = 'absolute'; // position the dropdown
 
-  document.body.appendChild(divisionDropdown);
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(divisionDropdown);
+document.body.appendChild(divisionDropdown);
+map.controls[google.maps.ControlPosition.TOP_LEFT].push(divisionDropdown);
 
-  function filterByDivision(division) {
+function filterByDivision(division) {
     // If the division is 'all', show all markers
     if (division === 'all') {
         for (let level in markers) {
