@@ -1,7 +1,7 @@
 
 // Map Data JSON
 const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/NCAA_D1/conf_tourn_map.json"; // fields json file
-const distUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/district_dict.json"; // Teams by district json file  
+
 let fetchedData;
 let polygons = [];
 let currentLine = null;
@@ -11,20 +11,7 @@ let currentLevel = null;
 let markers = [];  
 let fenceMarkers = [];
 let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/images/icons/baseball/stadium_lt_blue.png";  
-let divisionMarkers = {
-    "1": [],
-    "2": [],
-    "3": [],
-    "4": [],
-    "null": []
-  };
-  let levelMarkers = {
-    "1": [],
-    "2": [],
-    "3": [],
-    "4": [],
-    "null": []
-  };
+
   
 // const epsilon = 1e-9; // set epsilon to 1e-9 for use in the fenceDistance and intersectionPoint functions
 
@@ -548,86 +535,54 @@ function renderPolygons(data, map, levelCounts) {
 // Define the paths to the icons outside of the function, as they don't change
 const iconPathBase = 'https://github.com/JSmith1826/BB_parks/blob/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/NCAA_D1/conf_logos/';
 
+// Create the icon filepaths from the base url and the field.Filename
+function createIconUrl(filename) {
+  return iconPathBase + filename;
 
-const conferenceNames = ['Southwest Athletic Conference', 'America East Conference',
-   'Atlantic Coast Conference', 'Mountain West Conference',
-   'Atlantic 10 Conference', 'Southland Conference',
-   'American Athletic Conference', 'Missouri Valley Conference',
-   'Southern Conference', 'Mid-American Conference',
-   'Big East Conference', 'Patriot League', 'Big South Conference',
-   'Conference USA', 'Sun Belt Conference',
-   'Metro Atlantic Athletic Conference', 'Atlantic Sun Conference',
-   'West Coast Conference', 'Northeast Conference',
-   'Big Ten Conference', 'Ohio Valley Conference',
-   'Southeastern Conference', 'Horizon League',
-   'Western Athletic Conference', 'Colonial Athletic Association',
-   'Pacific-12 Conference'];
-
-const iconDict = {};
-
-// Iterating over the conference names
-conferenceNames.forEach(conference => {
-    // Convert the conference name to the file name format
-    const fileName = conference.toLowerCase().split(' ').join('-') + '.png';
-    iconDict[conference] = iconPathBase + fileName;
-});
-
-
-// Marker creator with error handling for bad image links
-function verifyImageUrl(url) {
-  return new Promise((resolve) => {
-    var img = new Image();
-    img.onload = () => resolve(url);
-    img.onerror = () => resolve(defaultIconUrl); // returns default URL if the provided URL doesn't load
-    img.src = url;
-  });
 }
 
 async function createMarker(field, map) {
   let iconUrl;
   let iconSize = new google.maps.Size(35, 35);
 
-  // Attempt to find a match for the conference name in the icon dictionary
-  if (field.conference in iconDict) {
-      iconUrl = await verifyImageUrl(iconDict[field.conference]);
+  console.log("field: ", field); // prints the field object
+
+  // Check if the field has a filename
+  if (field.filename) {
+    console.log("filename: ", field.filename); // prints the filename
+    iconUrl = createIconUrl(field.filename);
+    console.log("iconUrl: ", iconUrl); // prints the iconUrl after verification
   } else {
-      iconUrl = defaultIconUrl; // Some default icon if there is no match
+    iconUrl = defaultIconUrl;
   }
 
   const marker = new google.maps.Marker({
       position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
       map: map,
-      title: field.display_name,
+      title: field.park_name,
       icon: {
-          url: iconUrl,
+          url: iconPathBase + field.filename,
           scaledSize: iconSize,
       },
       level: field.level,
       division: field.division_final,
   });
 
+  console.log("marker: ", marker); // prints the created marker object
+
   if (!markers[field.level]) {
     markers[field.level] = [];
   }
   markers[field.level].push(marker);
+  console.log("markers: ", markers); // prints the markers object
 
-
-
-
-  let markerPopupContent = `<div class="custom-infoTitle">${field.display_name}</div>`;
-  if (field.district !== null) {
-      markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.division}</span> District ${field.district}</div>`;
-  }
-  if (field.finals !== null) {
-      markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">TROPHY WEEKEND<br>June DATE</div>`;
-  }
-  if (field.region_final_quarter !== null) {
-      markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.regional_div}</span> Final and Quarter Final ${field.region_final_quarter}</div>`;
-  }
-  if (field.region_semi_number !== null) {
-      markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.regional_div}</span> Regional Semi ${field.region_semi_number}</div>`;
-  }
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><br>Hosted by the ${field.host_team} ${field.nickname}</div>`;
+  let markerPopupContent = `<div class="custom-infoTitle">${field.park_name}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Score: ${field.score}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Notes: ${field.notes}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Conference: ${field.conference_2}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Date Range: ${field.date_range}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Host: ${field.host_raw}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Final Game Info: ${field.final_game_info}</div>`;
   markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center custom-markerPopup-light"><br>Double Click to Zoom</div>`;
 
   const infowindow = new google.maps.InfoWindow({
