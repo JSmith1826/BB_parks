@@ -29,6 +29,8 @@ async function initMap() {
     const data = await fetchData();
     fetchedData = data;
 
+    const levelCounts = {}
+
     let initialCenter = {lat: 44.3148, lng: -85.6024};
     let initialZoom = 7;
 
@@ -64,6 +66,7 @@ async function initMap() {
     map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(resetButton);
 }
 
+document.addEventListener("DOMContentLoaded", initMap);
 
 // Create the map click handler - The big boy of functions
 async function MapClickHandler(event, data, map, polygons, levelCounts) {
@@ -481,18 +484,18 @@ function createMarker(field, map) {
     let iconUrl;
     let iconSize = new google.maps.Size(35, 35);
   
-    if (field.finals !== null) {
-        iconUrl = iconChamp;
-    } else if (field.region_final_quarter !== null) {
-        iconUrl = iconRF[field.regional_div];
-    } else if (field.region_semi_number !== null) {
-        iconUrl = iconRSF[field.regional_div];
-    } else if (field.district !== null) {
-        iconUrl = iconDist[field.division];
-        iconSize = new google.maps.Size(15, 15);
-    } else {
-        iconUrl = defaultIconUrl;
-    }
+    // if (field.finals !== null) {
+    //     iconUrl = iconChamp;
+    // } else if (field.region_final_quarter !== null) {
+    //     iconUrl = iconRF[field.regional_div];
+    // } else if (field.region_semi_number !== null) {
+    //     iconUrl = iconRSF[field.regional_div];
+    // } else if (field.district !== null) {
+    //     iconUrl = iconDist[field.division];
+    //     iconSize = new google.maps.Size(15, 15);
+    // } else {
+    //     iconUrl = defaultIconUrl;
+    // }
   
     const marker = new google.maps.Marker({
         position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
