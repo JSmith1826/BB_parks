@@ -377,7 +377,7 @@ function drawLine(closestField, clickLocation, map) {
           clearInterval(intervalId);
       }
       
-  }, 5); // delay between steps in milliseconds
+  }, 1); // delay between steps in milliseconds
 
   // create the distance variable and set it to the distance between the click location and the home plate of the closest field
   const distance = google.maps.geometry.spherical.computeDistanceBetween(end, start);
