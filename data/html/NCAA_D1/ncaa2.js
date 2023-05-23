@@ -1,6 +1,6 @@
 
 // Map Data JSON
-const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/NCAA_D1/data/conf_tourn_map.json"; // Michigan fields json file
+const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/NCAA_D1/data/conf_tourn_map2.json"; // Michigan fields json file
 const distUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/district_dict.json"; // Teams by district json file  
 let fetchedData;
 let polygons = [];
