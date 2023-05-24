@@ -988,4 +988,3 @@ function filterMarkers(level) {
   }
 }
 
-
