@@ -76,13 +76,15 @@
   top: 30%;
   left: 2%;
   width: 20vw;
-  /* height: 50vh; */
+  min-height: 40vh;
   background-color: var(--dynamic-bg-color);
   color: var(--dynamic-text-color);
   text-align: center;
   padding: 10px;
   border-radius: 10px;
+  text-align: center;
 }
+
 
 #distanceBlock {
   position: absolute;
@@ -95,11 +97,12 @@
   width: 350px;
   height: ;
   z-index: 1;
+  text-align: center;
 }
 
-/* #hostInfo {
+#hostInfo {
   position: absolute;
-  top: 45%;
+  top: 15%;
   right: 5%;
   align-items: center;
   text-align: center;
@@ -109,8 +112,10 @@
   border-radius: 10px;
   padding: 10px;
   width: 300px;
-  height: 200px;
-} */
+  min-height: 200px;
+  display: none;
+}
+
 
 @media (max-width: 1024px) {
   #map {

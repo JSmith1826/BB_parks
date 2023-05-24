@@ -11,17 +11,21 @@ let currentLevel = null;
 let markers = [];  
 let fenceMarkers = [];
 let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/images/icons/baseball/stadium_lt_blue.png";  
+let isInitial = true;
 
 // LOAD THE JSON WITH THE TOURNAMENT GAMES DATA
 const gamesUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/NCAA_D1/tournaments.json"; // schedule json file
-let gamesData;
+let gameData;
 
 async function loadGamesData() {
   console.log("Loading games data...");
   const response = await fetch(gamesUrl);
-  const gameData = await response.json();
-  return gameData;
+  gameData = await response.json();
 }
+
+window.onload = async function() {
+  await loadGamesData();
+};
 
   
 // const epsilon = 1e-9; // set epsilon to 1e-9 for use in the fenceDistance and intersectionPoint functions
@@ -51,7 +55,7 @@ async function initMap() {
       mapTypeId: 'roadmap',
   };
   const map = new google.maps.Map(document.getElementById("map"), mapOptions);
-  renderPolygons(data, map, levelCounts);
+  renderPolygons(data, map, levelCounts, gameData);
   google.maps.event.addListener(map, "click", (event) => {
       MapClickHandler(event, fetchedData, map, polygons, levelCounts);
   });
@@ -484,7 +488,7 @@ function clearFenceMarkers() {
   // input data - full 'data' object from json file and 'map' object from fetchData() and initMap()
     // output - polygons rendered on map
 //  RenderPolygons to pass the new data to createMarker
-function renderPolygons(data, map, levelCounts) {
+function renderPolygons(data, map, levelCounts, gameData) {
   console.log("calling rendering polygons...");
   polygons = [];
 
@@ -494,11 +498,11 @@ function renderPolygons(data, map, levelCounts) {
       
       // Check if fopCoords and foulCoords are not empty before calling createPolygon
       if (fopCoords && fopCoords.length > 0) {
-          createPolygon(fopCoords, "#00FF00", map, levelCounts);
+          createPolygon(fopCoords, "#00FF00", map, levelCounts, gameData);
       }
 
       if (foulCoords && foulCoords.length > 0) {
-          createPolygon(foulCoords, "#FF0000", map, levelCounts);
+          createPolygon(foulCoords, "#FF0000", map, levelCounts, gameData);
       }
 
       // Pass new data to createMarker
@@ -515,7 +519,7 @@ function renderPolygons(data, map, levelCounts) {
     
       //  Create the polygons on the map
       // input data - coordinates, color, and map from renderPolygons()
-      function createPolygon(coordinates, fillColor, map, levelCounts) {
+      function createPolygon(coordinates, fillColor, map, levelCounts, gameData) {
         const polygon = new google.maps.Polygon({ // call polygon function from google maps api
           paths: coordinates.map(coord => { // set paths to coordinates
             return { lat: coord[1], lng: coord[0] }; // Reverse the coordinates to (lat, lng), stored in json the other way
@@ -540,7 +544,8 @@ function renderPolygons(data, map, levelCounts) {
           
           
           clickMarker(event.latLng, map, levelCounts);
-          fieldInfo(closestField, distanceFeet, null, map, levelCounts);
+          fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCounts, gameData)
+
       
           return;
       });
@@ -720,242 +725,243 @@ function filterByLevel(level) {
     // output - a html element containing field info and the dynamic distance element with the
     // distance from home plate to the click location and the fence distance from home plate if the click is outside the fence
     // This function is called in the MapClickHandler function
-    function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCounts) {
-      console.log("Creating field info...");
-    
-      // Call the gameInfo
-      gameInfo(closestField);
-    
-      const fieldTitle = document.getElementById("fieldTitle");
-      fieldTitle.innerHTML = ""; // Clear the previous children
-    
-      const fieldName = document.createElement("h2");
-      fieldName.innerHTML = `${closestField.park_name}`;
-      fieldTitle.appendChild(fieldName);
+function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCounts, gameData) {
+  console.log("Creating field info...");
 
-        // Add the city and state under the park name if there is one
-        if (closestField.city && closestField.state) {
-          const cityState = document.createElement("h3");
-          cityState.innerHTML = `${closestField.city}, ${closestField.state}`;
-          fieldTitle.appendChild(cityState);
-        }
+  // Call the gameInfo, pass closestField and gameData
+  gameInfo(closestField, gameData);
 
-        // Define default colors
-        let dynamicBgColor = '#627454'; // Background default color
-        let dynamicTextColor = '#f8e2e2'; //  default color
-      
-        if (closestField.color1 && closestField.color2) {
-          dynamicBgColor = closestField.color1;
-          dynamicTextColor = closestField.color2;
-        }
-        console.log(dynamicBgColor);
-        console.log(dynamicTextColor);
-      
-        // Apply colors
-        document.documentElement.style.setProperty('--dynamic-bg-color', dynamicBgColor);
-        document.documentElement.style.setProperty('--dynamic-text-color', dynamicTextColor);
+  const fieldTitle = document.getElementById("fieldTitle");
+  fieldTitle.innerHTML = ""; // Clear the previous children
 
-        // Create the flex container
-        // const flexContainer = document.createElement('div');
-        // flexContainer.style.display = 'flex';
-        // flexContainer.style.justifyContent = 'space-between'; // Add some space between the columns
-  
-          // Clear the fenceBlock and areaBlock containers
-    const fenceBlock = document.getElementById("fenceBlock");
-    fenceBlock.innerHTML = "";
+  const fieldName = document.createElement("h2");
+  fieldName.innerHTML = `${closestField.park_name}`;
+  fieldTitle.appendChild(fieldName);
 
-        const fenceInfo = document.createElement("p");
-        fenceInfo.innerHTML = `Batter's Eye: ${closestField.field_cardinal_direction} | Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft<br>`;
-
-
-        fenceInfo.innerHTML += `<br>Fence Dimensions<br><br>`;
-
-        fenceInfo.appendChild(wrapDigits(closestField.min_distance));
-        fenceInfo.innerHTML += `<number> |  </number>`;
-        fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
-
-        fenceInfo.innerHTML += `<number>  |  </number>`;
-        fenceInfo.appendChild(wrapDigits(closestField.max_distance));
-
-        fenceInfo.innerHTML += `<br>MINIMUM   <number>|</number>   AVERAGE    <number>|</number>   MAXIMUM<br>`;
-
-        fenceBlock.appendChild(fenceInfo);
-
-
-        // Add the fenceBlock to the flex container
-        // flexContainer.appendChild(fenceBlock);
-
-        // Create the areaBlock
-        const areaBlock = document.getElementById("areaBlock");
-        areaBlock.innerHTML = "";
-
-        const areaInfo = document.createElement("p");
-        areaInfo.innerHTML = `Fair Territory `;
-        areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / 43560).toFixed(2)));
-        areaInfo.innerHTML += ` Acres<br> Foul Ground `;
-        // areaInfo.innerHTML += `Rank: ${closestField.field_area_rank}<br>`; // Rank of field area
-        areaInfo.appendChild(wrapDigits(100*(closestField.foul_area_sqft / (closestField.fop_area_sqft + closestField.foul_area_sqft)).toFixed(1)));
-        areaInfo.innerHTML += `<number>%</number>`;
-        // areaInfo.innerHTML += `Rank: ${closestField.ratio_rank}<br>`; // Rank of fair:foul ratio
-        areaBlock.appendChild(areaInfo);
-
-
-        function createGradientBars(field, hr_min, hr_max, unique_min, unique_max) {
-          // Normalize the scores
-          const hr_normalized = (field.hr_friendliness - hr_min) / (hr_max - hr_min);
-          const unique_normalized = (field.uniqueness_score - unique_min) / (unique_max - unique_min);
-          
-          // Check for existing gradient bars and remove them if they exist
-          const oldGradientBar1 = document.getElementById('gradientBar1');
-          const oldGradientBar2 = document.getElementById('gradientBar2');
-          if (oldGradientBar1) oldGradientBar1.remove();
-          if (oldGradientBar2) oldGradientBar2.remove();
-      
-          // Create two new canvas elements
-          const canvas1 = document.createElement('canvas');
-          const canvas2 = document.createElement('canvas');
-          canvas1.id = 'gradientBar1';
-          canvas2.id = 'gradientBar2';
-          canvas1.width = canvas2.width = 200;
-          canvas1.height = canvas2.height = 30;
-          const ctx1 = canvas1.getContext('2d');
-          const ctx2 = canvas2.getContext('2d');
-      
-          // Create linear gradients
-          const gradient1 = ctx1.createLinearGradient(0, 0, canvas1.width, 0);
-          const gradient2 = ctx2.createLinearGradient(0, 0, canvas2.width, 0);
-      
-          // Create gradients in steps instead of a smooth transition
-          gradient1.addColorStop(0, 'red');
-          gradient1.addColorStop(0.5, 'yellow');
-          gradient1.addColorStop(1, 'green');
-      
-          gradient2.addColorStop(0, 'blue');
-          gradient2.addColorStop(0.5, 'purple');
-          gradient2.addColorStop(1, 'pink');
-      
-          // Draw thicker white outlines
-          [ctx1, ctx2].forEach(ctx => {
-              ctx.lineWidth = 2;
-              ctx.strokeStyle = 'white';
-              ctx.strokeRect(0, 0, canvas1.width, canvas1.height);
-          });
-      
-          // Fill the canvases with the gradients
-          ctx1.fillStyle = gradient1;
-          ctx2.fillStyle = gradient2;
-          [ctx1, ctx2].forEach(ctx => {
-              ctx.fillRect(1, 1, canvas1.width - 2, canvas1.height - 2);
-          });
-      
-          // Draw the tick marks
-          const normalizedScore1 = hr_normalized * canvas1.width;
-          const normalizedScore2 = unique_normalized * canvas2.width;
-          ctx1.fillStyle = ctx2.fillStyle = 'black';
-          ctx1.fillRect(normalizedScore1, 0, 2, canvas1.height);
-          ctx2.fillRect(normalizedScore2, 0, 2, canvas2.height);
-      
-          // Add labels
-          [ctx1, ctx2].forEach(ctx => {
-              ctx.font = '14px Arial';
-              ctx.fillStyle = 'black';
-          });
-          // ctx1.fillText('HR Unfriendliness', 2, 12);
-          ctx1.textAlign = 'end';
-          ctx1.fillText('HR Friendliness', canvas1.width - 2, 12);
-          
-          ctx2.fillText('Not Unique', 2, 12);
-          ctx2.textAlign = 'end';
-          ctx2.fillText('Unique', canvas2.width - 2,12);
-      
-          return [canvas1, canvas2];
-      }
-      
-      // Then use this function in your code like this:
-      
- // Define the min and max scores
- const hr_min = -1.682192601;
- const hr_max = 0.834846515;
- const unique_min = 0.774357376;
- const unique_max = 3.69218139;
-
- // Create gradient bars
- let [gradientBar1, gradientBar2] = createGradientBars(closestField, hr_min, hr_max, unique_min, unique_max);
-
- // Append the gradient bars to a container in your HTML
- let fieldInfo = document.getElementById('fieldInfo');
- fieldInfo.appendChild(gradientBar1);
-//  fieldInfo.appendChild(gradientBar2);
-      
-
-        
-        // Append the flexContainer to the parent element of fenceBlock and areaBlock
-        // document.getElementById('fieldInfo').appendChild(flexContainer);
-
-        // Continue with the rest of the code
-        const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
-        const distanceBlock = document.getElementById("distanceBlock");        
-        distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
-        distanceBlock.appendChild(distanceContainer);
-
-
-        
-
-        return;
-
+    // Add the city and state under the park name if there is one
+    if (closestField.city && closestField.state) {
+      const cityState = document.createElement("h3");
+      cityState.innerHTML = `${closestField.city}, ${closestField.state}`;
+      fieldTitle.appendChild(cityState);
     }
+
+    // Define default colors
+    let dynamicBgColor = '#627454'; // Background default color
+    let dynamicTextColor = '#f8e2e2'; //  default color
+  
+    if (closestField.color1 && closestField.color2) {
+      dynamicBgColor = closestField.color1;
+      dynamicTextColor = closestField.color2;
+    }
+    console.log(dynamicBgColor);
+    console.log(dynamicTextColor);
+  
+    // Apply colors
+    document.documentElement.style.setProperty('--dynamic-bg-color', dynamicBgColor);
+    document.documentElement.style.setProperty('--dynamic-text-color', dynamicTextColor);
+
+    // Create the flex container
+    // const flexContainer = document.createElement('div');
+    // flexContainer.style.display = 'flex';
+    // flexContainer.style.justifyContent = 'space-between'; // Add some space between the columns
+
+      // Clear the fenceBlock and areaBlock containers
+const fenceBlock = document.getElementById("fenceBlock");
+fenceBlock.innerHTML = "";
+
+    const fenceInfo = document.createElement("p");
+    fenceInfo.innerHTML = `Batter's Eye: ${closestField.field_cardinal_direction} | Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft<br>`;
+
+
+    fenceInfo.innerHTML += `<br>Fence Dimensions<br><br>`;
+
+    fenceInfo.appendChild(wrapDigits(closestField.min_distance));
+    fenceInfo.innerHTML += `<number> |  </number>`;
+    fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
+
+    fenceInfo.innerHTML += `<number>  |  </number>`;
+    fenceInfo.appendChild(wrapDigits(closestField.max_distance));
+
+    fenceInfo.innerHTML += `<br>MINIMUM   <number>|</number>   AVERAGE    <number>|</number>   MAXIMUM<br>`;
+
+    fenceBlock.appendChild(fenceInfo);
+
+
+    // Add the fenceBlock to the flex container
+    // flexContainer.appendChild(fenceBlock);
+
+    // Create the areaBlock
+    const areaBlock = document.getElementById("areaBlock");
+    areaBlock.innerHTML = "";
+
+    const areaInfo = document.createElement("p");
+    areaInfo.innerHTML = `Fair Territory `;
+    areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / 43560).toFixed(2)));
+    areaInfo.innerHTML += ` Acres<br> Foul Ground `;
+    // areaInfo.innerHTML += `Rank: ${closestField.field_area_rank}<br>`; // Rank of field area
+    areaInfo.appendChild(wrapDigits(100*(closestField.foul_area_sqft / (closestField.fop_area_sqft + closestField.foul_area_sqft)).toFixed(1)));
+    areaInfo.innerHTML += `<number>%</number>`;
+    // areaInfo.innerHTML += `Rank: ${closestField.ratio_rank}<br>`; // Rank of fair:foul ratio
+    areaBlock.appendChild(areaInfo);
+
+
+    function createGradientBars(field, hr_min, hr_max, unique_min, unique_max) {
+      // Normalize the scores
+      const hr_normalized = (field.hr_friendliness - hr_min) / (hr_max - hr_min);
+      const unique_normalized = (field.uniqueness_score - unique_min) / (unique_max - unique_min);
+      
+      // Check for existing gradient bars and remove them if they exist
+      const oldGradientBar1 = document.getElementById('gradientBar1');
+      const oldGradientBar2 = document.getElementById('gradientBar2');
+      if (oldGradientBar1) oldGradientBar1.remove();
+      if (oldGradientBar2) oldGradientBar2.remove();
+  
+      // Create two new canvas elements
+      const canvas1 = document.createElement('canvas');
+      const canvas2 = document.createElement('canvas');
+      canvas1.id = 'gradientBar1';
+      canvas2.id = 'gradientBar2';
+      canvas1.width = canvas2.width = 200;
+      canvas1.height = canvas2.height = 30;
+      const ctx1 = canvas1.getContext('2d');
+      const ctx2 = canvas2.getContext('2d');
+  
+      // Create linear gradients
+      const gradient1 = ctx1.createLinearGradient(0, 0, canvas1.width, 0);
+      const gradient2 = ctx2.createLinearGradient(0, 0, canvas2.width, 0);
+  
+      // Create gradients in steps instead of a smooth transition
+      gradient1.addColorStop(0, 'red');
+      gradient1.addColorStop(0.5, 'yellow');
+      gradient1.addColorStop(1, 'green');
+  
+      gradient2.addColorStop(0, 'blue');
+      gradient2.addColorStop(0.5, 'purple');
+      gradient2.addColorStop(1, 'pink');
+  
+      // Draw thicker white outlines
+      [ctx1, ctx2].forEach(ctx => {
+          ctx.lineWidth = 2;
+          ctx.strokeStyle = 'white';
+          ctx.strokeRect(0, 0, canvas1.width, canvas1.height);
+      });
+  
+      // Fill the canvases with the gradients
+      ctx1.fillStyle = gradient1;
+      ctx2.fillStyle = gradient2;
+      [ctx1, ctx2].forEach(ctx => {
+          ctx.fillRect(1, 1, canvas1.width - 2, canvas1.height - 2);
+      });
+  
+      // Draw the tick marks
+      const normalizedScore1 = hr_normalized * canvas1.width;
+      const normalizedScore2 = unique_normalized * canvas2.width;
+      ctx1.fillStyle = ctx2.fillStyle = 'black';
+      ctx1.fillRect(normalizedScore1, 0, 2, canvas1.height);
+      ctx2.fillRect(normalizedScore2, 0, 2, canvas2.height);
+  
+      // Add labels
+      [ctx1, ctx2].forEach(ctx => {
+          ctx.font = '14px Arial';
+          ctx.fillStyle = 'black';
+      });
+      // ctx1.fillText('HR Unfriendliness', 2, 12);
+      ctx1.textAlign = 'end';
+      ctx1.fillText('HR Friendliness', canvas1.width - 2, 12);
+      
+      ctx2.fillText('Not Unique', 2, 12);
+      ctx2.textAlign = 'end';
+      ctx2.fillText('Unique', canvas2.width - 2,12);
+  
+      return [canvas1, canvas2];
+  }
+  
+  // Then use this function in your code like this:
+  
+// Define the min and max scores
+const hr_min = -1.682192601;
+const hr_max = 0.834846515;
+const unique_min = 0.774357376;
+const unique_max = 3.69218139;
+
+// Create gradient bars
+let [gradientBar1, gradientBar2] = createGradientBars(closestField, hr_min, hr_max, unique_min, unique_max);
+
+// Append the gradient bars to a container in your HTML
+let fieldInfo = document.getElementById('fieldInfo');
+fieldInfo.appendChild(gradientBar1);
+//  fieldInfo.appendChild(gradientBar2);
+  
+
+    
+    // Append the flexContainer to the parent element of fenceBlock and areaBlock
+    // document.getElementById('fieldInfo').appendChild(flexContainer);
+
+    // Continue with the rest of the code
+    const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
+    const distanceBlock = document.getElementById("distanceBlock");        
+    distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
+    distanceBlock.appendChild(distanceContainer);
+
+
+    
+
+    return;
+
+}
 
 ////////// FUNCTION TO CREATE THE BOX WITH GAME INFO //////////
 // input data - closestField from closestFieldFunction
 // output - a html element containing info about the games that will be hosted for the tourney
-
-function gameInfo(gameData) {
-  console.log("Creating game info...");
-  
-
-  const hostInfo = document.getElementById("hostInfo");
-  hostInfo.innerHTML = "";
-
-  const gameInfo = document.createElement("h3");
-  gameInfo.innerHTML = `Game: ${gameData.conference}`;
-  hostInfo.appendChild(gameInfo);
-
-  const teamsInfo = document.createElement("p");
-  teamsInfo.innerHTML = `Home Team: ${gameData.home_team}, Score: ${gameData.home_score}<br>`;
-  teamsInfo.innerHTML += `Road Team: ${gameData.road_team}, Score: ${gameData.road_score}<br>`;
-  hostInfo.appendChild(teamsInfo);
-
-  const conferenceInfo = document.createElement("p");
-  conferenceInfo.innerHTML = `Conference: ${gameData.conference}<br>`;
-  hostInfo.appendChild(conferenceInfo);
-
-  const timeInfo = document.createElement("p");
-  timeInfo.innerHTML = `Time: ${gameData.time}<br>`;
-  timeInfo.innerHTML += `Date: ${gameData.date}<br>`;
-  hostInfo.appendChild(timeInfo);
-
-  const locationInfo = document.createElement("p");
-  locationInfo.innerHTML = `Location: ${gameData.loc_1}<br>`;
-  hostInfo.appendChild(locationInfo);
-}
-
-function displayGames(gameData) {
+function gameInfo(closestField) {
   console.log("Creating game info...");
 
   const hostInfo = document.getElementById("hostInfo");
+  hostInfo.style.display = "block";
+
   hostInfo.innerHTML = "";
 
-  // Assuming gameData is an array of game objects
-  gameData.forEach((game) => {
+  // Filter the games for the selected conference
+  const filteredGames = gameData.filter(game => game.conference === closestField.conference);
+
+  if (filteredGames.length > 0) {
+    // Display conference info once at the top
     const conferenceInfo = document.createElement("h3");
-    conferenceInfo.innerHTML = `${game.conference}`;
+    // change the font color to black
+    conferenceInfo.style.color = "black";
+    conferenceInfo.innerHTML = `${filteredGames[0].conference}`;
     hostInfo.appendChild(conferenceInfo);
 
+    // Add the conference logo
+    if (closestField.filename && iconPathBase) {
+      const conferenceLogo = document.createElement("img");
+      conferenceLogo.src = iconPathBase + closestField.filename;
+      conferenceLogo.onerror = function() {
+        console.error('Error loading logo: ' + conferenceLogo.src);
+      };
+      hostInfo.appendChild(conferenceLogo);
+    } else {
+      console.error('Missing icon path base or logo filename');
+    }
+  } else {
+    console.log(`No games found for conference: ${closestField.conference}`);
+  }
+
+  // Loop through the filtered games
+  filteredGames.forEach((game) => {
+    const timeInfo = document.createElement("p");
+    timeInfo.innerHTML = `Game # ${game.game} - ${game.date} at ${game.time}<br>`;
+    hostInfo.appendChild(timeInfo);
+
     const gameInfo = document.createElement("p");
-    gameInfo.innerHTML = `${game.date} - ${game.time} - ${game.road_team} vs ${game.home_team}`;
+    const homeScore = game.home_score !== null ? game.home_score : '';
+    const roadScore = game.road_score !== null ? game.road_score : '';
+    gameInfo.innerHTML += `${game.road_team} ${roadScore} vs ${game.home_team} ${homeScore}<br>`;
     hostInfo.appendChild(gameInfo);
   });
 }
+
+
 
 
 
