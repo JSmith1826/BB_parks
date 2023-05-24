@@ -678,7 +678,7 @@
 		</Placemark>
 	</Folder>
 	<Folder>
-		<name>Marion Park - Mt Dew Park</name>
+		<name>Mt Dew Park</name>
 		<Placemark>
 			<name>foul</name>
 			<styleUrl>#poly-000000-1200-77-nodesc35</styleUrl>
@@ -771,7 +771,7 @@
 		</Placemark>
 	</Folder>
 	<Folder>
-		<name>Penn - Meiklejohn Stadium - college</name>
+		<name>Meiklejohn Stadium</name>
 		<open>1</open>
 		<Placemark>
 			<name>foul</name>
@@ -991,7 +991,7 @@
 		</Placemark>
 	</Folder>
 	<Folder>
-		<name>The Diamond - VCU</name>
+		<name>The Diamond at VCU</name>
 		<Placemark>
 			<name>foul</name>
 			<styleUrl>#poly-000000-1200-77-nodesc36</styleUrl>
