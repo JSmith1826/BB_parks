@@ -540,7 +540,7 @@ function renderPolygons(data, map, levelCounts) {
         // will be used in the addMapClickHandler function to check the click location against
       }
 // Define the paths to the icons outside of the function, as they don't change
-const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/NCAA_D1/conf_logos/';
+const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/NCAA_D1/assests/conf_logos/';
 
 
 // Create the icon filepaths from the base url and the field.Filename
@@ -709,19 +709,17 @@ function filterByLevel(level) {
     // distance from home plate to the click location and the fence distance from home plate if the click is outside the fence
     // This function is called in the MapClickHandler function
     function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCounts) {
-        console.log("Creating field info...");
-
-        // Call the gameInfo
-        gameInfo(closestField);
-      
-        const fieldTitle = document.getElementById("fieldTitle");
-        fieldTitle.innerHTML = "";
-      
-        const fieldName = document.createElement("h2");
-        fieldName.innerHTML = `${closestField.park_name}`;
-
-        
-        fieldTitle.appendChild(fieldName);
+      console.log("Creating field info...");
+  
+      // Call the gameInfo
+      gameInfo(closestField);
+    
+      const fieldTitle = document.getElementById("fieldTitle");
+      fieldTitle.innerHTML = ""; // Clear the previous children
+    
+      const fieldName = document.createElement("h2");
+      fieldName.innerHTML = `${closestField.park_name}`;
+      fieldTitle.appendChild(fieldName);
 
         // Add the city and state under the park name if there is one
         if (closestField.city && closestField.state) {
@@ -732,14 +730,7 @@ function filterByLevel(level) {
 
         
 
-      
-        if (closestField.conference_2) {
-          const homeOf = document.createElement("h3");
-          homeOf.innerHTML = `Home of the ${closestField.conference_2} Tournament`;
-          fieldTitle.appendChild(homeOf);
-        }
-      
-      
+    
         // Define default colors
         let dynamicBgColor = '#627454'; // Background default color
         let dynamicTextColor = '#f8e2e2'; //  default color
@@ -760,23 +751,27 @@ function filterByLevel(level) {
         // flexContainer.style.display = 'flex';
         // flexContainer.style.justifyContent = 'space-between'; // Add some space between the columns
 
-            // Create the fenceBlock
-            const fenceBlock = document.getElementById("fenceBlock");
-            fenceBlock.innerHTML = "";
+        // Create the fenceBlock
+        const fenceBlock = document.getElementById("fenceBlock");
+        fenceBlock.innerHTML = ""; // Clear the previous children
 
-            const fenceInfo = document.createElement("p");
-            fenceInfo.innerHTML = `Fence Dimensions<br>`;
-            
-            fenceInfo.appendChild(wrapDigits(closestField.min_distance));
-            fenceInfo.innerHTML += `<number> | </number>`;
-            fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
-            
-            fenceInfo.innerHTML += `<number> | </number>`;
-            fenceInfo.appendChild(wrapDigits(closestField.max_distance));
-            
-            fenceInfo.innerHTML += `<br>MINIMUM   |   AVERAGE    |   MAXIMUM<br>`;
-           
-            fenceBlock.appendChild(fenceInfo);
+        const fenceInfo = document.createElement("p");
+        fenceInfo.innerHTML = `Batter's Eye: ${closestField.field_cardinal_direction} | Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft<br>`;
+
+
+        fenceInfo.innerHTML += `<br>Fence Dimensions<br>`;
+
+        fenceInfo.appendChild(wrapDigits(closestField.min_distance));
+        fenceInfo.innerHTML += `<number> |  </number>`;
+        fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
+
+        fenceInfo.innerHTML += `<number>  |  </number>`;
+        fenceInfo.appendChild(wrapDigits(closestField.max_distance));
+
+        fenceInfo.innerHTML += `<br>MINIMUM   <number>|</number>   AVERAGE    <number>|</number>   MAXIMUM<br>`;
+
+        fenceBlock.appendChild(fenceInfo);
+
 
         // Add the fenceBlock to the flex container
         // flexContainer.appendChild(fenceBlock);
@@ -786,67 +781,103 @@ function filterByLevel(level) {
         areaBlock.innerHTML = "";
 
         const areaInfo = document.createElement("p");
-        areaInfo.innerHTML = `Field Size<br> `;
-        areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft + closestField.foul_area_sqft) / 43560).toFixed(2)));
-        areaInfo.innerHTML += ` Acres  `;
+        areaInfo.innerHTML = `Fair Territory `;
+        areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / 43560).toFixed(2)));
+        areaInfo.innerHTML += ` Acres<br> Foul Ground `;
         // areaInfo.innerHTML += `Rank: ${closestField.field_area_rank}<br>`; // Rank of field area
-        areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
-        areaInfo.innerHTML += `<b> X </b> Fair Ground<br>`;
+        areaInfo.appendChild(wrapDigits(100*(closestField.foul_area_sqft / (closestField.fop_area_sqft + closestField.foul_area_sqft)).toFixed(1)));
+        areaInfo.innerHTML += `<number>%</number>`;
         // areaInfo.innerHTML += `Rank: ${closestField.ratio_rank}<br>`; // Rank of fair:foul ratio
         areaBlock.appendChild(areaInfo);
 
 
-        function createGradientBar(closestField) {
-            // Check for existing gradient bar and remove it if it exists
-            const oldGradientBar = document.getElementById('gradientBar');
-            if (oldGradientBar) {
-                oldGradientBar.remove();
-            }
-            // Create a new canvas element
-            const canvas = document.createElement('canvas');
-            canvas.id = 'gradientBar';  // Assign an id to the gradient bar
-            canvas.width = 200;
-            canvas.height = 30;  // Increased height to accommodate labels
-            const ctx = canvas.getContext('2d');
-        
-            // Create a linear gradient
-            const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
-        
-            // Create gradient in steps instead of a smooth transition
-            gradient.addColorStop(0, 'red');
-            gradient.addColorStop(0.5, 'yellow');
-            gradient.addColorStop(1, 'green');
-        
-            // Draw thicker white outline
-            ctx.lineWidth = 2;
-            ctx.strokeStyle = 'white';
-            ctx.strokeRect(0, 0, canvas.width, canvas.height);
-        
-            // Fill the canvas with the gradient
-            ctx.fillStyle = gradient;
-            ctx.fillRect(1, 1, canvas.width - 2, canvas.height - 2);  // -2 to accommodate the outline
-        
-            // Draw the tick mark
-            const normalizedScore = ((closestField.score + 15) / 23) * canvas.width;
-            ctx.fillStyle = 'black';
-            ctx.fillRect(normalizedScore, 0, 2, canvas.height);
-        
-            // Add labels
-            ctx.font = '14px Arial';
-            ctx.fillStyle = 'black';
-            ctx.fillText('Favors Pitcher', 2, 12);  // Adjust these numbers as needed
-            ctx.textAlign = 'end';  // Align text to the right for the second label
-            ctx.fillText('Favors Hitter', canvas.width - 2, 12);  // Adjust these numbers as needed
-        
-            return canvas;
-        }
-        
-        
-                // Create the gradient bar
-        let gradientBar = createGradientBar(closestField);
+        function createGradientBars(field, hr_min, hr_max, unique_min, unique_max) {
+          // Normalize the scores
+          const hr_normalized = (field.hr_friendliness - hr_min) / (hr_max - hr_min);
+          const unique_normalized = (field.uniqueness_score - unique_min) / (unique_max - unique_min);
+          
+          // Check for existing gradient bars and remove them if they exist
+          const oldGradientBar1 = document.getElementById('gradientBar1');
+          const oldGradientBar2 = document.getElementById('gradientBar2');
+          if (oldGradientBar1) oldGradientBar1.remove();
+          if (oldGradientBar2) oldGradientBar2.remove();
+      
+          // Create two new canvas elements
+          const canvas1 = document.createElement('canvas');
+          const canvas2 = document.createElement('canvas');
+          canvas1.id = 'gradientBar1';
+          canvas2.id = 'gradientBar2';
+          canvas1.width = canvas2.width = 200;
+          canvas1.height = canvas2.height = 30;
+          const ctx1 = canvas1.getContext('2d');
+          const ctx2 = canvas2.getContext('2d');
+      
+          // Create linear gradients
+          const gradient1 = ctx1.createLinearGradient(0, 0, canvas1.width, 0);
+          const gradient2 = ctx2.createLinearGradient(0, 0, canvas2.width, 0);
+      
+          // Create gradients in steps instead of a smooth transition
+          gradient1.addColorStop(0, 'red');
+          gradient1.addColorStop(0.5, 'yellow');
+          gradient1.addColorStop(1, 'green');
+      
+          gradient2.addColorStop(0, 'blue');
+          gradient2.addColorStop(0.5, 'purple');
+          gradient2.addColorStop(1, 'pink');
+      
+          // Draw thicker white outlines
+          [ctx1, ctx2].forEach(ctx => {
+              ctx.lineWidth = 2;
+              ctx.strokeStyle = 'white';
+              ctx.strokeRect(0, 0, canvas1.width, canvas1.height);
+          });
+      
+          // Fill the canvases with the gradients
+          ctx1.fillStyle = gradient1;
+          ctx2.fillStyle = gradient2;
+          [ctx1, ctx2].forEach(ctx => {
+              ctx.fillRect(1, 1, canvas1.width - 2, canvas1.height - 2);
+          });
+      
+          // Draw the tick marks
+          const normalizedScore1 = hr_normalized * canvas1.width;
+          const normalizedScore2 = unique_normalized * canvas2.width;
+          ctx1.fillStyle = ctx2.fillStyle = 'black';
+          ctx1.fillRect(normalizedScore1, 0, 2, canvas1.height);
+          ctx2.fillRect(normalizedScore2, 0, 2, canvas2.height);
+      
+          // Add labels
+          [ctx1, ctx2].forEach(ctx => {
+              ctx.font = '14px Arial';
+              ctx.fillStyle = 'black';
+          });
+          // ctx1.fillText('HR Unfriendliness', 2, 12);
+          ctx1.textAlign = 'end';
+          ctx1.fillText('HR Friendliness', canvas1.width - 2, 12);
+          
+          ctx2.fillText('Not Unique', 2, 12);
+          ctx2.textAlign = 'end';
+          ctx2.fillText('Unique', canvas2.width - 2,12);
+      
+          return [canvas1, canvas2];
+      }
+      
+      // Then use this function in your code like this:
+      
+ // Define the min and max scores
+ const hr_min = -1.682192601;
+ const hr_max = 0.834846515;
+ const unique_min = 0.774357376;
+ const unique_max = 3.69218139;
 
-        // Append the gradient bar to a container in your HTML
-        document.getElementById('fieldInfo').appendChild(gradientBar);
+ // Create gradient bars
+ let [gradientBar1, gradientBar2] = createGradientBars(closestField, hr_min, hr_max, unique_min, unique_max);
+
+ // Append the gradient bars to a container in your HTML
+ let fieldInfo = document.getElementById('fieldInfo');
+ fieldInfo.appendChild(gradientBar1);
+//  fieldInfo.appendChild(gradientBar2);
+      
 
         
         // Append the flexContainer to the parent element of fenceBlock and areaBlock
