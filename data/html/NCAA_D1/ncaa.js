@@ -540,7 +540,7 @@ function renderPolygons(data, map, levelCounts) {
         // will be used in the addMapClickHandler function to check the click location against
       }
 // Define the paths to the icons outside of the function, as they don't change
-const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/NCAA_D1/assests/conf_logos/';
+const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/NCAA_D1/conf_logos/';
 
 
 // Create the icon filepaths from the base url and the field.Filename
