@@ -740,7 +740,7 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
 
     // Add the city and state under the park name if there is one
     if (closestField.city && closestField.state) {
-      const cityState = document.createElement("h3");
+      const cityState = document.createElement("h4");
       cityState.innerHTML = `${closestField.city}, ${closestField.state}`;
       fieldTitle.appendChild(cityState);
     }
@@ -770,7 +770,8 @@ const fenceBlock = document.getElementById("fenceBlock");
 fenceBlock.innerHTML = "";
 
     const fenceInfo = document.createElement("p");
-    fenceInfo.innerHTML = `Batter's Eye: ${closestField.field_cardinal_direction} | Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft<br>`;
+    fenceInfo.innerHTML = `<span style="font-size: 20px">Batter's Eye: ${closestField.field_cardinal_direction} | Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft</span><br>`;
+
 
 
     fenceInfo.innerHTML += `<br>Fence Dimensions<br><br>`;
