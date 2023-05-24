@@ -16,34 +16,56 @@
   --black: #000000;
 }
 
-body {
-  font-family: 'Oswald', sans-serif;
-  align: center;
-  color: var(--dynamic-text-color);
-  font-size: 1rem;
-  line-height: 1;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  overflow: hidden;
-  background-image: url('data/images/background2.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+.banner-container {
+    position: relative;
 }
 
+.banner {
+    position: absolute;
+    margin-top: 5px;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1; 
+    background-image: url('https://raw.githubusercontent.com/JSmith1826/BB_parks/b9d6335dc494dbba20c84919c0bd1b2ed454db36/data/NCAA_D1/assests/conf_logos/title_image.png');
+    background-color: #f2f2f2; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 20vh;  /* Change to percentage of viewport height */
+    width: 40vw; 
+    border: 5px solid blue;
+    box-shadow: 0 0 0 5px red; 
+    border-radius: 100px; 
+    box-sizing: border-box; 
+    padding: 2vw; /* Adjust padding relative to viewport width */
+    margin-bottom: 2.5vh; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+}
+
+@media (max-width: 600px) {
+    .banner {
+        width: 60vw; /* Make the banner wider on small screens */
+        height: 10vh; /* And a bit shorter */
+        padding: 1vw; /* Reduce padding */
+    }
+}
+
+  
+
+
 #map {
-  position: relative;
-  width: 90vw;
-  height: 90vh;
+    position: relative;
+    z-index: 0;
+    
+    width: 95vw;
+    height: 95vh; /* Adjusted height */
   z-index: 0;
   margin: auto;
+  margin-top: 2.5vh;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -51,10 +73,10 @@ body {
 #fieldInfo {
   position: absolute;
   z-index: 3;
-  top: 5vh;
-  left: 5vw;
-  width: 30vw;
-  height: 50vh;
+  top: 30%;
+  left: 2%;
+  width: 20vw;
+  /* height: 50vh; */
   background-color: var(--dynamic-bg-color);
   color: var(--dynamic-text-color);
   text-align: center;
@@ -64,40 +86,42 @@ body {
 
 #distanceBlock {
   position: absolute;
-  bottom: 50px;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--dynamic-bg-color);
   border-radius: 10px;
   padding: 10px;
   width: 350px;
-  height: 50px;
+  height: ;
   z-index: 1;
 }
 
-#hostInfo {
+/* #hostInfo {
   position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 45%;
+  right: 5%;
+  align-items: center;
+  text-align: center;
+  
   background-color: var(--ash-gray);
   color: var(--black);
   border-radius: 10px;
   padding: 10px;
   width: 300px;
   height: 200px;
-}
+} */
 
 @media (max-width: 1024px) {
   #map {
-    height: 70vh;
-    width: 70vw;
+    height: 90vh;
+    width: 90vw;
   }
 }
   
 @media (max-width: 768px) {
   #map {
-    height: 50vh;
+    height: 90vh;
     width: 90vw;
   }
 }
@@ -131,12 +155,11 @@ body {
   }
   
   body {
-    background-image: url('data/images/ai2.png');
+    background-image: url('https://raw.githubusercontent.com/JSmith1826/BB_parks/b9d6335dc494dbba20c84919c0bd1b2ed454db36/data/html/mhsaa/data/images/ai1.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-
     font-family: 'Oswald', sans-serif;
     align: center;
     color: var(--dynamic-text-color);
@@ -144,7 +167,8 @@ body {
     line-height: 1;
     margin: 0;
     padding: 0;
-  }
+}
+
 
 
   /* BUTTONS ON MAP*/
@@ -218,7 +242,8 @@ body {
 /* DIFFERENT SCREEN SIZE LAYOUTS BELOW */
   @media (max-width: 1024px) {
     #map, .scoreboard {
-      height: 70vh;
+        width: 90vw;
+      height: 90vh;
     }
   }
   
@@ -229,11 +254,11 @@ body {
     
     .scoreboard {
       width: 80vw;
-      height: 50vw;
+      height: 90vw;
     }
   
     #map {
-      height: 50vh;
+      height: 90vh;
     }
     
     .container {

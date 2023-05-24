@@ -12,6 +12,17 @@ let markers = [];
 let fenceMarkers = [];
 let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/images/icons/baseball/stadium_lt_blue.png";  
 
+// LOAD THE JSON WITH THE TOURNAMENT GAMES DATA
+const gamesUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/NCAA_D1/tournaments.json"; // schedule json file
+let gamesData;
+
+async function loadGamesData() {
+  console.log("Loading games data...");
+  const response = await fetch(gamesUrl);
+  const gameData = await response.json();
+  return gameData;
+}
+
   
 // const epsilon = 1e-9; // set epsilon to 1e-9 for use in the fenceDistance and intersectionPoint functions
 
@@ -552,7 +563,7 @@ function createIconUrl(filename) {
 async function createMarker(field, map) {
   let iconUrl;
   let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/images/icons/baseball/stadium_lt_blue.png";  
-  let iconSize = new google.maps.Size(80, 80);
+  let iconSize = new google.maps.Size(90, 90);
 
   console.log("field: ", field); // prints the field object
 
@@ -757,7 +768,7 @@ function filterByLevel(level) {
         fenceInfo.innerHTML = `Batter's Eye: ${closestField.field_cardinal_direction} | Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft<br>`;
 
 
-        fenceInfo.innerHTML += `<br>Fence Dimensions<br>`;
+        fenceInfo.innerHTML += `<br>Fence Dimensions<br><br>`;
 
         fenceInfo.appendChild(wrapDigits(closestField.min_distance));
         fenceInfo.innerHTML += `<number> |  </number>`;
@@ -883,7 +894,7 @@ function filterByLevel(level) {
 
         // Continue with the rest of the code
         const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
-        const distanceBlock = document.getElementById("distanceBlock");
+        const distanceBlock = document.getElementById("distanceBlock");        
         distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
         distanceBlock.appendChild(distanceContainer);
 
@@ -898,31 +909,52 @@ function filterByLevel(level) {
 // input data - closestField from closestFieldFunction
 // output - a html element containing info about the games that will be hosted for the tourney
 
-function gameInfo(closestField) {
+function gameInfo(gameData) {
+  console.log("Creating game info...");
+  
+
+  const hostInfo = document.getElementById("hostInfo");
+  hostInfo.innerHTML = "";
+
+  const gameInfo = document.createElement("h3");
+  gameInfo.innerHTML = `Game: ${gameData.conference}`;
+  hostInfo.appendChild(gameInfo);
+
+  const teamsInfo = document.createElement("p");
+  teamsInfo.innerHTML = `Home Team: ${gameData.home_team}, Score: ${gameData.home_score}<br>`;
+  teamsInfo.innerHTML += `Road Team: ${gameData.road_team}, Score: ${gameData.road_score}<br>`;
+  hostInfo.appendChild(teamsInfo);
+
+  const conferenceInfo = document.createElement("p");
+  conferenceInfo.innerHTML = `Conference: ${gameData.conference}<br>`;
+  hostInfo.appendChild(conferenceInfo);
+
+  const timeInfo = document.createElement("p");
+  timeInfo.innerHTML = `Time: ${gameData.time}<br>`;
+  timeInfo.innerHTML += `Date: ${gameData.date}<br>`;
+  hostInfo.appendChild(timeInfo);
+
+  const locationInfo = document.createElement("p");
+  locationInfo.innerHTML = `Location: ${gameData.loc_1}<br>`;
+  hostInfo.appendChild(locationInfo);
+}
+
+function displayGames(gameData) {
   console.log("Creating game info...");
 
   const hostInfo = document.getElementById("hostInfo");
   hostInfo.innerHTML = "";
 
-  const parkNameInfo = document.createElement("h3");
-  parkNameInfo.innerHTML = `${closestField.park_name}`;
-  hostInfo.appendChild(parkNameInfo);
+  // Assuming gameData is an array of game objects
+  gameData.forEach((game) => {
+    const conferenceInfo = document.createElement("h3");
+    conferenceInfo.innerHTML = `${game.conference}`;
+    hostInfo.appendChild(conferenceInfo);
 
-  const divisionInfo = document.createElement("p");
-  divisionInfo.innerHTML = `College Division: ${closestField['college division']}<br>`;
-  divisionInfo.innerHTML += `Conference: ${closestField.conference}<br>`;
-  hostInfo.appendChild(divisionInfo);
-
-  const fieldInfo = document.createElement("p");
-  fieldInfo.innerHTML = `Field Orientation: ${closestField.field_orientation}<br>`;
-  fieldInfo.innerHTML += `Field Cardinal Direction: ${closestField.field_cardinal_direction}<br>`;
-  hostInfo.appendChild(fieldInfo);
-
-  const locationInfo = document.createElement("p");
-  locationInfo.innerHTML = `City: ${closestField.city}<br>`;
-  locationInfo.innerHTML += `State: ${closestField.state}<br>`;
-  locationInfo.innerHTML += `Altitude: ${(closestField.altitude * 3.28084)} feet<br>`;
-  hostInfo.appendChild(locationInfo);
+    const gameInfo = document.createElement("p");
+    gameInfo.innerHTML = `${game.date} - ${game.time} - ${game.road_team} vs ${game.home_team}`;
+    hostInfo.appendChild(gameInfo);
+  });
 }
 
 
