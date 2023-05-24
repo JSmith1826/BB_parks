@@ -1,52 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root {
+  --dynamic-bg-color: #627454;
+  --dynamic-text-color: #f8e2e2;
+  --white: #f8e2e2;
+  --ash-gray: #e0e6dc;
+  --ash-gray-2: #BCC4B4;
+  --ebony: #4D5D42;
+  --reseda-green: #627454;
+  --reseda-green-2: #748667;
+  --black: #000000;
+}
+
 body {
-    background-image: url('https://github.com/JSmith1826/BB_parks/blob/e7d99205d24d20ac4cfababbcbcd3218179c9a4d/data/html/NCAA_D1/data/images/background1.png');
-    background-size: cover;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-#banner {
-    height: 10%;
-    /* background-image: url("data/html/mhsaa/data/images/MHSAA_logo_outlined.png"); replace with your banner image */
-    background-size: cover;
-}
-
-#mapContainer {
-    position: relative;
-    height: 80%;
-    width: 80%;
-    margin: 5% auto;
-    padding: 10%;
-    border-radius: 15px;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'Oswald', sans-serif;
+  align: center;
+  color: var(--dynamic-text-color);
+  font-size: 1rem;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  background-image: url('data/images/background2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 #map {
-    height: 100%;
-    width: 100%;
-}
-
-#infoContainer {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    text-align: center;
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  z-index: 0;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 #fieldInfo {
-    margin-bottom: 20px;
-}
-
-#fieldTitle, #fenceBlock, #areaBlock {
-    margin-bottom: 10px;
+  position: absolute;
+  z-index: 3;
+  top: 5vh;
+  left: 5vw;
+  width: 30vw;
+  height: 50vh;
+  background-color: var(--dynamic-bg-color);
+  color: var(--dynamic-text-color);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 #distanceBlock {
-    font-size: 0.9em;
-    color: #333;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--dynamic-bg-color);
+  border-radius: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 50px;
+  z-index: 1;
 }
+
+#hostInfo {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--ash-gray);
+  color: var(--black);
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+@media (max-width: 1024px) {
+  #map {
+    height: 70vh;
+    width: 70vw;
+  }
+}
+  
+@media (max-width: 768px) {
+  #map {
+    height: 50vh;
+    width: 90vw;
+  }
+}
+
+
+#default-text {
+  position: absolute;
+  z-index: 3; /* new */
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+  /* SEARCH BAR */ 
+  #search-input {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.0rem;
+  z-index: 1;
+  }
+  
+  body {
+    background-image: url('data/images/ai2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Oswald', sans-serif;
+    align: center;
+    color: var(--dynamic-text-color);
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* BUTTONS ON MAP*/
+.reset-button {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+  .custom-infoTitle {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  
+  color: #333;
+  }
+  
+  .custom-markerPopup {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.0rem;
+    align: center;
+    color: #333;
+    }
+
+    .custom-markerPopup-center {
+      text-align: center;
+  }
+  
+  .custom-markerPopup-light {
+      color: #999;  /* Change this to any color you want for deemphasized text */
+      font-weight: normal;
+  }
+  
+
+  
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', sans-serif;
+  color: var(--ash-gray);
+  line-height: 1;
+  padding: 0%;
+  }
+  
+  h3 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--ash-gray);
+  letter-spacing: 1px;
+  }
+  
+  number {
+  font-family: 'Bungee', sans-serif;
+  font-size: 1.5rem;
+  color: var(--white);
+  }
+  
+  a {
+  color: var(--reseda-green);
+  text-decoration: none;
+  }
+  
+  a:hover {
+  color: var(--reseda-green-2);
+  text-decoration: underline;
+  }
+  
+
+  
+/* DIFFERENT SCREEN SIZE LAYOUTS BELOW */
+  @media (max-width: 1024px) {
+    #map, .scoreboard {
+      height: 70vh;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 1rem;
+    }
+    
+    .scoreboard {
+      width: 80vw;
+      height: 50vw;
+    }
+  
+    #map {
+      height: 50vh;
+    }
+    
+    .container {
+      flex-direction: column;
+    }
+  }
+  

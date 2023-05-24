@@ -588,10 +588,11 @@ async function createMarker(field, map) {
   markers[field.level].push(marker);
   console.log("markers: ", markers); // prints the markers object
 
-  let markerPopupContent = `<div class="custom-infoTitle">${field.park_name}</div>`;
+  let markerPopupContent = `<div class="custom-infoTitle">${field.conference}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.park_name}</div><br>`;
   markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.city}, ${field.state}</div>`;
   // markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Notes: ${field.notes}</div>`;
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.conference}</div><br>`;
+  
   markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.date_range}</div>`;
   // markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Host: ${field.host_raw}</div>`;
   // markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Final Game Info: ${field.final_game_info}</div>`;
@@ -710,7 +711,7 @@ function filterByLevel(level) {
     // This function is called in the MapClickHandler function
     function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCounts) {
       console.log("Creating field info...");
-  
+    
       // Call the gameInfo
       gameInfo(closestField);
     
@@ -728,9 +729,6 @@ function filterByLevel(level) {
           fieldTitle.appendChild(cityState);
         }
 
-        
-
-    
         // Define default colors
         let dynamicBgColor = '#627454'; // Background default color
         let dynamicTextColor = '#f8e2e2'; //  default color
@@ -750,10 +748,10 @@ function filterByLevel(level) {
         // const flexContainer = document.createElement('div');
         // flexContainer.style.display = 'flex';
         // flexContainer.style.justifyContent = 'space-between'; // Add some space between the columns
-
-        // Create the fenceBlock
-        const fenceBlock = document.getElementById("fenceBlock");
-        fenceBlock.innerHTML = ""; // Clear the previous children
+  
+          // Clear the fenceBlock and areaBlock containers
+    const fenceBlock = document.getElementById("fenceBlock");
+    fenceBlock.innerHTML = "";
 
         const fenceInfo = document.createElement("p");
         fenceInfo.innerHTML = `Batter's Eye: ${closestField.field_cardinal_direction} | Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft<br>`;
@@ -923,7 +921,7 @@ function gameInfo(closestField) {
   const locationInfo = document.createElement("p");
   locationInfo.innerHTML = `City: ${closestField.city}<br>`;
   locationInfo.innerHTML += `State: ${closestField.state}<br>`;
-  locationInfo.innerHTML += `Altitude: ${closestField.altitude} meters<br>`;
+  locationInfo.innerHTML += `Altitude: ${(closestField.altitude * 3.28084)} feet<br>`;
   hostInfo.appendChild(locationInfo);
 }
 
