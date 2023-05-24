@@ -34,12 +34,12 @@
     background-repeat: no-repeat; 
     background-position: center;
     height: 20vh;  /* Change to percentage of viewport height */
-    width: 40vw; 
+    width: 50vw; 
     border: 5px solid blue;
     box-shadow: 0 0 0 5px red; 
     border-radius: 100px; 
     box-sizing: border-box; 
-    padding: 2vw; /* Adjust padding relative to viewport width */
+    padding: 5vw; /* Adjust padding relative to viewport width */
     margin-bottom: 2.5vh; 
     margin: 0 auto;
     display: flex;
@@ -107,13 +107,14 @@
   align-items: center;
   text-align: center;
   
-  background-color: var(--ash-gray);
+  background-color: var(--dynamic-bg-color);
   color: var(--black);
   border-radius: 10px;
   padding: 10px;
   width: 300px;
   min-height: 200px;
   display: none;
+  line-height: .25;
 }
 
 
@@ -214,14 +215,14 @@
 
   
   h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Bevan', sans-serif;
   color: var(--ash-gray);
   line-height: 1;
   padding: 0%;
   }
   
   h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Bevan', sans-serif;
   color: var(--ash-gray);
   letter-spacing: 1px;
   }

@@ -924,41 +924,48 @@ function gameInfo(closestField) {
   // Filter the games for the selected conference
   const filteredGames = gameData.filter(game => game.conference === closestField.conference);
 
+  // Add the conference logo
+  if (closestField.filename && iconPathBase) {
+    const conferenceLogo = document.createElement("img");
+    conferenceLogo.src = iconPathBase + closestField.filename;
+    conferenceLogo.onerror = function() {
+      console.error('Error loading logo: ' + conferenceLogo.src);
+    };
+    hostInfo.appendChild(conferenceLogo);
+  } else {
+    console.error('Missing icon path base or logo filename');
+  }
+
   if (filteredGames.length > 0) {
     // Display conference info once at the top
     const conferenceInfo = document.createElement("h3");
-    // change the font color to black
+    // Change the font color to black
     conferenceInfo.style.color = "black";
     conferenceInfo.innerHTML = `${filteredGames[0].conference}`;
     hostInfo.appendChild(conferenceInfo);
-
-    // Add the conference logo
-    if (closestField.filename && iconPathBase) {
-      const conferenceLogo = document.createElement("img");
-      conferenceLogo.src = iconPathBase + closestField.filename;
-      conferenceLogo.onerror = function() {
-        console.error('Error loading logo: ' + conferenceLogo.src);
-      };
-      hostInfo.appendChild(conferenceLogo);
-    } else {
-      console.error('Missing icon path base or logo filename');
-    }
   } else {
     console.log(`No games found for conference: ${closestField.conference}`);
   }
 
-  // Loop through the filtered games
-  filteredGames.forEach((game) => {
-    const timeInfo = document.createElement("p");
-    timeInfo.innerHTML = `Game # ${game.game} - ${game.date} at ${game.time}<br>`;
-    hostInfo.appendChild(timeInfo);
 
-    const gameInfo = document.createElement("p");
-    const homeScore = game.home_score !== null ? game.home_score : '';
-    const roadScore = game.road_score !== null ? game.road_score : '';
-    gameInfo.innerHTML += `${game.road_team} ${roadScore} vs ${game.home_team} ${homeScore}<br>`;
-    hostInfo.appendChild(gameInfo);
-  });
+    
+// Loop through the filtered games
+filteredGames.forEach((game) => {
+  const timeInfo = document.createElement("p");
+  timeInfo.style.color = "var(--ash-gray)"; // Set color to "--ash-gray"
+  timeInfo.style.marginBottom = "0px"; // Reduce the bottom margin for spacing
+  timeInfo.innerHTML = `Game # ${game.game} - ${game.date} at ${game.time}<br>`;
+  hostInfo.appendChild(timeInfo);
+
+  const gameInfo = document.createElement("p");
+  const homeScore = game.home_score !== null ? game.home_score : '';
+  const roadScore = game.road_score !== null ? game.road_score : '';
+  gameInfo.innerHTML += `${game.road_team} ${roadScore} vs ${game.home_team} ${homeScore}<br>`;
+  hostInfo.appendChild(gameInfo);
+
+  const emptyLine = document.createElement("br");
+  hostInfo.appendChild(emptyLine);
+});
 }
 
 
