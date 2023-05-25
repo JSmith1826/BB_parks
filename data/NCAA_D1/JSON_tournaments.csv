@@ -1,160 +1,162 @@
 date,time,conference,game,loc_1,road_team,road_score,home_team,home_score
-05/23,11:00,Atlantic Coast Conference,1,"Durham, NC",Virginia Tech,7,Boston College,11
-05/23,3:30,Atlantic Coast Conference,2,"Durham, NC",Georgia Tech,5,North Carolina,11
-05/23,7:00,Atlantic Coast Conference,3,"Durham, NC",NC State,8,Duke,7
-05/24,11:00,Atlantic Coast Conference,4,"Durham, NC",Pittsburgh,9,Notre Dame,5
-05/24,3:00,Atlantic Coast Conference,5,"Durham, NC",Georgia Tech,,Virginia,
-05/24,7:00,Atlantic Coast Conference,6,"Durham, NC",Virginia Tech,,Clemson,
-05/25,11:00,Atlantic Coast Conference,7,"Durham, NC",Pittsburgh,,Wake Forest,
-05/25,3:00,Atlantic Coast Conference,8,"Durham, NC",North Carolina,,Virginia,
-05/25,7:00,Atlantic Coast Conference,9,"Durham, NC",NC State,,Miami,
-05/26,11:00,Atlantic Coast Conference,10,"Durham, NC",Boston College,,Clemson,
-05/26,3:00,Atlantic Coast Conference,11,"Durham, NC",Duke,,Miami,
-05/26,7:00,Atlantic Coast Conference,12,"Durham, NC",Notre Dame,,Wake Forest,
-05/24,1:00,America East Conference,1,"Binghamton, NY",UMass Lowell,5,Bryant,0
-05/24,5:00,America East Conference,2,"Binghamton, NY",New Jersey Tech,,Binghamton,
-05/25,11:00,America East Conference,3,"Binghamton, NY",TBA,,Maine,
-05/25,3:00,America East Conference,4,"Binghamton, NY",TBA,,UMBC,
-05/23,9:00,American Athletic,1,"Clearwater, FL",Cincinnati,3,UCF,4
-05/23,12:30,American Athletic,2,"Clearwater, FL",South Florida,12,East Carolina,11
-05/23,5:30,American Athletic,3,"Clearwater, FL",Tulane,10,Houston,8
-05/23,7:30,American Athletic,4,"Clearwater, FL",Memphis,10,Wichita State,6
-05/24,3:00,American Athletic,5,"Clearwater, FL",Cincinnati,,East Carolina,
-05/24,6:30,American Athletic,6,"Clearwater, FL",Wichita State,,Houston,
-05/25,1:00,American Athletic,7,"Clearwater, FL",South Florida,,UCF,
-05/25,4:30,American Athletic,8,"Clearwater, FL",Tulane,,Memphis,
-05/23,11:00,Atlantic 10 Conference,101,"Richmond, VA",Richmond,3,Saint Louis,6
-05/23,3:00,Atlantic 10 Conference,102,"Richmond, VA",Rhode Island,4,Davidson,8
-05/23,7:00,Atlantic 10 Conference,103,"Richmond, VA",George Mason,5,Dayton,4
-05/24,11:00,Atlantic 10 Conference,104,"Richmond, VA",Saint Louis,23,Saint Joseph's,8
-05/24,3:00,Atlantic 10 Conference,105,"Richmond, VA",George Mason,,Davidson,
-05/24,7:00,Atlantic 10 Conference,106,"Richmond, VA",Rhode Island,,Richmond,
-05/25,11:00,Atlantic 10 Conference,107,"Richmond, VA",TBA,,Dayton,
-05/23,10:00,Atlantic Sun Conference,1,"DeLand, FL",Liberty,12,Lipscomb,11
-05/23,2:30,Atlantic Sun Conference,2,"DeLand, FL",Jacksonville,0,Florida Gulf Coast,7
-05/23,7:00,Atlantic Sun Conference,3,"DeLand, FL",Eastern Kentucky,3,Stetson,8
-05/24,10:00,Atlantic Sun Conference,4,"DeLand, FL",Jacksonville,3,Liberty,0
-05/24,2:30,Atlantic Sun Conference,5,"DeLand, FL",Jacksonville State,,Stetson,
-05/24,7:00,Atlantic Sun Conference,6,"DeLand, FL",Austin Peay,,Eastern Kentucky,
-05/25,10:00,Atlantic Sun Conference,7,"DeLand, FL",Florida Gulf Coast,,Lipscomb,
-05/25,2:30,Atlantic Sun Conference,8,"DeLand, FL",Austin Peay,,Stetson,
-05/25,7:00,Atlantic Sun Conference,9,"DeLand, FL",Jacksonville State,,Eastern Kentucky,
-05/26,10:00,Atlantic Sun Conference,10,"DeLand, FL",Jacksonville,,Lipscomb,
-05/26,2:30,Atlantic Sun Conference,11,"DeLand, FL",Liberty,,Florida Gulf Coast,
-05/26,7:00,Atlantic Sun Conference,12,"DeLand, FL",Austin Peay,,Jacksonville State,
-05/24,10:00,Big 12 Conference,1,"Arlington, TX",Kansas State,3,TCU,16
-05/24,1:30,Big 12 Conference,2,"Arlington, TX",Kansas,2,Texas,0
-05/24,5:00,Big 12 Conference,3,"Arlington, TX",Oklahoma,,Oklahoma State,
-05/24,8:30,Big 12 Conference,4,"Arlington, TX",Texas Tech,,West Virginia,
-05/25,10:00,Big 12 Conference,5,"Arlington, TX",TBA,,Kansas State,
-05/25,5:00,Big 12 Conference,7,"Arlington, TX",TBA,,TCU,
-05/24,2:30,Big East Conference,1,"Mason, OH",Georgetown,0,Connecticut,0
-05/24,6:30,Big East Conference,2,"Mason, OH",Seton Hall,,Xavier,
-05/25,1:00,Big South Conference,1,"High Point, NC",Gardner-Webb,,Campbell,
-05/25,5:00,Big South Conference,2,"High Point, NC",Winthrop,,USC Upstate,
-05/23,11:00,Big Ten Conference,101,"Omaha, NE",Michigan,3,Iowa,13
-05/23,3:00,Big Ten Conference,102,"Omaha, NE",Illinois,3,Indiana,4
-05/23,6:45,Big Ten Conference,103,"Omaha, NE",Michigan State,2,Maryland,3
-05/24,3:00,Big Ten Conference,104,"Omaha, NE",Rutgers,,Nebraska,
-05/24,8:00,Big Ten Conference,105,"Omaha, NE",Illinois,,Michigan,
-05/25,3:00,Big Ten Conference,107,"Omaha, NE",TBA,,Iowa,
-05/24,12:00,Colonial Athletic Association,1,"Mt. Pleasant, SC",Delaware,7,College of Charleston,4
-05/24,4:00,Colonial Athletic Association,2,"Mt. Pleasant, SC",William & Mary,,Northeastern,
-05/25,3:00,Colonial Athletic Association,4,"Mt. Pleasant, SC",TBA,,UNC Wilmington,
-05/25,7:00,Colonial Athletic Association,5,"Mt. Pleasant, SC",TBA,,Elon,
-05/24,10:00,Conference Usa,1,"Houston, TX",Louisiana Tech,13,Charlotte,8
-05/24,1:30,Conference Usa,2,"Houston, TX",Middle Tennessee,1,UTSA,0
-05/24,5:00,Conference Usa,3,"Houston, TX",Rice,,Dallas Baptist,
-05/24,8:30,Conference Usa,4,"Houston, TX",Florida Atlantic,,Western Kentucky,
-05/24,12:00,Horizon League,1,"Greene County, OH",Milwaukee,12,Youngstown State,3
-05/24,4:00,Horizon League,2,"Greene County, OH",Purdue Fort Wayne,,Northern Kentucky,
-05/25,11:00,Horizon League,3,"Greene County, OH",TBA,,Wright State,
-05/25,3:00,Horizon League,4,"Greene County, OH",TBA,,Oakland,
-05/19,11:00,Ivy League,1,"Philadelphia, PA",Princeton,2,Harvard,3
-05/19,3:00,Ivy League,2,"Philadelphia, PA",Columbia,6,Pennsylvania,10
-05/20,11:00,Ivy League,3,"Philadelphia, PA",Columbia,11,Princeton,13
-05/21,11:00,Ivy League,4,"Philadelphia, PA",Harvard,7,Pennsylvania,10
-05/21,4:00,Ivy League,5,"Philadelphia, PA",Harvard,3,Princeton,10
-05/22,11:00,Ivy League,6,"Philadelphia, PA",Pennsylvania,16,Princeton,3
-05/24,11:00,Metro Atlantic Athletic Conference,1,"Pomona, NY",Manhattan,17,Canisius,3
-05/24,3:00,Metro Atlantic Athletic Conference,2,"Pomona, NY",Niagara,,Quinnipiac,
-05/25,11:00,Metro Atlantic Athletic Conference,4,"Pomona, NY",TBA,,Fairfield,
-05/25,3:00,Metro Atlantic Athletic Conference,5,"Pomona, NY",TBA,,Rider,
-05/24,12:30,Mid-American Conference,1,"Portage County, OH",Western Michigan,3,Kent State,2
-05/24,6:00,Mid-American Conference,2,"Portage County, OH",Ball State,,Central Michigan,
-05/23,2:30,Missouri Valley Conference,1,"Terre Haute, IN",Belmont,5,Illinois-Chicago,10
-05/23,6:00,Missouri Valley Conference,2,"Terre Haute, IN",Valparaiso,6,Murray State,11
-05/24,9:00,Missouri Valley Conference,3,"Terre Haute, IN",Evansville,7,Southern Illinois,3
-05/24,12:30,Missouri Valley Conference,4,"Terre Haute, IN",Valparaiso,8,Belmont,10
-05/24,4:00,Missouri Valley Conference,5,"Terre Haute, IN",Illinois-Chicago,,Indiana State,
-05/24,7:30,Missouri Valley Conference,6,"Terre Haute, IN",Murray State,,Missouri State,
-05/25,9:00,Missouri Valley Conference,7,"Terre Haute, IN",TBA,,Southern Illinois,
-05/25,7:30,Missouri Valley Conference,10,"Terre Haute, IN",TBA,,Evansville,
-05/25,4:30,Mountain West Conference,1,"Fresno, CA",Air Force,,San Diego State,
-05/25,9:00,Mountain West Conference,2,"Fresno, CA",Fresno State,,San Jose State,
-05/24,11:00,Northeast Conference,1,"Wappingers Falls, NY",UMES,0,Fairleigh Dickinson,2
-05/24,3:00,Northeast Conference,2,"Wappingers Falls, NY",Long Island,,Sacred Heart,
-05/25,11:00,Northeast Conference,4,"Wappingers Falls, NY",TBA,,Central Connecticut,
-05/25,3:00,Northeast Conference,5,"Wappingers Falls, NY",TBA,,Wagner,
-05/24,10:00,Ohio Valley Conference,1,"Marion, IL",Southern Indiana,4,Eastern Illinois,5
-05/24,1:30,Ohio Valley Conference,2,"Marion, IL",SIU Edwardsville,0,Tennessee Tech,1
-05/24,5:00,Ohio Valley Conference,3,"Marion, IL",TBA,,Southeast Missouri State,
-05/24,8:30,Ohio Valley Conference,4,"Marion, IL",TBA,,Tennessee-Martin,
-05/25,12:00,Ohio Valley Conference,5,"Marion, IL",TBA,,Morehead State,
-05/25,4:00,Ohio Valley Conference,6,"Marion, IL",TBA,,Little Rock,
-05/23,1:00,Pacific-12 Conference,1,"Scottsdale, AZ",Arizona,12,Arizona State,3
-05/23,5:30,Pacific-12 Conference,2,"Scottsdale, AZ",UCLA,4,Southern California,6
-05/23,10:00,Pacific-12 Conference,3,"Scottsdale, AZ",California,2,Oregon,3
-05/24,1:00,Pacific-12 Conference,4,"Scottsdale, AZ",Oregon State,6,Arizona,5
-05/24,5:30,Pacific-12 Conference,5,"Scottsdale, AZ",Washington,,UCLA,
-05/24,10:00,Pacific-12 Conference,6,"Scottsdale, AZ",Stanford,,California,
-05/25,1:00,Pacific-12 Conference,7,"Scottsdale, AZ",Arizona State,,Oregon State,
-05/25,5:30,Pacific-12 Conference,8,"Scottsdale, AZ",Southern California,,Washington,
-05/25,10:00,Pacific-12 Conference,9,"Scottsdale, AZ",Oregon,,Stanford,
-05/13,4:00,Patriot League,,,Navy,0,Bucknell,2
-05/13,6:00,Patriot League,,,Lafayette,7,Army,5
-05/13,6:00,Patriot League,,,Navy,6,Bucknell,7
-05/14,12:00,Patriot League,,,Lafayette,6,Army,15
-05/14,4:00,Patriot League,,If Necessary,Lafayette,1,Army,5
-05/21,1:00,Patriot League,1,"West Point, NY",Bucknell,5,Army,20
-05/22,1:00,Patriot League,2,"West Point, NY",Bucknell,6,Army,21
-05/23,10:30,Southeastern Conference,1,"Hoover, AL",Georgia,0,South Carolina,9
-05/23,2:00,Southeastern Conference,2,"Hoover, AL",Texas A&M,3,Tennessee,0
-05/23,6:45,Southeastern Conference,3,"Hoover, AL",Alabama,4,Kentucky,0
-05/23,9:00,Southeastern Conference,4,"Hoover, AL",Missouri,4,Auburn,10
-05/24,10:30,Southeastern Conference,5,"Hoover, AL",South Carolina,3,LSU,10
-05/24,2:00,Southeastern Conference,6,"Hoover, AL",Texas A&M,0,Arkansas,0
-05/24,5:30,Southeastern Conference,7,"Hoover, AL",Alabama,,Florida,
-05/24,9:00,Southeastern Conference,8,"Hoover, AL",Auburn,,Vanderbilt,
-05/24,3:00,Southern Conference,1,"Greenville, SC",The Citadel,,VMI,
-05/24,7:00,Southern Conference,2,"Greenville, SC",Western Carolina,,UNC Greensboro,
-05/25,3:00,Southern Conference,3,"Greenville, SC",TBA,,East Tennessee State,
-05/25,7:00,Southern Conference,4,"Greenville, SC",TBA,,Wofford,
-05/26,9:00,Southern Conference,5,"Greenville, SC",TBA,,Samford,
-05/26,12:30,Southern Conference,6,"Greenville, SC",TBA,,Mercer,
-05/23,7:00,Southland Conference,1,"Lake Charles, LA",Texas A&M-Corpus Christi,0,McNeese,4
-05/24,12:00,Southland Conference,3,"Lake Charles, LA",Northwestern State,2,Incarnate Word,1
-05/24,3:30,Southland Conference,4,"Lake Charles, LA",New Orleans,,Lamar,
-05/24,7:00,Southland Conference,2,"Lake Charles, LA",McNeese,,Nicholls,
-05/24,9:00,Southwest Athletic Conference,1,"Atlanta, GA",Florida A&M,9,Texas Southern,1
-05/24,12:00,Southwest Athletic Conference,2,"Atlanta, GA",Southern,1,Bethune-Cookman,2
-05/24,3:00,Southwest Athletic Conference,3,"Atlanta, GA",Prairie View,,Alabama State,
-05/24,6:00,Southwest Athletic Conference,4,"Atlanta, GA",Jackson State,,Grambling,
-05/24,1:05,Summit,1,"Fargo, ND",Omaha,1,Oral Roberts,6
-05/24,7:05,Summit,2,"Fargo, ND",South Dakota State,,North Dakota State,
-05/23,4:00,Sun Belt Conference,1,"Montgomery, AL",Old Dominion,1,James Madison,2
-05/23,7:30,Sun Belt Conference,2,"Montgomery, AL",Georgia Southern,5,Georgia State,8
-05/24,10:00,Sun Belt Conference,3,"Montgomery, AL",Appalachian State,9,Troy,10
-05/24,2:30,Sun Belt Conference,4,"Montgomery, AL",James Madison,0,Southern Miss,0
-05/24,5:00,Sun Belt Conference,5,"Montgomery, AL",Georgia State,,Coastal Carolina,
-05/24,8:30,Sun Belt Conference,6,"Montgomery, AL",Texas State,,Louisiana,
-05/24,6:00,West Coast Conference,1,"Las Vegas, NV",Gonzaga,,Santa Clara,
-05/24,10:20,West Coast Conference,2,"Las Vegas, NV",Saint Mary's,,San Diego,
-05/25,6:00,West Coast Conference,3,"Las Vegas, NV",TBA,,Loyola Marymount,
-05/25,10:20,West Coast Conference,4,"Las Vegas, NV",TBA,,Portland,
-05/23,4:00,Western Athletic Conference,1,"Mesa, AZ",California Baptist,4,Abilene Christian,5
-05/23,7:00,Western Athletic Conference,2,"Mesa, AZ",UT Rio Grande Valley,14,UT Arlington,4
-05/24,12:00,Western Athletic Conference,3,"Mesa, AZ",Seattle,6,Utah Valley,12
-05/24,3:00,Western Athletic Conference,4,"Mesa, AZ",UT Arlington,,California Baptist,
-05/24,7:00,Western Athletic Conference,5,"Mesa, AZ",Abilene Christian,,Sam Houston,
-05/24,10:00,Western Athletic Conference,6,"Mesa, AZ",UT Rio Grande Valley,,Grand Canyon,
+"Tuesday, May 23",11:00 am,Atlantic Coast Conference,1,"Durham, NC",Virginia Tech,7,Boston College,11
+"Tuesday, May 23",3:30 pm,Atlantic Coast Conference,2,"Durham, NC",Georgia Tech,5,North Carolina,11
+"Tuesday, May 23",7:00 pm,Atlantic Coast Conference,3,"Durham, NC",NC State,8,Duke,7
+"Wednesday, May 24",11:00 am,Atlantic Coast Conference,4,"Durham, NC",Pittsburgh,9,Notre Dame,5
+"Wednesday, May 24",3:00 pm,Atlantic Coast Conference,5,"Durham, NC",Virginia,15,Georgia Tech,1
+"Wednesday, May 24",7:00 pm,Atlantic Coast Conference,6,"Durham, NC",Virginia Tech,,Clemson,
+"Thursday, May 25",11:00 am,Atlantic Coast Conference,7,"Durham, NC",Pittsburgh,,Wake Forest,
+"Thursday, May 25",3:00 pm,Atlantic Coast Conference,8,"Durham, NC",North Carolina,,Virginia,
+"Thursday, May 25",7:00 pm,Atlantic Coast Conference,9,"Durham, NC",NC State,,Miami,
+"Friday, May 26",11:00 am,Atlantic Coast Conference,10,"Durham, NC",Boston College,,Clemson,
+"Friday, May 26",3:00 pm,Atlantic Coast Conference,11,"Durham, NC",Duke,,Miami,
+"Friday, May 26",7:00 pm,Atlantic Coast Conference,12,"Durham, NC",Notre Dame,,Wake Forest,
+"Wednesday, May 24",1:00 pm,America East Conference,1,"Binghamton, NY",UMass Lowell,6,Bryant,0
+"Wednesday, May 24",5:00 pm,America East Conference,2,"Binghamton, NY",New Jersey Tech,6,Binghamton,14
+"Thursday, May 25",11:00 am,America East Conference,3,"Binghamton, NY",TBA,,Maine,
+"Thursday, May 25",3:00 pm,America East Conference,4,"Binghamton, NY",TBA,,UMBC,
+"Tuesday, May 23",9:00 pm,American Athletic,1,"Clearwater, FL",Cincinnati,3,UCF,4
+"Tuesday, May 23",12:30 pm,American Athletic,2,"Clearwater, FL",South Florida,12,East Carolina,11
+"Tuesday, May 23",5:30 pm,American Athletic,3,"Clearwater, FL",Tulane,10,Houston,8
+"Tuesday, May 23",7:30 pm,American Athletic,4,"Clearwater, FL",Memphis,10,Wichita State,6
+"Wednesday, May 24",3:00 pm,American Athletic,5,"Clearwater, FL",Cincinnati,6,East Carolina,5
+"Wednesday, May 24",6:30 pm,American Athletic,6,"Clearwater, FL",Wichita State,,Houston,
+"Thursday, May 25",1:00 pm,American Athletic,7,"Clearwater, FL",South Florida,,UCF,
+"Thursday, May 25",4:30 pm,American Athletic,8,"Clearwater, FL",Tulane,,Memphis,
+"Tuesday, May 23",11:00 am,Atlantic 10 Conference,101,"Richmond, VA",Richmond,3,Saint Louis,6
+"Tuesday, May 23",3:00 pm,Atlantic 10 Conference,102,"Richmond, VA",Rhode Island,4,Davidson,8
+"Tuesday, May 23",7:00 pm,Atlantic 10 Conference,103,"Richmond, VA",George Mason,5,Dayton,4
+"Wednesday, May 24",11:00 am,Atlantic 10 Conference,104,"Richmond, VA",Saint Louis,23,Saint Joseph's,8
+"Wednesday, May 24",3:00 pm,Atlantic 10 Conference,105,"Richmond, VA",Davidson,11,George Mason,15
+"Wednesday, May 24",7:00 pm,Atlantic 10 Conference,106,"Richmond, VA",Rhode Island,,Richmond,
+"Thursday, May 25",11:00 am,Atlantic 10 Conference,107,"Richmond, VA",TBA,,Dayton,
+"Tuesday, May 23",10:00 am,Atlantic Sun Conference,1,"DeLand, FL",Liberty,12,Lipscomb,11
+"Tuesday, May 23",2:30 pm,Atlantic Sun Conference,2,"DeLand, FL",Jacksonville,0,Florida Gulf Coast,7
+"Tuesday, May 23",7:00 pm,Atlantic Sun Conference,3,"DeLand, FL",Eastern Kentucky,3,Stetson,8
+"Wednesday, May 24",10:00 am,Atlantic Sun Conference,4,"DeLand, FL",Jacksonville,8,Liberty,0
+"Wednesday, May 24",3:30 pm,Atlantic Sun Conference,5,"DeLand, FL",Jacksonville State,6,Stetson,1
+"Wednesday, May 24",7:00 pm,Atlantic Sun Conference,6,"DeLand, FL",Austin Peay,,Eastern Kentucky,
+"Thursday, May 25",10:00 am,Atlantic Sun Conference,7,"DeLand, FL",Florida Gulf Coast,,Lipscomb,
+"Thursday, May 25",2:30 pm,Atlantic Sun Conference,8,"DeLand, FL",Austin Peay,,Stetson,
+"Thursday, May 25",7:00 pm,Atlantic Sun Conference,9,"DeLand, FL",Jacksonville State,,Eastern Kentucky,
+"Friday, May 26",10:00 am,Atlantic Sun Conference,10,"DeLand, FL",Jacksonville,,Lipscomb,
+"Friday, May 26",2:30 pm,Atlantic Sun Conference,11,"DeLand, FL",Liberty,,Florida Gulf Coast,
+"Friday, May 26",7:00 pm,Atlantic Sun Conference,12,"DeLand, FL",Austin Peay,,Jacksonville State,
+"Wednesday, May 24",10:00 am,Big 12 Conference,1,"Arlington, TX",Kansas State,3,TCU,16
+"Wednesday, May 24",1:30 pm,Big 12 Conference,2,"Arlington, TX",Kansas,6,Texas,3
+"Wednesday, May 24",5:00 pm,Big 12 Conference,3,"Arlington, TX",Oklahoma,9,Oklahoma State,5
+"Wednesday, May 24",8:30 pm,Big 12 Conference,4,"Arlington, TX",Texas Tech,,West Virginia,
+"Thursday, May 25",10:00 am,Big 12 Conference,5,"Arlington, TX",TBA,,Kansas State,
+"Thursday, May 25",5:00 pm,Big 12 Conference,7,"Arlington, TX",TBA,,TCU,
+"Wednesday, May 24",2:30 pm,Big East Conference,1,"Mason, OH",Georgetown,4,Connecticut,5
+"Wednesday, May 24",6:30 pm,Big East Conference,2,"Mason, OH",Seton Hall,0,Xavier,0
+"Thursday, May 25",1:00 pm,Big South Conference,1,"High Point, NC",Gardner-Webb,,Campbell,
+"Thursday, May 25",5:00 pm,Big South Conference,2,"High Point, NC",Winthrop,,USC Upstate,
+"Tuesday, May 23",11:00 am,Big Ten Conference,101,"Omaha, NE",Michigan,3,Iowa,13
+"Tuesday, May 23",3:00 pm,Big Ten Conference,102,"Omaha, NE",Illinois,3,Indiana,4
+"Tuesday, May 23",6:45 pm,Big Ten Conference,103,"Omaha, NE",Michigan State,2,Maryland,3
+"Wednesday, May 24",3:00 pm,Big Ten Conference,104,"Omaha, NE",Rutgers,6,Nebraska,7
+"Wednesday, May 24",8:00 pm,Big Ten Conference,105,"Omaha, NE",Illinois,,Michigan,
+"Thursday, May 25",3:00 pm,Big Ten Conference,107,"Omaha, NE",TBA,,Iowa,
+"Wednesday, May 24",12:00 pm,Colonial Athletic Association,1,"Mt. Pleasant, SC",Delaware,7,College of Charleston,4
+"Wednesday, May 24",4:00 pm,Colonial Athletic Association,2,"Mt. Pleasant, SC",William & Mary,0,Northeastern,6
+"Thursday, May 25",3:00 pm,Colonial Athletic Association,4,"Mt. Pleasant, SC",TBA,,UNC Wilmington,
+"Thursday, May 25",7:00 pm,Colonial Athletic Association,5,"Mt. Pleasant, SC",TBA,,Elon,
+"Wednesday, May 24",10:00 am,Conference Usa,1,"Houston, TX",Louisiana Tech,13,Charlotte,8
+"Wednesday, May 24",1:30 pm,Conference Usa,2,"Houston, TX",Middle Tennessee,5,UTSA,1
+"Wednesday, May 24",5:00 pm,Conference Usa,3,"Houston, TX",Rice,2,Dallas Baptist,13
+"Wednesday, May 24",8:30 pm,Conference Usa,4,"Houston, TX",Florida Atlantic,,Western Kentucky,
+"Wednesday, May 24",12:00 pm,Horizon League,1,"Greene County, OH",Milwaukee,12,Youngstown State,3
+"Wednesday, May 24",4:00 pm,Horizon League,2,"Greene County, OH",Purdue Fort Wayne,3,Northern Kentucky,6
+"Thursday, May 25",11:00 am,Horizon League,3,"Greene County, OH",TBA,,Wright State,
+"Thursday, May 25",3:00 pm,Horizon League,4,"Greene County, OH",TBA,,Oakland,
+"Friday, May 19",11:00 am,Ivy League,1,"Philadelphia, PA",Princeton,2,Harvard,3
+"Friday, May 19",3:00 pm,Ivy League,2,"Philadelphia, PA",Columbia,6,Pennsylvania,10
+"Saturday, May 20",11:00 am,Ivy League,3,"Philadelphia, PA",Columbia,11,Princeton,13
+"Sunday, May 21",11:00 am,Ivy League,4,"Philadelphia, PA",Harvard,7,Pennsylvania,10
+"Sunday, May 21",4:00 pm,Ivy League,5,"Philadelphia, PA",Harvard,3,Princeton,10
+"Monday, May 22",11:00 am,Ivy League,6,"Philadelphia, PA",Pennsylvania,16,Princeton,3
+"Wednesday, May 24",11:00 am,Metro Atlantic Athletic Conference,1,"Pomona, NY",Manhattan,17,Canisius,3
+"Wednesday, May 24",3:00 pm,Metro Atlantic Athletic Conference,2,"Pomona, NY",Niagara,2,Quinnipiac,13
+"Wednesday, May 24",7:00 pm,Metro Atlantic Athletic Conference,3,"Pomona, NY",TBA,,Canisius,
+"Thursday, May 25",11:00 am,Metro Atlantic Athletic Conference,4,"Pomona, NY",TBA,,Fairfield,
+"Thursday, May 25",3:00 pm,Metro Atlantic Athletic Conference,5,"Pomona, NY",TBA,,Rider,
+"Wednesday, May 24",12:30 pm,Mid-American Conference,1,"Portage County, OH",Western Michigan,4,Kent State,6
+"Wednesday, May 24",6:00 pm,Mid-American Conference,2,"Portage County, OH",Ball State,3,Central Michigan,0
+"Tuesday, May 23",2:30 pm,Missouri Valley Conference,1,"Terre Haute, IN",Belmont,5,Illinois-Chicago,10
+"Tuesday, May 23",6:00 pm,Missouri Valley Conference,2,"Terre Haute, IN",Valparaiso,6,Murray State,11
+"Wednesday, May 24",9:00 pm,Missouri Valley Conference,3,"Terre Haute, IN",Evansville,7,Southern Illinois,3
+"Wednesday, May 24",12:30 pm,Missouri Valley Conference,4,"Terre Haute, IN",Valparaiso,9,Belmont,10
+"Wednesday, May 24",4:00 pm,Missouri Valley Conference,5,"Terre Haute, IN",Illinois-Chicago,5,Indiana State,8
+"Wednesday, May 24",7:30 pm,Missouri Valley Conference,6,"Terre Haute, IN",Murray State,,Missouri State,
+"Thursday, May 25",9:00 pm,Missouri Valley Conference,7,"Terre Haute, IN",TBA,,Southern Illinois,
+"Thursday, May 25",7:30 pm,Missouri Valley Conference,10,"Terre Haute, IN",TBA,,Evansville,
+"Thursday, May 25",4:30 pm,Mountain West Conference,1,"Fresno, CA",Air Force,,San Diego State,
+"Thursday, May 25",9:00 pm,Mountain West Conference,2,"Fresno, CA",Fresno State,,San Jose State,
+"Wednesday, May 24",11:00 am,Northeast Conference,1,"Wappingers Falls, NY",UMES,0,Fairleigh Dickinson,2
+"Wednesday, May 24",3:00 pm,Northeast Conference,2,"Wappingers Falls, NY",Long Island,2,Sacred Heart,23
+"Wednesday, May 24",7:00 pm,Northeast Conference,3,"Wappingers Falls, NY",UMES,,TBA,
+"Thursday, May 25",11:00 am,Northeast Conference,4,"Wappingers Falls, NY",TBA,,Central Connecticut,
+"Thursday, May 25",3:00 pm,Northeast Conference,5,"Wappingers Falls, NY",TBA,,Wagner,
+"Wednesday, May 24",10:00 am,Ohio Valley Conference,1,"Marion, IL",Southern Indiana,4,Eastern Illinois,5
+"Wednesday, May 24",1:30 pm,Ohio Valley Conference,2,"Marion, IL",SIU Edwardsville,0,Tennessee Tech,4
+"Wednesday, May 24",5:00 pm,Ohio Valley Conference,3,"Marion, IL",Eastern Illinois,7,Southeast Missouri State,6
+"Wednesday, May 24",8:30 pm,Ohio Valley Conference,4,"Marion, IL",Tennessee Tech,,Tennessee-Martin,
+"Thursday, May 25",12:00 pm,Ohio Valley Conference,5,"Marion, IL",TBA,,Morehead State,
+"Thursday, May 25",4:00 pm,Ohio Valley Conference,6,"Marion, IL",TBA,,Little Rock,
+"Tuesday, May 23",1:00 pm,Pacific-12 Conference,1,"Scottsdale, AZ",Arizona,12,Arizona State,3
+"Tuesday, May 23",5:30 pm,Pacific-12 Conference,2,"Scottsdale, AZ",UCLA,4,Southern California,6
+"Tuesday, May 23",10:00 am,Pacific-12 Conference,3,"Scottsdale, AZ",California,2,Oregon,3
+"Wednesday, May 24",1:00 pm,Pacific-12 Conference,4,"Scottsdale, AZ",Oregon State,12,Arizona,13
+"Wednesday, May 24",5:30 pm,Pacific-12 Conference,5,"Scottsdale, AZ",Washington,4,UCLA,17
+"Wednesday, May 24",10:00 am,Pacific-12 Conference,6,"Scottsdale, AZ",Stanford,,California,
+"Thursday, May 25",1:00 pm,Pacific-12 Conference,7,"Scottsdale, AZ",Arizona State,,Oregon State,
+"Thursday, May 25",5:30 pm,Pacific-12 Conference,8,"Scottsdale, AZ",Southern California,,Washington,
+"Thursday, May 25",10:00 am,Pacific-12 Conference,9,"Scottsdale, AZ",Oregon,,Stanford,
+"Saturday, May 13",4:00 pm,Patriot League,,,Navy,0,Bucknell,2
+"Saturday, May 13",6:00 pm,Patriot League,,,Lafayette,7,Army,5
+"Saturday, May 13",6:00 pm,Patriot League,,,Navy,6,Bucknell,7
+"Sunday, May 14",12:00 pm,Patriot League,,,Lafayette,6,Army,15
+"Sunday, May 14",4:00 pm,Patriot League,,If Necessary,Lafayette,1,Army,5
+"Sunday, May 21",1:00 pm,Patriot League,1,"West Point, NY",Bucknell,5,Army,20
+"Monday, May 22",1:00 pm,Patriot League,2,"West Point, NY",Bucknell,6,Army,21
+"Tuesday, May 23",10:30 am,Southeastern Conference,1,"Hoover, AL",Georgia,0,South Carolina,9
+"Tuesday, May 23",2:00 pm,Southeastern Conference,2,"Hoover, AL",Texas A&M,3,Tennessee,0
+"Tuesday, May 23",6:45 pm,Southeastern Conference,3,"Hoover, AL",Alabama,4,Kentucky,0
+"Tuesday, May 23",9:00 pm,Southeastern Conference,4,"Hoover, AL",Missouri,4,Auburn,10
+"Wednesday, May 24",10:30 am,Southeastern Conference,5,"Hoover, AL",South Carolina,3,LSU,10
+"Wednesday, May 24",2:00 pm,Southeastern Conference,6,"Hoover, AL",Texas A&M,5,Arkansas,6
+"Wednesday, May 24",6:45 pm,Southeastern Conference,7,"Hoover, AL",Alabama,0,Florida,0
+"Wednesday, May 24",9:00 pm,Southeastern Conference,8,"Hoover, AL",Auburn,,Vanderbilt,
+"Wednesday, May 24",3:00 pm,Southern Conference,1,"Greenville, SC",The Citadel,5,VMI,2
+"Wednesday, May 24",7:00 pm,Southern Conference,2,"Greenville, SC",Western Carolina,,UNC Greensboro,
+"Thursday, May 25",3:00 pm,Southern Conference,3,"Greenville, SC",TBA,,East Tennessee State,
+"Thursday, May 25",7:00 pm,Southern Conference,4,"Greenville, SC",TBA,,Wofford,
+"Friday, May 26",9:00 pm,Southern Conference,5,"Greenville, SC",TBA,,Samford,
+"Friday, May 26",12:30 pm,Southern Conference,6,"Greenville, SC",TBA,,Mercer,
+"Tuesday, May 23",7:00 pm,Southland Conference,1,"Lake Charles, LA",Texas A&M-Corpus Christi,0,McNeese,4
+"Wednesday, May 24",12:00 pm,Southland Conference,3,"Lake Charles, LA",Northwestern State,2,Incarnate Word,1
+"Wednesday, May 24",3:30 pm,Southland Conference,4,"Lake Charles, LA",New Orleans,4,Lamar,1
+"Wednesday, May 24",7:00 pm,Southland Conference,2,"Lake Charles, LA",McNeese,,Nicholls,
+"Wednesday, May 24",9:00 pm,Southwest Athletic Conference,1,"Atlanta, GA",Florida A&M,9,Texas Southern,1
+"Wednesday, May 24",12:00 pm,Southwest Athletic Conference,2,"Atlanta, GA",Southern,4,Bethune-Cookman,2
+"Wednesday, May 24",3:00 pm,Southwest Athletic Conference,3,"Atlanta, GA",Prairie View,1,Alabama State,11
+"Wednesday, May 24",6:00 pm,Southwest Athletic Conference,4,"Atlanta, GA",Jackson State,0,Grambling,0
+"Wednesday, May 24",1:05 pm,Summit,1,"Fargo, ND",Omaha,2,Oral Roberts,9
+"Wednesday, May 24",7:05 pm,Summit,2,"Fargo, ND",South Dakota State,,North Dakota State,
+"Tuesday, May 23",4:00 pm,Sun Belt Conference,1,"Montgomery, AL",Old Dominion,1,James Madison,2
+"Tuesday, May 23",7:30 pm,Sun Belt Conference,2,"Montgomery, AL",Georgia Southern,5,Georgia State,8
+"Wednesday, May 24",10:00 am,Sun Belt Conference,3,"Montgomery, AL",Appalachian State,9,Troy,10
+"Wednesday, May 24",2:30 pm,Sun Belt Conference,4,"Montgomery, AL",James Madison,1,Southern Miss,7
+"Wednesday, May 24",5:00 pm,Sun Belt Conference,5,"Montgomery, AL",Georgia State,4,Coastal Carolina,5
+"Wednesday, May 24",8:30 pm,Sun Belt Conference,6,"Montgomery, AL",Texas State,,Louisiana,
+"Wednesday, May 24",6:00 pm,West Coast Conference,1,"Las Vegas, NV",Gonzaga,2,Santa Clara,4
+"Wednesday, May 24",10:20 am,West Coast Conference,2,"Las Vegas, NV",Saint Mary's,,San Diego,
+"Thursday, May 25",6:00 pm,West Coast Conference,3,"Las Vegas, NV",TBA,,Loyola Marymount,
+"Thursday, May 25",10:20 am,West Coast Conference,4,"Las Vegas, NV",TBA,,Portland,
+"Tuesday, May 23",4:00 pm,Western Athletic Conference,1,"Mesa, AZ",California Baptist,4,Abilene Christian,5
+"Tuesday, May 23",7:00 pm,Western Athletic Conference,2,"Mesa, AZ",UT Rio Grande Valley,14,UT Arlington,4
+"Wednesday, May 24",12:00 pm,Western Athletic Conference,3,"Mesa, AZ",Seattle,6,Utah Valley,16
+"Wednesday, May 24",3:00 pm,Western Athletic Conference,4,"Mesa, AZ",UT Arlington,8,California Baptist,4
+"Wednesday, May 24",7:00 pm,Western Athletic Conference,5,"Mesa, AZ",Abilene Christian,,Sam Houston,
+"Wednesday, May 24",10:00 am,Western Athletic Conference,6,"Mesa, AZ",UT Rio Grande Valley,,Grand Canyon,

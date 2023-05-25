@@ -78,13 +78,14 @@ async function initMap() {
   resetButton.style.color = 'white'; // set text color to white
   resetButton.style.border = 'none'; // remove border
   resetButton.style.borderRadius = '5px'; // round the corners
+  // change the position
   resetButton.addEventListener('click', function() {
       map.setZoom(initialZoom);
       map.setCenter(initialCenter);
   });
 
   document.body.appendChild(resetButton);
-  map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(resetButton);
+  map.controls[google.maps.ControlPosition.LEFT_TOP].push(resetButton);
 
   
 function filterByLevel(level) {
@@ -605,8 +606,8 @@ async function createMarker(field, map) {
   console.log("markers: ", markers); // prints the markers object
 
   let markerPopupContent = `<div class="custom-infoTitle">${field.conference}</div>`;
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.park_name}</div><br>`;
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.city}, ${field.state}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span style="font-size:20px">  ${field.park_name}</span></div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.city}, ${field.state}</div><br>`;
   // markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Notes: ${field.notes}</div>`;
   
   markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.date_range}</div>`;
@@ -770,7 +771,7 @@ const fenceBlock = document.getElementById("fenceBlock");
 fenceBlock.innerHTML = "";
 
     const fenceInfo = document.createElement("p");
-    fenceInfo.innerHTML = `<span style="font-size: 20px">Batter's Eye: ${closestField.field_cardinal_direction} | Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft</span><br>`;
+    fenceInfo.innerHTML = `<span style="font-size: 20px">Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft - Batter's View: ${closestField.field_cardinal_direction}</span><br>`;
 
 
 
@@ -861,14 +862,16 @@ fenceBlock.innerHTML = "";
       ctx1.fillRect(normalizedScore1, 0, 2, canvas1.height);
       ctx2.fillRect(normalizedScore2, 0, 2, canvas2.height);
   
-      // Add labels
-      [ctx1, ctx2].forEach(ctx => {
-          ctx.font = '14px Arial';
-          ctx.fillStyle = 'black';
-      });
-      // ctx1.fillText('HR Unfriendliness', 2, 12);
-      ctx1.textAlign = 'end';
-      ctx1.fillText('HR Friendliness', canvas1.width - 2, 12);
+// Add labels
+[ctx1, ctx2].forEach(ctx => {
+  ctx.font = 'bold 14px Arial'; // Make the font bold
+  ctx.fillStyle = 'black';
+});
+
+ctx1.textAlign = 'center';
+ctx1.textBaseline = 'middle';
+ctx1.fillText('<- Defensive  Offensive ->', canvas1.width / 2, canvas1.height / 2); // Use canvas dimensions for centering
+
       
       ctx2.fillText('Not Unique', 2, 12);
       ctx2.textAlign = 'end';
@@ -911,9 +914,6 @@ fieldInfo.appendChild(gradientBar1);
 
 }
 
-////////// FUNCTION TO CREATE THE BOX WITH GAME INFO //////////
-// input data - closestField from closestFieldFunction
-// output - a html element containing info about the games that will be hosted for the tourney
 function gameInfo(closestField) {
   console.log("Creating game info...");
 
@@ -923,12 +923,16 @@ function gameInfo(closestField) {
   hostInfo.innerHTML = "";
 
   // Filter the games for the selected conference
-  const filteredGames = gameData.filter(game => game.conference === closestField.conference);
+  const filteredGames = gameData
+    .filter(game => game.conference === closestField.conference)
+    .sort((a, b) => new Date(a.date) - new Date(b.date)); // Sort games by date
 
   // Add the conference logo
   if (closestField.filename && iconPathBase) {
     const conferenceLogo = document.createElement("img");
     conferenceLogo.src = iconPathBase + closestField.filename;
+    conferenceLogo.width = "300"; // Set a fixed width for the image
+    conferenceLogo.height = "300"; // Set a fixed height for the image
     conferenceLogo.onerror = function() {
       console.error('Error loading logo: ' + conferenceLogo.src);
     };
@@ -940,35 +944,38 @@ function gameInfo(closestField) {
   if (filteredGames.length > 0) {
     // Display conference info once at the top
     const conferenceInfo = document.createElement("h3");
-    // Change the font color to black
-    conferenceInfo.style.color = "black";
     conferenceInfo.innerHTML = `${filteredGames[0].conference}`;
     hostInfo.appendChild(conferenceInfo);
   } else {
     console.log(`No games found for conference: ${closestField.conference}`);
   }
 
-
+  // Loop through the filtered games
+  let lastGameDate = '';
+  filteredGames.forEach((game) => {
+    if (game.date !== lastGameDate) {
+      const dateHeader = document.createElement("h4");
+      dateHeader.innerHTML = `Date: ${game.date}`;
+      hostInfo.appendChild(dateHeader);
+      lastGameDate = game.date;
+    }
     
-// Loop through the filtered games
-filteredGames.forEach((game) => {
-  const timeInfo = document.createElement("p");
-  timeInfo.style.color = "var(--ash-gray)"; // Set color to "--ash-gray"
-  timeInfo.style.marginBottom = "0px"; // Reduce the bottom margin for spacing
-  timeInfo.innerHTML = `Game # ${game.game} - ${game.date} at ${game.time}<br>`;
-  hostInfo.appendChild(timeInfo);
+    const timeInfo = document.createElement("p");
+    timeInfo.style.color = "var(--ash-gray)";
+    timeInfo.style.marginBottom = "0px";
+    timeInfo.innerHTML = `Game # ${game.game} at ${game.time}`;
+    hostInfo.appendChild(timeInfo);
 
-  const gameInfo = document.createElement("p");
-  const homeScore = game.home_score !== null ? game.home_score : '';
-  const roadScore = game.road_score !== null ? game.road_score : '';
-  gameInfo.innerHTML += `${game.road_team} ${roadScore} vs ${game.home_team} ${homeScore}<br>`;
-  hostInfo.appendChild(gameInfo);
+    const gameInfo = document.createElement("p");
+    const homeScore = game.home_score !== null ? game.home_score : '';
+    const roadScore = game.road_score !== null ? game.road_score : '';
+    gameInfo.innerHTML += `<span style="font-size: 18px">${game.road_team} ${roadScore} vs ${game.home_team} ${homeScore}</span>`;
+    hostInfo.appendChild(gameInfo);
 
-  const emptyLine = document.createElement("br");
-  hostInfo.appendChild(emptyLine);
-});
+    const emptyLine = document.createElement("br");
+    hostInfo.appendChild(emptyLine);
+  });
 }
-
 
 
 
