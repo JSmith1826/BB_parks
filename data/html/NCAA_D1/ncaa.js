@@ -105,7 +105,8 @@ async function initMap() {
   resetButton.addEventListener('click', function() {
     currentParkIndex = 0;
     let park = parks[currentParkIndex];
-    map.setCenter(new google.maps.LatLng(park.lat, park.lng));
+    map.setCenter(new google.maps.LatLng(initialCenter));
+    map.setZoom(initialZoom);
   });
 
   let nextButton = createButton('>');
@@ -757,13 +758,13 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
   const fieldTitle = document.getElementById("fieldTitle");
   fieldTitle.innerHTML = ""; // Clear the previous children
 
-  const fieldName = document.createElement("h3");
+  const fieldName = document.createElement("h2");
   fieldName.innerHTML = `${closestField.park_name}`;
   fieldTitle.appendChild(fieldName);
 
     // Add the city and state under the park name if there is one
     if (closestField.city && closestField.state) {
-      const cityState = document.createElement("h3");
+      const cityState = document.createElement("h4");
       cityState.innerHTML = `${closestField.city}, ${closestField.state}`;
       fieldTitle.appendChild(cityState);
     }
@@ -801,17 +802,13 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
     // Create the areaBlock
     const areaBlock = document.getElementById("areaBlock");
     areaBlock.innerHTML = "";
-
     const areaInfo = document.createElement("p");
     areaInfo.innerHTML = `Fair Territory `;
     areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / 43560).toFixed(2)));
     areaInfo.innerHTML += ` Acres<br> Foul Ground `;
-    // areaInfo.innerHTML += `Rank: ${closestField.field_area_rank}<br>`; // Rank of field area
     areaInfo.appendChild(wrapDigits(100*(closestField.foul_area_sqft / (closestField.fop_area_sqft + closestField.foul_area_sqft)).toFixed(1)));
     areaInfo.innerHTML += `<number>%</number>`;
-    // areaInfo.innerHTML += `Rank: ${closestField.ratio_rank}<br>`; // Rank of fair:foul ratio
     areaBlock.appendChild(areaInfo);
-
 
     function createGradientBars(field, hr_min, hr_max, unique_min, unique_max) {
       // Normalize the scores
@@ -925,6 +922,53 @@ const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
 const distanceBlock = document.getElementById("distanceBlock");        
 distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
 distanceBlock.appendChild(distanceContainer);
+let basePath = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/56f69ec2cf383fc397c707683a11b3564286b9e4/data/NCAA_D1/assets/graphs/';
+
+// Create a popup div
+let graphPopupDiv = document.createElement('div');
+graphPopupDiv.id = 'graph_popup';
+graphPopupDiv.style.display = 'none';
+graphPopupDiv.style.position = 'absolute';
+graphPopupDiv.style.zIndex = '1000'; // To ensure it's above other elements
+
+// Create a new image element
+let img = document.createElement('img');
+img.id = 'fieldImage';
+
+// Append the image to the popup div
+graphPopupDiv.appendChild(img);
+
+// Append the popup div to the body
+document.body.appendChild(graphPopupDiv);
+
+// Add the mouseover event to the gradient bars
+gradientBar1.addEventListener('mouseover', showImage);
+gradientBar2.addEventListener('mouseover', showImage);
+
+// Define the showImage function
+function showImage(event) {
+  let imgDiv = document.getElementById('graph_popup');
+  let img = document.getElementById('fieldImage');
+
+  img.src = basePath + closestField.graph;
+  
+  // Position the popup div at the mouse location
+  imgDiv.style.left = event.clientX + 'px';
+  imgDiv.style.top = event.clientY + 'px';
+
+  imgDiv.style.display = 'block';
+}
+
+// Add the mouseout event to the gradient bars to hide the image
+gradientBar1.addEventListener('mouseout', hideImage);
+gradientBar2.addEventListener('mouseout', hideImage);
+
+// Define the hideImage function
+function hideImage() {
+  let imgDiv = document.getElementById('graph_popup');
+  imgDiv.style.display = 'none';
+}
+
 
 return;
 }

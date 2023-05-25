@@ -19,34 +19,33 @@
 }
 
 .banner-container {
-    position: relative;
+  position: relative;
 }
 
 .banner {
-    position: absolute;
-    margin-top: 5px;
-    top: 13%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-
-    z-index: 1; 
-    background-image: url('https://raw.githubusercontent.com/JSmith1826/BB_parks/b9d6335dc494dbba20c84919c0bd1b2ed454db36/data/NCAA_D1/assests/conf_logos/title_image.png');
-    background-color: #f2f2f2; 
-    background-size: contain; 
-    background-repeat: no-repeat; 
-    background-position: center;
-    
-    width: 50vw; 
-    border: 5px solid blue;
-    box-shadow: 0 0 0 5px red; 
-    border-radius: 100px; 
-    box-sizing: border-box; 
-    padding: 5vw; /* Adjust padding relative to viewport width */
-    margin-bottom: 2.5vh; 
-    margin: 0 auto;
-    display: flex;
-    align-items: left; 
+  position: absolute;
+  margin-top: 5px;
+  top: 15%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-image: url('https://raw.githubusercontent.com/JSmith1826/BB_parks/b9d6335dc494dbba20c84919c0bd1b2ed454db36/data/NCAA_D1/assests/conf_logos/title_image.png');
+  background-color: #f2f2f2;
+  background-size: 25vw;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 30vw;
+  border: 5px solid blue;
+  box-shadow: 0 0 0 5px red;
+  border-radius: 100px;
+  box-sizing: border-box;
+  padding: 5vw; /* Adjust padding relative to viewport width */
+  margin-bottom: 2.5vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: left;
 }
+
 
 @media (max-width: 600px) {
     .banner {
