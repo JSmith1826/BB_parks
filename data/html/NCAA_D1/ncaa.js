@@ -12,6 +12,9 @@ let markers = [];
 let fenceMarkers = [];
 let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/images/icons/baseball/stadium_lt_blue.png";  
 let isInitial = true;
+let parks = [];
+let currentParkIndex = 0; // Add this line to your global variables
+
 
 // LOAD THE JSON WITH THE TOURNAMENT GAMES DATA
 const gamesUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/NCAA_D1/tournaments.json"; // schedule json file
@@ -29,15 +32,34 @@ window.onload = async function() {
 
   
 // const epsilon = 1e-9; // set epsilon to 1e-9 for use in the fenceDistance and intersectionPoint functions
+//////// TEST CODE ////////
 
 //fetch data from json file
 // Async function to fetch data from the JSON file
+// Asynchronous function to fetch data from the JSON file
 async function fetchData() {
-    console.log("Fetching data...");
-    const response = await fetch(jsonUrl);
-    const data = await response.json();
-    return data;
-  }
+  console.log("Fetching data...");
+  const response = await fetch(jsonUrl);
+  const data = await response.json();
+
+  parks = data.map(field => {
+      return {
+          lat: field.home_plate[1],
+          lng: field.home_plate[0]
+      };
+  });
+
+  console.log(parks);
+  return data;
+}
+
+
+// This ensures that fetchData is completed before calling initMap
+fetchData().then(data => {
+  parks = data.map(park => park.home_plate);
+  initMap();
+});
+
 
 //initialize map
 // Async function to initialize the map
@@ -68,54 +90,54 @@ async function initMap() {
   
   initSearchBox(map);
 
-  // Add reset button to the map
-  let resetButton = document.createElement('button');
-  resetButton.innerHTML = 'Reset Map';
-  resetButton.style.fontSize = '20px'; // make the text bigger
-  resetButton.style.fontFamily = 'Arial, sans-serif'; // use Arial font
-  resetButton.style.padding = '10px'; // add some padding around the text
-  resetButton.style.backgroundColor = '#007BFF'; // set background color to blue
-  resetButton.style.color = 'white'; // set text color to white
-  resetButton.style.border = 'none'; // remove border
-  resetButton.style.borderRadius = '5px'; // round the corners
-  // change the position
-  resetButton.addEventListener('click', function() {
-      map.setZoom(initialZoom);
-      map.setCenter(initialCenter);
+// Add previous and next buttons
+ // Set up buttons and their event handlers
+  let previousButton = createButton('<');
+  previousButton.addEventListener('click', function() {
+    if (currentParkIndex > 0) {
+      currentParkIndex--;
+      let park = parks[currentParkIndex];
+      map.setCenter(new google.maps.LatLng(park.lat, park.lng));
+    }
   });
 
-  document.body.appendChild(resetButton);
-  map.controls[google.maps.ControlPosition.LEFT_TOP].push(resetButton);
+  let resetButton = createButton('Reset Map');
+  resetButton.addEventListener('click', function() {
+    currentParkIndex = 0;
+    let park = parks[currentParkIndex];
+    map.setCenter(new google.maps.LatLng(park.lat, park.lng));
+  });
 
-  
-function filterByLevel(level) {
-    console.log("Filtering by level:", level);
-    level = Number(level);
-
-    // Iterate over each marker
-    for (let i = 0; i <= 4; i++) {
-        // Skip if the marker is undefined
-        if (!markers[i]) continue;
-
-        for (let j = 0; j < markers[i].length; j++) {
-            // Skip if the marker is undefined
-            if (!markers[i][j]) continue;
-
-            // Check if the marker has a setMap function
-            if (typeof markers[i][j].setMap !== 'function') {
-                console.log('Not a Marker object:', markers[i][j]);
-                continue;
-            }
-
-            if (i > level) {
-                markers[i][j].setMap(map);
-            } else {
-                markers[i][j].setMap(null);
-            }
-        }
+  let nextButton = createButton('>');
+  nextButton.addEventListener('click', function() {
+    if (currentParkIndex < parks.length - 1) {
+      currentParkIndex++;
+      let park = parks[currentParkIndex];
+      map.setCenter(new google.maps.LatLng(park.lat, park.lng));
     }
+  });
+
+  // Add the buttons to the map
+  let buttonContainer = document.createElement('div');
+  buttonContainer.appendChild(previousButton);
+  buttonContainer.appendChild(resetButton);
+  buttonContainer.appendChild(nextButton);
+  map.controls[google.maps.ControlPosition.LEFT_TOP].push(buttonContainer);
 }
+
+function createButton(text) {
+  let button = document.createElement('button');
+  button.innerHTML = text;
+  button.style.fontSize = '20px'; 
+  button.style.fontFamily = 'Arial, sans-serif';
+  button.style.padding = '10px'; 
+  button.style.backgroundColor = '#007BFF'; 
+  button.style.color = 'white';
+  button.style.border = 'none'; 
+  button.style.borderRadius = '5px'; 
+  return button;
 }
+
 document.addEventListener("DOMContentLoaded", initMap);
 
 function countFieldsByLevel(data) {
@@ -735,13 +757,13 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
   const fieldTitle = document.getElementById("fieldTitle");
   fieldTitle.innerHTML = ""; // Clear the previous children
 
-  const fieldName = document.createElement("h2");
+  const fieldName = document.createElement("h3");
   fieldName.innerHTML = `${closestField.park_name}`;
   fieldTitle.appendChild(fieldName);
 
     // Add the city and state under the park name if there is one
     if (closestField.city && closestField.state) {
-      const cityState = document.createElement("h4");
+      const cityState = document.createElement("h3");
       cityState.innerHTML = `${closestField.city}, ${closestField.state}`;
       fieldTitle.appendChild(cityState);
     }
@@ -767,8 +789,8 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
     // flexContainer.style.justifyContent = 'space-between'; // Add some space between the columns
 
       // Clear the fenceBlock and areaBlock containers
-const fenceBlock = document.getElementById("fenceBlock");
-fenceBlock.innerHTML = "";
+    const fenceBlock = document.getElementById("fenceBlock");
+    fenceBlock.innerHTML = "";
 
     const fenceInfo = document.createElement("p");
     fenceInfo.innerHTML = `<span style="font-size: 20px">Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft - Batter's View: ${closestField.field_cardinal_direction}</span><br>`;
@@ -864,7 +886,7 @@ fenceBlock.innerHTML = "";
   
 // Add labels
 [ctx1, ctx2].forEach(ctx => {
-  ctx.font = 'bold 14px Arial'; // Make the font bold
+  ctx.font = '14px Oswald'; // Make the font bold
   ctx.fillStyle = 'black';
 });
 
@@ -895,25 +917,33 @@ let [gradientBar1, gradientBar2] = createGradientBars(closestField, hr_min, hr_m
 let fieldInfo = document.getElementById('fieldInfo');
 fieldInfo.appendChild(gradientBar1);
 //  fieldInfo.appendChild(gradientBar2);
-  
-
-    
-    // Append the flexContainer to the parent element of fenceBlock and areaBlock
-    // document.getElementById('fieldInfo').appendChild(flexContainer);
-
-    // Continue with the rest of the code
-    const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
-    const distanceBlock = document.getElementById("distanceBlock");        
-    distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
-    distanceBlock.appendChild(distanceContainer);
 
 
-    
+fieldInfo.addEventListener('mouseover', function() {
+  // Prepare the data for the chart
+  let labels = ['MAX', 'MIN', 'AVG', 'SIZE', 'RATIO'];
+  let data = [closestField.max_distance_rank, closestField.min_distance_rank, closestField.avg_distance_rank, closestField.fop_area_per_rank, closestField.ratio_rank];
 
-    return;
+  let chartContainer = document.getElementById('chartContainer');
+  chartContainer.innerHTML = ''; // Clear the previous chart if any
 
+  // Show the graph
+  chartContainer.style.display = 'block';
+});
+
+
+fieldInfo.addEventListener('mouseout', function() {
+  let chartContainer = document.getElementById('chartContainer');
+  chartContainer.style.display = 'none';
+});
+
+const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
+const distanceBlock = document.getElementById("distanceBlock");        
+distanceBlock.innerHTML = ""; // Clear the previous distanceContainer if any
+distanceBlock.appendChild(distanceContainer);
+
+return;
 }
-
 function gameInfo(closestField) {
   console.log("Creating game info...");
 
@@ -927,12 +957,21 @@ function gameInfo(closestField) {
     .filter(game => game.conference === closestField.conference)
     .sort((a, b) => new Date(a.date) - new Date(b.date)); // Sort games by date
 
+
+    // if (filteredGames.length > 0) {
+    //   // Display conference name once at the top
+    //   const conferenceInfo = document.createElement("h1");
+    //   conferenceInfo.innerHTML = `${filteredGames[0].conference}`;
+    //   hostInfo.appendChild(conferenceInfo);
+    // } else {
+    //   console.log(`No games found for conference: ${closestField.conference}`);
+    // }
   // Add the conference logo
   if (closestField.filename && iconPathBase) {
     const conferenceLogo = document.createElement("img");
     conferenceLogo.src = iconPathBase + closestField.filename;
-    conferenceLogo.width = "300"; // Set a fixed width for the image
-    conferenceLogo.height = "300"; // Set a fixed height for the image
+    // conferenceLogo.width = "200"; // Set a fixed width for the image
+    // conferenceLogo.height = "200"; // Set a fixed height for the image
     conferenceLogo.onerror = function() {
       console.error('Error loading logo: ' + conferenceLogo.src);
     };
@@ -941,21 +980,14 @@ function gameInfo(closestField) {
     console.error('Missing icon path base or logo filename');
   }
 
-  if (filteredGames.length > 0) {
-    // Display conference info once at the top
-    const conferenceInfo = document.createElement("h3");
-    conferenceInfo.innerHTML = `${filteredGames[0].conference}`;
-    hostInfo.appendChild(conferenceInfo);
-  } else {
-    console.log(`No games found for conference: ${closestField.conference}`);
-  }
+
 
   // Loop through the filtered games
   let lastGameDate = '';
   filteredGames.forEach((game) => {
     if (game.date !== lastGameDate) {
-      const dateHeader = document.createElement("h4");
-      dateHeader.innerHTML = `Date: ${game.date}`;
+      const dateHeader = document.createElement("h6");
+      dateHeader.innerHTML = `<div align="left">${game.date}:</div>`;
       hostInfo.appendChild(dateHeader);
       lastGameDate = game.date;
     }
@@ -963,13 +995,14 @@ function gameInfo(closestField) {
     const timeInfo = document.createElement("p");
     timeInfo.style.color = "var(--ash-gray)";
     timeInfo.style.marginBottom = "0px";
-    timeInfo.innerHTML = `Game # ${game.game} at ${game.time}`;
+    timeInfo.innerHTML = `<div align="left">${game.time} - Game ${game.game}</div>`;
     hostInfo.appendChild(timeInfo);
 
     const gameInfo = document.createElement("p");
+    timeInfo.style.color = "var(--ash-gray)";
     const homeScore = game.home_score !== null ? game.home_score : '';
     const roadScore = game.road_score !== null ? game.road_score : '';
-    gameInfo.innerHTML += `<span style="font-size: 18px">${game.road_team} ${roadScore} vs ${game.home_team} ${homeScore}</span>`;
+    gameInfo.innerHTML += `<span style="font-size: 18px ">${game.road_team} <number>${roadScore}</number> vs ${game.home_team} <number>${homeScore}</number></span>`;
     hostInfo.appendChild(gameInfo);
 
     const emptyLine = document.createElement("br");

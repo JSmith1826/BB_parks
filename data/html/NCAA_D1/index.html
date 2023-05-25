@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REWORK</title>
     <link rel="stylesheet" href="ncaa_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script src="ncaa.js" defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA&libraries=geometry,places"></script>
 </head>
@@ -12,21 +14,28 @@
   <img src="https://github.com/JSmith1826/BB_parks/blob/b9d6335dc494dbba20c84919c0bd1b2ed454db36/data/html/mhsaa/data/images/background1.png" alt="banner">
   
 
-    <div class="container">
-      <div class="banner"></div>
-        <div id="map"></div>
-        <div id="mapInfo">
-            <div id="hostInfo"></div>
-            <div id="distanceBlock">Click Around The Ballpark to Measure HR Distances</div>
+  <div class="container">
+    <div class="banner"></div>
+    <div id="map"></div>
+    <div id="mapInfo">
+        <div id="hostInfo"></div>
+        <div id="distanceBlock">Click Around The Ballpark to Measure HR Distances</div>
 
-            <div class="scoreboard">
-                <div id="fieldInfo">
-                    <div id="fieldTitle"></div>
-                    <div id="fenceBlock"></div>
-                    <div id="areaBlock"></div>
-                </div>
+        <div class="graph-container">
+            <!-- The chart will be created here -->
+            <canvas id="chartContainer"></canvas>
+        </div>
+        
+
+        <div class="scoreboard">
+            <div id="fieldInfo">
+                <div id="fieldTitle"></div>
+                <div id="fenceBlock"></div>
+                <div id="areaBlock"></div>
             </div>
         </div>
     </div>
+</div>
+
 </body>
 </html>

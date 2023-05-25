@@ -4,7 +4,7 @@ ACC Tournament,"- Game 2 (Durham, NC)",05/23 3:30 PMFINAL,Georgia Tech,5,North C
 ACC Tournament,"- Game 3 (Durham, NC)",05/23 7:00 PMFINAL (11),NC State,8,Duke,7
 ACC Tournament,"- Game 4 (Durham, NC)",05/24 11:00 AMFINAL,Pittsburgh,9,Notre Dame,5
 ACC Tournament,"- Game 5 (Durham, NC)",05/24 3:00 PMFINAL,Virginia,15,Georgia Tech,1
-ACC Tournament,"- Game 6 (Durham, NC)",05/24 7:00 PM,Virginia Tech,,Clemson,
+ACC Tournament,"- Game 6 (Durham, NC)",05/24 7:00 PMFINAL,Clemson,14,Virginia Tech,5
 ACC Tournament,"- Game 7 (Durham, NC)",05/25 11:00 AM,Pittsburgh,,Wake Forest,
 ACC Tournament,"- Game 8 (Durham, NC)",05/25 3:00 PM,North Carolina,,Virginia,
 ACC Tournament,"- Game 9 (Durham, NC)",05/25 7:00 PM,NC State,,Miami,
@@ -19,8 +19,8 @@ American Athletic Tournament,"- Game 1 (Clearwater, FL)",05/23 9:00 AMFINAL,Cinc
 American Athletic Tournament,"- Game 2 (Clearwater, FL)",05/23 12:30 PMFINAL (11),South Florida,12,East Carolina,11
 American Athletic Tournament,"- Game 3 (Clearwater, FL)",05/23 5:30 PMFINAL,Tulane,10,Houston,8
 American Athletic Tournament,"- Game 4 (Clearwater, FL)",05/23 7:30 PMFINAL,Memphis,10,Wichita State,6
-American Athletic Tournament,"- Game 5 (Clearwater, FL)",05/24 3:00 PMTop 4,Cincinnati,6,East Carolina,5
-American Athletic Tournament,"- Game 6 (Clearwater, FL)",05/24 6:30 PM,Wichita State,,Houston,
+American Athletic Tournament,"- Game 5 (Clearwater, FL)",05/24 3:00 PMFINAL,Cincinnati,6,East Carolina,9
+American Athletic Tournament,"- Game 6 (Clearwater, FL)",05/25 9:00 AM,Wichita State,,Houston,
 American Athletic Tournament,"- Game 7 (Clearwater, FL)",05/25 1:00 PM,South Florida,,UCF,
 American Athletic Tournament,"- Game 8 (Clearwater, FL)",05/25 4:30 PM,Tulane,,Memphis,
 Atlantic 10 Tournament,"A10 Tournament - Game 1 (Richmond, VA)",05/23 11:00 AMFINAL,Richmond,3,Saint Louis,6
@@ -28,14 +28,16 @@ Atlantic 10 Tournament,"A10 Tournament - Game 2 (Richmond, VA)",05/23 3:00 PMFIN
 Atlantic 10 Tournament,"A10 Tournament - Game 3 (Richmond, VA)",05/23 7:00 PMFINAL (11),George Mason,5,Dayton,4
 Atlantic 10 Tournament,"A10 Tournament - Game 4 (Richmond, VA)",05/24 11:00 AMFINAL,Saint Louis,23,Saint Joseph's,8
 Atlantic 10 Tournament,"A10 Tournament - Game 5 (Richmond, VA)",05/24 3:00 PMFINAL,Davidson,11,George Mason,15
-Atlantic 10 Tournament,"A10 Tournament - Game 6 (Richmond, VA)",05/24 7:00 PM,Rhode Island,,Richmond,
-Atlantic 10 Tournament,"A10 Tournament - Game 7 (Richmond, VA)",05/25 11:00 AM,TBA,,Dayton,
+Atlantic 10 Tournament,"A10 Tournament - Game 6 (Richmond, VA)",05/24 7:00 PMFINAL,Rhode Island,3,Richmond,13
+Atlantic 10 Tournament,"A10 Tournament - Game 7 (Richmond, VA)",05/25 11:00 AM,Dayton,,Davidson,
+Atlantic 10 Tournament,"A10 Tournament - Game 8 (Richmond, VA)",05/25 3:00 PM,Richmond,,Saint Joseph's,
+Atlantic 10 Tournament,"A10 Tournament - Game 10 (Richmond, VA)",05/26 11:00 AM,George Mason,,Saint Louis,
 Atlantic Sun Tournament,"ASUN Tournament - Game 1 (DeLand, FL)",05/23 10:00 AMFINAL,Liberty,12,Lipscomb,11
 Atlantic Sun Tournament,"ASUN Tournament - Game 2 (DeLand, FL)",05/23 2:30 PMFINAL,Jacksonville,0,Florida Gulf Coast,7
 Atlantic Sun Tournament,"ASUN Tournament - Game 3 (DeLand, FL)",05/23 7:00 PMFINAL,Eastern Kentucky,3,Stetson,8
 Atlantic Sun Tournament,"ASUN Tournament - Game 4 (DeLand, FL)",05/24 10:00 AMFINAL,Jacksonville,8,Liberty,0
 Atlantic Sun Tournament,"ASUN Tournament - Game 5 (DeLand, FL)",05/24 3:30 PMFINAL,Jacksonville State,6,Stetson,1
-Atlantic Sun Tournament,"ASUN Tournament - Game 6 (DeLand, FL)",05/24 7:00 PM,Austin Peay,,Eastern Kentucky,
+Atlantic Sun Tournament,"ASUN Tournament - Game 6 (DeLand, FL)",05/24 7:00 PMFINAL,Austin Peay,2,Eastern Kentucky,3
 Atlantic Sun Tournament,"ASUN Tournament - Game 7 (DeLand, FL)",05/25 10:00 AM,Florida Gulf Coast,,Lipscomb,
 Atlantic Sun Tournament,"ASUN Tournament - Game 8 (DeLand, FL)",05/25 2:30 PM,Austin Peay,,Stetson,
 Atlantic Sun Tournament,"ASUN Tournament - Game 9 (DeLand, FL)",05/25 7:00 PM,Jacksonville State,,Eastern Kentucky,
@@ -44,19 +46,21 @@ Atlantic Sun Tournament,"ASUN Tournament - Game 11 (DeLand, FL)",05/26 2:30 PM,L
 Atlantic Sun Tournament,"ASUN Tournament - Game 12 (DeLand, FL)",05/26 7:00 PM,Austin Peay,,Jacksonville State,
 Big 12 Tournament,"- Game 1 (Arlington, TX)",05/24 10:00 AMFINAL,Kansas State,3,TCU,16
 Big 12 Tournament,"- Game 2 (Arlington, TX)",05/24 1:30 PMFINAL,Kansas,6,Texas,3
-Big 12 Tournament,"- Game 3 (Arlington, TX)",05/24 5:00 PMBottom 9,Oklahoma,9,Oklahoma State,5
-Big 12 Tournament,"- Game 4 (Arlington, TX)",05/24 8:30 PM,Texas Tech,,West Virginia,
-Big 12 Tournament,"- Game 5 (Arlington, TX)",05/25 10:00 AM,TBA,,Kansas State,
-Big 12 Tournament,"- Game 7 (Arlington, TX)",05/25 5:00 PM,TBA,,TCU,
+Big 12 Tournament,"- Game 3 (Arlington, TX)",05/24 5:00 PMFINAL,Oklahoma,9,Oklahoma State,5
+Big 12 Tournament,"- Game 4 (Arlington, TX)",05/24 8:30 PMTop 8,Texas Tech,6,West Virginia,2
+Big 12 Tournament,"- Game 5 (Arlington, TX)",05/25 10:00 AM,Kansas State,,Texas,
+Big 12 Tournament,"- Game 6 (Arlington, TX)",05/25 1:30 PM,TBA,,Oklahoma State,
+Big 12 Tournament,"- Game 7 (Arlington, TX)",05/25 5:00 PM,Kansas,,TCU,
+Big 12 Tournament,"- Game 8 (Arlington, TX)",05/25 8:30 PM,TBA,,Oklahoma,
 Big East Tournament,"- Game 1 (Mason, OH)",05/24 2:30 PMFINAL,Georgetown,4,Connecticut,5
-Big East Tournament,"- Game 2 (Mason, OH)",05/24 6:30 PM,Seton Hall,0,Xavier,0
+Big East Tournament,"- Game 2 (Mason, OH)",05/24 6:30 PMFINAL,Seton Hall,5,Xavier,6
 Big South Tournament,"- Game 1 (High Point, NC)",05/25 1:00 PM,Gardner-Webb,,Campbell,
 Big South Tournament,"- Game 2 (High Point, NC)",05/25 5:00 PM,Winthrop,,USC Upstate,
 Big Ten Tournament,"Big 10 Tournament - Game 1 (Omaha, NE)",05/23 11:00 AMFINAL,Michigan,3,Iowa,13
 Big Ten Tournament,"Big 10 Tournament - Game 2 (Omaha, NE)",05/23 3:00 PMFINAL,Illinois,3,Indiana,4
 Big Ten Tournament,"Big 10 Tournament - Game 3 (Omaha, NE)",05/23 6:45 PMFINAL,Michigan State,2,Maryland,3
 Big Ten Tournament,"Big 10 Tournament - Game 4 (Omaha, NE)",05/24 3:00 PMFINAL,Rutgers,6,Nebraska,7
-Big Ten Tournament,"Big 10 Tournament - Game 5 (Omaha, NE)",05/24 8:00 PM,Illinois,,Michigan,
+Big Ten Tournament,"Big 10 Tournament - Game 5 (Omaha, NE)",05/24 8:00 PMFINAL,Illinois,3,Michigan,5
 Big Ten Tournament,"Big 10 Tournament - Game 7 (Omaha, NE)",05/25 3:00 PM,TBA,,Iowa,
 Colonial Tournament,"CAA Tournament - Game 1 (Mt. Pleasant, SC)",05/24 12:00 PMFINAL,Delaware,7,College of Charleston,4
 Colonial Tournament,"CAA Tournament - Game 2 (Mt. Pleasant, SC)",05/24 4:00 PMFINAL,William & Mary,0,Northeastern,6
@@ -65,7 +69,7 @@ Colonial Tournament,"CAA Tournament - Game 5 (Mt. Pleasant, SC)",05/25 7:00 PM,T
 Conference USA Tournament,"C-USA Tournament - Game 1 (Houston, TX)",05/24 10:00 AMFINAL,Louisiana Tech,13,Charlotte,8
 Conference USA Tournament,"C-USA Tournament - Game 2 (Houston, TX)",05/24 1:30 PMFINAL,Middle Tennessee,5,UTSA,1
 Conference USA Tournament,"C-USA Tournament - Game 3 (Houston, TX)",05/24 5:00 PMFINAL,Rice,2,Dallas Baptist,13
-Conference USA Tournament,"C-USA Tournament - Game 4 (Houston, TX)",05/24 8:30 PM,Florida Atlantic,,Western Kentucky,
+Conference USA Tournament,"C-USA Tournament - Game 4 (Houston, TX)",05/24 8:30 PMFINAL,Florida Atlantic,9,Western Kentucky,10
 Horizon Tournament,"Horizon League Tournament - Game 1 (Greene County, OH)",05/24 12:00 PMFINAL,Milwaukee,12,Youngstown State,3
 Horizon Tournament,"Horizon League Tournament - Game 2 (Greene County, OH)",05/24 4:00 PMFINAL,Purdue Fort Wayne,3,Northern Kentucky,6
 Horizon Tournament,"Horizon League Tournament - Game 3 (Greene County, OH)",05/25 11:00 AM,TBA,,Wright State,
@@ -78,30 +82,31 @@ Ivy League Tournament,"- Game 5 (Philadelphia, PA)",05/21 4:00 PMFINAL,Harvard,3
 Ivy League Tournament,"- Game 6 (Philadelphia, PA)",05/22 11:00 AMFINAL,Pennsylvania,16,Princeton,3
 Metro Atlantic Tournament,"MAAC Tournament - Game 1 (Pomona, NY)",05/24 11:00 AMFINAL,Manhattan,17,Canisius,3
 Metro Atlantic Tournament,"MAAC Tournament - Game 2 (Pomona, NY)",05/24 3:00 PMFINAL,Niagara,2,Quinnipiac,13
-Metro Atlantic Tournament,"MAAC Tournament - Game 3 (Pomona, NY)",05/24 7:00 PM,TBA,,Canisius,
-Metro Atlantic Tournament,"MAAC Tournament - Game 4 (Pomona, NY)",05/25 11:00 AM,TBA,,Fairfield,
-Metro Atlantic Tournament,"MAAC Tournament - Game 5 (Pomona, NY)",05/25 3:00 PM,TBA,,Rider,
+Metro Atlantic Tournament,"MAAC Tournament - Game 3 (Pomona, NY)",05/24 7:00 PMFINAL,Niagara,2,Canisius,6
+Metro Atlantic Tournament,"MAAC Tournament - Game 4 (Pomona, NY)",05/25 11:00 AM,Manhattan,,Fairfield,
+Metro Atlantic Tournament,"MAAC Tournament - Game 5 (Pomona, NY)",05/25 3:00 PM,Quinnipiac,,Rider,
+Metro Atlantic Tournament,"MAAC Tournament - Game 6 (Pomona, NY)",05/25 7:00 PM,TBA,,Canisius,
 Mid-American Tournament,"MAC Tournament - Game 1 (Portage County, OH)",05/24 12:30 PMFINAL,Western Michigan,4,Kent State,6
-Mid-American Tournament,"MAC Tournament - Game 2 (Portage County, OH)",05/24 6:00 PMTop 2,Ball State,3,Central Michigan,0
+Mid-American Tournament,"MAC Tournament - Game 2 (Portage County, OH)",05/24 6:00 PMFINAL,Ball State,7,Central Michigan,6
 Missouri Valley Tournament,"- Game 1 (Terre Haute, IN)",05/23 2:30 PMFINAL,Belmont,5,Illinois-Chicago,10
 Missouri Valley Tournament,"- Game 2 (Terre Haute, IN)",05/23 6:00 PMFINAL,Valparaiso,6,Murray State,11
 Missouri Valley Tournament,"- Game 3 (Terre Haute, IN)",05/24 9:00 AMFINAL,Evansville,7,Southern Illinois,3
 Missouri Valley Tournament,"- Game 4 (Terre Haute, IN)",05/24 12:30 PMFINAL,Valparaiso,9,Belmont,10
 Missouri Valley Tournament,"- Game 5 (Terre Haute, IN)",05/24 4:00 PMFINAL,Illinois-Chicago,5,Indiana State,8
-Missouri Valley Tournament,"- Game 6 (Terre Haute, IN)",05/24 7:30 PM,Murray State,,Missouri State,
+Missouri Valley Tournament,"- Game 6 (Terre Haute, IN)",05/24 7:30 PMFINAL,Murray State,6,Missouri State,1
 Missouri Valley Tournament,"- Game 7 (Terre Haute, IN)",05/25 9:00 AM,TBA,,Southern Illinois,
 Missouri Valley Tournament,"- Game 10 (Terre Haute, IN)",05/25 7:30 PM,TBA,,Evansville,
 Mountain West Tournament,"MW Tournament - Game 1 (Fresno, CA)",05/25 4:30 PM,Air Force,,San Diego State,
 Mountain West Tournament,"MW Tournament - Game 2 (Fresno, CA)",05/25 9:00 PM,Fresno State,,San Jose State,
 Northeast Tournament,"NEC Tournament - Game 1 (Wappingers Falls, NY)",05/24 11:00 AMFINAL,UMES,0,Fairleigh Dickinson,2
 Northeast Tournament,"NEC Tournament - Game 2 (Wappingers Falls, NY)",05/24 3:00 PMFINAL,Long Island,2,Sacred Heart,23
-Northeast Tournament,"NEC Tournament - Game 3 (Wappingers Falls, NY)",05/24 7:00 PM,UMES,,TBA,
+Northeast Tournament,"NEC Tournament - Game 3 (Wappingers Falls, NY)",05/24 7:00 PMFINAL,UMES,2,Long Island,8
 Northeast Tournament,"NEC Tournament - Game 4 (Wappingers Falls, NY)",05/25 11:00 AM,TBA,,Central Connecticut,
 Northeast Tournament,"NEC Tournament - Game 5 (Wappingers Falls, NY)",05/25 3:00 PM,TBA,,Wagner,
 Ohio Valley Tournament,"OVC Tournament - Game 1 (Marion, IL)",05/24 10:00 AMFINAL,Southern Indiana,4,Eastern Illinois,5
 Ohio Valley Tournament,"OVC Tournament - Game 2 (Marion, IL)",05/24 1:30 PMFINAL,SIU Edwardsville,0,Tennessee Tech,4
 Ohio Valley Tournament,"OVC Tournament - Game 3 (Marion, IL)",05/24 5:00 PMFINAL,Eastern Illinois,7,Southeast Missouri State,6
-Ohio Valley Tournament,"OVC Tournament - Game 4 (Marion, IL)",05/24 8:30 PM,Tennessee Tech,,Tennessee-Martin,
+Ohio Valley Tournament,"OVC Tournament - Game 4 (Marion, IL)",05/24 8:30 PMFINAL,Tennessee Tech,7,Tennessee-Martin,3
 Ohio Valley Tournament,"OVC Tournament - Game 5 (Marion, IL)",05/25 12:00 PM,TBA,,Morehead State,
 Ohio Valley Tournament,"OVC Tournament - Game 6 (Marion, IL)",05/25 4:00 PM,TBA,,Little Rock,
 Pac-12 Tournament,"- Game 1 (Scottsdale, AZ)",05/23 1:00 PMFINAL,Arizona,12,Arizona State,3
@@ -109,7 +114,7 @@ Pac-12 Tournament,"- Game 2 (Scottsdale, AZ)",05/23 5:30 PMFINAL,UCLA,4,Southern
 Pac-12 Tournament,"- Game 3 (Scottsdale, AZ)",05/23 10:00 PMFINAL,California,2,Oregon,3
 Pac-12 Tournament,"- Game 4 (Scottsdale, AZ)",05/24 1:00 PMFINAL,Oregon State,12,Arizona,13
 Pac-12 Tournament,"- Game 5 (Scottsdale, AZ)",05/24 5:30 PMFINAL,Washington,4,UCLA,17
-Pac-12 Tournament,"- Game 6 (Scottsdale, AZ)",05/24 10:00 PM,Stanford,,California,
+Pac-12 Tournament,"- Game 6 (Scottsdale, AZ)",05/24 10:00 PMTop 6,Stanford,8,California,5
 Pac-12 Tournament,"- Game 7 (Scottsdale, AZ)",05/25 1:00 PM,Arizona State,,Oregon State,
 Pac-12 Tournament,"- Game 8 (Scottsdale, AZ)",05/25 5:30 PM,Southern California,,Washington,
 Pac-12 Tournament,"- Game 9 (Scottsdale, AZ)",05/25 10:00 PM,Oregon,,Stanford,
@@ -126,30 +131,34 @@ SEC Tournament,"- Game 3 (Hoover, AL)",05/23 6:45 PMFINAL,Alabama,4,Kentucky,0
 SEC Tournament,"- Game 4 (Hoover, AL)",05/23 9:00 PMFINAL,Missouri,4,Auburn,10
 SEC Tournament,"- Game 5 (Hoover, AL)",05/24 10:30 AMFINAL,South Carolina,3,LSU,10
 SEC Tournament,"- Game 6 (Hoover, AL)",05/24 2:00 PMFINAL (11),Texas A&M,5,Arkansas,6
-SEC Tournament,"- Game 7 (Hoover, AL)",05/24 6:45 PM,Alabama,0,Florida,0
-SEC Tournament,"- Game 8 (Hoover, AL)",05/24 9:00 PM,Auburn,,Vanderbilt,
+SEC Tournament,"- Game 7 (Hoover, AL)",05/24 6:45 PMFINAL (11),Alabama,6,Florida,7
+SEC Tournament,"- Game 8 (Hoover, AL)",05/24 9:00 PMBottom 5,Auburn,2,Vanderbilt,2
+SEC Tournament,"- Game 9 (Hoover, AL)",05/25 10:30 AM,Texas A&M,,South Carolina,
+SEC Tournament,"- Game 10 (Hoover, AL)",05/25 2:00 PM,Alabama,,TBA,
+SEC Tournament,"- Game 11 (Hoover, AL)",05/25 5:30 PM,LSU,,Arkansas,
+SEC Tournament,"- Game 12 (Hoover, AL)",05/25 9:00 PM,TBA,,Florida,
 SoCon Tournament,"- Game 1 (Greenville, SC)",05/24 3:00 PMFINAL,The Citadel,5,VMI,2
-SoCon Tournament,"- Game 2 (Greenville, SC)",05/24 7:00 PM,Western Carolina,,UNC Greensboro,
+SoCon Tournament,"- Game 2 (Greenville, SC)",05/24 7:00 PMFINAL,Western Carolina,3,UNC Greensboro,4
 SoCon Tournament,"- Game 3 (Greenville, SC)",05/25 3:00 PM,TBA,,East Tennessee State,
 SoCon Tournament,"- Game 4 (Greenville, SC)",05/25 7:00 PM,TBA,,Wofford,
 SoCon Tournament,"- Game 5 (Greenville, SC)",05/26 9:00 AM,TBA,,Samford,
 SoCon Tournament,"- Game 6 (Greenville, SC)",05/26 12:30 PM,TBA,,Mercer,
 Southland Tournament,"- Game 1 (Lake Charles, LA)",05/23 7:00 PMFINAL,Texas A&M-Corpus Christi,0,McNeese,4
 Southland Tournament,"- Game 3 (Lake Charles, LA)",05/24 12:00 PMFINAL,Northwestern State,2,Incarnate Word,1
-Southland Tournament,"- Game 4 (Lake Charles, LA)",05/24 3:30 PMTop 9,New Orleans,4,Lamar,1
-Southland Tournament,"- Game 2 (Lake Charles, LA)",05/24 7:00 PM,McNeese,,Nicholls,
+Southland Tournament,"- Game 4 (Lake Charles, LA)",05/24 3:30 PMFINAL,New Orleans,4,Lamar,1
+Southland Tournament,"- Game 2 (Lake Charles, LA)",05/24 7:00 PMBottom 11,McNeese,2,Nicholls,2
 Southwestern Athletic Tournament,"SWAC Tournament - Game 1 (Atlanta, GA)",05/24 9:00 AMFINAL,Florida A&M,9,Texas Southern,1
 Southwestern Athletic Tournament,"SWAC Tournament - Game 2 (Atlanta, GA)",05/24 12:00 PMFINAL,Southern,4,Bethune-Cookman,2
 Southwestern Athletic Tournament,"SWAC Tournament - Game 3 (Atlanta, GA)",05/24 3:00 PMFINAL,Prairie View,1,Alabama State,11
-Southwestern Athletic Tournament,"SWAC Tournament - Game 4 (Atlanta, GA)",05/24 6:00 PM,Jackson State,0,Grambling,0
+Southwestern Athletic Tournament,"SWAC Tournament - Game 4 (Atlanta, GA)",05/24 6:00 PMFINAL,Jackson State,7,Grambling,8
 Summit Tournament,"Summit League Tournament - Game 1 (Fargo, ND)",05/24 1:05 PMFINAL,Omaha,2,Oral Roberts,9
-Summit Tournament,"Summit League Tournament - Game 2 (Fargo, ND)",05/24 7:05 PM,South Dakota State,,North Dakota State,
+Summit Tournament,"Summit League Tournament - Game 2 (Fargo, ND)",05/24 7:05 PMFINAL,South Dakota State,17,North Dakota State,4
 Sun Belt Tournament,"- Game 1 (Montgomery, AL)",05/23 4:00 PMFINAL,Old Dominion,1,James Madison,2
 Sun Belt Tournament,"- Game 2 (Montgomery, AL)",05/23 7:30 PMFINAL,Georgia Southern,5,Georgia State,8
 Sun Belt Tournament,"- Game 3 (Montgomery, AL)",05/24 10:00 AMFINAL (10),Appalachian State,9,Troy,10
 Sun Belt Tournament,"- Game 4 (Montgomery, AL)",05/24 2:30 PMFINAL,James Madison,1,Southern Miss,7
 Sun Belt Tournament,"- Game 5 (Montgomery, AL)",05/24 5:00 PMFINAL,Georgia State,4,Coastal Carolina,5
-Sun Belt Tournament,"- Game 6 (Montgomery, AL)",05/24 8:30 PM,Texas State,,Louisiana,
+Sun Belt Tournament,"- Game 6 (Montgomery, AL)",05/24 8:30 PMFINAL,Texas State,1,Louisiana,6
 West Coast Tournament,"- Game 1 (Las Vegas, NV)",05/24 6:00 PMFINAL,Gonzaga,2,Santa Clara,4
 West Coast Tournament,"- Game 2 (Las Vegas, NV)",05/24 10:20 PM,Saint Mary's,,San Diego,
 West Coast Tournament,"- Game 3 (Las Vegas, NV)",05/25 6:00 PM,TBA,,Loyola Marymount,
@@ -158,5 +167,5 @@ Western Athletic Tournament,"WAC Tournament - Game 1 (Mesa, AZ)",05/23 4:00 PMFI
 Western Athletic Tournament,"WAC Tournament - Game 2 (Mesa, AZ)",05/23 7:00 PMFINAL,UT Rio Grande Valley,14,UT Arlington,4
 Western Athletic Tournament,"WAC Tournament - Game 3 (Mesa, AZ)",05/24 12:00 PMFINAL,Seattle,6,Utah Valley,16
 Western Athletic Tournament,"WAC Tournament - Game 4 (Mesa, AZ)",05/24 3:00 PMFINAL,UT Arlington,8,California Baptist,4
-Western Athletic Tournament,"WAC Tournament - Game 5 (Mesa, AZ)",05/24 7:00 PM,Abilene Christian,,Sam Houston,
-Western Athletic Tournament,"WAC Tournament - Game 6 (Mesa, AZ)",05/24 10:00 PM,UT Rio Grande Valley,,Grand Canyon,
+Western Athletic Tournament,"WAC Tournament - Game 5 (Mesa, AZ)",05/24 7:00 PMFINAL (11),Abilene Christian,7,Sam Houston,11
+Western Athletic Tournament,"WAC Tournament - Game 6 (Mesa, AZ)",05/24 10:00 PM,UT Rio Grande Valley,0,Grand Canyon,0
