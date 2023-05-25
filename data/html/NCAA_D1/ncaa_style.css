@@ -6,20 +6,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
 
-:root {
-  --dynamic-bg-color: #627454;
-  --dynamic-text-color: #f8e2e2;
-  --white: #f8e2e2;
-  --ash-gray: #e0e6dc;
-  --ash-gray-2: #BCC4B4;
-  --ebony: #4D5D42;
-  --reseda-green: #627454;
-  --reseda-green-2: #748667;
-  --black: #000000;
+#map {
+  position: relative;
+  z-index: 0;
+  width: 95vw;
+  height: calc(100vh - 60px); /* Adjusted height to exclude the search bar height */
+  margin: 0 auto;
+  margin-top: 2.5vh;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* Prevent scrollbar from appearing */
 }
 
-.banner-container {
-  position: relative;
+@media (max-width: 1024px) {
+  #map {
+    height: calc(90vh - 60px); /* Adjusted height for smaller screens */
+    width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #map {
+    height: calc(90vh - 60px); /* Adjusted height for smaller screens */
+    width: 90vw;
+  }
+}
+
+#fieldInfo {
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+  left: 2%;
+  width: 20vw;
+  min-height: 40vh;
+  background-color: var(--dynamic-bg-color);
+  color: var(--dynamic-text-color);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 5px var(--dynamic-text-color);
+  overflow-y: auto; /* Add vertical scrollbar when content exceeds container height */
+}
+
+#hostInfo {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  align-items: center;
+  text-align: center;
+  background-color: var(--dynamic-bg-color);
+  color: var(--black);
+  border-radius: 10px;
+  line-height: 1.5;
+  padding: 10px 20px;
+  width: 300px;
+  min-height: 200px;
+  max-height: 80vh;
+  display: none;
+  overflow-y: auto; /* Add vertical scrollbar when content exceeds container height */
+  box-shadow: inset 0 0 0 5px var(--dynamic-text-color);
 }
 
 .banner {
@@ -31,7 +76,7 @@
   z-index: 1;
   background-image: url('https://raw.githubusercontent.com/JSmith1826/BB_parks/b9d6335dc494dbba20c84919c0bd1b2ed454db36/data/NCAA_D1/assests/conf_logos/title_image.png');
   background-color: #f2f2f2;
-  background-size: 25vw;
+  background-size: 25vw auto; /* Adjusted background-size to maintain aspect ratio */
   background-repeat: no-repeat;
   background-position: left;
   width: 30vw;
@@ -39,12 +84,39 @@
   box-shadow: 0 0 0 5px red;
   border-radius: 100px;
   box-sizing: border-box;
-  padding: 5vw; /* Adjust padding relative to viewport width */
+  padding: 5vw;
   margin-bottom: 2.5vh;
   margin: 0 auto;
   display: flex;
   align-items: left;
 }
+
+@media (max-width: 600px) {
+  .banner {
+    width: 60vw;
+    height: 10vh;
+    padding: 1vw;
+  }
+}
+
+@media (max-width: 600px) {
+  #fieldInfo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    min-height: 40vh;
+  }
+
+  #hostInfo {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 80vw;
+    min-height: 40vh;
+  }
+}
+
 
 
 @media (max-width: 600px) {
