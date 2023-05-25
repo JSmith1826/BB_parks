@@ -783,36 +783,20 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
     document.documentElement.style.setProperty('--dynamic-bg-color', dynamicBgColor);
     document.documentElement.style.setProperty('--dynamic-text-color', dynamicTextColor);
 
-    // Create the flex container
-    // const flexContainer = document.createElement('div');
-    // flexContainer.style.display = 'flex';
-    // flexContainer.style.justifyContent = 'space-between'; // Add some space between the columns
-
       // Clear the fenceBlock and areaBlock containers
     const fenceBlock = document.getElementById("fenceBlock");
     fenceBlock.innerHTML = "";
 
     const fenceInfo = document.createElement("p");
     fenceInfo.innerHTML = `<span style="font-size: 20px">Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft - Batter's View: ${closestField.field_cardinal_direction}</span><br>`;
-
-
-
     fenceInfo.innerHTML += `<br>Fence Dimensions<br><br>`;
-
     fenceInfo.appendChild(wrapDigits(closestField.min_distance));
     fenceInfo.innerHTML += `<number> |  </number>`;
     fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
-
     fenceInfo.innerHTML += `<number>  |  </number>`;
     fenceInfo.appendChild(wrapDigits(closestField.max_distance));
-
     fenceInfo.innerHTML += `<br>MINIMUM   <number>|</number>   AVERAGE    <number>|</number>   MAXIMUM<br>`;
-
     fenceBlock.appendChild(fenceInfo);
-
-
-    // Add the fenceBlock to the flex container
-    // flexContainer.appendChild(fenceBlock);
 
     // Create the areaBlock
     const areaBlock = document.getElementById("areaBlock");
