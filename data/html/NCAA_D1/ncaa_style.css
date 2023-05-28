@@ -91,31 +91,7 @@
   align-items: left;
 }
 
-@media (max-width: 600px) {
-  .banner {
-    width: 60vw;
-    height: 10vh;
-    padding: 1vw;
-  }
-}
 
-@media (max-width: 600px) {
-  #fieldInfo {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80vw;
-    min-height: 40vh;
-  }
-
-  #hostInfo {
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    width: 80vw;
-    min-height: 40vh;
-  }
-}
 
 
 
