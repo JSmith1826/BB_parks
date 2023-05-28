@@ -1,0 +1,246 @@
+Summary of the Task:
+
+The task involves collecting detailed information about specific college baseball fields for a web app database. For each college baseball team provided, the following data points are needed:
+
+Stadium Name
+Stadium Opening Date
+Stadium capacity 
+Former Names of the Stadium
+Major Renovation Projects
+Street Address of the Stadium
+Geographic Coordinates of the Stadium
+The playing surface of the field (natural grass, artifical turf, ect)
+A Brief Paragraph Describing the Stadium
+The information should be presented in a CSV-friendly format, allowing for easy copy-pasting into a database. Wikipedia will often be the most reliable and consistant source. The assistant will use their browser tool to find and collect the required information.
+
+Kentucky
+
+
+College Stadium Name Build Date Former Names Major Renovations Street Address Coordinates Description
+Wake Forest David F. Couch Ballpark 1956 Ernie Shore Field, Gene Hooks Field at Wake Forest Baseball Park 1993, 20161 401 Deacon Boulevard, Winston-Salem, North Carolina1 36.12972°N 80.25222°W1 The ballpark was originally named after major league pitcher and North Carolina native Ernie Shore. It has undergone several renovations to modernize the facility, and was transferred to Wake Forest University in 2009. It was renamed David F. Couch Ballpark in 2016 following a significant donation from the former baseball player. A $14 million Player Development Center was added to the site in 20171
+Florida Condron Family Ballpark at Alfred A. McKethan Field 2021 Florida Ballpark at Alfred A. McKethan Field2 N/A 2800 Citrus Road, Gainesville, Florida2 29.636374°N 82.363786°W2 The current stadium facility seats approximately 7,000 fans and includes a press box, concession stands, locker rooms, and coaching staff offices. It was initially named Florida Ballpark, but was rechristened "Condron Family Ballpark" in 2022. The stadium is lighted for night games and features a natural grass and clay playing surface with a synthetic turf backstop2
+
+
+Stanford
+
+Stadium Name: Klein Field at Sunken Diamond
+Stadium Build Date: 1931
+Former Names of the Stadium: Sunken Diamond
+Major Renovation Projects: Renovated in 2006 with an improved playing surface, new fences, an upgraded scoreboard, and new batting cages.
+Street Address of the Stadium: 641 Campus Drive, Stanford, CA 94305, USA
+Geographic Coordinates of the Stadium: 37°25′57″N 122°9′33″W
+The playing surface of the field: Grass
+A Brief Paragraph Describing the Stadium: Klein Field at Sunken Diamond is a baseball stadium on the campus of Stanford University, and the home field of the Stanford Cardinal college baseball team. The stadium was originally built in 1931 and is one of the oldest college baseball stadiums in the country. It was named after Stanford alumnus and donor Stephen Klein in recognition of his contributions to the Stanford baseball program1.
+
+
+Arkansas
+
+Stadium Name: Baum-Walker Stadium at George Cole Field
+Stadium Build Date: 1996
+Former Names of the Stadium: Baum Stadium
+Major Renovation Projects: The stadium was renovated in 2003 and 2004, adding a new indoor training facility, luxury boxes, and club seats.
+Street Address of the Stadium: 1255 S Razorback Rd, Fayetteville, AR 72701, USA
+Geographic Coordinates of the Stadium: 36°3′40″N 94°10′34″W
+The playing surface of the field: Grass
+A Brief Paragraph Describing the Stadium: Baum-Walker Stadium at George Cole Field is the home stadium for the University of Arkansas Razorbacks baseball team. The stadium was named in honor of Arkansas alumnus and businessman Charlie Baum, while the field was named in honor of George Cole, the former Athletic Director of the University. The stadium was built in 1996 and has since undergone several expansions and renovations, making it one of the top college baseball stadiums in the country10.
+
+
+
+Louisiana State University
+
+Stadium Name: Alex Box Stadium, Skip Bertman Field
+Stadium Build Date: 2009
+Former Names of the Stadium: N/A
+Major Renovation Projects: Additional seating in right field was added before the 2010 season, and additional suites were constructed for the 2012 season1.
+Street Address of the Stadium: Gourrier Ave, Baton Rouge, LA 70803-00012.
+Geographic Coordinates of the Stadium: 30.40696°N 91.18731°W
+The playing surface of the field: Natural grass
+A Brief Paragraph Describing the Stadium: Alex Box Stadium, Skip Bertman Field is a baseball stadium in Baton Rouge, Louisiana. It is the home stadium of the Louisiana State University Tigers baseball team. The stadium was named for Simeon Alex Box, an LSU letterman, Purple Heart and Distinguished Service Cross recipient, who was killed in North Africa during World War II. The field was named and dedicated in honor of former LSU head baseball coach and athletic director Skip Bertman on May 17, 20131.
+
+
+Clemson University
+
+Stadium Name: Doug Kingsmore Stadium
+Stadium Build Date: 1970
+Former Names of the Stadium: Beautiful Tiger Field (1970–2003)
+Major Renovation Projects: Renovations began in 2002, which included the construction of a brick facade, green roof, enlarged press box, patio areas, ticket booths, enlarged concession stands and restrooms, chair-back seats, left-field grandstand, grand stairway entrance with Hall of Fame area, indoor batting cages, enlarged dugouts, "PawVision" giant replay screen, and a V.I.P. parking lot and drop-off3.
+Street Address of the Stadium: Multiple addresses found - 1 Ave of Champions, Clemson, SC 29634-00014 and N. Silas Pearman Blvd. (Perimeter Rd.), Clemson, SC3.
+Geographic Coordinates of the Stadium: 34.679°N 82.849°W
+The playing surface of the field: Natural grass
+A Brief Paragraph Describing the Stadium: Doug Kingsmore Stadium, formerly known as Beautiful Tiger Field, is the home field of the Clemson Tigers of the Division I Atlantic Coast Conference. Opened in 1970, it has a record single-game attendance of 6,636 (set on March 6, 2022, against South Carolina). The Tigers have an .810 winning percentage in games played there all time. The stadium has hosted numerous Atlantic Coast Conference baseball tournaments and NCAA regionals and super regionals3.
+
+Coastal Carolina University:
+
+Stadium Name: Springs Brooks Stadium
+Stadium Build Date: Opened February 13, 2015
+Former Names of the Stadium: Charles Watson Stadium - Vrooman Field
+Major Renovation Projects: Renovations in 2004 included a new scoreboard, fence, infield, and sound system. New lights were installed in 2005. In 2008, new seats and turf were installed, along with renovations to the clubhouse. The capacity was expanded to nearly 2,200 in 2008. The facility underwent a major renovation in 2015 with the addition of new grandstands, restrooms, concessions stands, coaches offices, student-athlete locker rooms and lounges, team meeting space, umpire locker room, and a state-of-the-art video board and scoreboard.
+Street Address of the Stadium: 965 One Landon Loop, Conway, South Carolina
+Geographic Coordinates of the Stadium: 33.7935°N, 79.0152°W
+The playing surface of the field: Natural Grass
+A Brief Paragraph Describing the Stadium: Springs Brooks Stadium, formerly known as Charles Watson Stadium - Vrooman Field, underwent renovations in 2004, 2005, and 2008. In 2015, it was reopened with its new name and hosted its first game. The renovations turned it into one of the best overall baseball facilities in the nation with state-of-the-art features and amenities12.
+Vanderbilt University:
+
+Stadium Name: Hawkins Field
+Stadium Build Date: Opened in 2002
+Former Names of the Stadium: N/A
+Major Renovation Projects: In 2006, a complex including a locker room, offices, and a weight room was added along the third base line. The capacity was increased to 3,700 in 2008 with new temporary bleachers and further expansions. The dugouts were also renovated and a new trainer's room was added. In 2012, artificial turf replaced the grass playing field.
+Street Address of the Stadium: 2600 Jess Neely Drive, Nashville, Tennessee, U.S.
+Geographic Coordinates of the Stadium: 36.1428°N, 86.8077°W
+The playing surface of the field: AstroTurf GameDay Grass 3D
+A Brief Paragraph Describing the Stadium: Hawkins Field, home to the Vanderbilt Commodores, opened in 2002. It has undergone multiple renovations, adding facilities and increasing its seating capacity. The venue is named for the family of Charles Hawkins III, a benefactor of the university and baseball program3.
+
+Here is the information in CSV-friendly format:
+
+Connecticut:
+
+|Stadium Name|Stadium Build Date|Former Names of the Stadium|Major Renovation Projects|Street Address of the Stadium|Geographic Coordinates of the Stadium|Playing Surface of the Field|A Brief Paragraph Describing the Stadium|
+|---|---|---|---|---|---|---|---|
+|Elliot Ballpark|2021-03-23|J. O. Christian Field|None listed|Jim Calhoun Way east of Separatist Road, Storrs, Connecticut, USA|41.800728, -72.253796|AstroTurf OPS (artificial turf)|Elliot Ballpark is a baseball stadium on the campus of the University of Connecticut (UConn) in Storrs, Connecticut, United States. It is the home field of the UConn Huskies baseball team of NCAA Division I's Big East Conference. The stadium is designed to seat 1,500 people, with additional space on grass berms which can also accommodate temporary bleachers【7†source】【8†source】.|
+
+Oregon State:
+
+|Stadium Name|Stadium Build Date|Former Names of the Stadium|Major Renovation Projects|Street Address of the Stadium|Geographic Coordinates of the Stadium|Playing Surface of the Field|A Brief Paragraph Describing the Stadium|
+|---|---|---|---|---|---|---|---|
+|Goss Stadium at Coleman Field|1907-04-12|Coleman Field|Major remodel in 1998 with a $2.3 million donation, Lights added in 2002, State-of-the-art scoreboard installed in 2006, Infield replaced with FieldTurf in late 2006, Expansion project in 2008, $3 million renovation project in 2015 with a donation from Jacoby Ellsbury|430 SW Langton Place, Corvallis, Oregon, U.S.|44.5632, -123.2776|Infield: FieldTurf (2007–present), Outfield: FieldTurf (2015)|Goss Stadium at Coleman Field is a college baseball park in the northwest United States, on the campus of Oregon State University in Corvallis, Oregon. It is home to the Oregon State Beavers of the Pac-12 Conference. Through the 2014 season, OSU had an all-time record of 1134–474–1 at the venue. The field was established in 1907 and underwent a major remodel in 1998. Since then, it has had several updates and expansions, including a $3 million renovation in 2015【14†source】【15†source】【16†source】【17†source】【18†source】【19†source】.|
+
+University of Tennessee (Lindsey Nelson Stadium):
+
+Stadium Name: Lindsey Nelson Stadium
+Stadium Build Date: 1993
+Former Names of the Stadium: N/A
+Major Renovation Projects: The stadium underwent renovations in 2020 and 2021, which included new AstroTurf, a new video board, and an enhanced entrance on the third base line.
+Street Address of the Stadium: 1235 Phillip Fulmer Way, Knoxville, TN 37996
+Geographic Coordinates of the Stadium: Pending
+Playing Surface of the Field: AstroTurf (2019–present)
+Brief Paragraph Describing the Stadium: Lindsey Nelson Stadium is a baseball stadium in Knoxville, Tennessee. It is the home field of the Tennessee Volunteers baseball team. The stadium is named after Lindsey Nelson, a Hall of Fame sportscaster and Tennessee alumnus
+
+University of Miami
+
+Stadium Name: Alex Rodriguez Park at Mark Light Field
+Stadium Build Date: 1972-1973
+Former Names of the Stadium: Mark Light Field (1973–2009)
+Major Renovation Projects: 1974, 1996, 2007–2009
+Street Address of the Stadium: From the City and Points North: Take I-95 South until it becomes U.S.1. Continue south for about 5.5 miles to SW 57th Ave. (Red Road). Turn right onto Red Road and make another immediate right turn onto Ponce De Leon Blvd. At the first light, turn left onto San Amaro Drive. Mark Light Field is on San Amaro Drive1.
+Geographic Coordinates of the Stadium: 25.71167°N 80.28222°W
+The playing surface of the field: Natural grass
+A Brief Paragraph Describing the Stadium: Alex Rodriguez Park at Mark Light Field is the home field for the Miami Hurricanes baseball team at the University of Miami in Coral Gables, Florida. The stadium holds a capacity of 5,000 spectators and is located on the University of Miami's campus in Coral Gables.
+Virginia University
+
+Stadium Name: Davenport Field at Disharoon Park
+Stadium Build Date: Opened February 16, 2002
+Former Names of the Stadium: UVa Baseball Field (prior to 2002), Davenport Field at UVA Baseball Stadium (prior to 2018)
+Street Address of the Stadium: 434 Lannigan Lane, Charlottesville, Virginia 22904
+Geographic Coordinates of the Stadium: 38.04583°N 78.51389°W
+The playing surface of the field: Bermuda grass
+A Brief Paragraph Describing the Stadium: Davenport Field at Disharoon Park is a baseball stadium in Charlottesville, Virginia. It is the home field of the University of Virginia Cavaliers college baseball team. The stadium has a capacity of ~5,900 and opened in 2002. The field is named after former Virginia Student Aid Foundation executive director Ted Davenport, and the stadium is named after Les and Ann Disharoon.
+
+"Stadium Name","Jim Perry Stadium"
+"Stadium Build Date","1940s (renamed and renovated in 2012)"
+"Former Names of the Stadium","Taylor Field"
+"Major Renovation Projects","2011-2012: new entrance and ticket booth, restrooms and concession stand, improved exterior landscaping; 2017-2018: new grandstand, new dugouts, pavilion addition, ProGrass Turf playing surface, new chair seat backs, state-of-the-art locker room, new offices for the Campbell baseball operation, HD video board"
+"Street Address of the Stadium","76 Upchurch Lane, Buies Creek, North Carolina 27546"
+"Geographic Coordinates of the Stadium","Latitude: 35° 24' 37.76\" N, Longitude: -78° 44' 7.66\" W"
+"The playing surface of the field","ProGrass Turf"
+"A Brief Paragraph Describing the Stadium","Jim Perry Stadium is a baseball stadium in Buies Creek, North Carolina. It is home to the Campbell Fighting Camels baseball team. Previously known as Taylor Field, the venue dates back to the 1940s and Campbell's junior college baseball days. The field was renamed for Jim Perry, who played baseball and basketball for Campbell from 1956 to 1959. Perry later pitched for 17 seasons in Major League Baseball, earning the 1970 American League Cy Young Award with the Minnesota Twins. The stadium has undergone several renovations and additions, including a new grandstand, dugouts, a pavilion, and a ProGrass Turf playing surface."
+
+
+"Stadium Name","Clark-LeClair Stadium"
+"Stadium Build Date","2004-05"
+"Former Names of the Stadium","N/A"
+"Major Renovation Projects","N/A"
+"Street Address of the Stadium","9999 Charles Boulevard, Greenville, North Carolina"
+"Geographic Coordinates of the Stadium","Latitude: 35.5933° N, Longitude: 77.3673° W"
+"The playing surface of the field","Celebration Bermuda turf with a clay base infield and crushed-brick warning track"
+"A Brief Paragraph Describing the Stadium","Clark–LeClair Stadium is a baseball park located on the campus of East Carolina University in Greenville, North Carolina. It is the home field of the East Carolina Pirates of the American Athletic Conference. The stadium was named after Pirate alumnus and contributor Bill Clark and former Pirates coach Keith LeClair. The stadium has 3,000 stadium bleacher seats, plus space for several thousand more spectators in "The Jungle." There are concession and restroom facilities at the stadium, plus a family picnic area. The playing surface consists of Celebration Bermuda turf with a clay base infield and crushed-brick warning track. New lights were included in the construction of the stadium that meet all television specifications. Facilities include indoor and outdoor batting cages, a VIP booth, coach's offices, and a player clubhouse, as well as state-of-the-art broadcast facilities.
+
+
+
+Jim Perry Stadium - Campbell University
+Stadium Name: Jim Perry Stadium
+Build Date: Dates back to the 1940s (as Taylor Field)
+Former Names: Taylor Field (?–2012)
+Major Renovation Projects: Renovations in 2011–2012 and 2017-2018 included a new entrance and ticket booth, restrooms and concession stand, as well as improved exterior landscaping. A new grandstand, dugouts, and a pavilion were also added. The latest addition provided a complete turf playing surface, a state-of-the-art locker room, new offices, and an HD video board.
+Street Address: 76 Upchurch Lane, Buies Creek, North Carolina 27546
+Geographic Coordinates: Latitude: 35° 24' 37.76" N, Longitude: -78° 44' 7.66" W
+Playing Surface: ProGrass Turf
+Brief Description: Jim Perry Stadium, previously known as Taylor Field, is a baseball stadium in Buies Creek, North Carolina. It is home to the Campbell Fighting Camels baseball team and has a capacity of 1,250. The stadium has undergone major renovations and features modern amenities like a HD video board and a state-of-the-art locker room123.
+
+Clark-LeClair Stadium - East Carolina University
+Stadium Name: Clark-LeClair Stadium
+Build Date: 2004–05
+Former Names: N/A
+Major Renovation Projects: N/A
+Street Address: 9999 Charles Boulevard, Greenville, North Carolina
+Geographic Coordinates: 35°35′36″N 77°22′02″W
+Playing Surface: Celebration Bermuda turf with a clay base infield and crushed-brick warning track
+Brief Description: Clark-LeClair Stadium is a baseball park located on the campus of East Carolina University in Greenville, North Carolina. It is the home field of the East Carolina Pirates of the American Athletic Conference. The stadium has a capacity of 5,000 and includes amenities like a VIP booth, coach's offices, a player clubhouse, as well as state-of-the-art broadcast facilities4.
+
+
+Stadium Name Stadium Build Date Former Names of the Stadium Major Renovation Projects Street Address of the Stadium Geographic Coordinates of the Stadium Playing Surface Brief Paragraph Describing the Stadium
+O'Brate Stadium 2021 N/A N/A 103 N Bellis St, Stillwater, OK 74075 36°07′52″N 97°04′08″W Grass O'Brate Stadium is a baseball park located in Stillwater, Oklahoma. It serves as the home field of the Oklahoma State University Cowboys baseball team. The stadium is named after Cecil O'Brate, who donated a large portion of the funds for its construction. The stadium was scheduled to host its first game on March 20, 2020, but the opening was postponed due to COVID-19 concerns until February 24, 20211. The stadium cost around $70 million to construct, with Cecil O'Brate contributing $35 million towards this. The facility includes outdoor and indoor practice facilities, elite batting cages, and amenities such as a 7,400-square-foot locker room and player lounge equipped with a nutrition center, hot and cold tubs, and a sports medicine area2.
+
+
+
+Stadium Name: Samford Stadium – Hitchcock Field at Plainsman Park
+Stadium Build Date: 1950
+Former Names of the Stadium: Plainsman Park (1950–1997), Hitchcock Field at Plainsman Park (1997–2003)
+Major Renovation Projects: The stadium was significantly renovated in 1996. In October of 2022, expansion plans for Plainsman Park were approved, including the addition of a 1st Base Club, a Right Field Terrace, and a Green Monster Terrace1.
+Street Address of the Stadium: 351 South Donahue Drive
+Geographic Coordinates of the Stadium: 32.5998°N 85.4897°W
+The playing surface of the field: Natural Grass/Artificial Turf
+A Brief Paragraph Describing the Stadium: Plainsman Park, officially Samford Stadium – Hitchcock Field at Plainsman Park, is the college baseball venue for the Auburn University Tigers. It has a seating capacity of 4,096. The park's signature is its 37-foot high left field fence, which is 315 feet from home plate. The home team bullpen is located behind the left field fence1.
+
+
+Here's the information I have gathered for the University of Texas at Austin:
+
+Stadium Name: UFCU Disch–Falk Field​1​
+Stadium Opening Date: February 17, 1975​1​
+Stadium Capacity: 6,649​2​
+Former Names of the Stadium: Disch-Falk Field (1975-August 1, 2006)​1​
+Major Renovation Projects: Renovated in 2006-2008, new seating opportunities, expanded lower bowl, field-level box seats, seating berm and observation patio, larger concession areas, box office windows, and restrooms. Surface changed from AstroTurf (1975–2007) to FieldTurf (2008–present)​1​​3​
+Street Address of the Stadium: 1300 E Martin Luther King Jr Blvd, Austin, Texas 78702​1​
+Geographic Coordinates of the Stadium: Latitude: 30° 16' 28.20" N, Longitude: -97° 43' 20.99" W​4​
+The Playing Surface of the Field: FieldTurf (2008–present)​1​
+A Brief Paragraph Describing the Stadium: UFCU Disch-Falk Field, which originally opened in 1975 and underwent a major renovation in 2009, remains one of college baseball’s premier facilities. It was named for former Longhorns coaches Billy Disch and Bibb Falk. The $27 million renovation, completed in time for the 2009 season, added new seating opportunities and improved amenities. The field also features a seating berm down the left-field line and an observation patio down the right-field line. The new design also incorporates 19 suites, making UFCU Disch-Falk Field a premier business entertainment destination. The venue features an enclosed concourse twice the size of the previous concourse, with approximately 20 feet added to the width. The stadium also features a brick and glass façade similar to that used in the renovations of Darrell K Royal-Texas Memorial Stadium​3​.
+
+
+
+| Stadium Name | Stadium Opening Date | Stadium capacity | Former Names of the Stadium | Major Renovation Projects | Street Address of the Stadium | Geographic Coordinates of the Stadium | Playing Surface of the Field | Description |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wagener Field at Monongalia County Ballpark | April 10, 2015 | 3500 | N/A | N/A | 2040 Gyorko Drive, Granville, West Virginia 26534 | 39.64473, -79.995838 | Synthetic Turf | Wagener Field at Monongalia County Ballpark is a baseball stadium in Granville, West Virginia. The stadium, opened April 10, 2015, is the home of the baseball team of West Virginia University (WVU), a member of the Big 12 Conference, and the West Virginia Black Bears, a collegiate summer baseball team of the MLB Draft League. The ballpark has 2,500 fixed seats with additional hillside and club seating, a fan amenity deck, and a park that is open year-round. The field has a synthetic surface, other than the clay pitcher's mound【7†source】【8†source】【9†source】【10†source】. |
+
+
+Here is the information for Boston College's baseball stadium:
+
+Stadium Name: Harrington Athletics Village at Brighton Fields
+Stadium Opening Date: March 20, 2018
+Stadium Capacity: 2,500
+Former Names of the Stadium: Brighton Fields
+Major Renovation Projects: N/A
+Street Address of the Stadium: 2125 Commonwealth Avenue, Boston, Massachusetts, United States
+Geographic Coordinates of the Stadium: 42°20′38″N 71°09′35″W
+The Playing Surface of the Field: Artificial Turf
+A Brief Paragraph Describing the Stadium: The Harrington Athletics Village is a sports complex located on the Brighton Campus at Boston College in Boston, Massachusetts, United States. The complex currently consists of the Eddie Pellagrini Diamond, which is home to the Boston College Eagles baseball team; the Boston College Softball Field, which is home to the softball team; and the Pete Frates Center, which is an indoor practice facility and hospitality area for the baseball and softball teams​1​.
+
+
+"Stadium Name","Stadium Opening Date","Stadium capacity","Former Names of the Stadium","Major Renovation Projects","Street Address of the Stadium","Geographic Coordinates of the Stadium","The playing surface of the field","A Brief Paragraph Describing the Stadium"
+"Shipley Field at Bob \"Turtle\" Smith Stadium","April 3, 1954","2,500","Shipley Field (1956–2009)","Renovated in 2004 and 2015. In 2004, a new artificial turf replaced an older turf installation in the stadium's infield, and improvements were made to the under field drainage system. After the 2015 season, the artificial turf infield and bermuda grass outfield were replaced with a FieldTurf surface; new drainage was installed underneath; a home team closed off bullpen was created in left field foul territory; both bullpens received FieldTurf surfaces; and the outfield wall was moved farther out.","4122 Fieldhouse Drive","38.98917, -76.94417","FieldTurf","Shipley Field at Bob \"Turtle\" Smith Stadium is a baseball stadium in College Park, Maryland. It has served as the home field of the Maryland Terrapins baseball team at the University of Maryland since 1954. Shipley Field was formerly the home of the College Park Bombers of the Cal Ripken, Sr. Collegiate Baseball League, and was also used as a baseball venue by the Bowie Baysox during the 1994 season. The major league Washington Senators held a practice at Shipley Field on April 8, 1968, when their Opening Day game was postponed in the aftermath of the assassination of Martin Luther King Jr. The stadium holds 2,500 people and opened on April 3, 1954. It was dedicated as Shipley Field to former Maryland baseball coach Burton Shipley on March 28, 1956. On May 8, 2010, it was re-dedicated as Bob \"Turtle\" Smith Stadium"&#8203;`oaicite:{"number":1,"metadata":{"title":"en.wikipedia.org","url":"https://en.wikipedia.org/wiki/Bob_%22Turtle%22_Smith_Stadium","text":"Full name Shipley Field at Bob \"Turtle\" Smith Stadium","pub_date":null}}`&#8203;.
+
+
+
+Here's the information I was able to find for the University of Alabama's baseball field:
+
+Stadium Name: Sewell–Thomas Stadium (Commonly referred to as "The Joe")
+Stadium Opening Date: March 26, 1948
+Stadium Capacity: 8,500 (5,800 seated, 2,700 student section)
+Former Names of the Stadium: Thomas Field
+Major Renovation Projects: Renovated in 1996, 2001, and underwent a full renovation in 2015 that essentially created a brand-new stadium. The renovation added 12 suites, a new outfield walk, a playground and mini infield for families, a pre-game picnic area, team store, commissary, new seats, an expanded canopy overhang over the primary seating area, and new player amenities including a home team locker room and lounge, showers and restrooms, meeting room, weight room, bullpen and a four-lane indoor batting facility.
+Street Address of the Stadium: 241 Paul W Bryant Drive, Tuscaloosa, Alabama 35401, United States
+Geographic Coordinates of the Stadium: 33°12′19″N 87°32′19″W
+Playing Surface: Natural grass
+A Brief Paragraph Describing the Stadium: Sewell–Thomas Stadium, often referred to as "The Joe," is a baseball stadium in Tuscaloosa, Alabama. It serves as the home field of the University of Alabama Crimson Tide college baseball team. The stadium opened as Thomas Field in honor of former Tide head football coach and athletic director Frank Thomas, and was later renamed to include the name of Joe Sewell, a former Alabama player and head coach inducted into the Baseball Hall of Fame​1​.
+
+
+"Stadium Name","Stadium Opening Date","Stadium capacity","Former Names of the Stadium","Major Renovation Projects","Street Address of the Stadium","Geographic Coordinates of the Stadium","The playing surface of the field","A Brief Paragraph Describing the Stadium"
+"Kentucky Proud Park","February 26, 2019","5000","N/A","N/A","510 Wildcat Court Lexington, Kentucky 40506","38.018294216766, -84.5032954216","Artificial turf; AstroTurf Rootzone Diamond Blend","Kentucky Proud Park is a baseball stadium in Lexington, Kentucky. It is the home field of the University of Kentucky Wildcats college baseball team. Opened in 2018, with the Wildcats playing their first season in the stadium in 2019, it has a permanent capacity of 2,500, with grass berm seating adding more than 1,500 to the total capacity. Temporary seating can be added to bring the capacity to 7,000 for NCAA tournament games. The park replaced Cliff Hagan Stadium and received its name in a deal between JMI Sports and the Kentucky Farm Bureau, which chose to donate its naming rights to the Kentucky Department of Agriculture. The park features a large entrance right being home plate and a left field entrance directly connected to the parking lot. It also includes an interactive screen at the entrance that allows fans to view the history of the team, the information about the stadium, the players who played in the major leagues, and design their own uniform with the Kentucky colors. The large concourse wraps around the entire field and is spacious with dealerships, bathrooms and other signs. Club and lounge areas are also available to fans. A small grass area in left field is accessible for kids to get entertained during the game. The Kentucky Proud Park includes a big video board, measured at 48 feet wide and 30 feet tall, the video board is the eight largest video board in all College Baseball
