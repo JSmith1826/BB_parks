@@ -1,6 +1,6 @@
 
 // Map Data JSON
-const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/NCAA_D1/conf_tourn_map.json"; // fields json file
+const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/NCAA_D1/NCAA_regional_sites.json"; // fields json file
 
 let fetchedData;
 let polygons = [];
