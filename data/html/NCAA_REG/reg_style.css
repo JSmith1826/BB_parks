@@ -74,11 +74,12 @@
   left: 30%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  background-image: url('https://raw.githubusercontent.com/JSmith1826/BB_parks/b9d6335dc494dbba20c84919c0bd1b2ed454db36/data/NCAA_D1/assests/conf_logos/title_image.png');
+  background-image: url('https://raw.githubusercontent.com/JSmith1826/BB_parks/b9d6335dc494dbba20c84919c0bd1b2ed454db36/data/NCAA_D1/assests/regional_site_simple.png');
   background-color: #f2f2f2;
   background-size: 25vw auto; /* Adjusted background-size to maintain aspect ratio */
   background-repeat: no-repeat;
   background-position: left;
+  
   width: 30vw;
   border: 5px solid blue;
   box-shadow: 0 0 0 5px red;
