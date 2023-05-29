@@ -755,24 +755,35 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
   const fieldTitle = document.getElementById("fieldTitle");
   fieldTitle.innerHTML = ""; // Clear the previous children
 
-  const fieldName = document.createElement("h1");
+  const fieldName = document.createElement("div");
+  fieldName.className = "field-name"; // Add CSS class here
   fieldName.innerHTML = `${closestField.display_name}`;
-  // if there is a display_name2 add it underneith as a smaller font
+  // if there is a display_name2 add it underneath as a smaller font
   if (closestField.display_name2) {
-    const fieldName2 = document.createElement("h2");
+    const fieldName2 = document.createElement("div");
+    fieldName2.className = "field-name2"; // Add CSS class here
     fieldName2.innerHTML = `${closestField.display_name2}`;
     fieldName.appendChild(fieldName2);
   }
   // add "Home of the" and the host school under the field name
-  const hostSchool = document.createElement("h3");
-  hostSchool.innerHTML = `Home of the ${closestField.host_school}`;
+  const hostSchool = document.createElement("div");
+  hostSchool.className = "host-school"; // Add CSS class here
+  hostSchool.innerHTML = `<br>Home of the ${closestField.host_school} ${closestField.nickname}`;
 
-  
   fieldTitle.appendChild(fieldName);
+  fieldTitle.appendChild(hostSchool);
+
+
+    // // Add the host team under the field name if there is one
+    // if (closestField.nickname) {
+    //   const nickname = document.createElement("h2");
+    //   nickname.innerHTML = `Home of the ${closestField.host_school} ${closestField.nickname}`;
+    //   fieldTitle.appendChild(nickname);
+    // }
 
     // Add the city and state under the park name if there is one
     if (closestField.city && closestField.state) {
-      const cityState = document.createElement("h4");
+      const cityState = document.createElement("h3");
       cityState.innerHTML = `${closestField.city}, ${closestField.state}`;
       fieldTitle.appendChild(cityState);
     }
@@ -798,12 +809,25 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
 
     const fenceInfo = document.createElement("p");
     fenceInfo.innerHTML = `<span style="font-size: 20px">Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft - Batter's View: ${closestField.field_cardinal_direction}</span><br>`;
-    fenceInfo.innerHTML += `<br>Fence Dimensions<br><br>`;
-    fenceInfo.appendChild(wrapDigits(round(closestField.min_distance)));
+
+    // Create the outfield plot
+    const outfieldPlot = document.createElement("div");
+    outfieldPlot.id = "outfieldPlot";
+    // outfield plot base url = https://github.com/JSmith1826/BB_parks/blob/cc997d3e19764fe84e6046125b3105cf6c34d1fa/
+    // Add "Fence "
+    fenceInfo.innerHTML += `<br>Fence Dimensions`;
+    outfieldPlot.innerHTML = `<img src="https://raw.githubusercontent.com/JSmith1826/BB_parks/cc997d3e19764fe84e6046125b3105cf6c34d1fa/${closestField.file_path}" alt="Outfield Plot" width="100%">`;
+    fenceInfo.appendChild(outfieldPlot);
+
+    
+
+
+    
+    fenceInfo.appendChild(wrapDigits((closestField.min_distance).toFixed(0)));
     fenceInfo.innerHTML += `<number> |  </number>`;
-    fenceInfo.appendChild(wrapDigits(round(closestField.avg_distance)).toFixed(0)));
+    fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
     fenceInfo.innerHTML += `<number>  |  </number>`;
-    fenceInfo.appendChild(wrapDigits(round(closestField.max_distance));
+    fenceInfo.appendChild(wrapDigits((closestField.max_distance).toFixed(0)));
     fenceInfo.innerHTML += `<br>MINIMUM   <number>|</number>   AVERAGE    <number>|</number>   MAXIMUM<br>`;
     fenceBlock.appendChild(fenceInfo);
 
@@ -817,6 +841,10 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
     areaInfo.appendChild(wrapDigits(100*(closestField.foul_area_sqft / (closestField.fop_area_sqft + closestField.foul_area_sqft)).toFixed(1)));
     areaInfo.innerHTML += `<number>%</number>`;
     areaBlock.appendChild(areaInfo);
+
+
+    
+    
 
     function createGradientBars(field, hr_min, hr_max, unique_min, unique_max) {
       // Normalize the scores

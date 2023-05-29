@@ -35,7 +35,7 @@
 #fieldInfo {
   position: absolute;
   z-index: 3;
-  top: 30%;
+  top: 10%;
   left: 2%;
   width: 20vw;
   min-height: 40vh;
@@ -122,7 +122,7 @@
 #fieldInfo {
   position: absolute;
   z-index: 3;
-  top: 30%;
+  top: 18%;
   left: 2%;
   width: 20vw;
   min-height: 40vh;
@@ -292,7 +292,18 @@
       font-weight: normal;
   }
   
-
+  .field-name {
+    font-size: 2.5em; /* Adjust these values as needed */
+  }
+  
+  .field-name2 {
+    font-size: .5em; /* This should be smaller than .field-name */
+  }
+  
+  .host-school {
+    font-size: 1.5em; /* This should be between .field-name and .field-name2 */
+  }
+  
   
   h1, h2, h3, h4, h5,   {
   font-family: 'Roboto Condensed', sans-serif;
@@ -302,23 +313,23 @@
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     
   }
   
   h2 {
-    font-size: 2.5em; /* Adjust the value as per your preference */
-  }
-  
-  h3 {
     font-size: 2em; /* Adjust the value as per your preference */
   }
   
+  h3 {
+    font-size: 1em; /* Adjust the value as per your preference */
+  }
+  
   h4 {
-    font-size: 1.5em; /* Adjust the value as per your preference */
+    font-size: .75em; /* Adjust the value as per your preference */
   }
   h5 {
-    font-size: 1.25em; /* Adjust the value as per your preference */
+    font-size: .5em; /* Adjust the value as per your preference */
   }
   h6 {
     align: center;
@@ -351,7 +362,7 @@
   @media (max-width: 1024px) {
     #map, .scoreboard {
         width: 90vw;
-      height: 90vh;
+      height: 20vh;
     }
   }
   
@@ -362,7 +373,7 @@
     
     .scoreboard {
       width: 80vw;
-      height: 90vw;
+      height: 20vh;
     }
   
     #map {
