@@ -67,14 +67,15 @@
   box-shadow: inset 0 0 0 5px var(--dynamic-text-color);
 }
 
-.banner {
+/* .banner {
   position: absolute;
   margin-top: 5px;
   top: 15%;
   left: 30%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  background-image: url('https://raw.githubusercontent.com/JSmith1826/BB_parks/b9d6335dc494dbba20c84919c0bd1b2ed454db36/data/NCAA_D1/assests/regional_site_simple.png');
+  background-image: url('https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/NCAA_D1/assests/regional_site_simple.png');
+  
   background-color: #f2f2f2;
   background-size: 25vw auto; /* Adjusted background-size to maintain aspect ratio */
   background-repeat: no-repeat;
@@ -90,7 +91,7 @@
   margin: 0 auto;
   display: flex;
   align-items: left;
-}
+} */
 
 
 
@@ -99,7 +100,7 @@
 @media (max-width: 600px) {
     .banner {
         width: 60vw; /* Make the banner wider on small screens */
-        height: 10vh; /* And a bit shorter */
+        height: 5vh; /* And a bit shorter */
         padding: 1vw; /* Reduce padding */
     }
 }
@@ -293,12 +294,29 @@
       font-weight: normal;
   }
   
+  .creatorTag {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #F5F5F5; /* off-white color */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    z-index: 10;
+  }
+  
+
   .field-name {
     font-size: 2.5em; /* Adjust these values as needed */
   }
   
   .field-name2 {
     font-size: .5em; /* This should be smaller than .field-name */
+  }
+  .found-date {
+    font-size: .4em; /* This should be between .field-name and .field-name2 */
   }
   
   .host-school {

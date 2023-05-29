@@ -763,12 +763,26 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
   const fieldName = document.createElement("div");
   fieldName.className = "field-name"; // Add CSS class here
   fieldName.innerHTML = `${closestField.display_name}`;
+
   // if there is a display_name2 add it underneath as a smaller font
   if (closestField.display_name2) {
     const fieldName2 = document.createElement("div");
     fieldName2.className = "field-name2"; // Add CSS class here
-    fieldName2.innerHTML = `${closestField.display_name2}`;
+    fieldName2.innerHTML = `${closestField.display_name2}<br>`;
     fieldName.appendChild(fieldName2);
+  }
+  // Add the city and state under the park name if there is one
+  if (closestField.city && closestField.state) {
+    const cityState = document.createElement("p");
+    cityState.innerHTML = `${closestField.city}, ${closestField.state}`;
+    fieldTitle.appendChild(cityState);
+  }
+
+  if (closestField.found_date) {
+    const foundDate = document.createElement("div");
+    foundDate.className = "found-date"; // Add CSS class here
+    foundDate.innerHTML = `<br>Est. ${closestField.found_date} - Capacity: ${closestField.capacity}`; // Add CSS class here
+    fieldName.appendChild(foundDate);
   }
   // add "Home of the" and the host school under the field name
   const hostSchool = document.createElement("div");
@@ -786,12 +800,7 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
     //   fieldTitle.appendChild(nickname);
     // }
 
-    // Add the city and state under the park name if there is one
-    if (closestField.city && closestField.state) {
-      const cityState = document.createElement("p");
-      cityState.innerHTML = `${closestField.city}, ${closestField.state}`;
-      fieldTitle.appendChild(cityState);
-    }
+
 
     // Define default colors
     let dynamicBgColor = '#627454'; // Background default color
