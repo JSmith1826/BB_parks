@@ -90,41 +90,44 @@ async function initMap() {
   });
   
   initSearchBox(map);
-
 // Add previous and next buttons
- // Set up buttons and their event handlers
-  let previousButton = createButton('<');
-  previousButton.addEventListener('click', function() {
-    if (currentParkIndex > 0) {
-      currentParkIndex--;
-      let park = parks[currentParkIndex];
-      map.setCenter(new google.maps.LatLng(park.lat, park.lng));
-    }
-  });
-
-  let resetButton = createButton('Reset Map');
-  resetButton.addEventListener('click', function() {
-    currentParkIndex = 0;
+let previousButton = createButton('<');
+previousButton.addEventListener('click', function() {
+  if (currentParkIndex > 0) {
+    currentParkIndex--;
     let park = parks[currentParkIndex];
-    map.setCenter(new google.maps.LatLng(initialCenter));
-    map.setZoom(initialZoom);
-  });
+    map.setCenter(new google.maps.LatLng(park.lat, park.lng));
+    gameInfo(park); // Update info block with new park data
+  }
+});
 
-  let nextButton = createButton('>');
-  nextButton.addEventListener('click', function() {
-    if (currentParkIndex < parks.length - 1) {
-      currentParkIndex++;
-      let park = parks[currentParkIndex];
-      map.setCenter(new google.maps.LatLng(park.lat, park.lng));
-    }
-  });
+let resetButton = createButton('Reset Map');
+resetButton.addEventListener('click', function() {
+  currentParkIndex = 0;
+  let park = parks[currentParkIndex];
+  map.setCenter(new google.maps.LatLng(initialCenter));
+  map.setZoom(initialZoom);
+  
+  const hostInfo = document.getElementById("hostInfo");
+  hostInfo.innerHTML = ""; // Clear the info block
+});
 
-  // Add the buttons to the map
-  let buttonContainer = document.createElement('div');
-  buttonContainer.appendChild(previousButton);
-  buttonContainer.appendChild(resetButton);
-  buttonContainer.appendChild(nextButton);
-  map.controls[google.maps.ControlPosition.LEFT_TOP].push(buttonContainer);
+let nextButton = createButton('>');
+nextButton.addEventListener('click', function() {
+  if (currentParkIndex < parks.length - 1) {
+    currentParkIndex++;
+    let park = parks[currentParkIndex];
+    map.setCenter(new google.maps.LatLng(park.lat, park.lng));
+    gameInfo(park); // Update info block with new park data
+  }
+});
+
+// Add the buttons to the map
+let buttonContainer = document.createElement('div');
+buttonContainer.appendChild(previousButton);
+buttonContainer.appendChild(resetButton);
+buttonContainer.appendChild(nextButton);
+map.controls[google.maps.ControlPosition.LEFT_TOP].push(buttonContainer);
 }
 
 function createButton(text) {
@@ -139,6 +142,7 @@ function createButton(text) {
   button.style.borderRadius = '5px'; 
   return button;
 }
+
 
 document.addEventListener("DOMContentLoaded", initMap);
 
@@ -809,17 +813,17 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
     fenceBlock.innerHTML = "";
 
     const fenceInfo = document.createElement("p");
-    fenceInfo.innerHTML = `<span style="font-size: 20px">Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft - Batter's View: ${closestField.field_cardinal_direction}</span><br>`;
+    fenceInfo.innerHTML = `<span style="font-size: 20px">Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft - Batter's View: ${closestField.field_cardinal_direction}</span><br>Playing Surface: ${closestField.surface}<br>`;
 
 // Create the outfield plot
 const outfieldPlot = document.createElement("div");
 outfieldPlot.id = "outfieldPlot";
 // outfieldPlot.style.marginTop = "-10px"; // This reduces the distance between the text and image. Adjust as needed.
 
-// Add "Fence Dimensions" text with h3 class
-const fenceDimensionsText = document.createElement("h3");
-// fenceDimensionsText.className = "your-h3-class"; // Replace with your actual h3 class name
+// Add "Fence Dimensions" text with h2 class
+const fenceDimensionsText = document.createElement("h2");
 fenceDimensionsText.innerHTML = "Fence Dimensions";
+fenceDimensionsText.style.marginBottom = "-20px"; // Adjust this value to achieve desired effect
 fenceInfo.appendChild(fenceDimensionsText);
 
 // outfield plot base url = https://github.com/JSmith1826/BB_parks/blob/cc997d3e19764fe84e6046125b3105cf6c34d1fa/
