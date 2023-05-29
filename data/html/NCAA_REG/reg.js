@@ -1,6 +1,6 @@
 
 // Map Data JSON
-const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/NCAA_D1/NCAA_regional_sites.json"; // fields json file
+const jsonUrl = "https://github.com/JSmith1826/BB_parks/blob/f9c0f3b4f6ac78f895b832380deb444a61bb6daf/data/NCAA_D1/regional_tourn_map.json"; // fields json file
 
 let fetchedData;
 let polygons = [];
@@ -166,103 +166,74 @@ function countFieldsByLevel(data) {
     
 // This function is called in the initMap() function
 async function MapClickHandler(event, data, map, polygons, levelCounts) {
-        console.log("Map click handler:", event.latLng); // log the event to the console
-        // console.log('Data from MapClickHandler:', data); // log the data to the console
-        // console.log('Check polygons array:', polygons); // log the polygons array to the console
+      console.log("Map click handler:", event.latLng); // log the event to the console
+      // console.log('Data from MapClickHandler:', data); // log the data to the console
+      // console.log('Check polygons array:', polygons); // log the polygons array to the console
 
-        // call the closestField function and pass in the click location and the data object
-        const closestField = closestFieldFunction(event.latLng, data); // create variable closestField and set it to the closestFieldFunction
-        // console.log("Closest field:", closestField); // log the closestField to the console
-        // returned the closest field to the click location
+      // call the closestField function and pass in the click location and the data object
+      const closestField = closestFieldFunction(event.latLng, data); // create variable closestField and set it to the closestFieldFunction
+      // console.log("Closest field:", closestField); // log the closestField to the console
+      // returned the closest field to the click location
 
-        // Call the function to draw the line from the home plate of the closest field to the click location
-        drawLine(closestField, event.latLng, map); // send closestField, click location, and map to drawLine function
+      // Call the function to draw the line from the home plate of the closest field to the click location
+      drawLine(closestField, event.latLng, map); // send closestField, click location, and map to drawLine function
 
-        
-        // Call the drawLine function and store the returned value
-        const distanceFeet = drawLine(closestField, event.latLng, map);
+      
+      // Call the drawLine function and store the returned value
+      const distanceFeet = drawLine(closestField, event.latLng, map);
 
-        // Call the checkFence function and store the returned value
-        const fenceDist = checkFence(closestField, event.latLng, map, polygons);
+      // Call the checkFence function and store the returned value
+      const fenceDist = checkFence(closestField, event.latLng, map, polygons);
 
-        // Call the function to make a marker at the click location
-        clickMarker(event.latLng, map); // remove levelCounts from this function call
-
- 
-
-        // // // Call the function to check if the click location is inside the fence
-        // checkFence(closestField, event.latLng, map, polygons); // send closestField, click location, map, and polygons array to checkFence function
-        
-        // Call the function to make the html element with the field info and distance
-        fieldInfo(closestField, distanceFeet, fenceDist, map, levelCounts); // send closestField, distanceFeet, fenceDist, and map to fieldInfo function
+      // Call the function to make a marker at the click location
+      clickMarker(event.latLng, map); // remove levelCounts from this function call
 
 
-        // print the lat and lng of the click location to the console
-        console.log("Click location:", event.latLng.lat(), event.latLng.lng()); // log the click location to the console
+
+      // // // Call the function to check if the click location is inside the fence
+      // checkFence(closestField, event.latLng, map, polygons); // send closestField, click location, map, and polygons array to checkFence function
+      
+      // Call the function to make the html element with the field info and distance
+      fieldInfo(closestField, distanceFeet, fenceDist, map, levelCounts); // send closestField, distanceFeet, fenceDist, and map to fieldInfo function
 
 
-    }
+      // print the lat and lng of the click location to the console
+      console.log("Click location:", event.latLng.lat(), event.latLng.lng()); // log the click location to the console
 
-////////////////////////////////////// NEW FUNCTION TO ADD SEARCH FUNCTION//////////////////
-// This function should be called in your initMap() function
-function initSearchBox(map) {
-  // Create the search box and link it to the UI element.
-  const input = document.getElementById("search-input");
-  const searchBox = new google.maps.places.SearchBox(input);
 
-  // Bias the SearchBox results towards the current map's viewport.
-  map.addListener("bounds_changed", () => {
-    searchBox.setBounds(map.getBounds());
-  });
-
-  // Listen for the event fired when the user selects a prediction and retrieve
-  // more details for that place.
-  searchBox.addListener("places_changed", () => {
-    const places = searchBox.getPlaces();
-
-    if (places.length === 0) {
-      return;
-    }
-
-    // Pan the map to the selected location
-    const location = places[0].geometry.location;
-    map.panTo(location);
-  });
 }
+       
 
-
-        
-
-    // Create the function to find the closest field to the click location
-    // input data - click location and full 'data' object from json file
-    // output - the closest field to the click location
-    // Loops through every field in the data object and finds the distance between the click location 
-    // and the home plate of each field. The field with the shortest distance is returned.
-    // Eventually might be able to refactor so it doesn't have to check every field
-    function closestFieldFunction(clickLocation, data) {
-        console.log("Finding closest field...");
-        let minDistance = Infinity; // create variable minDistance and set it to infinity to compair distances
-        let closestField = null; // create variable closestField and set it to null
-      
-        data.forEach(field => {
-            // create fieldLatLng variable and set it to the home plate coordinates of the field
-            const fieldLatLng = new google.maps.LatLng(field.home_plate[1], field.home_plate[0]); // Reverse the coordinates
-            // create distance variable and set it to the distance between the click location and the home plate of the field
-            const distance = google.maps.geometry.spherical.computeDistanceBetween(clickLocation, fieldLatLng);
-            // if the distance is less than the minDistance
-            if (distance < minDistance) {
-                minDistance = distance;
-                closestField = field; // set the closestField to this field
-            }
-        });
-        // If the distance to the closest field is over 1 mile return null
-        if (minDistance > 1609) {
-            return null;
+// Create the function to find the closest field to the click location
+// input data - click location and full 'data' object from json file
+// output - the closest field to the click location
+// Loops through every field in the data object and finds the distance between the click location 
+// and the home plate of each field. The field with the shortest distance is returned.
+// Eventually might be able to refactor so it doesn't have to check every field
+function closestFieldFunction(clickLocation, data) {
+    console.log("Finding closest field...");
+    let minDistance = Infinity; // create variable minDistance and set it to infinity to compair distances
+    let closestField = null; // create variable closestField and set it to null
+  
+    data.forEach(field => {
+        // create fieldLatLng variable and set it to the home plate coordinates of the field
+        const fieldLatLng = new google.maps.LatLng(field.home_plate[1], field.home_plate[0]); // Reverse the coordinates
+        // create distance variable and set it to the distance between the click location and the home plate of the field
+        const distance = google.maps.geometry.spherical.computeDistanceBetween(clickLocation, fieldLatLng);
+        // if the distance is less than the minDistance
+        if (distance < minDistance) {
+            minDistance = distance;
+            closestField = field; // set the closestField to this field
         }
-        console.log("Closest field:", closestField, "Min distance:", minDistance); //
-      
-        return closestField;
-      }
+    });
+    // If the distance to the closest field is over 1 mile return null
+    if (minDistance > 1609) {
+        return null;
+    }
+    console.log("Closest field:", closestField, "Min distance:", minDistance); //
+  
+    return closestField;
+  }
 
 
 /// Create the draw line function and specify the line options
@@ -580,7 +551,7 @@ function renderPolygons(data, map, levelCounts, gameData) {
         // will be used in the addMapClickHandler function to check the click location against
       }
 // Define the paths to the icons outside of the function, as they don't change
-const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/NCAA_D1/conf_logos/';
+const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/NCAA_D1/team_logo/';
 
 
 // Create the icon filepaths from the base url and the field.Filename
@@ -609,14 +580,14 @@ async function createMarker(field, map) {
   const marker = new google.maps.Marker({
       position: new google.maps.LatLng(field.home_plate[1], field.home_plate[0]),
       map: map,
-      title: field.conference,
+      title: field.display_name,
       icon: {
           url: iconUrl,
           scaledSize: iconSize,
       },
       city: field.city,
       state: field.state,
-      park_name: field.park_name,
+      host: host_school,
       
   });
 
@@ -628,12 +599,12 @@ async function createMarker(field, map) {
   markers[field.level].push(marker);
   console.log("markers: ", markers); // prints the markers object
 
-  let markerPopupContent = `<div class="custom-infoTitle">${field.conference}</div>`;
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span style="font-size:20px">  ${field.park_name}</span></div>`;
+  let markerPopupContent = `<div class="custom-infoTitle">${field.display_name}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span style="font-size:20px">  ${field.host_school}</span></div>`;
   markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.city}, ${field.state}</div><br>`;
   // markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Notes: ${field.notes}</div>`;
   
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">${field.date_range}</div>`;
+  
   // markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Host: ${field.host_raw}</div>`;
   // markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Final Game Info: ${field.final_game_info}</div>`;
   markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center custom-markerPopup-light">Double Click to Zoom</div>`;
