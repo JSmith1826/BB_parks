@@ -2,6 +2,7 @@
 // Map Data JSON
 const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/NCAA_D1/regional_tourn_map.json"; // fields json file
 
+
 let fetchedData;
 let polygons = [];
 let currentLine = null;
@@ -17,7 +18,7 @@ let currentParkIndex = 0; // Add this line to your global variables
 
 
 // LOAD THE JSON WITH THE TOURNAMENT GAMES DATA
-const gamesUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/NCAA_D1/tournaments.json"; // schedule json file
+const gamesUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/NCAA_D1/game_info.json"; // schedule json file 
 let gameData;
 
 async function loadGamesData() {
@@ -783,7 +784,7 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
 
     // Add the city and state under the park name if there is one
     if (closestField.city && closestField.state) {
-      const cityState = document.createElement("h3");
+      const cityState = document.createElement("p");
       cityState.innerHTML = `${closestField.city}, ${closestField.state}`;
       fieldTitle.appendChild(cityState);
     }
@@ -810,14 +811,20 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
     const fenceInfo = document.createElement("p");
     fenceInfo.innerHTML = `<span style="font-size: 20px">Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft - Batter's View: ${closestField.field_cardinal_direction}</span><br>`;
 
-    // Create the outfield plot
-    const outfieldPlot = document.createElement("div");
-    outfieldPlot.id = "outfieldPlot";
-    // outfield plot base url = https://github.com/JSmith1826/BB_parks/blob/cc997d3e19764fe84e6046125b3105cf6c34d1fa/
-    // Add "Fence "
-    fenceInfo.innerHTML += `<br>Fence Dimensions`;
-    outfieldPlot.innerHTML = `<img src="https://raw.githubusercontent.com/JSmith1826/BB_parks/cc997d3e19764fe84e6046125b3105cf6c34d1fa/${closestField.file_path}" alt="Outfield Plot" width="100%">`;
-    fenceInfo.appendChild(outfieldPlot);
+// Create the outfield plot
+const outfieldPlot = document.createElement("div");
+outfieldPlot.id = "outfieldPlot";
+// outfieldPlot.style.marginTop = "-10px"; // This reduces the distance between the text and image. Adjust as needed.
+
+// Add "Fence Dimensions" text with h3 class
+const fenceDimensionsText = document.createElement("h3");
+// fenceDimensionsText.className = "your-h3-class"; // Replace with your actual h3 class name
+fenceDimensionsText.innerHTML = "Fence Dimensions";
+fenceInfo.appendChild(fenceDimensionsText);
+
+// outfield plot base url = https://github.com/JSmith1826/BB_parks/blob/cc997d3e19764fe84e6046125b3105cf6c34d1fa/
+outfieldPlot.innerHTML = `<img src="https://raw.githubusercontent.com/JSmith1826/BB_parks/cc997d3e19764fe84e6046125b3105cf6c34d1fa/${closestField.file_path}" alt="Outfield Plot" width="100%">`;
+fenceInfo.appendChild(outfieldPlot);
 
     
 
@@ -1008,34 +1015,30 @@ function hideImage() {
 
 return;
 }
+
 function gameInfo(closestField) {
   console.log("Creating game info...");
 
   const hostInfo = document.getElementById("hostInfo");
   hostInfo.style.display = "block";
-
   hostInfo.innerHTML = "";
 
-  // Filter the games for the selected conference
+  // Filter the games for the selected host
   const filteredGames = gameData
-    .filter(game => game.conference === closestField.conference)
-    .sort((a, b) => new Date(a.date) - new Date(b.date)); // Sort games by date
+    .filter(game => game.Host === closestField.host_school)
+    .sort((a, b) => new Date(a.Date) - new Date(b.Date)); // Sort games by date
 
+  // Add the tournament title
+  if (filteredGames.length > 0) {
+    const tournamentTitle = document.createElement("h2");
+    tournamentTitle.innerHTML = filteredGames[0].Tournament;
+    hostInfo.appendChild(tournamentTitle);
+  }
 
-    // if (filteredGames.length > 0) {
-    //   // Display conference name once at the top
-    //   const conferenceInfo = document.createElement("h1");
-    //   conferenceInfo.innerHTML = `${filteredGames[0].conference}`;
-    //   hostInfo.appendChild(conferenceInfo);
-    // } else {
-    //   console.log(`No games found for conference: ${closestField.conference}`);
-    // }
-  // Add the conference logo
+  // Add the school logo
   if (closestField.filename && iconPathBase) {
     const conferenceLogo = document.createElement("img");
     conferenceLogo.src = iconPathBase + closestField.filename;
-    // conferenceLogo.width = "200"; // Set a fixed width for the image
-    // conferenceLogo.height = "200"; // Set a fixed height for the image
     conferenceLogo.onerror = function() {
       console.error('Error loading logo: ' + conferenceLogo.src);
     };
@@ -1044,35 +1047,49 @@ function gameInfo(closestField) {
     console.error('Missing icon path base or logo filename');
   }
 
-
-
   // Loop through the filtered games
   let lastGameDate = '';
-  filteredGames.forEach((game) => {
-    if (game.date !== lastGameDate) {
+  let lastGameNumber = '';
+  filteredGames.forEach((game, index) => {
+    if (game.Date !== lastGameDate) {
       const dateHeader = document.createElement("h6");
-      dateHeader.innerHTML = `<div align="left">${game.date}:</div>`;
+      dateHeader.innerHTML = `<div align="left">${game.Date}:</div>`;
       hostInfo.appendChild(dateHeader);
-      lastGameDate = game.date;
+      lastGameDate = game.Date;
     }
-    
-    const timeInfo = document.createElement("p");
-    timeInfo.style.color = "var(--ash-gray)";
-    timeInfo.style.marginBottom = "0px";
-    timeInfo.innerHTML = `<div align="left">${game.time} - Game ${game.game}</div>`;
-    hostInfo.appendChild(timeInfo);
+
+    // If we're at the start of a new game
+    if (game.Game_Number !== lastGameNumber) {
+      const timeInfo = document.createElement("p");
+      timeInfo.style.color = "var(--ash-gray)";
+      timeInfo.style.marginBottom = "0px";
+      timeInfo.innerHTML = `<div align="left"><br><br>${game.Match_Time} - Game #${game.Game_Number}</div>`;
+      hostInfo.appendChild(timeInfo);
+      lastGameNumber = game.Game_Number;
+    }
 
     const gameInfo = document.createElement("p");
-    timeInfo.style.color = "var(--ash-gray)";
-    const homeScore = game.home_score !== null ? game.home_score : '';
-    const roadScore = game.road_score !== null ? game.road_score : '';
-    gameInfo.innerHTML += `<span style="font-size: 18px ">${game.road_team} <number>${roadScore}</number> vs ${game.home_team} <number>${homeScore}</number></span>`;
+    gameInfo.style.color = "var(--ash-gray)";
+    gameInfo.innerHTML += `<span style="font-size: 18px ">#${game.Team_Seed} ${game.Team_Name} (${game.Team_Record})</span>`;
     hostInfo.appendChild(gameInfo);
 
-    const emptyLine = document.createElement("br");
-    hostInfo.appendChild(emptyLine);
+    // If we're at the end of a game (i.e., we've added both teams), add the network info
+    if (index % 2 !== 0) {
+      const networkInfo = document.createElement("p");
+      networkInfo.style.color = "var(--ash-gray)";
+      networkInfo.style.marginBottom = "0px";
+      networkInfo.innerHTML = `<div align="right">Network: ${game.Network}</div>`;
+      hostInfo.appendChild(networkInfo);
+
+      const emptyLine = document.createElement("br");
+      hostInfo.appendChild(emptyLine);
+      hostInfo.appendChild(emptyLine);
+    }
   });
 }
+
+
+
 
 
 

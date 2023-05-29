@@ -1,0 +1,65 @@
+Game_Number,Date,Tournament,Host,Team_Seed,Team_Name,Team_Record,Match_Time,Network
+1.0,Friday June 2 2023,Auburn Regional,Auburn,2,Southern Miss.,41-17,2 p.m.,ESPN+
+1.0,Friday June 2 2023,Auburn Regional,Auburn,3,Samford,36-23,2 p.m.,ESPN+
+2.0,Friday June 2 2023,Auburn Regional,Auburn,1,Auburn,34-21-1,7 p.m.,ESPN+
+2.0,Friday June 2 2023,Auburn Regional,Auburn,4,Penn,32-14,7 p.m.,ESPN+
+3.0,Friday June 2 2023,Baton Rouge Regional,LSU,1,LSU,43-15,3 p.m.,ESPNU
+3.0,Friday June 2 2023,Baton Rouge Regional,LSU,4,Tulane,19-40,3 p.m.,ESPNU
+4.0,Friday June 2 2023,Baton Rouge Regional,LSU,2,Oregon St.,39-18,8 p.m.,ESPN+
+4.0,Friday June 2 2023,Baton Rouge Regional,LSU,3,Sam Houston,38-23,8 p.m.,ESPN+
+5.0,Friday June 2 2023,Charlottesville Regional,Virginia,1,Virginia,45-12,Noon,ESPN+
+5.0,Friday June 2 2023,Charlottesville Regional,Virginia,4,Army West Point,38-16,Noon,ESPN+
+6.0,Friday June 2 2023,Charlottesville Regional,Virginia,2,East Carolina,45-17,7 p.m.,ESPN2
+6.0,Friday June 2 2023,Charlottesville Regional,Virginia,3,Oklahoma,31-26,7 p.m.,ESPN2
+7.0,Friday June 2 2023,Clemson Regional,Clemson,1,Clemson,43-17,1 p.m.,ESPN+
+7.0,Friday June 2 2023,Clemson Regional,Clemson,4,Lipscomb,36-24,1 p.m.,ESPN+
+8.0,Friday June 2 2023,Clemson Regional,Clemson,2,Tennessee,38-19,6 p.m.,ESPNU
+8.0,Friday June 2 2023,Clemson Regional,Clemson,3,Charlotte,34-26,6 p.m.,ESPNU
+9.0,Friday June 2 2023,Columbia Regional,South Carolina,2,Campbell,44-13,1 p.m.,ACCN
+9.0,Friday June 2 2023,Columbia Regional,South Carolina,3,NC State,35-19,1 p.m.,ACCN
+10.0,Friday June 2 2023,Columbia Regional,South Carolina,1,South Carolina,39-19,7 p.m.,ESPN+
+10.0,Friday June 2 2023,Columbia Regional,South Carolina,4,Central Conn. St.,36-12,7 p.m.,ESPN+
+11.0,Friday June 2 2023,Conway Regional,Coastal Carolina,2,Duke,35-21,1 p.m.,ESPN+
+11.0,Friday June 2 2023,Conway Regional,Coastal Carolina,3,UNCW,34-21,1 p.m.,ESPN+
+12.0,Friday June 2 2023,Conway Regional,Coastal Carolina,1,Coastal Carolina,39-19,7 p.m.,ESPN+
+12.0,Friday June 2 2023,Conway Regional,Coastal Carolina,4,Rider,35-19,7 p.m.,ESPN+
+13.0,Friday June 2 2023,Coral Gables Regional,Miami (FL),2,Texas,38-20,2 p.m.,LHN
+13.0,Friday June 2 2023,Coral Gables Regional,Miami (FL),3,Louisiana,40-22,2 p.m.,LHN
+14.0,Friday June 2 2023,Coral Gables Regional,Miami (FL),1,Miami (FL),40-19,7 p.m.,ESPN+
+14.0,Friday June 2 2023,Coral Gables Regional,Miami (FL),4,Maine,32-19,7 p.m.,ESPN+
+15.0,Friday June 2 2023,Fayetteville Regional,Arkansas,1,Arkansas,41-16,3 p.m.,ESPN+
+15.0,Friday June 2 2023,Fayetteville Regional,Arkansas,4,Santa Clara,35-18,3 p.m.,ESPN+
+16.0,Friday June 2 2023,Fayetteville Regional,Arkansas,2,TCU,37-22,9 p.m.,ESPNU
+16.0,Friday June 2 2023,Fayetteville Regional,Arkansas,3,Arizona,33-24,9 p.m.,ESPNU
+17.0,Friday June 2 2023,Gainesville Regional,Florida,2,UConn,43-15,Noon,ESPNU
+17.0,Friday June 2 2023,Gainesville Regional,Florida,3,Texas Tech,39-21,Noon,ESPNU
+18.0,Friday June 2 2023,Gainesville Regional,Florida,1,Florida,44-14,5:30 p.m.,ESPN+
+18.0,Friday June 2 2023,Gainesville Regional,Florida,4,Florida A&M,29-28,5:30 p.m.,ESPN+
+19.0,Friday June 2 2023,Lexington Regional,Kentucky,1,Kentucky,36-18,Noon,SECN
+19.0,Friday June 2 2023,Lexington Regional,Kentucky,4,Ball St.,36-21,Noon,SECN
+20.0,Friday June 2 2023,Lexington Regional,Kentucky,2,West Virginia,39-18,7 p.m.,ESPN+
+20.0,Friday June 2 2023,Lexington Regional,Kentucky,3,Indiana,41-18,7 p.m.,ESPN+
+21.0,Friday June 2 2023,Nashville Regional,Vanderbilt,2,Oregon,37-20,1 p.m.,ESPN+
+21.0,Friday June 2 2023,Nashville Regional,Vanderbilt,3,Xavier,37-23,1 p.m.,ESPN+
+22.0,Friday June 2 2023,Nashville Regional,Vanderbilt,1,Vanderbilt,41-18,8 p.m.,SECN
+22.0,Friday June 2 2023,Nashville Regional,Vanderbilt,4,Eastern Ill.,38-19,8 p.m.,SECN
+23.0,Friday June 2 2023,Stanford Regional,Stanford,1,Stanford,38-16,5 p.m.,ESPN+
+23.0,Friday June 2 2023,Stanford Regional,Stanford,4,San Jose St.,31-25,5 p.m.,ESPN+
+24.0,Friday June 2 2023,Stanford Regional,Stanford,2,Texas A&M,36-25,10 p.m.,ESPN2
+24.0,Friday June 2 2023,Stanford Regional,Stanford,3,Cal St. Fullerton,31-22,10 p.m.,ESPN2
+25.0,Friday June 2 2023,Stillwater Regional,Oklahoma St.,2,DBU,45-14,1 p.m.,ESPN+
+25.0,Friday June 2 2023,Stillwater Regional,Oklahoma St.,3,Washington,34-18,1 p.m.,ESPN+
+26.0,Friday June 2 2023,Stillwater Regional,Oklahoma St.,1,Oklahoma St.,41-18,7 p.m.,ESPN+
+26.0,Friday June 2 2023,Stillwater Regional,Oklahoma St.,4,Oral Roberts,46-11,7 p.m.,ESPN+
+27.0,Friday June 2 2023,Terre Haute Regional,Indiana St.,1,Indiana St.,42-15,1 p.m.,ESPN+
+27.0,Friday June 2 2023,Terre Haute Regional,Indiana St.,4,Wright St.,39-21,1 p.m.,ESPN+
+28.0,Friday June 2 2023,Terre Haute Regional,Indiana St.,2,Iowa,42-14,7 p.m.,ACCN
+28.0,Friday June 2 2023,Terre Haute Regional,Indiana St.,3,North Carolina,35-22,7 p.m.,ACCN
+29.0,Friday June 2 2023,Tuscaloosa Regional,Alabama,2,Boston College,35-18,3 p.m.,ESPN+
+29.0,Friday June 2 2023,Tuscaloosa Regional,Alabama,3,Troy,39-20,3 p.m.,ESPN+
+30.0,Friday June 2 2023,Tuscaloosa Regional,Alabama,1,Alabama,40-19,7 p.m.,ESPN+
+30.0,Friday June 2 2023,Tuscaloosa Regional,Alabama,4,Nicholls,34-22,7 p.m.,ESPN+
+31.0,Friday June 2 2023,Winston-Salem Regional,Wake Forest,2,Maryland,41-19,1 p.m.,ESPN+
+31.0,Friday June 2 2023,Winston-Salem Regional,Wake Forest,3,Northeastern,44-14,1 p.m.,ESPN+
+32.0,Friday June 2 2023,Winston-Salem Regional,Wake Forest,1,Wake Forest,47-10,7 p.m.,ESPN+
+32.0,Friday June 2 2023,Winston-Salem Regional,Wake Forest,4,George Mason,34-25,7 p.m.,ESPN+
