@@ -202,6 +202,32 @@ async function MapClickHandler(event, data, map, polygons, levelCounts) {
 
 
 }
+
+// This function should be called in your initMap() function
+function initSearchBox(map) {
+  // Create the search box and link it to the UI element.
+  const input = document.getElementById("search-input");
+  const searchBox = new google.maps.places.SearchBox(input);
+
+  // Bias the SearchBox results towards the current map's viewport.
+  map.addListener("bounds_changed", () => {
+    searchBox.setBounds(map.getBounds());
+  });
+
+  // Listen for the event fired when the user selects a prediction and retrieve
+  // more details for that place.
+  searchBox.addListener("places_changed", () => {
+    const places = searchBox.getPlaces();
+
+    if (places.length === 0) {
+      return;
+    }
+
+    // Pan the map to the selected location
+    const location = places[0].geometry.location;
+    map.panTo(location);
+  });
+}
        
 
 // Create the function to find the closest field to the click location
@@ -551,7 +577,7 @@ function renderPolygons(data, map, levelCounts, gameData) {
         // will be used in the addMapClickHandler function to check the click location against
       }
 // Define the paths to the icons outside of the function, as they don't change
-const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/7ed36c05c89fe22ae7e43598b9357c57f5610069/data/NCAA_D1/team_logo/';
+const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/cc997d3e19764fe84e6046125b3105cf6c34d1fa/data/NCAA_D1/assests/team_logo/';
 
 
 // Create the icon filepaths from the base url and the field.Filename
@@ -587,7 +613,7 @@ async function createMarker(field, map) {
       },
       city: field.city,
       state: field.state,
-      host: host_school,
+      host: field.host_school,
       
   });
 
@@ -729,8 +755,19 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
   const fieldTitle = document.getElementById("fieldTitle");
   fieldTitle.innerHTML = ""; // Clear the previous children
 
-  const fieldName = document.createElement("h2");
-  fieldName.innerHTML = `${closestField.park_name}`;
+  const fieldName = document.createElement("h1");
+  fieldName.innerHTML = `${closestField.display_name}`;
+  // if there is a display_name2 add it underneith as a smaller font
+  if (closestField.display_name2) {
+    const fieldName2 = document.createElement("h2");
+    fieldName2.innerHTML = `${closestField.display_name2}`;
+    fieldName.appendChild(fieldName2);
+  }
+  // add "Home of the" and the host school under the field name
+  const hostSchool = document.createElement("h3");
+  hostSchool.innerHTML = `Home of the ${closestField.host_school}`;
+
+  
   fieldTitle.appendChild(fieldName);
 
     // Add the city and state under the park name if there is one
@@ -762,11 +799,11 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
     const fenceInfo = document.createElement("p");
     fenceInfo.innerHTML = `<span style="font-size: 20px">Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft - Batter's View: ${closestField.field_cardinal_direction}</span><br>`;
     fenceInfo.innerHTML += `<br>Fence Dimensions<br><br>`;
-    fenceInfo.appendChild(wrapDigits(closestField.min_distance));
+    fenceInfo.appendChild(wrapDigits(round(closestField.min_distance)));
     fenceInfo.innerHTML += `<number> |  </number>`;
-    fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
+    fenceInfo.appendChild(wrapDigits(round(closestField.avg_distance)).toFixed(0)));
     fenceInfo.innerHTML += `<number>  |  </number>`;
-    fenceInfo.appendChild(wrapDigits(closestField.max_distance));
+    fenceInfo.appendChild(wrapDigits(round(closestField.max_distance));
     fenceInfo.innerHTML += `<br>MINIMUM   <number>|</number>   AVERAGE    <number>|</number>   MAXIMUM<br>`;
     fenceBlock.appendChild(fenceInfo);
 
