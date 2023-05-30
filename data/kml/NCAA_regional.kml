@@ -2,35 +2,26 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>NCAA_regional.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="poly-000000-1200-77">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-normal0</styleUrl>
+			<styleUrl>#poly-000000-1200-77-normal4</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-highlight</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-770">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-normal</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-highlight0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="poly-000000-1200-77-highlight0">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
 	<Style id="poly-000000-1200-77-highlight">
 		<LineStyle>
 			<color>ff000000</color>
@@ -40,71 +31,16 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
+	<Style id="poly-000000-1200-77-highlight13">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-highlight6">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="poly-000000-1200-77-nodesc">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal1</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight1</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc1">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal2</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight2</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="poly-000000-1200-77-nodesc-highlight2">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight1">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -137,7 +73,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight01">
+	<Style id="poly-000000-1200-77-nodesc-highlight00">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -149,7 +85,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight00">
+	<Style id="poly-000000-1200-77-nodesc-highlight1">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -173,7 +109,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight91">
+	<Style id="poly-000000-1200-77-nodesc-highlight36">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -185,25 +121,25 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal0">
+	<Style id="poly-000000-1200-77-nodesc-highlight8">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
 		<LineStyle>
 			<color>ff000000</color>
-			<width>1.2</width>
+			<width>1.8</width>
 		</LineStyle>
 		<PolyStyle>
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal1">
+	<Style id="poly-000000-1200-77-nodesc-highlight91">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
 		<LineStyle>
 			<color>ff000000</color>
-			<width>1.2</width>
+			<width>1.8</width>
 		</LineStyle>
 		<PolyStyle>
 			<color>4d000000</color>
@@ -221,7 +157,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal2">
+	<Style id="poly-000000-1200-77-nodesc-normal020">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -233,7 +169,19 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal020">
+	<Style id="poly-000000-1200-77-nodesc-normal12">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal3">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -269,6 +217,18 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal5">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-nodesc-normal6">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
@@ -288,7 +248,27 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight01</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight36</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight8</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc23">
@@ -299,6 +279,26 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc34">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight1</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc6">
@@ -321,16 +321,7 @@
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight34</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="poly-000000-1200-77-normal">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.2</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="poly-000000-1200-77-normal0">
+	<Style id="poly-000000-1200-77-normal1">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -348,7 +339,26 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="poly-000000-1200-7700">
+	<Style id="poly-000000-1200-77-normal4">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-000000-1200-770">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-normal1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-highlight13</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-7702">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-normal13</styleUrl>
@@ -358,12 +368,28 @@
 			<styleUrl>#poly-000000-1200-77-highlight6</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
 	<Folder>
 		<name>NCAA_Regional_Map</name>
-		<open>1</open>
 		<Folder>
 			<name>Charles Schwab Field Omaha - college</name>
-			<open>1</open>
 			<Placemark>
 				<name>foul</name>
 				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
@@ -395,7 +421,6 @@
 		</Folder>
 		<Folder>
 			<name>Veterans Memorial Stadium - Cedar Rapids Kernels - pro</name>
-			<open>1</open>
 			<Placemark>
 				<name>foul</name>
 				<styleUrl>#poly-000000-1200-77-nodesc02</styleUrl>
@@ -427,11 +452,10 @@
 		</Folder>
 		<Folder>
 			<name>Coleman Field - USA National Baseball Stadium</name>
-			<open>1</open>
 			<Placemark>
 				<name>foul</name>
 				<description>2023 Division 2 World Series</description>
-				<styleUrl>#poly-000000-1200-77</styleUrl>
+				<styleUrl>#poly-000000-1200-770</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -445,7 +469,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc34</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -460,11 +484,10 @@
 		</Folder>
 		<Folder>
 			<name>Florida Univ - TEMP</name>
-			<open>1</open>
 			<Placemark>
 				<name>foul</name>
 				<description>drawn from construction images</description>
-				<styleUrl>#poly-000000-1200-770</styleUrl>
+				<styleUrl>#poly-000000-1200-77</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -495,7 +518,7 @@
 			<name>Alabama - Sewell–Thomas Stadium</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -509,7 +532,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -524,7 +547,6 @@
 		</Folder>
 		<Folder>
 			<name>Arkansas - Baum-Walker Stadium - college</name>
-			<open>1</open>
 			<Placemark>
 				<name>foul</name>
 				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
@@ -558,7 +580,7 @@
 			<name>Auburn - Plainsman Park</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -572,7 +594,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -589,7 +611,7 @@
 			<name>Clemson - Doug Kingsmore Stadium</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -603,7 +625,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -682,7 +704,7 @@
 			<name>Kentucky - Kentucky Proud Park</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -696,7 +718,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc5</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -711,7 +733,6 @@
 		</Folder>
 		<Folder>
 			<name>LSU - Alex Box Stadium - college</name>
-			<open>1</open>
 			<Placemark>
 				<name>foul</name>
 				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
@@ -745,7 +766,7 @@
 			<name>Miami - Alex Rodriguez Park at Mark Light Field</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -759,45 +780,13 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
 							<tessellate>1</tessellate>
 							<coordinates>
 								-80.28251849999999,25.7115824,0 -80.2815676,25.7119207,0 -80.28168700000001,25.7121938,0 -80.28174199999999,25.7123049,0 -80.28176209999999,25.7123521,0 -80.281801,25.7123907,0 -80.2818197,25.7124221,0 -80.28186530000001,25.7124693,0 -80.2819002,25.7125103,0 -80.2819284,25.7125369,0 -80.28196459999999,25.71256229999999,0 -80.28200080000001,25.7125792,0 -80.2820303,25.7125913,0 -80.28205850000001,25.712601,0 -80.28209870000001,25.712607,0 -80.28214029999999,25.7126106,0 -80.2821952,25.7126118,0 -80.282269,25.7126094,0 -80.28232800000001,25.7126022,0 -80.28239240000001,25.7125925,0 -80.2824353,25.7125804,0 -80.2825386,25.7125442,0 -80.2826405,25.71250909999999,0 -80.28273969999999,25.7124753,0 -80.2828658,25.7124318,0 -80.28251849999999,25.7115824,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-		</Folder>
-		<Folder>
-			<name>Oklahoma State - O&apos;Brate Stadium</name>
-			<open>1</open>
-			<Placemark>
-				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-97.0642902,36.1284225,0 -97.06419030000001,36.129327,0 -97.06422509999999,36.1293102,0 -97.06426329999999,36.1289869,0 -97.06443899999999,36.1287123,0 -97.0644437,36.1286738,0 -97.06446589999999,36.1286554,0 -97.06447660000001,36.1285498,0 -97.0644578,36.1285476,0 -97.06447260000002,36.1284079,0 -97.0644947,36.128409,0 -97.0644994,36.1283749,0 -97.0643948,36.1282709,0 -97.0640152,36.1282476,0 -97.06400989999999,36.12826,0 -97.06396829999998,36.1282573,0 -97.0636049,36.1283456,0 -97.06340640000001,36.1283294,0 -97.06321930000001,36.1283147,0 -97.0631791,36.1283364,0 -97.0642902,36.1284225,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-97.0642902,36.1284225,0 -97.0631791,36.1283364,0 -97.06313479999999,36.1285839,0 -97.06313350000001,36.1285975,0 -97.0630859,36.1287551,0 -97.06319449999999,36.12906,0 -97.06332519999999,36.1291873,0 -97.06356460000001,36.1293151,0 -97.06419030000001,36.129327,0 -97.0642902,36.1284225,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>
@@ -871,7 +860,7 @@
 			<Placemark>
 				<name>foul</name>
 				<description>bad behind plate - large roof</description>
-				<styleUrl>#poly-000000-1200-7700</styleUrl>
+				<styleUrl>#poly-000000-1200-7702</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -931,6 +920,7 @@
 		</Folder>
 		<Folder>
 			<name>Wake Forrest - college</name>
+			<open>1</open>
 			<Placemark>
 				<name>foul</name>
 				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
@@ -954,6 +944,38 @@
 							<tessellate>1</tessellate>
 							<coordinates>
 								-80.25241219999999,36.129499,0 -80.2513896,36.1295266,0 -80.2513501,36.1295975,0 -80.2513782,36.1299079,0 -80.2513427,36.1299122,0 -80.2514077,36.1302106,0 -80.25138560000001,36.130228,0 -80.25158279999999,36.1303785,0 -80.2516002,36.1303596,0 -80.2519697,36.1304137,0 -80.251975,36.1303834,0 -80.2523633,36.130398,0 -80.2524411,36.130359,0 -80.25241219999999,36.129499,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Oklahoma State - O&apos;Brate Stadium</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-97.06854632990577,36.1312234899554,0 -97.06852702022738,36.1321319961791,0 -97.06854788337473,36.13212767750981,0 -97.06856217577584,36.13185179794755,0 -97.06867126225248,36.13166487017357,0 -97.06868346484632,36.13128052885127,0 -97.06868262468338,36.13120494791081,0 -97.06866062867459,36.13115645403458,0 -97.06862153435189,36.13112157163395,0 -97.06856665748761,36.1311040272411,0 -97.06856819426051,36.13110246724163,0 -97.06856896259559,36.13110168730277,0 -97.06846498964175,36.13110344279416,0 -97.06846489868664,36.13110158598278,0 -97.0684642586146,36.13111066873989,0 -97.06812796063183,36.13110907012751,0 -97.06812541454723,36.13109478200287,0 -97.06797753416791,36.1310922052415,0 -97.06797779019224,36.13109828035067,0 -97.06783912409519,36.13109926009431,0 -97.06745064254541,36.13117690781739,0 -97.06744850855868,36.13121505599107,0 -97.06854632990577,36.1312234899554,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-97.06744963201241,36.13121514926702,0 -97.06737549002165,36.13165187284102,0 -97.06745926997539,36.13189152152189,0 -97.06765651260609,36.13207133916631,0 -97.06798167073377,36.13215160912604,0 -97.06852690787423,36.13213170874121,0 -97.06854560768083,36.13122425812205,0 -97.06744963201241,36.13121514926702,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>
