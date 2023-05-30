@@ -2,6 +2,16 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>MHSAA_2023.kml</name>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin0">
 		<Pair>
 			<key>normal</key>
@@ -102,16 +112,6 @@
 			<styleUrl>#sh_ylw-pushpin120</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin24">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin20</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin121</styleUrl>
-		</Pair>
-	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin30">
 		<Pair>
 			<key>normal</key>
@@ -162,35 +162,6 @@
 			<styleUrl>#sh_ylw-pushpin9</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin900">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin9</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin900</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="poly-000000-1200-77">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-normal24</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-highlight2</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="poly-000000-1200-77-highlight">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
 	<Style id="poly-000000-1200-77-highlight0">
 		<LineStyle>
 			<color>ff000000</color>
@@ -218,6 +189,15 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
+	<Style id="poly-000000-1200-77-highlight4">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-highlight5">
 		<LineStyle>
 			<color>ff000000</color>
@@ -228,28 +208,6 @@
 		</PolyStyle>
 	</Style>
 	<Style id="poly-000000-1200-77-highlight600">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="poly-000000-1200-77-nodesc">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="poly-000000-1200-77-nodesc-highlight">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -307,18 +265,6 @@
 		</PolyStyle>
 	</Style>
 	<Style id="poly-000000-1200-77-nodesc-highlight031">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight1">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -438,6 +384,18 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight114">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-nodesc-highlight120">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
@@ -534,18 +492,6 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight2">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
 	<Style id="poly-000000-1200-77-nodesc-highlight2000">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
@@ -583,6 +529,18 @@
 		</PolyStyle>
 	</Style>
 	<Style id="poly-000000-1200-77-nodesc-highlight23">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight24">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -738,18 +696,6 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight4">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
 	<Style id="poly-000000-1200-77-nodesc-highlight400">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
@@ -763,6 +709,18 @@
 		</PolyStyle>
 	</Style>
 	<Style id="poly-000000-1200-77-nodesc-highlight401">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight42">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -822,7 +780,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight8">
+	<Style id="poly-000000-1200-77-nodesc-highlight6">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -847,6 +805,18 @@
 		</PolyStyle>
 	</Style>
 	<Style id="poly-000000-1200-77-nodesc-highlight801">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight82">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -901,18 +871,6 @@
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.2</width>
 		</LineStyle>
 		<PolyStyle>
 			<color>4d000000</color>
@@ -1182,18 +1140,6 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal2">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.2</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
 	<Style id="poly-000000-1200-77-nodesc-normal20">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
@@ -1314,6 +1260,18 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal241">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-nodesc-normal250">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
@@ -1326,7 +1284,19 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal3">
+	<Style id="poly-000000-1200-77-nodesc-normal32">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal4">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1374,18 +1344,6 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal5">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.2</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
 	<Style id="poly-000000-1200-77-nodesc-normal500">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
@@ -1411,6 +1369,18 @@
 		</PolyStyle>
 	</Style>
 	<Style id="poly-000000-1200-77-nodesc-normal51">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal53">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1566,6 +1536,16 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
+	<StyleMap id="poly-000000-1200-77-nodesc0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight6</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc00">
 		<Pair>
 			<key>normal</key>
@@ -1639,14 +1619,14 @@
 	<StyleMap id="poly-000000-1200-77-nodesc03">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal2</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal24</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight30</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc1">
+	<StyleMap id="poly-000000-1200-77-nodesc10">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-normal41</styleUrl>
@@ -1654,16 +1634,6 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight9</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc10">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal11</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight1</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc1000">
@@ -1694,6 +1664,16 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight10101</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc103">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight114</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc11">
@@ -1836,16 +1816,6 @@
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight401</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal02</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight301</styleUrl>
-		</Pair>
-	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc20">
 		<Pair>
 			<key>normal</key>
@@ -1886,6 +1856,16 @@
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight26</styleUrl>
 		</Pair>
 	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal02</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight301</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc211">
 		<Pair>
 			<key>normal</key>
@@ -1916,7 +1896,7 @@
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight241</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc24">
+	<StyleMap id="poly-000000-1200-77-nodesc241">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-normal15</styleUrl>
@@ -1969,7 +1949,7 @@
 	<StyleMap id="poly-000000-1200-77-nodesc30">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal3</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal32</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -1983,7 +1963,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight4</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight42</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc32">
@@ -1993,13 +1973,13 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight2</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight24</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc33">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal5</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal53</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -2069,7 +2049,7 @@
 	<StyleMap id="poly-000000-1200-77-nodesc81">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal24</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal241</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -2093,7 +2073,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight8</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight82</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc9000">
@@ -2200,6 +2180,16 @@
 			<styleUrl>#poly-000000-1200-77-highlight0</styleUrl>
 		</Pair>
 	</StyleMap>
+	<StyleMap id="poly-000000-1200-772">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-normal24</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-highlight2</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="poly-000000-1200-774">
 		<Pair>
 			<key>normal</key>
@@ -2207,7 +2197,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-highlight</styleUrl>
+			<styleUrl>#poly-000000-1200-77-highlight4</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-7760">
@@ -2220,6 +2210,20 @@
 			<styleUrl>#poly-000000-1200-77-highlight600</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
 	<Style id="sh_ylw-pushpin00">
 		<LineStyle>
 			<color>ff000000</color>
@@ -2260,18 +2264,6 @@
 		</PolyStyle>
 	</Style>
 	<Style id="sh_ylw-pushpin120">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<fill>0</fill>
-		</PolyStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin121">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -2364,13 +2356,18 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin900">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.8</width>
-		</LineStyle>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
 		<PolyStyle>
-			<color>4d000000</color>
+			<fill>0</fill>
 		</PolyStyle>
 	</Style>
 	<Style id="sn_ylw-pushpin000">
@@ -2439,18 +2436,6 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin20">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<fill>0</fill>
-		</PolyStyle>
-	</Style>
 	<Style id="sn_ylw-pushpin201">
 		<LineStyle>
 			<color>ff000000</color>
@@ -2508,15 +2493,6 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin9">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>1.2</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
 	<Style id="sn_ylw-pushpin90">
 		<LineStyle>
 			<color>ff000000</color>
@@ -2555,37 +2531,6 @@
 							<tessellate>1</tessellate>
 							<coordinates>
 								-83.1678186,42.3966942,0 -83.1665385,42.3967249,0 -83.16654320000001,42.3967827,0 -83.1665552,42.3968426,0 -83.1665733,42.3969035,0 -83.16659009999999,42.3969565,0 -83.1666075,42.3970026,0 -83.16663440000001,42.3970531,0 -83.1666632,42.3971041,0 -83.1666967,42.3971477,0 -83.16673900000001,42.3972046,0 -83.16678589999999,42.3972541,0 -83.1668382,42.3973027,0 -83.1668986,42.3973527,0 -83.16694889999999,42.3973913,0 -83.16701260000001,42.3974304,0 -83.1670635,42.3974606,0 -83.1671212,42.3974903,0 -83.16717749999999,42.3975186,0 -83.1672265,42.3975384,0 -83.1672774,42.3975582,0 -83.1673297,42.397575,0 -83.167374,42.3975869,0 -83.16743030000001,42.3976017,0 -83.167484,42.3976131,0 -83.1675249,42.3976206,0 -83.16757250000001,42.39763,0 -83.1676147,42.3976354,0 -83.1676576,42.3976409,0 -83.1677005,42.3976438,0 -83.1677622,42.3976453,0 -83.16781520000001,42.3976478,0 -83.1678776,42.3976484,0 -83.1678186,42.3966942,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-		</Folder>
-		<Folder>
-			<name>Adrian College</name>
-			<Placemark>
-				<name>Foul</name>
-				<styleUrl>#msn_ylw-pushpin900</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-84.0697145,41.901861,0 -84.0703958,41.9026485,0 -84.07040120000001,41.9026405,0 -84.0701651,41.902367,0 -84.07000549999999,41.9020037,0 -84.0698017,41.9017731,0 -84.069677,41.9017472,0 -84.06939,41.9018859,0 -84.0690172,41.9021944,0 -84.0687221,41.9023371,0 -84.0687248,41.9023461,0 -84.0697145,41.901861,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>FOP</name>
-				<styleUrl>#msn_ylw-pushpin900</styleUrl>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<tessellate>1</tessellate>
-							<coordinates>
-								-84.0697145,41.901861,0 -84.0687248,41.9023461,0 -84.0688009,41.9025374,0 -84.0688384,41.9025973,0 -84.0688706,41.9026322,0 -84.0689175,41.9026841,0 -84.0689766,41.902728,0 -84.0690208,41.902759,0 -84.069061,41.9027889,0 -84.06910929999999,41.9028169,0 -84.0691683,41.9028448,0 -84.06923399999999,41.9028718,0 -84.06929839999999,41.9028907,0 -84.0693708,41.9029067,0 -84.06946069999999,41.9029217,0 -84.0695492,41.9029277,0 -84.06962830000001,41.9029247,0 -84.0697222,41.9029237,0 -84.0698,41.9029097,0 -84.06992339999999,41.9028837,0 -84.07000119999999,41.9028588,0 -84.07009239999999,41.9028189,0 -84.07015,41.9027829,0 -84.0702117,41.902743,0 -84.0702479,41.902712,0 -84.070319,41.9026472,0 -84.0703566,41.9026023,0 -84.0697145,41.901861,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>
@@ -2718,37 +2663,6 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Ann Arbor Greenhills HS</name>
-			<Placemark>
-				<name>foul</name>
-				<styleUrl>#msn_ylw-pushpin24</styleUrl>
-				<Polygon>
-					<tessellate>1</tessellate>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								-84.01479353123523,41.86694552754826,0 -84.01514347607345,41.86772410422692,0 -84.0151778755618,41.86771063823864,0 -84.01521631903404,41.86769587358082,0 -84.01525657666288,41.86767850314082,0 -84.01528950498047,41.86766544090445,0 -84.0153201503983,41.86765496626932,0 -84.0153472565478,41.86764100437355,0 -84.01523773481192,41.86739494520413,0 -84.01509999173859,41.86708112412062,0 -84.01505977932297,41.86700223629157,0 -84.0149960936379,41.86686663610395,0 -84.01498971182284,41.86684385064245,0 -84.01497636964346,41.86683183600567,0 -84.01495260612572,41.86681770792614,0 -84.01493003602545,41.86680616771122,0 -84.01491097883934,41.86680061909198,0 -84.01489828939665,41.86679376525623,0 -84.0148711831695,41.86678651261901,0 -84.01485851226583,41.86678093247528,0 -84.01483606379341,41.86677484963578,0 -84.01481647140588,41.86677092321995,0 -84.01479743680879,41.8667644003602,0 -84.01476222303614,41.8667677822519,0 -84.01472522669434,41.86677285066214,0 -84.0146835181496,41.86677874661384,0 -84.0146318347159,41.86678849615232,0 -84.01453034374299,41.86680351298756,0 -84.01454158357249,41.86682638844762,0 -84.01444061479955,41.86685393356029,0 -84.01440219828233,41.86686383402997,0 -84.01415170289646,41.8669285235466,0 -84.01392944744005,41.86698688076766,0 -84.01371667756605,41.86704169984607,0 -84.01371790365897,41.86705222498355,0 -84.01371915271655,41.8670684317748,0 -84.01372276455452,41.8670863647209,0 -84.01372400308372,41.86710121393136,0 -84.0137276194198,41.86711821543832,0 -84.0137300346919,41.86713127154229,0 -84.013733049742,41.86714778166137,0 -84.01373661185355,41.86716124102478,0 -84.01374014888624,41.86717340032551,0 -84.0137448218278,41.86719325061626,0 -84.01374773619173,41.86720369600694,0 -84.01479353123523,41.86694552754826,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>fop</name>
-				<styleUrl>#msn_ylw-pushpin23</styleUrl>
-				<Polygon>
-					<tessellate>1</tessellate>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								-84.01374704390223,41.86720354412398,0 -84.01375288393093,41.86722572640714,0 -84.01375931370015,41.86724010941233,0 -84.01376574016265,41.8672623010113,0 -84.01377917872237,41.86730062938256,0 -84.01378268968443,41.86732236324303,0 -84.01380767328172,41.86736892638139,0 -84.01381583525962,41.86739107167364,0 -84.01383218439406,41.86741848402728,0 -84.01384910752849,41.86744197469702,0 -84.01387143598382,41.86747520053571,0 -84.01388716831276,41.86749393447433,0 -84.01391499647727,41.8675285967228,0 -84.01393826743005,41.8675533476548,0 -84.01398334859817,41.86760112605779,0 -84.01400603975198,41.8676210537714,0 -84.0140316419605,41.86764489487166,0 -84.01406506632556,41.86767105749865,0 -84.01409065481815,41.86769141922858,0 -84.01412639987771,41.8677171175475,0 -84.01414856972161,41.86773409636123,0 -84.01416371544656,41.86774192753458,0 -84.01419222995517,41.86775580347921,0 -84.01421782869014,41.86776620890055,0 -84.01424158022785,41.86777651786849,0 -84.01426131298975,41.86778470633914,0 -84.01428643090529,41.86778956330235,0 -84.01430795869855,41.86779650285186,0 -84.01433471904035,41.86780388312193,0 -84.0143573963864,41.86780780468899,0 -84.01440431923605,41.86781258122026,0 -84.0144633184035,41.86781863792471,0 -84.0145159605939,41.86782037004507,0 -84.01455361413122,41.86781948905908,0 -84.01457451878002,41.86782121384534,0 -84.01460124052721,41.86782120375099,0 -84.01462564969928,41.86781902700429,0 -84.01465589037275,41.86782031576012,0 -84.01468368460908,41.86781641491693,0 -84.01471160512969,41.86781554307695,0 -84.0147336529017,41.86781508254249,0 -84.0147557627415,41.86781160084539,0 -84.01477728245806,41.86780984242836,0 -84.01481541146777,41.86780546712146,0 -84.01483579471457,41.86780241286206,0 -84.01485794497326,41.86779849210919,0 -84.01488418010648,41.86779456288201,0 -84.01490228543589,41.8677897949383,0 -84.01492929152498,41.86778483579448,0 -84.01495207690839,41.86778005676241,0 -84.01497311027617,41.86777527944555,0 -84.01499704267694,41.86777050372341,0 -84.01501575222059,41.86776312866304,0 -84.01503323858664,41.8677583537956,0 -84.01506528246462,41.8677500948595,0 -84.0150851119804,41.86774314634035,0 -84.01511019105118,41.86773532389113,0 -84.01512769213589,41.867729673917,0 -84.01514344349262,41.86772402684545,0 -84.01479394248477,41.86694572675937,0 -84.01374704390223,41.86720354412398,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-		</Folder>
-		<Folder>
 			<name>Auburn Hills Avondale HS</name>
 			<Placemark>
 				<name>foul</name>
@@ -2810,9 +2724,6 @@
 				</Polygon>
 			</Placemark>
 		</Folder>
-		<Document>
-			<name>BB - 5-10-23 - district knockdown 2</name>
-		</Document>
 		<Folder>
 			<name>Beal City HS</name>
 			<Placemark>
@@ -2879,7 +2790,7 @@
 			<name>Berrien Springs HS - high_school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc21</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -2893,7 +2804,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc21</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3158,7 +3069,7 @@
 			<name>Central Lake HS - high_school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc21</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3172,7 +3083,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc21</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3375,7 +3286,7 @@
 			<name>Colon High School - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3389,7 +3300,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3466,6 +3377,7 @@
 		</Folder>
 		<Folder>
 			<name>Detroit Osborn HS</name>
+			<open>1</open>
 			<Placemark>
 				<name>foul</name>
 				<styleUrl>#poly-000000-1200-77-nodesc211</styleUrl>
@@ -3514,7 +3426,7 @@
 			<Placemark>
 				<name>fop</name>
 				<description>no temp fence in mymaps image - eyeballed based on grass markings</description>
-				<styleUrl>#poly-000000-1200-77</styleUrl>
+				<styleUrl>#poly-000000-1200-772</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3594,7 +3506,7 @@
 			<name>Durand HS - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc21</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3608,7 +3520,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc21</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3904,7 +3816,7 @@
 			<name>Gaylord High School - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3918,7 +3830,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3935,7 +3847,7 @@
 			<name>Gaylord St Mary High School - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -3949,7 +3861,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4214,7 +4126,7 @@
 			<name>Grass Lake HS - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc103</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4228,7 +4140,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc103</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4710,7 +4622,7 @@
 			<name>Jackson High School - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc103</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4724,7 +4636,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc103</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4896,7 +4808,7 @@
 			<name>Lansing Christian HS - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc103</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -4910,7 +4822,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc103</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5049,7 +4961,6 @@
 		</Folder>
 		<Folder>
 			<name>Lowell High School - high school</name>
-			<open>1</open>
 			<Placemark>
 				<name>foul</name>
 				<description>guestimate on the fenceline based on the mow pattern</description>
@@ -5067,7 +4978,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5084,7 +4995,7 @@
 			<name>Madison Heights Bishop Foley - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5098,7 +5009,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5394,7 +5305,7 @@
 			<name>Morenci HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc24</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc241</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5408,7 +5319,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc24</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc241</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5580,7 +5491,7 @@
 			<name>Negaunee high School - Irontown Field - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5594,7 +5505,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5642,7 +5553,7 @@
 			<name>Newaygo High School - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5656,7 +5567,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5673,7 +5584,7 @@
 			<name>North Adams-Jerome</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5984,7 +5895,7 @@
 			<name>Peck HS</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc24</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc241</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -5998,7 +5909,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc24</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc241</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6046,7 +5957,7 @@
 			<name>Plymouth Christian Academy - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6060,7 +5971,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6170,7 +6081,7 @@
 			<name>Romeo high School - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6184,7 +6095,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6571,6 +6482,37 @@
 			</Placemark>
 		</Folder>
 		<Folder>
+			<name>Stoepel Park - Detroit Communications and Media</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc33</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.23423680000001,42.3961247,0 -83.2350106,42.396722,0 -83.23503340000001,42.3967096,0 -83.23504610000001,42.3967026,0 -83.2345734,42.3962451,0 -83.2343762,42.3961099,0 -83.2343132,42.3961134,0 -83.23426360000001,42.3960812,0 -83.2342079,42.3960836,0 -83.2341684,42.3961148,0 -83.234098,42.3961163,0 -83.2339645,42.3962193,0 -83.23345089999999,42.3966492,0 -83.23343680000001,42.3967046,0 -83.23423680000001,42.3961247,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc33</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.23423680000001,42.3961247,0 -83.23343680000001,42.3967046,0 -83.23344969999999,42.3967137,0 -83.2334785,42.3967345,0 -83.23351270000001,42.3967583,0 -83.2335557,42.396783,0 -83.2335959,42.3968043,0 -83.2336341,42.3968241,0 -83.233679,42.3968444,0 -83.23374010000001,42.3968662,0 -83.23378700000001,42.3968845,0 -83.23382719999999,42.3968974,0 -83.2338567,42.3969053,0 -83.2338943,42.3969143,0 -83.2339365,42.3969251,0 -83.23397679999999,42.3969316,0 -83.2340183,42.3969385,0 -83.2340659,42.3969459,0 -83.2341102,42.3969499,0 -83.2341545,42.3969539,0 -83.2342027,42.3969549,0 -83.23424900000001,42.3969554,0 -83.2342819,42.3969549,0 -83.2343221,42.3969534,0 -83.2343516,42.3969509,0 -83.2343898,42.3969479,0 -83.23443210000001,42.396943,0 -83.2344817,42.3969355,0 -83.2345246,42.3969266,0 -83.23455610000001,42.3969202,0 -83.2345957,42.3969113,0 -83.2346319,42.3968999,0 -83.2346768,42.3968895,0 -83.2347097,42.3968771,0 -83.2347432,42.3968637,0 -83.23477870000001,42.3968509,0 -83.2348183,42.3968335,0 -83.2348559,42.3968172,0 -83.2348867,42.3968028,0 -83.2349182,42.3967815,0 -83.2349464,42.3967642,0 -83.2349806,42.3967429,0 -83.2350106,42.396722,0 -83.23423680000001,42.3961247,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
 			<name>Traverse City Christian HS</name>
 			<Placemark>
 				<name>foul</name>
@@ -6698,7 +6640,7 @@
 			<name>Vermontville Maple Valley - high school</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -6712,7 +6654,7 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc1</styleUrl>
+				<styleUrl>#poly-000000-1200-77-nodesc10</styleUrl>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -7006,17 +6948,17 @@
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Stoepel Park - Detroit Communications and Media</name>
+			<name>Concordia University - AA Greenhills Site</name>
 			<open>1</open>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#poly-000000-1200-77-nodesc33</styleUrl>
+				<styleUrl>#msn_ylw-pushpin</styleUrl>
 				<Polygon>
+					<tessellate>1</tessellate>
 					<outerBoundaryIs>
 						<LinearRing>
-							<tessellate>1</tessellate>
 							<coordinates>
-								-83.23423680000001,42.3961247,0 -83.2350106,42.396722,0 -83.23503340000001,42.3967096,0 -83.23504610000001,42.3967026,0 -83.2345734,42.3962451,0 -83.2343762,42.3961099,0 -83.2343132,42.3961134,0 -83.23426360000001,42.3960812,0 -83.2342079,42.3960836,0 -83.2341684,42.3961148,0 -83.234098,42.3961163,0 -83.2339645,42.3962193,0 -83.23345089999999,42.3966492,0 -83.23343680000001,42.3967046,0 -83.23423680000001,42.3961247,0 
+								-83.67825654723873,42.27801177186786,0 -83.67738512065615,42.27741596779096,0 -83.67735959987586,42.27745406305186,0 -83.677810443743,42.2779315154843,0 -83.67784588796208,42.2779606328872,0 -83.67793585013838,42.27801395710371,0 -83.67796823718497,42.27799139611597,0 -83.67807282653241,42.27806283955611,0 -83.67803877728683,42.27808797926049,0 -83.67808212916219,42.27809618614161,0 -83.67813062913784,42.27810719012248,0 -83.67818144876902,42.27811267414317,0 -83.67823391669242,42.27811551594579,0 -83.67829369529896,42.27811283054506,0 -83.67834987249937,42.27810894799468,0 -83.67839173683485,42.27809944492738,0 -83.67844143385294,42.27808589858073,0 -83.67849218622609,42.27807176450155,0 -83.67845591918362,42.27804778374865,0 -83.67855322614301,42.27796714679197,0 -83.67859576552945,42.27798840646064,0 -83.67871170812302,42.27784927964217,0 -83.67894458775574,42.27756812614872,0 -83.67908555937072,42.27739144285745,0 -83.67906545611849,42.27737679863637,0 -83.67825654723873,42.27801177186786,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>
@@ -7024,13 +6966,13 @@
 			</Placemark>
 			<Placemark>
 				<name>fop</name>
-				<styleUrl>#poly-000000-1200-77-nodesc33</styleUrl>
+				<styleUrl>#msn_ylw-pushpin</styleUrl>
 				<Polygon>
+					<tessellate>1</tessellate>
 					<outerBoundaryIs>
 						<LinearRing>
-							<tessellate>1</tessellate>
 							<coordinates>
-								-83.23423680000001,42.3961247,0 -83.23343680000001,42.3967046,0 -83.23344969999999,42.3967137,0 -83.2334785,42.3967345,0 -83.23351270000001,42.3967583,0 -83.2335557,42.396783,0 -83.2335959,42.3968043,0 -83.2336341,42.3968241,0 -83.233679,42.3968444,0 -83.23374010000001,42.3968662,0 -83.23378700000001,42.3968845,0 -83.23382719999999,42.3968974,0 -83.2338567,42.3969053,0 -83.2338943,42.3969143,0 -83.2339365,42.3969251,0 -83.23397679999999,42.3969316,0 -83.2340183,42.3969385,0 -83.2340659,42.3969459,0 -83.2341102,42.3969499,0 -83.2341545,42.3969539,0 -83.2342027,42.3969549,0 -83.23424900000001,42.3969554,0 -83.2342819,42.3969549,0 -83.2343221,42.3969534,0 -83.2343516,42.3969509,0 -83.2343898,42.3969479,0 -83.23443210000001,42.396943,0 -83.2344817,42.3969355,0 -83.2345246,42.3969266,0 -83.23455610000001,42.3969202,0 -83.2345957,42.3969113,0 -83.2346319,42.3968999,0 -83.2346768,42.3968895,0 -83.2347097,42.3968771,0 -83.2347432,42.3968637,0 -83.23477870000001,42.3968509,0 -83.2348183,42.3968335,0 -83.2348559,42.3968172,0 -83.2348867,42.3968028,0 -83.2349182,42.3967815,0 -83.2349464,42.3967642,0 -83.2349806,42.3967429,0 -83.2350106,42.396722,0 -83.23423680000001,42.3961247,0 
+								-83.67906479189217,42.27737522544219,0 -83.67903210620533,42.27734774580624,0 -83.67893590251823,42.2772641555642,0 -83.67887651662819,42.27721590267583,0 -83.67882018573434,42.27717466257873,0 -83.67875875935718,42.27713710561185,0 -83.67869981803611,42.27710503349317,0 -83.67864036162699,42.27707438843555,0 -83.67856485131074,42.27704296092904,0 -83.67847119764009,42.27700898528204,0 -83.67837947339628,42.27699016912869,0 -83.67830350905929,42.27698399773796,0 -83.67826750772925,42.27697876847395,0 -83.6782127440724,42.27697696319479,0 -83.67815162109207,42.27698339433585,0 -83.67807624789168,42.27699769751926,0 -83.67801435339719,42.27701084450644,0 -83.67793529265988,42.27703209940234,0 -83.67788709681426,42.27704334449695,0 -83.67783754015235,42.27706404493721,0 -83.67778099777249,42.27708449277475,0 -83.67774900946617,42.27709942424975,0 -83.67772121792208,42.27712166240009,0 -83.67769106773544,42.27714134604292,0 -83.67765800795318,42.27717253280481,0 -83.67764077862168,42.27718767124448,0 -83.67759577364785,42.27722618654883,0 -83.67756453246216,42.2772501796211,0 -83.67753299744817,42.27727934718403,0 -83.67749953192902,42.27730821246253,0 -83.67746455226892,42.27733909138498,0 -83.67742983281289,42.27737298154612,0 -83.67738366275628,42.27741642614016,0 -83.67825695117611,42.27801164047828,0 -83.67906479189217,42.27737522544219,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>
