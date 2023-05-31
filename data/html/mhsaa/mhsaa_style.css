@@ -67,7 +67,7 @@
 
 #hostInfo {
   position: absolute;
-  top: 10%; /* Adjust this value to suit your design */
+  top: 5%; /* Adjust this value to suit your design */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -114,10 +114,10 @@
 #fieldInfo {
   position: absolute;
   z-index: 3;
-  top: 40%;
+  top: 30%;
   right: 2%;
   width: 20vw;
-  min-height: 40vh;
+  min-height: 30vh;
   background-color: var(--dynamic-bg-color);
   color: var(--dynamic-text-color);
   text-align: center;
@@ -125,6 +125,31 @@
   border-radius: 10px;
   text-align: center;
   box-shadow: inset 0 0 0 5px var(--dynamic-text-color); /* Add inner border using box-shadow */
+}
+
+/* Map control Box and Elements */
+#mapControls {
+  fontSize: '20px';
+  fontFamily: 'Arial, sans-serif';
+  padding: '10px';
+  backgroundColor: '#007BFF';
+  color: 'white';
+  border: 'none';
+  borderRadius: '5px';
+  margin: '10px';
+  width: '120px';
+  height: '50px';
+  position: 'absolute';
+}
+
+#resetButton {
+  fontSize = '20px'; // make the text bigger
+  fontFamily = 'Arial, sans-serif'; // use Arial font
+  padding = '10px'; // add some padding around the text
+  backgroundColor = '#007BFF'; // set background color to blue
+  color = 'white'; // set text color to white
+  border = 'none'; // remove border
+  borderRadius = '5px'; // round the corners
 }
 
 #default-text {
@@ -270,30 +295,3 @@ h1, h2, h3, h4, h5,   {
   }
   
 
-  
-/* DIFFERENT SCREEN SIZE LAYOUTS BELOW */
-  @media (max-width: 1024px) {
-    #map, .scoreboard {
-      height: 70vh;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    body {
-      font-size: 1rem;
-    }
-    
-    .scoreboard {
-      width: 80vw;
-      height: 50vw;
-    }
-  
-    #map {
-      height: 50vh;
-    }
-    
-    .container {
-      flex-direction: column;
-    }
-  }
-  
