@@ -817,7 +817,13 @@ function filterByLevel(level) {
         fieldTitle.innerHTML = "";
       
         const fieldName = document.createElement("h2");
-        fieldName.innerHTML = `${closestField.display_name}`;
+        // If a field has a display_name use that. if not use the park_name
+        if (closestField.display_name) {
+          fieldName.innerHTML = closestField.display_name;
+        } else {
+          fieldName.innerHTML = closestField.park_name;
+        }
+        
         
         fieldTitle.appendChild(fieldName);
       
@@ -843,24 +849,41 @@ function filterByLevel(level) {
         document.documentElement.style.setProperty('--dynamic-bg-color', dynamicBgColor);
         document.documentElement.style.setProperty('--dynamic-text-color', dynamicTextColor);
 
+        
         // Create the flex container
         // const flexContainer = document.createElement('div');
         // flexContainer.style.display = 'flex';
         // flexContainer.style.justifyContent = 'space-between'; // Add some space between the columns
 
             // Create the fenceBlock
-            const fenceBlock = document.getElementById("fenceBlock");
-            fenceBlock.innerHTML = "";
-
-            const fenceInfo = document.createElement("p");
-            fenceInfo.innerHTML = `Fence Dimensions<br>`;
+      // Clear the fenceBlock and areaBlock containers
+      const fenceBlock = document.getElementById("fenceBlock");
+      fenceBlock.innerHTML = "";
+  
+      const fenceInfo = document.createElement("p");
+      
+  
+            // Create the outfield plot
+            const outfieldPlot = document.createElement("div");
+            outfieldPlot.id = "outfieldPlot";
+            // outfieldPlot.style.marginTop = "-10px"; // This reduces the distance between the text and image. Adjust as needed.
             
-            fenceInfo.appendChild(wrapDigits(closestField.min_distance));
+            // Add "Fence Dimensions" text with h2 class
+            const fenceDimensionsText = document.createElement("h2");
+            fenceDimensionsText.innerHTML = "Fence Dimensions";
+            fenceDimensionsText.style.marginBottom = "-20px"; // Adjust this value to achieve desired effect
+            fenceInfo.appendChild(fenceDimensionsText);
+            
+            // outfield plot base url = https://github.com/JSmith1826/BB_parks/blob/cc997d3e19764fe84e6046125b3105cf6c34d1fa/
+            outfieldPlot.innerHTML = `<img src="https://raw.githubusercontent.com/JSmith1826/BB_parks/main/${closestField.file_path}" alt="Outfield Plot" width="100%">`;
+            fenceInfo.appendChild(outfieldPlot);
+            
+            fenceInfo.appendChild(wrapDigits((closestField.min_distance).toFixed(0)));
             fenceInfo.innerHTML += `<number> | </number>`;
             fenceInfo.appendChild(wrapDigits((closestField.avg_distance).toFixed(0)));
             
             fenceInfo.innerHTML += `<number> | </number>`;
-            fenceInfo.appendChild(wrapDigits(closestField.max_distance));
+            fenceInfo.appendChild(wrapDigits((closestField.max_distance).toFixed(0)));
             
             fenceInfo.innerHTML += `<br>MINIMUM   |   AVERAGE    |   MAXIMUM<br>`;
            
@@ -880,74 +903,8 @@ areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_
 areaInfo.innerHTML += `<b> X </b> Fair Ground<br>`;
 areaBlock.appendChild(areaInfo);
 
-function createGradientBar(closestField, id, score, minScore, maxScore) {
-    // Check for existing gradient bar and remove it if it exists
-    const oldGradientBar = document.getElementById(id);
-    if (oldGradientBar) {
-        oldGradientBar.remove();
-    }
-    // Create a new canvas element
-    const canvas = document.createElement('canvas');
-    canvas.id = id;  // Assign an id to the gradient bar
-    canvas.width = 200;
-    canvas.height = 30;
-    const ctx = canvas.getContext('2d');
-
-    // Create a linear gradient
-    const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
-
-    // Create gradient in steps instead of a smooth transition
-    gradient.addColorStop(0, 'red');
-    gradient.addColorStop(0.5, 'yellow');
-    gradient.addColorStop(1, 'green');
-
-    // Draw thicker white outline
-    ctx.lineWidth = 2;
-    ctx.strokeStyle = 'white';
-    ctx.strokeRect(0, 0, canvas.width, canvas.height);
-
-    // Fill the canvas with the gradient
-    ctx.fillStyle = gradient;
-    ctx.fillRect(1, 1, canvas.width - 2, canvas.height - 2);
-
-    // Draw the tick mark
-    const normalizedScore = ((score - minScore) / (maxScore - minScore)) * canvas.width;
-    ctx.fillStyle = 'black';
-    ctx.fillRect(normalizedScore, 0, 2, canvas.height);
-
-    // Add labels
-    ctx.font = '14px Arial';
-    ctx.fillStyle = 'black';
-    ctx.fillText('Favors Pitcher', 2, 12);
-    ctx.textAlign = 'end';  
-    ctx.fillText('Favors Hitter', canvas.width - 2, 12);  
-        
-    return canvas;
-}
-
-  // Create the gradient bar for score
-  let gradientBarScore = createGradientBar(closestField, 'gradientBarScore', closestField.score, -15, 23);
-
-  
-  // Append the gradient bar to a container in your HTML
-  document.getElementById('fieldInfo').appendChild(gradientBarScore);
-
-  // Create the gradient bar for fop_area_per_rank
-  let gradientBarArea = createGradientBar(closestField, 'gradientBarArea', closestField.fop_area_per_rank, 0, 30);  
-
-  document.getElementById('fieldInfo').appendChild(gradientBarArea);
 
 
-
-  
-  
-  
-
-
-
-
-  // Append the gradient bar to the areaInfo block
-  areaInfo.appendChild(gradientBarArea);
 
   // Continue with the rest of the code
   const distanceContainer = distanceDisplay(distanceFeet, fenceDist, levelCounts);
