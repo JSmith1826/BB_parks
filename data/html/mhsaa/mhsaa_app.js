@@ -53,13 +53,20 @@ async function initMap() {
   const mapOptions = {
       zoom: initialZoom,
       center: new google.maps.LatLng(initialCenter),
-      mapTypeId: 'hybrid',
+      mapTypeId: 'roadmap',
   };
   const map = new google.maps.Map(document.getElementById("map"), mapOptions);
   renderPolygons(data, map, levelCounts);
   google.maps.event.addListener(map, "click", (event) => {
       MapClickHandler(event, fetchedData, map, polygons, levelCounts);
   });
+
+  // Here we add the 'zoom_changed' event listener
+  google.maps.event.addListener(map, 'zoom_changed', function() {
+    let zoom = map.getZoom();
+    map.setMapTypeId((zoom > 10) ? 'hybrid' : 'roadmap');
+  });
+
   initSearchBox(map);
 
   // Add reset button to the map
@@ -585,43 +592,44 @@ function renderPolygons(data, map, levelCounts) {
 
     
     
-      //  Create the polygons on the map
-      // input data - coordinates, color, and map from renderPolygons()
-      function createPolygon(coordinates, fillColor, map, levelCounts) {
-        const polygon = new google.maps.Polygon({ // call polygon function from google maps api
-          paths: coordinates.map(coord => { // set paths to coordinates
-            return { lat: coord[1], lng: coord[0] }; // Reverse the coordinates to (lat, lng), stored in json the other way
-          }),
-          fillColor: fillColor, // set fill color
-          strokeColor: fillColor, // set border color
-          strokeWeight: 1, // set border weight
-          fillOpacity: 0.35, // set fill opacity by percentage (0-1)
-          map: map // set map to the map object - not sure why this is nessisary. must be needed by api
-        });
+//  Create the polygons on the map
+// input data - coordinates, color, and map from renderPolygons()
+function createPolygon(coordinates, fillColor, map, levelCounts) {
+  const polygon = new google.maps.Polygon({ // call polygon function from google maps api
+    paths: coordinates.map(coord => { // set paths to coordinates
+      return { lat: coord[1], lng: coord[0] }; // Reverse the coordinates to (lat, lng), stored in json the other way
+    }),
+    fillColor: fillColor, // set fill color
+    strokeColor: fillColor, // set border color
+    strokeWeight: 1, // set border weight
+    fillOpacity: 0.35, // set fill opacity by percentage (0-1)
+    map: map // set map to the map object - not sure why this is nessisary. must be needed by api
+  });
 
-        // Create a listener for clicks within the polygon
-        // Goal: open the info window for the field when the polygon is clicked
-        // and pass the location of the click to the drawLine function
-        polygon.addListener("click", (event) => {
-          console.log("Polygon click:", event.latLng);
-          
-          const closestField = closestFieldFunction(event.latLng, fetchedData);
-          
-          const distanceFeet = drawLine(closestField, event.latLng, map);
-          
-          
-          
-          clickMarker(event.latLng, map, levelCounts);
-          fieldInfo(closestField, distanceFeet, null, map, levelCounts);
-      
-          return;
-      });
-        
-        polygons.push(polygon); // add polygon we created to polygons array (created on top in global variables)
-      
-        return polygon; // return the polygon we created
-        // will be used in the addMapClickHandler function to check the click location against
-      }
+  // Create a listener for clicks within the polygon
+  // Goal: open the info window for the field when the polygon is clicked
+  // and pass the location of the click to the drawLine function
+  polygon.addListener("click", (event) => {
+    console.log("Polygon click:", event.latLng);
+    
+    const closestField = closestFieldFunction(event.latLng, fetchedData);
+    
+    const distanceFeet = drawLine(closestField, event.latLng, map);
+    
+    
+    
+    clickMarker(event.latLng, map, levelCounts);
+    fieldInfo(closestField, distanceFeet, null, map, levelCounts);
+
+    return;
+});
+  
+  polygons.push(polygon); // add polygon we created to polygons array (created on top in global variables)
+
+  return polygon; // return the polygon we created
+  // will be used in the addMapClickHandler function to check the click location against
+}
+
 // Define the paths to the icons outside of the function, as they don't change
 const iconPathBase = 'https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/images//icons/mhsaa/';
 const iconDist = {
@@ -826,7 +834,13 @@ function filterByLevel(level) {
         
         
         fieldTitle.appendChild(fieldName);
-      
+        
+        // Add the city and state under the park name if there is one
+        if (closestField.city && closestField.state) {
+          const cityState = document.createElement("p");
+          cityState.innerHTML = `${closestField.city}, ${closestField.state}`;
+          fieldTitle.appendChild(cityState);
+        }
         if (closestField.nickname) {
           const homeOf = document.createElement("h3");
           homeOf.innerHTML = `Home of the ${closestField.host_team} ${closestField.nickname}`;
@@ -901,6 +915,8 @@ areaInfo.appendChild(wrapDigits(((closestField.fop_area_sqft + closestField.foul
 areaInfo.innerHTML += ` Acres  `;
 areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
 areaInfo.innerHTML += `<b> X </b> Fair Ground<br>`;
+
+areaInfo.innerHTML = `<span style="font-size: 20px">Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft - Batter's View: ${closestField.field_cardinal_direction}</span>`;
 areaBlock.appendChild(areaInfo);
 
 

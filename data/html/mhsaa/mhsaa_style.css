@@ -160,14 +160,11 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-
     font-family: 'Oswald', sans-serif;
     align: center;
     color: var(--dynamic-text-color);
     font-size: 1rem;
     line-height: 1;
-    margin: 0;
-    padding: 0;
   }
 
 
@@ -181,44 +178,79 @@
   border: none;
   border-radius: 5px;
 }
-
-  .custom-infoTitle {
-  font-family: 'Playfair Display', sans-serif;
+.custom-infoTitle {
+  font-family: 'Oswald', sans-serif;
   font-size: 1.5rem;
   text-align: center;
   
   color: #333;
-  }
+}
   
-  .custom-markerPopup {
+.custom-markerPopup {
     font-family: 'Oswald', sans-serif;
     font-size: 1.0rem;
     align: center;
     color: #333;
-    }
+}
 
-    .custom-markerPopup-center {
+.custom-markerPopup-center {
       text-align: center;
-  }
+}
   
-  .custom-markerPopup-light {
+.custom-markerPopup-light {
       color: #999;  /* Change this to any color you want for deemphasized text */
       font-weight: normal;
-  }
+}
   
 
+.field-name {
+    font-size: 2.5em; /* Adjust these values as needed */
+}
   
-  h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', sans-serif;
+.field-name2 {
+  font-size: .5em; /* This should be smaller than .field-name */
+}
+.found-date {
+  font-size: .4em; /* This should be between .field-name and .field-name2 */
+}
+
+.host-school {
+  font-size: 1.5em; /* This should be between .field-name and .field-name2 */
+}
+
+h1, h2, h3, h4, h5,   {
+  font-family: 'Roboto Condensed', sans-serif;
   color: var(--ash-gray);
-  line-height: 1;
-  padding: 0%;
+  /* line-height: 1; */
+  /* padding: 0%; */
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    
+  }
+  
+  h2 {
+    font-size: 2em; /* Adjust the value as per your preference */
   }
   
   h3 {
-  font-family: 'Oswald', sans-serif;
-  color: var(--ash-gray);
-  letter-spacing: 1px;
+    font-size: 1.25em; /* Adjust the value as per your preference */
+  }
+  
+  h4 {
+    font-size: .75em; /* Adjust the value as per your preference */
+  }
+  h5 {
+    font-size: .5em; /* Adjust the value as per your preference */
+  }
+  h6 {
+    align: center;
+    color: var(--dynamic-text-color);
+    font-size: 1.2rem;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
   }
   
   number {
