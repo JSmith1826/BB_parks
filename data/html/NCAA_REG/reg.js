@@ -942,8 +942,8 @@ ctx1.fillText('<- Defensive  Offensive ->', canvas1.width / 2, canvas1.height / 
   // Then use this function in your code like this:
   
 // Define the min and max scores
-const hr_min = -1.682192601;
-const hr_max = 0.834846515;
+const hr_min = -2.0;
+const hr_max = 1.0;
 const unique_min = 0.774357376;
 const unique_max = 3.69218139;
 
@@ -952,7 +952,7 @@ let [gradientBar1, gradientBar2] = createGradientBars(closestField, hr_min, hr_m
 
 // Append the gradient bars to a container in your HTML
 let fieldInfo = document.getElementById('fieldInfo');
-fieldInfo.appendChild(gradientBar1);
+// fieldInfo.appendChild(gradientBar1);
 //  fieldInfo.appendChild(gradientBar2);
 
 
