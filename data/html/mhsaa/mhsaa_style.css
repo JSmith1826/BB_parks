@@ -143,13 +143,13 @@
 }
 
 #resetButton {
-  fontSize = '20px'; // make the text bigger
-  fontFamily = 'Arial, sans-serif'; // use Arial font
-  padding = '10px'; // add some padding around the text
-  backgroundColor = '#007BFF'; // set background color to blue
-  color = 'white'; // set text color to white
-  border = 'none'; // remove border
-  borderRadius = '5px'; // round the corners
+  fontSize '20px';
+  fontFamily = 'Arial, sans-serif';
+  padding = '10px';
+  backgroundColor = '#007BFF';
+  color = 'white';
+  border = 'none';
+  borderRadius: '5px';
 }
 
 #default-text {

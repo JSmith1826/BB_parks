@@ -69,44 +69,46 @@ async function initMap() {
 
   initSearchBox(map);
 
-   // Create 'mapControls' container
-   let mapControls = document.createElement('div');
-   mapControls.id = 'mapControls';
-   
-   // Create a logo
-   let logo = document.createElement('img');
-   logo.src = 'logo.png'; // put your logo source here
-   mapControls.appendChild(logo);
-   
-   // Add reset button to the map
-   let resetButton = document.createElement('button');
-   resetButton.innerHTML = 'Reset Map';
-   resetButton.id = 'resetButton'; // set an id for the reset button for styling purposes
-   resetButton.addEventListener('click', function() {
-       map.setZoom(initialZoom);
-       map.setCenter(initialCenter);
-   });
-   mapControls.appendChild(resetButton);
- 
-   // Add division filter label
-   let divisionFilterLabel = document.createElement('label');
-   divisionFilterLabel.textContent = 'Filter by Division';
-   mapControls.appendChild(divisionFilterLabel);
- 
-   // Add division filter to the map
-   let divisionDropdown = document.createElement('select');
-   divisionDropdown.innerHTML = '<option value="all">Show All</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>';
-   divisionDropdown.addEventListener('change', function() {
-       filterByDivision(this.value);
-   });
-   divisionDropdown.id = 'divisionDropdown'; // set an id for the dropdown for styling purposes
-   mapControls.appendChild(divisionDropdown);
- 
-   // Add round filter label
-   let roundFilterLabel = document.createElement('label');
-   roundFilterLabel.textContent = 'Filter by Round';
-   mapControls.appendChild(roundFilterLabel);
- 
+  // Add reset button to the map
+  let resetButton = document.createElement('button');
+  resetButton.innerHTML = 'Reset Map';
+  resetButton.style.fontSize = '20px'; // make the text bigger
+  resetButton.style.fontFamily = 'Arial, sans-serif'; // use Arial font
+  resetButton.style.padding = '10px'; // add some padding around the text
+  resetButton.style.backgroundColor = '#007BFF'; // set background color to blue
+  resetButton.style.color = 'white'; // set text color to white
+  resetButton.style.border = 'none'; // remove border
+  resetButton.style.borderRadius = '5px'; // round the corners
+  resetButton.addEventListener('click', function() {
+      map.setZoom(initialZoom);
+      map.setCenter(initialCenter);
+  });
+
+  document.body.appendChild(resetButton);
+  map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(resetButton);
+
+  
+  // Add division filter to the map
+  let divisionDropdown = document.createElement('select');
+  divisionDropdown.innerHTML = '<option value="all">Show All</option><option value="1">Division 1</option><option value="2">Division 2</option><option value="3">Division 3</option><option value="4">Division 4</option>';
+  divisionDropdown.addEventListener('change', function() {
+      filterByDivision(this.value);
+  });
+
+  divisionDropdown.style.fontSize = '20px'; // make the text bigger
+  divisionDropdown.style.fontFamily = 'Arial, sans-serif'; // use Arial font
+  divisionDropdown.style.padding = '10px'; // add some padding around the text
+  divisionDropdown.style.backgroundColor = '#007BFF'; // set background color to blue
+  divisionDropdown.style.color = 'white'; // set text color to white
+  divisionDropdown.style.border = 'none'; // remove border
+  divisionDropdown.style.borderRadius = '5px'; // round the corners
+  divisionDropdown.style.margin = '10px'; // add some margin around the text
+  divisionDropdown.style.width = '120px'; // make the dropdown wider
+  divisionDropdown.style.height = '50px'; // make the dropdown taller
+  divisionDropdown.style.position = 'absolute'; // position the dropdown
+
+document.body.appendChild(divisionDropdown);
+map.controls[google.maps.ControlPosition.TOP_LEFT].push(divisionDropdown);
 
 function filterByDivision(division) {
     // If the division is 'all', show all markers
@@ -701,7 +703,7 @@ markers[field.level].push(marker);
   if (field.region_semi_number !== null) {
       markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><span class="custom-markerPopup-light">Division ${field.regional_div}</span> Regional Semi ${field.region_semi_number}</div>`;
   }
-  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center">Hosted by the ${field.host_team} ${field.nickname}</div>`;
+  markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center"><br>Hosted by the ${field.host_team} ${field.nickname}</div>`;
   markerPopupContent += `<div class="custom-markerPopup custom-markerPopup-center custom-markerPopup-light"><br>Double Click to Zoom</div>`;
 
   const infowindow = new google.maps.InfoWindow({
@@ -916,7 +918,7 @@ areaInfo.innerHTML += ` Acres  `;
 areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / closestField.foul_area_sqft).toFixed(2)));
 areaInfo.innerHTML += `<b> X </b> Fair Ground<br>`;
 
-areaInfo.innerHTML = `<span style="font-size: 20px">Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft - Batter's View: ${closestField.field_cardinal_direction}</span><br>Playing Surface: ${closestField.surface}<br>`;
+areaInfo.innerHTML = `<span style="font-size: 20px">Altitude: ${(closestField.altitude * 3.281).toFixed(0)} ft - Batter's View: ${closestField.field_cardinal_direction}</span>`;
 areaBlock.appendChild(areaInfo);
 
 
