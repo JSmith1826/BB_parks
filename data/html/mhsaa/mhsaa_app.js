@@ -58,7 +58,7 @@ async function fetchData() {
     }).catch(err => {
       console.error('Failed to load JSON:', err);
     });
-}
+} 
 
 
 
@@ -1054,29 +1054,47 @@ function gameInfo(closestField) {
   console.log("Creating game info...");
 
   const hostInfo = document.getElementById("hostInfo");
-  hostInfo.innerHTML = "Hosting:";
-  const divisionInfo = document.createElement("p");
-  
-  if (closestField.district !== null) {
-    divisionInfo.innerHTML = `Division ${closestField.division} District ${closestField.district}<br>`;
     
-  } 
-  
-  if (closestField.region_semi_number !== null) {
-    divisionInfo.innerHTML += `Division ${closestField.regional_div} Regional Semi ${closestField.region_semi_number}`;
-  }
-  
-  if (closestField.region_final_quarter !== null) {
-    divisionInfo.innerHTML += `Division ${closestField.regional_div}<br>Regional Final and Quarter Final ${closestField.region_final_quarter}`;
-  }
-  
-  if (closestField.finals !== null) {
-    divisionInfo.innerHTML += `Host of State Semi-Finals and Finals for All Divisions`;
-  }
+    data.forEach((game) => {
+        // Create a new div for each game
+        const gameInfo = document.createElement("div");
 
-  hostInfo.appendChild(divisionInfo);
+        // Create and append a new p element for each piece of information
+        const round = document.createElement("p");
+        round.textContent = `Round: ${game.Round}`;
+        gameInfo.appendChild(round);
+
+        const date = document.createElement("p");
+        date.textContent = `Date: ${game.Date}`;
+        gameInfo.appendChild(date);
+
+        const location = document.createElement("p");
+        location.textContent = `Location: ${game.Location}`;
+        gameInfo.appendChild(location);
+
+        const divisionDistrict = document.createElement("p");
+        divisionDistrict.textContent = `Division ${game.Division}, District ${game.District}`;
+        gameInfo.appendChild(divisionDistrict);
+
+        // Append the game info to the main hostInfo div
+        hostInfo.appendChild(gameInfo);
+    });
 }
 
+// Call this function in your window.onload function after you've fetched the data
+window.onload = async function() {
+    const data = await fetchData();
+    const select = document.getElementById('districtSelect');
+    
+    data.forEach((game) => {
+        const option = document.createElement('option');
+        option.text = `Division ${game.Division} District ${game.District}`;
+        option.value = `${game.Division}-${game.District}`; // A combination of Division and District
+        select.add(option);
+    });
+
+    displayGameData(data);
+}
 
 
     // Call this function when the page loads or before field selection
