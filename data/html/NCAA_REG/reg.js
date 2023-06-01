@@ -90,6 +90,7 @@ async function initMap() {
   });
   
   initSearchBox(map);
+  
 // Add previous and next buttons
 let previousButton = createButton('<');
 previousButton.addEventListener('click', function() {
@@ -791,16 +792,6 @@ function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCount
 
   fieldTitle.appendChild(fieldName);
   fieldTitle.appendChild(hostSchool);
-
-
-    // // Add the host team under the field name if there is one
-    // if (closestField.nickname) {
-    //   const nickname = document.createElement("h2");
-    //   nickname.innerHTML = `Home of the ${closestField.host_school} ${closestField.nickname}`;
-    //   fieldTitle.appendChild(nickname);
-    // }
-
-
 
     // Define default colors
     let dynamicBgColor = '#627454'; // Background default color

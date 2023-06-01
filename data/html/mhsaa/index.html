@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 MHSAA Baseball Tournament</title>
+    <link rel="stylesheet" href="mhsaa_style.css">
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA&libraries=geometry,places"></script>
+</head>
+<body>
+  
+  <div class="container">
+    
+  
+       
+    <div id="mapControlsContainer">
+      <img src="https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/MHSAA/assets/MHSAA_header_small.png" alt="MHSAA Logo" id="mhsaaLogo">
+      <div class="slider-container"><span style='font-size: 1.5em'><br><br>Filter By Round</span>
+        <input type="range" min="0" max="4" value="0" class="slider" id="myRange">
+        <div class="slider-labels">
+          <span>All</span>
+          <span>Districts</span>
+          <span>Regional Semis</span>
+          <span>Regional Finals</span>
+          <span>Final Four</span>
+        </div>
+      </div>
+    </div>
+        
+    <div id="map">
+      <!-- Your map content -->
+      
+    </div>
+    
+    <div id="distanceBlock">Click Around The Ballpark to Measure HR Distances</div>
+    
+    <div id="mapInfo"> 
+        
+          <div id="fieldInfo">
+            <div id="fieldTitle"></div>
+            <div id="fenceBlock"></div>
+            <div id="areaBlock"></div>
+        </div>
+        
+
+        
+        <div id="hostInfo"></div>
+    </div>
+</div>
+
+<script src="mhsaa_app.js" defer></script>
+</body> 
+</html>

@@ -5,7 +5,9 @@
 // Map Data JSON
 const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/map.json"; // Michigan fields json file
 const distUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/district_dict.json"; // Teams by district json file  
+const brackUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/bracket.json"; // Brackets json file
 let fetchedData;
+let tournamentData;
 let polygons = [];
 let currentLine = null;
 let currentMarker = null;
@@ -13,6 +15,8 @@ let currentDivision = null;
 let currentLevel = null;
 let markers = [];  
 let fenceMarkers = [];
+  // Create a variable to store the current index
+let currentIndex = 0;
 let defaultIconUrl = "https://github.com/JSmith1826/BB_parks/blob/3508a593be080a4fb7cf102cda697ce8f893c840/data/images/icons/base/TEMP/infield2_black.png";  
 let divisionMarkers = {
     "1": [],
@@ -28,6 +32,7 @@ let divisionMarkers = {
     "4": [],
     "null": []
   };
+let visibleMarkers = markers;
   
 // const epsilon = 1e-9; // set epsilon to 1e-9 for use in the fenceDistance and intersectionPoint functions
 
@@ -37,8 +42,31 @@ async function fetchData() {
     console.log("Fetching data...");
     const response = await fetch(jsonUrl);
     const data = await response.json();
+
+    // load the tournament data
+    const tournamentResponse = await fetch(brackUrl);
+    tournamentData = await tournamentResponse.json();
+    
     return data;
   }
+
+  window.onload = function() {
+    fetch('https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/district_dict.json')
+        .then(response => response.json())
+        .then(data => {
+            const select = document.getElementById('districtSelect');
+            Object.keys(data).forEach((district) => {
+                const option = document.createElement('option');
+                option.text = `District ${district}`;
+                option.value = district;
+                select.add(option);
+            });
+        });
+}
+
+
+
+
 
 //initialize map
 // Async function to initialize the map
@@ -53,7 +81,7 @@ async function initMap() {
   const mapOptions = {
       zoom: initialZoom,
       center: new google.maps.LatLng(initialCenter),
-      mapTypeId: 'roadmap',
+      mapTypeId: 'hybrid',
   };
   const map = new google.maps.Map(document.getElementById("map"), mapOptions);
   renderPolygons(data, map, levelCounts);
@@ -64,14 +92,19 @@ async function initMap() {
   // Here we add the 'zoom_changed' event listener
   google.maps.event.addListener(map, 'zoom_changed', function() {
     let zoom = map.getZoom();
-    map.setMapTypeId((zoom > 10) ? 'hybrid' : 'roadmap');
+    map.setMapTypeId((zoom > 10) ? 'hybrid' : 'hybrid');
   });
 
   initSearchBox(map);
 
-  // Add reset button to the map
+  // Create a reference to the control container
+  const controlsContainer = document.getElementById('mapControlsContainer');
+  console.log(controlsContainer); // check what is being selected here
+    // Add reset button to the map
   let resetButton = document.createElement('button');
   resetButton.innerHTML = 'Reset Map';
+  // position and style the button
+  //position at the bottom of the container
   resetButton.style.fontSize = '20px'; // make the text bigger
   resetButton.style.fontFamily = 'Arial, sans-serif'; // use Arial font
   resetButton.style.padding = '10px'; // add some padding around the text
@@ -80,117 +113,193 @@ async function initMap() {
   resetButton.style.border = 'none'; // remove border
   resetButton.style.borderRadius = '5px'; // round the corners
   resetButton.addEventListener('click', function() {
-      map.setZoom(initialZoom);
-      map.setCenter(initialCenter);
+    location.reload();
   });
-
-  document.body.appendChild(resetButton);
-  map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(resetButton);
 
   
-  // Add division filter to the map
-  let divisionDropdown = document.createElement('select');
-  divisionDropdown.innerHTML = '<option value="all">Show All</option><option value="1">Division 1</option><option value="2">Division 2</option><option value="3">Division 3</option><option value="4">Division 4</option>';
-  divisionDropdown.addEventListener('change', function() {
-      filterByDivision(this.value);
+  // Get a reference to the slider-container, which is the first child of mapControlsContainer
+  let sliderContainer = document.querySelector('#mapControlsContainer .slider-container');
+
+  // Append reset button to the container
+  controlsContainer.appendChild(resetButton);
+  // Reload the entire map with the reset button
+  resetButton.addEventListener('click', function() {
+  location.reload();
+});
+
+// Insert resetButton before the sliderContainer
+controlsContainer.insertBefore(resetButton, sliderContainer);
+
+// Create label for the level filter
+let levelLabel = document.createElement('label');  
+levelLabel.style.fontSize = '1.75em'; 
+levelLabel.style.fontFamily = 'Oswald, sans-serif';
+levelLabel.style.color = 'black'; 
+controlsContainer.appendChild(levelLabel);
+
+// Add division filter to the map
+let dropdownLabel = document.createElement('label');
+dropdownLabel.innerHTML = '<br>Filter by Division:';
+dropdownLabel.style.fontSize = '1.75em'; 
+dropdownLabel.style.color = 'black'; 
+controlsContainer.appendChild(dropdownLabel);
+
+  
+    let divisionDropdown = document.createElement('select');
+    
+    divisionDropdown.innerHTML = '<option value="all">Show All</option><option value="1">Division 1</option><option value="2">Division 2</option><option value="3">Division 3</option><option value="4">Division 4</option>';
+    divisionDropdown.addEventListener('change', function() {
+        filterByDivision(this.value);
+    });
+
+    divisionDropdown.style.fontSize = '20px'; // make the text bigger
+    divisionDropdown.style.fontFamily = 'Arial, sans-serif'; // use Arial font
+    divisionDropdown.style.padding = '10px'; // add some padding around the text
+    divisionDropdown.style.backgroundColor = '#007BFF'; // set background color to blue
+    divisionDropdown.style.color = 'white'; // set text color to white
+    divisionDropdown.style.border = 'none'; // remove border
+    divisionDropdown.style.borderRadius = '5px'; // round the corners
+    divisionDropdown.style.margin = '10px'; // add some margin around the text
+    divisionDropdown.style.width = '120px'; // make the dropdown wider
+    divisionDropdown.style.height = '50px'; // make the dropdown taller
+    divisionDropdown.style.position = 'relative'; // position the dropdown
+    // Append division filter to the container
+    controlsContainer.appendChild(divisionDropdown);
+
+
+    /////////// CURRENTLY NOT USING THIS BUTTON. TRY TO GET IT WORKING SOME OTHER TIME
+    // Create the '<' button
+  let previousButton = document.createElement('button');
+  previousButton.innerHTML = '<';
+  previousButton.addEventListener('click', function() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        let marker = visibleMarkers[currentIndex];
+        map.setCenter(marker.getPosition());
+        gameInfo(marker.field);
+    }
   });
+  previousButton.style.fontSize = '20px'; // make the text bigger
+  previousButton.style.fontFamily = 'Arial, sans-serif'; // use Arial font
+  previousButton.style.padding = '10px'; // add some padding around the text
+  previousButton.style.backgroundColor = '#007BFF'; // set background color to blue
+  previousButton.style.color = 'white'; // set text color to white
+  previousButton.style.border = 'none'; // remove border
+  previousButton.style.borderRadius = '5px'; // round the corners
+  previousButton.addEventListener('click', function() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      let marker = visibleMarkers[currentIndex];
+      map.setCenter(marker.getPosition());
+    }
+  });
+  /////////// TURNNING THIS OFF FOR NOW. TRY TO GET IT WORKING SOME OTHER TIME
+  // controlsContainer.appendChild(previousButton);
 
-  divisionDropdown.style.fontSize = '20px'; // make the text bigger
-  divisionDropdown.style.fontFamily = 'Arial, sans-serif'; // use Arial font
-  divisionDropdown.style.padding = '10px'; // add some padding around the text
-  divisionDropdown.style.backgroundColor = '#007BFF'; // set background color to blue
-  divisionDropdown.style.color = 'white'; // set text color to white
-  divisionDropdown.style.border = 'none'; // remove border
-  divisionDropdown.style.borderRadius = '5px'; // round the corners
-  divisionDropdown.style.margin = '10px'; // add some margin around the text
-  divisionDropdown.style.width = '120px'; // make the dropdown wider
-  divisionDropdown.style.height = '50px'; // make the dropdown taller
-  divisionDropdown.style.position = 'absolute'; // position the dropdown
 
-document.body.appendChild(divisionDropdown);
-map.controls[google.maps.ControlPosition.TOP_LEFT].push(divisionDropdown);
 
-function filterByDivision(division) {
-    // If the division is 'all', show all markers
+/////////// CURRENTLY NOT USING THIS BUTTON. TRY TO GET IT WORKING SOME OTHER TIME
+// Create the '>' button
+let nextButton = document.createElement('button');
+nextButton.innerHTML = '>';
+nextButton.addEventListener('click', function() {
+    if (currentIndex < visibleMarkers.length - 1) {
+        currentIndex++;
+        let marker = visibleMarkers[currentIndex];
+        map.setCenter(marker.getPosition());
+        gameInfo(marker.field);
+    }
+});
+nextButton.style.fontSize = '20px'; // make the text bigger
+nextButton.style.fontFamily = 'Arial, sans-serif'; // use Arial font
+nextButton.style.padding = '10px'; // add some padding around the text
+nextButton.style.backgroundColor = '#007BFF'; // set background color to blue
+nextButton.style.color = 'white'; // set text color to white
+nextButton.style.border = 'none'; // remove border
+nextButton.style.borderRadius = '5px'; // round the corners
+nextButton.addEventListener('click', function() {
+  if (currentIndex < visibleMarkers.length - 1) {
+    currentIndex++;
+    let marker = visibleMarkers[currentIndex];
+    map.setCenter(marker.getPosition());
+  }
+});
+/////////// TURNNING THIS OFF FOR NOW. TRY TO GET IT WORKING SOME OTHER TIME
+// controlsContainer.appendChild(nextButton);
+  
+
+  
+  // Append label for the level filter to the container
+  controlsContainer.appendChild(levelLabel);
+
+  function filterByDivision(division) {
+    // Clear the visibleMarkers array
+    visibleMarkers = [];
+    
     if (division === 'all') {
         for (let level in markers) {
             for (let marker of markers[level]) {
                 marker.setMap(map);
+                visibleMarkers.push(marker);
             }
         }
     } else {
-        // Convert the division to a number
         division = Number(division);
 
-        // Iterate over each marker
         for (let level in markers) {
             for (let marker of markers[level]) {
-                // If the marker's division is equal to the selected division,
-                // show the marker, otherwise hide it
                 if (marker.division === division) {
                     marker.setMap(map);
+                    visibleMarkers.push(marker);
                 } else {
                     marker.setMap(null);
                 }
             }
         }
     }
+    
+    // Reset the currentIndex
+    currentIndex = 0;
 }
-
-// Create label for the level filter
-let levelLabel = document.createElement('label');
-levelLabel.innerHTML = 'Filter by Round: ';
-levelLabel.style.fontSize = '20px'; // make the text bigger
-levelLabel.style.fontFamily = 'Arial, sans-serif'; // use Arial font
-levelLabel.style.color = 'white'; // set text color to white
-document.body.appendChild(levelLabel);
-
-// Add level filter to the map
-let levelSlider = document.createElement('input');
-levelSlider.type = 'range';
-levelSlider.min = '0';
-levelSlider.max = '4';
-levelSlider.step = '1';
-levelSlider.value = '0';
-levelSlider.style.width = '200px';
-levelSlider.style.height = '200px'; // make the slider taller
-
-levelSlider.style.background = '#007BFF'; // set the background color to blue
-levelSlider.addEventListener('input', function() {
-    filterByLevel(this.value);
-});
-document.body.appendChild(levelSlider);
-map.controls[google.maps.ControlPosition.TOP_LEFT].push(levelSlider);
 
 function filterByLevel(level) {
-    console.log("Filtering by level:", level);
-    level = Number(level);
+  console.log("Filtering by level:", level);
+  level = Number(level);
 
-    // Iterate over each marker
-    for (let i = 0; i <= 4; i++) {
-        // Skip if the marker is undefined
-        if (!markers[i]) continue;
+  // Iterate over each marker
+  for (let i = 0; i <= 4; i++) {
+      // Skip if the marker is undefined
+      if (!markers[i]) continue;
 
-        for (let j = 0; j < markers[i].length; j++) {
-            // Skip if the marker is undefined
-            if (!markers[i][j]) continue;
+      for (let j = 0; j < markers[i].length; j++) {
+          // Skip if the marker is undefined
+          if (!markers[i][j]) continue;
 
-            // Check if the marker has a setMap function
-            if (typeof markers[i][j].setMap !== 'function') {
-                console.log('Not a Marker object:', markers[i][j]);
-                continue;
-            }
+          // Check if the marker has a setMap function
+          if (typeof markers[i][j].setMap !== 'function') {
+              console.log('Not a Marker object:', markers[i][j]);
+              continue;
+          }
 
-            if (i > level) {
-                markers[i][j].setMap(map);
-            } else {
-                markers[i][j].setMap(null);
-            }
-        }
-    }
+          if (level === 0 || i === level) {
+              markers[i][j].setMap(map);
+          } else {
+              markers[i][j].setMap(null);
+          }
+      }
+  }
 }
+
+document.getElementById("myRange").addEventListener('input', function() {
+  filterByLevel(this.value);
+});
+
+
 }
-document.addEventListener("DOMContentLoaded", initMap);
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOMContentLoaded event triggered"); // this is to verify if the event is triggered
+  initMap();
+});
 
 function countFieldsByLevel(data) {
   const levelCounts = {};
@@ -822,8 +931,15 @@ function filterByLevel(level) {
 
         // Call the gameInfo
         gameInfo(closestField);
+
+        // Clear the fieldInfo container
+        
+
+        
+
       
         const fieldTitle = document.getElementById("fieldTitle");
+        
         fieldTitle.innerHTML = "";
       
         const fieldName = document.createElement("h2");
@@ -939,7 +1055,7 @@ areaBlock.appendChild(areaInfo);
 // input data - closestField from closestFieldFunction
 // output - a html element containing info about the games that will be hosted for the tourney
 
-function gameInfo(closestField) {
+function gameInfo(closestField, tournamentData) {
   console.log("Creating game info...");
 
   const hostInfo = document.getElementById("hostInfo");
@@ -948,21 +1064,45 @@ function gameInfo(closestField) {
   
   if (closestField.district !== null) {
     divisionInfo.innerHTML = `Division ${closestField.division} District ${closestField.district}<br>`;
-    
   } 
   
-  if (closestField.region_semi_number !== null) {
-    divisionInfo.innerHTML += `Division ${closestField.regional_div} Regional Semi ${closestField.region_semi_number}`;
-  }
+  // Assuming tournamentData is an object with the fields you mentioned.
+  let tournamentInfo = tournamentData.find(
+    item =>
+      item.Division === closestField.division &&
+      item.District === closestField.district
+  );
   
-  if (closestField.region_final_quarter !== null) {
-    divisionInfo.innerHTML += `Division ${closestField.regional_div}<br>Regional Final and Quarter Final ${closestField.region_final_quarter}`;
-  }
-  
-  if (closestField.finals !== null) {
-    divisionInfo.innerHTML += `Host of State Semi-Finals and Finals for All Divisions`;
-  }
+  if (tournamentInfo) {
+    const {
+      Round,
+      Date,
+      Time,
+      Location,
+      Team1,
+      Record1,
+      Team2,
+      Record2,
+      MoreInfo
+    } = tournamentInfo;
 
+    const gameInfo = document.createElement("p");
+    gameInfo.innerHTML = `Round: ${Round}<br>
+                          Date: ${Date}<br>
+                          Time: ${Time}<br>
+                          Location: ${Location}<br>
+                          Team 1: ${Team1}<br>
+                          Record 1: ${Record1}<br>
+                          Team 2: ${Team2}<br>
+                          Record 2: ${Record2}<br>
+                          More Info: ${MoreInfo}`;
+    hostInfo.appendChild(gameInfo);
+  } else {
+    const noInfo = document.createElement("p");
+    noInfo.innerHTML = `No tournament data found for Division ${closestField.division} and District ${closestField.district}.`;
+    hostInfo.appendChild(noInfo);
+  }
+  
   hostInfo.appendChild(divisionInfo);
 }
 

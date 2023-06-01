@@ -19,55 +19,154 @@
   }
 
 
-  /* BANNER IMAGE */
-// .banner {
-  width: 100%;
-  height: 20vh; /* adjust as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.banner img {
-  max-height: 100%;
-  
-}
-
-
 .container {
   display: flex;
   justify-content: space-between;
-  max-width: 100%;
+  width: 100%;
   height: 100vh;
-  margin: 0 auto;
-  align-items: center;
+  position: relative;
+  
+  
 }
 
 #map {
   position: relative; /* new */
   flex: 4;
   height: 100%;
+  width: 100%;
   z-index: 0; /* new */
 }
 
+#mapControlsContainer {
+  position: absolute;
+  top: 20vh;
+  left: 20px;
+  height: 60vh;
+  width: 20vw;
+  background-color: var(--ash-gray);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 5;
+  color: var(--black);
+  text-align: center;
+  justify-content: space-between;
+  border: 5px solid blue;
+  box-shadow: 0 0 0 5px red;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 5vh;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;  // creates a gap between elements
+  
+} 
+
+#mapControlsContainer * {
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+  color: 'black';
+  background-color: '#007BFF';
+  border: 'none';
+  border-radius: '5px';
+  
+}
+
+.level-label, .dropdown-label {
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  color: black;
+}
+
+.prev-button, .next-button, .division-dropdown {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.division-dropdown {
+  margin: 10px;
+  width: 120px;
+  height: 50px;
+  position: relative;
+}
+
+
+.slider-container {
+  width: 90%;
+  
+}
+
+.slider {
+  
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider-labels {
+  display: flex;
+  
+  justify-content: space-evenly;
+  
+}
+.slider-labels span:first-child {
+  text-align: left;
+}
+
+.slider-labels span:nth-child(2) {
+  text-align: left;
+}
+
+.slider-labels span:nth-child(3) {
+  text-align: center;
+}
+
+.slider-labels span:nth-child(4) {
+  text-align: right;
+}
+
+.slider-labels span:last-child {
+  text-align: right;
+}
+
+.slider-labels span {
+  width: 20%;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+
+
 #distanceBlock {
   position: absolute;
-  bottom: 10%;
-  left: 50%;
+  bottom: 10vh;
+  left: 40vw;
   transform: translateX(-50%);
   background-color: var(--dynamic-bg-color);
   border-radius: 10px;
   padding: 10px;
   width: 350px;
-  height: ;
-  z-index: 1;
+  z-index: 5;  // ensure this is higher than other z-indexes
   text-align: center;
-  box-shadow: inset 0 0 0 5px var(--dynamic-text-color); /* Add inner border using box-shadow */
+  box-shadow: inset 0 0 0 5px var(--dynamic-text-color);
 }
+
 
 
 #hostInfo {
   position: absolute;
-  top: 5%; /* Adjust this value to suit your design */
+  top: 1%; /* Adjust this value to suit your design */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -114,7 +213,7 @@
 #fieldInfo {
   position: absolute;
   z-index: 3;
-  top: 30%;
+  top: 25%;
   right: 2%;
   width: 20vw;
   min-height: 30vh;
@@ -127,30 +226,7 @@
   box-shadow: inset 0 0 0 5px var(--dynamic-text-color); /* Add inner border using box-shadow */
 }
 
-/* Map control Box and Elements */
-#mapControls {
-  fontSize: '20px';
-  fontFamily: 'Arial, sans-serif';
-  padding: '10px';
-  backgroundColor: '#007BFF';
-  color: 'white';
-  border: 'none';
-  borderRadius: '5px';
-  margin: '10px';
-  width: '120px';
-  height: '50px';
-  position: 'absolute';
-}
 
-#resetButton {
-  fontSize '20px';
-  fontFamily = 'Arial, sans-serif';
-  padding = '10px';
-  backgroundColor = '#007BFF';
-  color = 'white';
-  border = 'none';
-  borderRadius: '5px';
-}
 
 #default-text {
   position: absolute;
@@ -193,16 +269,7 @@
   }
 
 
-  /* BUTTONS ON MAP*/
-.reset-button {
-  font-size: 20px;
-  font-family: Arial, sans-serif;
-  padding: 10px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-}
+    
 .custom-infoTitle {
   font-family: 'Oswald', sans-serif;
   font-size: 1.5rem;
