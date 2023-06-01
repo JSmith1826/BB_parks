@@ -6,6 +6,7 @@
 const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/map.json"; // Michigan fields json file
 const distUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/district_dict.json"; // Teams by district json file  
 let fetchedData;
+let brackData;
 let polygons = [];
 let currentLine = null;
 let currentMarker = null;
@@ -34,6 +35,8 @@ let visibleMarkers = markers;
   
 // const epsilon = 1e-9; // set epsilon to 1e-9 for use in the fenceDistance and intersectionPoint functions
 
+
+
 //fetch data from json file
 // Async function to fetch data from the JSON file
 async function fetchData() {
@@ -43,23 +46,14 @@ async function fetchData() {
     return data;
   }
 
-  window.onload = function() {
-    fetch('https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/district_dict.json')
-    .then(response => response.json())
-    .then(data => {
-      const select = document.getElementById('districtSelect');
-      data.forEach((game) => {
-        console.log(data); // Add this line
-        const option = document.createElement('option');
-        option.text = `Division ${game.Division} District ${game.District}`;
-        option.value = `${game.Division}-${game.District}`; // A combination of Division and District
-        select.add(option);
-      });
-    }).catch(err => {
-      console.error('Failed to load JSON:', err);
-    });
-} 
+// Function to fetch the bracket data
+async function fetchBracketData() {
+  console.log("Fetching bracket data...");
+  const response = await fetch(distUrl);
+  brackData = await response.json(); // Store brackData globally.
+}
 
+fetchBracketData(); // Call fetchBracketData to load the data
 
 
 
@@ -349,7 +343,7 @@ async function MapClickHandler(event, data, map, polygons, levelCounts) {
         // checkFence(closestField, event.latLng, map, polygons); // send closestField, click location, map, and polygons array to checkFence function
         
         // Call the function to make the html element with the field info and distance
-        fieldInfo(closestField, distanceFeet, fenceDist, map, levelCounts); // send closestField, distanceFeet, fenceDist, and map to fieldInfo function
+        fieldInfo(closestField, distanceFeet, fenceDist, map, levelCounts, brackData); // send closestField, distanceFeet, fenceDist, and map to fieldInfo function
 
 
         // print the lat and lng of the click location to the console
@@ -553,7 +547,7 @@ function checkFence(closestField, clickLocation, map, polygons) {
         if (!google.maps.geometry.poly.containsLocation(clickLocation, polygon)) { // IF THE CLICK LOCATION IS OUTSIDE THE POLYGON
             console.log("Click location is outside the fence");
             // show closest field
-            console.log("Closest field:", closestField);
+            // console.log("Closest field:", closestField);
             
             const homePlateLatLng = closestField.home_plate;
             const homePlatePoint = new google.maps.LatLng(homePlateLatLng[1], homePlateLatLng[0]);
@@ -723,7 +717,7 @@ function createPolygon(coordinates, fillColor, map, levelCounts) {
     
     
     clickMarker(event.latLng, map, levelCounts);
-    fieldInfo(closestField, distanceFeet, null, map, levelCounts);
+    fieldInfo(closestField, distanceFeet, null, map, levelCounts, brackData);
 
     return;
 });
@@ -921,11 +915,11 @@ function filterByLevel(level) {
     // output - a html element containing field info and the dynamic distance element with the
     // distance from home plate to the click location and the fence distance from home plate if the click is outside the fence
     // This function is called in the MapClickHandler function
-    function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCounts) {
+    function fieldInfo(closestField, distanceFeet, fenceDist = null, map, levelCounts, brackData) {
         console.log("Creating field info...");
 
         // Call the gameInfo
-        gameInfo(closestField);
+        gameInfo(closestField, brackData);
 
         // Clear the fieldInfo container
         
@@ -1050,51 +1044,52 @@ areaBlock.appendChild(areaInfo);
 // input data - closestField from closestFieldFunction
 // output - a html element containing info about the games that will be hosted for the tourney
 
-function gameInfo(closestField) {
+function gameInfo(closestField, brackData) {
   console.log("Creating game info...");
+  console.log("Closest field:", closestField);
+  console.log("Closest field district: ", closestField.district);
+  console.log("Game Data District: ", brackData.District);
 
   const hostInfo = document.getElementById("hostInfo");
-    
-    data.forEach((game) => {
-        // Create a new div for each game
-        const gameInfo = document.createElement("div");
+  hostInfo.style.display = "block"; // Make the hostInfo div visible
+  hostInfo.innerHTML = ""; // Clear the previous hostInfo if any
 
-        // Create and append a new p element for each piece of information
-        const round = document.createElement("p");
-        round.textContent = `Round: ${game.Round}`;
-        gameInfo.appendChild(round);
+  console.log("All game districts: ", brackData.map(game => game.District));
+  console.log("Closest field district: ", closestField.district);
 
-        const date = document.createElement("p");
-        date.textContent = `Date: ${game.Date}`;
-        gameInfo.appendChild(date);
 
-        const location = document.createElement("p");
-        location.textContent = `Location: ${game.Location}`;
-        gameInfo.appendChild(location);
+  // Filter data for selected district
+  // const districtData = brackData.filter(closestField.division === brackData.Division.trim())
+  const districtData = brackData.filter(game => game.District.trim() === closestField.district.toString());
 
-        const divisionDistrict = document.createElement("p");
-        divisionDistrict.textContent = `Division ${game.Division}, District ${game.District}`;
-        gameInfo.appendChild(divisionDistrict);
 
-        // Append the game info to the main hostInfo div
-        hostInfo.appendChild(gameInfo);
-    });
+
+  console.log("Type of closest field district: ", typeof closestField.district);
+  
+  console.log("Filtered districtData:", districtData); // Log the filtered data
+
+  // Create an HTML string based on the districtData
+  let htmlStr = '';
+  districtData.forEach(game => {
+      htmlStr += `
+          <div class="game-info">
+          <h3>Division ${game.Division} - District #${game.District}</h3>
+            <h4>Date: ${game.Date} - ${game.Time}</h4>
+            <p>${game.Round}</p>          
+              <p>${game.Team1} (${game.Record1}) vs ${game.Team2} (${game.Record2})</p>
+                           
+          </div>
+      `;
+  });
+
+  // Insert the created HTML string into hostInfo
+  hostInfo.innerHTML = htmlStr;
+
+  console.log("hostInfo after adding games:", hostInfo); // Log the hostInfo after adding games
 }
 
-// Call this function in your window.onload function after you've fetched the data
-window.onload = async function() {
-    const data = await fetchData();
-    const select = document.getElementById('districtSelect');
-    
-    data.forEach((game) => {
-        const option = document.createElement('option');
-        option.text = `Division ${game.Division} District ${game.District}`;
-        option.value = `${game.Division}-${game.District}`; // A combination of Division and District
-        select.add(option);
-    });
 
-    displayGameData(data);
-}
+
 
 
     // Call this function when the page loads or before field selection
