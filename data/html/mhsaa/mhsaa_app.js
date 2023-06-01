@@ -5,9 +5,7 @@
 // Map Data JSON
 const jsonUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/map.json"; // Michigan fields json file
 const distUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/district_dict.json"; // Teams by district json file  
-const brackUrl = "https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/bracket.json"; // Brackets json file
 let fetchedData;
-let tournamentData;
 let polygons = [];
 let currentLine = null;
 let currentMarker = null;
@@ -42,28 +40,25 @@ async function fetchData() {
     console.log("Fetching data...");
     const response = await fetch(jsonUrl);
     const data = await response.json();
-
-    // load the tournament data
-    const tournamentResponse = await fetch(brackUrl);
-    tournamentData = await tournamentResponse.json();
-    
     return data;
   }
 
   window.onload = function() {
     fetch('https://raw.githubusercontent.com/JSmith1826/BB_parks/main/data/html/mhsaa/data/district_dict.json')
-        .then(response => response.json())
-        .then(data => {
-            const select = document.getElementById('districtSelect');
-            Object.keys(data).forEach((district) => {
-                const option = document.createElement('option');
-                option.text = `District ${district}`;
-                option.value = district;
-                select.add(option);
-            });
-        });
+    .then(response => response.json())
+    .then(data => {
+      const select = document.getElementById('districtSelect');
+      data.forEach((game) => {
+        console.log(data); // Add this line
+        const option = document.createElement('option');
+        option.text = `Division ${game.Division} District ${game.District}`;
+        option.value = `${game.Division}-${game.District}`; // A combination of Division and District
+        select.add(option);
+      });
+    }).catch(err => {
+      console.error('Failed to load JSON:', err);
+    });
 }
-
 
 
 
@@ -1055,7 +1050,7 @@ areaBlock.appendChild(areaInfo);
 // input data - closestField from closestFieldFunction
 // output - a html element containing info about the games that will be hosted for the tourney
 
-function gameInfo(closestField, tournamentData) {
+function gameInfo(closestField) {
   console.log("Creating game info...");
 
   const hostInfo = document.getElementById("hostInfo");
@@ -1064,45 +1059,21 @@ function gameInfo(closestField, tournamentData) {
   
   if (closestField.district !== null) {
     divisionInfo.innerHTML = `Division ${closestField.division} District ${closestField.district}<br>`;
+    
   } 
   
-  // Assuming tournamentData is an object with the fields you mentioned.
-  let tournamentInfo = tournamentData.find(
-    item =>
-      item.Division === closestField.division &&
-      item.District === closestField.district
-  );
-  
-  if (tournamentInfo) {
-    const {
-      Round,
-      Date,
-      Time,
-      Location,
-      Team1,
-      Record1,
-      Team2,
-      Record2,
-      MoreInfo
-    } = tournamentInfo;
-
-    const gameInfo = document.createElement("p");
-    gameInfo.innerHTML = `Round: ${Round}<br>
-                          Date: ${Date}<br>
-                          Time: ${Time}<br>
-                          Location: ${Location}<br>
-                          Team 1: ${Team1}<br>
-                          Record 1: ${Record1}<br>
-                          Team 2: ${Team2}<br>
-                          Record 2: ${Record2}<br>
-                          More Info: ${MoreInfo}`;
-    hostInfo.appendChild(gameInfo);
-  } else {
-    const noInfo = document.createElement("p");
-    noInfo.innerHTML = `No tournament data found for Division ${closestField.division} and District ${closestField.district}.`;
-    hostInfo.appendChild(noInfo);
+  if (closestField.region_semi_number !== null) {
+    divisionInfo.innerHTML += `Division ${closestField.regional_div} Regional Semi ${closestField.region_semi_number}`;
   }
   
+  if (closestField.region_final_quarter !== null) {
+    divisionInfo.innerHTML += `Division ${closestField.regional_div}<br>Regional Final and Quarter Final ${closestField.region_final_quarter}`;
+  }
+  
+  if (closestField.finals !== null) {
+    divisionInfo.innerHTML += `Host of State Semi-Finals and Finals for All Divisions`;
+  }
+
   hostInfo.appendChild(divisionInfo);
 }
 
