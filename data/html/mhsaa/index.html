@@ -8,6 +8,15 @@
     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BhlTupRdBPBhRptQuR6pYorMVYQnRMA&libraries=geometry,places"></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZQ783KG7Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2ZQ783KG7Q');
+</script>
 <body>
   
   <div class="container">
@@ -33,11 +42,15 @@
       
     </div>
     
-    <div id="distanceBlock">Click Around The Ballpark to Measure HR Distances</div>
+    <div id="distanceBlock"><span style="text-align: center">Click Around The Ballpark to Measure HR Distances</span></div>
     
     <div id="mapInfo"> 
         
-          <div id="fieldInfo">
+          <div id="fieldInfo"><span style='font-size: 1.5em'>
+            <p>This map contains all the fields being used for the 2023 Michigan High School Baseball Tournament.<br></p>
+            <p>You can use the controls filter by division (size of school) or round of the tournament.</p>
+            <p>When you zoom into a ballpark and click this window will fill with information about the park<br></p>
+            <p></p></span>
             <div id="fieldTitle"></div>
             <div id="fenceBlock"></div>
             <div id="areaBlock"></div>
@@ -45,7 +58,9 @@
         
 
         
-        <div id="hostInfo"></div>
+        <div id="hostInfo">
+          <span style='font-size: 1.5em'><p>Game Schedule</p></span>
+        </div>
     </div>
 </div>
 

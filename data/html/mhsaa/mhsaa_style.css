@@ -115,35 +115,44 @@
 }
 
 .slider-labels {
+  
   display: flex;
   
   justify-content: space-evenly;
+  text-align: left;
   
 }
 .slider-labels span:first-child {
-  text-align: left;
+  transform: rotate(-45deg);
+  
 }
 
 .slider-labels span:nth-child(2) {
-  text-align: left;
+  transform: rotate(-45deg);
+  
+  
 }
 
 .slider-labels span:nth-child(3) {
-  text-align: center;
+  transform: rotate(-45deg);
+
+  
 }
 
 .slider-labels span:nth-child(4) {
-  text-align: right;
+  transform: rotate(-45deg);
+  
 }
 
 .slider-labels span:last-child {
-  text-align: right;
+  transform: rotate(-45deg);
+  
 }
 
 .slider-labels span {
   width: 20%;
   font-family: 'Oswald', sans-serif;
-  text-align: center;
+  font-size: .5em;
 }
 
 
@@ -166,7 +175,7 @@
 
 #hostInfo {
   position: absolute;
-  top: 5%;
+  top: 2%;
   right: 2%;
   
   display: flex;
@@ -182,18 +191,14 @@
 }
 
 #hostInfo * {
-  font-size: 1em;
+  line-height: .75;
+  /* font-size: 1em; */
   font-family: 'Oswald', sans-serif;
   color: var(--black);
   background-color: var(--ash-gray);
   border: none;
   border-radius: 5px;
 }
-
-
-
-
-
 
 #mapInfo {
   flex: 1;
@@ -209,7 +214,7 @@
 #fieldInfo {
   position: absolute;
   z-index: 3;
-  top: 40%;
+  top: 35%;
   right: 2%;
   width: 20vw;
   min-height: 50vh;
@@ -319,7 +324,7 @@ h1, h2, h3, h4, h5,   {
   }
   
   h2 {
-    font-size: 2em; /* Adjust the value as per your preference */
+    font-size: 1.75em; /* Adjust the value as per your preference */
   }
   
   h3 {
@@ -327,7 +332,7 @@ h1, h2, h3, h4, h5,   {
   }
   
   h4 {
-    font-size: .75em; /* Adjust the value as per your preference */
+    font-size: 1.1em; /* Adjust the value as per your preference */
   }
   h5 {
     font-size: .5em; /* Adjust the value as per your preference */
@@ -358,3 +363,77 @@ h1, h2, h3, h4, h5,   {
   }
   
 
+
+
+
+
+
+/* ... all your existing CSS ... */
+@media only screen and (max-width: 916px) {
+  .container {
+
+    flex-direction: column;
+    align-items: left;
+  }
+
+  #map {
+    height: 90%;
+  }
+
+  #mapControlsContainer {
+    /* block the display */
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    padding: 5px;
+  }
+
+  #distanceBlock {
+    position: relative;
+    width: 90%;
+    bottom: 0;
+    left: 5%;
+    margin-top: 10px;
+    transform: none;
+  }
+
+  #hostInfo, #fieldInfo {
+    width: 90%;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+  }
+
+  #search-input {
+    top: 10px;
+    left: 10px;
+  }
+
+  .field-name {
+    font-size: 1em;
+  }
+
+  .field-name2, .found-date {
+    font-size: .4em;
+  }
+
+  .host-school {
+    font-size: .8em;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: .8em;
+  }
+
+  .custom-infoTitle {
+    font-size: 1.2rem;
+  }
+
+  .custom-markerPopup {
+    font-size: .8rem;
+  }
+}

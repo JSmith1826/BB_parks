@@ -922,14 +922,21 @@ function filterByLevel(level) {
         gameInfo(closestField, brackData);
 
         // Clear the fieldInfo container
+        const fieldInfo = document.getElementById("fieldInfo");
+        fieldInfo.innerHTML = "";
         
+        // Recreate the child divs
+        const fieldTitle = document.createElement("div");
+        fieldTitle.id = "fieldTitle";
+        fieldInfo.appendChild(fieldTitle);
 
-        
+        const fenceBlock = document.createElement("div");
+        fenceBlock.id = "fenceBlock";
+        fieldInfo.appendChild(fenceBlock);
 
-      
-        const fieldTitle = document.getElementById("fieldTitle");
-        
-        fieldTitle.innerHTML = "";
+    const areaBlock = document.createElement("div");
+    areaBlock.id = "areaBlock";
+    fieldInfo.appendChild(areaBlock);
       
         const fieldName = document.createElement("h2");
         // If a field has a display_name use that. if not use the park_name
@@ -978,7 +985,7 @@ function filterByLevel(level) {
 
             // Create the fenceBlock
       // Clear the fenceBlock and areaBlock containers
-      const fenceBlock = document.getElementById("fenceBlock");
+      
       fenceBlock.innerHTML = "";
   
       const fenceInfo = document.createElement("p");
@@ -1013,7 +1020,7 @@ function filterByLevel(level) {
         // Add the fenceBlock to the flex container
         // flexContainer.appendChild(fenceBlock);
 // Create the areaBlock
-const areaBlock = document.getElementById("areaBlock");
+
 areaBlock.innerHTML = "";
 
 const areaInfo = document.createElement("p");
@@ -1057,6 +1064,12 @@ function gameInfo(closestField, brackData) {
   console.log("All game districts: ", brackData.map(game => game.District));
   console.log("Closest field district: ", closestField.district);
 
+  // Check if closestField.district is null
+  if (closestField.district === null) {
+    hostInfo.innerHTML = "<p>No district selected.</p>";
+    return;
+  }
+
   // Filter data for selected district
   const districtData = brackData.filter(game => game.District.trim() === closestField.district.toString());
 
@@ -1064,17 +1077,27 @@ function gameInfo(closestField, brackData) {
 
   console.log("Filtered districtData:", districtData); // Log the filtered data
 
+  // Check if districtData is empty
+  if (districtData.length === 0) {
+    hostInfo.innerHTML = "<p>No game information available for the selected district.</p>";
+    return;
+  }
+
   // Create an HTML string based on the districtData
-  // If districtData is not empty, create a header with the first game's Division and District
-  let htmlStr = districtData.length > 0 ?
-    `<h3>Division ${districtData[0].Division} - District #${districtData[0].District}</h3>` :
-    '';
+  // Create a header with the first game's Division and District
+  let htmlStr = `<h2>Division ${districtData[0].Division} - District #${districtData[0].District}</h2>`;
+
+  let lastDate = null; // Used to track the date of the last game processed
 
   districtData.forEach(game => {
+      // Add the date as a header if it's different from the last game processed
+      if (game.Date !== lastDate) {
+        htmlStr += `<h3>${game.Date}</h3>`;
+        lastDate = game.Date;
+      }
       htmlStr += `
           <div class="game-info">
-            <h4>Date: ${game.Date} - ${game.Time}</h4>
-            <p>${game.Round}</p>          
+            <h4>${game.Time} - ${game.Round}</h4>
             <p>${game.Team1} (${game.Record1}) vs ${game.Team2} (${game.Record2})</p>
           </div>
       `;
