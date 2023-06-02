@@ -355,6 +355,8 @@ async function MapClickHandler(event, data, map, polygons, levelCounts) {
 ////////////////////////////////////// NEW FUNCTION TO ADD SEARCH FUNCTION//////////////////
 // This function should be called in your initMap() function
 function initSearchBox(map) {
+  // console log
+  console.log("Initializing search box...");
   // Create the search box and link it to the UI element.
   const input = document.getElementById("search-input");
   const searchBox = new google.maps.places.SearchBox(input);
@@ -376,7 +378,29 @@ function initSearchBox(map) {
     // Pan the map to the selected location
     const location = places[0].geometry.location;
     map.panTo(location);
+    map.setZoom(15);
+    // Clear the search box
+    input.value = "";
   });
+
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {  // checks whether the pressed key is "Enter"
+      const places = searchBox.getPlaces();
+  
+      if (places.length === 0) {
+        return;
+      }
+      
+      // Pan the map to the selected location
+      const location = places[0].geometry.location;
+      map.panTo(location);
+      map.setZoom(15);
+      // Clear the search box
+    input.value = "";
+    }
+  });
+
+  
 }
 
 
