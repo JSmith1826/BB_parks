@@ -2,16 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>MHSAA_2023.kml</name>
-	<StyleMap id="msn_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin</styleUrl>
-		</Pair>
-	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin0">
 		<Pair>
 			<key>normal</key>
@@ -90,6 +80,16 @@
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#sh_ylw-pushpin19</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="msn_ylw-pushpin22">
@@ -208,6 +208,28 @@
 		</PolyStyle>
 	</Style>
 	<Style id="poly-000000-1200-77-highlight600">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-000000-1200-77-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-000000-1200-77-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -871,6 +893,18 @@
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
 		</LineStyle>
 		<PolyStyle>
 			<color>4d000000</color>
@@ -2218,8 +2252,6 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<PolyStyle>
 			<fill>0</fill>
 		</PolyStyle>
@@ -2356,20 +2388,6 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<PolyStyle>
-			<fill>0</fill>
-		</PolyStyle>
-	</Style>
 	<Style id="sn_ylw-pushpin000">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -2389,6 +2407,18 @@
 		</LineStyle>
 		<PolyStyle>
 			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<fill>0</fill>
 		</PolyStyle>
 	</Style>
 	<Style id="sn_ylw-pushpin10">
@@ -6951,7 +6981,8 @@
 			<name>Concordia University - AA Greenhills Site</name>
 			<Placemark>
 				<name>foul</name>
-				<styleUrl>#msn_ylw-pushpin</styleUrl>
+				<visibility>0</visibility>
+				<styleUrl>#msn_ylw-pushpin2</styleUrl>
 				<Polygon>
 					<tessellate>1</tessellate>
 					<outerBoundaryIs>
@@ -6964,14 +6995,15 @@
 				</Polygon>
 			</Placemark>
 			<Placemark>
-				<name>fop</name>
-				<styleUrl>#msn_ylw-pushpin</styleUrl>
+				<name>fop_replot</name>
+				<open>1</open>
+				<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
 				<Polygon>
-					<tessellate>1</tessellate>
 					<outerBoundaryIs>
 						<LinearRing>
+							<tessellate>1</tessellate>
 							<coordinates>
-								-83.67906479189217,42.27737522544219,0 -83.67903210620533,42.27734774580624,0 -83.67893590251823,42.2772641555642,0 -83.67887651662819,42.27721590267583,0 -83.67882018573434,42.27717466257873,0 -83.67875875935718,42.27713710561185,0 -83.67869981803611,42.27710503349317,0 -83.67864036162699,42.27707438843555,0 -83.67856485131074,42.27704296092904,0 -83.67847119764009,42.27700898528204,0 -83.67837947339628,42.27699016912869,0 -83.67830350905929,42.27698399773796,0 -83.67826750772925,42.27697876847395,0 -83.6782127440724,42.27697696319479,0 -83.67815162109207,42.27698339433585,0 -83.67807624789168,42.27699769751926,0 -83.67801435339719,42.27701084450644,0 -83.67793529265988,42.27703209940234,0 -83.67788709681426,42.27704334449695,0 -83.67783754015235,42.27706404493721,0 -83.67778099777249,42.27708449277475,0 -83.67774900946617,42.27709942424975,0 -83.67772121792208,42.27712166240009,0 -83.67769106773544,42.27714134604292,0 -83.67765800795318,42.27717253280481,0 -83.67764077862168,42.27718767124448,0 -83.67759577364785,42.27722618654883,0 -83.67756453246216,42.2772501796211,0 -83.67753299744817,42.27727934718403,0 -83.67749953192902,42.27730821246253,0 -83.67746455226892,42.27733909138498,0 -83.67742983281289,42.27737298154612,0 -83.67738366275628,42.27741642614016,0 -83.67825695117611,42.27801164047828,0 -83.67906479189217,42.27737522544219,0 
+								-83.6782571,42.2780138,0 -83.6790671,42.2773738,0 -83.678994,42.2773158,0 -83.6788995,42.2772354,0 -83.6788639,42.2772101,0 -83.6788378,42.2771898,0 -83.67880959999999,42.2771699,0 -83.67877,42.2771476,0 -83.6787104,42.2771153,0 -83.6786748,42.277096,0 -83.6786379,42.2770756,0 -83.6785903,42.2770528,0 -83.67856279999999,42.2770414,0 -83.67852190000001,42.2770241,0 -83.67847500000001,42.2770097,0 -83.6784294,42.2769992,0 -83.6783751,42.2769898,0 -83.6783121,42.2769834,0 -83.6782443,42.2769769,0 -83.6782115,42.2769759,0 -83.678133,42.2769873,0 -83.67804049999999,42.2770062,0 -83.6779593,42.2770245,0 -83.67788830000001,42.2770459,0 -83.67782459999999,42.2770667,0 -83.6777749,42.2770895,0 -83.67774679999999,42.2771044,0 -83.6777032,42.2771362,0 -83.67765489999999,42.2771759,0 -83.6775751,42.2772428,0 -83.67745909999999,42.2773465,0 -83.6773833,42.2774145,0 -83.6782571,42.2780138,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>

@@ -1057,27 +1057,25 @@ function gameInfo(closestField, brackData) {
   console.log("All game districts: ", brackData.map(game => game.District));
   console.log("Closest field district: ", closestField.district);
 
-
   // Filter data for selected district
-  // const districtData = brackData.filter(closestField.division === brackData.Division.trim())
   const districtData = brackData.filter(game => game.District.trim() === closestField.district.toString());
 
-
-
   console.log("Type of closest field district: ", typeof closestField.district);
-  
+
   console.log("Filtered districtData:", districtData); // Log the filtered data
 
   // Create an HTML string based on the districtData
-  let htmlStr = '';
+  // If districtData is not empty, create a header with the first game's Division and District
+  let htmlStr = districtData.length > 0 ?
+    `<h3>Division ${districtData[0].Division} - District #${districtData[0].District}</h3>` :
+    '';
+
   districtData.forEach(game => {
       htmlStr += `
           <div class="game-info">
-          <h3>Division ${game.Division} - District #${game.District}</h3>
             <h4>Date: ${game.Date} - ${game.Time}</h4>
             <p>${game.Round}</p>          
-              <p>${game.Team1} (${game.Record1}) vs ${game.Team2} (${game.Record2})</p>
-                           
+            <p>${game.Team1} (${game.Record1}) vs ${game.Team2} (${game.Record2})</p>
           </div>
       `;
   });
@@ -1087,6 +1085,7 @@ function gameInfo(closestField, brackData) {
 
   console.log("hostInfo after adding games:", hostInfo); // Log the hostInfo after adding games
 }
+
 
 
 
