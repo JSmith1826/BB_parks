@@ -1090,33 +1090,39 @@ areaBlock.appendChild(areaInfo);
 function gameInfo(closestField, brackData) {
   console.log("Creating game info...");
   console.log("Closest field:", closestField);
-  console.log("Closest field district: ", closestField.district);
-  console.log("Game Data District: ", brackData.District);
+  
+  
 
   const hostInfo = document.getElementById("hostInfo");
   hostInfo.style.display = "block"; // Make the hostInfo div visible
   hostInfo.innerHTML = ""; // Clear the previous hostInfo if any
 
-  console.log("All game districts: ", brackData.map(game => game.District));
-  console.log("Closest field district: ", closestField.district);
+  
+  
 
   // Check if closestField.district is null
   if (closestField.district === null) {
     hostInfo.innerHTML = "<p>No district selected.</p>";
+    console.log("Game Data District: ", brackData.District);
     return;
   }
 
   // Filter data for selected district
-  const districtData = brackData.filter(game => game.District.trim() === closestField.district.toString());
+    const districtData = brackData.filter(game => Number(closestField.district) === Number(game.District));
 
-  console.log("Type of closest field district: ", typeof closestField.district);
 
-  console.log("Filtered districtData:", districtData); // Log the filtered data
+    console.log("Type of closest field district: ", typeof closestField.district);
+    if (districtData.length > 0) {
+    console.log("Type of districtData district: ", typeof districtData[0].District);
+    }
+    console.log("Filtered districtData:", districtData); // Log the filtered data
 
   // Check if districtData is empty
   if (districtData.length === 0) {
     hostInfo.innerHTML = "<p>No game information available for the selected district.</p>";
     return;
+  } else {
+    console.log("Type of districtData district: ", typeof districtData[0].District);
   }
 
   // Create an HTML string based on the districtData
@@ -1126,18 +1132,30 @@ function gameInfo(closestField, brackData) {
   let lastDate = null; // Used to track the date of the last game processed
 
   districtData.forEach(game => {
-      // Add the date as a header if it's different from the last game processed
-      if (game.Date !== lastDate) {
-        htmlStr += `<h3>${game.Date}</h3>`;
-        lastDate = game.Date;
-      }
-      htmlStr += `
-          <div class="game-info">
-            <h4>${game.Time} - ${game.Round}</h4>
-            <p>${game.Team1} (${game.Record1}) vs ${game.Team2} (${game.Record2})</p>
-          </div>
-      `;
-  });
+    // Add the date as a header if it's different from the last game processed
+    if (game.Date !== lastDate) {
+      htmlStr += `<h3>${game.Date}</h3>`;
+      lastDate = game.Date;
+    }
+
+    // Check if scores are available, else use the records
+    let teamInfo1, teamInfo2;
+    if (game.Score1 != null && game.Score2 != null) {
+      teamInfo1 = `${game.Team1} ${game.Score1}`;
+      teamInfo2 = `${game.Team2} ${game.Score2}`;
+    } else {
+      teamInfo1 = `${game.Team1} (${game.Record1})`;
+      teamInfo2 = `${game.Team2} (${game.Record2})`;
+    }
+
+    htmlStr += `
+        <div class="game-info">
+          <h4>${game.Time} - ${game.Round}</h4>
+          <p>${teamInfo1} | ${teamInfo2}</p>
+        </div>
+    `;
+});
+
 
   // Insert the created HTML string into hostInfo
   hostInfo.innerHTML = htmlStr;
