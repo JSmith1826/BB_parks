@@ -833,8 +833,20 @@ markers[field.level].push(marker);
   });
 
   marker.addListener("click", () => {
+    // Check if an infoWindow is already open on this marker
+    if (marker.get("infoWindowOpen")) {
+      // If it is, close it
+      infowindow.close();
+      // And update our state tracking property
+      marker.set("infoWindowOpen", false);
+    } else {
+      // If it's not, open it
       infowindow.open(map, marker);
+      // And update our state tracking property
+      marker.set("infoWindowOpen", true);
+    }
   });
+  
   marker.addListener("mouseover", () => {
       infowindow.open(map, marker);
   });
