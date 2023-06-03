@@ -1126,17 +1126,28 @@ function gameInfo(closestField, brackData) {
   let lastDate = null; // Used to track the date of the last game processed
 
   districtData.forEach(game => {
-      // Add the date as a header if it's different from the last game processed
-      if (game.Date !== lastDate) {
-        htmlStr += `<h3>${game.Date}</h3>`;
-        lastDate = game.Date;
-      }
+    // Add the date as a header if it's different from the last game processed
+    if (game.Date !== lastDate) {
+      htmlStr += `<h3>${game.Date}</h3>`;
+      lastDate = game.Date;
+    }
+  
+    // Check if the game has scores
+    if (game.Score1 && game.Score2) {
       htmlStr += `
-          <div class="game-info">
-            <h4>${game.Time} - ${game.Round}</h4>
-            <p>${game.Team1} (${game.Record1}) vs ${game.Team2} (${game.Record2})</p>
-          </div>
+        <div class="game-info">
+          <h4>${game.Time} - ${game.Round}</h4>
+          <p>${game.Team1} (${game.Record1}, Score: ${game.Score1}) vs ${game.Team2} (${game.Record2}, Score: ${game.Score2})</p>
+        </div>
       `;
+    } else {
+      htmlStr += `
+        <div class="game-info">
+          <h4>${game.Time} - ${game.Round}</h4>
+          <p>${game.Team1} (${game.Record1}) vs ${game.Team2} (${game.Record2})</p>
+        </div>
+      `;
+    }
   });
 
   // Insert the created HTML string into hostInfo
