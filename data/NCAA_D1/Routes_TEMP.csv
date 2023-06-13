@@ -1,0 +1,49 @@
+﻿College,Origin,Host,End_point,color1,color2
+Southern Miss.,"118 College Dr, Hattiesburg, MS 39406, USA",Auburn,"[-85.4899848, 32.6000522]",black,gold
+Samford,"800 Lakeshore Dr, Homewood, AL 35229, USA",Auburn,"[-85.4899848, 32.6000522]",navy,red
+Penn,"3331 River Fields Dr, Philadelphia, PA 08105, USA",Auburn,"[-85.4899848, 32.6000522]",red,blue
+Tulane,"6823 St Charles Ave, New Orleans, LA 70118, USA",LSU,"[-91.1877972, 30.4061259]",#006747,#43B02A
+Oregon St.,"430 Southwest Langton Place, Corvallis, OR 97331",LSU,"[-91.1877972, 30.4061259]",orange,black
+Sam Houston,"925 City Central Ave, Conroe, TX 77304, USA",LSU,"[-91.1877972, 30.4061259]",orange,white
+Army West Point,"606 Thayer Rd, West Point, NY 10996, USA",Virginia,"[-78.5141847, 38.0457835]",gold,gray
+East Carolina,"E 5th St, Greenville, NC 27858, USA",Virginia,"[-78.5141847, 38.0457835]",purple,gold
+Oklahoma,"180 W Brooks, Norman, OK, 73019",Virginia,"[-78.5141847, 38.0457835]",#841617,#FDF9D8
+Lipscomb,"1 University Park Dr, Nashville, TN 37204, USA",Clemson,"[-82.8491983, 34.6791933]",purple,gold
+Tennessee,1551 Lake Loudoun Blvd.,Clemson,"[-82.8491983, 34.6791933]",orange,white
+Charlotte,"9201 University City Boulevard Charlotte, NC 28223-0001",Clemson,"[-82.8491983, 34.6791933]",green,gold
+Campbell,"143 Main St, Buies Creek, NC 27506, USA",South Carolina,"[-81.0428983, 33.9859967]",orange,black
+NC State,"27607, 1081 Varsity Dr, Raleigh, NC 27606",South Carolina,"[-81.0428983, 33.9859967]",#CC0000,black
+Central Conn. St.,"1615 Stanley St, New Britain, CT 06050, USA",South Carolina,"[-81.0428983, 33.9859967]",blue,white
+Duke,"101 Whitford Dr, Durham, NC 27708",Coastal Carolina,"[-79.0154049, 33.7935777]",#003087,white
+UNCW,"601 College Rd, Wilmington, NC 28403, USA",Coastal Carolina,"[-79.0154049, 33.7935777]",#006666,#003366
+Rider,"2083 Lawrenceville Rd, Lawrenceville, NJ 08648, USA",Coastal Carolina,"[-79.0154049, 33.7935777]",#981E32,#6C6F70
+Texas,"1300 E Martin Luther King Jr Blvd, Austin, TX 78702",Miami (FL),"[-80.2825185, 25.7115824]",#BF5700,white
+Louisiana,"Gourrier Ave, Baton Rouge, LA 70820",Miami (FL),"[-80.2825185, 25.7115824]",#461D7C,#FDD023
+Maine,"5747 Memorial Gym, orono, Maine 04469",Miami (FL),"[-80.2825185, 25.7115824]",#B0D7FF,#000080
+Santa Clara,"500 El Camino Real, Santa Clara, CA 95053",Arkansas,"[-94.1827419, 36.0502882]",white,red
+TCU,"2800 S University Dr, Fort Worth, TX 76109, USA",Arkansas,"[-94.1827419, 36.0502882]",purple,white
+Arizona,1 National Championship Drive Tucson AZ 85721-0096,Arkansas,"[-94.1827419, 36.0502882]",CC0033,#003366
+UConn," 2095 Hillside Road Unit 1173. Storrs, CT 06269",Florida,"[-82.3638354, 29.6363349]",#FFFFFF,#000080
+Texas Tech,"2500 Broadway, Lubbock, TX 79409, USA",Florida,"[-82.3638354, 29.6363349]",CC0033,black
+Florida A&M,"1601 S Martin Luther King Jr Blvd, Tallahassee, FL 32307, USA",Florida,"[-82.3638354, 29.6363349]",green,orange
+Ball St.,"3300 Tillotson Ave, Muncie, IN 47304",Kentucky,"[-84.503154, 38.0182201]",BA0C2F,black
+West Virginia,"Morgantown, West Virginia, USA 26507-0877",Kentucky,"[-84.503154, 38.0182201]",#002855,#eaaa00
+Indiana,"1873 N. Fee Lane Bloomington, IN 47408",Kentucky,"[-84.503154, 38.0182201]",#990000,#EEEDEB
+Oregon," 2727 Leo Harris Parkway Eugene, OR 97401",Vanderbilt,"[-86.808049, 36.1431721]",green,yellow
+Xavier,"3800 Victory Parkway, 1630 Musketeer Dr, Cincinnati, OH 45207, USA",Vanderbilt,"[-86.808049, 36.1431721]",#0C2340,#9EA2A2
+Eastern Ill.,"600 Lincoln Ave, Charleston, IL 61920, USA",Vanderbilt,"[-86.808049, 36.1431721]",blue,gray
+San Jose St.,"588 E Alma Ave, San Jose, CA 95112",Stanford,"[-122.1587602, 37.4321552]",gold,blue
+Texas A&M,"Administration Building, 400 Bizzell St, College Station, TX 77843, USA",Stanford,"[-122.1587602, 37.4321552]",500000,ffffff
+Cal St. Fullerton,"800 N State College Blvd, Fullerton, CA 92831, USA",Stanford,"[-122.1587602, 37.4321552]",blue,orange
+DBU,"3000 Mountain Creek Pkwy, Dallas, TX 75211, USA",Oklahoma St.,"[-97.0685448812, 36.1312251729]",#C41230,#0B1F2C
+Washington,"3800 Montlake Blvd NE, Seattle, WA 98105",Oklahoma St.,"[-97.0685448812, 36.1312251729]",purple,gold
+Oral Roberts,"7777 S Lewis Ave, Tulsa, OK 74171",Oklahoma St.,"[-97.0685448812, 36.1312251729]",#002F60,#C5B783
+Wright St.,"Fairborn, OH 45324",Indiana St.,"[-87.4163927, 39.4786288]",#026937,#CEA052
+Iowa,"1100 Hawkins Drive, Iowa City, IA",Indiana St.,"[-87.4163927, 39.4786288]",yellow,black
+North Carolina,"235 Ridge Rd, Chapel Hill, NC 27514",Indiana St.,"[-87.4163927, 39.4786288]",#7BAFD4,ffffff
+Boston College,"140 Commonwealth Ave, Chestnut Hill, MA 02467, USA",Alabama,"[-87.5387466, 33.2052609]",8a100b,b29d6c
+Troy,"600 University Ave, Troy, AL 36082, USA",Alabama,"[-87.5387466, 33.2052609]",#6D0017,#B2B3B5
+Nicholls,"906 E 1st St, Thibodaux, LA 70301, USA",Alabama,"[-87.5387466, 33.2052609]",#C41230,B2B2B2
+Maryland,"4122 Fieldhouse Drive, College Park, Maryland",Wake Forest,"[-80.2524122, 36.129499]",#E03A3E,#FFD520
+Northeastern,"360 Huntington Ave, Boston, MA 02115, USA",Wake Forest,"[-80.2524122, 36.129499]",red,black
+George Mason,"4400 University Dr, Fairfax, VA 22030, USA",Wake Forest,"[-80.2524122, 36.129499]",#006633,#FFCC33

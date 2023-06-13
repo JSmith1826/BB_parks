@@ -849,7 +849,7 @@ fenceInfo.appendChild(outfieldPlot);
     areaInfo.innerHTML = `Fair Territory `;
     areaInfo.appendChild(wrapDigits((closestField.fop_area_sqft / 43560).toFixed(2)));
     areaInfo.innerHTML += ` Acres<br> Foul Ground `;
-    areaInfo.appendChild(wrapDigits(100*(closestField.foul_area_sqft / (closestField.fop_area_sqft + closestField.foul_area_sqft)).toFixed(1)));
+    areaInfo.appendChild(wrapDigits(10*(closestField.foul_area_sqft / (closestField.fop_area_sqft + closestField.foul_area_sqft)).toFixed(3)));
     areaInfo.innerHTML += `<number>%</number>`;
     areaBlock.appendChild(areaInfo);
 

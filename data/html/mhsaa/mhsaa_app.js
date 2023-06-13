@@ -279,6 +279,7 @@ function filterByLevel(level) {
   }
 }
 
+
 document.getElementById("myRange").addEventListener('input', function() {
   filterByLevel(this.value);
 });
@@ -302,6 +303,8 @@ function countFieldsByLevel(data) {
   });
   return levelCounts;
 }
+
+
 
 
   // Create the map click handler - The big boy of functions
@@ -1134,7 +1137,8 @@ function gameInfo(closestField, brackData) {
   districtData.forEach(game => {
     // Add the date as a header if it's different from the last game processed
     if (game.Date !== lastDate) {
-      htmlStr += `<h3>${game.Date}</h3>`;
+      htmlStr += `<h4><span style="display: block; text-align: left">${game.Date}</span></h4>`;
+
       lastDate = game.Date;
     }
 
@@ -1151,7 +1155,7 @@ function gameInfo(closestField, brackData) {
     htmlStr += `
         <div class="game-info">
           <h4>${game.Time} - ${game.Round}</h4>
-          <p>${teamInfo1} | ${teamInfo2}</p>
+          <p>${teamInfo1} vs ${teamInfo2}</p>
         </div>
     `;
 });
