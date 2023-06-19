@@ -1,0 +1,229 @@
+# Modify this code to update the DB schema diagram.
+# To reset the sample schema, replace everything with
+# two dots ('..' - without quotes).
+
+
+# Full NCES Public School Dataset from scrape with all grade levels
+nces_public_data_full
+-
+NCES_School_ID PK int
+State_School_ID varchar
+NCES_District_ID int
+State_District_ID varchar
+Low_Grade varchar
+High_Grade int
+School_Name varchar
+District varchar
+County_Name varchar
+Street_Address varchar
+City varchar
+State varchar
+ZIP int
+ZIP_4_digit float
+Phone varchar
+Locale_Code int
+Locale varchar
+Charter varchar
+Magnet varchar
+Title_I_School varchar
+Title_1_School_Wide varchar
+Students float
+Teachers float
+Student_Teacher_Ratio varchar
+Free_Lunch varchar
+Reduced_Lunch varchar
+Directly_Certified varchar
+
+## Years stats summary by team
+# after processing and standardizing
+team_yearly_stats_example
+-
+  teamName PK varchar
+  playoff_games_played int
+  playoff_runs_scored_mean float
+  playoff_runs_scored_median float
+  playoff_runs_scored_total float
+  playoff_runs_allowed_count int
+  playoff_runs_allowed_mean float
+  playoff_runs_allowed_median float
+  playoff_runs_allowed_total float
+  playoff_L float
+  playoff_W float
+  playoff_win_pct float
+  playoff_run_diff_total float
+  playoff_run_diff_mean float
+  regular_season_games_played int
+  regular_season_runs_scored_mean float
+  regular_season_runs_scored_median float
+  regular_season_runs_scored_total float
+  regular_season_runs_allowed_count int
+  regular_season_runs_allowed_mean float
+  regular_season_runs_allowed_median float
+  regular_season_runs_allowed_total float
+  regular_season_L float
+  regular_season_T float
+  regular_season_W float
+  regular_season_win_pct float
+  regular_season_run_diff_total float
+  regular_season_run_diff_mean float
+  home_games_played float
+  home_runs_scored_mean float
+  home_runs_scored_median float
+  home_runs_scored_total float
+  home_runs_allowed_count float
+  home_runs_allowed_mean float
+  home_runs_allowed_median float
+  home_runs_allowed_total float
+  home_L float
+  home_T float
+  home_W float
+  home_win_pct float
+  home_run_diff_total float
+  home_run_diff_mean float
+  away_games_played int
+  away_runs_scored_mean float
+  away_runs_scored_median float
+  away_runs_scored_total float
+  away_runs_allowed_count int
+  away_runs_allowed_mean float
+  away_runs_allowed_median float
+  away_runs_allowed_total float
+  away_L float
+  away_T float
+  away_W float
+  away_win_pct float
+  away_run_diff_total float
+  away_run_diff_mean float
+  
+
+
+game_level_2022
+-
+  teamName PK varchar
+  teamId int
+  leagueName varchar
+  opponentName varchar
+  opponentId float
+  gameDate varchar
+  gameTime varchar
+  homeOrAway varchar
+  location varchar
+  teamScore float
+  opponentScore float
+  notes varchar
+  contestType int
+  seasonType int
+  postSeasonInfo varchar
+  tournamentInfo varchar
+  tournamentName varchar
+  tournamentType float
+  contestName varchar
+  seasonTypeCode varchar
+
+
+
+school_info_test
+-
+  HS_ENROLL PK float
+  School_Name varchar
+  District varchar
+  County_Name varchar
+  Street_Address varchar
+  City varchar
+  State varchar
+  ZIP int
+  ZIP_4_digit float
+  Phone varchar
+  Locale_Code float
+  Locale varchar
+  Charter varchar
+  Magnet varchar
+  Title_I_School varchar
+  Title_1_School_Wide varchar
+  Students float
+  Teachers float
+  Student_Teacher_Ratio varchar
+  Free_Lunch varchar
+  Reduced_Lunch varchar
+  Directly_Certified varchar
+  school_type varchar
+  School_ID_private_ varchar
+  PSS_COUNTY_NO float
+  County_FIPS float
+  Coed_ varchar
+  Relig varchar
+  Community_Type varchar
+  demo_pct_American_Indian float
+  demo_pct_Asian float
+  demo_pct_Hispanic float
+  demo_pct_Black float
+  demo_pct_White float
+  demo_pct_Pacific_Islander float
+  demo_pct_Two_or_More float
+  Relig_subtype varchar
+  PSS_ASSOC_1 varchar
+  
+# game level data
+# one per year, cleaned up scrape of every game played
+# all teams, with notes
+game_level_data
+-
+  teamName PK varchar
+  teamId int
+  leagueName varchar
+  opponentName varchar
+  opponentId float
+  gameDate varchar
+  gameTime varchar
+  homeOrAway varchar
+  location varchar
+  teamScore float
+  opponentScore float
+  notes varchar
+  contestType int
+  seasonType int
+  postSeasonInfo varchar
+  tournamentInfo float
+  tournamentName varchar
+  tournamentType float
+  contestName varchar
+  seasonTypeCode varchar
+  
+  
+## MHSAA School Data 
+MHSAA_School_Info_Table
+-
+  SchoolId PK int
+  SportId int
+  PopularName varchar
+  ProperName varchar
+  NickName varchar
+  Colors varchar
+  LeaugeName varchar
+  LeaugeId int
+  HeadCoach float
+  PrimaryColorCode varchar
+  ImagePath varchar
+  Classification varchar
+  Record float
+  Enrollment int
+  City varchar
+  State varchar
+  Address1 varchar
+  Address2 varchar
+  Zip varchar
+  Phone varchar
+  Fax varchar
+  VanityUrl varchar
+  MapURL varchar
+  WebSite varchar
+  IsMiddleSchool boolean
+  ClassificationCalculationSteps varchar
+  ClassificationCalculationStepsHtml varchar
+  SportSeasonId int
+  EnrollmentData varchar
+  TicketUrl varchar
+  OldSchoolId float
+  SchoolNameWithId varchar
+  
+  
