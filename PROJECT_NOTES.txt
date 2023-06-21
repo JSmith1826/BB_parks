@@ -1,0 +1,34 @@
+NOTE FOR BASEBALL PROJECT
+
+-- CREATE A CAPE COD LEAGUE MAP TO PUT ON REDDIT -
+	- FIELDS ARE ALREADY PLOTTED - NEED DATA COLLECTION
+
+- the only scrape that seems to be completely useless is the earliest one (2010 - only 3 teams represented)
+- Match the field info to the MHSAA School Info
+
+- Double check the school info to make sure the table has both public and private and the matching with MHSAA data is solid
+
+- Generate reports with the number of valid games and teams represented by each dataset
+
+-- LOnger Goal - scrape all of the avaiable tournament data from MHSAA
+	- full tourney data goes back to 2010 and is pretty standardized (text for QF+ and PDF of whole bracket)
+	- before that semi and final data going back to 1978 is linked on website but is just pdf of the finals program that may or may not include brackets
+
+-- Collect the HR data for each field in D1 NCAA baseball and tie it to geo data for analysis
+	- could probably scrape the data from espn in a way similar to the way I did it for 2023 tourney games
+		- would need to adjust game scraper to make sure it collected a good value for where the game was played
+	-
+
+# Have the MHSAA stats seperated into regular and playoff, pretty solid looking data set
+	- should be pretty easy to create charts of best regular season and post season teams for the length of the dataset
+	- can pull color parameters and even paths to standardized logos from mhsaa website from the school info file
+
+	- WAYS TO ORGATNIZE CHARTS
+- split by division
+- regular season wins per year / win pct per year in regular season vs postseason
+- split public schools vs private schools (will require connecting to the school master info table)
+
+
+BUILD THE ARCHIVE OF PRE SCRAPE DATA
+
+ARCHIVE URL WITH 

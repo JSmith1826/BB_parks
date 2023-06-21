@@ -2,11 +2,66 @@
 # To reset the sample schema, replace everything with
 # two dots ('..' - without quotes).
 
+# MATCHING TABLE
+match_df
+-
+MHSAA_PopularName PK varchar FK >- MHSAA_School_Info_Table.PopularName
+SchoolId int FK >- MHSAA_School_Info_Table.SchoolId
+  Classification varchar
+MHSAA_Proper varchar FK >- MHSAA_School_Info_Table.ProperName
+  NickName varchar
+NCES_Name varchar FK >- public_school_data.school_name
+  NCES_School_ID varchar
+
+
+
+public_school_data
+-
+  school_name PK varchar
+school_id float FK >- match_df.NCES_School_ID
+  school_district varchar
+  school_district_id int
+  total_students int
+  teachers float
+  student_teacher_ratio varchar
+  lunch_free_count varchar
+  lunch_reduced_count varchar
+  lunch_total_count varchar
+  _9 float
+  _10 float
+  _11 float
+  _12 float
+  American_Indian_Alaska_Native float
+  Asian float
+  Black float
+  Hispanic float
+  Native_Hawaiian_Pacific_Islander float
+  White float
+  Two_or_MoreRaces float
+  Male int
+  Female int
+  Male_Pct varchar
+  Female_Pct varchar
+  KG float
+  _1 float
+  _2 float
+  _3 float
+  _4 float
+  _5 float
+  _6 float
+  _7 float
+  _8 float
+  PK varchar
+  Ungraded float
+  
+
+  
+
 
 # Full NCES Public School Dataset from scrape with all grade levels
 nces_public_data_full
 -
-NCES_School_ID PK int
+NCES_School_ID PK int FK >- school_info_test.NCES_School_ID
 State_School_ID varchar
 NCES_District_ID int
 State_District_ID varchar
@@ -38,7 +93,7 @@ Directly_Certified varchar
 # after processing and standardizing
 team_yearly_stats_example
 -
-  teamName PK varchar
+teamName PK varchar FK >- game_level_data.teamName
   playoff_games_played int
   playoff_runs_scored_mean float
   playoff_runs_scored_median float
@@ -97,35 +152,11 @@ team_yearly_stats_example
   
 
 
-game_level_2022
--
-  teamName PK varchar
-  teamId int
-  leagueName varchar
-  opponentName varchar
-  opponentId float
-  gameDate varchar
-  gameTime varchar
-  homeOrAway varchar
-  location varchar
-  teamScore float
-  opponentScore float
-  notes varchar
-  contestType int
-  seasonType int
-  postSeasonInfo varchar
-  tournamentInfo varchar
-  tournamentName varchar
-  tournamentType float
-  contestName varchar
-  seasonTypeCode varchar
-
-
-
 school_info_test
 -
-  HS_ENROLL PK float
-  School_Name varchar
+NCES_School_ID PK int
+  HS_ENROLL float
+School_Name varchar
   District varchar
   County_Name varchar
   Street_Address varchar
@@ -169,7 +200,7 @@ school_info_test
 game_level_data
 -
   teamName PK varchar
-  teamId int
+teamId int FK >- MHSAA_School_Info_Table.SportId
   leagueName varchar
   opponentName varchar
   opponentId float
@@ -225,5 +256,45 @@ MHSAA_School_Info_Table
   TicketUrl varchar
   OldSchoolId float
   SchoolNameWithId varchar
+  Closest_Field_1
+  Closest_Field_2
+  Closest_Field_3
+  Distance_1
+  Distance_2
+  Distance_3
+  
+  
+  ## Table with information about ballparks
+  ## from All High School Fields kml
+  
+ballpark_table
+-
+park_name PK varchar FK >- MHSAA_School_Info_Table.Closest_Field_1
+  foul varchar
+  fop varchar
+  notes varchar
+  home_plate varchar
+  foul_area_sqft float
+  fop_area_sqft float
+  field_area_sqft float
+  foul_area_per float
+  fair_to_foul float
+  distances varchar
+  max_distance float
+  min_distance float
+  avg_distance float
+  median_distance float
+  num_distances int
+  max_distance_rank float
+  min_distance_rank float
+  avg_distance_rank float
+  median_distance_rank float
+  field_area_rank float
+  foul_area_rank float
+  fop_area_per_rank float
+  ratio_rank float
+  fop_centroid varchar
+  field_orientation float
+  field_cardinal_direction varchar
   
   
