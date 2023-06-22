@@ -2,12 +2,17 @@ NOTES FOR BASEBALL PROJECT
 
 ------ GOALS FOR TONIGHTS --------
 
-Get school info in final shape with all demo columns matched and merged
+DONE! - Get school info in final shape with all demo columns matched and merged
 Seterate the field data by class / division and create a composite for each catagory
 
 with school info all done start some tableau views of public vs private and simple summary plots
 keep in mind that I want some simple small plots to explain the dataschool enrollment
 locale breakdown, ect
+
+STARTED - Start a new repo with the clean usable data and start to consolidate code into just a couple of books for showcase repo
+	- dir structure created and clean data moved over
+	- have not init repo
+
 
 
 --- longer - use a new map visualization to make a 3d map of bars of winning percentage or total wins- look up the open source uber library
