@@ -10,84 +10,11 @@ SchoolId int FK >- MHSAA_School_Info_Table.SchoolId
   Classification varchar
 MHSAA_Proper varchar FK >- MHSAA_School_Info_Table.ProperName
   NickName varchar
-NCES_Name varchar FK >- public_school_data.school_name
-  NCES_School_ID varchar
+NCES_Name varchar FK
 
 
 
-public_school_data
--
-  school_name PK varchar
-school_id float FK >- match_df.NCES_School_ID
-  school_district varchar
-  school_district_id int
-  total_students int
-  teachers float
-  student_teacher_ratio varchar
-  lunch_free_count varchar
-  lunch_reduced_count varchar
-  lunch_total_count varchar
-  _9 float
-  _10 float
-  _11 float
-  _12 float
-  American_Indian_Alaska_Native float
-  Asian float
-  Black float
-  Hispanic float
-  Native_Hawaiian_Pacific_Islander float
-  White float
-  Two_or_MoreRaces float
-  Male int
-  Female int
-  Male_Pct varchar
-  Female_Pct varchar
-  KG float
-  _1 float
-  _2 float
-  _3 float
-  _4 float
-  _5 float
-  _6 float
-  _7 float
-  _8 float
-  PK varchar
-  Ungraded float
-  
 
-  
-
-
-# Full NCES Public School Dataset from scrape with all grade levels
-nces_public_data_full
--
-NCES_School_ID PK int FK >- school_info_test.NCES_School_ID
-State_School_ID varchar
-NCES_District_ID int
-State_District_ID varchar
-Low_Grade varchar
-High_Grade int
-School_Name varchar
-District varchar
-County_Name varchar
-Street_Address varchar
-City varchar
-State varchar
-ZIP int
-ZIP_4_digit float
-Phone varchar
-Locale_Code int
-Locale varchar
-Charter varchar
-Magnet varchar
-Title_I_School varchar
-Title_1_School_Wide varchar
-Students float
-Teachers float
-Student_Teacher_Ratio varchar
-Free_Lunch varchar
-Reduced_Lunch varchar
-Directly_Certified varchar
 
 ## Years stats summary by team
 # after processing and standardizing
@@ -298,3 +225,48 @@ park_name PK varchar FK >- MHSAA_School_Info_Table.Closest_Field_1
   field_cardinal_direction varchar
   
   
+  
+  ## School Master Table
+  ## Has demographic and locale information
+  ## for both public and private schools
+  ## has public private column for easy sorting
+  
+school_master_table
+-
+School_Name PK varchar FK >- match_df.NCES_Name
+  District varchar
+  County_Name varchar
+  Street_Address varchar
+  City varchar
+  State varchar
+  ZIP int
+  ZIP_4_digit float
+  Phone varchar
+  Locale_Code float
+  Locale varchar
+  Charter varchar
+  Magnet varchar
+  Title_I_School varchar
+  Title_1_School_Wide varchar
+  HS_ENROLL float
+  Teachers float
+  Student_Teacher_Ratio varchar
+  Free_Lunch varchar
+  Reduced_Lunch varchar
+  Directly_Certified varchar
+  school_type varchar
+  Coed_ varchar
+  Relig varchar
+  Community_Type varchar
+  Relig_subtype varchar
+  School_ID_private_ varchar
+  PSS_COUNTY_NO float
+  County_FIPS float
+  demo_pct_American_Indian float
+  demo_pct_Asian float
+  demo_pct_Hispanic float
+  demo_pct_Black float
+  demo_pct_White float
+  demo_pct_Pacific_Islander float
+  demo_pct_Two_or_More float
+  PSS_ASSOC_1 varchar
