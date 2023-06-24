@@ -5,9 +5,9 @@ NOTES FOR BASEBALL PROJECT
 DONE! - Get school info in final shape with all demo columns matched and merged
 Seterate the field data by class / division and create a composite for each catagory
 
-with school info all done start some tableau views of public vs private and simple summary plots
+DONE! ---with school info all done start some tableau views of public vs private and simple summary plots
 keep in mind that I want some simple small plots to explain the dataschool enrollment
-locale breakdown, ect
+locale breakdown, ect ---
 
 STARTED - Start a new repo with the clean usable data and start to consolidate code into just a couple of books for showcase repo
 	- dir structure created and clean data moved over
@@ -16,6 +16,7 @@ STARTED - Start a new repo with the clean usable data and start to consolidate c
 
 
 --- longer - use a new map visualization to make a 3d map of bars of winning percentage or total wins- look up the open source uber library
+	- new not. installed ubers open source libreary keplergl., started notebook
 
 
 -- CREATE A CAPE COD LEAGUE MAP TO PUT ON REDDIT -
@@ -23,10 +24,12 @@ STARTED - Start a new repo with the clean usable data and start to consolidate c
 
 -- Create a plot of the "average field" for each MHSAA class and for the tournament
 
+---- LOTS OF WORK DONE ON THIS - SEE NEWISH NOTEBOOK - 6/22
 -- Take a shot at creating a plot of the entire fields.
 - take the kml file. create the centroid
 	- create a merged polygon with complete outline of field
 	- measure distance from centroid to the polygons (use 540 measurements for the outfield in current code. That would scale up to 2160 measurements.
+----------------------------------------------------------------
 
 DONE- Generate reports with the number of valid games and teams represented by each dataset
 	- the only scrape that seems to be completely useless is the earliest one (2010 - only 3 teams represented)
@@ -34,7 +37,7 @@ CHECK - ADDED CLOSEST FIELD TO MHSAA INFO TABLE- Match the field info to the MHS
 
 - Double check the school info to make sure the table has both public and private and the matching with MHSAA data is solid
 
-
+######## NEW NOTE 6-22 --- STILL HAVE AN ISSUE WITH 2012 - got to yearly summary loop book, special blocks in there
 # Have the MHSAA stats seperated into regular and playoff, pretty solid looking data set
 	- should be pretty easy to create charts of best regular season and post season teams for the length of the dataset
 	- can pull color parameters and even paths to standardized logos from mhsaa website from the school info file
@@ -42,6 +45,9 @@ CHECK - ADDED CLOSEST FIELD TO MHSAA INFO TABLE- Match the field info to the MHS
 	- WAYS TO ORGATNIZE CHARTS
 - split by division
 - regular season wins per year / win pct per year in regular season vs postseason
+
+
+######### NEED TO IMPORVE MATCH AND KEYS BETWEEN TABLES - CHECK MATCH QTY AND STRENGTH
 - split public schools vs private schools (will require connecting to the school master info table)
 
 
