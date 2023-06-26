@@ -1,4 +1,42 @@
 NOTES FOR BASEBALL PROJECT
+----------------------------------
+
+
+#### NOTES FOR PROCESSING THE RAW SCARPE FILES (FOOTBALL AND mbb RIGHT NOW)
+
+GOAL - 
+SET UP LAPTOP TO DO THE SCRAPING SO THE PC ISN"T TIED UP FOR HOURS AT A TIME
+	- Found a better way to get game level data.
+
+	- can get a return of every contest for a seasopn for a sport, by team, ect using MHSAA search function
+		- cant make the request too large or page breaks. should keep it to 1 sport one season at a time (maybe try 2)
+
+
+	- TO DO TIMESseries vizualizaations in tableau nee to keep it all in a single table	
+	- PLAN
+		- process the raw files into a file with summary statistics for each team each season.
+		- include processing similar to baseball 
+			- Pts scored H v A, Reguald v Postseason (-also looks to be some preseason data at least in basketball)
+			- point diff, win pct H/A R/PC
+		- save it all to a single file with acolumn for seasonYear
+			- this will allow use of "parameteres' in tableau and will be able to create a single view and cycle through years
+
+
+
+
+UPDATE SUNDAY 6/25
+Started using new folder and repo to do statistical breakdowns of different sports
+- currently scraping 10 years worth of mens basketball and football 2012-2023
+- have a pretty good process that should adapt to any sports I want to use it on
+- need to find a good list of all the relevent school ids for each sport. As far as I can tell all schools are in the range 3800 to 4999
+	- currently checking every combination so scraping is very slow.
+------ OTHER SPORTS list ----------
+girls basketball (easy to mirror what I do with boys data)
+hockey personal interest and will be a pretty small dataset
+- golf would be interesting but the structure of the data is going to be way different	- and call for totally different analysis
+
+- SOFTBALL - easy to mirror to boys baseeball and I could start by just scraping the list of school ids that are good for baseball	
+	- a school without a baseball team is very unlikely to have softball
 
 ------ GOALS FOR TONIGHTS --------
 
@@ -9,7 +47,7 @@ DONE! ---with school info all done start some tableau views of public vs private
 keep in mind that I want some simple small plots to explain the dataschool enrollment
 locale breakdown, ect ---
 
-STARTED - Start a new repo with the clean usable data and start to consolidate code into just a couple of books for showcase repo
+DONE - Start a new repo with the clean usable data and start to consolidate code into just a couple of books for showcase repo
 	- dir structure created and clean data moved over
 	- have not init repo
 
@@ -17,6 +55,11 @@ STARTED - Start a new repo with the clean usable data and start to consolidate c
 
 --- longer - use a new map visualization to make a 3d map of bars of winning percentage or total wins- look up the open source uber library
 	- new not. installed ubers open source libreary keplergl., started notebook
+	- UPDATE 6/25 -  played arround with it a few nights ago
+		- wasn't able to create any compelling views	
+		- next time try aggrigating stas by county and see how that goes
+			- big problem the first time was the map could look so barren when it just had little points and stacks at each school location
+
 
 
 -- CREATE A CAPE COD LEAGUE MAP TO PUT ON REDDIT -
