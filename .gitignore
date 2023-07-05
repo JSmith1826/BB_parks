@@ -1,6 +1,30 @@
-# Ignore .env files
-**/.env
+# Ignore directories
+/TEMP/
+/archive/
 
-# Ignore the data and images directories
 
-# **/images/
+# Ignore Python build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+
+# Ignore Python virtual environments
+venv/
+ENV/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore files related to PyCharm
+.idea/
+
+# Ignore files related to Visual Studio Code
+.vscode/
+
+
+
+# Ignore package lock files (for npm and yarn)
+package-lock.json
+yarn.lock
