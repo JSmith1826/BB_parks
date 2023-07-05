@@ -30,22 +30,22 @@ ChatGPT, both model 3.5 and 4, were used to assist in writing code.
 Total Fields: 716
 
 ### Fields by level:
-High School                   494
-Youth                          78
-College                        57
-Major League                   23
-Unknown                        18
-Professional                   17
-International                  15
-State / County / Municipal     14
+-High School                   494
+-Youth                          78
+-College                        57
+-Major League                   23
+-Unknown                        18
+-Professional                   17
+-International                  15
+-State / County / Municipal     14
 
 ### AREA CALCS:
-Total Fair Territory: 3.732 square miles
-Total Foul Territory: 1.136 square miles
-Total Territory: 4.868 square miles
+-Total Fair Territory: 3.732 square miles
+-Total Foul Territory: 1.136 square miles
+-Total Territory: 4.868 square miles
 
 
 ### LENGTH OF BOUNDRIES:
-Total FOP distance: 156.691 miles
-Total Foul distance: 185.420 miles
-Total distance: 342.111 miles
+-Total FOP distance: 156.691 miles
+-Total Foul distance: 185.420 miles
+-Total distance: 342.111 miles
