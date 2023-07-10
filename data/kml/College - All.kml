@@ -1,0 +1,2651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>College - All.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin18</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin190">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin19</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin190</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin70</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin800</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin90">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin91</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin90</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin900">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin92</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin900</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-000000-1200-77-highlight10">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-highlight70">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight001">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight01">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight1000">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight1200">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight15">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight171">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight2">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight202">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight2100">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight34">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight36">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight4000">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight43">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight510">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight91">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal020">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal1">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal100">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal1200">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal2">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal2001">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal2100">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal40">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal401">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal5">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal6">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal710">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal82">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal8200">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal920">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-000000-1200-77-nodesc0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc0100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal2100</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight1200</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc02">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal40</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight01</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc102">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal100</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight202</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc111">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal82</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight171</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc112">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal1200</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc114">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight36</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc15">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal2001</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight1000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc162">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>runtime://clone49899#poly-000000-1200-77-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>runtime://clone49899#poly-000000-1200-77-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc170">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal8200</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight2100</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc2000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal710</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight4000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc201">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal920</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight510</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc23">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal020</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight001</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc24">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight43</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight91</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc60">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal401</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight34</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-000000-1200-77-normal23">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-normal40">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-000000-1200-77101">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-normal40</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-highlight10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-776">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-normal23</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-highlight70</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin18">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin190">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin6">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin800">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin90">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin900">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin18">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin19">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin70">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin8">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin91">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin92">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>College - All</name>
+		<Folder>
+			<name>Adrian College</name>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#msn_ylw-pushpin90</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.0697145,41.901861,0 -84.0703958,41.9026485,0 -84.07040120000001,41.9026405,0 -84.0701651,41.902367,0 -84.07000549999999,41.9020037,0 -84.0698017,41.9017731,0 -84.069677,41.9017472,0 -84.06939,41.9018859,0 -84.0690172,41.9021944,0 -84.0687221,41.9023371,0 -84.0687248,41.9023461,0 -84.0697145,41.901861,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#msn_ylw-pushpin90</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.0697145,41.901861,0 -84.0687248,41.9023461,0 -84.0688009,41.9025374,0 -84.0688384,41.9025973,0 -84.0688706,41.9026322,0 -84.0689175,41.9026841,0 -84.0689766,41.902728,0 -84.0690208,41.902759,0 -84.069061,41.9027889,0 -84.06910929999999,41.9028169,0 -84.0691683,41.9028448,0 -84.06923399999999,41.9028718,0 -84.06929839999999,41.9028907,0 -84.0693708,41.9029067,0 -84.06946069999999,41.9029217,0 -84.0695492,41.9029277,0 -84.06962830000001,41.9029247,0 -84.0697222,41.9029237,0 -84.0698,41.9029097,0 -84.06992339999999,41.9028837,0 -84.07000119999999,41.9028588,0 -84.07009239999999,41.9028189,0 -84.07015,41.9027829,0 -84.0702117,41.902743,0 -84.0702479,41.902712,0 -84.070319,41.9026472,0 -84.0703566,41.9026023,0 -84.0697145,41.901861,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Adrian College</name>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#msn_ylw-pushpin900</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.0697145,41.901861,0 -84.0703958,41.9026485,0 -84.07040120000001,41.9026405,0 -84.0701651,41.902367,0 -84.07000549999999,41.9020037,0 -84.0698017,41.9017731,0 -84.069677,41.9017472,0 -84.06939,41.9018859,0 -84.0690172,41.9021944,0 -84.0687221,41.9023371,0 -84.0687248,41.9023461,0 -84.0697145,41.901861,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#msn_ylw-pushpin900</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.0697145,41.901861,0 -84.0687248,41.9023461,0 -84.0688009,41.9025374,0 -84.0688384,41.9025973,0 -84.0688706,41.9026322,0 -84.0689175,41.9026841,0 -84.0689766,41.902728,0 -84.0690208,41.902759,0 -84.069061,41.9027889,0 -84.06910929999999,41.9028169,0 -84.0691683,41.9028448,0 -84.06923399999999,41.9028718,0 -84.06929839999999,41.9028907,0 -84.0693708,41.9029067,0 -84.06946069999999,41.9029217,0 -84.0695492,41.9029277,0 -84.06962830000001,41.9029247,0 -84.0697222,41.9029237,0 -84.0698,41.9029097,0 -84.06992339999999,41.9028837,0 -84.07000119999999,41.9028588,0 -84.07009239999999,41.9028189,0 -84.07015,41.9027829,0 -84.0702117,41.902743,0 -84.0702479,41.902712,0 -84.070319,41.9026472,0 -84.0703566,41.9026023,0 -84.0697145,41.901861,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Albion College - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<description>\</description>
+				<styleUrl>#poly-000000-1200-77101</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.7373745,42.241567,0 -84.7373704,42.2424775,0 -84.73745630000001,42.2424725,0 -84.7374992,42.2422302,0 -84.737526,42.2419999,0 -84.73754750000001,42.2419294,0 -84.73753670000001,42.2415819,0 -84.7375354,42.2415104,0 -84.73744689999999,42.2414489,0 -84.7370767,42.2414489,0 -84.7367589,42.2414449,0 -84.73657780000001,42.2414429,0 -84.73615409999999,42.2415174,0 -84.73614999999999,42.2415769,0 -84.7373745,42.241567,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc112</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.7373745,42.241567,0 -84.73614999999999,42.2415769,0 -84.7361259,42.241703,0 -84.7361259,42.241849,0 -84.73611649999999,42.2420029,0 -84.7361018,42.242127,0 -84.73609500000001,42.2421746,0 -84.7361219,42.2421945,0 -84.73622109999999,42.242269,0 -84.73629219999999,42.2423156,0 -84.736378,42.2423792,0 -84.7364357,42.2424238,0 -84.736484,42.2424556,0 -84.73657919999999,42.2425311,0 -84.73664220000001,42.2425271,0 -84.73674680000001,42.2425211,0 -84.73683800000001,42.2425132,0 -84.7369265,42.2425082,0 -84.7369896,42.2425023,0 -84.73708209999999,42.2424983,0 -84.7371907,42.2424923,0 -84.7372524,42.2424864,0 -84.7373034,42.2424824,0 -84.7373704,42.2424775,0 -84.7373745,42.241567,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Boston C. - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-71.1603978,42.3443347,0 -71.1591854,42.3443971,0 -71.1591895,42.3444497,0 -71.1596012,42.3444774,0 -71.1598841,42.3444923,0 -71.16047690000001,42.3444596,0 -71.1605735,42.3443783,0 -71.1605359,42.3440115,0 -71.1605319,42.343954,0 -71.1604796,42.3437419,0 -71.1603964,42.3434376,0 -71.16031460000001,42.3434346,0 -71.1603978,42.3443347,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-71.1603978,42.3443347,0 -71.16031460000001,42.3434346,0 -71.1601752,42.3434297,0 -71.16004909999999,42.3434277,0 -71.15988950000001,42.3434198,0 -71.15980500000001,42.3434178,0 -71.1597178,42.3434148,0 -71.1596588,42.3434227,0 -71.15958910000001,42.3434336,0 -71.1595355,42.3434554,0 -71.1594791,42.3434743,0 -71.1594228,42.343502,0 -71.1593812,42.3435328,0 -71.15932890000001,42.3435784,0 -71.1592847,42.3436111,0 -71.15923239999999,42.3436587,0 -71.1591935,42.3436943,0 -71.15914789999999,42.343738,0 -71.1591318,42.3437598,0 -71.1591076,42.3437974,0 -71.1590956,42.3438381,0 -71.1590781,42.3438737,0 -71.1590741,42.3439114,0 -71.1590741,42.3439471,0 -71.1590795,42.3439967,0 -71.1590983,42.344072,0 -71.1591372,42.3442355,0 -71.1591854,42.3443971,0 -71.1603978,42.3443347,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Calvin University - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc112</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.5926546,42.9346782,0 -85.5926023,42.9355721,0 -85.5928316,42.9355638,0 -85.5928564,42.9351342,0 -85.5928638,42.9349059,0 -85.5928316,42.9348853,0 -85.59284030000001,42.9347479,0 -85.5928705,42.9347484,0 -85.59287860000001,42.9346183,0 -85.59274980000001,42.9345201,0 -85.59257580000001,42.9345119,0 -85.5925708,42.9345351,0 -85.59239169999999,42.9345343,0 -85.59238809999999,42.9345068,0 -85.59205179999999,42.9345009,0 -85.59177149999999,42.9344847,0 -85.59161659999999,42.934522,0 -85.5914583,42.9345864,0 -85.5914416,42.9346413,0 -85.5926546,42.9346782,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc112</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.5926546,42.9346782,0 -85.5914416,42.9346413,0 -85.591426,42.9346754,0 -85.59140859999999,42.934755,0 -85.59138710000001,42.9348213,0 -85.5913717,42.9348816,0 -85.59135499999999,42.9349381,0 -85.5913422,42.9349867,0 -85.5913328,42.9350382,0 -85.5913369,42.9350667,0 -85.5913402,42.9351168,0 -85.59134899999999,42.9351581,0 -85.5913623,42.9352052,0 -85.59139589999999,42.9352739,0 -85.5914107,42.935294,0 -85.5914227,42.9353112,0 -85.59144619999999,42.9353387,0 -85.591483,42.9353726,0 -85.5915172,42.9354035,0 -85.59156419999999,42.9354398,0 -85.59159029999999,42.9354609,0 -85.59163119999999,42.9354953,0 -85.59166810000001,42.9355233,0 -85.591711,42.9355429,0 -85.5917513,42.9355576,0 -85.59179690000001,42.9355719,0 -85.5918324,42.9355812,0 -85.5918679,42.9355861,0 -85.5919075,42.935592,0 -85.59192760000001,42.9355925,0 -85.5919645,42.935594,0 -85.5920356,42.9355896,0 -85.59207979999999,42.935592,0 -85.59213680000001,42.9355891,0 -85.59219450000001,42.9355891,0 -85.5922394,42.9355851,0 -85.5922843,42.9355842,0 -85.5923387,42.9355807,0 -85.592405,42.9355802,0 -85.5924419,42.9355783,0 -85.5924835,42.9355773,0 -85.5925304,42.9355753,0 -85.592572,42.9355743,0 -85.5926023,42.9355721,0 -85.5926546,42.9346782,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Campbell University - Jim Perry Stadium</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-78.7357209,35.4104686,0 -78.73457430000001,35.4103932,0 -78.73460110000001,35.4104325,0 -78.7346319,35.4104762,0 -78.73466139999999,35.4105068,0 -78.73468560000001,35.4105298,0 -78.7357746,35.4106074,0 -78.7358792,35.4105364,0 -78.7359409,35.4100314,0 -78.7359771,35.4097057,0 -78.7359167,35.4096259,0 -78.73588049999999,35.4096007,0 -78.73584700000001,35.4095767,0 -78.7358108,35.4095625,0 -78.7357209,35.4104686,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-78.7357209,35.4104686,0 -78.7358108,35.4095625,0 -78.73574910000001,35.4095461,0 -78.7356874,35.4095362,0 -78.7356284,35.4095275,0 -78.7355412,35.409522,0 -78.73543789999999,35.4095144,0 -78.7353414,35.4095111,0 -78.7352649,35.4095056,0 -78.7351804,35.4095034,0 -78.7351389,35.4095013,0 -78.73511209999999,35.409498,0 -78.7350758,35.4095111,0 -78.7350222,35.4095308,0 -78.7349605,35.4095603,0 -78.7349095,35.4095876,0 -78.7348519,35.4096237,0 -78.7347982,35.4096608,0 -78.7347553,35.4096958,0 -78.734707,35.4097384,0 -78.7346775,35.4097778,0 -78.73466550000001,35.4098237,0 -78.73464130000001,35.4099428,0 -78.7346172,35.4101155,0 -78.73457430000001,35.4103932,0 -78.7357209,35.4104686,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Charles Schwab Field Omaha - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-95.93202390000002,41.2671943,0 -95.9307981,41.2672135,0 -95.9308075,41.2672266,0 -95.9308242,41.2672417,0 -95.93095299999999,41.2672356,0 -95.9310717,41.2672361,0 -95.93110919999999,41.2672492,0 -95.93115210000001,41.2672674,0 -95.93119040000002,41.267283,0 -95.93124,41.2672986,0 -95.931297,41.2673173,0 -95.93132580000001,41.2673253,0 -95.93137880000002,41.267339,0 -95.9314143,41.2673465,0 -95.93145659999999,41.2673576,0 -95.9314653,41.2673349,0 -95.93152969999998,41.2673455,0 -95.93159400000002,41.2673541,0 -95.93164969999998,41.2673621,0 -95.9317013,41.2673672,0 -95.9317597,41.2673707,0 -95.93181199999998,41.2673722,0 -95.93185889999999,41.2673707,0 -95.9318991,41.2673722,0 -95.9319461,41.2673702,0 -95.93198030000001,41.2673687,0 -95.93201179999998,41.2673632,0 -95.9320534,41.2673546,0 -95.93208019999999,41.2673455,0 -95.9321084,41.2673339,0 -95.9321312,41.2673208,0 -95.9321573,41.2673062,0 -95.9321767,41.2672901,0 -95.9321935,41.2672734,0 -95.93220890000001,41.2672558,0 -95.9322203,41.2672417,0 -95.9322311,41.267223,0 -95.9322418,41.2672014,0 -95.9322519,41.2671726,0 -95.93225789999998,41.2671464,0 -95.93225860000001,41.2670965,0 -95.93225860000001,41.2670517,0 -95.9322519,41.2670113,0 -95.93224379999999,41.2669499,0 -95.93223709999998,41.266903,0 -95.93222299999999,41.266848,0 -95.93220089999998,41.2667906,0 -95.93222169999999,41.2667855,0 -95.9322109,41.2667553,0 -95.93220219999999,41.2667341,0 -95.93218210000001,41.2666933,0 -95.9321573,41.2666444,0 -95.9321419,41.2666172,0 -95.9321151,41.2665769,0 -95.9320896,41.2665426,0 -95.93203330000001,41.2664766,0 -95.93202650000001,41.2662805,0 -95.9320044,41.266281,0 -95.93202390000002,41.2671943,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-95.93202390000002,41.2671943,0 -95.9320044,41.266281,0 -95.9319675,41.266281,0 -95.9318837,41.2662795,0 -95.9317483,41.266279,0 -95.9316336,41.266278,0 -95.9316256,41.2662921,0 -95.93151690000001,41.2662891,0 -95.93136810000001,41.2662871,0 -95.9311756,41.2662835,0 -95.93109510000001,41.2663193,0 -95.93103210000001,41.2663566,0 -95.9310086,41.2663728,0 -95.9309818,41.2663954,0 -95.93094289999999,41.2664287,0 -95.9309107,41.2664675,0 -95.93085240000001,41.2665492,0 -95.9308236,41.2666061,0 -95.930784,41.2667175,0 -95.93076259999999,41.2668334,0 -95.9307565,41.2669141,0 -95.9307371,41.2669216,0 -95.9307391,41.2669488,0 -95.93074180000001,41.2669861,0 -95.93074850000001,41.2670355,0 -95.93075519999999,41.2670723,0 -95.9307639,41.2671081,0 -95.93077529999999,41.2671434,0 -95.93078539999999,41.2671812,0 -95.9307981,41.2672135,0 -95.93202390000002,41.2671943,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>CMU - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0100</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.77949580000001,43.5764696,0 -84.7783451,43.576117,0 -84.7783451,43.576149,0 -84.7785449,43.5762161,0 -84.7791283,43.5764871,0 -84.77914440000001,43.5764793,0 -84.77938709999999,43.576594,0 -84.7793791,43.5766027,0 -84.77943809999999,43.576629,0 -84.77952929999999,43.5766406,0 -84.77962049999999,43.5766173,0 -84.77968749999999,43.5765551,0 -84.77970500000001,43.5765066,0 -84.7796956,43.5765027,0 -84.7797573,43.5762909,0 -84.77977869999999,43.5762986,0 -84.7799102,43.5758527,0 -84.7800108,43.5756681,0 -84.7799759,43.575635,0 -84.77949580000001,43.5764696,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0100</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.77949580000001,43.5764696,0 -84.7799759,43.575635,0 -84.7799088,43.5755962,0 -84.7798525,43.5755651,0 -84.77978280000001,43.5755321,0 -84.77971839999999,43.5755039,0 -84.7796554,43.5754825,0 -84.77958030000001,43.5754602,0 -84.7794904,43.5754436,0 -84.77939790000001,43.575431,0 -84.77932680000001,43.5754242,0 -84.7792343,43.5754223,0 -84.77915110000001,43.5754252,0 -84.77907999999999,43.575431,0 -84.7789848,43.5754427,0 -84.77890429999999,43.5754631,0 -84.7788051,43.5755068,0 -84.7787313,43.5755505,0 -84.778667,43.5755855,0 -84.7785865,43.5756555,0 -84.7785087,43.5757167,0 -84.77848729999999,43.5757497,0 -84.7784537,43.5757944,0 -84.7784242,43.5758371,0 -84.7784068,43.575876,0 -84.7783907,43.575911,0 -84.7783733,43.5759576,0 -84.7783625,43.5760062,0 -84.7783518,43.5760519,0 -84.7783505,43.57608,0 -84.7783451,43.576117,0 -84.77949580000001,43.5764696,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Cornerstone Baseball Field - college</name>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc15</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.5975511,42.9811225,0 -85.5980533,42.9819309,0 -85.59810160000001,42.9819133,0 -85.5979299,42.9816371,0 -85.5978508,42.9812878,0 -85.597836,42.9812775,0 -85.5977556,42.9811431,0 -85.59776770000001,42.9811382,0 -85.5977221,42.9810617,0 -85.59766569999999,42.9810136,0 -85.5975826,42.9809895,0 -85.59748070000001,42.9810013,0 -85.5973734,42.9810396,0 -85.5971789,42.9811043,0 -85.59679800000001,42.98133,0 -85.59642650000001,42.9814546,0 -85.59644400000001,42.9814919,0 -85.5975511,42.9811225,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#poly-000000-1200-77-nodesc15</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.5975511,42.9811225,0 -85.59644400000001,42.9814919,0 -85.5966458,42.9819138,0 -85.5970267,42.9821502,0 -85.5975249,42.9821551,0 -85.5980533,42.9819309,0 -85.5975511,42.9811225,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Davenport University - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0100</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.5160374,42.8425628,0 -85.516268,42.8434508,0 -85.5163203,42.8434222,0 -85.5163103,42.842995,0 -85.5162989,42.8426321,0 -85.5162935,42.8426179,0 -85.51627139999999,42.8425682,0 -85.5162291,42.8424846,0 -85.5162144,42.8424728,0 -85.5161782,42.8424424,0 -85.5161433,42.8424251,0 -85.51607490000001,42.842407,0 -85.51587309999999,42.8424099,0 -85.5157933,42.8424212,0 -85.5154198,42.842523,0 -85.51505830000001,42.8426243,0 -85.51485049999999,42.8426818,0 -85.514833,42.842727,0 -85.5160374,42.8425628,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0100</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.5160374,42.8425628,0 -85.514833,42.842727,0 -85.5148251,42.8427426,0 -85.51481769999999,42.8427642,0 -85.5148097,42.842803,0 -85.5148009,42.8428409,0 -85.51479759999999,42.8428743,0 -85.5147956,42.8429235,0 -85.5148003,42.8429535,0 -85.514807,42.8430105,0 -85.51482439999999,42.8430671,0 -85.5148365,42.8431005,0 -85.51485529999999,42.8431374,0 -85.514872,42.8431762,0 -85.5148921,42.8432082,0 -85.51493240000001,42.8432573,0 -85.5149605,42.8432883,0 -85.51500350000001,42.8433316,0 -85.51502360000001,42.8433547,0 -85.5150531,42.8433753,0 -85.51508459999999,42.843398,0 -85.5151503,42.8434383,0 -85.51519860000001,42.8434648,0 -85.5152549,42.8434914,0 -85.5153005,42.8435115,0 -85.51533740000001,42.8435263,0 -85.5153837,42.8435391,0 -85.5154232,42.8435504,0 -85.5154775,42.8435617,0 -85.5155446,42.8435725,0 -85.5155875,42.8435769,0 -85.51563040000001,42.8435828,0 -85.5156787,42.8435863,0 -85.5157256,42.8435867,0 -85.5157699,42.8435848,0 -85.5158168,42.8435808,0 -85.5158564,42.8435769,0 -85.5158926,42.8435715,0 -85.5159422,42.8435651,0 -85.5159831,42.8435568,0 -85.51601599999999,42.8435474,0 -85.5160609,42.8435381,0 -85.51608709999999,42.8435297,0 -85.5161152,42.8435204,0 -85.5161434,42.843511,0 -85.5161662,42.8435012,0 -85.51619030000001,42.8434909,0 -85.5162299,42.8434707,0 -85.516268,42.8434508,0 -85.5160374,42.8425628,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Duke - Jack Coombs Field - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-78.9439974,35.9975897,0 -78.9449925,35.9979705,0 -78.94450500000001,35.9976445,0 -78.944385,35.9975826,0 -78.94437019999999,35.9976032,0 -78.94421130000001,35.9975414,0 -78.94423070000001,35.9975056,0 -78.9440591,35.9974486,0 -78.94382040000001,35.9975181,0 -78.9437439,35.9976466,0 -78.94378210000001,35.9976678,0 -78.9437124,35.9977931,0 -78.9436903,35.9978175,0 -78.94367889999999,35.9978181,0 -78.94363730000001,35.9978707,0 -78.9435079,35.9984132,0 -78.9435166,35.9984246,0 -78.9439974,35.9975897,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-78.9439974,35.9975897,0 -78.9435166,35.9984246,0 -78.943547,35.9984499,0 -78.9435812,35.9984775,0 -78.9436161,35.9985036,0 -78.94364830000001,35.9985247,0 -78.9436872,35.9985475,0 -78.94372869999999,35.9985719,0 -78.94376699999999,35.9985931,0 -78.9438085,35.9986132,0 -78.94385080000001,35.9986332,0 -78.9438937,35.9986495,0 -78.94393530000001,35.9986647,0 -78.9439608,35.9986696,0 -78.9439929,35.9986755,0 -78.9440352,35.9986831,0 -78.9440781,35.9986869,0 -78.944121,35.9986875,0 -78.9441633,35.9986875,0 -78.9442001,35.9986842,0 -78.9442323,35.9986815,0 -78.9442672,35.9986772,0 -78.94430610000001,35.9986696,0 -78.9443483,35.9986614,0 -78.94439389999999,35.998649,0 -78.94444489999999,35.9986327,0 -78.94447769999999,35.9986213,0 -78.94451599999999,35.9986056,0 -78.9445515,35.9985909,0 -78.9445824,35.9985757,0 -78.94461389999999,35.9985611,0 -78.94464000000001,35.9985453,0 -78.9446729,35.9985247,0 -78.94470440000001,35.9985014,0 -78.94473050000001,35.9984802,0 -78.94475799999999,35.9984591,0 -78.9447875,35.9984298,0 -78.9448144,35.9984032,0 -78.9448345,35.9983804,0 -78.9448519,35.998356,0 -78.94486670000001,35.9983354,0 -78.9448814,35.9983099,0 -78.9448948,35.9982811,0 -78.9449123,35.9982432,0 -78.944925,35.9982139,0 -78.9449391,35.9981775,0 -78.94495120000001,35.9981461,0 -78.9449599,35.9981124,0 -78.94497130000001,35.9980761,0 -78.94498,35.9980414,0 -78.9449874,35.9980142,0 -78.9449925,35.9979705,0 -78.9439974,35.9975897,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>East Carolina University - Clark-LeClair Stadium</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-77.3673208,35.5933593,0 -77.36839500000001,35.5931827,0 -77.368387,35.5931325,0 -77.3677339,35.5932099,0 -77.36765339999999,35.5932165,0 -77.3676507,35.5931958,0 -77.36732619999999,35.5932045,0 -77.36724839999999,35.5932121,0 -77.3672162,35.5932328,0 -77.3671867,35.5932547,0 -77.3671693,35.5932819,0 -77.36715049999999,35.5933125,0 -77.36714240000001,35.5933419,0 -77.36713709999999,35.5933735,0 -77.3671411,35.5934095,0 -77.3672511,35.5936374,0 -77.3672792,35.593668,0 -77.3674898,35.5942372,0 -77.36753,35.5942307,0 -77.3673208,35.5933593,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-77.3673208,35.5933593,0 -77.36753,35.5942307,0 -77.3680571,35.5941511,0 -77.36817910000001,35.5941293,0 -77.3682167,35.5941195,0 -77.3682649,35.5941042,0 -77.36831050000001,35.5940791,0 -77.36835480000001,35.5940475,0 -77.3683991,35.5940093,0 -77.3684353,35.5939733,0 -77.3684581,35.5939417,0 -77.3684822,35.5939035,0 -77.36850630000001,35.5938632,0 -77.3685224,35.5938206,0 -77.3685318,35.5937814,0 -77.3685332,35.5937421,0 -77.36853050000001,35.5936985,0 -77.3685184,35.5936538,0 -77.3684956,35.5935742,0 -77.36839500000001,35.5931827,0 -77.3673208,35.5933593,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>EMU - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0100</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.64872339999999,42.2573876,0 -83.6487261,42.2583127,0 -83.6487395,42.2583137,0 -83.64874349999999,42.2579191,0 -83.6489071,42.2576556,0 -83.64890440000001,42.2575777,0 -83.6488743,42.2575767,0 -83.6488763,42.2574333,0 -83.6489138,42.2574333,0 -83.6489165,42.2573529,0 -83.64878710000001,42.2572571,0 -83.6486711,42.2572566,0 -83.64866840000001,42.2572744,0 -83.64850079999999,42.2572725,0 -83.64849940000001,42.2572566,0 -83.6483633,42.2572521,0 -83.6479985,42.2573792,0 -83.6474822,42.2573797,0 -83.6474822,42.2573891,0 -83.64872339999999,42.2573876,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0100</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.64872339999999,42.2573876,0 -83.6474869,42.2573886,0 -83.6474855,42.2573995,0 -83.6474118,42.2575901,0 -83.64744330000001,42.2578397,0 -83.6475848,42.2580645,0 -83.64782150000001,42.2582368,0 -83.6481253,42.258343,0 -83.6484505,42.2583608,0 -83.6486946,42.2583137,0 -83.6487261,42.2583127,0 -83.64872339999999,42.2573876,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Gainey Athletic Complex - Field 1 - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>Foul_1</name>
+				<styleUrl>#msn_ylw-pushpin8</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.571371,42.930952,0 -85.57189099999999,42.931771,0 -85.571991,42.931738,0 -85.57191400000001,42.931547,0 -85.57185800000001,42.931419,0 -85.571789,42.931263,0 -85.57174000000001,42.931144,0 -85.571692,42.931064,0 -85.57154199999999,42.930819,0 -85.571359,42.930771,0 -85.571226,42.930817,0 -85.571033,42.930885,0 -85.57099700000001,42.930893,0 -85.57091800000001,42.930924,0 -85.570899,42.930932,0 -85.57020799999999,42.931255,0 -85.57025299999999,42.931329,0 -85.571371,42.930952,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP_1</name>
+				<styleUrl>#msn_ylw-pushpin8</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.571371,42.930952,0 -85.57025299999999,42.931329,0 -85.57041599999999,42.931587,0 -85.570517,42.931749,0 -85.570556,42.931809,0 -85.57058600000001,42.93184,0 -85.570623,42.931873,0 -85.57065900000001,42.931901,0 -85.570725,42.931939,0 -85.570767,42.931958,0 -85.570802,42.931971,0 -85.570843,42.931984,0 -85.570899,42.931996,0 -85.57096300000001,42.932006,0 -85.571026,42.932014,0 -85.57106899999999,42.932017,0 -85.57114300000001,42.93201,0 -85.571203,42.932,0 -85.57127,42.931985,0 -85.571315,42.931971,0 -85.57162,42.931868,0 -85.57189099999999,42.931771,0 -85.571371,42.930952,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Gainey Athletic Complex - Field 2 - college</name>
+			<open>1</open>
+			<description>Home of Aquinas College softball, the Gainey Athletic Complex has been the home facility for AQ since 2020.
+ 
+The Gainey Athletic Complex is a public facility that has walking and running paths, baseball diamonds, soccer fields, softball fields, and tennis courts. The facility also houses home venues for Calvin University and Cornerstone University.
+ 
+1611 E Paris Ave SE
+Grand Rapids, MI 49546</description>
+			<Placemark>
+				<name>Foul_2</name>
+				<styleUrl>#msn_ylw-pushpin6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.57064200000001,42.9301094,0 -85.570123,42.9292885,0 -85.5700204,42.9293244,0 -85.5702216,42.9298065,0 -85.5702544,42.9298924,0 -85.5703175,42.9299931,0 -85.5703168,42.9300117,0 -85.5703912,42.9301315,0 -85.5704113,42.9301404,0 -85.570475,42.9302449,0 -85.5706467,42.9302931,0 -85.5707929,42.930243,0 -85.57081839999999,42.9302336,0 -85.57093570000001,42.9301949,0 -85.57095990000001,42.930185,0 -85.5710852,42.9301448,0 -85.5712267,42.9300785,0 -85.5718054,42.9298075,0 -85.5717598,42.9297304,0 -85.57064200000001,42.9301094,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP_2</name>
+				<styleUrl>#msn_ylw-pushpin6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.57064200000001,42.9301094,0 -85.5717598,42.9297304,0 -85.5716445,42.9295311,0 -85.571609,42.9294717,0 -85.57155659999999,42.9293906,0 -85.57152240000001,42.9293357,0 -85.571495,42.9292969,0 -85.5714735,42.9292699,0 -85.571442,42.9292355,0 -85.5714138,42.9292051,0 -85.5713877,42.929182,0 -85.57135150000001,42.9291555,0 -85.57131990000001,42.9291363,0 -85.57129310000001,42.9291201,0 -85.5712576,42.9291015,0 -85.571214,42.9290853,0 -85.5711617,42.929071,0 -85.57112480000001,42.9290602,0 -85.5710792,42.9290524,0 -85.5710256,42.929046,0 -85.5709853,42.929045,0 -85.570927,42.929043,0 -85.5708673,42.9290524,0 -85.5708204,42.9290588,0 -85.5707627,42.9290715,0 -85.57070710000001,42.9290877,0 -85.5706675,42.9291005,0 -85.5705924,42.9291241,0 -85.5705475,42.9291393,0 -85.570123,42.9292885,0 -85.57064200000001,42.9301094,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>GVSU - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0100</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.8933881,42.9654715,0 -85.8943939,42.9659799,0 -85.89444090000001,42.9659347,0 -85.8939876,42.9655647,0 -85.8937971,42.9654745,0 -85.89378240000001,42.9654882,0 -85.8936308,42.9654175,0 -85.8936442,42.9654018,0 -85.8935074,42.9653243,0 -85.8934002,42.9652978,0 -85.8932848,42.9653135,0 -85.893199,42.9653753,0 -85.89310380000001,42.9654764,0 -85.893136,42.9654921,0 -85.8930367,42.9655942,0 -85.8930112,42.9655844,0 -85.89288120000001,42.9657208,0 -85.8926183,42.9661791,0 -85.89268130000001,42.9662095,0 -85.8933881,42.9654715,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0100</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.8933881,42.9654715,0 -85.89268130000001,42.9662095,0 -85.8932119,42.9664784,0 -85.89326560000001,42.966501,0 -85.8933232,42.9665216,0 -85.8933688,42.9665333,0 -85.8934278,42.9665402,0 -85.8934895,42.96655,0 -85.8935378,42.9665549,0 -85.89358609999999,42.966551,0 -85.893637,42.9665471,0 -85.89369600000001,42.9665392,0 -85.89374429999999,42.9665314,0 -85.89378050000001,42.9665157,0 -85.8938315,42.966497,0 -85.8938691,42.9664794,0 -85.8939214,42.9664499,0 -85.8939589,42.9664264,0 -85.89400449999999,42.9663901,0 -85.89404469999999,42.9663518,0 -85.89413860000001,42.9662497,0 -85.8943939,42.9659799,0 -85.8933881,42.9654715,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Harvard university - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc02</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-71.12884459999999,42.3665934,0 -71.1294125,42.3673951,0 -71.12949829999999,42.367349,0 -71.12941120000001,42.367189,0 -71.1292704,42.3669338,0 -71.12922880000001,42.3668555,0 -71.12916439999999,42.3667431,0 -71.1291497,42.3667228,0 -71.12913090000001,42.3667242,0 -71.12903300000001,42.3665771,0 -71.1290779,42.3665568,0 -71.1290135,42.3664626,0 -71.1288057,42.3664141,0 -71.12867559999999,42.3664651,0 -71.1287011,42.3665013,0 -71.1285026,42.3665776,0 -71.1284878,42.3665647,0 -71.1284241,42.3665979,0 -71.12805059999999,42.3668075,0 -71.12773749999999,42.3669774,0 -71.1277583,42.3670116,0 -71.12884459999999,42.3665934,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc02</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-71.12884459999999,42.3665934,0 -71.1277583,42.3670116,0 -71.12781529999999,42.3671013,0 -71.1278696,42.367183,0 -71.1279172,42.3672593,0 -71.1279749,42.3673599,0 -71.12801779999999,42.3673941,0 -71.12810159999999,42.3674609,0 -71.1281941,42.3675377,0 -71.12827660000001,42.367614,0 -71.1283718,42.3676368,0 -71.1285019,42.3676631,0 -71.12862459999999,42.3676522,0 -71.1287064,42.3676418,0 -71.1288191,42.3676299,0 -71.1289673,42.3675833,0 -71.1290813,42.3675476,0 -71.12918860000001,42.3675145,0 -71.12923549999999,42.3674892,0 -71.1293106,42.3674486,0 -71.1294125,42.3673951,0 -71.12884459999999,42.3665934,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Hillsdale College - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc112</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.6271213,41.932584,0 -84.627183,41.9334989,0 -84.6272903,41.9335059,0 -84.62728490000001,41.9330949,0 -84.6272943,41.9329681,0 -84.62729969999999,41.9327936,0 -84.6272809,41.9327656,0 -84.6272957,41.9327327,0 -84.62729299999999,41.9326439,0 -84.62732920000001,41.9326369,0 -84.62729160000001,41.9324913,0 -84.6272206,41.9324434,0 -84.6269886,41.9324444,0 -84.6268424,41.9324743,0 -84.6267659,41.9324883,0 -84.6267351,41.9324962,0 -84.6266935,41.9325381,0 -84.6259197,41.9325421,0 -84.62592770000001,41.9326319,0 -84.6271213,41.932584,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc112</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.6271213,41.932584,0 -84.62592770000001,41.9326319,0 -84.6259318,41.932724,0 -84.6259465,41.9328217,0 -84.6259572,41.9329155,0 -84.6259747,41.9330672,0 -84.62598939999999,41.933156,0 -84.62600019999999,41.9332208,0 -84.6260109,41.9332537,0 -84.6260391,41.9332927,0 -84.6260994,41.9333395,0 -84.626149,41.9333795,0 -84.6262121,41.9334074,0 -84.6262603,41.9334303,0 -84.6263368,41.9334453,0 -84.6264494,41.9334573,0 -84.62656339999999,41.9334712,0 -84.6267203,41.9334782,0 -84.6268451,41.9334862,0 -84.627065,41.9334932,0 -84.627183,41.9334989,0 -84.6271213,41.932584,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Hope College</name>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc2000</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-86.08836650000001,42.7870783,0 -86.0883759,42.7879838,0 -86.08848860000001,42.7879641,0 -86.0885449,42.7876019,0 -86.0885583,42.7875291,0 -86.08855560000001,42.7874149,0 -86.0885529,42.7873205,0 -86.0885502,42.7871704,0 -86.0885516,42.7871152,0 -86.0885502,42.7870936,0 -86.0885516,42.787067,0 -86.08854890000001,42.7870473,0 -86.0885315,42.7870011,0 -86.08846579999999,42.7869622,0 -86.08842420000001,42.786949,0 -86.0883853,42.7869415,0 -86.0883236,42.7869435,0 -86.08802319999999,42.7869455,0 -86.0876852,42.7869465,0 -86.0871575,42.7870385,0 -86.0871428,42.7870719,0 -86.0871361,42.7870916,0 -86.08836650000001,42.7870783,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#poly-000000-1200-77-nodesc2000</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-86.08836650000001,42.7870783,0 -86.0871361,42.7870916,0 -86.08712730000001,42.7871231,0 -86.08712199999999,42.7871664,0 -86.08711390000001,42.7872186,0 -86.0871112,42.7872934,0 -86.0871112,42.7873426,0 -86.0871582,42.7874322,0 -86.08721250000001,42.7875326,0 -86.0872916,42.7876241,0 -86.0874774,42.7878396,0 -86.08759000000001,42.7879538,0 -86.08761749999999,42.7879853,0 -86.0876537,42.7880099,0 -86.0876866,42.7880315,0 -86.0877375,42.7880434,0 -86.0877912,42.7880512,0 -86.0878475,42.7880552,0 -86.08789710000001,42.7880512,0 -86.0879655,42.7880443,0 -86.0880366,42.7880345,0 -86.0881211,42.7880197,0 -86.08821500000001,42.7880069,0 -86.0883115,42.7879932,0 -86.0883759,42.7879838,0 -86.08836650000001,42.7870783,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Illinois-Chicago - Curtis Granderson Stadium - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-87.64931540000001,41.8650806,0 -87.64933689999999,41.865969,0 -87.6493557,41.8659628,0 -87.6493765,41.8659528,0 -87.64938789999999,41.8659373,0 -87.6493933,41.8659224,0 -87.6494107,41.865825,0 -87.6494167,41.8657855,0 -87.6494228,41.8657441,0 -87.6494416,41.8656767,0 -87.64945160000001,41.8656168,0 -87.6494563,41.8655968,0 -87.6494603,41.8655708,0 -87.64945969999999,41.8654729,0 -87.6494623,41.8653626,0 -87.64945090000001,41.8653621,0 -87.64944629999999,41.8651473,0 -87.6494637,41.8651448,0 -87.649457,41.8650155,0 -87.6494033,41.8649751,0 -87.64889239999999,41.8649801,0 -87.6488119,41.8649786,0 -87.648704,41.8649811,0 -87.64812860000001,41.8650664,0 -87.64812379999999,41.8650981,0 -87.64931540000001,41.8650806,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-87.64931540000001,41.8650806,0 -87.64812379999999,41.8650981,0 -87.6481098,41.8653328,0 -87.64809630000001,41.8655061,0 -87.64809700000001,41.8655321,0 -87.648101,41.8655665,0 -87.6481071,41.865596,0 -87.6481185,41.8656409,0 -87.64813789999999,41.8656834,0 -87.648156,41.8657178,0 -87.64818219999999,41.8657603,0 -87.64821569999999,41.8657947,0 -87.64824659999999,41.8658282,0 -87.64827940000001,41.8658556,0 -87.6483076,41.8658761,0 -87.6483478,41.8659021,0 -87.64839139999999,41.8659256,0 -87.6484269,41.8659435,0 -87.6484933,41.865968,0 -87.6485476,41.865985,0 -87.6485832,41.865994,0 -87.6486361,41.866004,0 -87.6486757,41.8660095,0 -87.64873609999999,41.8660105,0 -87.6487877,41.8660095,0 -87.64889429999999,41.866001,0 -87.6491022,41.865985,0 -87.64933689999999,41.865969,0 -87.64931540000001,41.8650806,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Indiana University - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-86.5227385,39.1845613,0 -86.5227331,39.1854708,0 -86.5227458,39.1854713,0 -86.5228142,39.1854516,0 -86.5228779,39.185172,0 -86.522898,39.1851818,0 -86.5229396,39.185003,0 -86.5229356,39.18487,0 -86.5229276,39.1848695,0 -86.5229235,39.18466,0 -86.5229255,39.1845592,0 -86.5228833,39.1844781,0 -86.52284779999999,39.1844506,0 -86.5227411,39.1844162,0 -86.5223663,39.184411,0 -86.5223663,39.1844053,0 -86.522322,39.1844038,0 -86.5215898,39.1845514,0 -86.5227385,39.1845613,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-86.5227385,39.1845613,0 -86.5215898,39.1845514,0 -86.5215764,39.1845529,0 -86.5215683,39.1846834,0 -86.52156100000001,39.184792,0 -86.5215563,39.1849001,0 -86.5215489,39.1849557,0 -86.5215388,39.185043,0 -86.5216193,39.1851563,0 -86.52167900000001,39.1852473,0 -86.521736,39.185332,0 -86.521862,39.185372,0 -86.5219982,39.1854173,0 -86.5221008,39.1854505,0 -86.52214429999999,39.1854661,0 -86.52227980000001,39.1854651,0 -86.5223811,39.1854646,0 -86.52238509999999,39.1854687,0 -86.52252590000001,39.1854682,0 -86.522668,39.1854682,0 -86.5227331,39.1854708,0 -86.5227385,39.1845613,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Kalamazoo College - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#msn_ylw-pushpin190</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.6092979,42.2877622,0 -85.60927909999999,42.288667,0 -85.6093328,42.2886531,0 -85.6095205,42.288039,0 -85.60951780000001,42.2876938,0 -85.6093971,42.2876005,0 -85.60904309999999,42.2875965,0 -85.6089733,42.2875926,0 -85.6080989,42.2877394,0 -85.6080882,42.2877533,0 -85.6092979,42.2877622,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#msn_ylw-pushpin190</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.6092979,42.2877622,0 -85.6080882,42.2877533,0 -85.60806410000001,42.287792,0 -85.60803989999999,42.2878376,0 -85.6080158,42.2879031,0 -85.60799969999999,42.2879547,0 -85.60798629999999,42.2880142,0 -85.60798629999999,42.2880589,0 -85.607989,42.2881124,0 -85.60799969999999,42.288174,0 -85.6080212,42.2882355,0 -85.6080426,42.288295,0 -85.60806940000001,42.2883426,0 -85.6080989,42.2883863,0 -85.60814190000001,42.2884379,0 -85.6082035,42.2884994,0 -85.60825989999999,42.2885371,0 -85.6083189,42.2885787,0 -85.60837789999999,42.2886145,0 -85.60844489999999,42.2886442,0 -85.6085978,42.2886958,0 -85.60865149999999,42.2887117,0 -85.6087507,42.2887137,0 -85.6088285,42.2887156,0 -85.6088902,42.2887137,0 -85.60894380000001,42.2887117,0 -85.60899209999999,42.2887117,0 -85.60903500000001,42.2887077,0 -85.60908329999999,42.2887117,0 -85.6091235,42.2887077,0 -85.60919060000001,42.2886938,0 -85.60927909999999,42.288667,0 -85.6092979,42.2877622,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Klenk Park - (Alma College) - college</name>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc15</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.6785813,43.3879303,0 -84.6785813,43.3888338,0 -84.67870480000001,43.3888342,0 -84.6788067,43.3881754,0 -84.6787987,43.3878957,0 -84.67864040000001,43.387767,0 -84.6782327,43.3877651,0 -84.6779994,43.3877846,0 -84.6773409,43.387847,0 -84.6773436,43.3879327,0 -84.6785813,43.3879303,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#poly-000000-1200-77-nodesc15</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.6785813,43.3879303,0 -84.6773436,43.3879327,0 -84.6773168,43.3879795,0 -84.6773007,43.3880165,0 -84.6772873,43.3880614,0 -84.6772765,43.3881121,0 -84.6772631,43.3881686,0 -84.6772551,43.3882329,0 -84.6772631,43.388305,0 -84.67727379999999,43.3883713,0 -84.67729799999999,43.3884298,0 -84.6773275,43.3884805,0 -84.6773677,43.3885409,0 -84.6774214,43.3886072,0 -84.67748039999999,43.3886676,0 -84.677526,43.3887027,0 -84.6775957,43.3887553,0 -84.6776574,43.3887845,0 -84.67771639999999,43.3888177,0 -84.6777996,43.3888469,0 -84.6778961,43.3888683,0 -84.6779846,43.3888859,0 -84.6780785,43.3888976,0 -84.6781348,43.3889015,0 -84.6782099,43.3888995,0 -84.678285,43.3888956,0 -84.67834670000001,43.3888937,0 -84.67841110000001,43.3888839,0 -84.6784782,43.3888664,0 -84.6785398,43.3888508,0 -84.6785813,43.3888338,0 -84.6785813,43.3879303,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Macomb Community College</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc111</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-82.9717646,42.5024285,0 -82.97156080000001,42.5015544,0 -82.9713677,42.5015663,0 -82.9713824,42.5015831,0 -82.9713958,42.5016889,0 -82.9715836,42.5025036,0 -82.9715903,42.5025659,0 -82.9716439,42.5025906,0 -82.9719336,42.5025491,0 -82.9722313,42.5025095,0 -82.9729904,42.5024621,0 -82.972973,42.5022683,0 -82.9717646,42.5024285,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc111</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-82.9717646,42.5024285,0 -82.972973,42.5022683,0 -82.97296129999999,42.5021896,0 -82.9729519,42.5020977,0 -82.97294119999999,42.5019948,0 -82.9729291,42.5018821,0 -82.9729103,42.501721,0 -82.97289290000001,42.5015934,0 -82.9728915,42.501538,0 -82.97288349999999,42.5015173,0 -82.9728647,42.5014965,0 -82.9728312,42.5014827,0 -82.9727896,42.5014728,0 -82.9726783,42.5014797,0 -82.9725335,42.5014906,0 -82.9723913,42.5014985,0 -82.9722344,42.5015104,0 -82.9721083,42.5015212,0 -82.971942,42.5015291,0 -82.9717583,42.501543,0 -82.97156080000001,42.5015544,0 -82.9717646,42.5024285,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Mississippi State - Dudy Noble Field - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-88.79452310000001,33.4627088,0 -88.79450970000001,33.4636139,0 -88.7945452,33.4636154,0 -88.79463440000001,33.4631713,0 -88.7946706,33.4629677,0 -88.79464780000001,33.4629649,0 -88.7946914,33.4627473,0 -88.79470139999999,33.4627478,0 -88.7947068,33.4627232,0 -88.7947175,33.4627238,0 -88.79471820000001,33.4627059,0 -88.7947162,33.462684,0 -88.7947088,33.4626583,0 -88.7947001,33.4626371,0 -88.7946826,33.4626141,0 -88.7946666,33.4625968,0 -88.79464710000001,33.4625822,0 -88.7946243,33.4625694,0 -88.7946029,33.462561,0 -88.7945814,33.4625537,0 -88.7945512,33.4625481,0 -88.7945217,33.4625475,0 -88.7944936,33.4625492,0 -88.794464,33.462552,0 -88.79435410000001,33.462566,0 -88.79426359999999,33.4625789,0 -88.7939772,33.4626096,0 -88.7937452,33.4626376,0 -88.79346630000001,33.4626673,0 -88.7934609,33.4626965,0 -88.79452310000001,33.4627088,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-88.79452310000001,33.4627088,0 -88.7934609,33.4626965,0 -88.7934569,33.4628106,0 -88.7934442,33.4630495,0 -88.7934388,33.4631239,0 -88.79343609999999,33.4631804,0 -88.7934334,33.4632235,0 -88.79343950000001,33.4632386,0 -88.79345290000001,33.4632632,0 -88.7934656,33.4632878,0 -88.79348040000001,33.4633113,0 -88.7934978,33.4633387,0 -88.79351459999999,33.4633605,0 -88.7935387,33.4633863,0 -88.7935555,33.4634075,0 -88.7936601,33.4635009,0 -88.7937244,33.4635412,0 -88.793764,33.4635653,0 -88.79380620000001,33.4635848,0 -88.79384779999999,33.4636039,0 -88.7942133,33.4636385,0 -88.79450970000001,33.4636139,0 -88.79452310000001,33.4627088,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Monongalia County Ballpark - WV Black Bears - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-79.99643279999999,39.6443268,0 -79.9952821,39.6442298,0 -79.99529819999999,39.6442442,0 -79.995321,39.6442628,0 -79.9953773,39.6442938,0 -79.9954149,39.6443145,0 -79.99544299999999,39.6443207,0 -79.99547250000001,39.6443248,0 -79.9955087,39.6443227,0 -79.9955449,39.6443237,0 -79.99559189999999,39.6443258,0 -79.9959956,39.644394,0 -79.9960076,39.6443878,0 -79.9963228,39.6444446,0 -79.9964368,39.6444704,0 -79.9965253,39.6444549,0 -79.99658030000001,39.6444136,0 -79.9966151,39.6443527,0 -79.9966098,39.6442814,0 -79.9966084,39.6439479,0 -79.9965387,39.6437899,0 -79.99660040000001,39.6434749,0 -79.9965883,39.6434418,0 -79.99657089999999,39.6434367,0 -79.99643279999999,39.6443268,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-79.99643279999999,39.6443268,0 -79.99657089999999,39.6434367,0 -79.996363,39.6434036,0 -79.9961753,39.6433665,0 -79.99600359999999,39.6433437,0 -79.9959339,39.6433334,0 -79.995734,39.6433819,0 -79.9956509,39.6433995,0 -79.9955557,39.6434594,0 -79.9954283,39.6435399,0 -79.9953706,39.6436246,0 -79.9953237,39.6437155,0 -79.99527,39.643795,0 -79.9952593,39.6438208,0 -79.9952727,39.6439644,0 -79.99527809999999,39.6440811,0 -79.99527809999999,39.6441379,0 -79.99527139999999,39.6442009,0 -79.99527,39.6442277,0 -79.99643279999999,39.6443268,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Moorehouse State - Allen Field  - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.4261661,38.192853,0 -83.4263217,38.1936815,0 -83.4263431,38.1935739,0 -83.42637929999999,38.1933547,0 -83.4264223,38.1931449,0 -83.426374,38.1931091,0 -83.4263579,38.1930142,0 -83.42637670000001,38.1927707,0 -83.4262171,38.1926738,0 -83.42574500000001,38.1927981,0 -83.4254057,38.1928993,0 -83.42528900000001,38.192912,0 -83.4252635,38.1928709,0 -83.42504630000001,38.1929447,0 -83.4250624,38.1929764,0 -83.4261661,38.192853,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description>weird dimension</description>
+				<styleUrl>#poly-000000-1200-776</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.4261661,38.192853,0 -83.4250624,38.1929764,0 -83.4253923,38.1934749,0 -83.42555590000001,38.1937279,0 -83.42559350000001,38.1937858,0 -83.4256216,38.1938133,0 -83.42566720000001,38.1938333,0 -83.4257155,38.1938501,0 -83.4257705,38.1938638,0 -83.4258214,38.1938744,0 -83.4258657,38.1938733,0 -83.425922,38.1938712,0 -83.42598099999999,38.1938649,0 -83.42604,38.1938554,0 -83.426091,38.1938449,0 -83.4261272,38.1938312,0 -83.4261715,38.193809,0 -83.426205,38.1937858,0 -83.4262399,38.1937595,0 -83.42627469999999,38.1937321,0 -83.4263069,38.1937015,0 -83.4263217,38.1936815,0 -83.4261661,38.192853,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Muskegon Community College - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc170</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-86.1968985,43.2455766,0 -86.19689440000001,43.2464539,0 -86.19713179999999,43.2462458,0 -86.1971211,43.2457583,0 -86.1971224,43.2454653,0 -86.19702719999999,43.2454076,0 -86.1965766,43.2454194,0 -86.1959744,43.2454086,0 -86.1957639,43.2455141,0 -86.19564990000001,43.2455718,0 -86.1968985,43.2455766,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc170</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-86.1968985,43.2455766,0 -86.19564990000001,43.2455718,0 -86.195615,43.2456255,0 -86.1955842,43.2456626,0 -86.19556,43.2457427,0 -86.1955574,43.2458023,0 -86.1955614,43.2458717,0 -86.1955627,43.2459264,0 -86.19558019999999,43.245985,0 -86.195607,43.2460485,0 -86.1956338,43.2461061,0 -86.1956687,43.2461559,0 -86.1956995,43.2461911,0 -86.1957357,43.246238,0 -86.1957719,43.2462732,0 -86.1958108,43.2463054,0 -86.1958672,43.2463464,0 -86.19593690000001,43.2463894,0 -86.1959785,43.246406,0 -86.1960133,43.2464109,0 -86.19608580000001,43.2464158,0 -86.1961823,43.2464197,0 -86.19629089999999,43.2464275,0 -86.1963982,43.2464275,0 -86.1964881,43.2464324,0 -86.1966115,43.2464402,0 -86.196708,43.2464451,0 -86.1967885,43.2464519,0 -86.19689440000001,43.2464539,0 -86.1968985,43.2455766,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Nebraska University - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-96.7139406,40.8231444,0 -96.71283150000001,40.8235219,0 -96.7128395,40.8235402,0 -96.713494,40.823461,0 -96.7134993,40.8234519,0 -96.71409079999999,40.823252,0 -96.71414840000001,40.8231413,0 -96.71408540000002,40.8230348,0 -96.71410419999999,40.8230297,0 -96.71402769999999,40.8228968,0 -96.7140103,40.8229018,0 -96.71388020000001,40.8226857,0 -96.71390030000001,40.8226745,0 -96.7135543,40.822369,0 -96.71352350000001,40.8223081,0 -96.7134672,40.8223284,0 -96.7139406,40.8231444,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-96.7139406,40.8231444,0 -96.7134672,40.8223284,0 -96.71334779999999,40.822366,0 -96.71316270000001,40.8224309,0 -96.71288379999999,40.8225202,0 -96.712688,40.8225842,0 -96.7126571,40.8226491,0 -96.7125619,40.8228379,0 -96.71249489999998,40.8229587,0 -96.71259139999999,40.823118,0 -96.71266920000001,40.8232489,0 -96.71273890000002,40.8233737,0 -96.71283150000001,40.8235219,0 -96.7139406,40.8231444,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Northwestern University  - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-87.69322940000001,42.0683092,0 -87.6920908,42.068579,0 -87.69209549999999,42.0685969,0 -87.6921411,42.0685874,0 -87.6926212,42.0685198,0 -87.6929806,42.0684705,0 -87.6929779,42.0684615,0 -87.6931972,42.0684306,0 -87.69320260000001,42.0684426,0 -87.6932851,42.0684316,0 -87.6933648,42.0684122,0 -87.6934205,42.0683321,0 -87.6933944,42.0682729,0 -87.6933595,42.0682156,0 -87.69334739999999,42.0682166,0 -87.6932542,42.0680683,0 -87.69326359999999,42.0680633,0 -87.6929458,42.0675441,0 -87.69292830000001,42.0675426,0 -87.69292830000001,42.0674923,0 -87.6928848,42.0674923,0 -87.69322940000001,42.0683092,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-87.69322940000001,42.0683092,0 -87.6928848,42.0674923,0 -87.6927725,42.0675016,0 -87.69258739999999,42.0675136,0 -87.6924258,42.0675205,0 -87.6923319,42.067527,0 -87.6922125,42.0676086,0 -87.69208380000001,42.0676863,0 -87.69201,42.0677301,0 -87.6919369,42.0677724,0 -87.69190740000001,42.0678122,0 -87.691894,42.0678292,0 -87.6919068,42.0679252,0 -87.69192289999999,42.0680507,0 -87.6919343,42.0681348,0 -87.6919443,42.0682279,0 -87.6919805,42.068317,0 -87.69200739999999,42.0683832,0 -87.69204689999999,42.0684758,0 -87.69207369999999,42.068543,0 -87.6920908,42.068579,0 -87.69322940000001,42.0683092,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Northwood University - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc112</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.28019140000001,43.6331659,0 -84.2801726,43.6340647,0 -84.2802356,43.6340472,0 -84.280253,43.6339968,0 -84.2802973,43.6338774,0 -84.2803509,43.6337075,0 -84.28036969999999,43.6337085,0 -84.28039920000001,43.6336134,0 -84.2803778,43.6336075,0 -84.28038979999999,43.6335755,0 -84.2803952,43.6333979,0 -84.2803885,43.6333853,0 -84.28038720000001,43.6332115,0 -84.2804234,43.6332105,0 -84.2804167,43.633096,0 -84.28029859999999,43.6330067,0 -84.28012699999999,43.6329883,0 -84.2801283,43.6330213,0 -84.2799392,43.6330183,0 -84.2798816,43.6330038,0 -84.2796455,43.6330009,0 -84.2789642,43.633096,0 -84.2789441,43.6331261,0 -84.2789307,43.6331494,0 -84.28019140000001,43.6331659,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc112</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.28019140000001,43.6331659,0 -84.2789307,43.6331494,0 -84.27888110000001,43.6332617,0 -84.278869,43.6333044,0 -84.27886770000001,43.6333267,0 -84.2788529,43.6333927,0 -84.2788556,43.6334636,0 -84.278865,43.6335296,0 -84.2788704,43.6335645,0 -84.2788865,43.633614,0 -84.2789093,43.6336655,0 -84.2789374,43.6337131,0 -84.27896560000001,43.6337451,0 -84.2789951,43.6337926,0 -84.2790595,43.6338586,0 -84.27909699999999,43.6338887,0 -84.2791426,43.6339247,0 -84.2792177,43.6339683,0 -84.27925930000001,43.6339916,0 -84.2793277,43.6340237,0 -84.2794122,43.6340528,0 -84.2794926,43.6340761,0 -84.27957979999999,43.6340897,0 -84.27964420000001,43.6341052,0 -84.2797139,43.634111,0 -84.27977559999999,43.6341149,0 -84.2798293,43.6341178,0 -84.27987349999999,43.6341139,0 -84.27994459999999,43.63411,0 -84.2799754,43.6341071,0 -84.2800009,43.6341042,0 -84.28002770000001,43.6341003,0 -84.2800586,43.6340935,0 -84.2800854,43.6340897,0 -84.2801109,43.6340838,0 -84.2801377,43.6340751,0 -84.2801726,43.6340647,0 -84.28019140000001,43.6331659,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Notre Dame - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-86.22835069999999,41.6960724,0 -86.22836270000001,41.6969806,0 -86.22841099999999,41.6969836,0 -86.22857329999999,41.6964299,0 -86.228572,41.6963217,0 -86.2285371,41.6963187,0 -86.22853840000001,41.6961445,0 -86.2285679,41.6961425,0 -86.2285693,41.6960394,0 -86.2285344,41.6959823,0 -86.2284794,41.6959422,0 -86.2283922,41.6959172,0 -86.2280275,41.6959162,0 -86.2279001,41.6959172,0 -86.22717179999999,41.6960444,0 -86.22714499999999,41.6960834,0 -86.22835069999999,41.6960724,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-86.22835069999999,41.6960724,0 -86.22714499999999,41.6960834,0 -86.2271531,41.6961555,0 -86.227149,41.6962376,0 -86.22713829999999,41.6963127,0 -86.2271329,41.6963888,0 -86.2271236,41.6964549,0 -86.22711820000001,41.696524,0 -86.2271289,41.6966121,0 -86.2271464,41.6966732,0 -86.2271879,41.6967343,0 -86.2272577,41.6968064,0 -86.2273287,41.6968605,0 -86.22740520000001,41.6969136,0 -86.2274937,41.6969716,0 -86.2275594,41.6969967,0 -86.2276305,41.6970197,0 -86.2277083,41.6970197,0 -86.227829,41.6970137,0 -86.22797780000001,41.6970017,0 -86.2281079,41.6969917,0 -86.2282166,41.6969816,0 -86.2282514,41.6969796,0 -86.22836270000001,41.6969806,0 -86.22835069999999,41.6960724,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Oakland University - college</name>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#msn_ylw-pushpin18</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.2113566,42.6733173,0 -83.2113674,42.6742412,0 -83.21158730000001,42.6742392,0 -83.2115806,42.6735485,0 -83.2115605,42.6735456,0 -83.21155779999999,42.6733863,0 -83.21157119999999,42.6733794,0 -83.2115752,42.6733656,0 -83.21154300000001,42.6732779,0 -83.21140629999999,42.6731758,0 -83.2112628,42.6731541,0 -83.2112614,42.6731669,0 -83.2110428,42.6731709,0 -83.2110428,42.67316,0 -83.21013960000001,42.673161,0 -83.21014359999999,42.6733237,0 -83.2113566,42.6733173,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#msn_ylw-pushpin18</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.2113566,42.6733173,0 -83.21014359999999,42.6733237,0 -83.2101476,42.6734017,0 -83.210157,42.6734638,0 -83.210161,42.6735166,0 -83.21016640000001,42.6735816,0 -83.2101785,42.673695,0 -83.2101838,42.6737364,0 -83.2101892,42.6737936,0 -83.2101952,42.6738139,0 -83.2102019,42.6738415,0 -83.21021399999999,42.673875,0 -83.2102288,42.6739046,0 -83.2102422,42.6739302,0 -83.2102556,42.6739539,0 -83.21027840000001,42.6739874,0 -83.2103019,42.6740184,0 -83.2103307,42.674049,0 -83.21034539999999,42.6740638,0 -83.2103669,42.6740796,0 -83.2103937,42.6741003,0 -83.2104125,42.6741141,0 -83.2104447,42.6741299,0 -83.2104836,42.6741481,0 -83.2105131,42.674158,0 -83.2105547,42.6741688,0 -83.2105962,42.6741787,0 -83.2106405,42.6741866,0 -83.21069679999999,42.6741945,0 -83.2107424,42.6742023,0 -83.2108088,42.6742107,0 -83.2108611,42.6742176,0 -83.2109201,42.6742235,0 -83.2109845,42.6742295,0 -83.2110314,42.6742324,0 -83.21109439999999,42.6742344,0 -83.2111307,42.6742354,0 -83.211187,42.6742393,0 -83.2112594,42.6742423,0 -83.2113674,42.6742412,0 -83.2113566,42.6733173,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Ohio State Uni - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.0263309,40.0094447,0 -83.0265314,40.0103384,0 -83.0265924,40.010323,0 -83.026573,40.0099465,0 -83.0265656,40.0097472,0 -83.0265569,40.0096743,0 -83.02655559999999,40.0096656,0 -83.02654819999999,40.0096681,0 -83.026522,40.0094925,0 -83.0265328,40.0094904,0 -83.0265254,40.009419,0 -83.02651059999999,40.0093877,0 -83.02649049999999,40.0093554,0 -83.02646369999999,40.0093343,0 -83.0264281,40.0093158,0 -83.0263913,40.009305,0 -83.02634500000001,40.0092958,0 -83.0262987,40.0092973,0 -83.02622700000001,40.0093112,0 -83.0262049,40.0093153,0 -83.0262049,40.009322,0 -83.025993,40.0093641,0 -83.02598690000001,40.0093574,0 -83.02590979999999,40.0093718,0 -83.0251662,40.0095505,0 -83.02516749999999,40.0096019,0 -83.0263309,40.0094447,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.0263309,40.0094447,0 -83.02516749999999,40.0096019,0 -83.0251689,40.0096589,0 -83.0251722,40.0097056,0 -83.0251756,40.009756,0 -83.02518430000001,40.0098078,0 -83.025193,40.009853,0 -83.0252031,40.0099003,0 -83.0252205,40.0099691,0 -83.02523189999999,40.010003,0 -83.0252507,40.0100503,0 -83.02526810000001,40.0100842,0 -83.0252869,40.0101109,0 -83.0253184,40.0101607,0 -83.02534319999999,40.0101843,0 -83.0253673,40.01021,0 -83.0253921,40.0102326,0 -83.0254284,40.0102634,0 -83.0254659,40.0102886,0 -83.0254927,40.0103071,0 -83.025533,40.0103312,0 -83.02557520000001,40.0103492,0 -83.0256141,40.0103682,0 -83.0256919,40.0103949,0 -83.0257462,40.0104067,0 -83.0257931,40.0104185,0 -83.0258475,40.0104262,0 -83.0258924,40.0104293,0 -83.025944,40.0104324,0 -83.025993,40.0104298,0 -83.0260298,40.0104288,0 -83.0260815,40.0104252,0 -83.0261505,40.0104154,0 -83.0262109,40.0104077,0 -83.026284,40.0103964,0 -83.02633899999999,40.0103862,0 -83.0263946,40.0103754,0 -83.0264181,40.0103692,0 -83.0264456,40.0103641,0 -83.02647779999999,40.0103564,0 -83.0265059,40.0103507,0 -83.0265314,40.0103384,0 -83.0263309,40.0094447,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Oklahoma State - O&apos;Brate Stadium</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-97.06854632990577,36.1312234899554,0 -97.06852702022738,36.1321319961791,0 -97.06854788337473,36.13212767750981,0 -97.06856217577584,36.13185179794755,0 -97.06867126225248,36.13166487017357,0 -97.06868346484632,36.13128052885127,0 -97.06868262468338,36.13120494791081,0 -97.06866062867459,36.13115645403458,0 -97.06862153435189,36.13112157163395,0 -97.06856665748761,36.1311040272411,0 -97.06856819426051,36.13110246724163,0 -97.06856896259559,36.13110168730277,0 -97.06846498964175,36.13110344279416,0 -97.06846489868664,36.13110158598278,0 -97.0684642586146,36.13111066873989,0 -97.06812796063183,36.13110907012751,0 -97.06812541454723,36.13109478200287,0 -97.06797753416791,36.1310922052415,0 -97.06797779019224,36.13109828035067,0 -97.06783912409519,36.13109926009431,0 -97.06745064254541,36.13117690781739,0 -97.06744850855868,36.13121505599107,0 -97.06854632990577,36.1312234899554,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-97.06744963201241,36.13121514926702,0 -97.06737549002165,36.13165187284102,0 -97.06745926997539,36.13189152152189,0 -97.06765651260609,36.13207133916631,0 -97.06798167073377,36.13215160912604,0 -97.06852690787423,36.13213170874121,0 -97.06854560768083,36.13122425812205,0 -97.06744963201241,36.13121514926702,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Oklahoma State - Old Stadium</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-97.0642902,36.1284225,0 -97.06419030000001,36.129327,0 -97.06422509999999,36.1293102,0 -97.06426329999999,36.1289869,0 -97.06443899999999,36.1287123,0 -97.0644437,36.1286738,0 -97.06446589999999,36.1286554,0 -97.06447660000001,36.1285498,0 -97.0644578,36.1285476,0 -97.06447260000002,36.1284079,0 -97.0644947,36.128409,0 -97.0644994,36.1283749,0 -97.0643948,36.1282709,0 -97.0640152,36.1282476,0 -97.06400989999999,36.12826,0 -97.06396829999998,36.1282573,0 -97.0636049,36.1283456,0 -97.06340640000001,36.1283294,0 -97.06321930000001,36.1283147,0 -97.0631791,36.1283364,0 -97.0642902,36.1284225,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-97.0642902,36.1284225,0 -97.0631791,36.1283364,0 -97.06313479999999,36.1285839,0 -97.06313350000001,36.1285975,0 -97.0630859,36.1287551,0 -97.06319449999999,36.12906,0 -97.06332519999999,36.1291873,0 -97.06356460000001,36.1293151,0 -97.06419030000001,36.129327,0 -97.0642902,36.1284225,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Old College Field (MSU) - college</name>
+			<Placemark>
+				<name>msu_foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc201</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.4885965,42.7318544,0 -84.48921470000001,42.732673,0 -84.4893146,42.7326272,0 -84.48911819999999,42.7323583,0 -84.4890886,42.732212,0 -84.4890384,42.7321406,0 -84.4889914,42.7321056,0 -84.4889867,42.7320972,0 -84.4888459,42.7319352,0 -84.4888814,42.7319189,0 -84.4887373,42.7317229,0 -84.488569,42.731687,0 -84.4883088,42.7317929,0 -84.4883282,42.7318195,0 -84.4881063,42.7319111,0 -84.4879916,42.7319357,0 -84.4876107,42.7321115,0 -84.48763219999999,42.7322603,0 -84.4885965,42.7318544,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc201</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.4885965,42.7318544,0 -84.48763219999999,42.7322603,0 -84.48763289999999,42.732288,0 -84.48763959999999,42.732318,0 -84.48764559999999,42.7323505,0 -84.4876517,42.7323811,0 -84.4876577,42.732421,0 -84.48766310000001,42.7324485,0 -84.4876738,42.7325007,0 -84.4876798,42.7325362,0 -84.4876845,42.7325599,0 -84.4876912,42.7325914,0 -84.4876993,42.7326229,0 -84.48771000000001,42.7326495,0 -84.4877274,42.7326722,0 -84.4877422,42.7326894,0 -84.4877777,42.7327199,0 -84.4878119,42.7327431,0 -84.4878696,42.732782,0 -84.4879071,42.7328086,0 -84.487948,42.7328342,0 -84.4879876,42.7328569,0 -84.4880198,42.7328741,0 -84.48806070000001,42.7328943,0 -84.48810760000001,42.7329145,0 -84.4881398,42.7329219,0 -84.48817870000001,42.7329263,0 -84.4882216,42.7329307,0 -84.48825720000001,42.7329293,0 -84.488286,42.7329293,0 -84.48831680000001,42.7329278,0 -84.48835099999999,42.7329253,0 -84.48838189999999,42.7329224,0 -84.4884134,42.7329194,0 -84.48845970000001,42.732913,0 -84.4884979,42.7329071,0 -84.4885448,42.7328997,0 -84.4885884,42.7328933,0 -84.4886635,42.7328741,0 -84.4887138,42.7328593,0 -84.48877210000001,42.732844,0 -84.48880699999999,42.7328332,0 -84.488854,42.7328194,0 -84.48889079999999,42.7328046,0 -84.488927,42.7327928,0 -84.48896329999999,42.73278,0 -84.48899950000001,42.7327662,0 -84.48902699999999,42.7327559,0 -84.4890565,42.7327431,0 -84.48908729999999,42.7327298,0 -84.4891088,42.7327204,0 -84.4891349,42.7327081,0 -84.48917779999999,42.7326889,0 -84.48921470000001,42.732673,0 -84.4885965,42.7318544,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Olivet College - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc112</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.9249635,42.4341848,0 -84.92619999999999,42.4342036,0 -84.926192,42.434164,0 -84.9261719,42.4341224,0 -84.9261544,42.4340887,0 -84.92613559999999,42.434066,0 -84.9254557,42.434062,0 -84.9253015,42.4340541,0 -84.92523439999999,42.4340432,0 -84.9252317,42.4340313,0 -84.9251701,42.4340264,0 -84.9250882,42.4340274,0 -84.92501179999999,42.4340264,0 -84.9249421,42.4340313,0 -84.92490050000001,42.4340343,0 -84.9248455,42.4340551,0 -84.9247932,42.4340848,0 -84.9247677,42.4341085,0 -84.9247503,42.4341442,0 -84.9247503,42.4342105,0 -84.9247436,42.434351,0 -84.9248066,42.4344589,0 -84.9247945,42.4350518,0 -84.924812,42.4350587,0 -84.9248898,42.4350657,0 -84.9249729,42.4350726,0 -84.9249635,42.4341848,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc112</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-84.9249635,42.4341848,0 -84.9249729,42.4350726,0 -84.92509459999999,42.435078,0 -84.9251804,42.4350761,0 -84.9252528,42.435079,0 -84.92535340000001,42.4350711,0 -84.9255076,42.4350632,0 -84.9256082,42.4350572,0 -84.9256994,42.4350394,0 -84.9257691,42.4350177,0 -84.9258442,42.434989,0 -84.9259113,42.4349523,0 -84.925977,42.4348959,0 -84.92602530000001,42.4348316,0 -84.9261044,42.4347276,0 -84.92612990000001,42.4346683,0 -84.92616339999999,42.4346118,0 -84.9261808,42.4345574,0 -84.92619689999999,42.4344851,0 -84.9262117,42.434402,0 -84.926213,42.4343525,0 -84.9262157,42.4343001,0 -84.9262117,42.4342436,0 -84.92619999999999,42.4342036,0 -84.9249635,42.4341848,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Oregon State - Goss Stadium at Coleman Field</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-123.2776763,44.5632387,0 -123.276413,44.5632458,0 -123.2764184,44.5633027,0 -123.2764666,44.5633027,0 -123.276468,44.5632822,0 -123.2768006,44.5633103,0 -123.2768716,44.5633037,0 -123.2771077,44.5633032,0 -123.2773873,44.5633509,0 -123.2773907,44.5633586,0 -123.2776072,44.5633677,0 -123.2776079,44.5633815,0 -123.277742,44.5633887,0 -123.2778869,44.5632822,0 -123.2778735,44.5631904,0 -123.2778567,44.563189,0 -123.2778359,44.5630289,0 -123.2777635,44.5628278,0 -123.2777682,44.5626678,0 -123.2777481,44.5626224,0 -123.2777353,44.5624246,0 -123.2777494,44.5624236,0 -123.2777494,44.5623663,0 -123.2776971,44.5623505,0 -123.2776656,44.5623438,0 -123.2776763,44.5632387,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-123.2776763,44.5632387,0 -123.2776656,44.5623438,0 -123.2776227,44.5623319,0 -123.2769756,44.5623352,0 -123.2769092,44.5623496,0 -123.27682,44.5623639,0 -123.2767583,44.5623849,0 -123.2766946,44.5624083,0 -123.2766571,44.5624255,0 -123.2766262,44.5624418,0 -123.2765994,44.562459,0 -123.2765692,44.5624786,0 -123.2765303,44.5625082,0 -123.2764854,44.5625397,0 -123.2764492,44.5625746,0 -123.2764197,44.5626071,0 -123.2764076,44.5626243,0 -123.2763982,44.5626429,0 -123.2763935,44.5626658,0 -123.2763902,44.5627174,0 -123.2763935,44.5628221,0 -123.276413,44.5632458,0 -123.2776763,44.5632387,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Oregon University - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-123.0659956,44.0593731,0 -123.0647276,44.0594559,0 -123.0647356,44.059482,0 -123.0651004,44.0594574,0 -123.0652775,44.0595191,0 -123.065421,44.0595277,0 -123.0654216,44.059507,0 -123.0655189,44.0595104,0 -123.0658836,44.0595003,0 -123.0659105,44.0595186,0 -123.0660144,44.0595167,0 -123.0660432,44.0595114,0 -123.06607,44.0595037,0 -123.0660928,44.0594926,0 -123.0661197,44.0594791,0 -123.0661391,44.0594651,0 -123.0661572,44.0594463,0 -123.0661713,44.0594299,0 -123.066184,44.0594121,0 -123.0661901,44.059388,0 -123.0661914,44.0593687,0 -123.0661881,44.0593523,0 -123.066178,44.0593095,0 -123.0661693,44.0592858,0 -123.0661465,44.0592724,0 -123.066115,44.0591196,0 -123.0660808,44.058949,0 -123.0661063,44.0589442,0 -123.0660814,44.0588078,0 -123.0659312,44.0586078,0 -123.0659165,44.0584941,0 -123.0658863,44.0584874,0 -123.0659956,44.0593731,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc6</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-123.0659956,44.0593731,0 -123.0658863,44.0584874,0 -123.0657951,44.0584797,0 -123.065663,44.0584652,0 -123.0653975,44.0584445,0 -123.0652855,44.0584801,0 -123.0651648,44.0585226,0 -123.064904,44.0586112,0 -123.0648376,44.0586705,0 -123.0647531,44.0587375,0 -123.0647021,44.0588796,0 -123.0646585,44.0590039,0 -123.0646149,44.0591259,0 -123.0646257,44.0592218,0 -123.0646344,44.059296,0 -123.0646921,44.0593523,0 -123.0647276,44.0594559,0 -123.0659956,44.0593731,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Penn - Meiklejohn Stadium - college</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-75.1941557,39.944132,0 -75.19320279999999,39.9438647,0 -75.19350559999999,39.9440246,0 -75.193572,39.9440503,0 -75.1936524,39.9440791,0 -75.1937001,39.9440965,0 -75.19390989999999,39.9441618,0 -75.1939126,39.9441551,0 -75.1940273,39.9441932,0 -75.1940233,39.9442019,0 -75.1940367,39.9442086,0 -75.19405810000001,39.9442173,0 -75.19407959999999,39.944222,0 -75.1940984,39.9442266,0 -75.1941379,39.9442343,0 -75.19417009999999,39.9442369,0 -75.19419689999999,39.9442374,0 -75.1942197,39.9442307,0 -75.1942432,39.9442245,0 -75.19426730000001,39.9442153,0 -75.1942841,39.9442035,0 -75.1943069,39.944185,0 -75.1943203,39.944167,0 -75.1943364,39.9441449,0 -75.1943418,39.9441248,0 -75.1943297,39.9441238,0 -75.19436930000001,39.9440348,0 -75.194378,39.9440374,0 -75.1944477,39.9438703,0 -75.1944424,39.9437665,0 -75.1944383,39.9436071,0 -75.1944833,39.9435105,0 -75.1945369,39.9434848,0 -75.1945872,39.9433655,0 -75.1946066,39.9432971,0 -75.1945667,39.9432847,0 -75.1941557,39.944132,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-75.1941557,39.944132,0 -75.1945667,39.9432847,0 -75.1945211,39.9432714,0 -75.19447289999999,39.9432554,0 -75.19439370000001,39.9432328,0 -75.1943361,39.9432184,0 -75.1942818,39.9432071,0 -75.19421199999999,39.9431979,0 -75.1941557,39.9431907,0 -75.1940967,39.943184,0 -75.19403629999999,39.9431814,0 -75.19398339999999,39.9431778,0 -75.1939378,39.9431794,0 -75.1938761,39.9431804,0 -75.1938305,39.9431835,0 -75.1937614,39.9431876,0 -75.1937071,39.9431917,0 -75.1936374,39.9431932,0 -75.1935824,39.9431958,0 -75.19352739999999,39.9432071,0 -75.19347980000001,39.9432236,0 -75.1934127,39.9432493,0 -75.1933631,39.9432729,0 -75.1933255,39.943294,0 -75.1932913,39.9433223,0 -75.1932431,39.9433536,0 -75.1932102,39.9433835,0 -75.193168,39.9434225,0 -75.1931371,39.9434601,0 -75.19311829999999,39.9434883,0 -75.1930996,39.9435233,0 -75.1930895,39.9435593,0 -75.193066,39.9436076,0 -75.1930627,39.943642,0 -75.1930593,39.9436837,0 -75.19305730000001,39.9437449,0 -75.1930627,39.9437916,0 -75.1932269,39.9438842,0 -75.1941557,39.944132,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Penn State University - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc102</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-77.8524523,40.8122592,0 -77.8516067,40.8129048,0 -77.85162889999999,40.8129058,0 -77.8517885,40.8128439,0 -77.8520661,40.8127333,0 -77.852341,40.8125632,0 -77.85235369999999,40.8125546,0 -77.8523464,40.8125485,0 -77.8525569,40.8123841,0 -77.85256699999999,40.8123927,0 -77.8525951,40.8123704,0 -77.85261319999999,40.8123541,0 -77.852626,40.8123409,0 -77.8526387,40.8123262,0 -77.8526474,40.8123009,0 -77.8526521,40.8122785,0 -77.85265149999999,40.8122486,0 -77.8526427,40.8122217,0 -77.85263329999999,40.8122004,0 -77.8526099,40.8121704,0 -77.8525683,40.8121329,0 -77.8525582,40.8121435,0 -77.8523886,40.8120101,0 -77.852341,40.8119684,0 -77.8516564,40.811636,0 -77.85162889999999,40.8116517,0 -77.8524523,40.8122592,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc102</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-77.8524523,40.8122592,0 -77.85162889999999,40.8116517,0 -77.8514864,40.8117272,0 -77.8513765,40.811785,0 -77.8512558,40.8118439,0 -77.8511867,40.8118815,0 -77.851129,40.8119657,0 -77.85107739999999,40.8120434,0 -77.85104990000001,40.8120875,0 -77.8510211,40.8121804,0 -77.8509916,40.8122763,0 -77.8510157,40.8123854,0 -77.85103719999999,40.8124849,0 -77.85104990000001,40.8125392,0 -77.851007,40.8125783,0 -77.8511029,40.81266,0 -77.8511907,40.8127366,0 -77.8512705,40.8128066,0 -77.85133020000001,40.8128604,0 -77.85136439999999,40.8128919,0 -77.8515005,40.812899,0 -77.8516067,40.8129048,0 -77.8524523,40.8122592,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Purdue University - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-86.941711,40.437363,0 -86.9417136,40.438301,0 -86.9417787,40.4383005,0 -86.9417787,40.4381076,0 -86.94186379999999,40.4376952,0 -86.94185179999999,40.4376917,0 -86.9418659,40.4376274,0 -86.9418591,40.4376253,0 -86.94186379999999,40.437587,0 -86.9418719,40.4375886,0 -86.94190469999999,40.4374079,0 -86.9419269,40.437411,0 -86.9419336,40.4373839,0 -86.9419369,40.4373661,0 -86.9419322,40.4373426,0 -86.94192820000001,40.4373217,0 -86.94192080000001,40.4372992,0 -86.9419068,40.4372834,0 -86.9418927,40.4372655,0 -86.9418726,40.4372471,0 -86.9418471,40.4372313,0 -86.9418156,40.4372181,0 -86.941784,40.4372084,0 -86.94175319999999,40.4372027,0 -86.941715,40.4372007,0 -86.941658,40.4372068,0 -86.94166130000001,40.4372186,0 -86.9413804,40.4372543,0 -86.9413777,40.4372482,0 -86.94128449999999,40.4372614,0 -86.9412825,40.4372528,0 -86.9407454,40.4373181,0 -86.9405308,40.4373186,0 -86.9405308,40.4373645,0 -86.941711,40.437363,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-86.941711,40.437363,0 -86.9405308,40.4373645,0 -86.9405288,40.4374753,0 -86.9405301,40.4375728,0 -86.94053150000001,40.4376452,0 -86.94051,40.4377085,0 -86.94049459999999,40.4377544,0 -86.94052139999999,40.4378529,0 -86.9405455,40.4379418,0 -86.94056430000001,40.4380147,0 -86.9405864,40.4380908,0 -86.94067630000001,40.4381576,0 -86.9407702,40.4382296,0 -86.94088480000001,40.4382469,0 -86.94104780000001,40.438274,0 -86.94115909999999,40.4382924,0 -86.94121269999999,40.438301,0 -86.9413435,40.4383,0 -86.94146550000001,40.438299,0 -86.94162040000001,40.438299,0 -86.9417136,40.438301,0 -86.941711,40.437363,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Rutgers University - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc102</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-74.44358200000001,40.5277144,0 -74.4425131,40.5273271,0 -74.4425091,40.5273424,0 -74.44250510000001,40.5273622,0 -74.4425024,40.5273806,0 -74.4432822,40.5277817,0 -74.44331440000001,40.5277934,0 -74.44333450000001,40.5278006,0 -74.44334189999999,40.5277894,0 -74.4434935,40.5278495,0 -74.4434868,40.5278648,0 -74.4435612,40.5278938,0 -74.4437456,40.5278475,0 -74.4437784,40.5277888,0 -74.443763,40.5277807,0 -74.4438301,40.5276614,0 -74.4438442,40.5276665,0 -74.4438656,40.5276349,0 -74.4439622,40.5274112,0 -74.4440628,40.5271446,0 -74.44414260000001,40.5269484,0 -74.4440788,40.5269163,0 -74.44358200000001,40.5277144,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc102</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-74.44358200000001,40.5277144,0 -74.4440788,40.5269163,0 -74.44402460000001,40.52689,0 -74.44392070000001,40.5268456,0 -74.44377849999999,40.526786,0 -74.4436625,40.5267371,0 -74.4435713,40.5266983,0 -74.4434761,40.526683,0 -74.44329310000001,40.5266591,0 -74.44318850000001,40.5266876,0 -74.4430631,40.5267187,0 -74.4429276,40.5267585,0 -74.44285720000001,40.5268202,0 -74.4428016,40.5268691,0 -74.4427446,40.5269221,0 -74.44272309999999,40.5269578,0 -74.44268820000001,40.5270174,0 -74.442646,40.5270898,0 -74.4426125,40.5271474,0 -74.4425803,40.5272014,0 -74.4425394,40.5272748,0 -74.4425131,40.5273271,0 -74.44358200000001,40.5277144,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Sagniaw Valley State - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc162</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.95339989999999,43.5122297,0 -83.9533737,43.513143,0 -83.95341999999999,43.5131299,0 -83.9534797,43.5131099,0 -83.95355410000001,43.5130798,0 -83.9535997,43.5130613,0 -83.9536165,43.5124705,0 -83.9535997,43.512469,0 -83.9536044,43.5123037,0 -83.9536205,43.5123027,0 -83.9536205,43.5121685,0 -83.9535005,43.5120697,0 -83.95330199999999,43.5120693,0 -83.9533033,43.5120838,0 -83.95307270000001,43.51208,0 -83.9530713,43.5120673,0 -83.9522693,43.5120552,0 -83.9522137,43.5121174,0 -83.9521446,43.5122171,0 -83.95339989999999,43.5122297,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#poly-000000-1200-77-nodesc162</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.95339989999999,43.5122297,0 -83.9521446,43.5122171,0 -83.9521238,43.5122638,0 -83.9521104,43.5122974,0 -83.952099,43.5123299,0 -83.952093,43.5123606,0 -83.9520869,43.5123936,0 -83.95208220000001,43.5124209,0 -83.9520796,43.5124646,0 -83.9520796,43.5125177,0 -83.9520843,43.5125658,0 -83.952089,43.5126028,0 -83.9521017,43.5126412,0 -83.9521178,43.5126776,0 -83.9521359,43.512718,0 -83.9521506,43.5127433,0 -83.9521795,43.5127939,0 -83.9522036,43.5128226,0 -83.9522465,43.5128692,0 -83.9522687,43.5128916,0 -83.9522901,43.512913,0 -83.9523169,43.5129383,0 -83.95233639999999,43.5129568,0 -83.952386,43.5129894,0 -83.95241009999999,43.5130064,0 -83.95244030000001,43.5130234,0 -83.95247519999999,43.5130458,0 -83.95250470000001,43.5130589,0 -83.9525376,43.5130754,0 -83.9525738,43.513092,0 -83.952612,43.5131066,0 -83.95263679999999,43.5131173,0 -83.9526891,43.5131333,0 -83.9527494,43.5131494,0 -83.95280510000001,43.513161,0 -83.95283329999999,43.5131669,0 -83.95287279999999,43.5131742,0 -83.95291640000001,43.5131795,0 -83.9529446,43.5131814,0 -83.9529788,43.5131839,0 -83.953023,43.5131834,0 -83.95305449999999,43.5131839,0 -83.9530874,43.5131844,0 -83.95313229999999,43.5131814,0 -83.9531638,43.5131795,0 -83.9532007,43.5131776,0 -83.9532524,43.5131698,0 -83.9532785,43.513163,0 -83.95331470000001,43.5131571,0 -83.9533382,43.5131528,0 -83.9533737,43.513143,0 -83.95339989999999,43.5122297,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Spring Hill College - Stan Galle Field</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-88.1374452,30.6928467,0 -88.13735939999999,30.6919541,0 -88.1373052,30.6919691,0 -88.1372636,30.6919818,0 -88.13724879999999,30.691991,0 -88.1372502,30.6920233,0 -88.1372958,30.6925895,0 -88.13731989999999,30.6925953,0 -88.1373387,30.6927406,0 -88.1373226,30.6927625,0 -88.1373213,30.6927914,0 -88.13733070000001,30.6928467,0 -88.1373481,30.6928951,0 -88.13736419999999,30.6929159,0 -88.1373816,30.6929251,0 -88.137446,30.6929136,0 -88.1375104,30.6928998,0 -88.1377665,30.6928559,0 -88.1377839,30.6928963,0 -88.13842769999999,30.6927821,0 -88.1384135,30.69273829999999,0 -88.1374452,30.6928467,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<description><![CDATA[Historic Sims-Galle Field<br>Believed to be America's oldest active collegiate baseball field, intercollegiate baseball was first played at this site in 1889. Stan Galle Field is also one the more unique fields in college baseball with its location immediately next to the Administration Building. Host to numerous conference and regional baseball tournaments, the site has become a favorite spring gathering spot for students, alumni and fans of the Badger baseball program.<br><br>In 2022, Spring Hill College honored the career of former head coach Frank Sims by renaming the field to Sims-Galle Field.]]></description>
+				<styleUrl>#poly-000000-1200-776</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-88.1374452,30.6928467,0 -88.1384135,30.69273829999999,0 -88.13840140000001,30.6926979,0 -88.1384001,30.6926783,0 -88.13842150000001,30.6926391,0 -88.1384363,30.6926115,0 -88.13845240000001,30.6925895,0 -88.1384577,30.69254,0 -88.1384604,30.6924881,0 -88.1384618,30.6924315,0 -88.1384484,30.6923554,0 -88.1384376,30.6922782,0 -88.1384242,30.6922401,0 -88.1384068,30.6921917,0 -88.1383733,30.6921352,0 -88.1383424,30.6920879,0 -88.13831159999999,30.6920475,0 -88.1382606,30.6920014,0 -88.1382096,30.6919633,0 -88.1381748,30.6919322,0 -88.13814259999999,30.6919114,0 -88.1381131,30.6919011,0 -88.1380272,30.6918976,0 -88.1379347,30.6918964,0 -88.13786899999999,30.6918953,0 -88.1377671,30.6918941,0 -88.1376933,30.6919022,0 -88.13763830000001,30.6919057,0 -88.13756050000001,30.6919149,0 -88.13749350000001,30.6919253,0 -88.1374197,30.6919368,0 -88.13735939999999,30.6919541,0 -88.1374452,30.6928467,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>St Boni Ballfield - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-93.748501,44.9061798,0 -93.74861900000001,44.9070565,0 -93.74873700000001,44.9070549,0 -93.7487464,44.9066608,0 -93.74873300000002,44.9064793,0 -93.74870619999999,44.9063169,0 -93.7486887,44.9062428,0 -93.74869680000002,44.90622,0 -93.7486767,44.9061877,0 -93.7486619,44.906164,0 -93.74864309999998,44.9061393,0 -93.7486244,44.9061231,0 -93.7485949,44.9061079,0 -93.74856540000002,44.9060946,0 -93.7485238,44.9060785,0 -93.7484956,44.9060671,0 -93.7484473,44.9060557,0 -93.7484017,44.9060519,0 -93.74834409999998,44.90605,0 -93.74828239999999,44.9060472,0 -93.7482126,44.9060481,0 -93.7481322,44.9060491,0 -93.74804229999999,44.9060481,0 -93.7479337,44.9060453,0 -93.7478009,44.90607,0 -93.74746829999998,44.906145,0 -93.747467,44.9062434,0 -93.748501,44.9061798,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc60</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-93.748501,44.9061798,0 -93.747467,44.9062434,0 -93.74747240000001,44.9070052,0 -93.74755820000001,44.9070755,0 -93.74861900000001,44.9070565,0 -93.748501,44.9061798,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Tennessee - Lindsey Nelson Stadium</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.9294281,35.9494387,0 -83.9287119,35.9487689,0 -83.9286556,35.9488188,0 -83.9290204,35.9492249,0 -83.9290982,35.9493074,0 -83.9292672,35.9494757,0 -83.92930870000001,35.9495213,0 -83.9293356,35.9495473,0 -83.9293691,35.9495679,0 -83.92940129999999,35.9495777,0 -83.9294348,35.9495799,0 -83.9294603,35.9495734,0 -83.9294898,35.9495603,0 -83.92951119999999,35.9495462,0 -83.9295381,35.9495234,0 -83.9295783,35.9494963,0 -83.9298036,35.9493324,0 -83.9300544,35.9491217,0 -83.9302971,35.9489176,0 -83.93024080000001,35.9488666,0 -83.9294281,35.9494387,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.9294281,35.9494387,0 -83.93024080000001,35.9488666,0 -83.93015629999999,35.9487928,0 -83.93006509999999,35.9487135,0 -83.9299632,35.9486223,0 -83.92975800000001,35.9484497,0 -83.9297191,35.9484171,0 -83.9296909,35.9484063,0 -83.92966010000001,35.9483954,0 -83.9295944,35.9483813,0 -83.92953,35.948377,0 -83.92947770000001,35.9483704,0 -83.929412,35.9483683,0 -83.9293476,35.9483683,0 -83.9292846,35.9483748,0 -83.92922160000001,35.9483835,0 -83.92917060000001,35.9484171,0 -83.9290445,35.9485105,0 -83.9287119,35.9487689,0 -83.9294281,35.9494387,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>U of M - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc162</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.7420742,42.2678568,0 -83.74204469999999,42.2670088,0 -83.7420132,42.2670108,0 -83.7420279,42.2673422,0 -83.7418871,42.2676261,0 -83.7419106,42.2676633,0 -83.7418978,42.2677452,0 -83.7419019,42.2677987,0 -83.7419032,42.2678494,0 -83.74185490000001,42.2678504,0 -83.7418596,42.2679139,0 -83.74200980000001,42.2680201,0 -83.7420936,42.2680186,0 -83.7420936,42.2679843,0 -83.7423478,42.2679774,0 -83.74238200000001,42.2679893,0 -83.7427984,42.2678772,0 -83.7432503,42.2678702,0 -83.74325570000001,42.2678355,0 -83.7420742,42.2678568,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#poly-000000-1200-77-nodesc162</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.7420742,42.2678568,0 -83.74325570000001,42.2678355,0 -83.7433187,42.2674286,0 -83.7431953,42.267181,0 -83.7429379,42.2669825,0 -83.74261199999999,42.2669279,0 -83.74247920000001,42.2669328,0 -83.74236449999999,42.2669919,0 -83.74204469999999,42.2670088,0 -83.7420742,42.2678568,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>U of Texas - UFCU Disch–Falk Field</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-97.72652640000001,30.2795481,0 -97.72671080000002,30.2804647,0 -97.72672559999999,30.2804601,0 -97.72672490000001,30.2798254,0 -97.7267236,30.2798011,0 -97.7267061,30.2798046,0 -97.72666659999999,30.2796031,0 -97.72669410000002,30.2795921,0 -97.7266719,30.2794826,0 -97.7266679,30.2794699,0 -97.7266545,30.2794566,0 -97.7265707,30.2794085,0 -97.72655189999999,30.2794062,0 -97.7264124,30.2794259,0 -97.7264165,30.2794502,0 -97.72618439999998,30.2794873,0 -97.72618040000002,30.2794716,0 -97.7261603,30.2794774,0 -97.7259571,30.2795469,0 -97.72563459999999,30.2796598,0 -97.72553470000001,30.2796737,0 -97.72553399999998,30.2796836,0 -97.72551859999999,30.2796859,0 -97.72551319999998,30.279698,0 -97.72652640000001,30.2795481,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-97.72652640000001,30.2795481,0 -97.72551319999998,30.279698,0 -97.72549179999999,30.2798874,0 -97.72568889999999,30.2803767,0 -97.7259102,30.2805099,0 -97.7264862,30.2805279,0 -97.72671080000002,30.2804647,0 -97.72652640000001,30.2795481,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>UConn - Elliot Ballpark</name>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-72.2535094,41.8004357,0 -72.25384870000001,41.8013055,0 -72.2539211,41.8012875,0 -72.25377090000001,41.8009006,0 -72.2537897,41.8007307,0 -72.2537427,41.8006077,0 -72.2536676,41.8004158,0 -72.253681,41.8003938,0 -72.2536703,41.8003698,0 -72.2536542,41.8003478,0 -72.25363539999999,41.8003288,0 -72.2536073,41.8003178,0 -72.2535845,41.8003058,0 -72.253559,41.8003008,0 -72.25353079999999,41.8002938,0 -72.2535,41.8002928,0 -72.2534557,41.8002988,0 -72.25344370000001,41.8003268,0 -72.2529957,41.8004178,0 -72.25284550000001,41.8005207,0 -72.2523279,41.8006307,0 -72.25235069999999,41.8006847,0 -72.2535094,41.8004357,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc114</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-72.2535094,41.8004357,0 -72.25235069999999,41.8006847,0 -72.25251830000001,41.8011266,0 -72.2527087,41.8013475,0 -72.2529823,41.8014615,0 -72.2532733,41.8014615,0 -72.2533914,41.8014345,0 -72.2536502,41.8013795,0 -72.25369980000001,41.8013355,0 -72.25384870000001,41.8013055,0 -72.2535094,41.8004357,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>University of Hawai&apos;i Hilo - DII - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-155.0845987,19.6975874,0 -155.0838209,19.6970268,0 -155.0838115,19.6970584,0 -155.0838128,19.6971038,0 -155.083837,19.6971038,0 -155.0839898,19.6972528,0 -155.0839791,19.6972743,0 -155.0841065,19.6973917,0 -155.0841655,19.69747,0 -155.0842996,19.6975799,0 -155.0843198,19.6975597,0 -155.0844566,19.6976733,0 -155.0844431,19.697696,0 -155.0844941,19.6977389,0 -155.0845276,19.6977629,0 -155.0845692,19.6977718,0 -155.0846135,19.6977743,0 -155.0846537,19.697773,0 -155.0846886,19.6977566,0 -155.0847234,19.6977415,0 -155.084761,19.697715,0 -155.0847932,19.6976506,0 -155.0847704,19.6976379,0 -155.0848897,19.6975054,0 -155.0849192,19.6975155,0 -155.0849474,19.69747,0 -155.0849836,19.6974296,0 -155.0851633,19.6971316,0 -155.0851338,19.6971228,0 -155.0852223,19.6969953,0 -155.0852948,19.6968159,0 -155.0845987,19.6975874,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-155.0845987,19.6975874,0 -155.0852948,19.6968159,0 -155.085149,19.6966002,0 -155.0850913,19.6965434,0 -155.0849867,19.6964853,0 -155.084858,19.6964562,0 -155.0847815,19.6964474,0 -155.0846501,19.6964512,0 -155.0845468,19.6964537,0 -155.0844664,19.6964764,0 -155.0843792,19.6964992,0 -155.0843001,19.6965244,0 -155.0842142,19.6965699,0 -155.084166,19.6965901,0 -155.0840895,19.6966355,0 -155.0840319,19.6966772,0 -155.0839889,19.6967151,0 -155.0839393,19.6967757,0 -155.0839098,19.6968312,0 -155.0838749,19.6968893,0 -155.0838481,19.6969449,0 -155.0838209,19.6970268,0 -155.0845987,19.6975874,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>University of Hawaii
+Honolulu, HI</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc24</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-157.8161929,21.2933364,0 -157.8152461,21.2932961,0 -157.8152485,21.2933095,0 -157.8152579,21.2933392,0 -157.8155884,21.2934298,0 -157.8158409,21.2935017,0 -157.8159375,21.2935245,0 -157.8160072,21.2935417,0 -157.8160494,21.2935507,0 -157.8160652,21.2935545,0 -157.8160877,21.2935557,0 -157.8161105,21.2935513,0 -157.8161363,21.2935457,0 -157.8161554,21.2935407,0 -157.8161799,21.2935348,0 -157.8162017,21.2935279,0 -157.8162221,21.2935185,0 -157.8162426,21.2935098,0 -157.816264,21.2934976,0 -157.8162798,21.2934882,0 -157.8162989,21.2934742,0 -157.8163183,21.2934598,0 -157.8163358,21.2934442,0 -157.8163519,21.2934251,0 -157.8163643,21.2934108,0 -157.8163743,21.2933992,0 -157.8163834,21.2933845,0 -157.8163908,21.2933708,0 -157.8164008,21.2933552,0 -157.8164072,21.2933386,0 -157.8164142,21.2933227,0 -157.8164203,21.2933058,0 -157.8164253,21.2932855,0 -157.8164286,21.293263,0 -157.8164293,21.2932418,0 -157.8164303,21.2932224,0 -157.8164303,21.293203,0 -157.816428,21.2931855,0 -157.8164273,21.293169,0 -157.8164243,21.2931509,0 -157.8164209,21.2931309,0 -157.8164139,21.2930968,0 -157.8164085,21.2930724,0 -157.8164109,21.2930674,0 -157.8163951,21.2929859,0 -157.8163841,21.2929241,0 -157.8163264,21.2926445,0 -157.816319,21.2926101,0 -157.8162905,21.2924642,0 -157.8162828,21.2924602,0 -157.8162623,21.2924536,0 -157.8162379,21.2924449,0 -157.8161929,21.2933364,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc24</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-157.8161929,21.2933364,0 -157.8162379,21.2924449,0 -157.8162208,21.292438,0 -157.8161849,21.292427,0 -157.8161427,21.2924139,0 -157.8161011,21.2924008,0 -157.8160669,21.292393,0 -157.8160347,21.292388,0 -157.8160062,21.292383,0 -157.8159623,21.292378,0 -157.8159304,21.2923764,0 -157.8159009,21.2923774,0 -157.8158614,21.2923789,0 -157.8158292,21.2923814,0 -157.8157926,21.2923871,0 -157.8157521,21.2923964,0 -157.8157091,21.2924089,0 -157.8156719,21.2924196,0 -157.815632,21.2924342,0 -157.8155891,21.292452,0 -157.8155432,21.2924758,0 -157.815507,21.292498,0 -157.8154721,21.2925217,0 -157.8154386,21.2925476,0 -157.8154091,21.2925754,0 -157.8153843,21.2926007,0 -157.8153403,21.2926526,0 -157.8153159,21.2926848,0 -157.8152951,21.2927157,0 -157.8152733,21.2927572,0 -157.8152522,21.292805,0 -157.8152377,21.2928388,0 -157.815226,21.2928769,0 -157.8152186,21.2929084,0 -157.8152113,21.2929366,0 -157.8152076,21.2929712,0 -157.8152042,21.2930081,0 -157.8152015,21.2930378,0 -157.8152025,21.2930781,0 -157.8152029,21.2931124,0 -157.8152069,21.2931377,0 -157.8152123,21.2931715,0 -157.8152186,21.2932002,0 -157.8152267,21.2932311,0 -157.8152371,21.2932677,0 -157.8152461,21.2932961,0 -157.8161929,21.2933364,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>University of Illinois - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc102</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-88.22995,40.0967323,0 -88.2299707,40.0976399,0 -88.2300267,40.0976397,0 -88.2301733,40.0969321,0 -88.2301722,40.0969111,0 -88.2301521,40.0969111,0 -88.2301501,40.0967561,0 -88.2301722,40.0967549,0 -88.2301605,40.0966777,0 -88.23012629999999,40.0966305,0 -88.2300784,40.0965948,0 -88.23001499999999,40.0965728,0 -88.2299486,40.0965661,0 -88.2299137,40.0965666,0 -88.2299137,40.0965802,0 -88.2297119,40.0965828,0 -88.2297102,40.0965679,0 -88.2296841,40.0965687,0 -88.2287738,40.0967061,0 -88.2287741,40.0967456,0 -88.22995,40.0967323,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc102</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-88.22995,40.0967323,0 -88.2287741,40.0967456,0 -88.2287755,40.096841,0 -88.2287795,40.0969623,0 -88.2287815,40.0970888,0 -88.2287839,40.0972204,0 -88.2287855,40.097246,0 -88.2287886,40.0972675,0 -88.2287953,40.0972899,0 -88.2288016,40.0973109,0 -88.22881169999999,40.0973317,0 -88.22882009999999,40.0973522,0 -88.2288305,40.0973732,0 -88.2288405,40.0973922,0 -88.2288576,40.097415,0 -88.2288741,40.0974355,0 -88.22889120000001,40.0974545,0 -88.2289093,40.097473,0 -88.22892899999999,40.097493,0 -88.22894580000001,40.0975084,0 -88.22896729999999,40.0975222,0 -88.2289914,40.0975381,0 -88.22900679999999,40.0975489,0 -88.2290424,40.0975658,0 -88.2290792,40.0975853,0 -88.2291161,40.0976012,0 -88.2291436,40.0976104,0 -88.2291771,40.0976204,0 -88.2292301,40.0976343,0 -88.2292774,40.0976405,0 -88.22933310000001,40.0976461,0 -88.2293803,40.0976469,0 -88.2294447,40.0976466,0 -88.2295211,40.0976461,0 -88.2296137,40.0976453,0 -88.22975080000001,40.0976428,0 -88.2298661,40.0976412,0 -88.2299707,40.0976399,0 -88.22995,40.0967323,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>University of Iowa - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc102</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-91.5549259,41.6609412,0 -91.5553122,41.6617908,0 -91.55535639999999,41.6617748,0 -91.5552331,41.6611606,0 -91.5551875,41.6611516,0 -91.5551083,41.6609592,0 -91.55513250000001,41.6609502,0 -91.555103,41.6608731,0 -91.5550466,41.660828,0 -91.55497149999999,41.6608009,0 -91.554879,41.6607949,0 -91.5547945,41.660817,0 -91.55479990000001,41.660844,0 -91.55475029999999,41.660854,0 -91.554541,41.6609101,0 -91.55449279999999,41.6608851,0 -91.55377929999999,41.6611807,0 -91.55378999999999,41.6612267,0 -91.5549259,41.6609412,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc102</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-91.5549259,41.6609412,0 -91.55378999999999,41.6612267,0 -91.55383700000002,41.661365,0 -91.55387319999998,41.6614742,0 -91.55390539999999,41.6615724,0 -91.5539241,41.6616275,0 -91.5539335,41.6616486,0 -91.5539563,41.6616816,0 -91.55398309999998,41.6617107,0 -91.55402070000001,41.6617518,0 -91.5540596,41.6617828,0 -91.55411459999999,41.6618249,0 -91.55414539999998,41.6618469,0 -91.554191,41.661873,0 -91.55424600000001,41.661899,0 -91.55430899999999,41.6619231,0 -91.55438280000001,41.6619451,0 -91.55447270000001,41.6619632,0 -91.55456119999999,41.6619702,0 -91.55461880000001,41.6619742,0 -91.55467520000001,41.6619702,0 -91.55475559999999,41.6619622,0 -91.55479990000001,41.6619581,0 -91.55487770000001,41.6619321,0 -91.5549662,41.661902,0 -91.55505599999999,41.661874,0 -91.55517939999999,41.6618329,0 -91.5552532,41.6618079,0 -91.5553122,41.6617908,0 -91.5549259,41.6609412,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>University of Maryland - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc102</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-76.94452630000001,38.9889875,0 -76.9451084,38.9897401,0 -76.94512039999999,38.9897203,0 -76.9449541,38.9894909,0 -76.9450172,38.9894273,0 -76.94483750000001,38.9891866,0 -76.9448763,38.9891678,0 -76.9448361,38.9891115,0 -76.94482000000001,38.9891188,0 -76.9447194,38.9889968,0 -76.9447342,38.9889864,0 -76.94471,38.9889541,0 -76.9446926,38.9889343,0 -76.94467520000001,38.9889124,0 -76.9446457,38.9888895,0 -76.94461750000001,38.9888749,0 -76.944588,38.9888686,0 -76.9445545,38.9888613,0 -76.9445142,38.988853,0 -76.944478,38.9888603,0 -76.9444324,38.9888707,0 -76.9443828,38.9888905,0 -76.9443399,38.9889051,0 -76.94435060000001,38.9889166,0 -76.944191,38.9889968,0 -76.9441763,38.9889864,0 -76.94390540000001,38.9891261,0 -76.9438719,38.989198,0 -76.9438464,38.9892376,0 -76.9438289,38.9892637,0 -76.9438102,38.9892856,0 -76.94379410000001,38.9893033,0 -76.94377799999999,38.9893179,0 -76.94375650000001,38.9893304,0 -76.9437377,38.9893429,0 -76.9437109,38.9893544,0 -76.94368540000001,38.9893669,0 -76.94354869999999,38.9894315,0 -76.9435513,38.9894419,0 -76.94452630000001,38.9889875,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc102</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-76.94452630000001,38.9889875,0 -76.9435513,38.9894419,0 -76.94354869999999,38.9895009,0 -76.94354730000001,38.9895467,0 -76.943546,38.9895749,0 -76.94355,38.989602,0 -76.9435634,38.9896259,0 -76.9435782,38.9896468,0 -76.9435916,38.9896624,0 -76.94372300000001,38.9897458,0 -76.9438236,38.9898115,0 -76.94389870000001,38.9898553,0 -76.9439631,38.9898782,0 -76.94403010000001,38.9899022,0 -76.94408110000001,38.9899157,0 -76.9441468,38.9899282,0 -76.9441951,38.9899366,0 -76.94427690000001,38.9899376,0 -76.94436399999999,38.9899355,0 -76.94447940000001,38.9899355,0 -76.9445786,38.9899366,0 -76.9446765,38.9899345,0 -76.9447838,38.9899282,0 -76.94484420000001,38.9899251,0 -76.9449058,38.9899126,0 -76.9449461,38.9898991,0 -76.94497560000001,38.9898824,0 -76.9449984,38.9898626,0 -76.9450239,38.9898407,0 -76.94504670000001,38.9898188,0 -76.94507350000001,38.9897875,0 -76.9451084,38.9897401,0 -76.94452630000001,38.9889875,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>University of Minnesota - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-93.2297488,44.9825943,0 -93.2284734,44.9825938,0 -93.2284794,44.9826152,0 -93.2286477,44.9826787,0 -93.22914660000001,44.9826806,0 -93.22920160000001,44.982683,0 -93.2297126,44.9827124,0 -93.2297401,44.9827323,0 -93.22977090000001,44.9827323,0 -93.2297964,44.9827285,0 -93.2298219,44.9827252,0 -93.22984270000001,44.9827186,0 -93.2298641,44.9827119,0 -93.22988420000001,44.9827015,0 -93.22990299999998,44.9826901,0 -93.2299211,44.9826697,0 -93.22993649999999,44.982654,0 -93.2299452,44.9826341,0 -93.2299479,44.9826152,0 -93.2299479,44.9825981,0 -93.22994730000002,44.9825796,0 -93.2299379,44.982581,0 -93.2299137,44.9825673,0 -93.22986679999998,44.9821456,0 -93.22986880000002,44.9817434,0 -93.2298105,44.9817239,0 -93.2297669,44.9817036,0 -93.22975080000001,44.9816964,0 -93.2297488,44.9825943,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>fop</name>
+				<styleUrl>#poly-000000-1200-77-nodesc23</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-93.2297488,44.9825943,0 -93.22975080000001,44.9816964,0 -93.22969919999998,44.9816746,0 -93.2296341,44.9816485,0 -93.22960860000001,44.98165,0 -93.2295416,44.9816575,0 -93.22944770000001,44.9816632,0 -93.2292633,44.9816713,0 -93.22920700000002,44.9816765,0 -93.2291728,44.9816808,0 -93.22915000000002,44.9816912,0 -93.229089,44.9817159,0 -93.22902790000001,44.9817391,0 -93.22897029999999,44.9817396,0 -93.22889379999999,44.9817363,0 -93.2288516,44.9817368,0 -93.22881870000001,44.9817458,0 -93.22880330000001,44.9817557,0 -93.2287731,44.981779,0 -93.22872419999999,44.981815,0 -93.22868189999998,44.9818435,0 -93.22863630000002,44.9818752,0 -93.22858870000002,44.9819085,0 -93.22857259999999,44.9819407,0 -93.22855120000001,44.9819858,0 -93.22853040000001,44.9820303,0 -93.22851230000001,44.9820797,0 -93.2284982,44.9821238,0 -93.22848810000001,44.9821527,0 -93.22847870000001,44.9821959,0 -93.2284707,44.9822324,0 -93.228464,44.982267,0 -93.22846,44.9822979,0 -93.22845529999998,44.9823329,0 -93.22845460000001,44.9823652,0 -93.22845390000001,44.9824084,0 -93.22845390000001,44.9824458,0 -93.228458,44.9824819,0 -93.22846130000001,44.9825189,0 -93.228466,44.9825597,0 -93.2284734,44.9825938,0 -93.2297488,44.9825943,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Wayne State Univ - college</name>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc15</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.0772235,42.3564168,0 -83.0776748,42.3571998,0 -83.07770429999999,42.3571918,0 -83.0775434,42.3565853,0 -83.07752189999999,42.3565913,0 -83.0773744,42.3563227,0 -83.0772161,42.3562791,0 -83.07707670000001,42.3563247,0 -83.07677889999999,42.356402,0 -83.07611780000001,42.3567399,0 -83.0761339,42.3567637,0 -83.0772235,42.3564168,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#poly-000000-1200-77-nodesc15</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-83.0772235,42.3564168,0 -83.0761339,42.3567637,0 -83.0762546,42.3571423,0 -83.0764665,42.3572989,0 -83.076453,42.3574198,0 -83.07690100000001,42.357394,0 -83.0769224,42.3574317,0 -83.0776748,42.3571998,0 -83.0772235,42.3564168,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>WMU - college</name>
+			<open>1</open>
+			<Placemark>
+				<name>Foul</name>
+				<styleUrl>#poly-000000-1200-77-nodesc162</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.6030368,42.2844309,0 -85.60341099999999,42.2852147,0 -85.6035639,42.2850996,0 -85.6033023,42.2845529,0 -85.6032447,42.2844626,0 -85.6031991,42.2843584,0 -85.6032299,42.2843515,0 -85.6032098,42.2843098,0 -85.60306629999999,42.2842513,0 -85.60299790000001,42.2842701,0 -85.60301269999999,42.284287,0 -85.6025929,42.2843961,0 -85.6022777,42.2845321,0 -85.6018741,42.2847315,0 -85.6030368,42.2844309,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>FOP</name>
+				<styleUrl>#poly-000000-1200-77-nodesc162</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								-85.6030368,42.2844309,0 -85.6018741,42.2847315,0 -85.6018722,42.2847978,0 -85.60189630000001,42.2848801,0 -85.6019124,42.2849307,0 -85.6019312,42.2849724,0 -85.6019594,42.285027,0 -85.60198490000001,42.2850696,0 -85.6020063,42.2851053,0 -85.6020479,42.285151,0 -85.60209879999999,42.2851996,0 -85.6021444,42.2852353,0 -85.6022195,42.2852829,0 -85.60227449999999,42.2853177,0 -85.6023335,42.2853534,0 -85.60240330000001,42.2853871,0 -85.6024985,42.2854149,0 -85.6025588,42.2854288,0 -85.60267020000001,42.2854486,0 -85.602752,42.2854585,0 -85.6028606,42.2854635,0 -85.6029156,42.2854615,0 -85.6029826,42.2854506,0 -85.60306180000001,42.2854278,0 -85.6031369,42.285396,0 -85.603275,42.2853127,0 -85.60341099999999,42.2852147,0 -85.6030368,42.2844309,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>

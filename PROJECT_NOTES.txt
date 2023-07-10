@@ -1,11 +1,23 @@
 NOTES FOR BASEBALL PROJECT
 ----------------------------------
+#### ESSPN is being a bitch about scraping the game info from a
+
+####### 7/9/23 NOTES
+Create nice plots of all of the fields with the comparison calulations visable to help grasp how they are working
+- work on new function that comapare each point to the med and stanard deviation. assign a value and tally then normalize into a single value or a few values (RF, CF, LF)
+
+-- MACHiNE LEARNING ASPECT
+- might be worth pertuing train a model based on home run numbers from college or pro baseball	
+	- sourcing home run data for each park may be very complicated - its not practical to parse individual games with the same script I used for the NCAA sites
+		- It might be possible to test scrape strategy using eson. I think all games for each from the beginning to end of season are callable
+
+
 
 
 #### NOTES FOR PROCESSING THE RAW SCARPE FILES (FOOTBALL AND mbb RIGHT NOW)
 
 GOAL - 
-SET UP LAPTOP TO DO THE SCRAPING SO THE PC ISN"T TIED UP FOR HOURS AT A TIME
+SET UP LAPTOP TO DO THE SCRAPING SO THE PC ISN'T TIED UP FOR HOURS AT A TIME
 	- Found a better way to get game level data.
 
 	- can get a return of every contest for a seasopn for a sport, by team, ect using MHSAA search function
