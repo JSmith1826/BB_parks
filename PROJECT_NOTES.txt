@@ -1,6 +1,46 @@
 NOTES FOR BASEBALL PROJECT
 ----------------------------------
-#### ESSPN is being a bitch about scraping the game info from a
+7/11/23
+** NExt thing up
+- get a dictionary of team names and dictionaries
+- get lat lon data for all the named stadiums in the HR data
+- compare the lat long data to the homeplate point of college fields to do the matching
+
+********* Goal tonight ***
+DONE - collect and organize colleg ehome run data
+	- add DFs with HR data and group into locations
+		- could also do summary statistics for home vs away
+DONE - create summary stats of plotted college fields and compair to locations in the ESPN data
+
+### WEATHER ###
+It should be possible to add weather data for each game (worth doing for game with HR data)
+	- weather undergroun or other sites have some free historical data avaiable, including wind, down to the hour or even 5 minutes
+	- would also want to grab the local sunset time for each day and location in case I want to do something with it later
+
+
+Have ESPN scraping done. Have all available HR data for 2023 data. 
+Also have game scores with runs hits and errors going back to 2016.
+	- it isn't tied to location yet but should be able to infere because of game_info column. Those are tourny name and can be assumed to be nuetral 
+		- a small number of those have places in game_info descriptor
+
+	- From those years box scores were available for some games. (All or mostly NCAA games)
+		- total of about 600 games, all with locations and home run info.
+			- part of that was dropping about 300 rows with valid game_ids but failed to return box score for some reason.
+				- error message said a certain section was absent so the parse was aborted. those pages might have good info just in a slightly different structure
+					worth checking
+
+	- The field judging function still needs work. is only returning values up to about 5 when the range is supposed to go to ten.
+		- also returns a lot of 0.0 results
+
+	- Also want to addapt that to compare to the caculated median field instead of the constructed "ideal field" 
+
+	- IDEA for another function:
+		- summed total of the margin of each point in the series of 540 
+			- can be compaired to median, min, max 
+				- if all are done this would give a good summary of where it falls within the dataset
+		- ALSO - split the distance columns into pieces (5 maybe even 7: down the line, left, power left, dead center, ... .. ...
+			- would run the section of each field against just the same sections of the rest of the set
+			
 
 ####### 7/9/23 NOTES
 Create nice plots of all of the fields with the comparison calulations visable to help grasp how they are working
