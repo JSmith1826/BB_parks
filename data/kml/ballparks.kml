@@ -9,6 +9,16 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
 			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
 		</Pair>
 	</StyleMap>
@@ -506,6 +516,16 @@
 			<color>4c000000</color>
 		</PolyStyle>
 	</Style>
+	<StyleMap id="poly-000000-1200-775">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-normal3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-highlight5</styleUrl>
+		</Pair>
+	</StyleMap>
 	<StyleMap id="poly-000000-1200-77">
 		<Pair>
 			<key>normal</key>
@@ -513,10 +533,57 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-highlight2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-770">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-normal1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-highlight10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-774">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-normal42</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-highlight</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="poly-000000-1200-77-highlight2">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-highlight">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-highlight5">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-highlight10">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -597,7 +664,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-highlight10">
+	<Style id="poly-000000-1200-77-highlight101">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -642,7 +709,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-highlight2">
+	<Style id="poly-000000-1200-77-highlight21">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -669,7 +736,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-highlight21">
+	<Style id="poly-000000-1200-77-highlight210">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -714,7 +781,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-highlight5">
+	<Style id="poly-000000-1200-77-highlight51">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.8</width>
@@ -795,24 +862,54 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="poly-000000-1200-77-nodesc4">
+	<StyleMap id="poly-000000-1200-77-nodesc">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal6</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal0</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc">
+	<StyleMap id="poly-000000-1200-77-nodesc2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc0">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-normal</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight0</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight02</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-000000-1200-77-nodesc16">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight3</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="poly-000000-1200-77-nodesc-highlight">
@@ -827,7 +924,43 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight1">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-nodesc-highlight0">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight3">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight02">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -935,7 +1068,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight02">
+	<Style id="poly-000000-1200-77-nodesc-highlight021">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -995,7 +1128,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight1">
+	<Style id="poly-000000-1200-77-nodesc-highlight11">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1151,7 +1284,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight11">
+	<Style id="poly-000000-1200-77-nodesc-highlight116">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -1859,7 +1992,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-highlight3">
+	<Style id="poly-000000-1200-77-nodesc-highlight37">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -2459,6 +2592,18 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal2">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-nodesc-normal">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
@@ -2472,6 +2617,18 @@
 		</PolyStyle>
 	</Style>
 	<Style id="poly-000000-1200-77-nodesc-normal6">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal3">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -2520,6 +2677,18 @@
 		</PolyStyle>
 	</Style>
 	<Style id="poly-000000-1200-77-nodesc-normal0000">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal00001">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -3155,7 +3324,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal2">
+	<Style id="poly-000000-1200-77-nodesc-normal22">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -3311,7 +3480,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal22">
+	<Style id="poly-000000-1200-77-nodesc-normal221">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -3431,7 +3600,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-nodesc-normal3">
+	<Style id="poly-000000-1200-77-nodesc-normal33">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
 		</BalloonStyle>
@@ -4103,7 +4272,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="poly-000000-1200-77-nodesc0">
+	<StyleMap id="poly-000000-1200-77-nodesc03">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-normal1</styleUrl>
@@ -4126,7 +4295,7 @@
 	<StyleMap id="poly-000000-1200-77-nodesc000">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal0000</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal00001</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -4283,7 +4452,7 @@
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight01</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc03">
+	<StyleMap id="poly-000000-1200-77-nodesc030">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-normal24</styleUrl>
@@ -4753,20 +4922,20 @@
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight170</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc2">
+	<StyleMap id="poly-000000-1200-77-nodesc20">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal3</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal33</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight8</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-77-nodesc20">
+	<StyleMap id="poly-000000-1200-77-nodesc204">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal00</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal000</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -4846,7 +5015,7 @@
 	<StyleMap id="poly-000000-1200-77-nodesc2030">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal000</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal0000</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -4876,7 +5045,7 @@
 	<StyleMap id="poly-000000-1200-77-nodesc211">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal22</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal221</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -4966,7 +5135,7 @@
 	<StyleMap id="poly-000000-1200-77-nodesc24">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal2</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal22</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -5150,7 +5319,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight11</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight116</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc40">
@@ -5160,7 +5329,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight3</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight37</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc400">
@@ -5180,7 +5349,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight1</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight11</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc50">
@@ -5336,7 +5505,7 @@
 	<StyleMap id="poly-000000-1200-77-nodesc7">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-normal0</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal00</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -5400,7 +5569,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-nodesc-highlight02</styleUrl>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight021</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77-nodesc81">
@@ -5483,7 +5652,34 @@
 			<styleUrl>#poly-000000-1200-77-nodesc-highlight9010</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="poly-000000-1200-77-normal4">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
 	<Style id="poly-000000-1200-77-normal">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-normal3">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-normal1">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -5546,7 +5742,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-normal1">
+	<Style id="poly-000000-1200-77-normal11">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -5573,7 +5769,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-normal11">
+	<Style id="poly-000000-1200-77-normal110">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -5672,7 +5868,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-normal3">
+	<Style id="poly-000000-1200-77-normal31">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -5690,7 +5886,7 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="poly-000000-1200-77-normal4">
+	<Style id="poly-000000-1200-77-normal42">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>1.2</width>
@@ -5762,10 +5958,10 @@
 			<color>4d000000</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="poly-000000-1200-770">
+	<StyleMap id="poly-000000-1200-7702">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-normal1</styleUrl>
+			<styleUrl>#poly-000000-1200-77-normal11</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -5799,7 +5995,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-highlight5</styleUrl>
+			<styleUrl>#poly-000000-1200-77-highlight51</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-7701">
@@ -5822,7 +6018,7 @@
 			<styleUrl>#poly-000000-1200-77-highlight40</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-7702">
+	<StyleMap id="poly-000000-1200-77021">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-normal13</styleUrl>
@@ -5835,7 +6031,7 @@
 	<StyleMap id="poly-000000-1200-77020">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-normal11</styleUrl>
+			<styleUrl>#poly-000000-1200-77-normal110</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -5889,7 +6085,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-highlight10</styleUrl>
+			<styleUrl>#poly-000000-1200-77-highlight101</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-77102">
@@ -5915,7 +6111,7 @@
 	<StyleMap id="poly-000000-1200-7712">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#poly-000000-1200-77-normal3</styleUrl>
+			<styleUrl>#poly-000000-1200-77-normal31</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
@@ -5929,7 +6125,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-highlight2</styleUrl>
+			<styleUrl>#poly-000000-1200-77-highlight21</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-7720">
@@ -5962,7 +6158,7 @@
 			<styleUrl>#poly-000000-1200-77-highlight8</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-774">
+	<StyleMap id="poly-000000-1200-7741">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-normal</styleUrl>
@@ -5992,7 +6188,7 @@
 			<styleUrl>#poly-000000-1200-77-highlight41</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="poly-000000-1200-775">
+	<StyleMap id="poly-000000-1200-7751">
 		<Pair>
 			<key>normal</key>
 			<styleUrl>#poly-000000-1200-77-normal01</styleUrl>
@@ -6009,7 +6205,7 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#poly-000000-1200-77-highlight21</styleUrl>
+			<styleUrl>#poly-000000-1200-77-highlight210</styleUrl>
 		</Pair>
 	</StyleMap>
 	<StyleMap id="poly-000000-1200-776">
@@ -6130,9 +6326,27 @@
 			<color>4c37ebf4</color>
 		</PolyStyle>
 	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
 	<Style id="s_ylw-pushpin">
 		<IconStyle>
 			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
@@ -7149,7 +7363,7 @@
 				<Placemark>
 					<name>foul</name>
 					<description>2023 Division 2 World Series</description>
-					<styleUrl>#poly-000000-1200-770</styleUrl>
+					<styleUrl>#poly-000000-1200-7702</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -7182,7 +7396,7 @@
 				<Placemark>
 					<name>foul</name>
 					<description>drawn from construction images</description>
-					<styleUrl>#poly-000000-1200-77</styleUrl>
+					<styleUrl>#poly-000000-1200-774</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -7196,7 +7410,7 @@
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc20</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -7307,7 +7521,7 @@
 				<open>1</open>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -7321,7 +7535,7 @@
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -7585,7 +7799,7 @@
 				<Placemark>
 					<name>foul</name>
 					<description>bad behind plate - large roof</description>
-					<styleUrl>#poly-000000-1200-7702</styleUrl>
+					<styleUrl>#poly-000000-1200-77021</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -7679,7 +7893,7 @@
 				<name>Oklahoma State - O&apos;Brate Stadium</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
 					<Polygon>
 						<tessellate>1</tessellate>
 						<outerBoundaryIs>
@@ -8025,12 +8239,11 @@
 		</Folder>
 		<Folder>
 			<name>College - All</name>
-			<open>1</open>
 			<Folder>
 				<name>UCLA - Jackie Robinson Stadium - college</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8044,7 +8257,7 @@
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8061,7 +8274,7 @@
 				<name>Texas Tech - Rip Griffin Park  - college</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8075,7 +8288,7 @@
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8092,7 +8305,7 @@
 				<name>UNC - Boshamer Stadium - college</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8106,7 +8319,7 @@
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8123,7 +8336,7 @@
 				<name>Louisville - Jim Patterson Stadium  - college</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8137,7 +8350,7 @@
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8154,7 +8367,7 @@
 				<name>Ole Miss - Oxford-University Stadium - college</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8168,7 +8381,7 @@
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8185,7 +8398,7 @@
 				<name>Georgia - Foley Field - college</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8199,7 +8412,7 @@
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8216,7 +8429,7 @@
 				<name>South Carolina - Founders Park - college</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8230,7 +8443,7 @@
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8247,7 +8460,7 @@
 				<name>Arizona - Hi Corbett Field - college</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8261,7 +8474,7 @@
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8278,7 +8491,7 @@
 				<name>Virginia Tech - English Field at Atlantic Union Bank Park - college</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8292,7 +8505,7 @@
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8309,7 +8522,7 @@
 				<name>Texas A&amp;M - Olsen Field at Blue Bell Park - college</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -8323,7 +8536,7 @@
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc16</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -9420,7 +9633,7 @@ Grand Rapids, MI 49546</description>
 				<open>1</open>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
 					<Polygon>
 						<tessellate>1</tessellate>
 						<outerBoundaryIs>
@@ -9434,7 +9647,7 @@ Grand Rapids, MI 49546</description>
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<styleUrl>#m_ylw-pushpin0</styleUrl>
 					<Polygon>
 						<tessellate>1</tessellate>
 						<outerBoundaryIs>
@@ -9956,7 +10169,7 @@ Grand Rapids, MI 49546</description>
 				<open>1</open>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -9970,7 +10183,7 @@ Grand Rapids, MI 49546</description>
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -19192,7 +19405,7 @@ Little League 2 - youth</name>
 				<Placemark>
 					<name>foul</name>
 					<description>guestimate on the fenceline based on the mow pattern</description>
-					<styleUrl>#poly-000000-1200-774</styleUrl>
+					<styleUrl>#poly-000000-1200-7741</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -26308,7 +26521,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<name>Brighton High School - high school</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -26322,7 +26535,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -27117,7 +27330,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<name>Frankfort-Elberta Area HS</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc20</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc204</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -27131,7 +27344,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc20</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc204</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -27489,7 +27702,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<name>Grandville High School - high school</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -27503,7 +27716,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -27892,7 +28105,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<name>Historic Hamtramck Stadium - Detroit Western</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -27906,7 +28119,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -28358,7 +28571,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<Placemark>
 					<name>foul</name>
 					<description>guestimate on the fenceline based on the mow pattern</description>
-					<styleUrl>#poly-000000-1200-774</styleUrl>
+					<styleUrl>#poly-000000-1200-7741</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -28637,7 +28850,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<name>Midland HH Dow High School</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -28651,7 +28864,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -28668,7 +28881,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<name>Monroe High School - high school</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -28682,7 +28895,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -29382,7 +29595,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<name>Port Huron Northern High School - high school</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -29396,7 +29609,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -29506,7 +29719,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<name>Royal Oak High School - high school</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -29520,7 +29733,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -29630,7 +29843,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<name>Saline High School - Field 1 - high school</name>
 				<Placemark>
 					<name>foul</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -29644,7 +29857,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				</Placemark>
 				<Placemark>
 					<name>fop</name>
-					<styleUrl>#poly-000000-1200-77-nodesc03</styleUrl>
+					<styleUrl>#poly-000000-1200-77-nodesc030</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -31097,6 +31310,166 @@ May not be used as a baseball field anymore. last google earth image of baseball
 		<Folder>
 			<name>Muni - Other</name>
 			<Folder>
+				<name>Ripkin - Old Yankee Stadium - 90ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[First three-tiered sports facility in the United States<br>Known as “The House that Ruth Built”]]></description>
+					<styleUrl>#poly-000000-1200-770</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1859278,39.5344611,0 -76.1869726,39.5342501,0 -76.1869605,39.5342439,0 -76.1865742,39.5343246,0 -76.1858581,39.5343112,0 -76.18572260000001,39.534367,0 -76.18571059999999,39.5343774,0 -76.18570649999999,39.5343918,0 -76.1857133,39.5345025,0 -76.18610750000001,39.5349679,0 -76.1862242,39.5352875,0 -76.1862363,39.5352875,0 -76.1859278,39.5344611,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1859278,39.5344611,0 -76.1862363,39.5352875,0 -76.18668820000001,39.5352482,0 -76.1869524,39.5351624,0 -76.18716569999999,39.5350155,0 -76.187273,39.534699,0 -76.1871362,39.5343205,0 -76.1869726,39.5342501,0 -76.1859278,39.5344611,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin SC - Griffith Field - 90ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[FORMER HOME OF THE WASHINGTON SENATORS<br>1911 - 1961<br><br>An oak tree and residential building resulted in a jagged centerfield edge<br>Home of the inaugural Presidential first pitch on Opening Day]]></description>
+					<styleUrl>#poly-000000-1200-77</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9059603,33.716043,0 -78.9059381,33.7170402,0 -78.9059683,33.7170503,0 -78.905969,33.7165957,0 -78.9060722,33.7163826,0 -78.90616079999999,33.7162956,0 -78.9061782,33.7159732,0 -78.90605410000001,33.7158695,0 -78.90579529999999,33.7158695,0 -78.9053286,33.7160078,0 -78.90495780000001,33.7160006,0 -78.9049571,33.7160274,0 -78.9059603,33.716043,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9059603,33.716043,0 -78.9049571,33.7160274,0 -78.90494839999999,33.7161224,0 -78.904939,33.7163198,0 -78.904931,33.7164303,0 -78.90495850000001,33.7165675,0 -78.90501140000001,33.7165848,0 -78.9050148,33.7167214,0 -78.9050336,33.7167917,0 -78.9059381,33.7170402,0 -78.9059603,33.716043,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin SC - Ebbets Field - 90ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description>- Hosted 9 World Series and the 1949 All-Star Game</description>
+					<styleUrl>#poly-000000-1200-77</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9045436,33.7174968,0 -78.9044571,33.7184506,0 -78.9044645,33.7184506,0 -78.9044732,33.7182961,0 -78.9045174,33.718266,0 -78.9045852,33.7180273,0 -78.9045624,33.7180217,0 -78.904669,33.7177512,0 -78.9046878,33.7175571,0 -78.9046972,33.7174533,0 -78.9046194,33.7173775,0 -78.90426600000001,33.7173524,0 -78.9038556,33.7174383,0 -78.9035344,33.7174182,0 -78.90353039999999,33.7174288,0 -78.9045436,33.7174968,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9045436,33.7174968,0 -78.90353039999999,33.7174288,0 -78.9033956,33.7179843,0 -78.9034218,33.7180189,0 -78.9034633,33.7180004,0 -78.9036565,33.718281,0 -78.9044571,33.7184506,0 -78.9045436,33.7174968,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin SC - Polo Grounds - 90ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[- The original Polo Grounds stadium had a 483-foot centerfield fence<br>- Only 5 home runs were ever hit over the centerfield fence]]></description>
+					<styleUrl>#poly-000000-1200-77</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9043509,33.716292,0 -78.9043321,33.7170589,0 -78.90436099999999,33.717045,0 -78.9043616,33.7168314,0 -78.9044227,33.716693,0 -78.90456210000001,33.7163807,0 -78.9045675,33.7162234,0 -78.9044428,33.7161157,0 -78.9042772,33.7161146,0 -78.9039935,33.7161877,0 -78.9037172,33.7162602,0 -78.90352609999999,33.7162557,0 -78.9035074,33.7162769,0 -78.9043509,33.716292,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9043509,33.716292,0 -78.9035074,33.7162769,0 -78.90321299999999,33.7165631,0 -78.90329079999999,33.7167906,0 -78.903447,33.7168938,0 -78.9033404,33.7169764,0 -78.9034906,33.7171074,0 -78.9035959,33.7170249,0 -78.90370110000001,33.7171694,0 -78.9039935,33.7172564,0 -78.9043321,33.7170589,0 -78.9043509,33.716292,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin SC - Crosley Field - 90ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[Left field features a unique raised ground terrace<br>Home of the first-ever MLB night game in 1935]]></description>
+					<styleUrl>#poly-000000-1200-77</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9068123,33.7178839,0 -78.9063262,33.7185689,0 -78.9063543,33.7185806,0 -78.90682169999999,33.7180825,0 -78.90680759999999,33.7180753,0 -78.9068774,33.7180033,0 -78.9068888,33.7180083,0 -78.9069437,33.717952,0 -78.90691959999999,33.7179369,0 -78.9069417,33.7179163,0 -78.9069102,33.7178047,0 -78.906876,33.7177942,0 -78.9068888,33.7177746,0 -78.906811,33.7177467,0 -78.90680759999999,33.7177534,0 -78.90669560000001,33.7177149,0 -78.90670230000001,33.7177044,0 -78.9064583,33.7176224,0 -78.90608140000001,33.7174969,0 -78.9059728,33.7174433,0 -78.9059869,33.7174166,0 -78.90592719999999,33.7173965,0 -78.9059091,33.7174372,0 -78.9068123,33.7178839,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9068123,33.7178839,0 -78.9059091,33.7174372,0 -78.9056657,33.7179615,0 -78.9058507,33.7183664,0 -78.9063262,33.7185689,0 -78.9068123,33.7178839,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
 				<name>Boyne City County Park Muni</name>
 				<Placemark>
 					<name>Foul</name>
@@ -31698,6 +32071,69 @@ May not be used as a baseball field anymore. last google earth image of baseball
 		</Folder>
 		<Folder>
 			<name>Pro / Minor League</name>
+			<Folder>
+				<name>Leidos Field - 90ft - pro</name>
+				<Placemark>
+					<name>foul</name>
+					<description>Home of the Orioles High-A affiliate Aberdeen IronBirds,</description>
+					<styleUrl>#poly-000000-1200-770</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.18597939999999,39.5308779,0 -76.18507150000001,39.5313558,0 -76.1850943,39.531364,0 -76.1853988,39.5312027,0 -76.18546449999999,39.531214,0 -76.1855195,39.5312078,0 -76.18558779999999,39.5311872,0 -76.18580110000001,39.5311127,0 -76.185793,39.5310982,0 -76.1859915,39.5310299,0 -76.18600360000001,39.5310413,0 -76.1860961,39.5310041,0 -76.1861565,39.5309461,0 -76.1861766,39.5308748,0 -76.1861444,39.5307931,0 -76.1860693,39.530731,0 -76.1860492,39.5307424,0 -76.1858883,39.5306079,0 -76.1858976,39.5305955,0 -76.1857474,39.5304755,0 -76.1857059,39.5304445,0 -76.1856549,39.5304238,0 -76.1855905,39.5304155,0 -76.1853679,39.5301776,0 -76.1853558,39.5301786,0 -76.18597939999999,39.5308779,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.18597939999999,39.5308779,0 -76.1853679,39.5301776,0 -76.1848449,39.5302976,0 -76.1846316,39.5305034,0 -76.1845472,39.5308375,0 -76.18465310000001,39.5311034,0 -76.18507150000001,39.5313558,0 -76.18597939999999,39.5308779,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Pelicans Ballpark - Myrtle Beach - pro</name>
+				<Placemark>
+					<name>foul</name>
+					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.8845534,33.7117431,0 -78.8835852,33.711433,0 -78.8835838,33.711448,0 -78.8837501,33.7115071,0 -78.883842,33.7115518,0 -78.8838909,33.7116025,0 -78.88394049999999,33.7116399,0 -78.8840934,33.7117113,0 -78.8841779,33.7117487,0 -78.884186,33.7117381,0 -78.884424,33.7118452,0 -78.8844173,33.7118574,0 -78.8844797,33.7118837,0 -78.8844924,33.7118887,0 -78.8845166,33.7118948,0 -78.8845367,33.7118965,0 -78.8845635,33.711897,0 -78.8845829,33.7118959,0 -78.8846118,33.7118892,0 -78.8846326,33.7118837,0 -78.8846647,33.7118664,0 -78.8847043,33.7118318,0 -78.8847217,33.7118033,0 -78.8847452,33.7117358,0 -78.88472710000001,33.7117314,0 -78.88479820000001,33.7115066,0 -78.8848364,33.7113644,0 -78.88479890000001,33.7112751,0 -78.8849685,33.7109293,0 -78.8849578,33.7109209,0 -78.8845534,33.7117431,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.8845534,33.7117431,0 -78.8849578,33.7109209,0 -78.8848966,33.7108754,0 -78.8848517,33.7108514,0 -78.8846968,33.7107783,0 -78.8846096,33.7107493,0 -78.8842207,33.7106696,0 -78.8838767,33.7107984,0 -78.8836749,33.7110578,0 -78.88368560000001,33.7111086,0 -78.88365810000001,33.7111409,0 -78.8835852,33.711433,0 -78.8845534,33.7117431,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
 			<Document>
 				<name>Coleman Field - USA National Baseball Stadium</name>
 				<open>1</open>
@@ -31710,7 +32146,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 						<color>4d000000</color>
 					</PolyStyle>
 				</Style>
-				<Style id="poly-000000-1200-77-nodesc-highlight37">
+				<Style id="poly-000000-1200-77-nodesc-highlight370">
 					<BalloonStyle>
 						<text><![CDATA[<h3>$[name]</h3>]]></text>
 					</BalloonStyle>
@@ -31741,7 +32177,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 					</Pair>
 					<Pair>
 						<key>highlight</key>
-						<styleUrl>#poly-000000-1200-77-nodesc-highlight37</styleUrl>
+						<styleUrl>#poly-000000-1200-77-nodesc-highlight370</styleUrl>
 					</Pair>
 				</StyleMap>
 				<Style id="poly-000000-1200-77-normal5">
@@ -32054,7 +32490,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<Placemark>
 					<name>foul</name>
 					<description>tough shadow</description>
-					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<styleUrl>#poly-000000-1200-7751</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -32069,7 +32505,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<Placemark>
 					<name>fop</name>
 					<description><![CDATA[Estadio Capitán San Luis is a multi-use stadium in Pinar del Río, Cuba.<br><br>History<br>Inaugurated the 19 of January 1969, the stadium has a capacity of 8,000 spectators. The stadium is mostly used for baseball games and is the home of the Pinar del Rio Baseball team. Previously, it was the home of Vegueros and Forestales baseball teams and Pinar del Rio, a football team. The football team's home field is now "La Bombonera" in San Cristóbal.]]></description>
-					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<styleUrl>#poly-000000-1200-7751</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -32102,7 +32538,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<Placemark>
 					<name>fop</name>
 					<description>Estadio Cristóbal Labra opened in 1957 as Municipal Stadium, in Nueva Gerona on the Isla de la Juventud. With 5,000 seats, it is the smallest in the Cuban National Series and was the only stadium without lights.</description>
-					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<styleUrl>#poly-000000-1200-7751</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -32168,7 +32604,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<Placemark>
 					<name>fop</name>
 					<description><![CDATA[Hosted MLB series in 1996, 1999, 2018, 2019<br><br>The Estadio de Béisbol Monterrey, officially known as Estadio Mobil Super and popularly known as Palacio Sultán, is a baseball stadium in Monterrey, Mexico. It is the home venue of the Sultanes Monterrey Mexican League baseball team.[1] It holds 21,803 people, making it the largest baseball stadium in Mexico and the third-largest in Latin America.[4]<br><br>The stadium was inaugurated in games starting on 13 July 1990 when Monterrey played host to the World Youth Baseball Championship (for players 16 years old and under).[2][6] The first LMB game was held on 20 July 1990 when the Sultanes defeated the Tecolotes de Nuevo Laredo in 12 innings.[2]]]></description>
-					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<styleUrl>#poly-000000-1200-7751</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -32235,7 +32671,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<Placemark>
 					<name>fop</name>
 					<description><![CDATA[Hosted Expos in 2003-2004. Hosted other MLB games & WBC<br><br>Hiram Bithorn Stadium (Spanish: Estadio Hiram Bithorn) is a baseball park in San Juan, Puerto Rico, built in 1962 and designed by Puerto Rican architect Pedro Miranda.[1] It is operated by the municipal government of the city of San Juan. Its name honors the first Puerto Rican to play in the major leagues, Hiram Bithorn, who first played with the Chicago Cubs in 1942. Built in 1962, under the mayoral administration of Felisa Rincón de Gautier, replacing Estadio Sixto Escobar, the stadium is home to the Santurce Crabbers, of the Puerto Rico Baseball League. It was added to the National Register of Historic Places in 2014.[2]]]></description>
-					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<styleUrl>#poly-000000-1200-7751</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -32334,7 +32770,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<Placemark>
 					<name>fop</name>
 					<description>Estadio Nelson Fernández is a multi-use stadium in San José de las Lajas, Mayabeque Province, Cuba. It is currently used mostly for baseball games and up to 2011 was the home stadium of the Havana Vaqueros team. Starting from the 2011–2012 series this stadium is the home of the new Mayabeque provincial team &quot;Huracanes&quot; (hurricanes). The stadium holds 8,000 people.</description>
-					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<styleUrl>#poly-000000-1200-7751</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -32367,7 +32803,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<Placemark>
 					<name>fop</name>
 					<description><![CDATA[Quisqueya Stadium Juan Marichal is a baseball stadium in Santo Domingo, Dominican Republic. It is often used as a multi-use stadium. Football club Atlético Pantoja used the venue for their inaugural Caribbean football championship match. The Quisqueya holds about 14,469 people after its renovation. The Dominican League of Baseball Authority is in charge of its management.<br><br>It is the only stadium in the Caribbean region to host two different baseball teams, Tigres del Licey (Licey Tigers) and Leones del Escogido (Chosen One Lions). Its field dimensions are 335 feet at the foul poles, 383 feet at the power alleys, and 411 feet at center field. It was built in 1955 as Estadio Trujillo, during the Rafael Leonidas Trujillo Molina dictatorship, taking the Bobby Maduro Miami Stadium as the design base.<br><br>The stadium was renamed Estadio Quisqueya Juan Marichal, after the former Major League Baseball player and Hall of Famer Juan Marichal.]]></description>
-					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<styleUrl>#poly-000000-1200-7751</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -32431,7 +32867,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<Placemark>
 					<name>fop</name>
 					<description>Estadio Francisco A. Micheli (formerly known as Romana, in reference to the city where it is located) is a private multipurpose stadium dedicated mainly to the sport of baseball. Located in the city of La Romana, with a capacity for about 10,000 people, is the home of the Dominican professional team Toros del Este.[1] The stadium was inaugurated in 1979 by President Antonio Guzmán Fernández and is owned by the Central Romana Corporation. In 1998 the stadium suffered damage as a result of Hurricane Georges, which went through much of the Dominican Republic during that year.</description>
-					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<styleUrl>#poly-000000-1200-7751</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -32610,7 +33046,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<Placemark>
 					<name>foul</name>
 					<description>tough roof, estimated behind plate</description>
-					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<styleUrl>#poly-000000-1200-7751</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -32625,7 +33061,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<Placemark>
 					<name>fop</name>
 					<description>McCoy Stadium is a former baseball stadium in Pawtucket, Rhode Island. From 1970 through 2020, it served as home field of the Pawtucket Red Sox (PawSox), a Minor League Baseball affiliate of the Boston Red Sox. Completed in 1942, the stadium first hosted an affiliated minor league team in 1946, the Pawtucket Slaters, a Boston Braves farm team. In 1981, the stadium hosted the longest professional baseball game in history, as the PawSox defeated the Rochester Red Wings in 33 innings by a score of 3–2.</description>
-					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<styleUrl>#poly-000000-1200-7751</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -32721,7 +33157,7 @@ May not be used as a baseball field anymore. last google earth image of baseball
 				<Placemark>
 					<name>fop</name>
 					<description>Mártires de Barbados Stadium is a multi-use stadium in Bayamo, Cuba. It is currently used mostly for baseball games and is the home stadium of Granma Alazanes. The stadium holds 10,000 people.</description>
-					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<styleUrl>#poly-000000-1200-7751</styleUrl>
 					<Polygon>
 						<outerBoundaryIs>
 							<LinearRing>
@@ -32961,6 +33397,682 @@ May not be used as a baseball field anymore. last google earth image of baseball
 		</Folder>
 		<Folder>
 			<name>Youth</name>
+			<open>1</open>
+			<Folder>
+				<name>Old W Michigan Ave LL Park - Lansing - youth</name>
+				<open>1</open>
+				<Placemark>
+					<name>foul</name>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Polygon>
+						<tessellate>1</tessellate>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									-84.59683732270906,42.73464777570751,0 -84.59687470754044,42.73462222537667,0 -84.59658706632968,42.73434723011847,0 -84.5964078240396,42.73418379207854,0 -84.596343188513,42.7341685093869,0 -84.59629939795418,42.73417055404715,0 -84.5962345479559,42.73422087479042,0 -84.59577369021959,42.73458795123085,0 -84.5958259348635,42.73463615486813,0 -84.59634931552054,42.73423356419337,0 -84.59683732270906,42.73464777570751,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<description>Based on Google Earth April 1998 images
+</description>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Polygon>
+						<tessellate>1</tessellate>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									-84.59635120777513,42.73423257626364,0 -84.59582395120769,42.73463719379387,0 -84.59586527478642,42.73467081986682,0 -84.59593844659224,42.7346991237287,0 -84.59598570468806,42.7347177459374,0 -84.59603356440049,42.73473972153206,0 -84.59608760639522,42.73475952027439,0 -84.59613660977037,42.73477509149168,0 -84.59618165782754,42.73478129264319,0 -84.59623108847086,42.7347868251379,0 -84.59629731272642,42.73478860426292,0 -84.59635496698684,42.73479146289375,0 -84.5964222807943,42.73478835129507,0 -84.59646465368166,42.73478165937283,0 -84.59651765437229,42.73477367034478,0 -84.5965757076896,42.73475872187825,0 -84.59664585217547,42.73473912838664,0 -84.59669851437532,42.73471997743485,0 -84.59674963113243,42.73469590613151,0 -84.59678813696814,42.73467352572669,0 -84.59683925518182,42.73464673413054,0 -84.59635120777513,42.73423257626364,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Slater Park</name>
+				<open>1</open>
+				<Placemark>
+					<name>foul</name>
+					<description>based on March 2005 image from Google Earth Pro - accessed 7/12/23
+</description>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Polygon>
+						<tessellate>1</tessellate>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									-84.51488017776265,42.74976092677726,0 -84.51489318118459,42.7502994458739,0 -84.51498485460232,42.75030010977434,0 -84.51499004233749,42.7499664286683,0 -84.51498299067991,42.74977428752114,0 -84.5149827081428,42.74972803778827,0 -84.51489505922031,42.7496652265263,0 -84.51461566882446,42.74966046599065,0 -84.51415828008747,42.74966035270512,0 -84.51414610133011,42.74969744123752,0 -84.5141485865545,42.74971891280885,0 -84.51414425386558,42.74972627431065,0 -84.51488017776265,42.74976092677726,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#m_ylw-pushpin</styleUrl>
+					<Polygon>
+						<tessellate>1</tessellate>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									-84.51414328194082,42.74972575291491,0 -84.51414702927879,42.74973592632533,0 -84.514146646394,42.74977171242137,0 -84.51414698750324,42.74977263757711,0 -84.51415376396905,42.74979470085835,0 -84.51416453561585,42.74983128304392,0 -84.51416616834975,42.74986869764356,0 -84.51417427607674,42.74989789133831,0 -84.51419344378606,42.74993875157072,0 -84.51420710284118,42.74996325831786,0 -84.51422209423244,42.74998908135782,0 -84.51423860139151,42.7500155424755,0 -84.51425555756086,42.75003595638154,0 -84.51428087727299,42.75006066657362,0 -84.51430975855948,42.75008763732788,0 -84.51433214718379,42.75010795296483,0 -84.514360221622,42.75012909711555,0 -84.51437867626781,42.75014620576192,0 -84.51440886771685,42.75016591898725,0 -84.51442636801255,42.7501770900634,0 -84.51444923520644,42.75019136095634,0 -84.5144793145589,42.75020320474482,0 -84.51450176056335,42.75021654144241,0 -84.51453237417472,42.75023022772029,0 -84.51455365402491,42.75023687324808,0 -84.51458962035976,42.75025048535149,0 -84.51461126159244,42.75025804351326,0 -84.51464110263272,42.75026594643833,0 -84.51467658177368,42.75027474343207,0 -84.51471563997607,42.75028577379963,0 -84.51475334752284,42.7502930912478,0 -84.51478957415756,42.75029276726337,0 -84.51483313771445,42.75029786353648,0 -84.51489156495411,42.75029987719734,0 -84.51487915863133,42.74976223390978,0 -84.51414328194082,42.74972575291491,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin TN - Camden Yards - 80ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[On September 6, 1995, Cal Ripken, Jr. played his 2,131st consecutive game, breaking Lou Gehrig’s all-time record<br>Every seat in the ballpark is green, except for two – one of which marks the spot of Cal Ripken, Jr.'s 278th career home run, most all-time among shortstops]]></description>
+					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-83.5612326,35.8040591,0 -83.56171070000001,35.8047144,0 -83.5617268,35.8046964,0 -83.5616893,35.804629,0 -83.5615391,35.8043652,0 -83.5614539,35.8042184,0 -83.5614425,35.8042222,0 -83.56139760000001,35.8041461,0 -83.561409,35.8041401,0 -83.5613513,35.8040411,0 -83.5613366,35.8040161,0 -83.5613211,35.804002,0 -83.56129970000001,35.8039867,0 -83.5612782,35.8039775,0 -83.5612467,35.803972,0 -83.5612185,35.803972,0 -83.5611924,35.8039764,0 -83.5611662,35.8039878,0 -83.56103210000001,35.8040607,0 -83.5610368,35.8040694,0 -83.560953,35.8041151,0 -83.56094830000001,35.8041096,0 -83.56092080000001,35.8041249,0 -83.5605547,35.8043587,0 -83.56047289999999,35.8043598,0 -83.5604762,35.8044196,0 -83.5612326,35.8040591,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-83.5612326,35.8040591,0 -83.5604762,35.8044196,0 -83.5605674,35.8046279,0 -83.5605735,35.8046328,0 -83.5606425,35.8047862,0 -83.5610482,35.8049645,0 -83.56162689999999,35.8047992,0 -83.56171070000001,35.8047144,0 -83.5612326,35.8040591,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin TN - Isotopes Stadium - 60/70ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[The stadium features a hill in center field, similar to the one formerly used in the Houston Astros' stadium<br>Isotopes stadium was previously used by the University of New Mexico and currently hosts New Mexico United home soccer games]]></description>
+					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-83.563006,35.8046011,0 -83.5633694,35.8051367,0 -83.5633821,35.8051291,0 -83.5632983,35.8050111,0 -83.56330699999999,35.8049861,0 -83.563183,35.8047272,0 -83.5631736,35.8047305,0 -83.56313609999999,35.8046516,0 -83.5631468,35.8046478,0 -83.5631059,35.8045597,0 -83.5630905,35.8045456,0 -83.5630656,35.8045314,0 -83.5630482,35.8045249,0 -83.5630268,35.8045206,0 -83.56300330000001,35.8045184,0 -83.5629838,35.8045184,0 -83.56296039999999,35.8045222,0 -83.56293960000001,35.8045304,0 -83.5628605,35.8045739,0 -83.5628645,35.8045842,0 -83.562782,35.8046331,0 -83.562776,35.8046266,0 -83.5624943,35.8047941,0 -83.5624863,35.804818,0 -83.5623461,35.8048779,0 -83.5623475,35.8048936,0 -83.563006,35.8046011,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-83.563006,35.8046011,0 -83.5623475,35.8048936,0 -83.5623502,35.8049078,0 -83.5623542,35.8049274,0 -83.5623602,35.8049513,0 -83.56236629999999,35.8049698,0 -83.5623743,35.8049921,0 -83.56238500000001,35.8050165,0 -83.5623958,35.8050388,0 -83.5624085,35.8050639,0 -83.5624212,35.8050856,0 -83.56243929999999,35.8051139,0 -83.5624601,35.8051433,0 -83.56247759999999,35.8051656,0 -83.562501,35.80519,0 -83.5625198,35.8052118,0 -83.5625386,35.8052292,0 -83.56256209999999,35.8052504,0 -83.5625849,35.8052694,0 -83.5626231,35.8052999,0 -83.5626479,35.8052939,0 -83.56268009999999,35.8052874,0 -83.5627056,35.805283,0 -83.562727,35.8052836,0 -83.5627444,35.8052857,0 -83.5627659,35.8052912,0 -83.562786,35.8052972,0 -83.5628014,35.8053042,0 -83.5628169,35.8053135,0 -83.5628336,35.8053243,0 -83.56284839999999,35.8053369,0 -83.5628598,35.8053477,0 -83.5628698,35.8053581,0 -83.56290610000001,35.8053423,0 -83.5629912,35.8053064,0 -83.56310860000001,35.8052515,0 -83.56319910000001,35.8052134,0 -83.56328689999999,35.8051737,0 -83.5633694,35.8051367,0 -83.563006,35.8046011,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin TN - Engel Stadium - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[FORMER HOME OF THE CHATTANOOGA LOOKOUTS<br>1930 - 1999<br><br>Centerfield features a sloped hill, which was originally created to make up the difference in grade between the field and the street behind it<br>Harmon Killebrew is said to be the only man to hit a ball over the deepest part of centerfield]]></description>
+					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-83.56096239999999,35.8030622,0 -83.56128560000001,35.803525,0 -83.56120439999999,35.8032477,0 -83.5611495,35.8031688,0 -83.5611421,35.8031732,0 -83.5610945,35.8030992,0 -83.5611025,35.8030938,0 -83.5610583,35.8030252,0 -83.56104550000001,35.8030149,0 -83.561008,35.8029991,0 -83.5609637,35.8029877,0 -83.5609121,35.8029953,0 -83.5608263,35.8030388,0 -83.56073979999999,35.8030769,0 -83.5607351,35.8030704,0 -83.5606325,35.8031166,0 -83.56044,35.8032313,0 -83.5603468,35.8033238,0 -83.560318,35.8033347,0 -83.56032999999999,35.8033499,0 -83.56096239999999,35.8030622,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-83.56096239999999,35.8030622,0 -83.56032999999999,35.8033499,0 -83.56047289999999,35.8035544,0 -83.5605869,35.8037197,0 -83.5607069,35.8037627,0 -83.5607706,35.8038644,0 -83.56091139999999,35.8037975,0 -83.56089059999999,35.803767,0 -83.5612742,35.8035925,0 -83.56128560000001,35.803525,0 -83.56096239999999,35.8030622,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin TN - Calfee Park - 70ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[FORMER HOME OF THE PULASKI YANKEES<br>1935 - 2020<br><br>Located in a residential neighborhood so houses can watch games from their outdoor decks<br>Voted Best Rookie Ball Ballpark (2019, 2020)]]></description>
+					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-83.5608491,35.8020717,0 -83.56124269999999,35.8026102,0 -83.5613132,35.802546,0 -83.5610422,35.8021729,0 -83.56103349999999,35.8021773,0 -83.5609846,35.8021017,0 -83.560992,35.8020973,0 -83.56092289999999,35.8020043,0 -83.56083099999999,35.8019831,0 -83.56071369999999,35.8020489,0 -83.56062780000001,35.8020892,0 -83.5606198,35.8020815,0 -83.5605729,35.8021115,0 -83.560255,35.8023176,0 -83.56027109999999,35.8023486,0 -83.5608491,35.8020717,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-83.5608491,35.8020717,0 -83.56027109999999,35.8023486,0 -83.5604089,35.8026058,0 -83.5604331,35.8026091,0 -83.5604451,35.8026129,0 -83.5604599,35.8026286,0 -83.560596,35.8027657,0 -83.5607643,35.8028293,0 -83.5609319,35.8028043,0 -83.56110959999999,35.8027309,0 -83.56124269999999,35.8026102,0 -83.5608491,35.8020717,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin TN - Winston-Salam Ballpark - 60/70ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[WINSTON-SALEM BALLPARK<br>HOME OF THE WINSTON-SALEM DASH<br>2010 - Present<br><br>Over 26,000 bricks were used in the construction of the ballpark<br>The team name is a reference to the dash located in-between Winston and Salem, which is in actuality a hyphen<br>The Carolina League was founded in 1945, and at that time only one franchise can claim to have operated continuously since its inception; that franchise is Winston-Salem]]></description>
+					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-83.56227629999999,35.802469,0 -83.56261019999999,35.8029558,0 -83.56260949999999,35.8029297,0 -83.5625673,35.8028709,0 -83.562572,35.8027692,0 -83.56252569999999,35.8026926,0 -83.56240769999999,35.8025017,0 -83.5623614,35.8024185,0 -83.5623239,35.8023973,0 -83.5622877,35.8023864,0 -83.56224810000001,35.8023875,0 -83.562173,35.8024277,0 -83.5618109,35.8026077,0 -83.5617955,35.8026681,0 -83.5616627,35.8027257,0 -83.56165799999999,35.8027453,0 -83.56227629999999,35.802469,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-83.56227629999999,35.802469,0 -83.56165799999999,35.8027453,0 -83.5616131,35.8028896,0 -83.56163789999999,35.8029076,0 -83.5616694,35.8028989,0 -83.56182560000001,35.803018,0 -83.5618183,35.8030452,0 -83.5619202,35.8031219,0 -83.56223,35.8031936,0 -83.5626122,35.8030049,0 -83.56261019999999,35.8029558,0 -83.56227629999999,35.802469,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin TN - Fluor Field - 60/70ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[FLUOR FIELD<br>HOME OF THE GREENVILLE DRIVE<br>2006 - Present<br><br>Modeled after Fenway Park featuring its own Green Monster in left field<br>Located adjacent to the Shoeless Joe Jackson Museum]]></description>
+					<styleUrl>#poly-000000-1200-775</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-83.5630429,35.8031779,0 -83.5633862,35.8036837,0 -83.56340299999999,35.8036772,0 -83.56335199999999,35.803601,0 -83.5633862,35.8035048,0 -83.56325750000001,35.8033204,0 -83.56312610000001,35.8031274,0 -83.5630872,35.8031045,0 -83.563051,35.8030947,0 -83.5630034,35.8030991,0 -83.56293359999999,35.8031393,0 -83.5627834,35.8031975,0 -83.56275789999999,35.8032193,0 -83.562595,35.8033677,0 -83.56247759999999,35.8034194,0 -83.56245749999999,35.8034439,0 -83.5630429,35.8031779,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc2</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-83.5630429,35.8031779,0 -83.56245749999999,35.8034439,0 -83.56243739999999,35.8034579,0 -83.562422,35.8034704,0 -83.5624072,35.8034868,0 -83.5623952,35.8035025,0 -83.5623891,35.8035178,0 -83.5623878,35.8035379,0 -83.5623925,35.8035602,0 -83.5623978,35.8035776,0 -83.5624193,35.8035928,0 -83.5624528,35.8036162,0 -83.5626755,35.8037826,0 -83.5626889,35.8038609,0 -83.5629236,35.8038316,0 -83.5629443,35.8038522,0 -83.5633862,35.8036837,0 -83.5630429,35.8031779,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin Sr Field - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1861018,39.5329675,0 -76.18535079999999,39.533075,0 -76.1853789,39.5330812,0 -76.1861112,39.5330823,0 -76.1862426,39.5329333,0 -76.18600790000001,39.5324637,0 -76.186032,39.5324306,0 -76.1859596,39.5324172,0 -76.1861018,39.5329675,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<description><![CDATA[Features a 2,500 seat capacity for parents & fans<br>⅔ scale replica of Oriole Park<br>An on-site Marriott hotel sits in right field as the B&O Warehouse replica]]></description>
+					<styleUrl>#poly-000000-1200-770</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1861018,39.5329675,0 -76.1859623,39.5324234,0 -76.1856042,39.5324058,0 -76.1853065,39.5325961,0 -76.18528499999999,39.5329975,0 -76.18535079999999,39.533075,0 -76.1861018,39.5329675,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin - Fenway Park - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[Opposing players sign their names inside of the Green Monster in left field<br>Fenway Park is home to the Pesky Pole, which measures only 302 feet down the right-field line]]></description>
+					<styleUrl>#poly-000000-1200-770</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.184714,39.5342663,0 -76.18545570000001,39.534288,0 -76.18546240000001,39.5342425,0 -76.1851875,39.5342384,0 -76.1851875,39.5342104,0 -76.1846685,39.534197,0 -76.18462150000001,39.5342353,0 -76.1846269,39.5347173,0 -76.18466979999999,39.5347245,0 -76.1846886,39.5347441,0 -76.184698,39.5347793,0 -76.184714,39.5342663,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.184714,39.5342663,0 -76.184698,39.5347793,0 -76.18469930000001,39.534799,0 -76.1847087,39.5348176,0 -76.1847181,39.53483,0 -76.18474089999999,39.5348414,0 -76.18475429999999,39.5348496,0 -76.1847892,39.5348558,0 -76.1847932,39.5348641,0 -76.18497960000001,39.5348072,0 -76.1851499,39.5347576,0 -76.185225,39.5348072,0 -76.1854074,39.5346655,0 -76.18545570000001,39.534288,0 -76.184714,39.5342663,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin - Citi Field - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[CITI Field replaced Shea Stadium in 2009, which was the former home of the New York Mets, and played as part-time home stadium for the New York Yankees, Jets, and Giants during its lifetime<br>Hosted the 2013 MLB All-Star Game<br>CITI Field features an 18-foot Home Run Apple that rises in centerfield after every Mets' home run]]></description>
+					<styleUrl>#poly-000000-1200-770</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1871357,39.5335285,0 -76.18718269999999,39.534026,0 -76.18720279999999,39.5340208,0 -76.187184,39.5338636,0 -76.187243,39.5338047,0 -76.1872752,39.5336692,0 -76.1872886,39.5335916,0 -76.18728729999999,39.5335616,0 -76.18727250000001,39.5335254,0 -76.1872564,39.5335037,0 -76.187235,39.5334809,0 -76.18721619999999,39.5334675,0 -76.1871974,39.5334551,0 -76.18717599999999,39.5334406,0 -76.18714919999999,39.5334333,0 -76.187129,39.5334271,0 -76.18707809999999,39.533424,0 -76.1870526,39.533422,0 -76.186944,39.5334509,0 -76.1867508,39.5334882,0 -76.1866583,39.5335378,0 -76.18647730000001,39.5335554,0 -76.18647989999999,39.5335668,0 -76.1871357,39.5335285,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1871357,39.5335285,0 -76.18647989999999,39.5335668,0 -76.1864813,39.5336206,0 -76.1864571,39.5336392,0 -76.1864451,39.533755,0 -76.1864987,39.5338088,0 -76.1865631,39.5339867,0 -76.1866382,39.5340343,0 -76.18707139999999,39.5340643,0 -76.18718269999999,39.534026,0 -76.1871357,39.5335285,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin - PNC Park - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[The right-field wall in PNC Park is known as the Clemente Wall, which stands 21 feet high in honor of Clemente's No. 21 jersey<br>It's only 456 feet from home plate down the right-field line to the Allegheny River behind PNC Park<br>A childhood Pirates fan, Sean Casey hit the first home run at PNC Park as a member of the Cincinnati Reds]]></description>
+					<styleUrl>#poly-000000-1200-770</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1857107,39.5340221,0 -76.1857067,39.5335101,0 -76.18568519999999,39.5335215,0 -76.1856906,39.5336425,0 -76.18563829999999,39.5336787,0 -76.18563020000001,39.5337625,0 -76.18561819999999,39.5339321,0 -76.1856088,39.5340014,0 -76.1856047,39.5340356,0 -76.18561010000001,39.5340573,0 -76.18563159999999,39.5340738,0 -76.18564360000001,39.5340862,0 -76.18567179999999,39.5340976,0 -76.18570130000001,39.5341007,0 -76.18572140000001,39.5340997,0 -76.18574959999999,39.5340986,0 -76.18607950000001,39.5340769,0 -76.1862029,39.5340397,0 -76.18635039999999,39.5340407,0 -76.1863517,39.5340304,0 -76.1857107,39.5340221,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1857107,39.5340221,0 -76.1863517,39.5340304,0 -76.1864054,39.5337985,0 -76.1863678,39.5336827,0 -76.186278,39.5335782,0 -76.1862002,39.5335389,0 -76.18612779999999,39.5334934,0 -76.18612640000001,39.5334748,0 -76.1858019,39.5334541,0 -76.1857067,39.5335101,0 -76.1857107,39.5340221,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin - Memorial Stadium - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[FORMER HOME OF THE BALTIMORE ORIOLES<br>1954 - 1991<br><br>In 1987 Cal, Sr. became the only MLB Manager to manage two sons in the same game<br>Hosted World Series games in 1966, 1970, and 1983]]></description>
+					<styleUrl>#poly-000000-1200-770</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1842085,39.5342554,0 -76.18434259999999,39.5347571,0 -76.18438020000001,39.5347178,0 -76.1843909,39.5343982,0 -76.1843695,39.5343113,0 -76.1843011,39.5342089,0 -76.18424210000001,39.5341706,0 -76.1841817,39.5341623,0 -76.1840892,39.5341592,0 -76.1839738,39.5341758,0 -76.18373510000001,39.5342565,0 -76.1835916,39.5343113,0 -76.1835447,39.5343568,0 -76.1842085,39.5342554,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1842085,39.5342554,0 -76.1835447,39.5343568,0 -76.1835313,39.5343816,0 -76.1835018,39.5344251,0 -76.1834843,39.5344551,0 -76.1834763,39.5344768,0 -76.1834736,39.5345006,0 -76.18347900000001,39.5345171,0 -76.1835138,39.5345678,0 -76.18354739999999,39.5346237,0 -76.1835889,39.5346847,0 -76.18361040000001,39.5347095,0 -76.1836412,39.5347447,0 -76.1836721,39.5347798,0 -76.1836989,39.5348016,0 -76.1837123,39.5348109,0 -76.1837338,39.5348191,0 -76.1837512,39.5348243,0 -76.1837968,39.5348347,0 -76.1838746,39.5348471,0 -76.1840691,39.5348771,0 -76.184124,39.5348843,0 -76.18415760000001,39.5348791,0 -76.184175,39.534876,0 -76.1841951,39.5348698,0 -76.1842206,39.5348595,0 -76.1842394,39.5348491,0 -76.1842595,39.5348357,0 -76.1842863,39.534814,0 -76.18430909999999,39.5347922,0 -76.18434259999999,39.5347571,0 -76.1842085,39.5342554,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin - Wrigley Field - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[Known as “The Friendly Confines”, a phrase popularized by "Mr. Cub", Ernie Banks<br>In 1988, Wrigley Field became the last MLB Stadium to install stadium lights]]></description>
+					<styleUrl>#poly-000000-1200-770</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1838936,39.5339484,0 -76.1831413,39.5339267,0 -76.18313860000001,39.533965,0 -76.1832311,39.5339867,0 -76.18332100000001,39.5340032,0 -76.1836442,39.5340125,0 -76.1839379,39.5340218,0 -76.1839902,39.5339805,0 -76.18398620000001,39.5333795,0 -76.18391099999999,39.5333764,0 -76.1838936,39.5339484,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1838936,39.5339484,0 -76.18391099999999,39.5333764,0 -76.1836737,39.5333692,0 -76.18354359999999,39.5333609,0 -76.1834953,39.5333692,0 -76.183447,39.5333795,0 -76.18340550000001,39.533393,0 -76.1833706,39.5334126,0 -76.1833424,39.5334343,0 -76.1833156,39.533454,0 -76.1832915,39.533484,0 -76.1832552,39.5335492,0 -76.1832311,39.5335998,0 -76.183211,39.5336536,0 -76.1831949,39.5337012,0 -76.1831828,39.5337602,0 -76.18315870000001,39.5338274,0 -76.1831413,39.5339267,0 -76.1838936,39.5339484,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin - Nationals Park - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[Located at the Navy Shipyard, the Nationals use a submarine dive horn after home runs<br>The Washington Monument and Capitol building are visible from the first base upper decks]]></description>
+					<styleUrl>#poly-000000-1200-770</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1846201,39.5322767,0 -76.1846041,39.5328694,0 -76.1847046,39.5328797,0 -76.1847033,39.5324774,0 -76.1847234,39.5324567,0 -76.18472610000001,39.5322426,0 -76.18467510000001,39.5322002,0 -76.18438810000001,39.5321909,0 -76.18435599999999,39.5322074,0 -76.1838624,39.5322167,0 -76.1838624,39.5322612,0 -76.1846201,39.5322767,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.1846201,39.5322767,0 -76.1838624,39.5322612,0 -76.1838745,39.5326015,0 -76.1839603,39.5327835,0 -76.1841642,39.532827,0 -76.1846041,39.5328694,0 -76.1846201,39.5322767,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin - Nationals Field #2 - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.18325160000001,39.5331565,0 -76.1832623,39.532568,0 -76.183194,39.5325628,0 -76.1831631,39.5330603,0 -76.1831658,39.5331327,0 -76.18316179999999,39.5331855,0 -76.1832141,39.5332227,0 -76.1835078,39.5332341,0 -76.183548,39.5332072,0 -76.184,39.5332186,0 -76.1839933,39.5331679,0 -76.18325160000001,39.5331565,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-76.18325160000001,39.5331565,0 -76.1839933,39.5331679,0 -76.1839603,39.5327835,0 -76.1838745,39.5326015,0 -76.1837197,39.5325721,0 -76.1832623,39.532568,0 -76.18325160000001,39.5331565,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin SC - Westside Grounds - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[In 1906, hosted the first-ever crosstown World Series matchup between Cubs & White Sox in 1906<br>Chicago’s first double-decker stadium]]></description>
+					<styleUrl>#poly-000000-1200-77</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9070904,33.7185615,0 -78.907079,33.7190992,0 -78.9070984,33.7190786,0 -78.9071199,33.7190144,0 -78.907203,33.7187534,0 -78.9072426,33.7186279,0 -78.90719900000001,33.7185264,0 -78.9071333,33.7184723,0 -78.9070246,33.7184438,0 -78.9070139,33.7184455,0 -78.90690859999999,33.7184656,0 -78.9067343,33.7184985,0 -78.9065908,33.7185292,0 -78.90656060000001,33.7185348,0 -78.9065184,33.7185331,0 -78.90649089999999,33.7185481,0 -78.9070904,33.7185615,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9070904,33.7185615,0 -78.90649089999999,33.7185481,0 -78.9064037,33.7186034,0 -78.90635210000001,33.7188354,0 -78.906346,33.7188655,0 -78.90632119999999,33.7191555,0 -78.9064097,33.7191951,0 -78.9064674,33.7191271,0 -78.906857,33.7192392,0 -78.90695959999999,33.7191974,0 -78.90703000000001,33.7191488,0 -78.907079,33.7190992,0 -78.9070904,33.7185615,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin SC - Huntington Park - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[FORMER HOME OF THE BOSTON RED SOX<br>1901 - 1912<br><br>Hosted the first-ever World Series<br>Home of first-ever perfect game, which was thrown by Hall-of-Famer Cy Young]]></description>
+					<styleUrl>#poly-000000-1200-77</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9085613,33.7185734,0 -78.9085493,33.7191311,0 -78.9085694,33.7191333,0 -78.9085721,33.7190357,0 -78.908629,33.7188026,0 -78.9086673,33.7186459,0 -78.9086693,33.7185393,0 -78.9086056,33.7184869,0 -78.9085358,33.7184674,0 -78.9085077,33.7184735,0 -78.908393,33.7184942,0 -78.9080597,33.7185455,0 -78.9079672,33.7185438,0 -78.90796450000001,33.7185605,0 -78.9085613,33.7185734,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9085613,33.7185734,0 -78.90796450000001,33.7185605,0 -78.907811,33.7191417,0 -78.9078505,33.7191763,0 -78.908226,33.7190859,0 -78.9085493,33.7191311,0 -78.9085613,33.7185734,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin SC - Navin Field - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[FORMER HOME OF THE DETROIT TIGERS<br>1912 - 1999<br><br>Formally known as Tiger Stadium, home of the Detroit Lions from 1938 - 1974<br>On July 18, 1921, Babe Ruth hit what is believed to be the longest verified HR in MLB history (575 feet)]]></description>
+					<styleUrl>#poly-000000-1200-77</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9082445,33.7174493,0 -78.90823109999999,33.7180276,0 -78.9082525,33.7180315,0 -78.9082525,33.7179663,0 -78.90839130000001,33.7175229,0 -78.90835180000001,33.717418,0 -78.90828809999999,33.7173678,0 -78.90817269999999,33.7173338,0 -78.9077188,33.7174247,0 -78.9076464,33.7174203,0 -78.90764230000001,33.7174392,0 -78.9082445,33.7174493,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9082445,33.7174493,0 -78.90764230000001,33.7174392,0 -78.9076008,33.7178101,0 -78.9076417,33.7179088,0 -78.9076759,33.7179395,0 -78.9077704,33.7179674,0 -78.9077925,33.7179718,0 -78.9079112,33.717988,0 -78.9080058,33.7180003,0 -78.9081151,33.7180148,0 -78.90823109999999,33.7180276,0 -78.9082445,33.7174493,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin SC - Duncan Field - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[HOME OF THE SPARTANBURG SPARTANS<br>1926 - Present<br><br>The original stadium grandstand is still in use today<br>In 1937, the Yankees, featuring Joe DiMaggio & Lou Gehrig, played an exhibition game]]></description>
+					<styleUrl>#poly-000000-1200-77</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9078923,33.7163042,0 -78.9078789,33.7169004,0 -78.907901,33.7168926,0 -78.9079091,33.7167894,0 -78.9079902,33.7164871,0 -78.9080251,33.7163672,0 -78.9079855,33.716288,0 -78.90794390000001,33.7162428,0 -78.9078179,33.7161965,0 -78.9077233,33.7162094,0 -78.9072741,33.7162769,0 -78.90719230000001,33.7162741,0 -78.9071862,33.7162902,0 -78.9078923,33.7163042,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9078923,33.7163042,0 -78.9071862,33.7162902,0 -78.9071648,33.7163358,0 -78.9071433,33.7166142,0 -78.9072097,33.7167436,0 -78.90734449999999,33.7168607,0 -78.9074947,33.7169187,0 -78.9077964,33.7169271,0 -78.9078789,33.7169004,0 -78.9078923,33.7163042,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>Ripkin SC - Shibe Park - 60ft</name>
+				<Placemark>
+					<name>foul</name>
+					<description><![CDATA[FORMER HOME OF THE PHILADELPHIA PHILLIES<br>1909 - 1970<br><br>A “spite fence” was raised to keep people from the neighborhood from watching games for free<br>In 1939, Shibe Park hosted the first-ever night game in American League history]]></description>
+					<styleUrl>#poly-000000-1200-77</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9072646,33.719466,0 -78.9072511,33.720041,0 -78.9072639,33.7200405,0 -78.9072726,33.7199869,0 -78.90731890000001,33.7198414,0 -78.9074154,33.7195385,0 -78.9073705,33.7194364,0 -78.90730809999999,33.7193779,0 -78.9071962,33.7193472,0 -78.9069393,33.7193991,0 -78.9066718,33.7194548,0 -78.9072646,33.719466,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>fop</name>
+					<styleUrl>#poly-000000-1200-77-nodesc4</styleUrl>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<tessellate>1</tessellate>
+								<coordinates>
+									-78.9072646,33.719466,0 -78.90658860000001,33.7194521,0 -78.9065477,33.7197638,0 -78.9065786,33.7198916,0 -78.9067268,33.7200226,0 -78.9068844,33.7200488,0 -78.9072511,33.720041,0 -78.9072646,33.719466,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
 			<Folder>
 				<name>Alma HS - JV -Field 2</name>
 				<open>1</open>
