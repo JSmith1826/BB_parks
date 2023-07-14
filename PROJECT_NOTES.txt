@@ -1,5 +1,10 @@
 NOTES FOR BASEBALL PROJECT
 ----------------------------------
+7-13-23
+QUESTIONS TO ASK THE DATA ONCE IT IS IN shape	
+	- What are the best weather conditions for offence and defence
+	- What 
+
 7/11/23
 ** NExt thing up
 - get a dictionary of team names and dictionaries

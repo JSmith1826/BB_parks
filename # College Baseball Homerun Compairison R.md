@@ -1,6 +1,7 @@
 # College Baseball Homerun Compairison README.
 
 
+
 ## Scraping ESPN college baseball scoreboard
 Used code in ESPN_College... notebook
 - the code goes day by day through a range that includes entire seasons and gets the scoreboard for each day.
