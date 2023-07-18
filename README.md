@@ -62,6 +62,39 @@ ChatGPT, both model 3.5 and 4, were used to assist writing javascript.
 - Total Distance: 342.1 miles
 
 ### Documentation
+### COLEGE BASEBALL RESULT SCRAPING CODE
+# ESPN College Baseball Data Scraping Notebook Summary
+
+This notebook is designed to scrape data related to college baseball games from the ESPN website. It accomplishes this through the use of several Python libraries including pandas, BeautifulSoup, and requests.
+
+## Purpose
+The purpose of this notebook is to gather comprehensive data on college baseball games. This includes detailed game data such as team names, game scores, hits, errors, home runs, game location, date, and time. 
+
+## Code Summary
+1. **Import Libraries:** The necessary Python libraries for web scraping, data manipulation, and handling requests are imported. These include pandas, BeautifulSoup, requests, and others.
+
+2. **Define Base URL and Dates:** The base URL for the ESPN college baseball scoreboard is defined. The date range for which to scrape data is also set.
+
+3. **Scrape Game Data:** The notebook iterates over each date in the range, makes a request to the corresponding ESPN page, and scrapes the game data. The game data includes details like team names, game ID, game info, and team runs, hits, and errors. This data is collected in a list.
+
+4. **Convert to DataFrame:** The list of game data is converted into a pandas DataFrame for easier manipulation and analysis.
+
+5. **Scrape Additional Game Details:** The notebook uses the game IDs to access individual game pages on ESPN and scrape additional details, including home runs for each team.
+
+6. **Save Data:** The resulting DataFrame is saved as a CSV file.
+
+## Key Functions
+- **daterange(start_date, end_date):** A helper function that generates a range of dates between the specified start and end dates.
+
+- **requests.get(url, headers=headers):** This function is used to send a GET request to the specified URL and returns the server's response.
+
+- **BeautifulSoup(response.content, 'html.parser'):** This function parses the HTML content of the server's response.
+
+- **pd.read_html(response.content):** This function reads the HTML tables from the server's response into a list of pandas DataFrames.
+
+## Final Output
+The final output of this notebook is a CSV file containing detailed data on college baseball games for the specified date range. The data includes team names, game scores, hits, errors, home runs, game location, date, and time.
+
 
 ### Columns used and created in the Field_Compare_workbook
 
